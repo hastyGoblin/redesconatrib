@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', [prueba::class, 'index']);
+//Route::get('/login', [prueba::class, 'index']);
 Route::get('/valida', [prueba::class, 'validaCorreo'])->name('valida');
-Auth::routes();
+/*Auth::routes();*/
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

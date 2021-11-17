@@ -42,6 +42,22 @@ function showPWD() {
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
+
+                        @if($message = Session::get('success'))
+                        <div class="alert alert-success" >
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            {{ $message }}
+                        </div>
+                        @endif
+
+                        @if($message = Session::get('error'))
+                        <div class="alert alert-danger" >
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            {{ $message }}
+                        </div>
+                        @endif
+
+
                         <h3>Registrate</h3>
                        <!-- <p>Texto texto.</p> -->
                         <!--<div class="page-links">
@@ -100,7 +116,7 @@ function showPWD() {
 							<input type="hidden" name="red" value="convivencia_familiar">
                             <a onclick="showPWD()" style="color: #FFF; cursor:pointer; ">Ver contrase&ntilde;a</a>-->
                             <div class="form-button">
-                                <button  type="submit" class="ibtn">Reg&iacute;strate</button>
+                                <button  type="submit" class="ibtn">Registrar</button>
                             </div>
                         </form>
                        <div class="other-links">
