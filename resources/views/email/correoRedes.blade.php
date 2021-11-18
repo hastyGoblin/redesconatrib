@@ -31,7 +31,7 @@
 						<p style="text-align: justify">Con tu registro, podrás ingresar al micrositio del evento, de igual manera accederás a las ponencias y material de apoyo que sea provisto por los organizadores.</p>
                         <p style="text-align: justify">Al finalizar el evento, las instrucciones para recibir tu constancia de participación serán evaluadas y emitidas en el micrositio.</p>
 						
-						<p style="text-align: justify">A continuación se comparten los datos de acceso que has obtenido con tu registro:</p>
+						<p style="text-align: justify">A continuación se comparte tu usuario de acceso que has generado con tu registro:</p>
 						<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Usuario: {!! nl2br($info['correo']) !!}</p>
 						<!--<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Contraseña: xxxxxxxxxx </p> -->                                                                                                  
 						<!--<p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante el siguiente botón:</p>
