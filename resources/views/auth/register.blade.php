@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,7 +88,7 @@ function showPWD() {
                                     @enderror
                                 </div>
                             </div>
-
+                            <label>Nota</label>
                             <div class="form-group row">
                                 <div class="col-md-12">
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Contraseña">
@@ -115,10 +114,25 @@ function showPWD() {
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
 							<input type="hidden" name="red" value="convivencia_familiar">
                             <a onclick="showPWD()" style="color: #FFF; cursor:pointer; ">Ver contrase&ntilde;a</a>-->
+                            @php
+                                if( isset($_GET['IdRed']) ){
+                                    echo '<input id="idRed" name="idRed" type="hidden" value="'.$_GET['IdRed'].'"></input>';
+                                }
+                            @endphp
+
+                            @error('idRed')
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <strong>No existe el Identificador</strong>
+                                    </div>
+                                </div>
+                            @enderror
                             <div class="form-button">
                                 <button  type="submit" class="ibtn">Registrar</button>
                             </div>
+                            
                         </form>
+
                        <div class="other-links">
                             <span></span><a href="https://conatrib.org.mx/">P&aacute;gina web</a><a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a><a href="https://twitter.com/ConatribMx">Twitter</a><a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">YouTube</a>
                       </div>

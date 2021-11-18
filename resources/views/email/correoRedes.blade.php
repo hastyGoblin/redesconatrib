@@ -26,8 +26,8 @@
              				 </div>
                          </a>
         				</div>
-                        <h3>¡Felicidades xxxxxxxxx!</h3>
-                        <p style="text-align: justify">Has completado tu registro a la xxxxxxxxxxxxxxx, en el marco de la XLIV Congreso Nacional CONATRIB 2021.</p>
+                        <h3>¡Felicidades!</h3>
+                        <p style="text-align: justify">Has completado tu registro, en el marco de la XLIV Congreso Nacional CONATRIB 2021.</p>
 						<p style="text-align: justify">Con tu registro, podrás ingresar al micrositio del evento, de igual manera accederás a las ponencias y material de apoyo que sea provisto por los organizadores.</p>
                         <p style="text-align: justify">Al finalizar el evento, las instrucciones para recibir tu constancia de participación serán evaluadas y emitidas en el micrositio.</p>
 						
