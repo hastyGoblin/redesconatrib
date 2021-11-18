@@ -19,13 +19,13 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                         <div class="website-logo">
+                         <!--<div class="website-logo">
             			 <a href="https://conatrib.org.mx/congreso_redes/">
                				 <div>
                     			<img class="logo-size" src="images/Img_Conatrib.png" alt="">
              				 </div>
                          </a>
-        				</div>
+        				</div>-->
                         <h3>¡Felicidades!</h3>
                         <p style="text-align: justify">Has completado tu registro a la {!! nl2br($info['red']) !!}, en el marco de la XLIV Congreso Nacional CONATRIB 2021.</p>
 						<p style="text-align: justify">Con tu registro, podrás ingresar al micrositio del evento, de igual manera accederás a las ponencias y material de apoyo que sea provisto por los organizadores.</p>
@@ -34,7 +34,7 @@
 						<p style="text-align: justify">A continuación se comparten los datos de acceso que has obtenido con tu registro:</p>
 						<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Usuario: {!! nl2br($info['correo']) !!}</p>
 						<!--<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Contraseña: xxxxxxxxxx </p> -->                                                                                                  
-						<p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante el siguiente botón:</p>
+						<!--<p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante el siguiente botón:</p>
 						
 						<form>
                            
@@ -42,7 +42,7 @@
 							 
                                <button id="submit" type="submit" class="ibtn">Ingresar</button> 
 							
-                        </div>
+                        </div>-->
                         </form>
                    </div>
 					
