@@ -19,7 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('fk_redConatrib');
+            //$table->string('fk_redConatrib');
+            $table->bigInteger('id_red')->unsigned();
+            $table->foreign('id_red')->references('id')->on('cat_redesconatrib');
             $table->rememberToken();
             $table->timestamps();
         });

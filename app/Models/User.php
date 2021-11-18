@@ -21,7 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'fk_redConatrib',
+        'id_red',
     ];
 
     /**
@@ -42,4 +42,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function redes(){
+        return $this->belongsTo(cat_redesconatrib::class, 'id', 'id_red');
+    }
 }
