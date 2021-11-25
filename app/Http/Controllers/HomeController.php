@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,24 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $red = Auth::user()->id_red;
+        switch ($red) {
+
+            case 1:
+                $mensaje= "Red 1";
+                return view('home',compact('mensaje'));
+                break;
+
+            case 2:
+                $mensaje= "Red 2";
+                break;
+
+            default:
+
+            break;
+
+        }
+
+        //return view('home',compact('mensaje'));
     }
 }

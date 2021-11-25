@@ -16,6 +16,7 @@ class CreateCatRedesconatribTable extends Migration
         Schema::create('cat_redesconatrib', function (Blueprint $table) {
             $table->id();
             $table->string('red');
+            $table->string('landingPage');
             $table->integer('activo');
             $table->timestamps();
         });

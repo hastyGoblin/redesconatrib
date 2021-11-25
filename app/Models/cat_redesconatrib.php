@@ -14,6 +14,7 @@ class cat_redesconatrib extends Model
     protected $primaryKey = 'id';
     protected $fillable = [
         'red',
+        'landingPage',
         'activo',
     ];
 }
