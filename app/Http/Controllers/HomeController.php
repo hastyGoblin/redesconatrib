@@ -29,7 +29,7 @@ class HomeController extends Controller
 
             case 1:
                 $mensaje= "Red 1";
-                return view('home',compact('mensaje'));
+                return view('red_cecofam');
                 break;
 
             case 2:

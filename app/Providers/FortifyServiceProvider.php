@@ -44,6 +44,11 @@ class FortifyServiceProvider extends ServiceProvider
             \App\Http\Responses\RegisterResponse::class,
         );
 
+        $this->app->singleton(
+            \Laravel\Fortify\Contracts\LogoutResponse::class,
+            \App\Http\Responses\LogoutResponse::class,
+        );
+
         Fortify::authenticateUsing(function (Request $request) {
             $user = User::where('email', $request->email)-> where ('activo','=','1')-> first();
 
