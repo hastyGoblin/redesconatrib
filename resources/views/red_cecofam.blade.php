@@ -68,17 +68,6 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
                             </ul>
                         </nav>
                         <div class="clear"></div>
@@ -181,32 +170,32 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 hrs.</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/laurence-francis/index.html">Magistrado Rafael Guerra &Aacute;lvarez</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magistrado Rafael Guerra Alvarez</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/welcoming-and-introduction/index.html">Mensaje de Inauguración</a></h3>
+                                                <h3 class="gdlr-session-item-title">Mensaje de Inauguración</h3>
                                                 <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y los seis vicepresidentes de la Comisión Nacional de Tribunales Superiores de Justicia (CONATRIB).
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                    <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver mensaje</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e3234bf106a058800cbab2ef5d6025ff7"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-                                        
+                                       
     
                                     </div>
-                                    <!-- termina dia -->
+                                    <!-- termina dia 1-->
+                                    <!-- inicia dia 2 -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
@@ -215,9 +204,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>9:00</div>
                                                     
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/janet-jones/index.html">Lic. Aline Liliana Miranda Hernández </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Aline Liliana Miranda Hernández </a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -225,11 +214,11 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/dealing-with-supplier/index.html">Mensaje de Bienvenida</a></h3>
+                                                <h3 class="gdlr-session-item-title">Mensaje de Bienvenida</h3>
                                                 <div class="gdlr-session-item-excerpt">Secretaria Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar Supervisada y Afines de la República Mexicana y Directora del Centro de Convivencia Familiar Supervisada del Poder Judicial de la Ciudad de México. 
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                    <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver mensaje</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-es/onstage/g.php?MTID=e0470398d31e207f2425b38e256296784"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -242,9 +231,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Morelos</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/john-super-doe/index.html">Lic. Alejandra Nieves Ramírez.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Alejandra Nieves Ramírez.</a></div>
                                                                
                                                             </div>
                                                         </div>
@@ -253,11 +242,11 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/what-to-do-before-start-creating-product/index.html">Capsula Informativa</a></h3>
+                                                <h3 class="gdlr-session-item-title">Capsula Informativa</h3>
                                                 <div class="gdlr-session-item-excerpt">Zonas Marginales y Medios Digitales
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                    <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
 											</div>
                                             <div class="clear"></div>
@@ -269,11 +258,11 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:05 </div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/laurence-francis/index.html">Mtra. Itzel Nadchie liihi Bernal de Anda</a></div>
-                                                                <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Lic. Jorge Roberto Marín González</a></div>
-																 <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Lic. Patricia Ayala Fuentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Itzel Nadchie liihi Bernal de Anda</a></div>
+                                                                <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Jorge Roberto Marín González</a></div>
+																 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Patricia Ayala Fuentes</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -285,7 +274,7 @@
                                                 <div class="gdlr-session-item-excerpt">Revinculación Familiar ante el Covid-19: Retos y Oportunidades. 
                                                   <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                     <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -297,9 +286,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:10</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Chiapas</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Mtra. Sandra Victoria Cadenas Santiago </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Sandra Victoria Cadenas Santiago </a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -311,7 +300,7 @@
                                                 <div class="gdlr-session-item-excerpt">La Función del CECOFAM.
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                     <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -324,9 +313,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:20</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Morelos</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Lic. Martha Elvia Chávez Velázquez </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Martha Elba Chávez Velázquez </a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -338,7 +327,7 @@
                                                 <div class="gdlr-session-item-excerpt">Ansiedad Pandemia y Resiliencia
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver conferencia</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -351,9 +340,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:55</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Lic. Erika Trinidad Chávez </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Erika Trinidad Chávez </a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -365,7 +354,7 @@
                                                 <div class="gdlr-session-item-excerpt">Peritaje en Trabajo Social por Videollamada
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -378,11 +367,11 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:05</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Estado de México</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Consejero Mgdo. Dr. Raúl Aaron Romero Ortega.</a></div>
-																 <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Dra. Olga Lidia Sanabria Téllez </a></div>
-																 <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Lic. Omar Mauricio de la Luz</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Consejero Mgdo. Dr. Raúl Aaron Romero Ortega.</a></div>
+																 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Dra. Olga Lidia Sanabria Téllez </a></div>
+																 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Omar Mauricio de la Luz</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -394,7 +383,7 @@
                                                 <div class="gdlr-session-item-excerpt">La implementación de la Coordinación de Parentalidad en el Poder Judicial del Estado de México.
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -406,11 +395,7 @@
                                                 <div class="gdlr-session-info">
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:10</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Guerrero</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
-                                                            
-                                                        </div>
-                                                    </div>
+                                                    
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -419,7 +404,7 @@
                                                 <div class="gdlr-session-item-excerpt">Club Tecolín Guerrero
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -432,9 +417,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:20</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/angelina-holy/index.html">Lic. Aline Liliana Miranda Hernández</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Aline Liliana Miranda Hernández</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -446,7 +431,7 @@
                                                 <div class="gdlr-session-item-excerpt">CECOFAM
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -461,9 +446,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Nuevo León</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a href="../speaker/patrick-spencer/index.html">Lic. Anibal Vaquera Guerrero</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Anibal Vaquera Guerrero</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -473,10 +458,10 @@
                                             </div>
                                             <div class=gdlr-session-item-content>
                                                 <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>CECOFAM Nuevo León, Regreso a los Servicios Periciales
+                                                <div class=gdlr-session-item-excerpt>CECOFAM Nuevo León, Regreso a los Servicios Prescenciales
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -489,11 +474,11 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:05</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Estado de México</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a href=../speaker/patrick-spencer/index.html>Mtra. Norma Edith Acevedo Hernández</a></div>
-																<div class=session-speaker-list-item><a href=../speaker/patrick-spencer/index.html>Mtro. Alejandro Alva Reyes</a></div>
-																<div class=session-speaker-list-item><a href=../speaker/patrick-spencer/index.html>Mtra. Mariana Celeste Díaz Herrera</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Norma Edith Acevedo Hernández</a></div>
+																<div class=session-speaker-list-item  style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Mtro. Alejandro Alva Reyes</a></div>
+																<div class=session-speaker-list-item  style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Mtra. Mariana Celeste Díaz Herrera</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -506,7 +491,7 @@
                                                 <div class=gdlr-session-item-excerpt>Departamento de Apoyo y Acompañamiento Emocional. Una nueva forma de colaboración con los servidores judiciales.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -519,9 +504,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:10</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Sinaloa</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a href=../speaker/patrick-spencer/index.html>Lic. Nadia Miroslava López Álvarez</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Nadia Miroslava López Álvarez</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -534,7 +519,7 @@
                                                 <div class=gdlr-session-item-excerpt>Recorrido Virtual por el CECOFAM e información sobre los servicios que se brindan.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -547,9 +532,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:20</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Mtra. Susana López Bustamante</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Susana López Bustamante</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -562,7 +547,7 @@
                                                 <div class=gdlr-session-item-excerpt>La importancia del pensamiento positivo ante la adversidad.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver Conferencia</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver Conferencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -575,9 +560,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:55</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Mtra. Mariana Ortiz Castañares</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Mariana Ortiz Castañares</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -590,7 +575,7 @@
                                                 <div class=gdlr-session-item-excerpt>Coordinación de Intervención Especializada para Apoyo Judicial.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -603,9 +588,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:05</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Quer&eacute;taro</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Lic. Edgar Antonio Cabrera Meneses</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Edgar Antonio Cabrera Meneses</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -618,7 +603,7 @@
                                                 <div class=gdlr-session-item-excerpt>Desventajas y Ventajas de las Convivencias Virtuales
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver conferencia</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -628,12 +613,12 @@
                                             <div class=gdlr-session-item-divider></div>
                                             <div class=gdlr-session-item-content-info>
                                                 <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:40</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Morelos</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a >Lic. Patricia Esperanza Guerrero Suárez</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Patricia Esperanza Guerrero Suárez</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -646,7 +631,7 @@
                                                 <div class=gdlr-session-item-excerpt>Las Convivencias Virtuales,Efectos.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -656,16 +641,9 @@
                                             <div class=gdlr-session-item-divider></div>
                                             <div class=gdlr-session-item-content-info>
                                                 <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:25</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:50</div>
                                                     
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    
                                                     <div class=clear></div>
                                                 </div>
                                             </div>
@@ -674,7 +652,7 @@
                                                 <div class=gdlr-session-item-excerpt>Promo Video Llamadas
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -690,9 +668,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Lic. Aline Liliana Hernández Miranda</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aline Liliana Hernández Miranda</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -705,7 +683,7 @@
                                                 <div class=gdlr-session-item-excerpt>CECOFAM en la pandemia
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver Capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver Capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -719,11 +697,11 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:05</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Estado de M&eacute;xico</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Mtro. Sergio Vargas Gonzáles</a></div>
-																<div class=session-speaker-list-item><a>Lic. Olga Lidia Sanabria Tellez</a></div>
-																<div class=session-speaker-list-item><a>Lic. Cynthia Vergara Mendoza</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtro. Sergio Vargas González</a></div>
+																<div class=session-speaker-list-item style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Dra. Olga Lidia Sanabria Tellez</a></div>
+																<div class=session-speaker-list-item style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Cynthia Vergara Mendoza</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -736,7 +714,7 @@
                                                 <div class=gdlr-session-item-excerpt>La labor de la Dirección de Servicios Periciales y los Centros de Convivencia Familiar. Una nueva forma de trabajo en el Poder Judicial del Estado de México.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver Conversatorio</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver Conversatorio</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -750,9 +728,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:10</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Mtro. Sergio Aguilar Álvarez Bay</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtro. Sergio Aguilar Álvarez Bay</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -765,7 +743,7 @@
                                                 <div class=gdlr-session-item-excerpt>Las Funciones del área de Evaluación e Intervención Psicológica
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -779,9 +757,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:20</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Nuevo Le&oacute;n</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Lic. Emma Janeth García Ortiz</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Emma Janeth García Ortiz</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -794,7 +772,7 @@
                                                 <div class=gdlr-session-item-excerpt>Técnicas Terapéuticas para la Revinculación Familiar
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver conferencia</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -808,9 +786,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:55</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Guerrero</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Lic. Aristeo Arturo Rodríguez Martínez</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aristeo Arturo Rodríguez Martínez</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -823,7 +801,7 @@
                                                 <div class=gdlr-session-item-excerpt>Trabajo Social del área CECOFAM con sede en Acapulco Guerrero
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -836,9 +814,9 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:05</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner><i class="fa fa-user"></i>
+                                                        <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Lic. Mariana Herrerejón Gutiérrez</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Mariana Herrerejón Gutiérrez</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -851,7 +829,7 @@
                                                 <div class=gdlr-session-item-excerpt>Entrevista Diagnostica por Videollamada
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver capsula</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -866,7 +844,7 @@
                                                     <div class="session-info session-speaker">
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><a>Lic. Aline Liliana Miranda Hernández.</a></div>
+                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aline Liliana Miranda Hernández.</a></div>
                                                                 
                                                             </div>
                                                         </div>
@@ -879,7 +857,7 @@
                                                 <div class=gdlr-session-item-excerpt>CONCLUSIONES
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <button class="newsletter-submit gdlr-button with-border">Ver Ponencia</button>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver Ponencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -912,7 +890,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/ERIKA.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/erika.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">ERIKA TRINIDAD CH&Aacute;VEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-2>
@@ -1276,7 +1254,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
 												<li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/MORELOS/fotos/martha.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MARTHA ELVA CHÁVEZ VELÁZQUEZ</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. MARTHA ELBA CHÁVEZ VELÁZQUEZ</h3>
 														<div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><a>Morelos</a></div>
                                                         </div>
@@ -1316,7 +1294,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/NUEVO LEÓN/fotos/emma.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/NUEVO_LEON/fotos/emma.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Emma Janeth García Ortiz</h3>
 														<div class=session-speaker-list>
@@ -1334,7 +1312,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/NUEVO LEÓN/fotos/anibal.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/NUEVO_LEON/fotos/anibal.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Aníbal Vaquera Guerrero</h3>
 														<div class=session-speaker-list>
@@ -1352,7 +1330,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/QUERETARO /fotos/edgar.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/QUERETARO/fotos/edgar.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Edgar Antonio Cabrera Meneses</h3>
 														<div class=session-speaker-list>
