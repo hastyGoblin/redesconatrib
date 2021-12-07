@@ -39,6 +39,15 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::registerView(function(){
             return view('auth.register');
         });
+
+        Fortify::requestPasswordResetLinkView(function () {
+            return view('auth.passwords.email');
+        });
+
+        Fortify::resetPasswordView(function ($request) {
+            return view('auth.passwords.reset', ['request' => $request]);
+        });
+        
         $this->app->singleton(
             \Laravel\Fortify\Contracts\RegisterResponse::class,
             \App\Http\Responses\RegisterResponse::class,

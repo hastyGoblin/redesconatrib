@@ -37,7 +37,7 @@
                             <div class="form-button">
 							    <input class="form-control" type="password" name="password" placeholder="Contrase&ntilde;a" required>
                                 <button id="submit" type="submit" class="ibtn">Ingresar</button> 
-                                <button id="rpassword" type="button" onclick="location.href={{ route('password.request') }}';"  class="ibtn">Recuperar Constrase&ntilde;a</button> 
+                                <button id="rpassword" type="button" onclick="location.href='{{ route('password.request') }}';"  class="ibtn">Recuperar Constrase&ntilde;a</button> 
                             </div>
                         </form>
                          <div class="other-links">
