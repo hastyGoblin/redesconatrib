@@ -33,9 +33,19 @@
                         <br>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
-                            <input class="form-control" type="text" name="email" id="email" placeholder="Email" required>
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                             <div class="form-button">
 							    <input class="form-control" type="password" name="password" placeholder="Contrase&ntilde;a" required>
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                                 <button id="submit" type="submit" class="ibtn">Ingresar</button> 
                                 <button id="rpassword" type="button" onclick="location.href='{{ route('password.request') }}';"  class="ibtn">Recuperar Constrase&ntilde;a</button> 
                             </div>

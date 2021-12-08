@@ -36,14 +36,6 @@
 						<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Contraseña:  {!! nl2br($info['password']) !!} </p>                                                                                                   
 						<p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante la siguiente liga: http://redesconatrib.poderjudicialcdmx.gob.mx/login</p>
 						
-						<form>
-                           
-                        <div class="form-button">
-							 
-                               <button id="submit" type="submit" class="ibtn">Ingresar</button> 
-							
-                        </div>-->
-                        </form>
                    </div>
 					
 					
