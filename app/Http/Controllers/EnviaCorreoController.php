@@ -15,6 +15,7 @@ class EnviaCorreoController extends Controller
 {
     public function enviaCorreo(){
         $info_usuarios = User::where('activo','=', 0)->whereIn('id_red',[2,4])->get();
+        $usuario=$info_usuarios;
         $countUsuario=0;
         //echo $info_usuarios;
         /*foreach($info_usuarios as $usuario){*/
