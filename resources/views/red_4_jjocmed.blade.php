@@ -574,7 +574,7 @@
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/persona2.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/persona2.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Carmen Patricia Santisbón Morales </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-10>
