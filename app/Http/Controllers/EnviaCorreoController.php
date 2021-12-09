@@ -14,12 +14,13 @@ ini_set('memory_limit','20G');
 class EnviaCorreoController extends Controller
 {
     public function enviaCorreo(){
-        $info_usuarios = User::where('activo','=', 0)->whereIn('id_red',[2,4])->get();
+        $info_usuarios = User::where('activo','=', 0)->whereIn('id_red',[1,3,5,6])->get();
+        //$info_usuarios = User::where('email','=','agustin.martinez@tsjcdmx.gob.mx')->get();
         //$usuario=$info_usuarios;
         //$countUsuario=0;
-        echo $info_usuarios;
+        echo count($info_usuarios);
         foreach($info_usuarios as $usuario){
-            //while ($countUsuario <= 90) {
+            //while ($countUsuario <= 10) {
                 # code...
             
             $red = cat_redesconatrib::where('id','=', $usuario->id_red)->get();

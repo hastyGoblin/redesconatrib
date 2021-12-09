@@ -29,7 +29,7 @@ class HomeController extends Controller
 
             case 1:
                 $mensaje= "Red 1";
-                return view('red_cecofam');
+                return view('red_1_cecofam');
                 break;
 
             case 2:
@@ -38,12 +38,32 @@ class HomeController extends Controller
                 break;
 
             case 3:
-                $mensaje= "Red 1";
-                return view('red_cecofam');
+                $mensaje= "Red 3";
+                return view('red_3_ej');
                 break;
 
             case 4:
                 $mensaje= "Red 4";
+                return view('red_4_jjocmed');
+                break;
+
+            case 5:
+                $mensaje= "Red 5";
+                return view('red_5_masc');
+                break;
+
+            case 6:
+                $mensaje= "Red 6";
+                return view('red_6_cjpn');
+                break;
+
+            case 7:
+                $mensaje= "Red 7";
+                return view('red_4_jjocmed');
+                break;
+
+            case 8:
+                $mensaje= "Red 8";
                 return view('red_4_jjocmed');
                 break;
 
