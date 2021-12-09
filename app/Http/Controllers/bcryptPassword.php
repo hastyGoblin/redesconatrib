@@ -8,7 +8,7 @@ use App\Models\User;
 class bcryptPassword extends Controller
 {
     public function updatePassword(){
-        $listaUsuarios = User::where('email', '=', 'agustin.martinez@tsjcdmx.gob.mx')->get();
+        $listaUsuarios = User::whereNull('password')->get();
         echo $listaUsuarios;
 
         foreach($listaUsuarios as $usuario){
