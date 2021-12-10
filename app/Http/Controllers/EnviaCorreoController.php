@@ -14,7 +14,7 @@ ini_set('memory_limit','20G');
 class EnviaCorreoController extends Controller
 {
     public function enviaCorreo(){
-        $info_usuarios = User::where('activo','=', 0)->whereIn('id_red',[1,3,5,6,4,2])->get();
+        $info_usuarios = User::where('activo','=', 0)->whereIn('id_red',[7,8,1,3,5,6,4,2])->get();
         //$info_usuarios = User::where('email','=','agustin.martinez@tsjcdmx.gob.mx')->get();
         //$usuario=$info_usuarios;
         //$countUsuario=0;
