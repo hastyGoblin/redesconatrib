@@ -416,7 +416,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 20:00 hrs.</div>
                                                    <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -427,50 +427,8 @@
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=efa6712d3bc89d2c53273d354a97e58a6"><button class="newsletter-submit gdlr-button with-border">Ver mesa 1</button></a>
-                                                </div>
-                                            
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <!-- hora 2 -->
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:00 a 19:00 hrs.</div>
-                                                   <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Mesas de Discusión</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Análisis de los proyectos del Código Nacional de Procedimientos Civiles y Familiares.
-
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e1e11ee608af584316fd03d597c323342"><button class="newsletter-submit gdlr-button with-border">Ver mesa 2</button></a>
-                                                    
-                                                </div>
-                                            
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <!-- hora 3 -->
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>19:00 a 20:00 hrs.</div>
-                                                   <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Mesas de Discusión</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Análisis de los proyectos del Código Nacional de Procedimientos Civiles y Familiares.
-
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e355779632bc005ad17acf7c4f429257d"><button class="newsletter-submit gdlr-button with-border">Ver mesa 3</button></a>
+													<a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e1e11ee608af584316fd03d597c323342"><button class="newsletter-submit gdlr-button with-border">Ver mesa 2</button></a>
+													<a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e355779632bc005ad17acf7c4f429257d"><button class="newsletter-submit gdlr-button with-border">Ver mesa 3</button></a>
                                                 </div>
                                             
                                             </div>
