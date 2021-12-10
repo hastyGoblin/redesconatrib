@@ -1209,7 +1209,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/chiapas/fotos/sandra.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CHIAPAS/fotos/sandra.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">SANDRA VICTORIA CADENAS SANTIAGO</h3>
 														<div class=session-speaker-list>
