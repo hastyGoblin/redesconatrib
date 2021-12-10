@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="rede_1_cecofam/red/rede_1_cecofam/red/images/logo_red_1.png" alt=""> </a>
+                        <a href="index.html"> <img src="rede_1_cecofam/red/images/logo_red_1.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -181,7 +181,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -194,10 +194,10 @@
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Mensaje de Inauguración</h3>
-                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y los seis vicepresidentes de la Comisión Nacional de Tribunales Superiores de Justicia (CONATRIB).
+                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e3234bf106a058800cbab2ef5d6025ff7"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                    <a href="https://youtu.be/q7U2avizVEI">Ver mensaje</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>

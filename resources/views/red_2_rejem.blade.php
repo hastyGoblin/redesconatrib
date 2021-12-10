@@ -174,7 +174,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:30 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -192,7 +192,7 @@
                                                 <div class="gdlr-session-item-excerpt">
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e9e030603fb4e0b2a40eb32baad73b11a"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                    <a href="https://youtu.be/q7U2avizVEI">Ver mensaje</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>

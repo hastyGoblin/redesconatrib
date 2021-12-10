@@ -170,7 +170,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -188,7 +188,7 @@
                                                 <div class="gdlr-session-item-excerpt">
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ea08c35f3070a9dc23eb50f4f536347e4"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                    <a href="https://youtu.be/q7U2avizVEI">Ver mensaje</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -228,8 +228,8 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>LIC. JES&Uacute;S CONTRERAS MART&Iacute;NEZ</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Director General de Normatividad y Seguimiento a Entidades Federativas, Secretar&iacute;a del Trabajo y Previsi&oacute;n Social.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MTRO. ESTEBAN MARTÍNEZ MEJÍA</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Titular de la Unidad de Enlace para la Reforma al Sistema de Justicia Laboral, Secretaría del Trabajo y Previsión Social.</a></div>
 
                                                                 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Mtra. Mónica Rocío Farfán García.</a></div>
                                                             </div>
@@ -257,8 +257,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>DR. OSCAR JAIMES BELLO</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Director General de Estad&iacute;sticas de Gobierno, Seguridad P&uacute;blica y Justicia del Instituto Nacional de Estadística y Geografía.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MTRO. ADRIAN FRANCO BARRIOS</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Vicepresidente de la Junta de Gobierno del Instituto Nacional de Estadística y Geografía.</a></div>
 
                                                             </div>
                                                         </div>
@@ -284,9 +284,8 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>LIC. SERGIO RICARDO L&Oacute;PEZ RAMOS</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Juez del Tribunal Laboral del
-																	Primer Distrito Judicial del Poder Judicial del Estado de Durango.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>LIC. RAMÓN GERARDO GUZMÁN BENAVENTE</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado Presidente del Tribunal Superior de Justicia del Poder Judicial del Estado de Durango.</a></div>
 
                                                             </div>
                                                         </div>
@@ -319,8 +318,8 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>DRA. JOSEFINA ROM&Aacute;N VERGARA</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada del Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MTRA. BLANCA LILIA IBARRA CADENA</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada Presidenta del Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.</a></div>
 
                                                             </div>
                                                         </div>
@@ -404,8 +403,8 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MTRA. ADRIANA CRUZ ANAYA</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Directora de Informaci&oacute;n y estad&iacute;stica del Poder Judicial del Estado de México.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>DR. RICARDO ALFREDO SODI CUELLAR</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado Presidente del Poder Judicial del Estado de México.</a></div>
 
                                                             </div>
                                                         </div>
@@ -415,7 +414,7 @@
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Ponencia Magistral</h3>
-                                                <div class="gdlr-session-item-excerpt">Seguimiento de la Implementación del Marco Conceptual Homologado de la Estadística con Perspectiva de Género y Derechos Humanos de la Materia Penal del Sistema Acusatorio del Fuero Común.
+                                                <div class="gdlr-session-item-excerpt">Seguimiento de laImplementación del Marco Conceptual Homologadode la Estadística con Perspectiva de Género y Derechos Humanos de la Materia Penal del Sistema Acusatorio del Fuero Común.
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ea08c35f3070a9dc23eb50f4f536347e4"><button class="newsletter-submit gdlr-button with-border">Ver panel</button></a>

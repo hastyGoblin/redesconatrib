@@ -173,7 +173,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>16:45 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -187,10 +187,10 @@
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title"><a>Inauguración</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y los seis vicepresidentes de la Comisión Nacional de Tribunales Superiores de Justicia (CONATRIB).
+                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec2c062d2f94c928c78a49a539f57caad"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                    <a href="https://youtu.be/q7U2avizVEI"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>

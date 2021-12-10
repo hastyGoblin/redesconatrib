@@ -41,9 +41,9 @@
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                 <!--<li class="menu-item">
+                                 <li class="menu-item">
                                     <a href="#historia">Objetivo</a>
-                                </li>-->
+                                </li>
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -59,9 +59,9 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                 <!--<li class="menu-item">
+                                <li class="menu-item">
                                     <a href="#historia">Objetivo</a>
-                                </li>-->
+                                </li>
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -112,12 +112,12 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-                    <!--<section id="historia">
+                    <<section id="historia">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Historia de la red</h3>
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Objetivo de la red</h3>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@
                                             <div class="gdlr-ux gdlr-testimonial-ux">
                                                 <div class="testimonial-item">
                                                     <div class="testimonial-content gdlr-skin-content">
-                                                        <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo.</p>
+                                                        <p>La constante comunicación entre los Titulares de los Centros de Mecanismos Alternativos en sede Judicial de cada Entidad Federativa para intercambiar información, experiencias, disposiciones aplicables y propuestas que puedan ser de utilidad para la implementación de los Mecanismos Alternativos.</p>
                                                     </div>
                                                     <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
                                                     </div>
@@ -143,7 +143,7 @@
                             </div>
                         </div>
                         <div class="clear"></div>
-                    </section>-->
+                    </section>
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -192,10 +192,10 @@
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Mensaje de Inauguración</h3>
-                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y los seis vicepresidentes de la Comisión Nacional de Tribunales Superiores de Justicia (CONATRIB).
+                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e307174283ab161b1813ff3274b40aff1"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                    <a href="https://youtu.be/q7U2avizVEI"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
