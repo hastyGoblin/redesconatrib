@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="rede_6_cjpn/red/css/style-responsive.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_6_cjpn/red/css/style-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_6_cjpn/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/css/master-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
@@ -304,7 +304,7 @@
                                                 <div class="gdlr-session-item-excerpt">Comentarios sobre la suplencia de la deficiencia de la queja en asuntos que afecten a niñas, niños y adolescentes
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e56e5df3b6305f15055d84ecf306a5856"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://youtu.be/j0GSS2S9kp8" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -331,7 +331,7 @@
                                                 <div class="gdlr-session-item-excerpt">Las redes judiciales en la cooperación procesal internacional e interestatal: hacia el nuevo Código Nacional de Procedimientos Civiles y Familiares.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e56e5df3b6305f15055d84ecf306a5856"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://youtu.be/HgEimZIM1VI" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -358,7 +358,7 @@
                                                 <div class="gdlr-session-item-excerpt">La Restitución Internacional de Menores frente a la perspectiva de género.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e56e5df3b6305f15055d84ecf306a5856"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://youtu.be/5RJ9XmT1ew4" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -390,7 +390,7 @@
                                                 <div class="gdlr-session-item-excerpt">La Teoría del Caso en el Procedimiento de Restitución Internacional de Menores.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec1ec03dad0584a07955c3080981a7d60"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec1ec03dad0584a07955c3080981a7d60" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -430,7 +430,7 @@
                                                 <div class="gdlr-session-item-excerpt">La Mediación en casos de Sustracción Internacional de Menores.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec1ec03dad0584a07955c3080981a7d60"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec1ec03dad0584a07955c3080981a7d60" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -457,7 +457,7 @@
                                                 <div class="gdlr-session-item-excerpt">La autonomía progresiva de las niñas y niños en los procedimientos de Restitución Internacional.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec1ec03dad0584a07955c3080981a7d60"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec1ec03dad0584a07955c3080981a7d60" target="_blank"><button class="newsletter-submit gdlr-button with-border" target="_blank">Ver conferencia</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -507,7 +507,7 @@
                                                 <div class="gdlr-session-item-excerpt">Mesa de debate con los Jueces de la Red, sobre un caso práctico de Restitución Internacional de Menores.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a"><button class="newsletter-submit gdlr-button with-border">Ver mesa de debate</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a" target="_blank"><button class="newsletter-submit gdlr-button with-border" target="_blank">Ver mesa de debate</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -526,7 +526,7 @@
                                                 <h3 class="gdlr-session-item-title"><a>Lectura de conclusiones.</a></h3>
                                                
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a"><button class="newsletter-submit gdlr-button with-border">Ver lectura</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a" target="_blank"><button class="newsletter-submit gdlr-button with-border" target="_blank">Ver lectura</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -554,7 +554,7 @@
                                                 <div class="gdlr-session-item-excerpt">Clausura formal de la Décima Segunda Reunión de la Red Mexicana de Cooperación Judicial para la Protección de la Niñez.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a"><button class="newsletter-submit gdlr-button with-border">Ver mesa de debate</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a" target="_blank"><button class="newsletter-submit gdlr-button with-border" >Ver mesa de debate</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>

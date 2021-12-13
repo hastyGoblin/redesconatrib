@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="rede_1_cecofam/red/rede_1_cecofam/red/images/logo_red_1.png" alt=""> </a>
+                        <a href="index.html"> <img src="rede_1_cecofam/red/images/logo_red_1.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -197,7 +197,7 @@
                                                 <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/q7U2avizVEI" target="_blank">Ver mensaje</button></a>
+                                                    <a href="https://youtu.be/q7U2avizVEI">Ver mensaje</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -212,7 +212,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>9:30</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>9:00</div>
                                                     
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
@@ -229,7 +229,7 @@
                                                 <div class="gdlr-session-item-excerpt">Secretaria Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar Supervisada y Afines de la República Mexicana y Directora del Centro de Convivencia Familiar Supervisada del Poder Judicial de la Ciudad de México. 
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -257,7 +257,7 @@
                                                 <div class="gdlr-session-item-excerpt">Zonas Marginales y Medios Digitales
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
 											</div>
                                             <div class="clear"></div>
@@ -285,7 +285,7 @@
                                                 <div class="gdlr-session-item-excerpt">Revinculación Familiar ante el Covid-19: Retos y Oportunidades. 
                                                   <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
+                                                     <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -311,7 +311,7 @@
                                                 <div class="gdlr-session-item-excerpt">La Función del CECOFAM.
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                     <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -338,7 +338,7 @@
                                                 <div class="gdlr-session-item-excerpt">Ansiedad Pandemia y Resiliencia
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -365,7 +365,7 @@
                                                 <div class="gdlr-session-item-excerpt">Peritaje en Trabajo Social por Videollamada
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -394,7 +394,7 @@
                                                 <div class="gdlr-session-item-excerpt">La implementación de la Coordinación de Parentalidad en el Poder Judicial del Estado de México.
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -415,7 +415,7 @@
                                                 <div class="gdlr-session-item-excerpt">Club Tecolín Guerrero
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -442,7 +442,7 @@
                                                 <div class="gdlr-session-item-excerpt">CECOFAM
                                                      <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e15807ec9fcf5a4ab8a3b99c7e7c2c973"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -472,7 +472,7 @@
                                                 <div class=gdlr-session-item-excerpt>CECOFAM Nuevo León, Regreso a los Servicios Prescenciales
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -502,7 +502,7 @@
                                                 <div class=gdlr-session-item-excerpt>Departamento de Apoyo y Acompañamiento Emocional. Una nueva forma de colaboración con los servidores judiciales.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -530,7 +530,7 @@
                                                 <div class=gdlr-session-item-excerpt>Recorrido Virtual por el CECOFAM e información sobre los servicios que se brindan.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -558,7 +558,7 @@
                                                 <div class=gdlr-session-item-excerpt>La importancia del pensamiento positivo ante la adversidad.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Conferencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver Conferencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -586,7 +586,7 @@
                                                 <div class=gdlr-session-item-excerpt>Coordinación de Intervención Especializada para Apoyo Judicial.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -614,7 +614,7 @@
                                                 <div class=gdlr-session-item-excerpt>Desventajas y Ventajas de las Convivencias Virtuales
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -642,7 +642,7 @@
                                                 <div class=gdlr-session-item-excerpt>Las Convivencias Virtuales,Efectos.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -663,7 +663,7 @@
                                                 <div class=gdlr-session-item-excerpt>Promo Video Llamadas
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -694,7 +694,7 @@
                                                 <div class=gdlr-session-item-excerpt>CECOFAM en la pandemia
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver Capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -725,7 +725,7 @@
                                                 <div class=gdlr-session-item-excerpt>La labor de la Dirección de Servicios Periciales y los Centros de Convivencia Familiar. Una nueva forma de trabajo en el Poder Judicial del Estado de México.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Conversatorio</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver Conversatorio</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -754,7 +754,7 @@
                                                 <div class=gdlr-session-item-excerpt>Las Funciones del área de Evaluación e Intervención Psicológica
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -783,7 +783,7 @@
                                                 <div class=gdlr-session-item-excerpt>Técnicas Terapéuticas para la Revinculación Familiar
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -812,7 +812,7 @@
                                                 <div class=gdlr-session-item-excerpt>Trabajo Social del área CECOFAM con sede en Acapulco Guerrero
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -840,7 +840,7 @@
                                                 <div class=gdlr-session-item-excerpt>Entrevista Diagnostica por Videollamada
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -868,7 +868,7 @@
                                                 <div class=gdlr-session-item-excerpt>CONCLUSIONES
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Ponencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e535535423f4612f8df5d6606a706f825"><button class="newsletter-submit gdlr-button with-border">Ver Ponencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -1209,7 +1209,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/chiapas/fotos/sandra.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CHIAPAS/fotos/sandra.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">SANDRA VICTORIA CADENAS SANTIAGO</h3>
 														<div class=session-speaker-list>

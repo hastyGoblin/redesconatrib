@@ -192,7 +192,7 @@
                                                 <h3 class="gdlr-session-item-title"><a>Mensaje de Inauguración</a></h3>
                                                 
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/q7U2avizVEI" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                    <a href="https://youtu.be/q7U2avizVEI"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -223,7 +223,7 @@
                                                 <div class="gdlr-session-item-excerpt">Trauma y apego de los y las jóvenes que cometen delitos.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=KOGcXvbE1Yo" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver ponencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e7e0f2dae19dd500655e44738ffe1bc18"><button class="newsletter-submit gdlr-button with-border">Ver ponencia</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -255,7 +255,7 @@
                                                 <div class="gdlr-session-item-excerpt">Buenas prácticas en materia de ejecución.
 													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e7e0f2dae19dd500655e44738ffe1bc18" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver ponencia</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e7e0f2dae19dd500655e44738ffe1bc18"><button class="newsletter-submit gdlr-button with-border">Ver ponencia</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
@@ -284,7 +284,7 @@
                                                 <h3 class="gdlr-session-item-title"><a>CLAUSURA</a></h3>
                                                 
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e7e0f2dae19dd500655e44738ffe1bc18" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver CLAUSURA</button></a>
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e7e0f2dae19dd500655e44738ffe1bc18"><button class="newsletter-submit gdlr-button with-border">Ver CLAUSURA</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
