@@ -502,7 +502,7 @@
                                                 <div class=gdlr-session-item-excerpt>Departamento de Apoyo y Acompañamiento Emocional. Una nueva forma de colaboración con los servidores judiciales.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
+                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -1209,7 +1209,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CHIAPAS/fotos/sandra.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/chiapas/fotos/sandra.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">SANDRA VICTORIA CADENAS SANTIAGO</h3>
 														<div class=session-speaker-list>
