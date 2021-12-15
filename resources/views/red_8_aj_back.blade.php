@@ -329,14 +329,9 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Gisela González Flores</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora de Archivos del Poder Judicial del Estado de México.</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Luis Eduardo Pérez Merchat</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinador de Archivos del Estado de Puebla.</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Ma. Del Refugio Vizcaya</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora General de Archivos del Estado de Hidalgo.</a></div>
-															   <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderador: Dr. Raúl Carrillo del Muro</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Representante de la Red Nacional de Escuelas Judiciales.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Encargados de los programas de capacitación interna de cuatro Estados.</a></div>
+
+                                                                <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderador: Pendiente</a></div>
 													          </div>
 															
                                                         </div>
@@ -367,11 +362,11 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Josefina Román Vergara</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Josefina Román Vergara.</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada del INAI</a></div>
 													          </div>
 															
@@ -427,8 +422,8 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Marco Emiliano Anchondo Paredes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado de la Octava Sala Civil de Tribunal Superior de Justicia.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magda. Miriam Victoria Hernández Acosta</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Presidenta del Tribunal Superior de Justicia del Estado de Chihuahua.</a></div>
 													          </div>
 															
                                                         </div>

@@ -502,7 +502,7 @@
                                                 <div class=gdlr-session-item-excerpt>Departamento de Apoyo y Acompañamiento Emocional. Una nueva forma de colaboración con los servidores judiciales.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
+                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -530,7 +530,7 @@
                                                 <div class=gdlr-session-item-excerpt>Recorrido Virtual por el CECOFAM e información sobre los servicios que se brindan.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -558,7 +558,7 @@
                                                 <div class=gdlr-session-item-excerpt>La importancia del pensamiento positivo ante la adversidad.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Conferencia</button></a>
+                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Conferencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -586,7 +586,7 @@
                                                 <div class=gdlr-session-item-excerpt>Coordinación de Intervención Especializada para Apoyo Judicial.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -614,7 +614,7 @@
                                                 <div class=gdlr-session-item-excerpt>Desventajas y Ventajas de las Convivencias Virtuales
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -642,7 +642,7 @@
                                                 <div class=gdlr-session-item-excerpt>Las Convivencias Virtuales,Efectos.
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
@@ -663,7 +663,7 @@
                                                 <div class=gdlr-session-item-excerpt>Promo Video Llamadas
                                                     <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
 												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ee307d3b51229f4fde074e87003c26a39" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
                                                 
                                             </div>
