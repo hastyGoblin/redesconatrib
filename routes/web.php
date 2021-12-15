@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EnviaCorreoController;
+use App\Http\Controllers\generaConstancia;
 use App\Http\Controllers\bcryptPassword;
 
 /*
@@ -26,4 +27,5 @@ Route::get('/valida', [prueba::class, 'validaCorreo'])->name('valida');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/enviaCorreo', [EnviaCorreoController::class, 'enviaCorreo'])->name('enviaCorreo');
+Route::post('/descargaConstancia', [generaConstancia::class, 'descargaConstancia'])->name('descargaConstancia');
 Route::get('/actualizaPassword', [bcryptPassword::class, 'updatePassword'])->name('actualizaPassword');

@@ -68,6 +68,19 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
+                                @if (Auth::user()->email == 'agustin.martinez@tsjcdmx.gob.mx')
+                                <li class="menu-item menu-item-has-children">
+                                    <a class="dropdown-item" href="{{ route('descargaConstancia') }}"  target="_blank"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('constancia-form').submit();">
+                                        {{ __('Constancia') }}
+                                    </a>
+
+                                    <form id="constancia-form" action="{{ route('descargaConstancia') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
+                                @endif
                                 <li class="menu-item menu-item-has-children">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
