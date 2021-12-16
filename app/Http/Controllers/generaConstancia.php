@@ -61,7 +61,7 @@ class generaConstancia extends Controller
         //$this->fpdf->SetFont('helvetica','',10);
         $this->fpdf->SetFont('Arial','B',24);
         $this->fpdf->SetXY(130,93);
-        $this->fpdf->Cell(40,22,'C. '.utf8_decode(Auth::user()->name),0,1,'C');
+        $this->fpdf->Cell(40,22,utf8_decode(Auth::user()->name),0,1,'C');
         //$this->fpdf->Text(10, 10, Auth::user()->nombre); 
         //$this->fpdf->AddPage("A4");  
          
