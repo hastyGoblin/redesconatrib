@@ -68,7 +68,7 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                @if (Auth::user()->email == 'agustin.martinez@tsjcdmx.gob.mx')
+                                @if (Auth::user()->constancia == 1)
                                 <li class="menu-item menu-item-has-children">
                                     <a class="dropdown-item" href="{{ route('descargaConstancia') }}"  target="_blank"
                                        onclick="event.preventDefault();

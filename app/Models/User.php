@@ -23,6 +23,8 @@ class User extends Authenticatable
         'password',
         'password_plano',
         'id_red',
+        'cargo',
+        'constancia',
     ];
 
     /**
