@@ -57,6 +57,8 @@ class EnviaCorreoController extends Controller
                     'red' => $red[0]->red,
                     ];
                 Mail::to($usuario->email)->send(new CorreoConstancia($info));
+                 User::where('id','=', $usuario->id)
+                ->update(['constancia' => 0]);
             //}
             
         }
