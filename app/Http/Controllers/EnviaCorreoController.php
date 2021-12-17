@@ -43,7 +43,7 @@ class EnviaCorreoController extends Controller
     }
 
     public function enviaCorreoConstancia(){
-        $info_usuarios = User::where('constancia','=', 1)->get();
+        $info_usuarios = User::where('constancia','=', 1)->where('correoConstancia','=', 0)->get();
         //$info_usuarios = User::where('email','=','agustin.martinez@tsjcdmx.gob.mx')->get();
         //$usuario=$info_usuarios;
         //$countUsuario=0;
@@ -58,7 +58,7 @@ class EnviaCorreoController extends Controller
                     ];
                 Mail::to($usuario->email)->send(new CorreoConstancia($info));
                  User::where('id','=', $usuario->id)
-                ->update(['constancia' => 0]);
+                ->update(['correoConstancia' => 1]);
             //}
             
         }
