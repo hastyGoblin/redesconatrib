@@ -49,7 +49,7 @@ class EnviaCorreoController extends Controller
         //$countUsuario=0;
         echo count($info_usuarios);
         foreach($info_usuarios as $usuario){
-            if($usuario->email == "agustin.martinez@tsjcdmx.gob.mx" || $usuario->email == "erika.jimenez@tsjcdmx.gob.mx"){
+            //if($usuario->email == "agustin.martinez@tsjcdmx.gob.mx" || $usuario->email == "erika.jimenez@tsjcdmx.gob.mx"){
                 $red = cat_redesconatrib::where('id','=', $usuario->id_red)->get();
                 //echo $red;
                 $info = [
@@ -57,7 +57,7 @@ class EnviaCorreoController extends Controller
                     'red' => $red[0]->red,
                     ];
                 Mail::to($usuario->email)->send(new CorreoConstancia($info));
-            }
+            //}
             
         }
 
