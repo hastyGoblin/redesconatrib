@@ -17,6 +17,8 @@
                         <h3>Hola {!! nl2br($info['nombre']) !!}</h3>
                         <p style="text-align: justify">Nos complace informarte que tu constancia ya se encuentra disponible en el micrositio de la {!! nl2br($info['red']) !!} para su descarga.</p>
                         <p style="text-align: justify">A nombre de todo el comité organizador agradecemos tu valiosa participación.</p>
+
+                        <p style="text-align: justify">Liga de acceso: http://redesconatrib.poderjudicialcdmx.gob.mx/login</p>
 						                                                                                                  						
                    </div>					
 					
