@@ -32,7 +32,6 @@
 
                         <br>
                         <form method="POST" action="{{ route('password.email') }}">
-
                             @csrf
 
                             @if (session('status'))
@@ -40,7 +39,7 @@
                                     {{ session('status') }}
                                 </div>
                             @endif
-                            <input class="form-control" type="email" name="email" placeholder="Email" required>
+                            <input class="form-control" type="email" name="email" placeholder="EMAIL" required >
 
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">Enviar enlace para restablecer contrase&ntilde;a</button> 

@@ -19,13 +19,19 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'apellido_paterno',
+        'apellido_materno',
+        'dependencia',
+        'estado',
+        'cargo',
+        'numero_celular',
         'email',
         'password',
-        'password_plano',
+        //'password_plano',
         'id_red',
-        'cargo',
-        'constancia',
-        'correoConstancia',
+        //'cargo',
+        //'constancia',
+        //'correoConstancia',
     ];
 
     /**
@@ -47,7 +53,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function redes(){
+    /*public function redes(){
         return $this->belongsTo(cat_redesconatrib::class, 'id', 'id_red');
-    }
+    }*/
 }

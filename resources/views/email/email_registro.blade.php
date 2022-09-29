@@ -1,8 +1,4 @@
-
-
-
-
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,34 +15,43 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                         <!--<div class="website-logo">
+                         <div class="website-logo">
             			 <a href="https://conatrib.org.mx/congreso_redes/">
                				 <div>
                     			<img class="logo-size" src="images/Img_Conatrib.png" alt="">
              				 </div>
                          </a>
-        				</div>-->
-                        <h3>¡Felicidades! {!! nl2br($info['name']) !!}</h3>
-                        <p style="text-align: justify">Has completado tu registro a la {!! nl2br($info['red']) !!}, en el marco de la XLV Congreso Nacional CONATRIB 2022.</p>
+        				</div>
+                        <h3>¡Felicidades xxxxxxxxx!</h3>
+                        <p style="text-align: justify">Has completado tu registro a la xxxxxxxxxxxxxxx, en el marco de la XLV Congreso Nacional CONATRIB 2022.</p>
 						<p style="text-align: justify">Con tu registro, podrás ingresar al micrositio del evento, de igual manera accederás a las ponencias y material de apoyo que sea provisto por los organizadores.</p>
                         <p style="text-align: justify">Al finalizar el evento, las instrucciones para recibir tu constancia de participación serán evaluadas y emitidas en el micrositio.</p>
 						
-						<p style="text-align: justify">A continuación se comparte tu usuario de acceso que has generado con tu registro:</p>
-						<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Usuario: {!! nl2br($info['correo']) !!}</p>
-						<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Contraseña:  {!! nl2br($info['password']) !!} </p>                                                                                                   
-						<p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante la siguiente liga: http://redesconatrib.poderjudicialcdmx.gob.mx/login</p>
+						<p style="text-align: justify">Recuerda que los datos de acceso son los que introduciste en la plataforma</p>
+						<!--<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Usuario: xxxxxxxxxxxxxx@xxxxxxxx.xxx</p>
+						<p style="text-align:center; font-style:italic; text-decoration-color: bisque">Contraseña: xxxxxxxxxx</p> --> 
+
+						<p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante el siguiente link:</p>
 						
+						<form>
+                           
+                        <div class="form-button">
+							     <a href="http://127.0.0.1:8000/login">Ingresar</a>
+                               <!--<button id="submit" type="submit" class="ibtn">Ingresar</button>-->
+							
+                        </div>
+                        </form>
                    </div>
 					
 					
                     <div class="form-sent">
-                        <!--<div class="website-logo">
+                        <div class="website-logo">
                             <a href="https://conatrib.org.mx/congreso_redes/">
                                 <div class="logo">
                                     <img class="logo-size" src="images/Img_Conatrib.png" alt="">
                                 </div>
                             </a>
-                        </div>-->
+                        </div>
                        <div class="info-holder">
                  
                         </div>
@@ -61,6 +66,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
-
-*Este es un envió automático, favor de no responder a este correo.
-

@@ -15,13 +15,19 @@ class CreateNewUser implements CreatesNewUsers
     /**
      * Validate and create a newly registered user.
      *
-     * @param  array  $input
+     * @param  array  $input 
      * @return \App\Models\User
      */
     public function create(array $input)
     {
         Validator::make($input, [
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:50'],
+            'paterno' => ['required', 'string', 'max:50'],
+            'materno' => ['required', 'string', 'max:50'],
+            'dependencia' => ['required', 'string', 'max:120'],
+            'estado' => ['required', 'string', 'max:120'],
+            'cargo' => ['required', 'string', 'max:120'],
+            'celular' => ['required', 'string', 'max:15'],
             'email' => [
                 'required',
                 'string',
@@ -30,14 +36,20 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
-            'idRed' => ['required', 'string', 'max:255', 'min:1'],
+            'id_red' => ['required', 'string', 'max:255', 'min:1'],
         ])->validate();
 
         return User::create([
-            'name' => $input['name'],
+            'name' => strtoupper($input['name']),
+            'apellido_paterno' => strtoupper($input['paterno']),
+            'apellido_materno' => strtoupper($input['materno']),
+            'dependencia' => strtoupper ($input['dependencia']),
+            'estado' => strtoupper($input['estado']),
+            'cargo' => strtoupper($input['cargo']),
+            'numero_celular' => $input['celular'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
-            'id_red' => $input['idRed'],
+            'id_red' => $input['id_red'],
         ]);
     }
 }

@@ -21,7 +21,9 @@ class RegisterResponse extends FortifyRegisterResponse
 
     public function toResponse($request)
     {
+       // $name = Auth::user()->name;
         $email = Auth::user()->email;
+        $name = Auth::user()->name;
         $red_id =  Auth::user()->id_red;
         
         $this->guard->logout();
@@ -29,13 +31,16 @@ class RegisterResponse extends FortifyRegisterResponse
         //return parent::toResponse($request);
 
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
-        //return $red;
+
         
+
         $info = [
                 'texto' => 'Registro exitoso',
+                'name' => $name,
                 'correo' => $email,
                 'red' => $red[0]->red,
                 ];
+                //print_r($info);
         Mail::to($email)->send(new RegistroMail($info));
         return redirect()->route('register')->with('success','Registro exitoso se envió un correo a tu cuenta proporcionada');
     }

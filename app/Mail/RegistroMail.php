@@ -28,6 +28,8 @@ class RegistroMail extends Mailable
      */
     public function build()
     {
-        return $this->view('email.correoRedes')->with('info',$this->info);
+        return $this->view('email.email_registro_2')->with('info',$this->info);
+        //return $this->view('email.email_registro'); //->with('info',$this->info);
     }
 }
+ 

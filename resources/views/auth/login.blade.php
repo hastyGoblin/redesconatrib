@@ -12,7 +12,7 @@
 <body>
     <div class="form-body">
         <div class="website-logo">
-            <a href="index.html">
+            <a href="{{route('login')}}">
                 <div>
                     <img class="logo-size" src="images/Img_Conatrib.png" alt="">
                 </div>
@@ -47,6 +47,7 @@
                                     </span>
                                 @enderror
                                 <button id="submit" type="submit" class="ibtn">Ingresar</button> 
+                                <button id="rpassword" type="button" onclick="location.href='{{ route('register') }}';"  class="ibtn">Registrate</button><hr>
                                 <button id="rpassword" type="button" onclick="location.href='{{ route('password.request') }}';"  class="ibtn">Recuperar Constrase&ntilde;a</button> 
                             </div>
                         </form>
