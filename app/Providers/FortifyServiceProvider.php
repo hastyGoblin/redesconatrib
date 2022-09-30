@@ -13,6 +13,7 @@ use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Fortify;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use App\Models\cat_redesconatrib; 
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -29,7 +30,7 @@ class FortifyServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      *
-     * @return void
+     * @return void 
      */
     public function boot()
     {
@@ -37,7 +38,12 @@ class FortifyServiceProvider extends ServiceProvider
             return view('auth.login');
         });
         Fortify::registerView(function(){
-            return view('auth.register');
+            $redes = cat_redesconatrib::where('activo','=','1')->get();
+            return view('auth.register')->with('rconatrib', $redes);
+            //return $redes[1]->red;
+            //echo "$redes";
+            //return $redes;
+            //return view('auth.register');
         });
 
         Fortify::requestPasswordResetLinkView(function () {
@@ -51,6 +57,7 @@ class FortifyServiceProvider extends ServiceProvider
         $this->app->singleton(
             \Laravel\Fortify\Contracts\RegisterResponse::class,
             \App\Http\Responses\RegisterResponse::class,
+
         );
 
         $this->app->singleton(

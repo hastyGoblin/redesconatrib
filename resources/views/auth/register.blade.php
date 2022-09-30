@@ -68,20 +68,17 @@
                                         </span>
                                     @endif
                                     
-                                    <!--falta colocar el id-->
+                                 
+                                
                                 <label>Red en la que desea participar</label> <br>
-                                <select class="custom-select" required name="id_red">
+                                <select class="custom-select" required name="id_red" style="text-transform: uppercase;">
                                      <option value="">Selecciona una red</option>
-                                     <option value="1">Reunión de la Red de Cooperación para la Protección de la Niñez</option>
-                                     <option value="2">Reunión de la Red Nacional de Estadísticas Judiciales</option>
-                                     <option value="3">Reunión Nacional del Sistema Integral de Justicia Penal para Adolescentes</option>
-                                     <option value="4">Reunión de la Red de Escuelas Judiciales de los Estados de los Estados de la República Mexicana</option>
-                                     <option value="5">Reunión de la Red de Escuelas Judiciales de los Estados de los Estados de la República Mexicana</option>
-                                     <option value="6">Reunión de la Red de Centros de Convivencias Familiar Supervisada</option>
-                                     <option value="7">Reunión de la Red de Juezas y Jueces Orales, Civiles, Mercantiles y de Extinción de Dominio</option>
-                                     <option value="8">Reunión de la Red de Oficiales Mayores y Directores Generales de Administración de los Poderes Judiciales de la República Mexicana</option>
-                                     <option value="9">Red Nacional de Archivos Judiciales </option>
+                                    @foreach($rconatrib as $redes)
+                                     <option value="{{$redes->id}}">{{$redes->red}} </option>
+                                    @endforeach
                                 </select>
+                                
+
                                 </div>
                             </div>
                             <label>Nota: La contraseña deberá contener un minimo de 8 digitos</label>

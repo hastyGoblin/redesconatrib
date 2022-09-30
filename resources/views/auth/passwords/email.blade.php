@@ -12,7 +12,7 @@
 <body>
     <div class="form-body">
         <div class="website-logo">
-            <a href="index.html">
+            <a href="{{route('login')}}">
                 <div>
                     <img class="logo-size" src="images/Img_Conatrib.png" alt="">
                 </div>
