@@ -68,7 +68,7 @@
                                         </span>
                                     @endif
                                     
-                                 
+                    
                                 
                                 <label>Red en la que desea participar</label> <br>
                                 <select class="custom-select" required name="id_red" style="text-transform: uppercase;">

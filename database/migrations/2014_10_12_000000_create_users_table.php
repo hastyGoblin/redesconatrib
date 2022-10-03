@@ -30,7 +30,7 @@ class CreateUsersTable extends Migration
             $table->foreign('id_red')->references('id')->on('cat_redesconatrib');
             $table->rememberToken();
             $table->timestamps();
-            $table->boolean('activo')->default(1);
+            $table->boolean('activo')->default(0);
         });
     }
 
