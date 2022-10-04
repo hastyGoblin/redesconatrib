@@ -22,7 +22,7 @@ class User extends Authenticatable
         'apellido_paterno',
         'apellido_materno',
         'dependencia',
-        'estado',
+        'fk_estado',
         'cargo',
         'numero_celular',
         'email',

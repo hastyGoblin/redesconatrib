@@ -19,7 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('apellido_paterno', 50);
             $table->string('apellido_materno', 50);
             $table->string('dependencia', 120);
-            $table->string('estado', 120);
+
+            $table->tinyinteger('fk_estado');
+            $table->foreign('fk_estado')->references('id')->on('entidadfederativa');
+
+
             $table->string('cargo', 120);
             $table->char('numero_celular', 15);
             $table->string('email')->unique();
@@ -28,6 +32,7 @@ class CreateUsersTable extends Migration
             //$table->string('fk_redConatrib');
             $table->bigInteger('id_red')->unsigned();
             $table->foreign('id_red')->references('id')->on('cat_redesconatrib');
+
             $table->rememberToken();
             $table->timestamps();
             $table->boolean('activo')->default(0);
@@ -42,5 +47,6 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+
     }
 }

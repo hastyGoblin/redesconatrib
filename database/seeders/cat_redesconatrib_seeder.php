@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
 class cat_redesconatrib_seeder extends Seeder
-{
+{ 
     /**
      * Run the database seeds.
      *

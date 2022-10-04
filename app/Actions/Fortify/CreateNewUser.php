@@ -25,7 +25,7 @@ class CreateNewUser implements CreatesNewUsers
             'paterno' => ['required', 'string', 'max:50'],
             'materno' => ['required', 'string', 'max:50'],
             'dependencia' => ['required', 'string', 'max:120'],
-            'estado' => ['required', 'string', 'max:120'],
+            'fk_estado' => ['required', 'string', 'max:120'],
             'cargo' => ['required', 'string', 'max:120'],
             'celular' => ['required', 'string', 'max:15'],
             'email' => [
@@ -44,7 +44,7 @@ class CreateNewUser implements CreatesNewUsers
             'apellido_paterno' => strtoupper($input['paterno']),
             'apellido_materno' => strtoupper($input['materno']),
             'dependencia' => strtoupper ($input['dependencia']),
-            'estado' => strtoupper($input['estado']),
+            'fk_estado' => strtoupper($input['fk_estado']),
             'cargo' => strtoupper($input['cargo']),
             'numero_celular' => $input['celular'],
             'email' => $input['email'],

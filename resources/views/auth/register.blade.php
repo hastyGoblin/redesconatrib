@@ -41,7 +41,7 @@
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             {{ $message }}
                         </div>
-                        @endif
+                        @endif   
                         
                         <h3>Registrate</h3>
                        <!-- <p>Texto texto.</p> -->
@@ -56,8 +56,16 @@
                                     <input style="text-transform: uppercase;" id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre" maxlength="50">
                                     <input class="form-control" type="text" name="paterno" placeholder="Apellido paterno" style="text-transform: uppercase;" value="{{ old('paterno') }}" required maxlength="50">
                                     <input class="form-control" type="text" name="materno" placeholder="Apellido materno" style="text-transform: uppercase;" value="{{ old('materno') }}" required maxlength="50">
-                                    <input class="form-control" type="text" name="dependencia" placeholder="Dependencia" style="text-transform: uppercase;" value="{{ old('dependencia') }}" required maxlength="120">
-                                    <input class="form-control" type="text" name="estado" placeholder="Estado" style="text-transform: uppercase;" value="{{ old('estado') }}" required maxlength="120">
+                                    <input class="form-control" type="text" name="dependencia" placeholder="Dependencia" style="text-transform: uppercase;" value="{{ old('dependencia') }}" required maxlength="120"> 
+
+                                <select class="custom-select" required name="fk_estado" style="text-transform: uppercase;">
+                                     <option value="">Selecciona una entidad</option>
+                                    @foreach($entidades as $entidad)
+                                     <option value="{{$entidad->id}}">{{$entidad->entidad}} </option>
+                                    @endforeach
+                                </select> <br> <br>
+
+        
                                     <input class="form-control" type="text" name="cargo" placeholder="Cargo" style="text-transform: uppercase;" value="{{ old('cargo') }}" required maxlength="120">
                                     <input class="form-control" type="text" name="celular" placeholder="NÚMERO CELULAR" value="{{ old('celular') }}" required maxlength="15">
                                     <input class="form-control @error('email') is-invalid @enderror" id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="CORREO ELECTRÓNICO">
@@ -68,8 +76,6 @@
                                         </span>
                                     @endif
                                     
-                    
-                                
                                 <label>Red en la que desea participar</label> <br>
                                 <select class="custom-select" required name="id_red" style="text-transform: uppercase;">
                                      <option value="">Selecciona una red</option>

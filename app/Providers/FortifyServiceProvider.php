@@ -14,6 +14,7 @@ use Laravel\Fortify\Fortify;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use App\Models\cat_redesconatrib; 
+use App\Models\entidadfederativa; 
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -38,8 +39,11 @@ class FortifyServiceProvider extends ServiceProvider
             return view('auth.login');
         });
         Fortify::registerView(function(){
+            //$redes = cat_redesconatrib::where('activo','=','1')->get();
+            //return view('auth.register')->with('rconatrib', $redes);
             $redes = cat_redesconatrib::where('activo','=','1')->get();
-            return view('auth.register')->with('rconatrib', $redes);
+            $entidad = entidadfederativa::where('activo','=','1')->get();
+            return view('auth.register')->with('rconatrib', $redes)->with('entidades', $entidad);
             //return $redes[1]->red;
             //echo "$redes";
             //return $redes;
@@ -57,7 +61,6 @@ class FortifyServiceProvider extends ServiceProvider
         $this->app->singleton(
             \Laravel\Fortify\Contracts\RegisterResponse::class,
             \App\Http\Responses\RegisterResponse::class,
-
         );
 
         $this->app->singleton(

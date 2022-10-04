@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCatRedesconatribTable extends Migration
+class EntidadFederativa extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateCatRedesconatribTable extends Migration
      */
     public function up()
     {
-        Schema::create('cat_redesconatrib', function (Blueprint $table) {
-            $table->id();
-            $table->string('red');
-            $table->string('landingPage');
-            $table->integer('activo');
+       Schema::create('entidadfederativa', function (Blueprint $table) {
+            $table->tinyinteger('id')->primary();
+            $table->string('entidad', 25);
+            $table->boolean('activo')->default(1);
             $table->timestamps();
         });
     }
- 
     /**
      * Reverse the migrations.
      *
@@ -29,6 +27,6 @@ class CreateCatRedesconatribTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cat_redesconatrib');
+        Schema::dropIfExists('entidadfederativa');
     }
 }
