@@ -38,21 +38,17 @@ class LoginResponse extends FortifyLoginResponse
         //$rol = usersRoles::where('activo','=','1')->get();
          
           //where('fk_roles','=','')
-         $id = Auth::user()->id;
-         $red_id = Auth::user()->id_red;
+        $id = Auth::user()->id;
+        $red_id = Auth::user()->id_red;
 
-         $rol = usersroles::where('fk_usersroles','=', $id)->get();
+        $rol = usersroles::where('fk_usersroles','=', $id)->get();
 
-         $red = cat_redesconatrib::where('id','=', $red_id)->get();
+        $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
-         $info = [
-                'red' => $red[0]->red,
-                ];
+        $registradosRed = User::where('id_red','=', $red_id)->get();
 
-        //echo $rol;
-
-        if ($id == '1') {
-            return view('modulo_admin');
+        if ($rol[0]->fk_roles == '1') {
+            return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
         }else{
         return view('red_1_cecofam');
         }

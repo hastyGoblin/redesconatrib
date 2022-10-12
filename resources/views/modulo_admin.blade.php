@@ -10,16 +10,16 @@
 
     <title>Red &#8211; Cecofam</title>
 
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/superfish/css/superfish.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/dl-menu/component.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/master-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/plugins/dl-menu/component.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/css/style-responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/css/style-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="administrador/red/css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   
@@ -35,7 +35,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="images/logo_red_1.png" alt=""> </a>
+                        <a href="index.html"> <img src="administrador/red/images/logo_red_1.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -91,12 +91,12 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('administrador/red/upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                         <div class="gdlr-item-title-head">
-                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">RED DE LOS CENTROS DE CONVIVENCIA FAMILIAR</h4>
+                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">{{$red[0]->red}}</h4>
                                             <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">SUPERVISADA Y AFINES DE LA REPÚBLICA MEXICANA</h4>
                                             <div class="clear"></div>
                                         </div>
@@ -144,7 +144,7 @@
                                                 <div class=gdlr-session-thumbnail-wrapper>
                                                     <div class=gdlr-speaker-thumbnail>
                                                         <div class=gdlr-speaker-thumbnail-inner>
-                                                            <a href=../speaker/laurence-francis/index.html><img src=upload/aceptado.png alt width=150 height=150></a>
+                                                            <a href=../speaker/laurence-francis/index.html><img src=administrador/red/upload/aceptado.png alt width=150 height=150></a>
                                                         </div>
                                                         
                                                     </div>
@@ -155,19 +155,16 @@
                                                         <div class=gdlr-session-info>
                                                             <div class="session-info session-speaker">
                                                                 <div class=session-speaker-inner>
-                                                                    <div class=session-speaker-list>
 
-                                                                        
-                                                                        <div class=session-speaker-list-item>Mag. Manuel Arroyo Marquez</a> 
-																		<input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=Aceptar>
-																		 </div>
-                                                                         
-																	</div>
-																<div class=session-speaker-list>
-                                                                        <div class=session-speaker-list-item>Mag. Manuel Arroyo Marquez</a> 
-																		<input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=Aceptar>
-																		 </div>
-																</div>
+                                                                    @foreach($registradosRed as $registrados)
+                                                                        <div class=session-speaker-list>
+
+                                                                            <div class=session-speaker-list-item>{{$registrados->name}}</a> 
+    																		<input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=Aceptar>
+    																		 </div>
+                                                                             
+    																	</div>
+                                                                    @endforeach
                                                                 </div>
 															
                                                             </div>
@@ -183,137 +180,11 @@
 									   <div class=clear></div>
 									 </div>
 								
-									   <div class=gdlr-session-item-content-wrapper>
-											 <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content>
-                                                <div class=gdlr-session-thumbnail-wrapper>
-                                                    <div class=gdlr-speaker-thumbnail>
-                                                        <div class=gdlr-speaker-thumbnail-inner>
-                                                            <a href=../speaker/patrick-spencer/index.html><img src=upload/rechazado.png alt width=150 height=150></a>
-                                                        </div>
-                                                        <div class=gdlr-speaker-thumbnail-title>Hola</div>
-                                                    </div>
-                                                </div>
-                                                <div class=gdlr-session-item-content-inner>
-                                                    <h3 class="gdlr-session-item-title"><a href=../session/gathering-demand-information/index.html>Aceptadas</a></h3>
-                                                    <div class=gdlr-session-item-content-info>
-                                                        <div class=gdlr-session-info>
-                                                          <div class="session-info session-speaker">
-                                                                <div class=session-speaker-inner>
-                                                                    <div class=session-speaker-list>
-                                                                        <div class=session-speaker-list-item>Mag. Manuel Arroyo Marquez</a>
-																		<input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=rechazar>
-																		</div>
-                                                                   </div>
-                                                               </div>
-                                                            <div class=clear></div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                         </div>
-                                     </div>
-							
-							
-							    <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content>
-                                                <div class=gdlr-session-thumbnail-wrapper>
-                                                    <div class=gdlr-speaker-thumbnail>
-                                                        <div class=gdlr-speaker-thumbnail-inner>
-                                                            <a href=../speaker/laurence-francis/index.html><img src=upload/aceptado.png alt width=150 height=150></a>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-											 </div>
-                                            <div class=clear></div>
-                                        </div>
-                                       
+									   
                                             </div>
                                             <div class=clear></div>
                                         </div>
-                                  <div class=gdlr-session-item-content-wrapper>
-                                       
-                                      
-                                    </div>
-                                    <div class="gdlr-session-item-tab-content gdlr-tab-3 ">
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content>
-                                                <div class=gdlr-session-thumbnail-wrapper>
-                                                    <div class=gdlr-speaker-thumbnail>
-                                                        <div class=gdlr-speaker-thumbnail-inner>
-                                                            <a href=../speaker/patrick-spencer/index.html><img src=upload/rechazado.png  alt width=150 height=150></a>
-                                                        </div>
-                                                        <div class=gdlr-speaker-thumbnail-title>Nombre de participante</div>
-                                                    </div>
-                                                </div>
-                                                <div class=gdlr-session-item-content-inner>
-                                                    <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Rechazadas</a></h3>
-                                                    <div class=gdlr-session-item-content-info>
-                                                        <div class=gdlr-session-info>
-                                                           <div class="session-info session-speaker">
-                                                                
-                                                                    <div class=session-speaker-list>
-                                                                        <div class=session-speaker-list-item>Nombre de participante</a></div>
-                                                                        <div class=session-speaker-list-item><input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=rechazar>
-															            </div>
-                                                                    </div>
-															 </div>
-														 </div>
-                                                            <div class=clear></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-                                        
-                                        
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content>
-                                                <div class=gdlr-session-thumbnail-wrapper>
-                                                    <div class=gdlr-speaker-thumbnail>
-                                                        <div class=gdlr-speaker-thumbnail-inner>
-                                                           <img src=upload/aceptado.png alt width=150 height=150></a>
-                                                        </div>
-                                                   </div>
-                                                </div>
-                                                <div class=gdlr-session-item-content-inner>
-                                                    <h3 class="gdlr-session-item-title">Generar Contancias</a></h3>
-                                                    <div class=gdlr-session-item-content-info>
-                                                        <div class=gdlr-session-info>
-                                                           <div class="session-info session-speaker">
-                                                                 <div class=session-speaker-list>
-                                                                        <div class=session-speaker-list-item>Nombre de participante</a></div>
-                                                                        <div class=session-speaker-list-item><input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=rechazar>
-															            </div>
-                                                                    </div>
-															 </div>
-														 </div>
-                                                            <div class=clear></div>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <div class=clear></div>
-                            </div>
-                            <div class=clear></div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-		</div>
-		</div>
-            <div class=clear></div>
-        </div>
+                                  
 
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
@@ -327,19 +198,19 @@
     </div>
 
 
-    <script src='js/jquery/jquery.js'></script>
-    <script src='js/jquery/jquery-migrate.min.js'></script>
-    <script src='plugins/superfish/js/superfish.js'></script>
-    <script src='js/hoverIntent.min.js'></script>
-    <script src='plugins/dl-menu/modernizr.custom.js'></script>
-    <script src='plugins/dl-menu/jquery.dlmenu.js'></script>
-    <script src='plugins/jquery.easing.js'></script>
-    <script src='plugins/fancybox/jquery.fancybox.pack.js'></script>
-    <script src='plugins/fancybox/helpers/jquery.fancybox-media.js'></script>
-    <script src='plugins/fancybox/helpers/jquery.fancybox-thumbs.js'></script>
-    <script src='plugins/flexslider/jquery.flexslider.js'></script>
-    <script src='plugins/jquery.isotope.min.js'></script>
-    <script src='js/plugins.min.js'></script>
+    <script src='administrador/red/js/jquery/jquery.js'></script>
+    <script src='administrador/red/js/jquery/jquery-migrate.min.js'></script>
+    <script src='administrador/red/plugins/superfish/js/superfish.js'></script>
+    <script src='administrador/red/js/hoverIntent.min.js'></script>
+    <script src='administrador/red/plugins/dl-menu/modernizr.custom.js'></script>
+    <script src='administrador/red/plugins/dl-menu/jquery.dlmenu.js'></script>
+    <script src='administrador/red/plugins/jquery.easing.js'></script>
+    <script src='administrador/red/plugins/fancybox/jquery.fancybox.pack.js'></script>
+    <script src='administrador/red/plugins/fancybox/helpers/jquery.fancybox-media.js'></script>
+    <script src='administrador/red/plugins/fancybox/helpers/jquery.fancybox-thumbs.js'></script>
+    <script src='administrador/red/plugins/flexslider/jquery.flexslider.js'></script>
+    <script src='administrador/red/plugins/jquery.isotope.min.js'></script>
+    <script src='administrador/red/js/plugins.min.js'></script>
 
 
 
