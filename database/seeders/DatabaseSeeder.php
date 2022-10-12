@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(cat_redesconatrib_seeder::class);// \App\Models\User::factory(10)->create();
         $this->call(EntidadFederativa::class);
+        $this->call(EstatusUsers::class);
+        $this->call(usuarioCoordinadorSeeder::class);
+        $this->call(rol::class);
+        $this->call(usersRoles::class);
+        
         //$this->call(userSeeder::class);
     }
 }

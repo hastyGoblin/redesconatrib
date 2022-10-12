@@ -14,7 +14,8 @@ use Laravel\Fortify\Fortify;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use App\Models\cat_redesconatrib; 
-use App\Models\entidadfederativa; 
+use App\Models\entidadfederativa;
+use Illuminate\Support\Facades\DB;
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -26,7 +27,7 @@ class FortifyServiceProvider extends ServiceProvider
     public function register()
     {
         //
-    }
+    } 
 
     /**
      * Bootstrap any application services.
@@ -36,8 +37,16 @@ class FortifyServiceProvider extends ServiceProvider
     public function boot()
     {
         Fortify::loginView(function () {
-            return view('auth.login');
+            //$user = roles::where('ID', '=','1');
+            /*$user = DB::table('users')
+            ->select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','id_red')->get();*/
+            return view('auth.login');// ->with('usuario', $user); //>with('usuario', $user);
+            //return view('auth.modulo_admin');
+            //$usuario = rol::where('all')->get();
+            //return view('auth.login')->with('usuario', $usuarios);
+            
         });
+
         Fortify::registerView(function(){
             //$redes = cat_redesconatrib::where('activo','=','1')->get();
             //return view('auth.register')->with('rconatrib', $redes);
@@ -50,6 +59,7 @@ class FortifyServiceProvider extends ServiceProvider
             //return view('auth.register');
         });
 
+
         Fortify::requestPasswordResetLinkView(function () {
             return view('auth.passwords.email');
         });
@@ -58,6 +68,11 @@ class FortifyServiceProvider extends ServiceProvider
             return view('auth.passwords.reset', ['request' => $request]);
         });
         
+        $this->app->singleton(
+            \Laravel\Fortify\Contracts\LoginResponse::class,
+            \App\Http\Responses\LoginResponse::class,
+        );
+
         $this->app->singleton(
             \Laravel\Fortify\Contracts\RegisterResponse::class,
             \App\Http\Responses\RegisterResponse::class,

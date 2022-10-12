@@ -15,10 +15,10 @@ class RegistroMail extends Mailable
      * Create a new message instance.
      *
      * @return void
-     */
-    public function __construct($info)
+     */ 
+    public function __construct()//$info)
     {
-        $this->info =$info;//
+        //$this->info =$info;//
     }
 
     /**
@@ -29,7 +29,7 @@ class RegistroMail extends Mailable
     public function build()
     {
         //return $this->view('register')->with('info',$this->info);
-        return $this->view('email.email_registro_2')->with('info',$this->info);
-        //return $this->view('email.email_registro'); //->with('info',$this->info);
+        //return $this->view('email.email_registro_2')->with('info',$this->info);
+        return $this->view('email.email_registro'); //->with('info',$this->info);
     }
 }

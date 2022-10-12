@@ -16,69 +16,69 @@ class cat_redesconatrib_seeder extends Seeder
     public function run()
     {
         DB::table('cat_redesconatrib')->insert([
-        	'red'=>"Reunión de la Red de Cooperación para la Protección de la Niñez",
-        	'activo'=> 1,
+            'id'=>"1",
+            'red'=>"Reunión de la Red de Cooperación para la Protección de la Niñez",
+            'activo'=> 1,
             'landingPage'=> "HTML1",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
+            
         ]);//
 
         DB::table('cat_redesconatrib')->insert([
-        	'red'=>"Reunión de la Red Nacional de Estadísticas Judiciales",
-        	'activo'=> 1,
+            'id'=>"2",
+            'red'=>"Reunión de la Red Nacional de Estadísticas Judiciales",
+            'activo'=> 1,
             'landingPage'=> "HTML2",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
+            
+            
         ]);//
 
         DB::table('cat_redesconatrib')->insert([
-        	'red'=>"Reunión Nacional del Sistema Integral de Justicia Penal para Adolescentes",
-        	'activo'=> 1,
+            'id'=>"3",
+            'red'=>"Reunión Nacional del Sistema Integral de Justicia Penal para Adolescentes",
+            'activo'=> 1,
             'landingPage'=> "HTML3",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
+            
+            
         ]);//
         DB::table('cat_redesconatrib')->insert([
-        	'red'=>"Reunión de la Red de Escuelas Judiciales de los Estados de los Estados de la República Mexicana",
-        	'activo'=> 1,
+            'id'=>"4",
+            'red'=>"Reunión de la Red de Escuelas Judiciales de los Estados de los Estados de la República Mexicana",
+            'activo'=> 1,
             'landingPage'=> "HTML4",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
+            
+            
         ]);//
         DB::table('cat_redesconatrib')->insert([
-        	'red'=>"Reunión de la Red de Centros de Convivencias Familiar Supervisada",
-        	'activo'=> 1,
+            'id'=>"5",
+            'red'=>"Reunión de la Red de Centros de Convivencias Familiar Supervisada",
+            'activo'=> 1,
             'landingPage'=> "HTML5",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
+            
+            
         ]);//
         DB::table('cat_redesconatrib')->insert([
-        	'red'=>"Reunión de la Red de Juezas y Jueces Orales, Civiles, Mercantiles y de Extinción de Dominio",
-        	'activo'=> 1,
+            'id'=>"6",
+            'red'=>"Reunión de la Red de Juezas y Jueces Orales, Civiles, Mercantiles y de Extinción de Dominio",
+            'activo'=> 1,
             'landingPage'=> "HTML6",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
+            
+            
         ]);//
         DB::table('cat_redesconatrib')->insert([
-        	'red'=>"Reunión de la Red de Oficiales Mayores y Directores Generales de Administración de los Poderes Judiciales de la República Mexicana",
-        	'activo'=> 1,
+            'id'=>"7",
+            'red'=>"Reunión de la Red de Oficiales Mayores y Directores Generales de Administración de los Poderes Judiciales de la República Mexicana",
+            'activo'=> 1,
             'landingPage'=> "HTML7",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
+            
+            
         ]);//
         DB::table('cat_redesconatrib')->insert([
-        	'red'=>"Red Nacional de Archivos Judiciales",
-        	'activo'=> 1,
+            'id'=>"8",
+            'red'=>"Red Nacional de Archivos Judiciales",
+            'activo'=> 1,
             'landingPage'=> "HTML8",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
+            
+            
         ]);//
-        /*DB::table('cat_redesconatrib')->insert([
-        	'red'=>"RED NACIONAL DE OFICIALES MAYORES Y DIRECTORES GENERALES DE ADMINISTRACION DE LOS PODERES JUDICIALES DE LA REPUBLICA MEXICANA",
-        	'activo'=> 1,
-            'landingPage'=> "HTML9",
-        	'created_at'=>Carbon::now(),
-        	'updated_at'=>Carbon::now(),
-        ]);*/
     }
 }

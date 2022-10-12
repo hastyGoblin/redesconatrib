@@ -25,6 +25,8 @@ class HomeController extends Controller
     public function index()
     {
         $red = Auth::user()->id_red;
+        
+
         switch ($red) {
 
             case 1:
@@ -47,7 +49,7 @@ class HomeController extends Controller
                 return view('red_4_jjocmed');
                 break;
 
-            case 5:
+            case 5: 
                 $mensaje= "Red 5";
                 return view('red_5_masc');
                 break;
@@ -67,14 +69,13 @@ class HomeController extends Controller
                 return view('red_8_aj');
                 break;
 
-
-
             default:
 
             break;
 
         }
+        
 
-        //return view('home',compact('mensaje'));
+        //return view('auth.aceptar');
     }
 }

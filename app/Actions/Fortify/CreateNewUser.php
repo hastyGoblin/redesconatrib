@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
+use Illuminate\Support\Facades\DB;
+use App\Models\usersRoles;
+use Auth;
+
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -20,12 +24,14 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
+        
         Validator::make($input, [
             'name' => ['required', 'string', 'max:50'],
             'paterno' => ['required', 'string', 'max:50'],
             'materno' => ['required', 'string', 'max:50'],
             'dependencia' => ['required', 'string', 'max:120'],
             'fk_estado' => ['required', 'string', 'max:120'],
+            //'fk_estatus' => ['required', 'string', 'max:50'],
             'cargo' => ['required', 'string', 'max:120'],
             'celular' => ['required', 'string', 'max:15'],
             'email' => [
@@ -45,11 +51,16 @@ class CreateNewUser implements CreatesNewUsers
             'apellido_materno' => strtoupper($input['materno']),
             'dependencia' => strtoupper ($input['dependencia']),
             'fk_estado' => strtoupper($input['fk_estado']),
+            //'fk_estatus' => strtoupper($input['fk_estatus']),
             'cargo' => strtoupper($input['cargo']),
             'numero_celular' => $input['celular'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
             'id_red' => $input['id_red'],
         ]);
+
+
+        
+        
     }
 }

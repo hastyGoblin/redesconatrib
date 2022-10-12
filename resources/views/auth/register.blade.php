@@ -42,7 +42,7 @@
                             {{ $message }}
                         </div>
                         @endif   
-                        
+                         
                         <h3>Registrate</h3>
                        <!-- <p>Texto texto.</p> -->
                         <!--<div class="page-links">
@@ -64,7 +64,7 @@
                                      <option value="{{$entidad->id}}">{{$entidad->entidad}} </option>
                                     @endforeach
                                 </select> <br> <br>
-
+        
         
                                     <input class="form-control" type="text" name="cargo" placeholder="Cargo" style="text-transform: uppercase;" value="{{ old('cargo') }}" required maxlength="120">
                                     <input class="form-control" type="text" name="celular" placeholder="NÚMERO CELULAR" value="{{ old('celular') }}" required maxlength="15">
@@ -129,7 +129,9 @@
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">Registrar</button>
                             </div>
-                            
+
+                        
+
                         </form>
 
                        <div class="other-links">

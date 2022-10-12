@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 
 //Route::get('/login', [prueba::class, 'index']);
-Route::get('/valida', [prueba::class, 'validaCorreo'])->name('valida');
+//Route::get('/valida', [prueba::class, 'validaCorreo'])->name('valida');
 /*Auth::routes();*/
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -32,6 +32,7 @@ Route::get('/enviaCorreo', [EnviaCorreoController::class, 'enviaCorreo'])->name(
 Route::get('/enviaCorreoConstancia', [EnviaCorreoController::class, 'enviaCorreoConstancia'])->name('enviaCorreoConstancia');
 Route::post('/descargaConstancia', [generaConstancia::class, 'descargaConstancia'])->name('descargaConstancia');
 Route::get('/actualizaPassword', [bcryptPassword::class, 'updatePassword'])->name('actualizaPassword');
+//Route::get('/admin')
 
 /*Route::get('/registro', function(){
 

@@ -19,22 +19,24 @@ class CreateUsersTable extends Migration
             $table->string('apellido_paterno', 50);
             $table->string('apellido_materno', 50);
             $table->string('dependencia', 120);
-
-            $table->tinyinteger('fk_estado');
-            $table->foreign('fk_estado')->references('id')->on('entidadfederativa');
-
-
             $table->string('cargo', 120);
             $table->char('numero_celular', 15);
             $table->string('email')->unique();
+
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            //$table->string('fk_redConatrib');
-            $table->bigInteger('id_red')->unsigned();
-            $table->foreign('id_red')->references('id')->on('cat_redesconatrib');
-
             $table->rememberToken();
-            $table->timestamps();
+
+            $table->tinyinteger('fk_estado');
+            $table->foreign('fk_estado')->references('id')->on('entidadfederativa');
+            $table->tinyinteger('fk_estatus')->default(1);
+            $table->foreign('fk_estatus')->references('ID')->on('EstatusUsers');
+            $table->tinyinteger('id_red');
+            $table->foreign('id_red')->references('id')->on('cat_redesconatrib');
+            
+            //$table->timestamps();
+            $table->dateTime('created_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+            $table->dateTime('updated_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->boolean('activo')->default(0);
         });
     }

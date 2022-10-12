@@ -15,7 +15,7 @@ class userSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        /*DB::table('users')->insert([
             'name'=>"Agustín Martínez Martínez",
             'email'=> "agustin.martinez@tsjcdmx.gob.mx",
             'password'=> bcrypt('12345678'),
@@ -35,6 +35,6 @@ class userSeeder extends Seeder
             'activo'=> 1,
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now(),
-        ]);
+        ]);*/
     }
 }

@@ -23,12 +23,14 @@ class User extends Authenticatable
         'apellido_materno',
         'dependencia',
         'fk_estado',
-        'cargo',
+        //'fk_roles',
+        'fk_estatus',
+        'cargo', 
         'numero_celular',
         'email',
         'password',
-        //'password_plano',
         'id_red',
+        //'password_plano',
         //'cargo',
         //'constancia',
         //'correoConstancia',
@@ -53,7 +55,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    /*public function redes(){
+    public function redes(){
         return $this->belongsTo(cat_redesconatrib::class, 'id', 'id_red');
-    }*/
+    }
+    public function entidades(){
+        return $this->belongsTo(entidadfederativa::class, 'id', 'fk_estado');
+    }
+    public function estatuses(){
+        return $this->belongsTo(EstatusUsers::class, 'id', 'fk_estatus');
+    }
 }
