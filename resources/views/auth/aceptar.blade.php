@@ -17,7 +17,7 @@
                 <th>cargo</th>
                 <th>numero_celular</th>
                 <th>email</th>
-                <th>id_red</th>
+                <th>Elige</th>
             </tr>
         </thead>
         <tbody>
@@ -30,7 +30,6 @@
                 <td>{{ $usuarios->cargo }}</td>
                 <td>{{ $usuarios->numero_celular }}</td>
                 <td>{{ $usuarios->email }}</td>
-                <td>{{ $usuarios->id_red }}</td>
 
                 <td>
                     <a href="{{ url('show') }}">
@@ -42,7 +41,7 @@
             @endforeach
         </tbody>
     </table> <br>
-    <a href="{{ route('register') }}">
+    <a href="{{ route('logout') }}">
         <button>Cerrar sesión</button>
     </a>
 </body>

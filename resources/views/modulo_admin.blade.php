@@ -156,15 +156,33 @@
                                                             <div class="session-info session-speaker">
                                                                 <div class=session-speaker-inner>
 
-                                                                    @foreach($registradosRed as $registrados)
-                                                                        <div class=session-speaker-list>
+                                                                    <table>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Nombre</th>
+                                                                                <th>A.Paterno</th>
+                                                                                <th>A.Materno</th>
+                                                                                <th>Dependencia</th>
+                                                                                <th>Cargo</th>
+                                                                                <th>Correo</th>
+                                                                            </tr>
+                                                                        </thead>
 
-                                                                            <div class=session-speaker-list-item>{{$registrados->name}}</a> 
-    																		<input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=Aceptar>
-    																		 </div>
-                                                                             
-    																	</div>
-                                                                    @endforeach
+                                                                    </table>
+                                                                    <table>
+                                                                        @foreach($registradosRed as $registrados)
+                                                                            <tr>
+                                                                                        <td>{{ $registrados->name}}</td>
+                                                                                        <td>{{ $registrados->apellido_paterno }}</td>
+                                                                                        <td>{{ $registrados->apellido_materno }}</td> 
+                                                                                        <td>{{ $registrados->dependencia }}</td>
+                                                                                        <td>{{ $registrados->cargo }}</td>
+                                                                                        <td>{{ $registrados->email }}</td>
+                                                                            </tr>
+                                                                            @endforeach
+                                                                    </table>
+
+                                                                    
                                                                 </div>
 															
                                                             </div>
@@ -172,20 +190,20 @@
                                                         </div>
                                                     </div>
                                                 </div>
-											 </div>
-							             <div class=container>
-                                			 <div class="gdlr-subscribe-item gdlr-item"></div>
-                                    		 <div class=clear></div>
-                              		     </div>
-									   <div class=clear></div>
-									 </div>
-								
-									   
-                                            </div>
+											</div>
+    							            <div class=container>
+                                    			 <div class="gdlr-subscribe-item gdlr-item"></div>
+                                        		 <div class=clear></div>
+                                  		    </div>
+    									   <div class=clear></div>
+    						    </div>	 
+                            </div>
                                             <div class=clear></div>
-                                        </div>
-                                  
-
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">

@@ -33,14 +33,14 @@ class FortifyServiceProvider extends ServiceProvider
      * Bootstrap any application services.
      *
      * @return void 
-     */
+     */ 
     public function boot()
     {
         Fortify::loginView(function () {
             //$user = roles::where('ID', '=','1');
-            /*$user = DB::table('users')
-            ->select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','id_red')->get();*/
-            return view('auth.login');// ->with('usuario', $user); //>with('usuario', $user);
+            //User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email')->where('activo','=','0')->get();
+           // $rol = User::where('activo','=','')
+            return view('auth.login');//->with('usuario', $user);
             //return view('auth.modulo_admin');
             //$usuario = rol::where('all')->get();
             //return view('auth.login')->with('usuario', $usuarios);

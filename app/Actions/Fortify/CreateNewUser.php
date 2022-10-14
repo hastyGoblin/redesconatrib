@@ -45,7 +45,7 @@ class CreateNewUser implements CreatesNewUsers
             'id_red' => ['required', 'string', 'max:255', 'min:1'],
         ])->validate();
 
-        return User::create([
+        $create = User::create([
             'name' => strtoupper($input['name']),
             'apellido_paterno' => strtoupper($input['paterno']),
             'apellido_materno' => strtoupper($input['materno']),
@@ -57,7 +57,15 @@ class CreateNewUser implements CreatesNewUsers
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
             'id_red' => $input['id_red'],
+
         ]);
+
+        $rolesdecanela = UsersRoles::create([
+            'fk_usersroles'=>$create->id,
+            'fk_roles'=>2,
+        ]);
+
+        return $create;
 
 
         

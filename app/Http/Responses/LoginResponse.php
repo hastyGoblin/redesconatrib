@@ -45,12 +45,26 @@ class LoginResponse extends FortifyLoginResponse
 
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
-        $registradosRed = User::where('id_red','=', $red_id)->get();
+
+        // $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email')->where('activo','=','0')->where('id_red','=', $red_id)->get();
+
+        // $registradosRed = User::join('usersroles AS UR','UR.fk_usersroles','=','users.id')
+        // ->join('roles AS R', '')->get();
+
+        $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email')
+        ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
+        ->join('roles AS R','R.ID','=','UR.fk_roles')
+        ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
+        ->where('users.activo','=','0')
+        ->where('users.fk_estatus','=','1')
+        //->where('UR.fk_roles','=','2')
+        ->get();
 
         if ($rol[0]->fk_roles == '1') {
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
         }else{
-        return view('red_1_cecofam');
+            $rol[0]->fk_roles == '2';
+                return redirect()->route('home');
         }
 
 
@@ -59,31 +73,6 @@ class LoginResponse extends FortifyLoginResponse
         //$rol = user::select(['id','name'])->where('id','=','5')->get();
         //$rol = usersRoles::select(['id'])->where('fk_roles','=','1')->get();
         //$rol = usersRoles::select('id')->get();
-
-
-        //$rol = DB::usersRoles();
-
-        
-        //return redirect()->route('modulo_admin');
-        
-        /*if(auth()->users()->id = '1') {
-            return redirect()->route('modulo_admin');
-        } else {
-            return redirect()->to('auth.login');
-        }*/
-
-        /*if(auth()->usersRoles()->fk_roles = '1') {
-            return redirect()->route('modulo_admin');
-        } else {
-            return redirect()->to('auth.login');
-        }*/
-
-        
-        /*$rol = Auth::user()->ID;
-
-        $this->guard->logout();*/
-
-		//return redirect()->route('modulo_admin');
 
         //return redirect()->route('modulo_admin')->with('success','Eres el mejor francis');
       

@@ -15,14 +15,22 @@ class usersRoles extends Seeder
     public function run()
     {
         DB::table('usersRoles')->insert([
-            'id'=>1,
             'fk_usersroles'=>1,
             'fk_roles'=>1,
         ]);
 
         DB::table('usersRoles')->insert([
-            'id'=>2,
             'fk_usersroles'=>2,
+            'fk_roles'=>2,
+        ]);  
+
+        DB::table('usersRoles')->insert([
+            'fk_usersroles'=>3,
+            'fk_roles'=>2,
+        ]);  
+
+        DB::table('usersRoles')->insert([
+            'fk_usersroles'=>4,
             'fk_roles'=>2,
         ]);  
     }
