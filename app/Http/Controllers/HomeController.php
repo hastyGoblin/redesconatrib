@@ -45,7 +45,7 @@ class HomeController extends Controller
             ->get();
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
         }elseif ($rol[0]->fk_roles == '2') {
-            switch ($red) {
+            switch ($red_id) {
 
                 case 1:
                     $mensaje= "Red 1";
