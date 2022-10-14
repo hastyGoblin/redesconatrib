@@ -16,17 +16,32 @@ class usuarioCoordinadorSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name'=>"Coordinador",
+            'name'=>"Coordinador1",
             'apellido_paterno'=>"Pavon",
             'apellido_materno'=>"Rosales",
             'dependencia'=>"PDJCDMX",
             'fk_estado'=>1,
-            'fk_estatus'=>2, //se modifico por el campo bandera
-            'cargo'=>"Coordi",
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador1",
             'numero_celular'=>"7292870740",
-            'email'=>"Coordinador@prueba.com",
+            'email'=>"Coordinador1@prueba.com",
             'password'=>bcrypt('12345678'),
             'id_red'=>1,
+            'activo'=>1,
+        ]);
+
+        DB::table('users')->insert([
+            'name'=>"Coordinador2",
+            'apellido_paterno'=>"Perez",
+            'apellido_materno'=>"Morales",
+            'dependencia'=>"PDJCDMX",
+            'fk_estado'=>1,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador2",
+            'numero_celular'=>"7292870740",
+            'email'=>"Coordinador2@prueba.com",
+            'password'=>bcrypt('12345678'),
+            'id_red'=>2,
             'activo'=>1,
         ]);
 
@@ -57,7 +72,7 @@ class usuarioCoordinadorSeeder extends Seeder
             'email'=>"Usuario2@prueba.com",
             'password'=>bcrypt('12345678'),
             'id_red'=>1,
-            'activo'=>0,
+            'activo'=>1,
         ]);
 
         DB::table('users')->insert([

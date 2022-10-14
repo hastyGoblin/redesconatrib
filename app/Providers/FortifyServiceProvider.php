@@ -37,26 +37,13 @@ class FortifyServiceProvider extends ServiceProvider
     public function boot()
     {
         Fortify::loginView(function () {
-            //$user = roles::where('ID', '=','1');
-            //User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email')->where('activo','=','0')->get();
-           // $rol = User::where('activo','=','')
-            return view('auth.login');//->with('usuario', $user);
-            //return view('auth.modulo_admin');
-            //$usuario = rol::where('all')->get();
-            //return view('auth.login')->with('usuario', $usuarios);
-            
+            return view('auth.login');
         });
 
         Fortify::registerView(function(){
-            //$redes = cat_redesconatrib::where('activo','=','1')->get();
-            //return view('auth.register')->with('rconatrib', $redes);
             $redes = cat_redesconatrib::where('activo','=','1')->get();
             $entidad = entidadfederativa::where('activo','=','1')->get();
             return view('auth.register')->with('rconatrib', $redes)->with('entidades', $entidad);
-            //return $redes[1]->red;
-            //echo "$redes";
-            //return $redes;
-            //return view('auth.register');
         });
 
 

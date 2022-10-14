@@ -166,23 +166,28 @@
                                                                                 <th>Cargo</th>
                                                                                 <th>Correo</th>
                                                                             </tr>
+                                                                            
                                                                         </thead>
-
                                                                     </table>
-                                                                    <table>
-                                                                        @foreach($registradosRed as $registrados)
-                                                                            <tr>
+
+                                                                    @foreach($registradosRed as $registrados)
+                                                                        <div class=session-speaker-list>
+
+                                                                            <div class=session-speaker-list-item>
+                                                                                <tbody>
+                                                                                    <tr>
                                                                                         <td>{{ $registrados->name}}</td>
                                                                                         <td>{{ $registrados->apellido_paterno }}</td>
                                                                                         <td>{{ $registrados->apellido_materno }}</td> 
                                                                                         <td>{{ $registrados->dependencia }}</td>
                                                                                         <td>{{ $registrados->cargo }}</td>
                                                                                         <td>{{ $registrados->email }}</td>
-                                                                            </tr>
-                                                                            @endforeach
-                                                                    </table>
-
-                                                                    
+                                                                                    </tr> 
+                                                                                </tbody>
+    																		<input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=Aceptar>
+    																		 </div>  
+    																	</div>
+                                                                    @endforeach
                                                                 </div>
 															
                                                             </div>
