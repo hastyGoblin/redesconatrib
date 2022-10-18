@@ -213,12 +213,12 @@
                                                                             <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                                             <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                                             <th>Correo</th>
-                                                                            <th colspan="10">Acciones</th>
+                                                                            <!-- <th colspan="10">Acciones</th> -->
 
                                                                         </tr>
                                                                     </thead>
 
-                                                                @foreach($registradosRed as $registrados)
+                                                                @foreach($aceptado as $registrados)
                                                                 <div class=session-speaker-list>
                                                                     <div class=session-speaker-list-item>
                                                                     <tbody>
@@ -229,7 +229,7 @@
                                                                             <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                                             <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                                             <td colspan="5">
-                                                                                <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
+                                                                                <!-- <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
                                                                                 @csrf
                                                                                     <input type="hidden" name="id_user" value="{{ $registrados->id }}">
                                                                                     <input type="submit" name="Aceptar" value="Aceptar">
@@ -241,7 +241,7 @@
                                                                                 @csrf
                                                                                     <input type="hidden" name="id_user" value="{{ $registrados->id }}">
                                                                                     <input type="submit"  name="Rechazar" value="Rechazar">
-                                                                                </form>
+                                                                                </form> -->
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>

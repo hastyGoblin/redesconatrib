@@ -26,22 +26,13 @@ class LoginResponse extends FortifyLoginResponse
     {
 
         $id = Auth::user()->id;
-
         $red_id = Auth::user()->id_red;
-
         $rol = usersroles::where('fk_usersroles','=', $id)->get();
-
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
-
         $id = Auth::user('fk_estatus', '=', '1');
 
-        // $activo = Auth::user()->activo;
-        // $estatus = Auth::user()->fk_estatus;
-
-       
-
         if ($rol[0]->fk_roles == '1') {
-            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email','users.id',)
+            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
             ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
@@ -54,6 +45,5 @@ class LoginResponse extends FortifyLoginResponse
         }elseif ($rol[0]->fk_roles == '2') {
             return redirect()->route('home');
         }
-       
     }
 }

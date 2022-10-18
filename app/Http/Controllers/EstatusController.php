@@ -26,5 +26,4 @@ class EstatusController extends Controller
         $estatus = User::where('id', $user)->update(['fk_estatus' => '3']);
         return redirect()->route('home')->with('danger','Usuario rechazado');
     }
-    
 }

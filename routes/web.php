@@ -5,6 +5,7 @@ use App\Http\Controllers\EnviaCorreoController;
 use App\Http\Controllers\generaConstancia;
 use App\Http\Controllers\bcryptPassword;
 use App\Http\Controllers\EstatusController;
+use App\Http\Controllers\AceptadoRechazadoController;
 use App\Mail\RegistroMail;
 use Illuminate\Support\Facades\Mail;
 /*
@@ -35,3 +36,13 @@ Route::get('/actualizaPassword', [bcryptPassword::class, 'updatePassword'])->nam
 
 Route::post('/aceptarUsuario', [EstatusController::class, 'aceptarUsuario'])->name('aceptarUsuario');
 Route::post('/rechazarUsuario', [EstatusController::class, 'rechazarUsuario'])->name('rechazarUsuario');
+
+Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
+// Route::post('/solicitudesUsuario', [AceptadoRechazadoController::class, 'solicitudesUsuario'])->name('solicitudesUsuario');
+
+// Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
+
+
+// Route::post('/usuarioRechazado', [AceptadoRechazadoController::class, 'usuarioRechazado'])->name('usuarioRechazado');
+
+// Route::post('/unasConstancias', [AceptadoRechazadoController::class, 'unasConstancias'])->name('unasConstancias');
