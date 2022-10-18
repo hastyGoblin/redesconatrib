@@ -34,7 +34,7 @@ class HomeController extends Controller
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
         if ($rol[0]->fk_roles == '1') {
-            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email')
+            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email', 'users.id')
             ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')

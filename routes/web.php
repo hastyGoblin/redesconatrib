@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EnviaCorreoController;
 use App\Http\Controllers\generaConstancia;
 use App\Http\Controllers\bcryptPassword;
-
+use App\Http\Controllers\EstatusController;
 use App\Mail\RegistroMail;
 use Illuminate\Support\Facades\Mail;
 /*
@@ -32,14 +32,6 @@ Route::get('/enviaCorreo', [EnviaCorreoController::class, 'enviaCorreo'])->name(
 Route::get('/enviaCorreoConstancia', [EnviaCorreoController::class, 'enviaCorreoConstancia'])->name('enviaCorreoConstancia');
 Route::post('/descargaConstancia', [generaConstancia::class, 'descargaConstancia'])->name('descargaConstancia');
 Route::get('/actualizaPassword', [bcryptPassword::class, 'updatePassword'])->name('actualizaPassword');
-//Route::get('/admin')
 
-/*Route::get('/registro', function(){
-
-$correo = new RegistroMail;
-
-Mail::to('jairo.p4195@gmail.com')->send($correo);
-
-return 'Mensaje enviado';
-
-});*/
+Route::post('/aceptarUsuario', [EstatusController::class, 'aceptarUsuario'])->name('aceptarUsuario');
+Route::post('/rechazarUsuario', [EstatusController::class, 'rechazarUsuario'])->name('rechazarUsuario');

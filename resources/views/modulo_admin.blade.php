@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="administrador/red/css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme2.css">
+
   
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
@@ -156,39 +161,65 @@
                                                             <div class="session-info session-speaker">
                                                                 <div class=session-speaker-inner>
 
-                                                                    <table>
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Nombre</th>
-                                                                                <th>A.Paterno</th>
-                                                                                <th>A.Materno</th>
-                                                                                <th>Dependencia</th>
-                                                                                <th>Cargo</th>
-                                                                                <th>Correo</th>
-                                                                            </tr>
-                                                                            
-                                                                        </thead>
-                                                                    </table>
+                                                                    @if($message = Session::get('success'))
+                                                                    <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
+                                                                    <font color="#155724">El usuario ha sido aceptado xd</font>
+                                                                    </div>
+                                                                    @endif
 
-                                                                    @foreach($registradosRed as $registrados)
-                                                                        <div class=session-speaker-list>
+                                                                    @if($message = Session::get('danger'))
+                                                                    <div style="background-color: #d4edda;" class="alert alert-danger" >
+                                                                    <font color="#721c24">{{ $message }}</font>
+                                                                    </div>
+                                                                    @endif
 
-                                                                            <div class=session-speaker-list-item>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td>{{ $registrados->name}}</td>
-                                                                                        <td>{{ $registrados->apellido_paterno }}</td>
-                                                                                        <td>{{ $registrados->apellido_materno }}</td> 
-                                                                                        <td>{{ $registrados->dependencia }}</td>
-                                                                                        <td>{{ $registrados->cargo }}</td>
-                                                                                        <td>{{ $registrados->email }}</td>
-                                                                                    </tr> 
-                                                                                </tbody>
-    																		<input style="margin: 30px 20px;" class="newsletter-submit gdlr-button with-border" type=submit value=Aceptar>
-    																		 </div>  
-    																	</div>
-                                                                    @endforeach
+                                                                    <table border="1px">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                            <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                            <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                            <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                            <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                                            <th>Correo</th>
+                                                                            <th>Acciones</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                @foreach($registradosRed as $registrados)
+                                                                <div class=session-speaker-list>
+                                                                    <div class=session-speaker-list-item>
+                                                                    <tbody style="">
+                                                                    <tr>   
+                                                                        <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                                        <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+                                                                        <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+                                                                        <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+                                                                        <td>{{ $registrados->cargo }}&nbsp;&nbsp;</td> 
+                                                                        <td>{{ $registrados->email }}</td>
+
+                                                                        <td class="td-actions">
+                                                                            <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
+                                                                                @csrf
+                                                                                <input type="text" name="id_user" value="{{ $registrados->id }}">
+                                                                                <input type="submit" margin="20px" name="Aceptar" value="Aceptar">
+                                                                            </form>
+
+                                                                            <form method="post" name="Rechazar" action="{{ url('rechazarUsuario') }}">
+                                                                                @csrf
+                                                                                <input type="text" name="id_user" value="{{ $registrados->id }}">
+                                                                                <input type="submit" margin="20px" name="Rechazar" value="Rechazar">
+                                                                            </form>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                     
+                                                                </div>  
+                                                            </div>  
+                                                            @endforeach
+                                                                 </table>
                                                                 </div>
+
 															
                                                             </div>
                                                             <div class=clear></div>
