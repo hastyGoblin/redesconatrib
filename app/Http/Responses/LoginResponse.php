@@ -35,7 +35,7 @@ class LoginResponse extends FortifyLoginResponse
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
             ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
-            ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
+            ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
             ->where('users.activo','=','0')
             ->where('users.fk_estatus','=','1')
