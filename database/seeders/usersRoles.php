@@ -14,27 +14,27 @@ class usersRoles extends Seeder
      */
     public function run()
     {
-        DB::table('usersRoles')->insert([
+        DB::table('UsersRoles')->insert([
             'fk_usersroles'=>1,
             'fk_roles'=>1,
         ]);
 
-        DB::table('usersRoles')->insert([
+        DB::table('UsersRoles')->insert([
             'fk_usersroles'=>2,
             'fk_roles'=>1,
         ]);
 
-        DB::table('usersRoles')->insert([
+        DB::table('UsersRoles')->insert([
             'fk_usersroles'=>3,
             'fk_roles'=>2,
         ]);  
 
-        DB::table('usersRoles')->insert([
+        DB::table('UsersRoles')->insert([
             'fk_usersroles'=>4,
             'fk_roles'=>2,
         ]);  
 
-        DB::table('usersRoles')->insert([
+        DB::table('UsersRoles')->insert([
             'fk_usersroles'=>5,
             'fk_roles'=>2,
         ]);  
