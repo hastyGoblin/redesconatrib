@@ -38,6 +38,7 @@ Route::post('/aceptarUsuario', [EstatusController::class, 'aceptarUsuario'])->na
 Route::post('/rechazarUsuario', [EstatusController::class, 'rechazarUsuario'])->name('rechazarUsuario');
 
 Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
+Route::post('/usuarioRechazado', [AceptadoRechazadoController::class, 'usuarioRechazado'])->name('usuarioRechazado');
 // Route::post('/solicitudesUsuario', [AceptadoRechazadoController::class, 'solicitudesUsuario'])->name('solicitudesUsuario');
 
 // Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');

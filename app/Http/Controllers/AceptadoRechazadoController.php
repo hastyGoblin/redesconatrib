@@ -15,7 +15,6 @@ class AceptadoRechazadoController extends Controller
     public function usuarioAceptado(Request $request){
 
         $id = Auth::User()->id;
-        $user = $request['id_user'];
         $red_id = Auth::user()->id_red;
         $rol = usersroles::where('fk_usersroles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
@@ -38,7 +37,22 @@ class AceptadoRechazadoController extends Controller
         
 
     public function usuarioRechazado(Request $request){
-
+        $id = Auth::User()->id;
+        $red_id = Auth::user()->id_red;
+        $rol = usersroles::where('fk_usersroles','=', $id)->get();
+        $red = cat_redesconatrib::where('id','=', $red_id)->get();
         
+
+        $rechazados = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
+            ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
+            ->join('roles AS R','R.ID','=','UR.fk_roles')
+            ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
+            ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
+            ->where('UR.fk_roles','=','2')
+            ->where('users.activo','=','0')
+            ->where('users.fk_estatus','=','3')
+            ->where('users.id_red','=',$red_id)
+            ->get();
+            return view('Rechazados')->with('rol',$rol)->with('red',$red)->with('rechazados',$rechazados);        
     }
 }

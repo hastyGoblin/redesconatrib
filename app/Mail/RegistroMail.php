@@ -16,9 +16,9 @@ class RegistroMail extends Mailable
      *
      * @return void
      */ 
-    public function __construct()//$info)
+    public function __construct($info)
     {
-        //$this->info =$info;//
+        $this->info =$info;//
     }
 
     /**
@@ -28,8 +28,26 @@ class RegistroMail extends Mailable
      */
     public function build()
     {
+
+        switch ($this->info['tipo_correo']) {
+            case 1://CORREO REGISTRO
+                return $this->view('email.email_registro_2')->with('info',$this->info);
+                break;
+
+            case 2://CORREO ACEPTADO
+                return $this->view('email.email_registro')->with('info',$this->info);
+                break;
+
+            case 3://CORREO RECHAZADO
+                return $this->view('email.email_rechazo')->with('info',$this->info);
+                break;
+            
+            default:
+                // code...
+                break;
+        }
         //return $this->view('register')->with('info',$this->info);
         //return $this->view('email.email_registro_2')->with('info',$this->info);
-        return $this->view('email.email_registro'); //->with('info',$this->info);
+        
     }
 }

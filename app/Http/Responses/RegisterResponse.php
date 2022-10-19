@@ -31,13 +31,14 @@ class RegisterResponse extends FortifyRegisterResponse
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
         $info = [
+                'tipo_correo' => 1,
                 'texto' => 'Registro exitoso',
                 'name' => $name,
                 'correo' => $email,
                 'red' => $red[0]->red,
                 ];
                 
-        //Mail::to($email)->send(new RegistroMail($info));
+        Mail::to($email)->send(new RegistroMail($info));
         
         return redirect()->route('register')->with('success','Registro exitoso se envió un correo a tu cuenta proporcionada');
     }

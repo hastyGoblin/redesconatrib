@@ -8,7 +8,7 @@
     <meta charset=UTF-8>
     <meta name=viewport content="initial-scale=1.0">
 
-    <title>Red &#8211; Cecofam</title>
+    <title>Coordinador Red</title>
 
     <link rel="stylesheet" href="administrador/red/css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="administrador/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
@@ -40,7 +40,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="administrador/red/images/logo_red_1.png" alt=""> </a>
+                        <a href="/home"> <img src="administrador/red/images/logo_red_1.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -69,6 +69,9 @@
                                     <a href="#historia">Historia</a>
                                 </li>-->
 
+                                <li class="menu-item">
+                                    <a class="dropdown-item">{{Auth::user()->name}}</a>
+                                </li>
                                 
                                 <li class="menu-item">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
@@ -105,7 +108,6 @@
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                         <div class="gdlr-item-title-head">
                                             <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">{{$red[0]->red}}</h4>
-                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">SUPERVISADA Y AFINES DE LA REPÚBLICA MEXICANA</h4>
                                             <div class="clear"></div>
                                         </div>
                                     </div>
@@ -127,38 +129,42 @@
                             <div class=session-item-wrapper style="margin-bottom: 75px;">
                                 <div class="gdlr-session-item gdlr-small-session-item gdlr-item">
                                     <div class=gdlr-session-item-head>
-                                        <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-1>
+                                        <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-1 onclick="event.preventDefault();
+                                                                     document.getElementById('solicitud-form').submit();">
                                             <div class=gdlr-session-head-day>
-
-                                                Solicitudes 
+                                                Solicitudes
+                                                
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
                                         </div>
 
-
-
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-2>
-                                            <div class=gdlr-session-head-day>
-                                                
-                                                               <a class="dropdown-item" href="{{ route('usuarioAceptado') }}"
-                                                       onclick="event.preventDefault();
-                                                                     document.getElementById('usuario-form').submit();" style="text-decoration: none;">
-                                                        Aceptadas
-                                                    </a>
-
-                                                    <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="POST" class="d-none">
-                                                        @csrf
-                                                    </form> 
-                                                
+                                        <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-2 onclick="event.preventDefault();
+                                                                     document.getElementById('usuario-form').submit();">
+                                            <div class=gdlr-session-head-day>                                            
+                                                Aceptadas
                                             </div>
+
+                                            <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
+                                                @csrf
+                                            </form>  
+
+                                            <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>                                                 
+                                            
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
 
 
-
-
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3>
-                                            <div class=gdlr-session-head-day>Rechazadas </div>
+                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
+                                                                 document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
+                                            <div class=gdlr-session-head-day>
+                                                Rechazadas
+                                                
+                                                <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
+                                                    @csrf
+                                                </form> 
+                                            </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
 
@@ -171,93 +177,49 @@
                                         </div>
                                         <div class=clear></div>
                                     </div> 
-                                    <div class="gdlr-session-item-tab-content gdlr-tab-1 gdlr-active">
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content>
-                                                <table border="1px">
-                                                    <div class=gdlr-session-thumbnail-wrapper>
-                                                        <div class=gdlr-speaker-thumbnail>
-                                                            <div class=gdlr-speaker-thumbnail-inner>
-                                                                <a href=../speaker/laurence-francis/index.html><img src=administrador/red/upload/aceptado.png alt width=150 height=150></a>
-                                                                
-                                                            </div>
-                                                            <h3 class="gdlr-session-item-title"><a href="">Acepatdas</a></h3>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                </table>
-                                                    <div class=gdlr-session-item-content-inner>
-                                                        <div class=gdlr-session-item-content-info>
-                                                            <div class=gdlr-session-info>
-                                                                <div class="session-info session-speaker">
-                                                                    <div class=session-speaker-inner>
 
-                                                                    @if($message = Session::get('success'))
-                                                                    <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
-                                                                    <font color="#155724">El usuario ha sido aceptado xd</font>
-                                                                    </div>
-                                                                    @endif
+                                    @if($message = Session::get('success'))
+                                        <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
+                                            <font color="#155724">El usuario ha sido aceptado xd</font>
+                                        </div>
+                                    @endif
 
-                                                                    @if($message = Session::get('danger'))
-                                                                    <div style="background-color: #d4edda;" class="alert alert-danger" >
-                                                                    <font color="#721c24">{{ $message }}</font>
-                                                                    </div>
-                                                                    @endif
+                                    @if($message = Session::get('danger'))
+                                        <div style="background-color: #d4edda;" class="alert alert-danger" >
+                                            <font color="#721c24">{{ $message }}</font>
+                                        </div>
+                                    @endif
 
-                                                                    <table border="1px">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                                            <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                                            <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                                            <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                                            <th>Correo</th>
-                                                                            <!-- <th colspan="10">Acciones</th> -->
+                                    <br>
 
-                                                                        </tr>
-                                                                    </thead>
+                                    <table border="1px">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                <th>Correo</th>
+                                                <!-- <th colspan="10">Acciones</th> -->
 
-                                                                @foreach($aceptado as $registrados)
-                                                                <div class=session-speaker-list>
-                                                                    <div class=session-speaker-list-item>
-                                                                    <tbody>
-                                                                        <tr>   
-                                                                            <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                                            <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
-                                                                            <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
-                                                                            <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                                            <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                                            <td colspan="5">
-                                                                                <!-- <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
-                                                                                @csrf
-                                                                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                                                    <input type="submit" name="Aceptar" value="Aceptar">
-                                                                                </form>
-                                                                            </td>
+                                            </tr>
+                                        </thead>
 
-                                                                            <td colspan="5">
-                                                                                <form method="post" name="Rechazar" action="{{ url('rechazarUsuario') }}">
-                                                                                @csrf
-                                                                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                                                    <input type="submit"  name="Rechazar" value="Rechazar">
-                                                                                </form> -->
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </div>
-                                                                @endforeach  
-                                                            </div>     
-                                                </table>
-                                                                </div>
+                                        @foreach($aceptado as $registrados)
+                                            <tbody>
+                                                <tr>   
+                                                    <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                    <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+                                                    <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+                                                    <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                    <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
 
-                                                            
-                                                            </div>
-                                                            <div class=clear></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                </tr>
+                                            </tbody>
+                                        @endforeach  
+ 
+                                    </table>
+
                                             <div class=container>
                                                  <div class="gdlr-subscribe-item gdlr-item"></div>
                                                  <div class=clear></div>
