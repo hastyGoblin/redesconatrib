@@ -38,7 +38,7 @@ class HomeController extends Controller
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email', 'users.id')
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
-            ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
+            ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
             //->where('users.created_at','<=','2022-10-21')
             ->where('users.activo','=','0')
