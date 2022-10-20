@@ -10,16 +10,16 @@
 
     <title>Red &#8211; Cecofam</title>
 
-    <link rel="stylesheet" href="rede_1_cecofam/red/css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/dl-menu/component.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/css/style-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/css/style-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_1_cecofam/red/css/master-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/superfish/css/superfish.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/dl-menu/component.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
@@ -34,16 +34,16 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="rede_1_cecofam/red/rede_1_cecofam/red/images/logo_red_1.png" alt=""> </a>
+                        <a href="index.html"> <img src="images/logo_red_1.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <!--<li class="menu-item">
-                                    <a href="#historia">Objetivo</a>
-                                </li>-->
+                                <li class="menu-item">
+                                    <a href="#historia">Historia</a>
+                                </li>
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -59,41 +59,32 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <!--<li class="menu-item">
+                                <li class="menu-item">
                                     <a href="#historia">Historia</a>
-                                </li>-->
+                                </li>
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                @if (Auth::user()->constancia == 1)
-                                <li class="menu-item menu-item-has-children">
-                                    <a class="dropdown-item" href="{{ route('descargaConstancia') }}"  target="_blank"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('constancia-form').submit();">
-                                        {{ __('Constancia') }}
-                                    </a>
 
-                                    <form id="constancia-form" action="{{ route('descargaConstancia') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
-                                @endif
-                                <li class="menu-item menu-item-has-children">
+                                <li class="menu-item"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
-                                    </form>
+                                    </form> 
                                 </li>
                             </ul>
                         </nav>
+
+                        
+
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
@@ -106,13 +97,13 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_1_cecofam/red/upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                         <div class="gdlr-item-title-head">
                                             <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">RED DE LOS CENTROS DE CONVIVENCIA FAMILIAR</h4>
-                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">SUPERVISADA Y AFINES DE LA REPÚBLICA MEXICANA</h4>
+                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">SUPERVISADA Y AFINES DE LA REP&Uacute;BLICA MEXICANA</h4>
                                             <div class="clear"></div>
                                         </div>
                                     </div>
@@ -125,12 +116,12 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-                    <!--<section id="historia">
+                    <section id="historia">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Objetivo de la red</h3>
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Historia de la red</h3>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -156,7 +147,7 @@
                             </div>
                         </div>
                         <div class="clear"></div>
-                    </section>-->
+                    </section>
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -171,20 +162,20 @@
                                     <div class="gdlr-session-item-head">
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-1">
                                             <div class="gdlr-session-head-day">D&iacute;a 1</div>
-                                            <div class="gdlr-session-head-date">10 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">14 Noviembre 2022</div>
                                         </div>
                                         <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-2">
                                             <div class="gdlr-session-head-day">D&iacute;a 2</div>
-                                            <div class="gdlr-session-head-date">13 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">15 Noviembre 2022</div>
                                         </div>
                                         <div class="gdlr-session-item-head-info " data-tab="gdlr-tab-3">
                                             <div class="gdlr-session-head-day">D&iacute;a 3</div>
-                                            <div class="gdlr-session-head-date">14 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">16 Noviembre 2022</div>
                                         </div>
-                                        <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-4">
+                                       <!-- <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-4">
                                             <div class="gdlr-session-head-day">D&iacute;a 4</div>
                                             <div class="gdlr-session-head-date">15 Diciembre 2021</div>
-                                        </div>
+                                        </div> -->
                                         <div class="clear"></div>
                                     </div>
 
@@ -194,11 +185,13 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magistrado Rafael Guerra Alvarez</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
                                                             </div>
                                                         </div>
                                                     </div>
@@ -206,698 +199,901 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Mensaje de Inauguración</h3>
-                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
-                                                    <div class="clear"></div></div>
+                                                <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/q7U2avizVEI" target="_blank">Ver mensaje</button></a>
-                                                </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                       
-    
-                                    </div>
-                                    <!-- termina dia 1-->
-                                    <!-- inicia dia 2 -->
-                                    <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>9:30 hrs.</div>
-                                                    
-                                                    <div class="session-info session-speaker">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:05 - 09:10  hrs.</div>
+                                                      <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Aline Liliana Miranda Hernández </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Aline Liliana Miranda Hern&aacute;ndez </a></div>
+																<div class="gdlr-session-item-excerpt">Secretaria Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar y Organismos Afines de la República Mexicana, y Directora del Centro de Convivencia Familiar Supervisada del Tribunal Superior de Justicia de la Ciudad de México. </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                      </div>
                                                     <div class="clear"></div>
                                                 </div>
-                                            </div>
+                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Mensaje de Bienvenida</h3>
-                                                <div class="gdlr-session-item-excerpt">Secretaria Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar Supervisada y Afines de la República Mexicana y Directora del Centro de Convivencia Familiar Supervisada del Poder Judicial de la Ciudad de México. 
-                                                    <div class="clear"></div></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
-                                                </div>
-                                                
+                                               <h3 class="gdlr-session-item-title">Presentación de las y los Secretarios T&eacute;cnicos de la Red</h3>
+												<div class="gdlr-session-item-excerpt">Presentación </div>
+											    <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                 </div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Morelos</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Alejandra Nieves Ramírez.</a></div>
-                                                               
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Capsula Informativa</h3>
-                                                <div class="gdlr-session-item-excerpt">Zonas Marginales y Medios Digitales
-                                                    <div class="clear"></div></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-											</div>
-                                            <div class="clear"></div>
-                                        </div> 
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:05 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Itzel Nadchie liihi Bernal de Anda</a></div>
-                                                                <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Jorge Roberto Marín González</a></div>
-																 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Patricia Ayala Fuentes</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-1/index.html">Conversatorio</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Revinculación Familiar ante el Covid-19: Retos y Oportunidades. 
-                                                  <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:10 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Chiapas</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Sandra Victoria Cadenas Santiago </a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Capsula Informativa</a></h3>
-                                                <div class="gdlr-session-item-excerpt">La Función del CECOFAM.
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="clear"></div>
+                                          <div class="clear"></div>
                                         </div>
 										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:20 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Morelos</div>
-                                                    <div class="session-info session-speaker">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:10 - 09:50  hrs.</div>
+                                                      <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Martha Elba Chávez Velázquez </a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Claudia Ver&oacute;nica Medell&iacute;n Gonz&aacute;lez </a></div>
+																<div class="gdlr-session-item-excerpt">Jueza Decimoprimero de Juicio Familiar Oral del Poder Judicial de Nuevo León. </div>
+															 </div>
+														 </div>
+                                                      </div>
                                                     <div class="clear"></div>
                                                 </div>
-                                            </div>
+                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Capsula Informativa</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Ansiedad Pandemia y Resiliencia
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
+                                               <h3 class="gdlr-session-item-title">La Función del CECOFAM en Procesos Judiciales Familiares</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia </div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                   </div>
                                             </div>
-                                            <div class="clear"></div>
+                                          <div class="clear"></div>
                                         </div>
-											<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
+                                      <div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:55 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
-                                                    <div class="session-info session-speaker">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:50 - 10:30  hrs.</div>
+                                                      <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Erika Trinidad Chávez </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Mónica Robles Villegas</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga Especializada del Poder Judicial de la Ciudad de México. </div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Lucero Elizabeth Turrubiates Narváez</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga Especializada del Poder Judicial de la Ciudad de México.</div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                      </div>
                                                     <div class="clear"></div>
                                                 </div>
-                                            </div>
+                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Capsula Informativa</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Peritaje en Trabajo Social por Videollamada
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
+                                               <h3 class="gdlr-session-item-title">El impacto negativo del divorcio y separación de los padres en las relaciones fraternas.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
-											<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
+                                          <div class="clear"></div>
+                                        </div>  
+										
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:05 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Estado de México</div>
-                                                    <div class="session-info session-speaker">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:30 – 11:10  hrs.</div>
+                                                      <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Consejero Mgdo. Dr. Raúl Aaron Romero Ortega.</a></div>
-																 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Dra. Olga Lidia Sanabria Téllez </a></div>
-																 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Omar Mauricio de la Luz</a></div>
-                                                            </div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Tatiana Anaya Zúñiga</a></div>
+																<div class="gdlr-session-item-excerpt">Consejera de la Judicatura del Estado de Jalisco.</div>
+															</div>
                                                         </div>
-                                                    </div>
+                                                      </div>
                                                     <div class="clear"></div>
                                                 </div>
-                                            </div>
+                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Conversatorio</a></h3>
-                                                <div class="gdlr-session-item-excerpt">La implementación de la Coordinación de Parentalidad en el Poder Judicial del Estado de México.
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
-                                                </div>
-                                                
+                                               <h3 class="gdlr-session-item-title">Derechos de las niñas, niños y adolescentes que convergen en la convivencia.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
-											<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
+                                          <div class="clear"></div>
+                                        </div>	
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:10 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Guerrero</div>
-                                                    
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Capsula Informativa</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Club Tecolín Guerrero
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-											<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:20 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
-                                                    <div class="session-info session-speaker">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:10 – 12:40 hrs.</div>
+                                                      <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Aline Liliana Miranda Hernández</a></div>
-                                                            </div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Miguel Ángel García Narváez</a></div>
+																<div class="gdlr-session-item-excerpt">Especialista en Psicología del Poder Judicial de Guerrero.</div>
+															</div>
                                                         </div>
-                                                    </div>
+                                                      </div>
                                                     <div class="clear"></div>
                                                 </div>
-                                            </div>
+                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Capsula Informativa</a></h3>
-                                                <div class="gdlr-session-item-excerpt">CECOFAM
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
+                                               <h3 class="gdlr-session-item-title">El Test CUIDA y Vinculatest, como formas de valorar las relaciones vinculares de padres y madres en litigio.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:40 – 13:40  hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Leticia Pérez López</a></div>
+																<div class="gdlr-session-item-excerpt">Jueza Cuarto del Distrito de Tuxtla del Poder Judicial de Chiapas.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Edgar Antonio Cabrera Meneses</a></div>
+																<div class="gdlr-session-item-excerpt">Director de Psicología del Poder Judicial de Querétaro.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. María de Lourdes Rojas Ríos</a></div>
+																<div class="gdlr-session-item-excerpt">Jueza Sexto Familiar del Distrito Judicial del Centro del Poder Judicial de Oaxaca.</div>
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Alcances y limitaciones en las convivencias familiares.</h3>
+												<div class="gdlr-session-item-excerpt">Conversatorio</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:40 – 14:20   hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Erika Trinidad Chávez</a></div>
+																<div class="gdlr-session-item-excerpt">Subdirectora de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Retos y Desafíos del Trabajo Social en Instituciones de Impartición de Justicia.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>14:20 – 15:00 hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Edgar Antonio Cabrera Meneses</a></div>
+																<div class="gdlr-session-item-excerpt">Director de Psicología del Poder Judicial de Querétaro.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Interés superior de la infancia en las convivencias familiares.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>		
+    
                                     </div>
-                                    <div class="gdlr-session-item-tab-content gdlr-tab-3">
+									
+									
+                         <!-- termina dia 1-->
+									
+									
+                         <!-- inicia dia 2 -->
+                                    <div class="gdlr-session-item-tab-content gdlr-tab-2">
                                         <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Nuevo León</div>
-                                                    <div class="session-info session-speaker">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 – 09:40 hrs.</div>
+                                                      <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Aníbal Vaquera Guerrero</a></div>
-                                                                
-                                                            </div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Rubén Jorge Salazar Ojeda</a></div>
+																<div class="gdlr-session-item-excerpt">Subdirector de Intervención Psicológica del Poder Psicológica del Poder Judicial de la Ciudad de México.</div>
+																
+															</div>
                                                         </div>
-                                                    </div>
+                                                      </div>
                                                     <div class="clear"></div>
                                                 </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">El juego como una forma de comunicación entre padres e hijos.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>CECOFAM Nuevo León, Regreso a los Servicios Prescenciales
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:05 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Estado de México</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Norma Edith Acevedo Hernández</a></div>
-																<div class=session-speaker-list-item  style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Mtro. Alejandro Alva Reyes</a></div>
-																<div class=session-speaker-list-item  style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Mtra. Mariana Celeste Díaz Herrera</a></div>
-                                                                
-                                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+										
+										
+                                        <div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:40 – 10:20  hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Maestran Emma Janeth García Ortiz </a></div>
+																<div class="gdlr-session-item-excerpt">Encargada de la Unidad de Convivencia Country del Poder Judicial de Nuevo León.</div>
+																
+															</div>
                                                         </div>
-                                                    </div>
-                                                    <div class=clear></div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">La niñez inmersa en conflictos parentales: Alternativas de Intervención</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Conversatorio</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Departamento de Apoyo y Acompañamiento Emocional. Una nueva forma de colaboración con los servidores judiciales.
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:10 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Sinaloa</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Nadia Miroslava López Álvarez</a></div>
-                                                                
-                                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+										
+                                        <div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:20 – 11:00  hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Master David Asael Guerra Espinoza</a></div>
+																<div class="gdlr-session-item-excerpt">Coordinador del Centro de Psicoterapia del DIF Gómez Palacios.</div>
+																
+															</div>
                                                         </div>
-                                                    </div>
-                                                    <div class=clear></div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Convivencias supervisadas en ambientes no idóneos</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Recorrido Virtual por el CECOFAM e información sobre los servicios que se brindan.
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:20 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Susana López Bustamante</a></div>
-                                                                
-                                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+										
+                                        <div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:00 – 11:40   hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Elizabeth Carbajal Medina </a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga Especializada del Poder Judicial de la Ciudad de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Nancy Sarahi Martínez Reyes  </a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga Especializada del Poder Judicial de la Ciudad de México.</div>
+																
+															</div>
                                                         </div>
-                                                    </div>
-                                                    <div class=clear></div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Intervención Coparental en convivencias judicializadas</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Conferencia</a></h3>
-                                                <div class=gdlr-session-item-excerpt>La importancia del pensamiento positivo ante la adversidad.
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Conferencia</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										<div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:55 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Mariana Ortiz Castañares</a></div>
-                                                                
-                                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:40 – 12:20    hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Edgar Tello Arcos   </a></div>
+																<div class="gdlr-session-item-excerpt">Juez Séptimo del Poder Judicial de Jalisco.</div>
+																
+																
+															</div>
                                                         </div>
-                                                    </div>
-                                                    <div class=clear></div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Convivencia familiar desde la óptica jurisdiccional</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Coordinación de Intervención Especializada para Apoyo Judicial.
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										<div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:05 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Quer&eacute;taro</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Edgar Antonio Cabrera Meneses</a></div>
-                                                                
-                                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:20 – 12:25    hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Claudia Ibet Navarrete Mendoza   </a></div>
+																<div class="gdlr-session-item-excerpt">Directora General de los Centros de Convivencia Familiar del Poder Judicial del Estado de Guerrero.</div>
+																
+																
+															</div>
                                                         </div>
-                                                    </div>
-                                                    <div class=clear></div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Explicando el divorcio a través del cuento</h3>
+												<div class="gdlr-session-item-excerpt">Cápsula</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Conferencia</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Desventajas y Ventajas de las Convivencias Virtuales
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										<div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:40 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Morelos</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Patricia Esperanza Guerrero Suárez</a></div>
-                                                                
-                                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+										
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:25 – 13:05    hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Cesar Iván Rangel Alfonso   </a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo Especializado del Poder Judicial de la Ciudad de México.</div>
+																
+																
+															</div>
                                                         </div>
-                                                    </div>
-                                                    <div class=clear></div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Impacto de los Talleres Psicoeducativos en las Familias</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Las Convivencias Virtuales,Efectos.
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:05 – 13:45     hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Maestrando Aníbal Vaquera Guerrero   </a></div>
+																<div class="gdlr-session-item-excerpt">Coordinador de las Unidades de Convivencia del Poder Judicial de Nuevo León.</div>
+														    </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
-                                                
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Guiemos el cambio</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=clear></div>
-                                        </div>
-										<div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:50 hrs.</div>
-                                                    
-                                                    
-                                                    <div class=clear></div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:45 – 14:25  hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Agustín Flores Balderrama </a></div>
+																<div class="gdlr-session-item-excerpt">Juez en retiro del Poder Judicial de Jalisco.</div>
+														    </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Alienación Parental</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Promo Video Llamadas
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
+                                          <div class="clear"></div>
+                                        </div>	
+									 </div>	
+						 <!-- termina dia 2-->
+									
+									
+                         <!-- inicia dia 3 -->
+										
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 – 09:40    hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Guadalupe Consuelo Pavón Millán  </a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga Especializada del Poder Judicial de la Ciudad de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Erika Ivonne Solís Rodríguez </a></div>
+																<div class="gdlr-session-item-excerpt">Trabajadora Social Especializada del Poder Judicial de la Ciudad de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Evelinda López Camargo  </a></div>
+																<div class="gdlr-session-item-excerpt">Trabajadora Social Especializada del Poder Judicial de la Ciudad de México.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
                                                 </div>
-                                                
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Interferencia Parental: Una propuesta desde el duelo patológico.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
                                             </div>
-                                            <div class=clear></div>
-                                        </div>
+                                          <div class="clear"></div>
+                                        </div>		
+								
+									
+									
+									
+                                    <div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:40 – 10:20  hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Yamira Yaratzed Sánchez Guillen  </a></div>
+																<div class="gdlr-session-item-excerpt">Coordinadora de Atención Psicológica del Poder Judicial de Campeche.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Duelo en la familia por divorcio.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									
+									
+                                        
+                                        <div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:20 – 11:00   hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Norma Edith Acevedo Hernández  </a></div>
+																<div class="gdlr-session-item-excerpt">Subdirectora del Centro de Convivencia de Ecatepec del Poder Judicial del Estado de México.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">La Coordinación de Parentalidad en el Poder Judicial del Estado de México. Resultados a un año de su implementación.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									
+									
+                                        <div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:00 – 11:40   hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Rocío López Orozco </a></div>
+																<div class="gdlr-session-item-excerpt">Subdirectora de Evaluación Psicológica del Poder Judicial de la Ciudad de México.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Emociones disfuncionales en niñas, niños adolescentes por el conflicto de lealtades en divorcios o separaciones conflictivas.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									
+                                        <div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:40 – 12:20    hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Orlando Francisco Rodríguez Delgado </a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo adscrito al Poder Judicial de Nuevo.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">La evaluación forense con enfoque sistémico.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:20 – 13:00 hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Yadira Luciano May </a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga del Poder Judicial de Tabasco.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">El Trabajo Multidisciplinario en los Procedimientos Familiares.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									
+									
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:00 – 13:40  hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Doctoranda Itzel Bernal de Anda</a></div>
+																<div class="gdlr-session-item-excerpt">Subdirectora del CECOFAM Niños Héroes del Poder Judicial de la Ciudad de México.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Promoción de habilidades de interacción y socioemocional a través de un entorno digital en familias con procesos jurídicos.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									
+									
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:40 – 14:20   hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Master. Pablo Sergio Padilla García</a></div>
+																<div class="gdlr-session-item-excerpt">Director del Instituto de Estudios Psicológicos y Socioeconómicos y Centros de Convivencia Familiar Supervisada del Poder Judicial de Chihuahua.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Homologación de informes de convivencia con la inclusión de Aspectos Sistémicos Relevantes para Juzgadoras y Juzgadores.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>14:20 – 14:25    hrs.</div>
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Aline Liliana Miranda Hernández </a></div>
+																<div class="gdlr-session-item-excerpt">Secretaria Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar y Organismos Afines de la República Mexicana del Poder Judicial de la Ciudad de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Edgar Antonio Cabrera Meneses </a></div>
+																<div class="gdlr-session-item-excerpt">Secretario Técnico de la Red y suplente de la Secretaría Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar y Organismos Afines de la República Mexicana.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Clausura</h3>
+												
+                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                     </div>
 									
 							 </div>
-                                    <div class="gdlr-session-item-tab-content gdlr-tab-4 ">
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aline Liliana Hernández Miranda</a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=clear></div>
-                                                </div>
-                                            </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>CECOFAM en la pandemia
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:05 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Estado de M&eacute;xico</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtro. Sergio Vargas González</a></div>
-																<div class=session-speaker-list-item style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Dra. Olga Lidia Sanabria Tellez</a></div>
-																<div class=session-speaker-list-item style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Cynthia Vergara Mendoza</a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=clear></div>
-                                                </div>
-                                            </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Conversatorio</a></h3>
-                                                <div class=gdlr-session-item-excerpt>La labor de la Dirección de Servicios Periciales y los Centros de Convivencia Familiar. Una nueva forma de trabajo en el Poder Judicial del Estado de México.
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Conversatorio</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:10 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtro. Sergio Aguilar Álvarez Bay</a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=clear></div>
-                                                </div>
-                                            </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Las Funciones del área de Evaluación e Intervención Psicológica
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:20 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Nuevo Le&oacute;n</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Emma Janeth García Ortiz</a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=clear></div>
-                                                </div>
-                                            </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Conferencia</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Técnicas Terapéuticas para la Revinculación Familiar
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:55 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Guerrero</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aristeo Arturo Rodríguez Martínez</a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=clear></div>
-                                                </div>
-                                            </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Trabajo Social del área CECOFAM con sede en Acapulco Guerrero
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										<div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:05 hrs.</div>
-                                                    <div class="session-info session-location"><i class="fa fa-location-arrow"></i>CDMX</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Mariana Herrerejón Gutiérrez</a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=clear></div>
-                                                </div>
-                                            </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Capsula Informativa</a></h3>
-                                                <div class=gdlr-session-item-excerpt>Entrevista Diagnostica por Videollamada
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										<div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=gdlr-session-item-content-info>
-                                                <div class=gdlr-session-info>
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:10 hrs.</div>
-                                                    
-                                                    <div class="session-info session-speaker">
-                                                        <div class=session-speaker-inner>
-                                                            <div class=session-speaker-list>
-                                                                <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aline Liliana Miranda Hernández.</a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class=clear></div>
-                                                </div>
-                                            </div>
-                                            <div class=gdlr-session-item-content>
-                                                <h3 class="gdlr-session-item-title"><a href=../session/product-lines/index.html>Ponencia Magistral</a></h3>
-                                                <div class=gdlr-session-item-excerpt>CONCLUSIONES
-                                                    <div class=clear></div><a href=../session/product-lines/index.html class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class=gdlr-session-thumbnail-wrapper>
-                                                    <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Ponencia</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class=clear></div>
-                                        </div>
-										
-                                    </div> 
-                                </div>
-                                <div class=clear></div>
-                            </div>
-                            <div class=clear></div>
+                                   
                         </div>
-                            </div>
-                        </div>
+                                
+                      </div>
+                           
+                 </div>
+              </div>
+           </div>
                         
-                    </section>
+      </section>
+			
+			<!-- termina dia 3-->
+			
+			
                     <div class="section-container container">
                     <section id="ponentescdmx">
                         
@@ -914,7 +1110,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/erika.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/erika.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">ERIKA TRINIDAD CH&Aacute;VEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-2>
@@ -931,7 +1127,7 @@ Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social d
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/itzel.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/itzel.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">ITZEL NADCHIE LIIHI BERNAL DE ANDA </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-3>
@@ -947,7 +1143,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/jorge.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/jorge.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">JORGE ROBERTO MARÍN GONZÁLEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-4>
@@ -962,7 +1158,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/mariana.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/mariana.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MARIANA HERREJÓN GUTIÉRREZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-5>
@@ -976,7 +1172,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/patricia.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/patricia.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">PATRICIA AYALA FUENTES</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
@@ -991,7 +1187,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/susana.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/susana.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">SUSANA LÓPEZ BUSTAMANTE</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-7>
@@ -1006,7 +1202,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/sergio.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/sergio.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. SERGIO AGUILAR ÁLVAREZ BAY</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-8>
@@ -1021,7 +1217,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/mariana_ortiz.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/mariana_ortiz.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MARIANA ORTIZ CASTAÑARES</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-9>
@@ -1036,7 +1232,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/aline.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/CDMX/fotos/aline.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">ALINE LILIANA MIRANDA HERNÁNDEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-10>
@@ -1076,7 +1272,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/EDO_MEX/fotos/raul.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/EDO_MEX/fotos/raul.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Raúl Aarón Romero Ortega </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-25>
@@ -1090,7 +1286,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/EDO_MEX/fotos/olga.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/EDO_MEX/fotos/olga.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Olga Lidia Sanabria Téllez</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-26>
@@ -1105,7 +1301,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/EDO_MEX/fotos/omar.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/EDO_MEX/fotos/omar.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Omar Mauricio de la Luz Rodríguez</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-27>
@@ -1120,7 +1316,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/EDO_MEX/fotos/sergio.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/EDO_MEX/fotos/sergio.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Sergio Vargas González</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-28>
@@ -1134,7 +1330,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/EDO_MEX/fotos/cynthia.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/EDO_MEX/fotos/cynthia.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Cynthia Vergara Mendoza</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-29>
@@ -1149,7 +1345,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/EDO_MEX/fotos/norma.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/EDO_MEX/fotos/norma.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Norma Edith Acevedo Hernández</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-30>
@@ -1163,7 +1359,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/EDO_MEX/fotos/alejandro.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/EDO_MEX/fotos/alejandro.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Alejandro Alva Reyes</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-31>
@@ -1179,7 +1375,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/EDO_MEX/fotos/mariana.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/EDO_MEX/fotos/mariana.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mariana Celeste Díaz Herrera</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-32>
@@ -1222,7 +1418,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/chiapas/fotos/sandra.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/chiapas/fotos/sandra.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">SANDRA VICTORIA CADENAS SANTIAGO</h3>
 														<div class=session-speaker-list>
@@ -1240,7 +1436,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/MORELOS/fotos/alejandra.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/MORELOS/fotos/alejandra.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">ALEJANDRA NIEVES RAMÍREZ</h3>
 														<div class=session-speaker-list>
@@ -1258,7 +1454,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/MORELOS/fotos/patricia.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/MORELOS/fotos/patricia.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">PATRICIA ESPERANZA GUERRERO SUÁREZ</h3>
 														<div class=session-speaker-list>
@@ -1276,7 +1472,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/MORELOS/fotos/martha.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/MORELOS/fotos/martha.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. MARTHA ELBA CHÁVEZ VELÁZQUEZ</h3>
 														<div class=session-speaker-list>
@@ -1318,7 +1514,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/NUEVO_LEON/fotos/emma.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/NUEVO_LEON/fotos/emma.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Emma Janeth García Ortiz</h3>
 														<div class=session-speaker-list>
@@ -1336,7 +1532,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/NUEVO_LEON/fotos/anibal.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/NUEVO_LEON/fotos/anibal.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Aníbal Vaquera Guerrero</h3>
 														<div class=session-speaker-list>
@@ -1354,7 +1550,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/QUERETARO/fotos/edgar.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/QUERETARO/fotos/edgar.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Edgar Antonio Cabrera Meneses</h3>
 														<div class=session-speaker-list>
@@ -1372,7 +1568,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/SINALOA/fotos/sinaloa.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/SINALOA/fotos/sinaloa.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Nadia Miroslava López Álvarez</h3>
 														<div class=session-speaker-list>

@@ -96,6 +96,7 @@
                 </div>
             </div>
             <div class="clear"></div>
+        </div>
         </header>
         <div id="gdlr-header-substitute"></div>
         <div class="content-wrapper">
@@ -227,7 +228,9 @@
                                            <div class=clear></div>
                                 </div>   
                             </div>
-                                            <div class=clear></div>
+                                            <div class=clear></div><br><br><br>
+                                            <br>
+
                         </div>
                     </section>
                          <div>
@@ -245,6 +248,8 @@
                 </div>
             </div>
         </footer>
+    </div>
+    </div>
     </div>
 
     <script src='administrador/red/js/jquery/jquery.js'></script>

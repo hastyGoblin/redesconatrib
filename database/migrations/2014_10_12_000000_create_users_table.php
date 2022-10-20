@@ -35,7 +35,7 @@ class CreateUsersTable extends Migration
             $table->foreign('id_red')->references('id')->on('cat_redesconatrib');
             
             //$table->timestamps();
-            $table->dateTime('created_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+            $table->dateTime('created_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP '));
             $table->dateTime('updated_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->boolean('activo')->default(0);
         });

@@ -40,14 +40,12 @@ class HomeController extends Controller
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
+            ->where('users.created_at','<=','2022-10-19')
             ->where('users.activo','=','0')
             ->where('users.fk_estatus','=','1')
             ->where('users.id_red','=',$red_id)
             ->get();
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
-
-
-           
 
         }elseif ($rol[0]->fk_roles == '2') {
             switch ($red_id) {

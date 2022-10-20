@@ -21,8 +21,8 @@ class UsersRoles extends Migration
             $table->tinyInteger('fk_roles');
             $table->foreign('fk_roles')->references('ID')->on('roles');
 
-            $table->dateTime('created_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-            $table->dateTime('updated_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP'));     
+            $table->dateTime('created_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->dateTime('updated_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));     
             $table->boolean('activo')->default(1);
         });
     }

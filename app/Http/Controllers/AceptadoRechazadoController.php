@@ -18,7 +18,7 @@ class AceptadoRechazadoController extends Controller
         $red_id = Auth::user()->id_red;
         $rol = usersRoles::where('fk_usersroles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
-        
+
 
         $aceptado = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
             ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
