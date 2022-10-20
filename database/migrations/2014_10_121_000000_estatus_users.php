@@ -13,7 +13,7 @@ class EstatusUsers extends Migration
      */
     public function up()
     {
-        Schema::create('EstatusUsers',function (Blueprint $table){
+        Schema::create('estatusUsers',function (Blueprint $table){
             $table->tinyinteger('ID')->primary();
             $table->string('estatus',30);
             $table->boolean('activo');

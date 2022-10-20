@@ -13,7 +13,7 @@ class UsersRoles extends Migration
      */
     public function up()
     {
-        Schema::create('UsersRoles', function (Blueprint $table) {
+        Schema::create('usersRoles', function (Blueprint $table) {
             $table->increments('id');
 
             $table->integer('fk_UsersRoles')->unsigned();
@@ -33,6 +33,6 @@ class UsersRoles extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('UsersRoles');
+        Schema::dropIfExists('usersRoles');
     }
 }

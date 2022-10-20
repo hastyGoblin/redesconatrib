@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
-use App\Models\UsersRoles;
+use App\Models\usersRoles;
 use App\Models\cat_redesconatrib;
 use App\Models\Roles;
 use App\Models\EntidadFederativa;
@@ -16,7 +16,7 @@ class AceptadoRechazadoController extends Controller
 
         $id = Auth::User()->id;
         $red_id = Auth::user()->id_red;
-        $rol = UsersRoles::where('fk_UsersRoles','=', $id)->get();
+        $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
 
@@ -39,7 +39,7 @@ class AceptadoRechazadoController extends Controller
     public function usuarioRechazado(Request $request){
         $id = Auth::User()->id;
         $red_id = Auth::user()->id_red;
-        $rol = UsersRoles::where('fk_UsersRoles','=', $id)->get();
+        $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
         
 

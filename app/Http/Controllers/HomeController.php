@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\cat_redesconatrib;
 use App\Models\Roles;
-use App\Models\UsersRoles;
+use App\Models\usersRoles;
 use App\Models\User;
 
 class HomeController extends Controller
@@ -30,13 +30,13 @@ class HomeController extends Controller
     {
         $id = Auth::user()->id;
         $red_id = Auth::user()->id_red;
-        $rol = UsersRoles::where('fk_UsersRoles','=', $id)->get();
+        $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
         if ($rol[0]->fk_roles == '1') {
 
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email', 'users.id')
-            ->join('UsersRoles AS UR','UR.fk_UsersRoles','=','users.id')
+            ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')

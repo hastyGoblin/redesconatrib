@@ -13,7 +13,7 @@ class UsersConstancias extends Migration
      */
     public function up()
     {
-        Schema::create('UsersConstancias', function (Blueprint $table){
+        Schema::create('usersConstancias', function (Blueprint $table){
 
             $table->increments('id');
             $table->integer('fk_users')->unsigned();
