@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\cat_redesconatrib;
 use App\Models\Roles;
-use App\Models\usersRoles;
+use App\Models\UsersRoles;
 use App\Models\User;
 
 class HomeController extends Controller
@@ -30,17 +30,17 @@ class HomeController extends Controller
     {
         $id = Auth::user()->id;
         $red_id = Auth::user()->id_red;
-        $rol = usersroles::where('fk_usersroles','=', $id)->get();
+        $rol = UsersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
         if ($rol[0]->fk_roles == '1') {
 
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email', 'users.id')
-            ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
+            ->join('UsersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
-            ->where('users.created_at','<=','2022-10-19')
+            //->where('users.created_at','<=','2022-10-21')
             ->where('users.activo','=','0')
             ->where('users.fk_estatus','=','1')
             ->where('users.id_red','=',$red_id)

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class usersRoles extends Seeder
+class UsersRoles extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,27 +15,27 @@ class usersRoles extends Seeder
     public function run()
     {
         DB::table('UsersRoles')->insert([
-            'fk_usersroles'=>1,
+            'fk_UsersRoles'=>1,
             'fk_roles'=>1,
         ]);
 
         DB::table('UsersRoles')->insert([
-            'fk_usersroles'=>2,
+            'fk_UsersRoles'=>2,
             'fk_roles'=>1,
         ]);
 
         DB::table('UsersRoles')->insert([
-            'fk_usersroles'=>3,
+            'fk_UsersRoles'=>3,
             'fk_roles'=>2,
         ]);  
 
         DB::table('UsersRoles')->insert([
-            'fk_usersroles'=>4,
+            'fk_UsersRoles'=>4,
             'fk_roles'=>2,
         ]);  
 
         DB::table('UsersRoles')->insert([
-            'fk_usersroles'=>5,
+            'fk_UsersRoles'=>5,
             'fk_roles'=>2,
         ]);  
     }

@@ -6,6 +6,7 @@ use App\Http\Controllers\generaConstancia;
 use App\Http\Controllers\bcryptPassword;
 use App\Http\Controllers\EstatusController;
 use App\Http\Controllers\AceptadoRechazadoController;
+use App\Http\Controllers\CalendarioController;
 use App\Mail\RegistroMail;
 use Illuminate\Support\Facades\Mail;
 /*
@@ -39,7 +40,8 @@ Route::post('/rechazarUsuario', [EstatusController::class, 'rechazarUsuario'])->
 
 Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
 Route::post('/usuarioRechazado', [AceptadoRechazadoController::class, 'usuarioRechazado'])->name('usuarioRechazado');
-// Route::post('/solicitudesUsuario', [AceptadoRechazadoController::class, 'solicitudesUsuario'])->name('solicitudesUsuario');
+
+//Route::post('/calendario', [CalendarioController::class, 'redCalendario'])->name('calendario');
 
 // Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
 

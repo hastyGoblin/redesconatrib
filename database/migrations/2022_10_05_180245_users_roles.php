@@ -16,8 +16,8 @@ class UsersRoles extends Migration
         Schema::create('UsersRoles', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->integer('fk_usersroles')->unsigned();
-            $table->foreign('fk_usersroles')->references('ID')->on('users');
+            $table->integer('fk_UsersRoles')->unsigned();
+            $table->foreign('fk_UsersRoles')->references('ID')->on('users');
             $table->tinyInteger('fk_roles');
             $table->foreign('fk_roles')->references('ID')->on('roles');
 

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Illuminate\Support\Facades\DB;
-use App\Models\usersRoles;
+use App\Models\UsersRoles;
 use Auth;
 
 
@@ -59,7 +59,7 @@ class CreateNewUser implements CreatesNewUsers
         ]);
 
         $rolesdecanela = UsersRoles::create([
-            'fk_usersroles'=>$create->id,
+            'fk_UsersRoles'=>$create->id,
             'fk_roles'=>2,
         ]);
 

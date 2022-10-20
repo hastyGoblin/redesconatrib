@@ -21,6 +21,18 @@
     <link rel="stylesheet" href="administrador/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
     <link rel="stylesheet" href="administrador/red/css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='calendario/main.css' rel='stylesheet' />
+    <script src='calendario/main.js'></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth'
+        });
+        calendar.render();
+        });
+    </script>
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
@@ -152,7 +164,6 @@
 
 
 
-
                                         <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
                                                                  document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
                                             <div class=gdlr-session-head-day>
@@ -165,13 +176,14 @@
                                         </div>
 
 
-
-
                                         <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-4>
                                             <div class=gdlr-session-head-day>Constacias</div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
                                         <div class=clear></div>
+
+
+                                        
                                     </div>
 
                                     @if($message = Session::get('success'))

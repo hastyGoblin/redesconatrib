@@ -8,7 +8,7 @@ class CoordinadorController extends Controller
 {
     $id = Auth::user()->id;
 
-    $rol = usersroles::where('fk_roles','=',$id);
+    $rol = UsersRoles::where('fk_roles','=',$id);
 
     if($rol == '1'){
         return view('modulo_admin');

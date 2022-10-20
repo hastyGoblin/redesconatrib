@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
-use App\Models\usersRoles;
+use App\Models\UsersRoles;
 use App\Models\cat_redesconatrib;
 use App\Models\Roles;
 use App\Models\EntidadFederativa;
@@ -16,12 +16,12 @@ class AceptadoRechazadoController extends Controller
 
         $id = Auth::User()->id;
         $red_id = Auth::user()->id_red;
-        $rol = usersRoles::where('fk_usersroles','=', $id)->get();
+        $rol = UsersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
 
         $aceptado = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
-            ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
+            ->join('UsersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
@@ -39,12 +39,12 @@ class AceptadoRechazadoController extends Controller
     public function usuarioRechazado(Request $request){
         $id = Auth::User()->id;
         $red_id = Auth::user()->id_red;
-        $rol = usersRoles::where('fk_usersroles','=', $id)->get();
+        $rol = UsersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
         
 
         $rechazados = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
-            ->join('UsersRoles AS UR','UR.fk_usersroles','=','users.id')
+            ->join('UsersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
