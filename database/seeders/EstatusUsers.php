@@ -14,19 +14,19 @@ class EstatusUsers extends Seeder
      */
     public function run()
     {
-        DB::table('EstatusUsers')->insert([
+        DB::table('estatusUsers')->insert([
             'ID'=>1,
             'estatus'=>"Registrado",
             'activo'=> 1,
         ]);
 
-        DB::table('EstatusUsers')->insert([
+        DB::table('estatusUsers')->insert([
             'ID'=>2,
             'estatus'=>"Aceptado",
             'activo'=> 1,
         ]);
 
-        DB::table('EstatusUsers')->insert([
+        DB::table('estatusUsers')->insert([
             'ID'=>3,
             'estatus'=>"Rechazado",
             'activo'=> 1,
