@@ -58,7 +58,7 @@ class CreateNewUser implements CreatesNewUsers
 
         ]);
 
-        $rolesdecanela = UsersRoles::create([
+        $rolesdecanela = usersRoles::create([
             'fk_UsersRoles'=>$create->id,
             'fk_roles'=>2,
         ]);
