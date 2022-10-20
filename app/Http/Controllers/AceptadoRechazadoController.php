@@ -21,9 +21,9 @@ class AceptadoRechazadoController extends Controller
 
 
         $aceptado = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
-            ->join('UsersRoles AS UR','UR.fk_UsersRoles','=','users.id')
+            ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
-            ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
+            ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
             ->where('UR.fk_roles','=','2')
             ->where('users.activo','=','1')
@@ -44,9 +44,9 @@ class AceptadoRechazadoController extends Controller
         
 
         $rechazados = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
-            ->join('UsersRoles AS UR','UR.fk_UsersRoles','=','users.id')
+            ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
-            ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
+            ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
             ->where('UR.fk_roles','=','2')
             ->where('users.activo','=','0')
