@@ -56,8 +56,20 @@ class cat_redesconatrib_seeder extends Seeder
             
             
         ]);//
+
         DB::table('cat_redesconatrib')->insert([
             'id'=>"5",
+            'red'=>"Reunión de la Red de Mecanismos Alternativos de Solución de Controversias",
+            'fechaInicio'=>"2022-10-19",
+            'fechaFin'=>"2022-10-31",
+            'activo'=> 1,
+            'landingPage'=> "HTML4",
+            
+            
+        ]);//
+
+        DB::table('cat_redesconatrib')->insert([
+            'id'=>"6",
             'red'=>"Reunión de la Red de Centros de Convivencias Familiar Supervisada",
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
@@ -67,7 +79,7 @@ class cat_redesconatrib_seeder extends Seeder
             
         ]);//
         DB::table('cat_redesconatrib')->insert([
-            'id'=>"6",
+            'id'=>"7",
             'red'=>"Reunión de la Red de Juezas y Jueces Orales, Civiles, Mercantiles y de Extinción de Dominio",
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
@@ -77,7 +89,7 @@ class cat_redesconatrib_seeder extends Seeder
             
         ]);//
         DB::table('cat_redesconatrib')->insert([
-            'id'=>"7",
+            'id'=>"8",
             'red'=>"Reunión de la Red de Oficiales Mayores y Directores Generales de Administración de los Poderes Judiciales de la República Mexicana",
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
@@ -87,7 +99,7 @@ class cat_redesconatrib_seeder extends Seeder
             
         ]);//
         DB::table('cat_redesconatrib')->insert([
-            'id'=>"8",
+            'id'=>"9",
             'red'=>"Red Nacional de Archivos Judiciales",
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
