@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Illuminate\Support\Facades\DB;
-use App\Models\UsersRoles;
 use Carbon\Carbon;
 use App\Models\cat_redesconatrib;
+use App\Models\usersRoles;
 use Auth;
 
 
@@ -21,14 +21,14 @@ class CreateNewUser implements CreatesNewUsers
     /**
      * Validate and create a newly registered user.
      *
-     * @param  array  $input 
+     * @param  array  $input
      * @return \App\Models\User
      */
     public function create(array $input)
     {
         //$redes = User::cat_redesconatrib()->id_red;
-      
-        
+
+
 
         $fechaInicio= Validator::make($input, [
             'name' => ['required', 'string', 'max:50'],
@@ -69,7 +69,7 @@ class CreateNewUser implements CreatesNewUsers
             'id_red' => $input['id_red'],
         ]);
 
-        $rolesdecanela = UsersRoles::create([
+        $rolesdecanela = usersRoles::create([
             'fk_UsersRoles'=>$create->id,
             'fk_roles'=>2,
         ]);

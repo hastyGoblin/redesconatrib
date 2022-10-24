@@ -19,7 +19,7 @@ class ConstanciasUsuarios extends Migration
             $table->integer('fk_users')->unsigned();
             $table->foreign('fk_users')->references('ID')->on('users');
             $table->dateTime('created_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->dateTime('updated_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));     
+            $table->dateTime('updated_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
             $table->boolean('activo')->default(1);
         });
 

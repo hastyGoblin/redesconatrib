@@ -10,7 +10,7 @@ class EstatusUsers extends Model
 {
     use HasFactory;
 
-    protected $table = 'EstatusUsers';
+    protected $table = 'estatusUsers';
     protected $primaryKey = 'ID';
     protected $fillable = [
         'fk_estatus',

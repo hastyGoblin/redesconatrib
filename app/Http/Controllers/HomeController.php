@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\cat_redesconatrib;
 use App\Models\Roles;
-use App\Models\UsersRoles;
+use App\Models\usersRoles;
 use App\Models\User;
 
 class HomeController extends Controller
@@ -30,16 +30,16 @@ class HomeController extends Controller
     {
         $id = Auth::user()->id;
         $red_id = Auth::user()->id_red;
-        $rol = UsersRoles::where('fk_UsersRoles','=', $id)->get();
+        $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
         if ($rol[0]->fk_roles == '1') {
 
 
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email', 'users.id')
-            ->join('UsersRoles AS UR','UR.fk_UsersRoles','=','users.id')
-            ->join('Roles AS R','UR.fk_roles','=','R.id')
-            ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
+            ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
+            ->join('roles AS R','R.ID','=','UR.fk_roles')
+            ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
             ->where('users.activo','=','0')
             ->where('users.fk_estatus','=','1')
@@ -72,14 +72,14 @@ class HomeController extends Controller
                     return view('red_4_jjocmed');
                     break;
 
-                case 5: 
+                case 5:
                     $mensaje= "Red 5";
                     return view('red_5_masc');
                     break;
 
                 case 6:
                     $mensaje= "Red 6";
-                    return view('red_6_cjpn');
+                    return view('red_1_cecofam');
                     break;
 
                 case 7:

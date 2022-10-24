@@ -52,7 +52,7 @@ class EstatusController extends Controller
                 'red' => $red[0]->red,
                 ];
                 
-        Mail::to($datos_user[0]->email)->send(new RegistroMail($info));
+        //Mail::to($datos_user[0]->email)->send(new RegistroMail($info));
 
         return redirect()->route('home')->with('danger','Usuario rechazado');
     }
