@@ -40,6 +40,7 @@ Route::post('/rechazarUsuario', [EstatusController::class, 'rechazarUsuario'])->
 
 Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
 Route::post('/usuarioRechazado', [AceptadoRechazadoController::class, 'usuarioRechazado'])->name('usuarioRechazado');
+Route::post('/validarInicio', [AceptadoRechazadoController::class, 'validaInicioRed'])->name('validarInicio');
 
 //Route::post('/calendario', [CalendarioController::class, 'redCalendario'])->name('calendario');
 

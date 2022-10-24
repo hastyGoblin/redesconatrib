@@ -9,6 +9,7 @@ use App\Models\usersRoles;
 use App\Models\cat_redesconatrib;
 use App\Models\Roles;
 use App\Models\EntidadFederativa;
+use Carbon\Carbon;
 
 class AceptadoRechazadoController extends Controller
 {
@@ -54,5 +55,26 @@ class AceptadoRechazadoController extends Controller
             ->where('users.id_red','=',$red_id)
             ->get();
             return view('Rechazados')->with('rol',$rol)->with('red',$red)->with('rechazados',$rechazados);        
+    }
+
+    public function validaInicioRed(Request $request){
+        $red= $request->id_red;
+        $fechaIniRed = cat_redesconatrib::select('fechaInicio')->where('id','=', $red)->get();
+
+        $hoy = Carbon::now();
+
+        if ($hoy < $fechaIniRed[0]->fechaInicio) {
+            return response()->json(
+                [
+                    'registro' => 1
+                ]
+            );
+        }else{
+           return response()->json(
+                [
+                    'registro' => 0
+                ]
+            ); 
+        }
     }
 }

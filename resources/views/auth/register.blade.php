@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>Redes Conatrib</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
@@ -77,7 +78,7 @@
                                     @endif
                                     
                                 <label>Red en la que desea participar</label> <br>
-                                <select class="custom-select" required name="id_red" style="text-transform: uppercase;">
+                                <select class="custom-select" required name="id_red" id="id_red" style="text-transform: uppercase;">
                                      <option value="">Selecciona una red</option>
                                     @foreach($rconatrib as $redes)
                                      <option value="{{$redes->id}}">{{$redes->red}} </option>
@@ -142,9 +143,12 @@
             </div>
         </div>
     </div>
+<script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/regUsuario.js"></script>
+
 </body>
 </html>
