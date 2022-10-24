@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\StatefulGuard;
 use Laravel\Fortify\Http\Responses\RegisterResponse as FortifyRegisterResponse;
 use App\Mail\RegistroMail;
 use App\Models\cat_redesconatrib;
+use Carbon\Carbon;
 use Auth;
 use Mail;
 
@@ -24,7 +25,7 @@ class RegisterResponse extends FortifyRegisterResponse
         $name = Auth::user()->name;
         $email = Auth::user()->email;
         $red_id =  Auth::user()->id_red;
-        
+         
         $this->guard->logout();
 
         //return parent::toResponse($request);
@@ -37,9 +38,10 @@ class RegisterResponse extends FortifyRegisterResponse
                 'correo' => $email,
                 'red' => $red[0]->red,
                 ];
-                
+
+        
         //Mail::to($email)->send(new RegistroMail($info));
         
-        return redirect()->route('register')->with('success','Registro exitoso se envió un correo a tu cuenta proporcionada');
+        return redirect()->route('register')->with('warning','Registro exitoso se envió un correo a tu cuenta proporcionada');
     }
 }

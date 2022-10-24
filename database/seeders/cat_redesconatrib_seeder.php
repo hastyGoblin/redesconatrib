@@ -18,7 +18,7 @@ class cat_redesconatrib_seeder extends Seeder
         DB::table('cat_redesconatrib')->insert([
             'id'=>"1",
             'red'=>"Reunión de la Red de Cooperación para la Protección de la Niñez",
-            'fechaInicio'=>"2022-10-19",
+            'fechaInicio'=>"2022-10-22",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML1",
@@ -39,7 +39,7 @@ class cat_redesconatrib_seeder extends Seeder
         DB::table('cat_redesconatrib')->insert([
             'id'=>"3",
             'red'=>"Reunión Nacional del Sistema Integral de Justicia Penal para Adolescentes",
-            'fechaInicio'=>"2022-10-19",
+            'fechaInicio'=>"2022-10-23",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML3",
@@ -49,7 +49,7 @@ class cat_redesconatrib_seeder extends Seeder
         DB::table('cat_redesconatrib')->insert([
             'id'=>"4",
             'red'=>"Reunión de la Red de Escuelas Judiciales de los Estados de los Estados de la República Mexicana",
-            'fechaInicio'=>"2022-10-19",
+            'fechaInicio'=>"2022-10-24",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML4",

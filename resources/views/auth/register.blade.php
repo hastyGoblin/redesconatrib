@@ -29,8 +29,8 @@
                 <div class="form-content">
                     <div class="form-items">
 
-                        @if($message = Session::get('success'))
-                        <div class="alert alert-success" >
+                        @if($message = Session::get('warning'))
+                        <div class="alert alert-warning" >
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             {{ $message }}
                         </div>

@@ -9,6 +9,8 @@ use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Illuminate\Support\Facades\DB;
 use App\Models\UsersRoles;
+use Carbon\Carbon;
+use App\Models\cat_redesconatrib;
 use Auth;
 
 
@@ -24,8 +26,11 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
+        //$redes = User::cat_redesconatrib()->id_red;
+      
         
-        Validator::make($input, [
+
+        $fechaInicio= Validator::make($input, [
             'name' => ['required', 'string', 'max:50'],
             'paterno' => ['required', 'string', 'max:50'],
             'materno' => ['required', 'string', 'max:50'],
@@ -43,7 +48,14 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
             'id_red' => ['required', 'string', 'max:255', 'min:1'],
         ])->validate();
+        echo $fechaInicio['id_red'];
 
+        $fecha = cat_redesconatrib::select('fechaInicio')->where('id','=', $fechaInicio['id_red'])->get();
+
+        $hoy = Carbon::now();
+        echo $hoy.' '.$fecha;
+
+        if ($hoy < $fecha[0]->fechaInicio) {
         $create = User::create([
             'name' => strtoupper($input['name']),
             'apellido_paterno' => strtoupper($input['paterno']),
@@ -55,7 +67,6 @@ class CreateNewUser implements CreatesNewUsers
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
             'id_red' => $input['id_red'],
-
         ]);
 
         $rolesdecanela = UsersRoles::create([
@@ -63,6 +74,9 @@ class CreateNewUser implements CreatesNewUsers
             'fk_roles'=>2,
         ]);
 
-        return $create;
+            return $create;
+        }else{
+            return view('auth.register')->withErrors($fechaInicio);
+        }
     }
 }

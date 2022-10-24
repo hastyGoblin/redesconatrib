@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\cat_redesconatrib; 
 use App\Models\entidadfederativa;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class FortifyServiceProvider extends ServiceProvider
 {

@@ -35,15 +35,17 @@ class HomeController extends Controller
 
         if ($rol[0]->fk_roles == '1') {
 
+
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email', 'users.id')
             ->join('UsersRoles AS UR','UR.fk_UsersRoles','=','users.id')
-            ->join('roles AS R','R.ID','=','UR.fk_roles')
+            ->join('Roles AS R','UR.fk_roles','=','R.id')
             ->join('EstatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
-            //->where('users.created_at','<=','2022-10-21')
             ->where('users.activo','=','0')
             ->where('users.fk_estatus','=','1')
+            ->where('UR.fk_roles','=','2')
             ->where('users.id_red','=',$red_id)
+            //->where('users.created_at','<','CR.fechaInicio')
             ->get();
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
 
