@@ -39,7 +39,7 @@ class RegisterResponse extends FortifyRegisterResponse
                 'red' => $red[0]->red,
                 ];
 
-        //Mail::to($email)->send(new RegistroMail($info));
+        Mail::to($email)->send(new RegistroMail($info));
 
         return redirect()->route('register')->with('warning','Registro exitoso se envió un correo a tu cuenta proporcionada');
     }
