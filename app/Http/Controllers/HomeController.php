@@ -33,6 +33,7 @@ class HomeController extends Controller
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
+
         if ($rol[0]->fk_roles == '1') {
 
 
@@ -49,47 +50,48 @@ class HomeController extends Controller
             ->get();
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
 
-        }elseif ($rol[0]->fk_roles == '2') {
+        }
+        elseif ($rol[0]->fk_roles == '2') {
             switch ($red_id) {
 
                 case 1:
                     $mensaje= "Red 1";
-                    return view('red_1_cecofam');
+                    return view('disponible');
                     break;
 
                 case 2:
                     $mensaje= "Red 2";
-                    return view('red_2_rejem');
+                    return view('disponible');
                     break;
 
                 case 3:
                     $mensaje= "Red 3";
-                    return view('red_3_ej');
+                    return view('disponible');
                     break;
 
                 case 4:
                     $mensaje= "Red 4";
-                    return view('red_4_jjocmed');
+                    return view('disponible');
                     break;
 
                 case 5:
                     $mensaje= "Red 5";
-                    return view('red_5_masc');
+                    return view('disponible');
                     break;
 
                 case 6:
                     $mensaje= "Red 6";
-                    return view('red_1_cecofam');
+                    return view('disponible');
                     break;
 
                 case 7:
                     $mensaje= "Red 7";
-                    return view('red_7_sijpa');
+                    return view('disponible');
                     break;
 
                 case 8:
                     $mensaje= "Red 8";
-                    return view('red_8_aj');
+                    return view('disponible');
                     break;
 
                 default:

@@ -13,10 +13,11 @@ use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Fortify;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
-use App\Models\cat_redesconatrib; 
+use App\Models\cat_redesconatrib;
 use App\Models\entidadfederativa;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Auth;
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -28,13 +29,13 @@ class FortifyServiceProvider extends ServiceProvider
     public function register()
     {
         //
-    } 
+    }
 
     /**
      * Bootstrap any application services.
      *
-     * @return void 
-     */ 
+     * @return void
+     */
     public function boot()
     {
         Fortify::loginView(function () {
@@ -55,7 +56,7 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::resetPasswordView(function ($request) {
             return view('auth.passwords.reset', ['request' => $request]);
         });
-        
+
         $this->app->singleton(
             \Laravel\Fortify\Contracts\LoginResponse::class,
             \App\Http\Responses\LoginResponse::class,
