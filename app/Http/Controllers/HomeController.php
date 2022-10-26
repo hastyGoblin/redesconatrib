@@ -8,6 +8,7 @@ use App\Models\cat_redesconatrib;
 use App\Models\Roles;
 use App\Models\usersRoles;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Builder\SortDesc;
 
 class HomeController extends Controller
 {
@@ -37,7 +38,7 @@ class HomeController extends Controller
         if ($rol[0]->fk_roles == '1') {
 
 
-            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email', 'users.id')
+            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email', 'users.id')
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
@@ -46,6 +47,7 @@ class HomeController extends Controller
             ->where('users.fk_estatus','=','1')
             ->where('UR.fk_roles','=','2')
             ->where('users.id_red','=',$red_id)
+            ->orderBy('users.created_at','asc')
             //->where('users.created_at','<','CR.fechaInicio')
             ->get();
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);

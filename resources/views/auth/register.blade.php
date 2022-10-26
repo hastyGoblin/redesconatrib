@@ -13,7 +13,7 @@
 <body>
     <div class="form-body">
         <div class="website-logo">
-            <a href="{{route('login')}}"> 
+            <a href="{{route('login')}}">
                 <div>
                     <img class="logo-size" src="images/Img_Conatrib.png" alt="">
                 </div>
@@ -42,33 +42,33 @@
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             {{ $message }}
                         </div>
-                        @endif   
-                         
+                        @endif
+
                         <h3>Registrate</h3>
                        <!-- <p>Texto texto.</p> -->
                         <!--<div class="page-links">
                             <a href="login2.html">Acceso</a><a href="register2.html" class="active">Reg&iacute;strate</a>
                         </div>-->
                         <form method="POST" action="{{ route('register') }}">
-                            @csrf    
+                            @csrf
                             <div class="form-group row">
 
                                 <div class="col-md-12">
                                     <input style="text-transform: uppercase;" id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre" maxlength="50">
-                                    <input class="form-control" type="text" name="paterno" placeholder="Apellido paterno" style="text-transform: uppercase;" value="{{ old('paterno') }}" required maxlength="50">
-                                    <input class="form-control" type="text" name="materno" placeholder="Apellido materno" style="text-transform: uppercase;" value="{{ old('materno') }}" required maxlength="50">
-                                    <input class="form-control" type="text" name="dependencia" placeholder="Dependencia" style="text-transform: uppercase;" value="{{ old('dependencia') }}" required maxlength="120"> 
+                                    <input class="form-control" type="text" id="paterno" name="paterno" placeholder="Apellido paterno" style="text-transform: uppercase;" value="{{ old('paterno') }}" required maxlength="50">
+                                    <input class="form-control" type="text" id="materno" name="materno" placeholder="Apellido materno" style="text-transform: uppercase;" value="{{ old('materno') }}" required maxlength="50">
+                                    <input class="form-control" type="text" id="dependencia" name="dependencia" placeholder="Dependencia" style="text-transform: uppercase;" value="{{ old('dependencia') }}" required maxlength="120">
 
-                                <select class="custom-select" required name="fk_estado" style="text-transform: uppercase;">
+                                <select class="custom-select" required id="fk_estado" name="fk_estado" style="text-transform: uppercase;">
                                      <option value="">Selecciona una entidad</option>
                                     @foreach($entidades as $entidad)
                                      <option value="{{$entidad->id}}">{{$entidad->entidad}} </option>
                                     @endforeach
                                 </select> <br> <br>
-        
-        
-                                    <input class="form-control" type="text" name="cargo" placeholder="Cargo" style="text-transform: uppercase;" value="{{ old('cargo') }}" required maxlength="120">
-                                    <input class="form-control" type="text" name="celular" placeholder="NÚMERO CELULAR" value="{{ old('celular') }}" required maxlength="15">
+
+
+                                    <input class="form-control" type="text" id="cargo" name="cargo" placeholder="Cargo" style="text-transform: uppercase;" value="{{ old('cargo') }}" required maxlength="120">
+                                    <input class="form-control" type="text" id="celular" name="celular" placeholder="NÚMERO CELULAR" value="{{ old('celular') }}" required maxlength="15">
                                     <input class="form-control @error('email') is-invalid @enderror" id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="CORREO ELECTRÓNICO">
 
                                     @if ($errors->has('email'))
@@ -76,7 +76,7 @@
                                             <strong>{{ $errors->first('email') }}</strong>
                                         </span>
                                     @endif
-                                    
+
                                 <label>Red en la que desea participar</label> <br>
                                 <select class="custom-select" required name="id_red" id="id_red" style="text-transform: uppercase;">
                                      <option value="">Selecciona una red</option>
@@ -84,7 +84,7 @@
                                      <option value="{{$redes->id}}">{{$redes->red}} </option>
                                     @endforeach
                                 </select>
-                                
+
 
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                             </div>
 
                             <div class="form-group row">
-                                
+
 
                                 <div class="col-md-12">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="CONFIRMA CONTRASEÑA">
@@ -109,7 +109,7 @@
                             </div>
                             <!--<input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-                            
+
                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
 							<input type="hidden" name="red" value="convivencia_familiar">
@@ -131,7 +131,7 @@
                                 <button id="submit" type="submit" class="ibtn">Registrar</button>
                             </div>
 
-                        
+
 
                         </form>
 

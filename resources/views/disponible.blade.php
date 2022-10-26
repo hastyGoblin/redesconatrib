@@ -27,7 +27,7 @@
             </div>
             <div class="form-holder">
                 <div class="form-content">
-                    <div class="form-items">
+                    <div class="form-items" style="margin: auto;">
                         <h3>El contenido estar&aacute; disponible a partir del d&iacute;a de la inauguraci&oacute;n de tu Red</h3>
                         <p> </p>
 

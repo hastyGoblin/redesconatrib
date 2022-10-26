@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
 class cat_redesconatrib_seeder extends Seeder
-{ 
+{
     /**
      * Run the database seeds.
      *
@@ -22,18 +22,18 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML1",
-            
+
         ]);//
 
         DB::table('cat_redesconatrib')->insert([
             'id'=>"2",
-            'red'=>"Reunión de la Red Nacional de Estadísticas Judiciales", 
+            'red'=>"Reunión de la Red Nacional de Estadísticas Judiciales",
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML2",
-            
-            
+
+
         ]);//
 
         DB::table('cat_redesconatrib')->insert([
@@ -43,8 +43,8 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML3",
-            
-            
+
+
         ]);//
         DB::table('cat_redesconatrib')->insert([
             'id'=>"4",
@@ -53,8 +53,8 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML4",
-            
-            
+
+
         ]);//
 
         DB::table('cat_redesconatrib')->insert([
@@ -64,8 +64,8 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML4",
-            
-            
+
+
         ]);//
 
         DB::table('cat_redesconatrib')->insert([
@@ -75,8 +75,8 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML5",
-            
-            
+
+
         ]);//
         DB::table('cat_redesconatrib')->insert([
             'id'=>"7",
@@ -85,8 +85,8 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML6",
-            
-            
+
+
         ]);//
         DB::table('cat_redesconatrib')->insert([
             'id'=>"8",
@@ -95,8 +95,8 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML7",
-            
-            
+
+
         ]);//
         DB::table('cat_redesconatrib')->insert([
             'id'=>"9",
@@ -105,8 +105,8 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
             'landingPage'=> "HTML8",
-            
-            
+
+
         ]);//
     }
 }

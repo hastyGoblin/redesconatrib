@@ -30,19 +30,19 @@ class AceptadoRechazadoController extends Controller
             ->where('users.activo','=','1')
             ->where('users.fk_estatus','=','2')
             ->where('users.id_red','=',$red_id)
+            ->orderBy('users.updated_at')
             ->get();
             return view('Aceptados')->with('rol',$rol)->with('red',$red)->with('aceptado',$aceptado);
-            //echo $aceptado;
     }
 
-        
+
 
     public function usuarioRechazado(Request $request){
         $id = Auth::User()->id;
         $red_id = Auth::user()->id_red;
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
-        
+
 
         $rechazados = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
@@ -53,8 +53,9 @@ class AceptadoRechazadoController extends Controller
             ->where('users.activo','=','0')
             ->where('users.fk_estatus','=','3')
             ->where('users.id_red','=',$red_id)
+            ->orderBy('users.updated_at')
             ->get();
-            return view('Rechazados')->with('rol',$rol)->with('red',$red)->with('rechazados',$rechazados);        
+            return view('Rechazados')->with('rol',$rol)->with('red',$red)->with('rechazados',$rechazados);
     }
 
     public function validaInicioRed(Request $request){
@@ -74,7 +75,7 @@ class AceptadoRechazadoController extends Controller
                 [
                     'registro' => 0
                 ]
-            ); 
+            );
         }
     }
 }

@@ -79,8 +79,12 @@
 }
 
 .img-holder .bg {
+    object-fit: contain;
     opacity: 1;
     background-image: url("../images/img2.jpg");
+}
+.IMG_XD{
+    width: 150%;
 }
 
 .form-holder {
@@ -438,7 +442,8 @@
 }
 
 .form-body.without-side .img-holder .info-holder img {
-    display: none;
+    height: 200px;
+    width: 200px;
 }
 
 .form-body.without-side .form-content .form-items {

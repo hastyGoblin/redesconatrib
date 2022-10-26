@@ -12,6 +12,7 @@ use App\Models\User;
 use Carbon\Carbon;
 use Auth;
 use Mail;
+use Illuminate\Database\Eloquent\Builder\SortDesc;
 
 
 class LoginResponse extends FortifyLoginResponse
@@ -30,20 +31,19 @@ class LoginResponse extends FortifyLoginResponse
         $red_id = Auth::user()->id_red;
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
-        $id = Auth::user('fk_estatus', '=', '1');
-        $hoy= Carbon::now();
 
         if ($rol[0]->fk_roles == '1') {
-            
-            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','email','users.id',)
+
+            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email','users.id',)
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
-            ->where('CR.fechaInicio','=','2022-10-19')
             ->where('users.activo','=','0')
             ->where('users.fk_estatus','=','1')
+            ->where('UR.fk_roles','=','2')
             ->where('users.id_red','=',$red_id)
+            ->orderBy('users.created_at','asc')
             ->get();
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
 
