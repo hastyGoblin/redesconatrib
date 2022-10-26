@@ -199,52 +199,53 @@
                                     @endif
 
                                     <br>
-
-                                    <table border="1px" class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Correo</th>
-                                                <th colspan="10">Acciones</th>
-
-                                            </tr>
-                                        </thead>
-
-                                        @foreach($registradosRed as $registrados)
-
-                                            <tbody>
+                                    <div class="table-responsive-lg">
+                                        <table border="1px" class="table">
+                                            <thead>
                                                 <tr>
-                                                    <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td colspan="5">
-                                                        <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
-                                                        @csrf
-                                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                            <input type="submit" name="Aceptar" value="Aceptar">
-                                                        </form>
-                                                    </td>
+                                                    <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                    <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                    <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                    <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                    <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                    <th>Correo</th>
+                                                    <th colspan="10">Acciones</th>
 
-                                                    <td colspan="5">
-                                                        <form method="post" name="Rechazar" action="{{ url('rechazarUsuario') }}">
-                                                        @csrf
-                                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                            <input type="submit"  name="Rechazar" value="Rechazar">
-                                                        </form>
-                                                    </td>
                                                 </tr>
-                                            </tbody>
+                                            </thead>
 
-                                        @endforeach
+                                            @foreach($registradosRed as $registrados)
 
-                                    </table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                        <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                        <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                        <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                        <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                        <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                        <td colspan="5">
+                                                            <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
+                                                            @csrf
+                                                                <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                                                <input type="submit" name="Aceptar" value="Aceptar">
+                                                            </form>
+                                                        </td>
+
+                                                        <td colspan="5">
+                                                            <form method="post" name="Rechazar" action="{{ url('rechazarUsuario') }}">
+                                                            @csrf
+                                                                <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                                                <input type="submit"  name="Rechazar" value="Rechazar">
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+
+                                            @endforeach
+
+                                        </table>
+                                    </div>
 
 
 
