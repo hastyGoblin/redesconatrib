@@ -63,7 +63,7 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
-            'landingPage'=> "HTML4",
+            'landingPage'=> "HTML5",
 
 
         ]);//
@@ -74,7 +74,7 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
-            'landingPage'=> "HTML5",
+            'landingPage'=> "HTML6",
 
 
         ]);//
@@ -84,7 +84,7 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
-            'landingPage'=> "HTML6",
+            'landingPage'=> "HTML7",
 
 
         ]);//
@@ -94,7 +94,7 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
-            'landingPage'=> "HTML7",
+            'landingPage'=> "HTML8",
 
 
         ]);//
@@ -104,7 +104,7 @@ class cat_redesconatrib_seeder extends Seeder
             'fechaInicio'=>"2022-10-19",
             'fechaFin'=>"2022-10-31",
             'activo'=> 1,
-            'landingPage'=> "HTML8",
+            'landingPage'=> "HTML9",
 
 
         ]);//

@@ -25,10 +25,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/login', [prueba::class, 'index']);
-//Route::get('/valida', [prueba::class, 'validaCorreo'])->name('valida');
-/*Auth::routes();*/
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/enviaCorreo', [EnviaCorreoController::class, 'enviaCorreo'])->name('enviaCorreo');
 Route::get('/enviaCorreoConstancia', [EnviaCorreoController::class, 'enviaCorreoConstancia'])->name('enviaCorreoConstancia');
@@ -42,11 +38,6 @@ Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAce
 Route::post('/usuarioRechazado', [AceptadoRechazadoController::class, 'usuarioRechazado'])->name('usuarioRechazado');
 Route::post('/validarInicio', [AceptadoRechazadoController::class, 'validaInicioRed'])->name('validarInicio');
 
+Route::post('/usuarioConstancias', [generaConstancia::class, 'descargaConstancia'])->name('usuarioConstancias');
 //Route::post('/calendario', [CalendarioController::class, 'redCalendario'])->name('calendario');
 
-// Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
-
-
-// Route::post('/usuarioRechazado', [AceptadoRechazadoController::class, 'usuarioRechazado'])->name('usuarioRechazado');
-
-// Route::post('/unasConstancias', [AceptadoRechazadoController::class, 'unasConstancias'])->name('unasConstancias');

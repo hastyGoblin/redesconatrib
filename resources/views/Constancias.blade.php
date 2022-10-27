@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
     <link rel="stylesheet" type="text/css" href="css/iofrm-theme2.css">
 
-  
+
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
@@ -72,7 +72,7 @@
                                 <li class="menu-item">
                                     <a class="dropdown-item">{{Auth::user()->name}}</a>
                                 </li>
-                                
+
                                 <li class="menu-item">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -82,9 +82,9 @@
 
                                     <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
-                                    </form> 
+                                    </form>
                                 </li>
-                                
+
 
 
 
@@ -96,6 +96,7 @@
                 </div>
             </div>
             <div class="clear"></div>
+        </div>
         </header>
         <div id="gdlr-header-substitute"></div>
         <div class="content-wrapper">
@@ -113,7 +114,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -132,13 +133,13 @@
                                         <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-1 onclick="event.preventDefault();
                                                                      document.getElementById('solicitud-form').submit();">
                                             <div class=gdlr-session-head-day>
-                                                    Solicitudes
-                                              
+                                                Solicitudes
+
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
                                         </div>
 
-                                        <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-2 onclick="event.preventDefault();
+                                        <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-2 onclick="event.preventDefault();
                                                                      document.getElementById('usuario-form').submit();">
                                             <div class=gdlr-session-head-day>
                                                 Aceptadas
@@ -146,25 +147,36 @@
 
                                             <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
                                                 @csrf
-                                            </form>  
+                                            </form>
 
                                             <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="POST" class="d-none">
                                                 @csrf
-                                            </form>                                                 
-                                            
+                                            </form>
+
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
 
 
-                                        <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-3 onclick="event.preventDefault();
+                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
                                                                  document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
                                             <div class=gdlr-session-head-day>
-
                                                 Rechazadas
 
                                                 <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
                                                     @csrf
-                                                </form> 
+                                                </form>
+                                            </div>
+                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                        </div>
+
+                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
+                                                                 document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
+                                            <div class=gdlr-session-head-day>
+                                                Constancias
+
+                                                <form id="rechazado-form" action="{{ route('usuarioConstancias')}}" method="POST" class="d-none">
+                                                    @csrf
+                                                </form>
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
@@ -173,15 +185,15 @@
 
 
                                         <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-4>
-                                            <div class=gdlr-session-head-day>Constacias</div>
+                                            <div class=gdlr-session-head-day>Constancias</div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
                                         <div class=clear></div>
-                                    </div> 
+                                    </div>
 
                                     @if($message = Session::get('success'))
                                         <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
-                                            <font color="#155724">El usuario ha sido aceptado xd</font>
+                                            <font color="#155724">La constancia se habilito correctamente</font>
                                         </div>
                                     @endif
 
@@ -206,19 +218,26 @@
                                             </tr>
                                         </thead>
 
-                                        @foreach($rechazados as $registrados)
+                                        @foreach($aceptado as $registrados)
                                             <tbody>
-                                                <tr>   
+                                                <tr>
                                                     <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
-                                                    <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+                                                    <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                    <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                     <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                     <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                    <td colspan="5">
+                                                        <form method="post" name="Habilitar" action="{{ url('usuarioConstancias') }}">
+                                                        @csrf
+                                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                                            <input type="submit"  name="Habilitar" value="Habilitar">
+                                                        </form>
+                                                    </td>
 
                                                 </tr>
                                             </tbody>
-                                        @endforeach  
- 
+                                        @endforeach
+
                                     </table>
 
                                             <div class=container>
@@ -226,9 +245,11 @@
                                                  <div class=clear></div>
                                             </div>
                                            <div class=clear></div>
-                                </div>   
+                                </div>
                             </div>
-                                            <div class=clear></div>
+                                            <div class=clear></div><br><br><br>
+                                            <br>
+
                         </div>
                     </section>
                          <div>
@@ -246,6 +267,8 @@
                 </div>
             </div>
         </footer>
+    </div>
+    </div>
     </div>
 
     <script src='administrador/red/js/jquery/jquery.js'></script>

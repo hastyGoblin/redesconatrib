@@ -8,6 +8,8 @@ use App\Models\cat_redesconatrib;
 use App\Mail\RegistroMail;
 use App\Mail\CorreoConstancia;
 use Mail;
+use Auth;
+use Illuminate\Support\Facades\DB;
 
 ini_set('max_execution_time', 0);
 ini_set('memory_limit','20G');
@@ -15,30 +17,40 @@ ini_set('memory_limit','20G');
 class EnviaCorreoController extends Controller
 {
     public function enviaCorreo(){
-        $info_usuarios = User::where('activo','=', 0)->whereIn('id_red',[7,8,1,3,5,6,4,2])->get();
+        // $info_usuarios = User::where('activo','=', 0)->whereIn('id_red',[7,8,1,3,5,6,4,2])->get(); se comento
+        // $info_usuarios = User::where('activo','=', 0)
+        // ->where('id_red',[
+        //     1,2,3,4,5,6,7,8,9
+        // ])->get();
+        // echo $info_usuarios;
+
+        $enviaCrorreo = User::whereBetween('id',[901, 1043])->get();
+        echo($enviaCrorreo);
+
+
         //$info_usuarios = User::where('email','=','agustin.martinez@tsjcdmx.gob.mx')->get();
         //$usuario=$info_usuarios;
         //$countUsuario=0;
-        echo count($info_usuarios);
-        foreach($info_usuarios as $usuario){
-            //while ($countUsuario <= 10) {
-                # code...
-            
-            $red = cat_redesconatrib::where('id','=', $usuario->id_red)->get();
-            //echo $red;
-            $info = [
-                'nombre' => $usuario->name,
-                'correo' => $usuario->email,
-                'password' => $usuario->password_plano,
-                'red' => $red[0]->red,
-                ];
-            Mail::to($usuario->email)->send(new RegistroMail($info));
-            User::where('id','=', $usuario->id)
-            ->update(['activo' => 1]);
+        // echo count($info_usuarios); se comneto desdce esta linea
+        // foreach($info_usuarios as $usuario){
+        //     //while ($countUsuario <= 10) {
+        //         # code...
+
+        //     $red = cat_redesconatrib::where('id','=', $usuario->id_red)->get();
+        //     //echo $red;
+        //     $info = [
+        //         'nombre' => $usuario->name,
+        //         'correo' => $usuario->email,
+        //         'password' => $usuario->password_plano,
+        //         'red' => $red[0]->red,
+        //         ];
+        //     Mail::to($usuario->email)->send(new RegistroMail($info));
+        //     User::where('id','=', $usuario->id)
+        //     ->update(['activo' => 1]); hasta aqui
             //$countUsuario ++;
 
             //echo $usuario->email;
-        }
+        //}
         //echo $countUsuario;
     }
 
@@ -60,7 +72,7 @@ class EnviaCorreoController extends Controller
                  User::where('id','=', $usuario->id)
                 ->update(['correoConstancia' => 1]);
             //}
-            
+
         }
 
     }
