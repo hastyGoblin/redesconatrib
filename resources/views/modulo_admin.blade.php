@@ -130,13 +130,16 @@
                         </div>
                         <div class="clear"></div>
                     </section>
+                </div>
+            </div>
+        </div>
         <div class=content-wrapper>
             <div class=gdlr-content>
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
 
                     <section id=content-section-1>
                         <div class="section-container container">
-                            <div class=session-item-wrapper style="margin-bottom: 75px;">
+                            <div class=session-item-wrapper style="margin-bottom: auto;">
                                 <div class="gdlr-session-item gdlr-small-session-item gdlr-item">
                                     <div class=gdlr-session-item-head>
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-1>
@@ -205,81 +208,68 @@
 
                                     <br>
 
-                                    <table border="1px" class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Correo</th>
-                                                <th colspan="10">Acciones</th>
 
-                                            </tr>
-                                        </thead>
-
-                                        @foreach($registradosRed as $registrados)
-
-                                            <tbody>
-                                                <tr>
-                                                    <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td colspan="5">
-                                                        <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
-                                                        @csrf
-                                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                            <input type="submit" name="Aceptar" value="Aceptar">
-                                                        </form>
-                                                    </td>
-
-                                                    <td colspan="5">
-                                                        <form method="post" name="Rechazar" action="{{ url('rechazarUsuario') }}">
-                                                        @csrf
-                                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                            <input type="submit"  name="Rechazar" value="Rechazar">
-                                                        </form>
-                                                    </td>
-
-                                                    {{-- <td colspan="5">
-                                                        <form method="post" name="Habilitar" action="{{ url('usuarioConstancias') }}">
-                                                        @csrf
-                                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                            <input type="submit"  name="Habilitar" value="Habilitar">
-                                                        </form>
-                                                    </td> --}}
-                                                </tr>
-                                            </tbody>
-
-                                        @endforeach
-
-                                    </table>
-
-
-
-                                            <div class=container>
-                                                 <div class="gdlr-subscribe-item gdlr-item"></div>
-                                                 <div class=clear></div>
-                                            </div>
-                                           <div class=clear></div>
+                                    </div>
                                 </div>
                             </div>
-                                            <div class=clear></div>
                         </div>
                     </section>
-                    <br><br><br><br><br>
-
-                         <div>
 
 
-        </div>
+                    <br>
                 </div>
             </div>
         </div>
+
+        <div class="table-responsive-sm">
+                                            <table border="1px" class="table">
+                                                <thead>
+                                                    <tr >
+                                                        <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>Correo</th>
+                                                        <th colspan="10">Acciones</th>
+
+                                                    </tr>
+                                                </thead>
+
+                                                @foreach($registradosRed as $registrados)
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td colspan="5">
+                                                                <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
+                                                                @csrf
+                                                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                                                    <input type="submit" name="Aceptar" value="Aceptar">
+                                                                </form>
+                                                            </td>
+
+                                                            <td colspan="5">
+                                                                <form method="post" name="Rechazar" action="{{ url('rechazarUsuario') }}">
+                                                                @csrf
+                                                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                                                    <input type="submit"  name="Rechazar" value="Rechazar">
+                                                                </form>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                @endforeach
+
+                                            </table>
+                                        </div>
+
+
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">
