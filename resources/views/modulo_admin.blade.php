@@ -225,14 +225,14 @@
                                             <table border="1px" class="table">
                                                 <thead>
                                                     <tr >
-                                                        <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                        <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                        <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                        <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                        <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                        <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                        <th>Correo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>Nombre Completo</th>
+                                                        <!--<th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
                                                         <th>Estado</th>
+                                                        <th>Dependencia</th>
+                                                        <th>Cargo</th>
+                                                        <th>Teléfono</th>
+                                                        <th>Correo</th>
                                                         <th colspan="10">Acciones</th>
 
                                                     </tr>
@@ -242,13 +242,14 @@
 
                                                     <tbody>
                                                         <tr>
-                                                            <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                            <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                            <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                            <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                            <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                            <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                            <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
+                                                            <td>{{$registrados->entidad}}</td>
+                                                            <!--<td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>-->
+                                                            <td>{{ $registrados->dependencia }}</td>
+                                                            <td>{{ $registrados->cargo }}</td>
+                                                            <td>{{ $registrados->numero_celular }}</td>
+                                                            <td>{{ $registrados->email }}</td>
 
                                                             <td colspan="5">
                                                                 <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">

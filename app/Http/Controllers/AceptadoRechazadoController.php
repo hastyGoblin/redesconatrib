@@ -21,11 +21,12 @@ class AceptadoRechazadoController extends Controller
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
 
-        $aceptado = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id',)
+        $aceptado = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad')
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
+            ->join('entidadfederativa AS entidad','entidad.id','=','users.fk_estado')
             ->where('UR.fk_roles','=','2')
             ->where('users.activo','=','1')
             ->where('users.fk_estatus','=','2')
@@ -44,11 +45,12 @@ class AceptadoRechazadoController extends Controller
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
 
-        $rechazados = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id',)
+        $rechazados = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad')
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
+            ->join('entidadfederativa AS entidad','entidad.id','=','users.fk_estado')
             ->where('UR.fk_roles','=','2')
             ->where('users.activo','=','0')
             ->where('users.fk_estatus','=','3')
