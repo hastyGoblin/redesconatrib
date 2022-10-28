@@ -46,7 +46,7 @@ class EnviaCorreoController extends Controller
             print_r($info);
             echo"<br>";
 
-            Mail::to($Correo->email)->send(new RegistroMail($info));
+            //Mail::to($Correo->email)->send(new RegistroMail($info));
             //$count++;  
         }
         
