@@ -38,7 +38,7 @@ class HomeController extends Controller
         if ($rol[0]->fk_roles == '1') {
 
 
-            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','email', 'users.id')
+            $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id')
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')

@@ -230,7 +230,9 @@
                                                         <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                         <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                         <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                        <th>Correo</th>
+                                                        <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>Correo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                        <th>Estado</th>
                                                         <th colspan="10">Acciones</th>
 
                                                     </tr>
@@ -245,7 +247,9 @@
                                                             <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                             <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                             <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                            <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                             <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
                                                             <td colspan="5">
                                                                 <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
                                                                 @csrf

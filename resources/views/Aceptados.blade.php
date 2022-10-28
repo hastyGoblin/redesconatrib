@@ -170,7 +170,7 @@
                                         </div>
 
                                         <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-4>
-                                            <div class=gdlr-session-head-day>Constacias</div>
+                                            <div class=gdlr-session-head-day>Constancias</div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
                                         <div class=clear></div>
@@ -198,6 +198,7 @@
                                                 <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                 <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                 <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                 <th>Correo</th>
                                                 <!-- <th colspan="10">Acciones</th> -->
 
@@ -212,6 +213,7 @@
                                                     <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                     <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                     <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                    <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                     <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                 </tr>
                                             </tbody>
