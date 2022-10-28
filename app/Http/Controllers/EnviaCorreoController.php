@@ -24,8 +24,34 @@ class EnviaCorreoController extends Controller
         // ])->get();
         // echo $info_usuarios;
 
+        // $name = Auth::user()->name;
+        // $email = Auth::user()->email;
+        // $red_id =  Auth::user()->id_red;
+
         $enviaCrorreo = User::whereBetween('id',[901, 1043])->get();
-        echo($enviaCrorreo);
+        //$count = 1;
+        foreach ($enviaCrorreo as $Correo){
+            //echo $count." ".$Correo->name."<br>";  
+            //echo $count." ".$Correo->email."<br>";  
+            //echo $count." ".$Correo->id_red."<br>";   
+            $red = cat_redesconatrib::where('id','=', $Correo->id_red)->get();
+            //echo $count." ".$red[0]->red."<br>"; 
+            $info = [
+                'tipo_correo' => 1,
+                'texto' => 'Registro exitoso',
+                'name' => $Correo->name,
+                'correo' => $Correo->email,
+                'red' => $red[0]->red,
+                ];
+            print_r($info);
+            echo"<br>";
+
+            Mail::to($Correo->email)->send(new RegistroMail($info));
+            //$count++;  
+        }
+        
+
+
 
 
         //$info_usuarios = User::where('email','=','agustin.martinez@tsjcdmx.gob.mx')->get();
