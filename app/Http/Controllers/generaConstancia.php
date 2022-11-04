@@ -5,13 +5,29 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Codedge\Fpdf\Fpdf\Fpdf;
 use Auth;
+use User;
 
 class generaConstancia extends Controller
 {
 
+
     private $fpdf;
 
     public function descargaConstancia(){
+
+        // $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id')
+        // ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
+        // ->join('roles AS R','R.ID','=','UR.fk_roles')
+        // ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
+        // ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
+        // ->where('users.activo','=','0')
+        // ->where('users.fk_estatus','=','1')
+        // ->where('UR.fk_roles','=','2')
+        // ->where('users.id_red','=',$red_id)
+        // ->orderBy('users.created_at','asc')
+        // ->get();
+        // return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
+
         $red = Auth::user()->id_red;
         switch ($red) {
 
