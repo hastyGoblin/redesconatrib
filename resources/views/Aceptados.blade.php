@@ -194,8 +194,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                                <th>Estado</th>
                                                 <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                 <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
                                                 <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
@@ -208,9 +207,8 @@
                                         @foreach($aceptado as $registrados)
                                             <tbody>
                                                 <tr>
-                                                    <td>{{ $registrados->name}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                                    <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
+                                                    <td>{{$registrados->entidad}}</td>
                                                     <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                     <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                                     <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
