@@ -64,7 +64,7 @@ class HomeController extends Controller
 
                 case 2:
                     $mensaje= "Red 2";
-                    return view('disponible');
+                    return view('red_3_ej');
                     break;
 
                 case 3:
