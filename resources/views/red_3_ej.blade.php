@@ -10,16 +10,16 @@
 
     <title>Red &#8211; NACIONAL DE ESTAD&Iacute;STICAS JUDICIALES</title>
 
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/superfish/css/superfish.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/dl-menu/component.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/master-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/dl-menu/component.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/css/style-responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/css/style-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_3_est_jud/red/css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
@@ -34,7 +34,9 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="upload/logo_estadistica_judicial.png" alt=""> </a>
+
+                        {{-- <a href="index.html"> <img src="public/rede_3_est_jud/red/upload/logo_estadistica_judicial.png" alt=""> </a>} --}}
+                        <a href="index.html"> <img src="{!! asset('rede_3_est_jud/red/upload/logo_estadistica_judicial.png') !!}" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -68,14 +70,14 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                <li class="menu-item menu-item-has-children">
+                                <li class="menu-item"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </li>
@@ -93,7 +95,7 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_1_cecofam/red/upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_3_est_jud/red/upload/estadisticas_judiciales.png'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -498,7 +500,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/valeria.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_3_est_jud/red/images/img_ponentes/valeria.jpg') !!}" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. VALERIA PARADA SÁNCHEZ
 														 </h3>
@@ -517,7 +519,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Aristedes_Rodrigo_Guerrero.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_3_est_jud/red/images/img_ponentes/Aristedes_Rodrigo_Guerrero.png') !!}" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. ARÍSTIDES RODRIGO GUERRERO GARCÍA</h3>
 														<div class="gdlr-session-item-excerpt">Comisión de Protección de Datos Personales (CPDP) del Sistema Nacional de Transparencia (SNT).
@@ -535,7 +537,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Jose_Guillermo_Castillo.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_3_est_jud/red/images/img_ponentes/Jose_Guillermo_Castillo.png') !!}" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">José Guillermo Castillo Koschnick</h3>
 														<div class="gdlr-session-item-excerpt"> Director General Adjunto de Políticas y Censos Nacionales de Gobierno en la Dirección General de Estadísticas de Gobierno, Seguridad Pública y Justicia en el Instituto Nacional de Estadística y Geografía (INEGI).
@@ -554,7 +556,7 @@
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Maria_Jacqueline_Martinez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_3_est_jud/red/images/img_ponentes/Maria_Jacqueline_Martinez.png') !!}" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. María Jacqueline Martínez Uriarte</h3>
 														<div class="gdlr-session-item-excerpt">Directora General de Gestión Judicial del Consejo de la Judicatura Federal.
@@ -583,7 +585,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/oscar.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_3_est_jud/red/images/img_ponentes/oscar.jpg') !!}" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. OSCAR JAIMES BELLO
 														</h3>
@@ -602,7 +604,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Martha_Beatriz_Vargas.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_3_est_jud/red/images/img_ponentes/Martha_Beatriz_Vargas.png') !!}" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. MARTHA BEATRIZ VARGAS ROJAS,</h3>
 														<div class="gdlr-session-item-excerpt">Directora de Estadística de la Presidencia.
@@ -620,7 +622,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Hernan_Sanchez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_3_est_jud/red/images/img_ponentes/Hernan_Sanchez.png') !!}" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. HERNÁN SÁNCHEZ ZÚÑIGA</h3>
 														<div class="gdlr-session-item-excerpt">Jefe de Unidad Departamental de Apoyo Tecnológico para la Generación de Estadística.
