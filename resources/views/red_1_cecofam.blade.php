@@ -1153,7 +1153,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="images/img_ponentes/claudia2.jpg" alt width="400" height="400"></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/claudia2.jpg" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. CLAUDIA VERÓNICA MEDELLÍN GONZÁLEZ </h3>
                                                         <div class="gdlr-lightbox-form" id="gdlr-form-5">
@@ -1186,7 +1186,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Monica_Robles.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Monica_Robles.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. MÓNICA ROBLES VILLEGAS </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
@@ -1203,7 +1203,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                 </li>
 
                                               <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Lucero_Elizabeth_Turrubiates.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Lucero_Elizabeth_Turrubiates.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. LUCERO ELIZABETH TURRUBIATES NARVÁEZ  </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-7>
@@ -1219,7 +1219,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                 </li>
 
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Tatiana_E_Anaya.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Tatiana_E_Anaya.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. TATIANA E. ANAYA Z&Uacute;&Ntilde;IGA  </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-8>
@@ -1236,7 +1236,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
 
 
 											<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Miguel_A_Garcia.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Miguel_A_Garcia.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. MIGUEL ÁNGEL GARCÍA NARVÁEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-9>
@@ -1275,7 +1275,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Leticia_Perez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Leticia_Perez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. LETICIA PÉREZ LÓPEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-25>
@@ -1289,7 +1289,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Edgar_A_Cabrera.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Edgar_A_Cabrera.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. EDGAR ANTONIO CABRERA MENESES </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-26>
@@ -1304,7 +1304,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Maria_Lourdes_Rojas.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maria_Lourdes_Rojas.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. MARÍA DE LOURDES ROJAS RÍOS </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-27>
@@ -1319,7 +1319,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Ruben_J_Salazar.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Ruben_J_Salazar.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. RUBÉN JORGE SALAZAR OJEDA</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-28>
@@ -1352,7 +1352,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/emma.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/emma.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. EMMA JANETH GARCÍA ORTIZ </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-29>
@@ -1368,7 +1368,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/David_A_Guerra.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/David_A_Guerra.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MASTER DAVID ASAEL GUERRA ESPINOSA</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-30>
@@ -1382,7 +1382,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Elizabeth_Carbajal.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Elizabeth_Carbajal.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. ELIZABETH CARBAJAL MEDINA</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-31>
@@ -1397,7 +1397,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Nancy_S_Martinez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Nancy_S_Martinez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. NANCY SARAHI MARTÍNEZ REYES</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-32>
@@ -1433,7 +1433,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Edgar_Tello.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Edgar_Tello.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. EDGAR TELLO ARCOS</h3>
 
@@ -1448,7 +1448,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Claudia_I_Navarrete.png" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Claudia_I_Navarrete.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. CLAUDIA IBET NAVARRETE MENDOZA</h3>
 
@@ -1464,7 +1464,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/anibal.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/anibal.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. ANÍBAL VAQUERA GUERRERO</h3>
 
@@ -1480,7 +1480,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Cesar_I_Rangel.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Cesar_I_Rangel.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. CÉSAR IVÁN RANGEL ALFONSO  </h3>
 
@@ -1515,7 +1515,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Agustin_Flores.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Agustin_Flores.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title"> DR. AGUSTIN FLORES BALDERRAMA </h3>
 
@@ -1531,7 +1531,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Ricardo_Pichardo.png" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Ricardo_Pichardo.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. RICARDO PICHARDO RÍOS </h3>
 
@@ -1546,7 +1546,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Guadulpe_C_Pavon.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Guadulpe_C_Pavon.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. GUADALUPE CONSUELO PAVÓN MILLÁN</h3>
 
@@ -1562,7 +1562,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Erika_I_Solis.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Erika_I_Solis.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. ERIKA IVONNE SOLÍS RODRÍGUEZ</h3>
 
@@ -1595,7 +1595,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Evelinda_Lopez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Evelinda_Lopez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title"> LIC. EVELINDA LÓPEZ CAMARGO  </h3>
 
@@ -1611,7 +1611,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Yamira_Yaratzed.png" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Yamira_Yaratzed.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. YAMIRA YARATZED SÁNCHEZ GUILLEN </h3>
 
@@ -1626,7 +1626,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Norma_E_Acevedo.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Norma_E_Acevedo.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. NORMA EDITH ACEVEDO HERNÁNDEZ</h3>
 
@@ -1642,7 +1642,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Rocio_E_Lopez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Rocio_E_Lopez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DRA. ROCÍO ESTELA LÓPEZ OROZCO </h3>
 
@@ -1675,7 +1675,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Orlando_F_Rodriguez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Orlando_F_Rodriguez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title"> MTRO. ORLANDO FRANCISCO RODRÍGUEZ DELGADO  </h3>
 
@@ -1691,7 +1691,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Yadira_Luciano.png" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Yadira_Luciano.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. YADIRA LUCIANO MAY</h3>
 
@@ -1706,7 +1706,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Sergio_Padilla.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Sergio_Padilla.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MASTER PABLO SERGIO PADILLA GARCIA  </h3>
 
