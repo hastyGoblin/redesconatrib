@@ -32,7 +32,7 @@ window.addEventListener('load', function(){
                     document.querySelector('#id_red').value = "";
                     document.querySelector('#password').value = "";
                     document.querySelector('#password-confirm').value = "";
-                	alert("No te puedes registrar");
+                	alert("El periodo de registro para esta red ha finalizado");
                 	console.log("No te puedes registrar");
                 }
                 else{
