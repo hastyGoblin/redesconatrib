@@ -28,6 +28,12 @@
 
 .website-logo img {
     width: 200px;
+    margin: -24%;
+    /* border-radius: 50px 50% 50% 50%; */
+    height: 200px;
+    /* background: #448ed3 ; */
+    position: relative;
+    /* bottom: 50px; */
 }
 
 .website-logo .logo {
@@ -130,7 +136,7 @@
 
 .form-content h3 {
     color: #fff;
-    text-align: left;
+    text-align: center;
 }
 
 .form-content p {

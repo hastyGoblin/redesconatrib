@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="rede_6_cjpn/red/images/logo_cooperacion.png" alt=""> </a>
+                        <a href="index.html"> <img src="{!! asset('rede_6_cjpn/red/images/logo_cooperacion.png') !!}" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -68,27 +68,14 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                @if (Auth::user()->constancia == 1)
-                                <li class="menu-item menu-item-has-children">
-                                    <a class="dropdown-item" href="{{ route('descargaConstancia') }}"  target="_blank"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('constancia-form').submit();">
-                                        {{ __('Constancia') }}
-                                    </a>
-
-                                    <form id="constancia-form" action="{{ route('descargaConstancia') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
-                                @endif
-                                <li class="menu-item menu-item-has-children">
+                                <li class="menu-item"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </li>
@@ -118,7 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -163,7 +150,7 @@
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -171,21 +158,17 @@
                                     <div class="gdlr-session-item-head">
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-1">
                                             <div class="gdlr-session-head-day">D&iacute;a 1</div>
-                                            <div class="gdlr-session-head-date">10 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">15 de Noviembre de 2022</div>
                                         </div>
                                         <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-2">
                                             <div class="gdlr-session-head-day">D&iacute;a 2</div>
-                                            <div class="gdlr-session-head-date">13 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">16 de Noviembre de 2022</div>
                                         </div>
 										 <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-3">
                                             <div class="gdlr-session-head-day">D&iacute;a 3</div>
-                                            <div class="gdlr-session-head-date">14 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">17 de Noviembre de 2022</div>
                                         </div>
-										<div class="gdlr-session-item-head-info" data-tab="gdlr-tab-4">
-                                            <div class="gdlr-session-head-day">D&iacute;a 4</div>
-                                            <div class="gdlr-session-head-date">15 Diciembre 2021</div>
-                                        </div>
-                                        <div class="clear"></div>
+									<div class="clear"></div>
                                     </div>
 
                                     <!-- inicia dia -->
@@ -194,387 +177,392 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Magistrado Rafael Guerra &Aacute;lvarez</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
                                                             </div>
                                                         </div>
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Mensaje de Inauguración</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/q7U2avizVEI"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:15</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Magdo. Dr. Oscar Gregorio Cervera Rivero</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado de la Segunda Sala Familiar del TSJCDMX y Coordinador Nacional de la Red Mexicana de Cooperación Judicial para la Protección de la Niñez.</a></div>
-                                                        </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
                                                     </div>
-												
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia Magistral</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Aspectos a considerar en la ejecución de la sentencia que concede la Restitución.
-													
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/XS8HEDhEDEc"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                           </div>
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:10  hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
-                                                            
-                                                        </div>
-                                                    </div>
-									           <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>RECESO</a></h3>
-                                                 </div>
-                                            <div class="clear"></div>
-                                        </div>
-										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:30</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Mtro. José Roberto de Jesús Treviño Sosa</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Juez Segundo de Juicio Familiar Oral de Monterrey, Nuevo León.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Oscar Gregorio Cervera Rivero</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado de la Segunda Sala Familiar del Poder Judicial de la Ciudad de México. </div>
                                                         </div>
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Pruebas en el extranjero.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">El Sentido de Urgencia Convencional</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/X94WsxqRYJs"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                           </div>
+										<div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:15  hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Oscar Gregorio Cervera Rivero</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado de la Segunda Sala Familiar del Poder Judicial de la Ciudad de México. </div>
+                                                        </div>
+														<div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. María Margarita Gallegos López</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Jueza Séptimo de lo Familiar de la Ciudad de México con Especialidad en Restitución Internacional de Menores.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        
-    
-                                    </div>
-                                    <!-- termina dia -->
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Análisis de los Últimos Criterios Emitidos por la Suprema Corte de Justicia de la Nación en materia de Restitución Internacional de Menores</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                           </div>
+
+                                  </div>
+                                 <!-- termina dia -->
+
+								 <!-- inicia dia -->
+
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                        
+
                                        <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00  hrs.</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Dr. Fernando Rangel Ramírez</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado del Décimo Primer Tribunal Colegiado en materia Civil del Primer Circuito de la Ciudad de México.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Fernando Rangel Ramírez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado Décimo Primer Tribunal Colegiado en materia Civil del Primer Circuito de la Ciudad de México </div>
                                                         </div>
+
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia Magistral</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Comentarios sobre la suplencia de la deficiencia de la queja en asuntos que afecten a niñas, niños y adolescentes
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">Las Obligaciones de la Filiación y la Vida en Familia</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/j0GSS2S9kp8" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                           </div>
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:30</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:15  hrs.</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Mtro. Carlos Odriozola Mariscal</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Director General del Bufete Odriozola,S.C.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magda. Marisela Sandoval López</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrada Presidenta de la Sala Familiar del Tribunal Superior de Justicia de Querétaro</div>
                                                         </div>
+
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Las redes judiciales en la cooperación procesal internacional e interestatal: hacia el nuevo Código Nacional de Procedimientos Civiles y Familiares.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">La Adopción Internacional desde una Perspectiva Jurídica</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/HgEimZIM1VI" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                          </div>
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:30</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:30  hrs.</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Lic. Marisela Sandoval López</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrada Presidenta de la Sala Familiar del Tribunal Superior de Justicia de Querétaro.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magdo. Sergio Arturo Valls Esponda </a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Director del Centro Estatal de Mediación, Conciliación y Justicia Restaurativa del Estado de México</div>
+															<div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. María de Lourdes Hernández Garduño</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Jueza Especializada en Procedimientos de Adopción, Restitución Internacional de Menores y demás especiales del estado de México</div>
+															<div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Gabriela Guillermina Cejudo Guzmán</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Mediadora, Conciliadora y Facilitadora del Poder Judicial del estado de México</div>
                                                         </div>
+
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia</a></h3>
-                                                <div class="gdlr-session-item-excerpt">La Restitución Internacional de Menores frente a la perspectiva de género.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">La Mediación en la Restitución Internacional de Menores como una Alternativa en Favor de Niños, Niñas y Adolescentes</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/5RJ9XmT1ew4" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-										
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                          </div>
+
 								  </div>
-									            <!-- termina dia -->
+
+									     <!-- termina dia -->
+										 <!-- inicia dia -->
+
+
                                     <div class="gdlr-session-item-tab-content gdlr-tab-3">
-                                        
+
                                        <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00  hrs.</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Dr. Juan Carlos Ortega Castro</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado del Segundo Tribunal Colegiado en materia Civil del Segundo Circuito de Toluca, estado de México.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Juan Carlos Ortega Castro</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado del Segundo Tribunal Colegiado en materia Civil del Segundo Circuito de Toluca, estado de México</div>
                                                         </div>
+
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia Magistral</a></h3>
-                                                <div class="gdlr-session-item-excerpt">La Teoría del Caso en el Procedimiento de Restitución Internacional de Menores.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">La Violencia Familiar dentro del Procedimiento de Restitución Internacional de Menores</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=P34cbr_TvV0" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                          </div>
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:30</div>
-                                                     <div class="clear"></div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:15 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. José Roberto de Jesús Treviño Sosa</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Juez Segundo de Juicio Familiar Oral de Monterrey, Nuevo León</div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>RECESO</a></h3>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
+                                                <h3 class="gdlr-session-item-title">La Cooperación Judicial Internacional</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia</div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                          </div>
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:40</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:45 hrs.</div>
                                                     <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Dra. Nuria González Martín</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Investigadora Titular “C” del Instituto de Investigaciones Jurídicas de la Universidad Nacional Autónoma de México.</a></div>
+																<div class="gdlr-session-item-excerpt">Poder Judicial de la CDMX</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magdo. Dr. Oscar Gregorio Cervera Rivero</a></div>
+                                                            </div>
+
                                                         </div>
+														<div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Jueza Dra. María Margarita Gallegos López</a></div>
+                                                            </div>
+													 </div>
+														<div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="gdlr-session-item-excerpt">Secretaría de Relaciones Exteriores</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Claudia Sierra González
+																	<div class="gdlr-session-item-excerpt">Subdirectora de Restitución y Custodia Internacional de Menores</div>
+</a></div>
+                                                            </div>
+
+                                                        </div>
+
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia</a></h3>
-                                                <div class="gdlr-session-item-excerpt">La Mediación en casos de Sustracción Internacional de Menores.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">Mesa de Debate con los Jueces de la Red y la Autoridad Central sobre “El Problema Migratorio frente al Convenio sobre los Aspectos Civiles de la Sustracción Internacional de Menores</h3>
+												<div class="gdlr-session-item-excerpt">Mesa de Debate</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=-y06fCbOQRw" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:10</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Dra. María Margarita Gallegos López</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Jueza Séptimo de lo Familiar de la Ciudad de México con especialidad en Restitución Internacional de Menores.</a></div>
-                                                        </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
                                                     </div>
-												
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia</a></h3>
-                                                <div class="gdlr-session-item-excerpt">La autonomía progresiva de las niñas y niños en los procedimientos de Restitución Internacional.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://www.youtube.com/watch?v=MNZiwxUtjQQ" target="_blank"><button class="newsletter-submit gdlr-button with-border" target="_blank">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-										
-								  </div>
-									
-									<div class="gdlr-session-item-tab-content gdlr-tab-4">
-                                     
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:15</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Magdo. Dr. Oscar Gregorio Cervera Rivero</a></div>
-													          </div>
-															<div class="session-speaker-list-item" ><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinador Nacional de la Red Mexicana de Cooperación Judicial para la Protección de la Niñez.</a></div>
-                                                        </div>
-														 <div class="session-speaker-inner"><i class="fa fa-user"></i>
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Dra. Margarita Gallegos López</a></div>
-													          </div>
-															<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Jueza Séptimo de lo Familiar de la Ciudad de México con especialidad en Restitución Internacional de Menores.</a></div>
-                                                        </div>
-														<div class="session-speaker-inner"><i class="fa fa-user"></i>
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Miguel Angel Reyes Moncayo</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Director General Adjunto de Derecho de Familia.</a></div>
-                                                        </div>
-														<div class="session-speaker-inner"><i class="fa fa-user"></i>
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Lic. Claudia Sierra Martínez</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Subdirectora de Restitución y Custodia Internacional de Menores.</a></div>
-                                                        </div>
-                                                    </div>
-												
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Mesa de debate</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Mesa de debate con los Jueces de la Red, sobre un caso práctico de Restitución Internacional de Menores.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a" target="_blank"><button class="newsletter-submit gdlr-button with-border" target="_blank">Ver mesa de debate</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:15</div>
-                                                   
-												
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
+
+												<div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title"><a>Lectura de conclusiones.</a></h3>
-                                               
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a" target="_blank"><button class="newsletter-submit gdlr-button with-border" target="_blank">Ver lectura</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
+											 <h3 class="gdlr-session-item-title"><a>Clausura.</a></h3>
+
+
                                         </div>
-										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>14:00</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner"><i class="fa fa-user"></i>
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Magdo. Dr. Oscar Gregorio Cervera Rivero</a></div>
-													          </div>
-															<div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado de la Segunda Sala Familiar del TSJCDMX y Coordinador Nacional de la Red Mexicana de Cooperación Judicial para la Protección de la Niñez.</a></div>
-                                                        </div>
-                                                    </div>
-												
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-										   
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Clausura</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Clausura formal de la Décima Segunda Reunión de la Red Mexicana de Cooperación Judicial para la Protección de la Niñez.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ed8e96136e3ff657eaae72db4d1837b3a" target="_blank"><button class="newsletter-submit gdlr-button with-border" >Ver mesa de debate</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-										
+                                              </div>
+
+
+                                             <div class="clear"></div>
+                                          </div>
+
 								  </div>
-                                 
+
+									<div class="gdlr-session-item-tab-content gdlr-tab-4">
+
+                                 </div>
+
                                 </div>
                                 <div class=clear></div>
                             </div>
@@ -582,11 +570,11 @@
                         </div>
                             </div>
                         </div>
-                        
+
                     </section>
                     <div class="section-container container">
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
@@ -599,15 +587,14 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/nuria.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Claudia_Sierra.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DRA. NURIA GONZÁLEZ MARTÍN</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Claudia Sierra González</h3>
+														<div class="gdlr-session-item-excerpt">Subdirectora de Restitución y Custodia Internacional de Menores</div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-1>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ES DOCTORA EN DERECHO INTERNACIONAL PRIVADO POR LA UNIVERSIDAD PABLO DE OLAVIDE, SEVILLA, ESPAÑA. POSTDOCTORA EN DERECHO -´NEW TECHNOLOGIES AND LAW´”- EN LA MEDITERRANEA INTERNATIONAL CENTRE FOR HUMAN RIGHTS RESEARCH (MICHR) DE LA UNIVERSITÀ MEDITERRANEA DI REGGIO CALABRIA (ITALIA). <br> ES INVESTIGADORA TITULAR “C” DEL INSTITUTO DE INVESTIGACIONES JURÍDICAS DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO (IIJ-UNAM) FUE DIRECTORA DEL BOLETÍN MEXICANO DE DERECHO COMPARADO (BMDC) Y AL TÉRMINO DE SU ENCARGO CONTINUÓ CON LA COORDINACIÓN DE LA COLECCIÓN “OPINIONES TÉCNICAS SOBRE TEMAS DE RELEVANCIA NACIONAL” ES INVESTIGADORA DEL SISTEMA NACIONAL DE INVESTIGADORES, CONACYT, NIVEL III.  <br> PARTICIPA EN COMISIONES ESPECIALES Y GRUPOS DE EXPERTOS TANTO DE LA CONFERENCIA DE LA HAYA DE DERECHO INTERNACIONAL PRIVADO (HCCH) Y EN EL SERVICIO SOCIAL INTERNACIONAL (ISS) EN HOLANDA Y SUIZA, RESPECTIVAMENTE, ADEMÁS DE PARTICIPAR EN GRUPOS DE TRABAJO, DESTACANDO POR SU ÁREA DE EXPERTISE, EL CONFORMADO EN MATERIA DE MEDIACIÓN FAMILIAR INTERNACIONAL EN CASOS DE SUSTRACCIÓN INTERNACIONAL PARENTAL CON EL DEPARTAMENTO DE ESTADO, CALIFORNIA, ESTADOS UNIDOS DE AMÉRICA; ASÍ COMO EN DIVERSOS COMITÉS NACIONALES DICTAMINADORES Y REVISORES DEL ÁREA RELATIVA A LAS CIENCIAS SOCIALES. <br> CONSEJERA INTERNA DEL INSTITUTO DE NVESTIGACIONES JURÍDICAS DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO. MEDIADORA CERTIFICADA POR EL TRIBUNAL SUPERIOR DE JUSTICIA DE LA CIUDAD DE MÉXICO. ASESORA EXTERNA AD HONOREM DE LA SECRETARÍA DE RELACIONES EXTERIORES MEXICANA. PROFESORA DE LICENCIATURA, MAESTRÍA Y DOCTORADO EN UNIVERSIDADES NACIONALES E INTERNACIONALES.  <br> ES MIEMBRO DE LA ACADEMIA MEXICANA DE CIENCIAS (AMC), MIEMBRO DE LA INTERNATIONAL ACADEMY OF COMPARATIVE LAW (IACL), MIEMBRO DE NÚMERO DE LA ACADEMIA MEXICANA DE DERECHO INTERNACIONAL PRIVADO Y COMPARADO (AMEDIP), ENTRE OTRAS INSTITUCIONES Y ASOCIACIONES ACADÉMICAS. <br> ES AUTORA DE 22 LIBROS DE PROPIA AUTORÍA/COAUTORÍA, 40 LIBROS COORDINADOS Y/O COMPILADOS Y MÁS DE DOS CENTENARES DE ARTÍCULOS PUBLICADOS EN REVISTAS DE EXCELENCIA NACIONALES E INTERNACIONALES. <br> A PARTIR DE 2018 ES SENIOR WEINSTEIN FELLOW DE LA WEINSTEIN INTERNATIONAL FOUNDATION (WIF). ENTRE SUS GALARDONES SE ENCUENTRAN: PREMIO ALTAMIRANO POR EL INSTITUTO DE INVESTIGACIONES JURÍDICAS DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO 2002. 
-
+                                                                    LICENCIADA EN DERECHO POR LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO CON UNA ESPECIALIDAD EN DERECHO ADMINISTRATIVO Y UN DIPLOMADO EN MEDIACIÓN FAMILIAR.  <br> LA LIC. CLAUDIA SIERRA HA PARTICIPADO COMO PONENTE EN LAS REUNIONES DE LA RED MEXICANA DE COOPERACIÓN JUDICIAL PARA LA PROTECCIÓN DE LA NIÑEZ, ESCUELAS JUDICIALES ESTATALES, ASÍ COMO EN LAS JORNADAS DE ACTUALIZACIÓN EN MATERIA CIVIL Y ADMINISTRATIVA EN EL CONSEJO DE LA JUDICATURA FEDERAL. <br> SE HA DESEMPEÑADO COMO ABOGADA DICTAMINADORA EN LA DIRECCIÓN DE NACIONALIDAD Y NATURALIZACIÓN DE LA DIRECCIÓN GENERAL DE ASUNTOS JURÍDICOS Y JEFA DEL DEPARTAMENTO DE RECUPERACIÓN DE ALIMENTOS EN EL EXTRANJERO AMBAS EN LA SECRETARÍA DE RELACIONES EXTERIORES. <br>  EN ESTE MOMENTO FUNGE COMO SUBDIRECTORA DE RESTITUCIÓN Y CUSTODIA INTERNACIONAL DE MENORES EN LA DIRECCIÓN GENERAL ADJUNTA DE DERECHO DE FAMILIA, OFICINA DESIGNADA COMO AUTORIDAD CENTRAL PARA LAS CONVENCIONES EN MATERIA DE SUSTRACCIÓN INTERNACIONAL DE MENORES ASÍ COMO ENCARGADA DE LOS CASOS DE REUNIFICACIÓN FAMILIAR ESTADOS UNIDOS-MÉXICO.   <br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -615,15 +602,14 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/fernando.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Fernando_Rangel_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MAGISTRADO FERNANDO RANGEL RAM&Iacute;REZ</h3>
-														
+														<div class="gdlr-session-item-excerpt">Magistrado Décimo Primer Tribunal Colegiado en materia Civil del Primer Circuito de la Ciudad de México </div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-2>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ES LICENCIADO EN DERECHO POR LA ESCUELA NACIONAL DE ESTUDIOS PROFESIONALES, PLANTEL ARAGÓN, DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO.<br> ESPECIALISTA EN ADMINISTRACIÓN DE JUSTICIA EN JUZGADOS DE DISTRITO, POR EL ENTONCES INSTITUTO DE LA JUDICATURA FEDERAL, ACTUALMENTE ESCUELA FEDERAL DE FORMACIÓN JUDICIAL. <br> ES MAESTRO EN DERECHO DE AMPARO POR LA UNIVERSIDAD TEPANTLATO.<br> ES DOCTOR EN DERECHO POR LA UNIVERSIDAD IUS SEMPER. <br>JUEZ DE DISTRITO DE JULIO DE 2002 A OCTUBRE DE 2011.<br> COORDINADOR DE TRIBUNALES COLEGIADOS EN MATERIA CIVIL DEL PRIMER CIRCUITO DESDE 2015. <br> MIEMBRO DE LA ASOCIACIÓN NACIONAL DE MAGISTRADOS DE CIRCUITO Y JUECES DE DISTRITO DEL PODER JUDICIAL DE LA FEDERACIÓN, ASOCIACIÓN CIVIL., EN DONDE EN LA ACTUALIDAD SE DESEMPEÑA COMO DIRECTOR DE FINANZAS EN LA DIRECTIVA REGIONAL DEL PRIMER CIRCUITO, EN LA CIUDAD DE MÉXICO. <br> ES MIEMBRO DE LA ASOCIACIÓN NACIONAL DE DOCTORES EN DERECHO. <br> FUE MIEMBRO DEL COMITÉ ACADÉMICO DEL INSTITUTO DE LA JUDICATURA FEDERAL DE FEBRERO DE 2010 A FEBRERO DE 2014. <br> EN NOVIEMBRE DE DOS MIL QUINCE RECIBIÓ LA PRESEA TEPANTLATO AL MÉRITO JURÍDICO. <br> DOCENTE EN LA ESCUELA FEDERAL DE FORMACIÓN JUDICIAL, EL TRIBUNAL FEDERAL ELECTORAL, LAS UNIVERSIDADES IUS SEMPER, TEPANTLATO E INADEJ, ENTRE OTRAS. <br> ES MAGISTRADO DE CIRCUITO DESDE NOVIEMBRE DE 2011, ADSCRITO ACTUALMENTE AL DÉCIMO PRIMER TRIBUNAL COLEGIADO EN MATERIA CIVIL DEL PRIMER CIRCUITO. <br>
-
+                                                                    ELicenciado en Derecho por la Escuela Nacional de Estudios Profesionales, ahora Facultad de Estudios Superiores, plantel Aragón, de la Universidad Nacional Autónoma de México.<br> Especialista en Administración de Justicia en Juzgados de Distrito, por el entonces Instituto de la Judicatura Federal, ahora Escuela Federal de Formación Judicial.<br> Maestro en Derecho de Amparo por la Universidad Tepantlato.<br> Maestro en Derecho Judicial por la Universidad Panamericana.<br> Doctor en Derecho por la Universidad Ius Semper.<br>Juez de Distrito de julio de 2002 a octubre de 2011.<br> Magistrado de Circuito desde noviembre de 2011, adscrito actualmente al Décimo Primer Tribunal Colegiado en Materia Civil del Primer Circuito.<br>Coordinador de tribunales colegiados en materia civil del primer Circuito desde 2015.<br>Miembro de la Asociación Nacional de Magistrados de Circuito y Jueces de Distrito del Poder Judicial de la Federación, A.C., en donde en la actualidad se desempeña como Director General del Primer Circuito que corresponde a la Ciudad de México.<br>Miembro de la Asociación Nacional de Doctores en Derecho.<br>Fue miembro del comité académico del entonces Instituto de la Judicatura Federal, ahora Escuela Federal de Formación Judicial, de febrero de 2010 a febrero de 2014.<br>Miembro del Consejo Académico de la Universidad Ius Semper.<br>En noviembre de dos mil quince recibió la presea Tepantlato al Mérito Jurídico.<br>Docente en la Escuela Federal de Formación Judicial, el Tribunal Federal Electoral, las universidades Ius Semper, Tepantlato, Inadej e Iustec, entre otras.<br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -631,15 +617,15 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/persona2.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Guillermina_G_Cejudo.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">LICENCIADA CLAUDIA SIERRA MART&Iacute;NEZ</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Doctora Gabriela Guillermina Cejudo Guzmán</h3>
+														<div class="gdlr-session-item-excerpt">Mediadora, Conciliadora y Facilitadora del Poder Judicial del estado de México</div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-3>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ES LICENCIADA EN DERECHO POR LA FACULTAD DE ESTUDIOS SUPERIORES ARAGÓN DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO CON UNA ESPECIALIDAD EN DERECHO ADMINISTRATIVO POR LA MISMA FACULTAD.<br> CUENTA CON UN DIPLOMADO EN MEDIACIÓN FAMILIAR POR EL INSTITUTO DE INVESTIGACIONES JURÍDICAS DE LA MISMA UNIVERSIDAD.<br> HA PARTICIPADO COMO PONENTE EN LAS REUNIONES DE LA RED MEXICANA DE COOPERACIÓN JUDICIAL PARA LA PROTECCIÓN DE LA NIÑEZ, ESCUELAS JUDICIALES ESTATALES, ASÍ COMO EN LAS JORNADAS DE ACTUALIZACIÓN EN MATERIA CIVIL Y ADMINISTRATIVA EN EL CONSEJO DE LA JUDICATURA FEDERAL.<br> SE HA DESEMPEÑADO COMO ABOGADA DICTAMINADORA EN LA DIRECCIÓN DE NACIONALIDAD Y NATURALIZACIÓN DE LA DIRECCIÓN GENERAL DE ASUNTOS JURÍDICOS Y JEFA DEL DEPARTAMENTO DE RECUPERACIÓN DE ALIMENTOS EN EL EXTRANJERO, AMBAS EN LA SECRETARÍA DE RELACIONES EXTERIORES.<br> ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE RESTITUCIÓN Y CUSTODIA INTERNACIONAL DE MENORES EN LA DIRECCIÓN GENERAL ADJUNTA DE DERECHO DE FAMILIA, OFICINA DESIGNADA COMO AUTORIDAD CENTRAL PARA LAS CONVENCIONES EN MATERIA DE SUSTRACCIÓN INTERNACIONAL DE MENORES ASÍ COMO ENCARGADA DE LOS CASOS DE REUNIFICACIÓN FAMILIAR ESTADOS UNIDOS-MÉXICO.<br>
-
+																	Formación académica<br>
+                                                                    LICENCIADO EN DERECHO POR LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br>MAESTRÍA EN DERECHO PROCESAL PENAL, POR EL INSTITUTO DE ESTUDIOS SUPERIORES EN DERECHO PENAL A.C.<br>DOCTORA EN DERECHO, POR EL INSTITUTO DE ESTUDIOS SUPERIORES EN DERECHO PENAL A.C.<br> DOCTORA EN DERECHO POR EL CENTRO DE ESTUDIOS DE POSGRADO EN DERECHO.<br>DIPLOMADO EN MEDIACIÓN Y CONCILIACIÓN, POR LA ESCUELA JUDICIAL DEL ESTADO DE MÉXICO.<br> CERTIFICACIÓN POR LA UNIVERSIDAD JAVERIANA DE CALI COLOMBIA, DEL DIPLOMADO VIRTUAL EN JUSTICIA RESTAURATIVA.<br> DIVERSOS DIPLOMADOS EN DERECHOS HUMANOS POR LA COMISIÓN NACIONAL DE DERECHOS HUMANOS.<br> Trayectoria Profesional <br> SE HA DESEMPEÑADO COMO COMO CATEDRÁTICO Y DISERTANTE EN DIVERSOS CURSOS, TALLERES Y SEMINARIOS RELACIONADOS CON LOS MÉTODOS ALTERNOS DE SOLUCIÓN DE CONFLICTOS.<br>  FACILITADORA DE PROCESOS RESTAURATIVOS EN JUSTICIA PENAL PARA ADULTOS Y ADOLESCENTES.<br>  ACTUALMENTE SE DESEMPEÑA COMO MEDIADORA- CONCILIADORA Y FACILITADORA DEL CENTRO ESTATAL DEL PODER JUDICIAL DEL ESTADO DE MÉXICO.<br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -647,14 +633,14 @@
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/maria.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Jose_R_Trevino_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DRA. MAR&Iacute;A MARGARITA GALLEGOS L&Oacute;PEZ</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. José Roberto de Jesús Treviño Sosa </h3>
+														<div class="gdlr-session-item-excerpt">Juez Segundo de Juicio Familiar Oral de Monterrey, Nuevo León </div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-4>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ES LICENCIADA EN DERECHO POR LA FACULTAD DE DERECHO DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO.<br>ES MAESTRA EN DERECHO CIVIL POR LA DIVISIÓN DE ESTUDIOS DE POSGRADO DE LA FACULTAD DE DERECHO DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO.<br> CUENTA CON DIPLOMATURA INTERNACIONAL DERECHO CIVIL Y FAMILIAR, IMPARTIDO POR LA UNIVERSIDAD AUTÓNOMA DE BARCELONA, ESPAÑA. <br> ES DOCTORA EN DERECHO FAMILIAR POR LA UNIVERSIDAD DE TEPANTLATO Y DOCTORANDA POR LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO. <br> HA SIDO CONFERENCISTA EN DIVERSOS CONGRESOS NACIONALES E INTERNACIONALES. <br>RECIBIÓ LA PRESEA TEPANTLATO OTORGADA POR DICHA UNIVERSIDAD EN EL AÑO 2015. <br>ES MIEMBRO SUPERNUMERARIO DE LA ASOCIACIÓN MEXICANA DE DERECHO INTERNACIONAL PRIVADO. <br>AMEDIP DENTRO DEL TRIBUNAL SUPERIOR DE JUSTICIA DE LA CIUDAD DE MÉXICO HA OCUPADO LOS SIGUIENTES CARGOS:<br> SECRETARIA CONCILIADORA EN EL JUZGADO TRIGÉSIMO QUINTO DE LO FAMILIAR. <br>JUEZ POR OPOSICIÓN DEL JUZGADO DÉCIMO TERCERO DE LO FAMILIAR. <br> ACTUALMENTE ES JUEZ SÉPTIMO DE LO FAMILIAR CON ESPECIALIDAD EN RESTITUCIÓN INTERNACIONAL DE MENORES Y SECRETARIA TÉCNICA DE LA RED MEXICANA DE COOPERACIÓN JUDICIAL PARA LA PROTECCIÓN DE LA NIÑEZ.<br>
+                                                                    LICENCIADO EN DERECHO POR LA FACULTAD DE DERECHO Y CRIMINOLOGIA DE LA UNIVERSIDAD AUTONOMA DE NUEVO LEON Y EN ELLA OBTUVO EL GRADO DE MAESTRIA EN CIENCIAS PENALES E INICIO ESTUDIOS DE DOCTORADO EN UN PROGRAMA CON LA UNIVERSIDAD PABLO DE OLAVIDE.<br> INGRESO EN 1982 AL PODER JUDICIAL HABIENDO SIDO MERITORIO, PRESTADOR DELSERVICIO SOCIAL, OFICIAL ADMINISTRATIVO, ACTUARIO, SECRETARIO DE JUZGADO Y SECRETARIO DE SALA.<br> EN 1995 FUE DESIGNADO JUEZ 1o DE LO FAMILIAR CON SEDE EN MONTERREY, NUEVO LEON.<br> EN 2011 SE LE DESIGNO JUEZ 2o DE JUICIO FAMILIAR ORAL CON SEDE EN MONTERREY, NUEVO LEON.<br> DEL 2019 AL 2021, FUE JUEZ PRIMERO DE JUICIO FAMILIAR ORAL CON SEDE EN SAN NICOLAS DE LOS GARZA, NUEVO LEON.<br> ACTUALMENTE JUEZ DE LO FAMILIAR ORAL EN RETIRO.<br> CATEDRATICO EN LICENCIATURA Y POSGRADO EN LA FACULTAD DE DERECHO Y CRIMONOLOGIA DE LA UNIVERSIDAD AUTONOMA DE NUEVO LEON, Y EN LA UNIVERSIDAD REGIOMONTANA. TAMBIEN DEL INSTITUTO DE LA JUDICATURA DEL PODER JUDICIAL DEL ESTADO DE NUEVO LEON.<br> HA RECIBIDO RECONOCIMIENTOS POR LA FUNCION JUDICIAL Y EN LA DOCENCIA.<br> EN ESTE AÑO, SE LE RECONOCIO COMO ABOGADO JUEZ POR EL COLEGIO DE ABOGADOS REGIOMINTANOS A.C.<br>HA PUBLICADO ARTÍCULOS EN REVISTAS Y LIBROS DE ORDEN INTERNACIONAL,NACIONAL Y LOCAL, SOBRESALIENDO EN EL BOLETIN DE LOS JUECES DE LA HAYA Y CALIDAD DE REVISOR DE ARTICULOS QUE PUBLICA LA SUPREMA CORTE DE JUSTICIA DE LA NACION.<br> HA PARTICIPADO EN PROYECTOS DE REFORMAS LEGISLATIVAS, EN SEMINARIOS Y DIPLOMADOS REALIZADOS EN EL AMBITO LOCAL, NACIONAL E INTERNACIONAL, DESTACANDO SU PARTICIPACION EN EL ENCUENTRO DE ALTO NIVEL SOBRE VIOLENCIA CONTRA LAS MUJERES Y NIÑAS Y LA PANDEMIA COVID 19.<br> UNA MIRADA GLOBAL, PROMOVIDO POR LA ORGANIZACION DE ESTADOS AMERICANOS (OEA) Y LA CORTE INTERAMERICANA DE DERECHOS HUMANOS, ASI COMO EL CURSO DE SUSTRACCION INTERNACIONAL DE MENORES IMPARTIDO POR LA RED IBEROAMERICANA DE ESCUELAS JUDICIALES Y LA ESCUELA JUDICIAL DE LAREPUBLICA DE ARGENTINA.<br> HA PARTICIPADO EN PROGRAMAS DE RADIO Y TELEVISIÓN. ASI COMO EN CONFERENCIAS DIPLOMADOS, SEMINARIOS REALIZADOS SOBRE TEMAS JURIDICOSTANTO EN EL ESTADO DE NUEVO LEON COMO EN DIVERSAS ENTIDADES DE LA REPUBLICA MEXICANA Y EN EL EXTRANJERO EN REUNIONES BI NACIONALES MEXICO ESTADOS UNIDOS, EN OTRAS RELACIONADAS CON LA CONFERENCIA DE DERECHO INTERNACIONAL PRIVADO REALIZADAS EN LA HAYA PAISES BAJOS, EN PANAMA , ARGENTINA Y LOS ESTADOS UNIDOS.<br> CONDUJO EL PROGRAMA ARMONIA FAMILIAR EN EL TRIBUNAL RADIO EN EL PODER JUDICIAL DEL ESTADO DE NUEVO LEON.<br>HA SIDO MIEMBRO DEL SISTEMA MUNICIPAL DE PROTECCION INTEGRAL DELOSDERECHOS DE NIÑAS, NIÑOS Y ADOLESCENTES DE MONTERREY, ASI COMO DEL CONSEJO CONSULTIVO NACIONAL E INTERNACIONAL DE LA FACULTAD DE TRABAJO SOCIAL Y DESARROLLO HUMANO DE LA UANL.<br> MIEMBRO DE LA RED DE JUECES DE ENLACE DE LA CONFERENCIA DE DERECHO INTERNACIONAL PRIVADO DE LA HAYA, PAISES BAJOS. <br>MIEMBRO DE LA RED DE COOPERACION PARA LA PROTECCION DE LA NIÑEZ MEXICANA.<br> MIEMBRO DE LA ACADEMIA DE DERECHO INTERNACIONAL PRIVADO Y COMPARADO MIEMBRO HONORARIO THE LEGAL HONOR SOCIETY OF PHI DELTA PHI<br>
 
 																</h3>
                                                             </div>
@@ -674,14 +660,15 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/oscar.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Juan_C_Ortega_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. OSCAR GREGORIO CERVERA RIVERO</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Juan Carlos Ortega Castro</h3>
+														<div class="gdlr-session-item-excerpt">Magistrado del Segundo Tribunal Colegiado en materia Civil del Segundo Circuito de Toluca, estado de México </div>
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-5>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ES MAGISTRADO INTEGRANTE DE LA SEGUNDA SALA FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA DE LA CIUDAD DE MÉXICO.<br> ES DOCTOR EN DERECHO Y ADEMÁS ACTUALMENTE, CANDIDATO A DOCTOR EN ADMINISTRACIÓN Y GOBIERNO DEL PODER JUDICIAL POR EL INSTITUTO DE INVESTIGACIONES JURÍDICAS DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO E INSTITUTO DE ESTUDIOS JUDICIALES DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO.<br> <br>ES MIEMBRO NUMERARIO DE LA AMEDIP, ACADEMIA MEXICANA DE DERECHO INTERNACIONAL PRIVADO. <br> ENTRE OTRAS ACTIVIDADES, SE HA DESEMPEÑADO COMO:<br> JUEZ DE ENLACE MEXICANO EN MATERIA DE RESTITUCIÓN INTERNACIONAL ANTE LA HAGUE CONFERENCE ON PRIVATE INTERNATIONAL LAW (CONFERENCIA DE LA HAYA EN DERECHO INTERNACIONAL PRIVADO). <br> MIEMBRO DE LA ASOCIACIÓN INTERNACIONAL DE JUECES EN MATERIA DE FAMILIA. <br> IMPULSOR E INTEGRANTE DE LA RED MEXICANA DE COOPERACIÓN JUDICIAL PARA LA PROTECCIÓN DE LA NIÑEZ, FUNDADA EN 2010. <br>PARTICIPANTE EN LA QUINTA Y SEXTA REUNIONES DE LA COMISIÓN ESPECIAL PARA LA EVALUACIÓN DEL FUNCIONAMIENTO DE LA CONFERENCIA DE LA HAYA. <br> INTEGRANTE DEL GRUPO DE TRABAJO PARA LA ELABORACIÓN DE UNA GUÍA DE “BUENAS PRÁCTICAS, RESPECTO AL ARTÍCULO 13, PRIMER PÁRRAFO, INCISO B), DE LA CONVENCIÓN SOBRE ASPECTOS CIVILES DE LA SUSTRACCIÓN INTERNACIONAL DE MENORES” (EXCEPCIÓN DE GRAVE RIESGO).<br> INTEGRANTE DE LA DELEGACIÓN MEXICANA EN LAS REUNIONES DE TRABAJO ANTE LA ORGANIZACIÓN DE NACIONES UNIDAS PARA LA SUSTENTACIÓN DEL CUARTO Y QUINTO INFORMES CONSOLIDADOS SOBRE EL CUMPLIMIENTO EN NUESTRO PAÍS, DE LA CONVENCIÓN SOBRE LOS DERECHOS DEL NIÑO, CELEBRADA LOS DÍAS 18 Y 20 DE MAYO DEL 2015, EN GINEBRA, SUIZA. <br> OBRAS EN COAUTORÍA: <br> “PRÁCTICA FORENSE EN DERECHO FAMILIAR”.  INTER WRITERS. MÉXICO, 2010. <br> “PROCESOS ORALES EN MATERIA FAMILIAR. SUS ESTÁNDARES” INTER WRITERS. MÉXICO. 2015.<br> OBRAS COLECTIVAS: <br>“LOS MENORES COMO TITULARES DE LA ACCIÓN”. LA RESTITUCIÓN INTERNACIONAL DE LA NIÑEZ. ENFOQUE IBEROAMÉRICANO DOCTRINARIO Y JURISPRUDENCIAL. COORDINADORES, TAGLE Y TENORIO. EDITORIAL PORRÚA, MÉXICO, 2011.<br> “LA PRUEBA EN LOS PROCESOS DE RESTITUCIÓN INTERNACIONAL DE NIÑOS”. CUESTIONES COMPLEJAS EN LOS PROCESOS DE RESTITUCIÓN INTERNACIONAL DE NIÑOS EN LATINOAMERICA. COORDINADORES, TENORIO Y RUIBAJA CASTRO. EDITORIAL PORRÚA, MÉXICO, 2018.<br> FUE NOMBRADO MAGISTRADO DEL TRIBUNAL SUPERIOR DE JUSTICIA DEL DISTRITO FEDERAL EN AGOSTO DEL 2000, ADSCRITO A LA TERCERA SALA CIVIL Y A PARTIR DE 2005, A LA FECHA MAGISTRADO DE LA SEGUNDA SALA FAMILIAR DE ESTE HONORABLE TRIBUNAL, Y COORDINADOR NACIONAL DE LA RED MEXICANA DE COOPERACIÓN JUDICIAL PARA LA PROTECCIÓN DE LA NIÑEZ, Y A QUIEN CEDO EL USO DE LA VOZ.<br>
+                                                                    Originario del Distrito Federal, hoy Ciudad de México.<br> Licenciado en Derecho por la Escuela Libre de Derecho de la Ciudad de México.<br> Maestro en Derecho Constitucional por la Universidad Autónoma de Tamaulipas.<br><br> Maestro en Derecho Civil, por el Instituto de Ciencias Jurídicas de Estudios Superiores.<br> Maestro en Derecho Procesal Penal, por el Instituto de Estudios Superiores en Derecho Penal.<br> Doctor en Ciencias Penales por el Instituto de Ciencias Jurídicas de Estudios Superiores  Condecorado con la Venera Abogado Isidro Fabela Alfaro a la Judicatura.<br> Doctor Honoris Causa por el Colegio de Estudios Jurídicos de México.<br> Egresado de la Especialización Judicial por el Instituto de Especialización Judicial de la Suprema Corte de Justicia de la Nación.<br> Certificado como docente en derecho internacional de los derechos humanos por la Oficina del Alto Comisionado de las Naciones Unidas en México y por el Instituto de la Judicatura Federal.<br> Cuenta con 68 diplomados y cursos de actualización y certificaciones, ante instituciones educativas superiores de México, Perú, España y Estados Unidos.<br> Desde 1984 y hasta la fecha, ha ejercido la docencia, impartiendo materias, cursos y diplomados a nivel licenciatura, maestría y doctorado en diversas instituciones del país, abarcando aspectos de derecho constitucional, civil, penal, administrativo, laboral y derechos humanos, entre otros, así como dirigiendo 53 tesis en licenciatura, maestría y doctorado y participando en 123 exámenes de grado.<br> Cuenta con más de 15 publicaciones en materias de ética y formación judicial, derecho familiar, derecho constitucional, derecho mercantil, derecho procesal, bioética y restitución internacional de menores, entre otros temas.<br> Cargos desempeñados dentro del Poder Judicial de la Federación:<br> Ha sido Actuario Judicial, Secretario de Juzgado y Secretario de Tribunal, de 1989 a 1997. <br> En 1997 accedió al cargo de Juez de Distrito al resultar vencedor del Primer Concurso de Oposición y fue Juez de Distrito en el Estado de Tlaxcala y Juez de Distrito en Materia Civil en el Distrito Federal, hoy Ciudad de México.<br> Fue designado Magistrado por resultar vencedor en el Cuarto Concurso de Oposición y desempeña el cargo desde septiembre de 1999 a la fecha, en Ciudad Victoria, Tamaulipas, de 1999 a 2002 y en Toluca, Estado de México, de 2002 a la fecha. <br> Fue ratificado como Magistrado de Circuito por el Consejo de la Judicatura Federal, por unanimidad, en 2005.<br> Actualmente es Magistrado Presidente del Segundo Tribunal Colegiado en Materia Civil del Segundo Circuito.<br>
 
 																</h3>
                                                             </div>
@@ -690,14 +677,15 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/marisela.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Maria_L_Hernandez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MARISELA SANDOVAL LOPEZ</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. María de Lourdes Hernández Garduño</h3>
+														<div class="gdlr-session-item-excerpt">Jueza Especializada en Procedimientos de Adopción, Restitución Internacional de Menores y demás especiales del estado de México</div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ESTUDIOS PROFESIONALES: <br>Licenciatura en derecho. Universidad Autónoma de Querétaro. Querétaro. TITULO <br> Maestría en Derecho Penal. Universidad Cuauhtémoc A.C., Querétaro.  TITULO <br>Diversos Diplomados tanto en materia de Formación Directiva, Violencia Familiar,  Medios Alternos de Justicia, Conciliación Familiar así como en  materia de formación y actualización en Control de Constitucionalidad, Control de Convencionalidad y Procesos Orales. <br>ACTIVIDAD LABORAL:<br> Desde hace 27 años labora en el Poder Judicial del Estado de Querétaro, recorriendo prácticamente todos los puestos de la carrera judicial, desde mecanógrafa de juzgado, hasta el día de hoy que desde hace cuatro años funge como Magistrada y actualmente preside la Sala Familiar. <br> Desde el año de 2010 en que se fundó, funge también como Juez de Enlace por el Estado de Querétaro, de la Red Mexicana de Cooperación Judicial para la Protección de la Niñez. <br> ACTIVIDAD DOCENTE:<br> Desde hace más de 25 años, Capacitador y Maestra titular tanto en la Especialidad y Maestría en Administración de justicia que se imparte en el Instituto de Especialización Judicial del Poder Judicial del Estado de Querétaro, como en diversas universidades de la entidad, en materia de Violencia Familiar; Derecho Procesal Familiar tanto en juicio tradicional como juicio oral; restitución nacional e internacional; adopción nacional e internacional; obtención y recuperación de alimentos en el territorio nacional y en el extranjero; justicia para grupos vulnerables e intervención adecuada de niños, niña y adolescentes en juicio. <br> CONFERENCIAS:<br> Se han impartido diversas conferencias tanto a instituciones educativas como las preparatorias de la UAQ, personal de la Secretaría de Salud, Procuraduría Estatal y Municipales de Proteccion de Niños, Niñas y Adolescentes, Fiscalía  General de Justicia en el Estado y Colegio de Notarios del Estado, alusivas a diversas temáticas en materia penal y familiar y desde el año 2000 a la fecha en materia de: Violencia Familiar, Medidas Cautelares o de protección en materia familiar, Adopción Internacional y Restitución de Menores Nacional e Internacional; Intervención de Niños, niñas y adolescentes en juicio y Juicio Oral Familiar.<br>
+                                                                    Formación académica: <br>LICENCIADO EN DERECHO POR LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br> MAESTRÍA EN DERECHO PROCESAL CIVIL POR EL CENTRO DE ESTUDIOS SUPERIORES EN CIENCIAS JURÍDICAS Y CRIMINOLÓGICAS.<br> ESPECIALIDAD EN DERECHO PROCESAL CIVIL LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br> ESPECIALIDAD EN AMPARO POR LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br> ESPECIALIDAD EN DERECHO JUDICIAL POR LA ESCUELA JUDICIAL DEL PODER JUDICIAL DEL ESTADO DE MÉXICO.<br>Trayectoria Profesional:<br>SE HA DESEMPEÑADO EN EL TRIBUNAL SUPERIOR DE JUSTICIA DEL ESTADO DE MÉXICO POR MÁS DE 30 AÑOS; ENTRE LOS PUESTOS QUE HA OCUPADO SE ENCUENTRAN: <br>TÉCNICO JUDICIAL, NOTIFICADOR JUDICIAL, SECRETARIO DE ACUERDOS, PROYECTISTA Y JUEZ DE CUANTÍA MENOR.<br> ACTUALMENTE SE DESEMPEÑA COMO JUEZ DE CUANTÍA MAYOR DENTRO DEL ANTES MENCIONADO. <br>
+
 
 																</h3>
                                                             </div>
@@ -706,14 +694,14 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/carlos.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Maria_M_Gallegos.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. CARLOS ENRIQUE ODRIOZOLA MARISCAL</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. María Margarita Gallegos López</h3>
+														<div class="gdlr-session-item-excerpt">Juez Séptimo de lo Familiar de la Ciudad de México</div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-7>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    EGRESADO DE LA FACULTAD DE DERECHO DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO, HA CURSADO DIVERSAS ESPECIALIDADES, DIPLOMADOS Y CURSOS EN LAS UNIVERSIDADES DE SALAMANCA, HARVARD, FEDERICA DE NÁPOLES, PANAMERICANA, EL COLEGIO DE MÉXICO E INSTITUTO DE INVESTIGACIONES JURÍDICAS DE LA UNIVERSIDAD NACIONAL AUTÓNIMA DE MÉXICO.<br> ESTUDIÓ LA MAESTRÍA EN DERECHO INTERNACIONAL EN LA DIVISIÓN DE ESTUDIOS DE POSGRADO DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO, EN DONDE FORMA PARTE DEL CLAUSTRO DE PROFESORES AL HABER IMPARTIDO DIVERSAS CÁTEDRAS RELATIVAS AL DERECHO INTERNACIONAL Y LOS DERECHOS HUMANOS. <br>ACTUALMENTE ES DOCTORANDO POR LA MISMA UNIVERSIDAD EN DONDE SU INVESTIGACIÓN ABORDA EL FUNCIONAMIENTO DE LAS REDES JUDICIALES PARA UNA MEJOR COOPERACIÓN PROCESAL INTERNACIONAL.<br> FUE PRESIDENTE DE LA JUNTA DE GOBIERNO DE LA ACADEMIA MEXICANA DE DERECHO INTERNACIONAL PRIVADO Y COMPARADO, ASOCIACIÓN CIVIL                          (AMEDIP) Y ES MIEMBRO PLENO DE LA ASOCIACIÓN AMERICANA DE DERECHO INTERNACIONAL PRIVADO (ASADIP).<br> HA PUBLICADO NUMEROSOS ARTÍCULOS EN MATERIA DE DERECHO PROCESAL INTERNACIONAL, LITIGIO ESTRATÉGICO Y DERECHOS HUMANOS. ES AUTOR DEL LIBRO “EL SEGURO DE TÍTULO INMOBILIARIO”, ÚNICA OBRA EN LENGUA HISPANA SOBRE DICHA FIGURA ANGLOSAJONA.<br> HA OBTENIDO DIVERSOS PREMIOS DE INVESTIGACIÓN JURÍDICA EN MÉXICO, INCLUIDOS EL PRIMER LUGAR DEL CONCURSO DE ENSAYO JURÍDICO PARA CELEBRAR EL 50 ANIVERSARIO DEL INSTITUTO DE INVESTIGACIONES JURÍDICAS DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO Y EL PRIMER LUGAR DEL CONCURSO LITERARIO SOBRE LA JUSTICIA, ORGANIZADO POR EL TRIBUNAL SUPERIOR DE JUSTICIA DE LA CIUDAD DE MÉXICO CONMEMORATIVO DE LOS 150 AÑOS DE SU FUNDACIÓN.<br> ES DIRECTOR GENERAL DE BUFETE ODRIOZOLA, SOCIEDAD CIVIL, FIRMA DE ABOGADOS LITIGANTES EN MATERIA CIVIL, FAMILIAR, MERCANTIL Y AMPARO DESDE HACE 25 AÑOS. ES PRESIDENTE DEL CENTRO CONTRA LA DISCRIMNACION, ASOCIACIÓN CIVIL (CECODI), EN DONDE HA REALIZADO UNA IMPORTANTE LABOR SOCIAL A TRAVÉS DE LITIGIO ESTRATÉGICO EN DERECHOS HUMANOS DESDE HACE MÁS DE 12 AÑOS. <br>
+                                                                    FORMACIÓN ACADÉMICA O ESCOLARIDAD:<br>LICENCIATURA EN DERECHO: FACULTAD DE DERECHO DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO, DE 1984-1988<br> • MAESTRÍA EN DERECHO CIVIL: DIVISIÓN DE ESTUDIOS DE POSGRADO DE LA FACULTAD DE DERECHO DE LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO.<br> • DIPLOMATURA INTERNACIONAL DERECHO CIVIL Y FAMILIAR: IMPARTIDO POR LA UNIVERSIDAD AUTÓNOMA DE BARCELONA, ESPAÑA. 2004- 2005<br> • DOCTORADO: UNIVERSIDAD DE TEPANTLATO.<br> • DOCTORANDA: UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO.<br>EXPERIENCIA PROFESIONAL:<br>SECRETARIA DE EDUCACIÓN PÚBLICA: <br>• PROFESORA DE EDUCACIÓN PRIMARIA o 1983-1989<br> • DIRECCIÓN GENERAL DE PROFESIONES<br> • SUBJEFE DEL DEPARTAMENTO DE RECURSOS HUMANOS 1990-1991<br> • JEFE DEL DEPARTAMENTO DE COLEGIOS DE PROFESIONISTAS 1991-1992<br> • PROCURADURÍA AGRARIA<br> • JEFE DE DEPARTAMENTO<br> o DIRECCIÓN GENERAL DE INVESTIGACIÓN Y VIGILANCIA<br>ABOGADA LITIGANTE • 1994-1997<br> TRIBUNAL SUPERIOR DE JUSTICIA DEL DISTRITO FEDERAL<br> • SECRETARIA CONCILIADORA JUZGADO 35O.FAMILIAR<br> o 1O. DE OCTUBRE DE 1997 AL 15 DEFEBRERO DEL 2000<br> • JUEZ POR OPOSICIÓN JUZGADO DÉCIMOTERCERO DE LO FAMILIAR DE LA CIUDAD DEMÉXICO.<br> o CON NOMBRAMIENTO DEL 16 DE FEBRERODEL 2000 AL 15 DE FEBRERO DEL 2006.<br> o RATIFICADA EN EL CARGO CON NOMBRAMIENTO DEL 16 DE FEBRERO DEL2006 AL 15 DE FEBRERO DEL 2012.<br> • JUZGADO SÉPTIMO DE LO FAMILIAR DE LACIUDAD DE MÉXICO CON ESPECIALIDAD EN RESTITUCIÓN INTERNACIONAL DE MENORES.<br> o CON NOMBRAMIENTO DEL 01 DE FEBRERODEL 2011.<br> o RATIFICADA EN EL CARGO CONNOMBRAMIENTO DEL 16 DE FEBRERO DEL2012 AL 15 DE FEBRERO DEL 2024<br> • SECRETARIA TÉCNICA DE LA RED MEXICANA DE COOPERACIÓN JUDICIAL PARA LA PROTECCIÓN DE LA NIÑEZ.<br> ACTIVIDADES ACADÉMICAS: <br> MIEMBRO SUPERNUMERARIO DE LA ACADEMIA MEXICANA DE DERECHO INTERNACIONAL PRIVADO Y COMPARADO.<br><br>• PROFESORA EN LA MAESTRÍA Y DOCTORADO ENDERECHO FAMILIAR EN LA UNIVERSIDAD TEPANTLATO CURSOS Y CONFERENCIAS IMPARTIDAS:<br>• CONFERENCISTA A NIVEL NACIONAL EINTERNACIONAL EN MATERIA FAMILIAR.<br>PUBLICACIONES:<br>• REVISTA NÚMERO 6 DEL TRIBUNAL SUPERIOR DEJUSTICIA DE LA CIUDAD DE MÉXICO.<br>ARTÍCULO“LA RECTIFICACIÓN DE LAS ACTAS DENACIMIENTO POR REASIGNACIÓN DE GÉNERO”<br>• REVISTA DE DERECHO FAMILIAR DEL TRIBUNAL SUPERIOR DE JUSTICIA DE LA CIUDAD DEMÉXICO. <br>ARTÍCULO: “MATERNIDAD SUBROGADA”<br>• CÓDIGO DE PROCEDIMIENTOS CIVILES DEL DISTRITO FEDERAL COMENTADO, EDITADO POR EL TRIBUNAL SUPERIOR DE JUSTICIA DE LA CIUDAD DE MÉXICO, Y EDITORIAL PORRÚA.<br>• CÓDIGO CIVIL DEL DISTRITO FEDERAL COMENTADO. <br>INSTITUTO DE INVESTIGACIONES JURÍDICAS. UNAM.<br>
 
 																</h3>
                                                             </div>
@@ -722,14 +710,14 @@
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/miguel.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Maricela_Sandoval.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. MIGUEL ANGEL REYES MONCAYO</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Magda. Marisela Sandoval López</h3>
+														<div class="gdlr-session-item-excerpt">Magistrada Presidenta de la Sala Familiar del Tribunal Superior de Justicia de Querétaro</div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-8>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ES LICENCIADO EN DERECHO POR LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO Y MAESTRO EN LEYES POR LA UNIVERSIDAD DE HOUSTON, CON ESPECIALIDAD EN DERECHO INTERNACIONAL.<br> CUENTA CON QUINCE AÑOS DE EXPERIENCIA EN LA SECRETARÍA DE RELACIONES EXTERIORES, EN DONDE HA TRABAJADO EN LAS ÁREAS DE TRATADOS, DERECHO INTERNACIONAL PRIVADO, DERECHO INTERNACIONAL PÚBLICO Y LITIGIOS.<br> ES MIEMBRO DEL SERVICIO EXTERIOR MEXICANO DESDE 2012, ACTUALMENTE CON RANGO DE SEGUNDO SECRETARIO. <br> HA SIDO CÓNSUL DE MÉXICO EN LAS CIUDADES DE EL PASO Y HOUSTON EN DONDE HA ESTADO A CARGO DE LAS SECCIONES DE ASUNTOS FRONTERIZOS, ASUNTOS ECONÓMICOS Y PROTECCIÓN A MEXICANOS. <br> EN EL ÁMBITO ACADÉMICO, EL MAESTRO REYES MONCAYO, HA SIDO PROFESOR DE DERECHO INTERNACIONAL PÚBLICO A NIVEL LICENCIATURA. <br> IGUALMENTE, HA IMPARTIDO NUMEROSAS CONFERENCIAS, CAPACITACIONES Y TALLERES A ESTUDIANTES, PROFESORES, CANDIDATOS A MIEMBROS DEL SERVICIO EXTERIOR MEXICANO Y SERVIDORES PÚBLICOS ESTALES Y FEDERALES, SOBRE DIVERSOS TEMAS DE DERECHO INTERNACIONAL PÚBLICO Y PRIVADO.<br> SU PRINCIPAL ACTIVIDAD ES COORDINAR LAS FUNCIONES INHERENTES A LA AUTORIDAD EJECUTORA O CENTRAL DE MÉXICO EN TRATADOS Y ACUERDOS INTERNACIONALES EN MATERIA DE ADOPCIONES, SUSTRACCIÓN DE MENORES Y PENSIONES ALIMENTICIAS. <br> ACTUALMENTE ES DIRECTOR GENERAL ADJUNTO DE DERECHO DE FAMILIA, EN LA DIRECCIÓN GENERAL DE PROTECCIÓN A MEXICANOS EN EL EXTERIOR.<br>
+                                                                    ESTUDIOS PROFESIONALES:<br> Licenciatura en derecho. Universidad Autónoma de Querétaro. Querétaro.<br> TITULO Maestría en Derecho Penal. Universidad Cuauhtémoc A.C., Querétaro.<br> TITULO Diversos Diplomados tanto en materia de Formación Directiva, Violencia Familiar, Medios Alternos de Justicia, Conciliación Familiar así como en materia de formación y actualización en Control de Constitucionalidad, Control de Convencionalidad Procesos Orales. Personas con Discapacidad, Nuevos Desarrollos de Familia y El Precedente Judicial, impartidos por la Escuela Federal de Formación Judicial, Casa de la Cultura Jurídica, Dirección de Derechos Humanos y Centro de Estudios Constitucionales de la Suprema Corte de Justicia de la Nación y por el Centro deEstudios de Actualización en  Así como Curso de Alta Formación en Justicia Constitucional y Tutela Jurisdiccional de los Derechos, impartido por la Universidad de Pisa y Curso de Razonamiento Juridico impartido por la Universidad de Girona y el Centro de Estudios de Actualización en Derecho.<br> ACTIVIDAD LABORAL:<br> Desde hace más de 30 años, labora en el Poder Judicial del Estado de Querétaro, desarrollándose prácticamente en todos los puestos de la carrera judicial, desde mecanógrafa (acordista) de juzgado, hasta el día de hoy que desde 2014, funge como Magistrada Propietaria y actualmente preside la Sala Familiar. Desde el año de 2010 en que se fundó, funge también como Juez de Enlace por el Estado de Querétaro, de la Red Mexicana de Cooperación Judicial para la Protección de la Niñez.<br> ACTIVIDAD DOCENTE:<br> Desde hace más de 20 años, Capacitador y Maestra titular tanto en la Especialidady Maestría en  Especialización Judicial del Poder Judicial del Estado de Querétaro, Derechos Humanos de Niñas, Niños y Adolescentes en la Escuela de Estudios e Investigación Judicial del Poder Judicial del Estado de Guanajuato, como en diversas universidades de la entidad, en materia de Violencia Familiar; Derecho Procesal Familiar tanto en juicio tradicional como juicio oral; restitución nacional e internacional; adopción nacional e internacional; obtención y recuperación de alimentos en el territorio nacional y en el extranjero; justicia para grupos vulnerables e intervención adecuada de niños, niña y adolescentes en juicio. Así como el modelo de Apoyos y Salvaguardias para personas con Discapacidad.<br> CONFERENCIAS:<br> Se han impartido diversas conferencias en la Casa de la Cultura Jurídica de Celaya, Gto., así como instituciones educativas públicas y privadas; diversas dependencias como: Secretaría de Salud, Procuraduría Estatal y Municipales de Protección de Niños, Niñas y Adolescentes, Fiscalía General de Justicia en el Estado; de igual manera al Colegio de Notarios del Estado, alusivas a diversas temáticas en materia de Familia: Violencia Familiar, Medidas Cautelares o de protección en materia familiar, Compensación Patrimonial, Adopción Internacional y Restitución de Menores Nacional e Internacional; Intervención de Niños, niñas y adolescentes en juicio y Juicio Oral Familiar, Sucesiones, así como el Sistema de Apoyos y Salvaguardias para personas con Discapacidad.<br>
 
 																</h3>
                                                             </div>
@@ -748,16 +736,16 @@
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
-                                           
+
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/juan.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Oscar_G_Cervera_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MAGISTRADO DR. JUAN CARLOS ORTEGA CASTRO</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Oscar Gregorio Cervera Rivero </h3>
+														<div class="gdlr-session-item-excerpt">Magistrado de la Segunda Sala Familiar del Poder Judicial de la Ciudad de México</div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-9>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ES ABOGADO POR LA ESCUELA LIBRE DE DERECHO. MAESTRO EN DERECHO CONSTITUCIONAL, EN DERECHO CIVIL Y EN DERECHO PROCESAL PENAL.<br> ES DOCTOR EN CIENCIAS PENALES. DOCTOR HONORIS CAUSA POR EL COLEGIO DE ESTUDIOS JURÍDICOS DE MÉXICO.<br> ACTUALMENTE CURSA EL DOCTORADO EN DERECHO JUDICIAL EN EL INSTITUTO DE CIENCIAS JURÍDICAS DE NAYARIT.<br> CERTIFICADO COMO DOCENTE EN DERECHO INTERNACIONAL DE LOS DERECHOS HUMANOS POR LA OFICINA DEL ALTO COMISIONADO DE LOS DERECHOS HUMANOS DE LA ORGANIZACIÓN DE LAS NACIONES UNIDAS EN MÉXICO Y POR EL INSTITUTO DE LA JUDICATURA FEDERAL.<br> HA CURSADO DIPLOMADOS IMPARTIDOS POR PERÚ, ESPAÑA ESTADOS UNIDOS Y MÉXICO, EN ARGUMENTACIÓN JURÍDICA, RAZONAMIENTO JURÍDICO PENAL, TEORÍA JURÍDICA CONTEMPORÁNEA, MULTICULTURALIDAD, ÉTICA EN LA FUNCIÓN JUDICIAL, AMPARO PENAL, ENTRE OTRAS MATERIAS.<br> RECIBIÓ LA VENERA ABOGADO ISIDRO FABELA ALFARO. HA PUBLICADO OBRAS EN COAUTORÍA Y ARTÍCULOS EN MATERIAS CONSTITUCIONAL, DERECHO PENAL, CIVIL, FAMILIAR, MERCANTIL Y BIOÉTICA JURÍDICA, ENTRE OTRAS.<br> ES DOCENTE Y CONFERENCISTA EN INSTITUCIONES PÚBLICAS Y PRIVADAS DESDE HACE 37 AÑOS Y HA INTERVENIDO EN CONGRESOS INTERNACIONALES Y NACIONALES EN MATERIA AMBIENTAL, DERECHO PENAL, DERECHO CONSTITUCIONAL Y FAMILIAR, ENTRE OTRAS MATERIAS. <br> HA DIRIGIDO TESIS EN GRADOS DE LICENCIATURA, MAESTRÍA Y DOCTORADO Y HA PARTICIPADO EN MÚLTIPLES EXÁMENES DE GRADO.<br> INGRESÓ AL PODER JUDICIAL FEDERAL EN 1989. FUE DESIGNADO JUEZ DE DISTRITO EN 1997, Y POSTERIORMENTE MAGISTRADO DE CIRCUITO EN 1999, MEDIANTE SENDOS CONCURSOS DE OPOSICIÓN.<br> ACTUALMENTE ES MAGISTRADO PRESIDENTE DEL SEGUNDO TRIBUNAL COLEGIADO EN MATERIA CIVIL DEL SEGUNDO CIRCUITO DE TOLUCA, ESTADO DE MÉXICO.<br>
+                                                                    fue  abogado postulante durante veintidós años, es Magistrado de la Segunda Sala Familiar del Tribunal Superior de Justicia de la Ciudad de México, Juez de enlace Mexicano en materia de Restitución Internacional ante la Conferencia de la Haya en Derecho Internacional Privado; asimismo, es miembro de la Asociación Internacional de Jueces en materia de Familia, Coordinador Nacional e impulsor de la Red Mexicana de Cooperación Judicial para la protección de la niñez, fundada en el año dos mil diez; ha sido participante  en diversas comisiones y delegaciones especializadas en asuntos de familia alrededor del mundo;  integrante del Grupo de Trabajo para la elaboración de una Guía de Buenas Prácticas, del artículo 13, primer párrafo inciso B, de la Convención  Sobre Aspectos Civiles de la Sustracción Internacional de Menores; ha realizado diferentes Conferencias a nivel Nacional e Internacional; es integrante de la Comisión de Ética del Poder Judicial de la Ciudad de México,  Capacitador en el Consejo de la Judicatura Federal, en temas de la Convención de la Haya de 1980 sobre Aspectos Civiles de la Sustracción Internacional Menores, dirigido a Magistrados de Circuito y Jueces de Distrito por el período de 2017-2018; es doctor en derecho y candidato a doctor en Administración y Gobierno del Poder Judicial por el Instituto de Investigaciones Jurídicas de la UNAM e Instituto de Estudios Judiciales del Poder Judicial de la Ciudad de México; posee diversas obras en coautoría  denominadas “practica forense en derecho familiar y procesos orales en materia familiar”, así como “los menores titulares de la acción”, “la restitución internacional de la niñez enfoque iberoamericano doctrinario jurisprudencial”, de la obra colectiva.<br>
 
 																</h3>
                                                             </div>
@@ -766,14 +754,14 @@
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/jose.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Sergio_Valls.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. JOSÉ ROBERTO DE JESÚS TREVIÑO SOSA</h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Magdo. Sergio Arturo Valls Esponda </h3>
+														<div class="gdlr-session-item-excerpt">Director del Centro Estatal de Mediación, Conciliación y Justicia Restaurativa del Estado de México </div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-10>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    ES LICENCIADO EN DERECHO CON MAESTRÍA EN CIENCIAS PENALES.<br> MIEMBRO HONORARIO LA SOCIEDAD DE HONOR LEGAL DE PHI DELTA PHI.<br> MIEMBRO SUPERNUMERARIO DE LA ACADEMIA DE DERECHO INTERNACIONAL PRIVADO Y COMPARADO. <br>CATEDRÁTICO DE DERECHO EN LA UNIVERSIDAD AUTÓNOMA DE NUEVO LEÓN Y EN LA UNIVERSIDAD REGIOMONTANA. <br> INGRESÓ AL PODER JUDICIAL DEL ESTADO DE NUEVO LEÓN, EN EL AÑO DE 1984.<br> FUE JUEZ SEGUNDO DE JUICIO FAMILIAR ORAL EN EL ESTADO DE NUEVO LEÓN Y ES MIEMBRO DE LA RED DE JUECES DE LA HAYA.<br>
+                                                                    Formación académica:<br> LICENCIADO EN DERECHO POR LA UNIVERSIDAD INTERCONTINENTAL.<br>  MAESTRO EN DERECHO POR EL CENTRO DE ESTUDIOS DE POSGRADO EN DERECHO.<br> MASTER EN ARGUMENTACIÓN JURÍDICA POR LA UNIVERSIDAD DE LEÓN ESPAÑA.<br> CUENTA CON CURSOS DE ESPECIALIZACIÓN EN LA UNIVERSIDAD DE SALAMANCA, UNIVERSIDAD DE ALCALÁ DE HENARES, INSTITUTO DE INVESTIGACIONES JURÍDICAS DE LA UNAM, CENTRO DE ESTUDIOS JURÍDICOS PARA LAS AMÉRICAS (CEJA-OEA) Y HARVARD UNIVERSITY.<br> AUTOR DE MULTIPLES ARTÍCULOS DE INVESTIGACIÓN Y CRITICA JURÍDICA.<br> COAUTOR DE LA OBRA “TIEMPOS DE JUSTICIA“ EDITADO POR LA SUPREMA CORTE DE JUSTICIA DE LA NACIÓN.<br>Trayectoria Profesional: <br>SE HA DESEMPEÑADO EN LA ADMINISTRACIÓN PÚBLICA FEDERAL Y ESTATAL.<br> EN ORGANISMOS AUTÓNOMOS OCUPÓ LA SECRETARÍA TÉCNICA DE LA PRESIDENCIA DE LA COMISIÓN NACIONAL DE DERECHOS HUMANOS (CNDH).<br> COMISIONADO EN EL INSTITUTO DE TRANSPARENCIA Y ACCESO A LA INFORMACIÓN DEL ESTADO DE MÉXICO (INFOEM).<br> EN 2010 LA LEGISLATURA DEL ESTADO DE MÉXICO LE TOMÓ PROTESTA COMO MAGISTRADO DEL TRIBUNAL SUPERIOR DE JUSTICIA DEL ESTADO DE MÉXICO. <br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -781,10 +769,10 @@
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/persona1.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title"> </h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-11>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -797,10 +785,10 @@
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/persona1.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">  </h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-12>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -821,10 +809,10 @@
                             <div class=clear></div>
                     </section>
                 </div>
-				
-			 
-				
-				
+
+
+
+
                 </div>
             </div>
         </div>
@@ -833,7 +821,7 @@
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">
-                    <div class=copyright-left> © Copyright CONATRIB 2021</div>
+                    <div class=copyright-left> © Copyright CONATRIB 2022</div>
                     <div class=copyright-right> <a href="https://conatrib.org.mx/">P&aacute;gina web</a> | <a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">Youtube</a> | <a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a> | <a href="https://twitter.com/ConatribMx">Twitter</a></div>
                     <div class=clear></div>
                 </div>
@@ -908,17 +896,17 @@
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 

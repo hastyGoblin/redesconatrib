@@ -68,27 +68,14 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                @if (Auth::user()->constancia == 1)
-                                <li class="menu-item menu-item-has-children">
-                                    <a class="dropdown-item" href="{{ route('descargaConstancia') }}"  target="_blank"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('constancia-form').submit();">
-                                        {{ __('Constancia') }}
-                                    </a>
-
-                                    <form id="constancia-form" action="{{ route('descargaConstancia') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
-                                @endif
-                                <li class="menu-item menu-item-has-children">
+                                <li class="menu-item"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </li>
@@ -118,7 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -163,7 +150,7 @@
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -173,9 +160,9 @@
                                             <div class="gdlr-session-head-day">D&iacute;a </div>
                                             <div class="gdlr-session-head-date">13 Diciembre 2021</div>
                                         </div>
-                                       
-										
-										
+
+
+
                                         <div class="clear"></div>
                                     </div>
 
@@ -192,18 +179,18 @@
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magistrado Rafael Guerra &Aacute;lvarez</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).</a></div>
                                                             </div>
-															
-															
+
+
                                                         </div>
-														
+
                                                     </div>
-												
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title"><a>Mensaje de Inauguración</a></h3>
-                                                
+
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://youtu.be/q7U2avizVEI" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
@@ -224,10 +211,10 @@
                                                                 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderadora: Magda. Sara Patricia Orea Ochoa.</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Integrante de la Primera Sala de Justicia para Adolescentes de la Ciudad de México.</a></div>
 													          </div>
-															
+
                                                         </div>
                                                     </div>
-												
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -241,7 +228,7 @@
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-										
+
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -256,10 +243,10 @@
                                                                 <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderadora: Magda. María del Rosario Tirado Gutiérrez.</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Integrante de la Segunda Sala de Justicia para Adolescentes de la Ciudad de México.</a></div>
 													          </div>
-															
+
                                                         </div>
                                                     </div>
-												
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -273,7 +260,7 @@
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-										
+
 									<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -285,28 +272,28 @@
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magdo. Dr. Rafael Guerra Álvarez.</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia. (CONATRIB)</a></div>
 													          </div>
-															
-															
+
+
                                                         </div>
                                                     </div>
-												
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title"><a>CLAUSURA</a></h3>
-                                                
+
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e7e0f2dae19dd500655e44738ffe1bc18" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver CLAUSURA</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-                                        
-    
+
+
                                     </div>
                                     <!-- termina dia -->
-                                 
+
                                 </div>
                                 <div class=clear></div>
                             </div>
@@ -314,11 +301,11 @@
                         </div>
                             </div>
                         </div>
-                        
+
                     </section>
                     <div class="section-container container">
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
@@ -389,7 +376,7 @@
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-7 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-                                                
+
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_7_sijpa/red/images/img_ponentes/maria.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
@@ -415,10 +402,10 @@
                             <div class=clear></div>
                     </section>
                 </div>
-				
-			 
-				
-				
+
+
+
+
                 </div>
             </div>
         </div>
@@ -502,17 +489,17 @@
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 
