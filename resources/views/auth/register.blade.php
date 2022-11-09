@@ -91,7 +91,7 @@
                             <label>Nota: La contraseña deberá contener un minimo de 8 digitos</label>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <input id="" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="CONTRASEÑA">
+                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="CONTRASEÑA">
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
