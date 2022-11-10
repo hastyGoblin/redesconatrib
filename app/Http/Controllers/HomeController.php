@@ -89,7 +89,7 @@ class HomeController extends Controller
 
                 case 7:
                     $mensaje= "Red 7";
-                    return view('disponible');
+                    return view('red_4_jjocmed');
                     break;
 
                 case 8:

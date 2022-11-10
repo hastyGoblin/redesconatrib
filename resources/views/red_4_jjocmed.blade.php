@@ -68,20 +68,7 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                @if (Auth::user()->constancia == 1)
-                                <li class="menu-item menu-item-has-children">
-                                    <a class="dropdown-item" href="{{ route('descargaConstancia') }}"  target="_blank"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('constancia-form').submit();">
-                                        {{ __('Constancia') }}
-                                    </a>
-
-                                    <form id="constancia-form" action="{{ route('descargaConstancia') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
-                                @endif
-                                <li class="menu-item menu-item-has-children">
+                                <li class="menu-item menu-item-has-children"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -118,7 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -163,7 +150,7 @@
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -171,11 +158,15 @@
                                     <div class="gdlr-session-item-head">
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-1">
                                             <div class="gdlr-session-head-day">D&iacute;a 1</div>
-                                            <div class="gdlr-session-head-date">09 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">14 de Noviembre de 2022</div>
                                         </div>
                                         <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-2">
                                             <div class="gdlr-session-head-day">D&iacute;a 2</div>
-                                            <div class="gdlr-session-head-date">10 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">15 de Noviembre de 2022</div>
+                                        </div>
+										<div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-3">
+                                            <div class="gdlr-session-head-day">D&iacute;a 3</div>
+                                            <div class="gdlr-session-head-date">16 de Noviembre de 2022</div>
                                         </div>
                                         <div class="clear"></div>
                                     </div>
@@ -186,332 +177,369 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>16:30 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magistrado Rafael Guerra &Aacute;lvarez</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
                                                             </div>
                                                         </div>
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Inauguración</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/q7U2avizVEI"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
-                                                </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>16:55 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>16:45 a 17:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magdo. Marco Antonio Velasco Arredondo</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magdo. Marco A. Velasco</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Coordinador de la Red, dará la bienvenida y explicará la dinámica de los trabajos.
                                                             </div>
                                                         </div>
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Bienvenida e inicio de los trabajos</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Coordinador de la Red, dará palabras de bienvenida y explicará la dinámica de los trabajos durante los dos días del evento.
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">BIENVENIDA E INICIO DE LOS TRABAJOS</h3>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec2c062d2f94c928c78a49a539f57caad"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 19:00 hrs.</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-															 <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Gladys Morales Ramírez</a></div>
-                                                            </div>
-															<div class="session-info session-time">Instituto de Estudios Judiciales del Poder Judicial de la CDMX.</div>
-															<br> Sesión de preguntas y respuestas.
-                                                            
-                                                        </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
                                                     </div>
-											
-                                                    <div class="clear"></div>
-                                                </div>
+                                              </div>
+                                             <div class="clear"></div>
                                             </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia Magistral</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Precedente Judicial
-													<br> Sesión de preguntas y respuestas
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec2c062d2f94c928c78a49a539f57caad"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-									</div>
 										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30 hrs.</div>
-                                                  <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Cierre del día de trabajo</a></h3>
-                                                <div class="gdlr-session-item-excerpt">
-													
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=ec2c062d2f94c928c78a49a539f57caad"><button class="newsletter-submit gdlr-button with-border">Ver cierre</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-									</div>
-                                </div>
-                                    <!-- termina dia -->
-                                    <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                        
-                                       <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 a 10:15  hrs.</div>
-													<div class="session-info session-speaker">
-														<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Julio César Bonilla Gutiérrez</a></div>
-                                                     </div>
-													<div class="session-info session-time">Comisionado Presidente del INFO CDMX.</div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/what-to-do-before-start-creating-product/index.html">Conferencia Magistral</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Transparencia, datos personales y protección a la imagen en la función judicial.
-													<br> Sesión de preguntas y respuestas.
-.
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=eae0556f5c0ea9e3a55a32215e22ded36"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-											</div>
-                                            <div class="clear"></div>
-                                        </div> 
-										<div class=gdlr-session-item-content-wrapper>
-                                                <div class=gdlr-session-item-divider></div>
-                                                <div class=session-break-content>
-                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>10:15 a 10:30  hrs.</div>
-                                                    <h3 class="gdlr-session-break-title">RECESO</h3></div>
-                                                <div class=clear></div>
-                                         </div>
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:30 a 12:00 hrs.</div>
-													<div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-															 <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Diego Zalamea (Ecuador)</a></div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                    </div>
-													
-                                                 <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-1/index.html">Conferencia Magistral</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Universalidad de los juicios orales.
-													<br> Sesión de preguntas y respuestas.
- 
-                                                  <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=eae0556f5c0ea9e3a55a32215e22ded36"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <div class=gdlr-session-item-content-wrapper>
-                                                <div class=gdlr-session-item-divider></div>
-                                                <div class=session-break-content>
-                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>12:00 a 12:15 hrs.</div>
-                                                    <h3 class="gdlr-session-break-title">RECESO</h3></div>
-                                                <div class=clear></div>
-                                         </div>
-										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15 a 13:30 hrs.</div>
-													<div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-															 <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>María Esperanza Hernández Valero</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Consejera de la Judicatura del Poder Judicial de la Ciudad de México(Coordinadora)</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Paul Martín Barba</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado en Materia de Ejecución de Sanciones Penales, Juez de Control y Enjuiciamiento del Sistema Penal Acusatorio. (Poder Judicial CDMX)</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Sara López Pantoja</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Jueza Familiar de Proceso Oral (Poder Judicial CDMX)</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Carmen Patricia Santisbón Morales</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Jueza Oral Mercantil (Poder Judicial del Estado de Campeche)</a></div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                   <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Conversatorio</a></h3>
-                                                <div class="gdlr-session-item-excerpt">
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=eae0556f5c0ea9e3a55a32215e22ded36"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-										
-										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:30 a 15:00 hrs.</div>
-													<div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-															 <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Leonardo J. Giannini (Argentina)</a></div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                    </div>
-													
-                                                 <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-1/index.html">Conferencia Magistral</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Implementación de la Oralidad en la Provincia de Buenos Aires, Argentina.
-													<br> Sesión de preguntas y respuestas.
-
- 												 <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=eae0556f5c0ea9e3a55a32215e22ded36"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-											 <div class=gdlr-session-item-content-wrapper>
-                                                <div class=gdlr-session-item-divider></div>
-                                                <div class=session-break-content>
-                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>15:00 a 17:00 hrs.</div>
-                                                    <h3 class="gdlr-session-break-title">RECESO</h3></div>
-                                                <div class=clear></div>
-                                            </div>
-											<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
-                                                   <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Mesas de Discusión</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Análisis de los proyectos del Código Nacional de Procedimientos Civiles y Familiares.
-
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-												<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=efa6712d3bc89d2c53273d354a97e58a6"><button class="newsletter-submit gdlr-button with-border">Ver mesa 1</button></a>
-                                                </div>
-                                            
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <!-- hora 2 -->
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:00 a 19:00 hrs.</div>
-                                                   <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Mesas de Discusión</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Análisis de los proyectos del Código Nacional de Procedimientos Civiles y Familiares.
-
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e1e11ee608af584316fd03d597c323342"><button class="newsletter-submit gdlr-button with-border">Ver mesa 2</button></a>
-                                                    
-                                                </div>
-                                            
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <!-- hora 3 -->
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>19:00 a 20:00 hrs.</div>
-                                                   <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">Mesas de Discusión</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Análisis de los proyectos del Código Nacional de Procedimientos Civiles y Familiares.
-
-                                                     <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e355779632bc005ad17acf7c4f429257d"><button class="newsletter-submit gdlr-button with-border">Ver mesa 3</button></a>
-                                                </div>
-                                            
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-											
-											
-										<!-- <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>20:00</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Ulises Canosa Suarez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Presidente del Instituto Colombiano de Derecho Procesal
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-2/index.html">CLAUSURA</a></h3>
-                                                <div class="gdlr-session-item-excerpt">
-                                                     <div class="clear"></div></div>
+                                                <h3 class="gdlr-session-item-title">Tecnologías de la información y comunicación en el sistema de justicia, experiencia colombiana</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/j.php?MTID=m950d7d1dbf25c01e2ec8cbb39c7d8aba"><button class="newsletter-submit gdlr-button with-border">Ver clausura</button></a>
-                                                </div>
-                                                
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>-->
+
+										<div class=gdlr-session-item-content-wrapper>
+                                                <div class=gdlr-session-item-divider></div>
+                                                <div class=session-break-content>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>18:00 a 18:20  hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Sesión de preguntas y respuestas</h3></div>
+                                                <div class=clear></div>
+                                         </div>
+
+
+										<div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30 a 19:30 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Ministro Alejandro Vera Quilodrán Poder Judicial de Chile</a>
+																</div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Especialista del Centro de Estudios de Justicia de las Américas (CEJA) (Canadá)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Precedente procesal horizontal, una herramienta con enfoque de seguridad jurídica</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                            </div>
+										<div class=gdlr-session-item-content-wrapper>
+                                                <div class=gdlr-session-item-divider></div>
+                                                <div class=session-break-content>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>19:30 a 20:00  hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Sesión de preguntas y respuestas</h3></div>
+                                                <div class=clear></div>
+                                         </div>
+                                </div>
+
+
+                                    <!-- termina dia -->
+
+
+                                    <div class="gdlr-session-item-tab-content gdlr-tab-2">
+
+                                       <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Carlos E. Polanco Gutiérrez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Juez Superior de la Primera Sala Civil de la Corte de Arequipa  (Perú)</div>
+															<div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Johan M. Quessnay Casusol</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Juez Superior de la Tercera Sala Civil de la Corte de Lima  (Perú)</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Juicio Oral Civil y gestión judicial, binomio inseparable</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                            </div>
+										<div class=gdlr-session-item-content-wrapper>
+                                                <div class=gdlr-session-item-divider></div>
+                                                <div class=session-break-content>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>18:00 a 18:20  hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Sesión de preguntas y respuestas</h3></div>
+                                                <div class=clear></div>
+                                         </div>
+                                        <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Gloria Negroni</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Juez de Familia Poder Judicial de Chile</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">La gestión judicial como metodología de trabajo en el sistema de justicia oral</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                            </div>
+
+                                        <div class=gdlr-session-item-content-wrapper>
+                                                <div class=gdlr-session-item-divider></div>
+                                                <div class=session-break-content>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>19:30 a 20:00  hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Sesión de preguntas y respuestas</h3></div>
+                                                <div class=clear></div>
+                                         </div>
+
 								  </div>
-                                 
+
+
+
+
+                                    <!-- termina dia -->
+
+									<div class="gdlr-session-item-tab-content gdlr-tab-3">
+
+                                       <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Marlene Hernández Galván</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">(México)</div>
+															<div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Manuel Galván Castañeda</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">(México)</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">El enfoque de la psicología jurídica en las actuaciones y decisiones judiciales. Una visón interdisciplinaria</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                            </div>
+										<div class=gdlr-session-item-content-wrapper>
+                                                <div class=gdlr-session-item-divider></div>
+                                                <div class=session-break-content>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>18:00 a 18:20  hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Sesión de preguntas y respuestas</h3></div>
+                                                <div class=clear></div>
+                                         </div>
+                                        <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Diego Zalamea</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Ecuador</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Dirección de Audiencias, herramientas indispensables</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                            </div>
+
+                                        <div class=gdlr-session-item-content-wrapper>
+                                                <div class=gdlr-session-item-divider></div>
+                                                <div class=session-break-content>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>20:00  hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Cierre de los trabajos de la Red</h3></div>
+                                                <div class=clear></div>
+                                         </div>
+
+								  </div>
+
                                 </div>
                                 <div class=clear></div>
                             </div>
@@ -519,144 +547,208 @@
                         </div>
                             </div>
                         </div>
-                        
+
                     </section>
                     <div class="section-container container">
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
                                         <br>
                                     </div>
                                 </div>
-                            <div class=speaker-item-wrapper style="margin-bottom: 30px;">
-                                <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                            <ul class=slides>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/sara.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Sara L&oacute;pez Pantoja</h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-1>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Sara López Pantoja es Licenciada en Derecho por la Universidad Nacional Autónoma de México, es Maestra en Derecho por la Universidad Nacional Autónoma de México, es Doctora en Derecho Civil por el Centro de Estudios Superiores en Ciencias Jurídicas y Criminológicas, cuenta con un Master Internacional en Derecho Civil y Familiar por la Universidad Autónoma de Barcelona, España. <br>Actualmente es Jueza Oral en materia familiar adscrita al juzgado tercero del Poder Judicial de la Ciudad de México, ha sido asignada por el Consejo de la Judicatura de tiempo completo al proyecto de implementación de los juicios Orales en materia familiar. <br>
-
-
-                                                                </h3>
+                                <div class=speaker-item-wrapper style="margin-bottom: 30px;">
+                                    <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                        <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                            <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                                <ul class=slides>
+                                                    <li class="gdlr-item gdlr-speaker-item">
+                                                        <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Manuel_Galvan_.png" alt width=400 height=400></div>
+                                                        <div class=gdlr-speaker-item-content>
+                                                            <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Manuel Galván Castañeda</h3>
+                                                            <div class=gdlr-lightbox-form id=gdlr-form-1>
+                                                                <div class=gdlr-paypal-form-wrapper>
+                                                                    <h3 style="text-align: justify">
+                                                                        Semblanza curricular:<br>Es maestro en psicología social y licenciado en psicología por la
+                                                                        Benemérita Universidad Autónoma de Puebla, titulado con mención
+                                                                        honorífica. Autor de la tesis de maestría Representaciones sociales del
+                                                                        agresor sexual en el derecho penal. Una aproximación desde la
+                                                                        psicología social jurídica, en la que contribuye teóricamente a la
+                                                                        construcción de la psicología social jurídica.
+                                                                        Pionero de la psicología jurídica en México que ha contribuido a la
+                                                                        difusión de este campo en el país por más de 25 años. Es autor de
+                                                                        artículos científicos en el campo de la psicología jurídica difundidos a
+                                                                        nivel nacional e internacional. Cibercongresista y ex Director Científico
+                                                                        en México de la Asociación Latinoamericana de Psicología Jurídica y
+                                                                        Forense (ALPJF). Su práctica social la despliega, en sociedad con un
+                                                                        grupo de juristas, como Presidente Fundador del Instituto Mexicano de
+                                                                        Psicología Jurídica A.C., en donde funge como profesor investigador,
+                                                                        perito en psicología y mediador.<br>Director científico y creador de los Diplomados: «Psicología Jurídica de
+                                                                        la Familia», «Psicología Jurídica y Sistema Penal Acusatorio»,
+                                                                        «Psicología Jurídica y Forense», y «Psicología Jurídica y Forense
+                                                                        Victimológica en el Proceso Penal Acusatorio».
+                                                                        Ha sido invitado como Conferencista Magistral por la Universidad de la
+                                                                        Habana, Cuba, en el marco del VIII Congreso Internacional de
+                                                                        Estudiantes de Psicología.
+                                                                        Autor del libro: Psicología jurídica, forense y sistema penal acusatorio
+                                                                        Enigmas de la mente criminal desde un enfoque construccionista
+                                                                        (Inédito, IMEPSIJ).
+                                                                        Coautor de los libros:
+                                                                        a) Psicología social. Perspectivas y aportaciones hacia un mundo
+                                                                        posible (Asociación Mexicana de Alternativas en Psicología,
+                                                                        AMAPSI, 1997).
+                                                                        b) Introducción a la psicología jurídica (2008). México: Trillas.
+                                                                        c) Criminología. Retos y perspectivas contemporáneas (BUAP, 2012).
+                                                                        d) Victimología desde America Latina. Enfoque psico jurídico (ALPJF,
+                                                                        2015).
+                                                                        e) Psicología jurídica, derechos humanos y derecho penal (2019).
+                                                                        Barranquilla, Colombia, ALPJF/Ediciones de la Universidad del
+                                                                        Norte.
+                                                                        Articulista colaborador de Psico-Logos, Revista de la Facultad de
+                                                                        Psicología de la Universidad Autónoma de Sinaloa (UAS).
+                                                                        Ex Delegado Estatal en Puebla por la Academia Mexicana de Ciencias
+                                                                        Periciales S.C. Se formó como psicólogo forense en el Instituto de
+                                                                        Formación Profesional de la Procuraduría General de Justicia del Estado
+                                                                        de Puebla, en donde fungió durante 10 años como Perito en Psicología
+                                                                        de la Agencia Especializada en la Atención e Investigación de Delitos
+                                                                        Sexuales.
+                                                                        Como perito, se ha especializado en la Investigación y Evaluación
+                                                                        Psicológica Forense del Daño Psicológico en las Víctimas de Delitos
+                                                                        Violentos, del Maltrato y Abuso Sexual Infantil, y de la Violencia de
+                                                                        Género.
+                                                                        Es creador del Protocolo de Investigación Psicológica Forense
+                                                                        Construccionista (PIPFC), que es un modelo alternativo a la psicología
+                                                                        forense tradicional y que se caracteriza por proponer un análisis
+                                                                        integrativo de los enfoques psicológico y psicosocial.<br>
+                                                                        Investigador y activista social que, desde el 2015 y a través del Instituto
+                                                                        Mexicano de Psicología Jurídica, solicitó la Alerta de Violencia de
+                                                                        Género para el Estado de Puebla. Ha colaborado activamente con el
+                                                                        Instituto Nacional de las Mujeres y con el Equipo de Trabajo aportando
+                                                                        casos de víctimas de violencia intrafamiliar y de género.
+                                                                        Profesor invitado por distintas universidades públicas y privadas en
+                                                                        distintos estados de la República, para impartir más de 200 conferencias
+                                                                        magistrales, cursos, talleres y seminarios en el campo emergente de la
+                                                                        psicología jurídica.
+                                                                        Docente del curso Atención y prevención de la violencia intrafamiliar
+                                                                        impartido en los Tribunales Superiores de Justicia del país, en donde
+                                                                        presenta los temas El informe pericial en psicología desde la perspectiva
+                                                                        de género y La violencia intrafamiliar y de género desde la Psicología
+                                                                        Jurídica y Forense.
+                                                                        Catedrático invitado y fundador en los siguientes posgrados:
+                                                                        a) Doctorado en Derecho Judicial, Universidad Judicial del Poder
+                                                                        Judicial del Estado de Durango, en donde imparte la materia de
+                                                                        “Psicología Judicial”.
+                                                                        b) Doctorado en Psicología, Universidad de Tijuana, en donde imparte
+                                                                        la materia de “Psicología Jurídica”.
+                                                                        c) Maestría en Psicología Forense, Universidad de San Carlos de
+                                                                        Guatemala.
+                                                                        d) Maestría en Atención y Prevención de la Violencia, Escuela Libre de
+                                                                        Psicología
+                                                                        e) Maestría en Criminología y Criminalística, Colegio Libre de Estudios
+                                                                        Universitarios.
+                                                                        f) Maestría en Psicología Jurídica y Criminología, Instituto
+                                                                        Universitario Puebla.
+                                                                        g) Maestría en Criminología de la Universidad del Valle de Tlaxcala.<br>
+                                                                    </h3>
+                                                                </div>
                                                             </div>
+                                                            <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-1 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-1 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_4_jue_civ/red/images/img_ponentes/paul.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Paul Martín Barba </h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-2>
-                                                            <div class="gdlr-paypal-form-wrapper">
-                                                                 <h3 style="text-align: justify">
-                                                                    Paul Martín Barba es Maestro en Derecho con Orientación Penal por la Universidad Nacional Autónoma de México, es Doctor en Ciencias Penales y Política Criminal por el Instituto Nacional de Ciencias Penales. <br> Actualmente es Magistrado de la Primera Sala Especializada en Ejecución de Sanciones Penales, Juez de Control y Enjuiciamiento del Sistema Penal Acusatorio del Poder Judicial CDMX. <br>
-
-                                                                </h3>
+                                                    </li>
+                                                    <li class="gdlr-item gdlr-speaker-item">
+                                                        <div class="gdlr-speaker-thumbnail"><img src="rede_4_jue_civ/red/images/img_ponentes/Ulises_Canosa_.png" alt width=400 height=400></div>
+                                                        <div class=gdlr-speaker-item-content>
+                                                            <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr . Ulises Canosa Suarez</h3>
+                                                            <div class=gdlr-lightbox-form id=gdlr-form-2>
+                                                                <div class="gdlr-paypal-form-wrapper">
+                                                                     <h3 style="text-align: justify">
+                                                                        Presidente del Instituto Colombiano de Derecho Procesal. Miembro del Instituto Iberoamericano de Derecho Procesal, de la  Academia Colombiana de Jurisprudencia y del Colegio de Abogados  Comercialistas. Miembro de la Comisión Redactora y de la Revisora de la Ley  1564 de 2012 o Código General del Proceso de Colombia, lo mismo que de la Comisión que redactó el Decreto de digitalización de la justicia colombiana,
+                                                                        806 de 2020, que se convirtió en legislación permanente con la Ley 2213 de 2022. Abogado de la Universidad Libre de Colombia, Doctor en Derecho Cum Laude de la Universidad de Salamanca, con maestría en Pruebas de la Universidad de Girona y maestría en Derechos Humanos en la Universidad
+                                                                        Alfonso X UAX de España, con cursos de Especialización en Derecho Procesal y Derecho Financiero en la Universidad del Rosario, Derecho Comercial de la Universidad Externado, Derecho Constitucional en la Universidad de Salamanca y estudios de Dirección Empresarial en el Instituto Europeo de Administración de Negocios INSEAD, en la Universidad de Navarra en España y en el INALDE de Colombia. Ha sido profesor en pregrado y cursos de especialización y maestría en las Universidades de los Andes, Externado de Colombia, Rosario, ICESI y Libre, entre otras. Recibió el premio a la Docencia de Excelencia Juan Agustín Uricoechea y Navarro del Colegio Mayor de Nuestra Señora del Rosario en el 2005. Es Miembro de la Junta Directiva de la Corporación Excelencia en la Justicia. Ha sido Director Jurídico y Miembro de junta directiva de varias empresas privadas de Colombia.<br>
+                                                                    </h3>
+                                                                </div>
                                                             </div>
+                                                            <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-2 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-2 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/diego.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Diego Zalamea </h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-6>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Es Doctor en Derecho, Master en Criminología. Docente en la Universidad de las Américas. Ha sido Director Nacional de Gestión Procesal, Política Penal y del Programa de Protección a Víctimas y Testigos de la Fiscalía General de Estado; coordinador con órganos autónomos del Consejo de la judicatura; miembro del Comité de Expertos de Selección de la Corte Nacional; perito ante la Corte Interamericana de Derechos Humanos; promotor de la reforma dispositivo oral en la Constitución, así como en las leyes de materia penal y no penal.<br>
-
-                                                                </h3>
+                                                    </li>
+                                                    <li class="gdlr-item gdlr-speaker-item">
+                                                        <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/diego.jpg" alt width=400 height=400></div>
+                                                        <div class=gdlr-speaker-item-content>
+                                                            <h3 class="gdlr-speaker-item-title gdlr-skin-title">Diego Zalamea </h3>
+                                                            <div class=gdlr-lightbox-form id=gdlr-form-6>
+                                                                <div class=gdlr-paypal-form-wrapper>
+                                                                    <h3 style="text-align: justify">
+                                                                        Es Doctor en Derecho, Master en Criminología. Docente en la Universidad de las Américas. Ha sido Director Nacional de Gestión Procesal, Política Penal y del Programa de Protección a Víctimas y Testigos de la Fiscalía General de Estado; coordinador con órganos autónomos del Consejo de la judicatura; miembro del Comité de Expertos de Selección de la Corte Nacional; perito ante la Corte Interamericana de Derechos Humanos; promotor de la reforma dispositivo oral en la Constitución, así como en las leyes de materia penal y no penal.<br>
+                                                                    </h3>
+                                                                </div>
                                                             </div>
+                                                            <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-6 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-6 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/leandro.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Leandro J. Giannini </h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-7>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                   Es Abogado, Doctor en Ciencias Jurídicas, Profesor Titular Ordinario y Director del Instituto de Derecho Procesal de la Universidad Nacional de La Plata. <br> Autor de numerosas obras y publicaciones en Derecho Procesal Civil y Constitucional, con especial dedicación a temas de procesos colectivos, acciones de clase y litigios complejos, reforma a la justicia civil y funcionamiento de las cortes supremas en nuestro país y en el derecho comparado, así como de una variada serie de trabajos de investigación y artículos en revistas jurídicas nacionales e internacionales. <br>
-
-
-                                                                </h3>
+                                                    </li>
+                                                    <li class="gdlr-item gdlr-speaker-item">
+                                                        <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Marlenne_Hernandez_.png" alt width=400 height=400></div>
+                                                        <div class=gdlr-speaker-item-content>
+                                                            <h3 class="gdlr-speaker-item-title gdlr-skin-title">MARLENNE HERNANDEZ GALVAN</h3>
+                                                            <div class=gdlr-lightbox-form id=gdlr-form-7>
+                                                                <div class=gdlr-paypal-form-wrapper>
+                                                                    <h3 style="text-align: justify">
+                                                                       Formación:<br>
+                                                                        Licenciatura en Psicología
+                                                                        Facultad de Psicología
+                                                                        Universidad Nacional Autónoma de México (UNAM)
+                                                                        Diplomado “La Regulación Emocional en la Psicoterapia Infantil y
+                                                                        del Adolescente”
+                                                                        División de Educación Continua de la Facultad de Psicología-UNAM
+                                                                        Diplomado “Psicología Jurídica y Forense en Materia Penal” (en
+                                                                        curso)
+                                                                        Instituto Mexicano de Psicología Jurídica A.C. (IMEPSIJ)
+                                                                        Diplomado “Psicología Jurídica y Forense de la Familia”(en curso)
+                                                                        Instituto Mexicano de Psicología Jurídica A.C. (IMEPSIJ)
+                                                                        Diplomado “Psicodiagnóstico del Niño y Adolescente” (en curso)
+                                                                        Instituto Mexicano de Educación e Investigación en Psicología A.C.
+                                                                        (IMEIP)
+                                                                        Inglés
+                                                                        Centro de Lenguas Extranjeras (CELEX) de la Unidad Profesional
+                                                                        Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas
+                                                                        (UPIICSA)
+                                                                        Instituto Politécnico Nacional (IPN)}
+                                                                        Francés
+                                                                        CELEX-UPIICSA-IPN
+                                                                        Alemán
+                                                                        CELEX-UPIICSA-IPN<br>
+                                                                        Experiencia:<br>
+                                                                        Departamento de Evaluación Psicológica (actual)
+                                                                        TSJCDMX-PJCDMX
+                                                                        7° Sala Civil
+                                                                        TSJCDMX-PJCDMX
+                                                                        Departamento de Psicología
+                                                                        Centro de Evaluación y Control de Confianza (CECC)
+                                                                        Fiscalía General de la República (FGR)
+                                                                        Servicio Social-Juzgado de Proceso Oral Civil
+                                                                        TSJCDMX-PJCDMX
+                                                                        Prácticas Profesionales
+                                                                        Clínica de Tabaquismo del Instituto Nacional de Enfermedades
+                                                                        Respiratorias (INER)
+                                                                    </h3>
+                                                                </div>
                                                             </div>
+                                                            <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-7 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-7 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/gladys.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Gladys Morales Ramírez </h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-8>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                  Es abogada por la Universidad Autónoma de Chiapas y maestra en derecho por la Universidad Nacional Autónoma de México. Actualmente tiene a su cargo la subdirección de investigación en el Instituto de Estudios Judiciales del Poder Judicial de la Ciudad de México (IEJ-PJCDMX), donde se desarrolla modelos de formación judicial e investigación aplicada en derecho. <br>Su trabajo académico se concentra a las intersecciones del género y el derecho, la educación legal y la difusión de precedentes judiciales desde una perspectiva politológica.<br>
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-8 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/julio.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Julio César Bonilla Gutiérrez </h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-9>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                               <h3 style="text-align: justify">
-                                                                    Maestro en Derecho y Especialista en Derecho Electoral con mención honorífica por la División de Estudios de Posgrado de la Facultad de Derecho de la UNAM, donde obtuvo la Medalla al Mérito Universitario Alfonso Caso 2015. Obtuvo el título de Máster en Protección Constitucional y en Sistema Interamericano de los Derechos Fundamentales “Dr. Jorge Carpizo” 2015, por el Instituto de Investigaciones Jurídicas de la UNAM y del Instituto de Derecho Parlamentario de la Universidad Complutense de Madrid.<br> Actualmente es Comisionado Presidente del Instituto de Transparencia, Acceso a la Información Pública, Protección de Datos Personales y Rendición de Cuentas de la Ciudad de México.
-
-
-                                                               </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-9 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/persona2.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Carmen Patricia Santisbón Morales </h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-10>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                               <h3 style="text-align: justify">
-                                                                    Carmen Patricia Santisbón Morales cuenta con una especialidad en Derecho Laboral, por la Academia Mexicana del Derecho del Trabajo y de la previsión social, impartido por la Universidad Autónoma del Carmen, es Maestra en Derecho Judicial, por la escuela judicial del Poder Judicial del Estado de Campeche, es Doctora en Derecho Constitucional y Derechos Humanos por el Instituto Nacional de Estudios Superiores en derecho Penal. <br>Actualmente es jueza Oral Mercantil adscrita al 1° jugado del 2° Distrito Judicial del estado de Campeche.
-
-
-                                                               </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-10 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
+                                        <div class=clear></div>
                                     </div>
-                                    <div class=clear></div>
                                 </div>
-                            </div>
                             <div class=clear></div>
                     </section>
                 </div>
-				
-			 
-				
-				
+
+
+
+
                 </div>
             </div>
         </div>
@@ -740,17 +832,17 @@
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 
