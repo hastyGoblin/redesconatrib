@@ -266,14 +266,6 @@
                                                                     <input type="submit"  name="Rechazar" value="Rechazar">
                                                                 </form>
                                                             </td>
-
-                                                            <td colspan="5">
-                                                                <form method="post" name="Constancia" action="{{ url('usuarioConstancias') }}">
-                                                                @csrf
-                                                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                                    <input type="submit"  name="Habilitar" value="Habilitar">
-                                                                </form>
-                                                            </td>
                                                         </tr>
                                                     </tbody>
 
