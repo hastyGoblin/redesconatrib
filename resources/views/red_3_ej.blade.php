@@ -454,7 +454,7 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Indicadores con Perspectiva de Género.</h3>
+                                                <h3 class="gdlr-session-item-title">Implementación del Sistema de Información Estadística de las Entidades Federativas (SIEEFE).</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
                                                 <article class="type-post">
 															<div class="entry-cover">
