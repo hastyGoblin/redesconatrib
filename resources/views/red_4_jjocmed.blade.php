@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="rede_4_jue_civ/red/images/logo_red_1.png" alt=""> </a>
+                        <a href="index.html"> <img src="images/logo_red_1.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -68,14 +68,14 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                <li class="menu-item menu-item-has-children"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <li class="menu-item"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </li>
@@ -128,7 +128,7 @@
                                             <div class="gdlr-ux gdlr-testimonial-ux">
                                                 <div class="testimonial-item">
                                                     <div class="testimonial-content gdlr-skin-content">
-                                                        <p>Es dotar a sus integrantes de herramientas que les permitan cumplir con eficiencia y eficacia la función jurisdiccional  que desempeñan, y como consecuencia consolidar un sistema de administración de justicia oral uniforme, fomentando el uso de tecnología, la protección de datos personales, las sanas prácticas y los precedentes judiciales y procesales en todo el procedimiento jurisdiccional.</p>
+                                                        <p>La consolidación de un sistema de justicia oral uniforme, homogéneo, democrático, y adversarial por excelencia, fortaleciendo las mejores prácticas en la dirección de audiencias, en la gestión judicial, así como la certeza jurídica por el ejercicio de precedentes procesales horizontales.</p>
                                                     </div>
                                                     <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
                                                     </div>
@@ -393,7 +393,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30 A 19:30 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -467,7 +467,7 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">El enfoque de la psicología jurídica en las actuaciones y decisiones judiciales. Una visón interdisciplinaria</h3>
+                                                <h3 class="gdlr-session-item-title">El enfoque de la psicología jurídica en las actuaciones y decisiones judiciales. Una visión interdisciplinaria</h3>
 												<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
@@ -496,7 +496,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30 A 19:45  hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -557,191 +557,153 @@
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
                                         <br>
                                     </div>
-                                </div>
-                                <div class=speaker-item-wrapper style="margin-bottom: 30px;">
-                                    <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                        <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                            <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                                <ul class=slides>
-                                                    <li class="gdlr-item gdlr-speaker-item">
-                                                        <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Manuel_Galvan_.png" alt width=400 height=400></div>
-                                                        <div class=gdlr-speaker-item-content>
-                                                            <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Manuel Galván Castañeda</h3>
-                                                            <div class=gdlr-lightbox-form id=gdlr-form-1>
-                                                                <div class=gdlr-paypal-form-wrapper>
-                                                                    <h3 style="text-align: justify">
-                                                                        Semblanza curricular:<br>Es maestro en psicología social y licenciado en psicología por la
-                                                                        Benemérita Universidad Autónoma de Puebla, titulado con mención
-                                                                        honorífica. Autor de la tesis de maestría Representaciones sociales del
-                                                                        agresor sexual en el derecho penal. Una aproximación desde la
-                                                                        psicología social jurídica, en la que contribuye teóricamente a la
-                                                                        construcción de la psicología social jurídica.
-                                                                        Pionero de la psicología jurídica en México que ha contribuido a la
-                                                                        difusión de este campo en el país por más de 25 años. Es autor de
-                                                                        artículos científicos en el campo de la psicología jurídica difundidos a
-                                                                        nivel nacional e internacional. Cibercongresista y ex Director Científico
-                                                                        en México de la Asociación Latinoamericana de Psicología Jurídica y
-                                                                        Forense (ALPJF). Su práctica social la despliega, en sociedad con un
-                                                                        grupo de juristas, como Presidente Fundador del Instituto Mexicano de
-                                                                        Psicología Jurídica A.C., en donde funge como profesor investigador,
-                                                                        perito en psicología y mediador.<br>Director científico y creador de los Diplomados: «Psicología Jurídica de
-                                                                        la Familia», «Psicología Jurídica y Sistema Penal Acusatorio»,
-                                                                        «Psicología Jurídica y Forense», y «Psicología Jurídica y Forense
-                                                                        Victimológica en el Proceso Penal Acusatorio».
-                                                                        Ha sido invitado como Conferencista Magistral por la Universidad de la
-                                                                        Habana, Cuba, en el marco del VIII Congreso Internacional de
-                                                                        Estudiantes de Psicología.
-                                                                        Autor del libro: Psicología jurídica, forense y sistema penal acusatorio
-                                                                        Enigmas de la mente criminal desde un enfoque construccionista
-                                                                        (Inédito, IMEPSIJ).
-                                                                        Coautor de los libros:
-                                                                        a) Psicología social. Perspectivas y aportaciones hacia un mundo
-                                                                        posible (Asociación Mexicana de Alternativas en Psicología,
-                                                                        AMAPSI, 1997).
-                                                                        b) Introducción a la psicología jurídica (2008). México: Trillas.
-                                                                        c) Criminología. Retos y perspectivas contemporáneas (BUAP, 2012).
-                                                                        d) Victimología desde America Latina. Enfoque psico jurídico (ALPJF,
-                                                                        2015).
-                                                                        e) Psicología jurídica, derechos humanos y derecho penal (2019).
-                                                                        Barranquilla, Colombia, ALPJF/Ediciones de la Universidad del
-                                                                        Norte.
-                                                                        Articulista colaborador de Psico-Logos, Revista de la Facultad de
-                                                                        Psicología de la Universidad Autónoma de Sinaloa (UAS).
-                                                                        Ex Delegado Estatal en Puebla por la Academia Mexicana de Ciencias
-                                                                        Periciales S.C. Se formó como psicólogo forense en el Instituto de
-                                                                        Formación Profesional de la Procuraduría General de Justicia del Estado
-                                                                        de Puebla, en donde fungió durante 10 años como Perito en Psicología
-                                                                        de la Agencia Especializada en la Atención e Investigación de Delitos
-                                                                        Sexuales.
-                                                                        Como perito, se ha especializado en la Investigación y Evaluación
-                                                                        Psicológica Forense del Daño Psicológico en las Víctimas de Delitos
-                                                                        Violentos, del Maltrato y Abuso Sexual Infantil, y de la Violencia de
-                                                                        Género.
-                                                                        Es creador del Protocolo de Investigación Psicológica Forense
-                                                                        Construccionista (PIPFC), que es un modelo alternativo a la psicología
-                                                                        forense tradicional y que se caracteriza por proponer un análisis
-                                                                        integrativo de los enfoques psicológico y psicosocial.<br>
-                                                                        Investigador y activista social que, desde el 2015 y a través del Instituto
-                                                                        Mexicano de Psicología Jurídica, solicitó la Alerta de Violencia de
-                                                                        Género para el Estado de Puebla. Ha colaborado activamente con el
-                                                                        Instituto Nacional de las Mujeres y con el Equipo de Trabajo aportando
-                                                                        casos de víctimas de violencia intrafamiliar y de género.
-                                                                        Profesor invitado por distintas universidades públicas y privadas en
-                                                                        distintos estados de la República, para impartir más de 200 conferencias
-                                                                        magistrales, cursos, talleres y seminarios en el campo emergente de la
-                                                                        psicología jurídica.
-                                                                        Docente del curso Atención y prevención de la violencia intrafamiliar
-                                                                        impartido en los Tribunales Superiores de Justicia del país, en donde
-                                                                        presenta los temas El informe pericial en psicología desde la perspectiva
-                                                                        de género y La violencia intrafamiliar y de género desde la Psicología
-                                                                        Jurídica y Forense.
-                                                                        Catedrático invitado y fundador en los siguientes posgrados:
-                                                                        a) Doctorado en Derecho Judicial, Universidad Judicial del Poder
-                                                                        Judicial del Estado de Durango, en donde imparte la materia de
-                                                                        “Psicología Judicial”.
-                                                                        b) Doctorado en Psicología, Universidad de Tijuana, en donde imparte
-                                                                        la materia de “Psicología Jurídica”.
-                                                                        c) Maestría en Psicología Forense, Universidad de San Carlos de
-                                                                        Guatemala.
-                                                                        d) Maestría en Atención y Prevención de la Violencia, Escuela Libre de
-                                                                        Psicología
-                                                                        e) Maestría en Criminología y Criminalística, Colegio Libre de Estudios
-                                                                        Universitarios.
-                                                                        f) Maestría en Psicología Jurídica y Criminología, Instituto
-                                                                        Universitario Puebla.
-                                                                        g) Maestría en Criminología de la Universidad del Valle de Tlaxcala.<br>
-                                                                    </h3>
-                                                                </div>
+                        </div>
+                            <div class=speaker-item-wrapper style="margin-bottom: 30px;">
+                                <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                            <ul class=slides>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Manuel_Galvan_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Manuel Galván Castañeda</h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-1>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Semblanza curricular:<br>Es maestro en psicología social y licenciado en psicología por la Benemérita Universidad Autónoma de Puebla, titulado con mención honorífica. Autor de la tesis de maestría Representaciones sociales del agresor sexual en el derecho penal. Una aproximación desde la psicología social jurídica, en la que contribuye teóricamente a la construcción de la psicología social jurídica. Pionero de la psicología jurídica en México que ha contribuido a la difusión de este campo en el país por más de 25 años. Es autor de artículos científicos en el campo de la psicología jurídica difundidos a nivel nacional e internacional. Cibercongresista y ex Director Científico en México de la Asociación Latinoamericana de Psicología Jurídica y Forense (ALPJF). Su práctica social la despliega, en sociedad con un grupo de juristas, como Presidente Fundador del Instituto Mexicano de Psicología Jurídica A.C., en donde funge como profesor investigador, perito en psicología y mediador.<br>Director científico y creador de los Diplomados: «Psicología Jurídica de la Familia», «Psicología Jurídica y Sistema Penal Acusatorio», «Psicología Jurídica y Forense», y «Psicología Jurídica y Forense Victimológica en el Proceso Penal Acusatorio». <br> Ha sido invitado como Conferencista Magistral por la Universidad de la Habana, Cuba, en el marco del VIII Congreso Internacional de Estudiantes de Psicología.<br> Autor del libro: Psicología jurídica, forense y sistema penal acusatorio Enigmas de la mente criminal desde un enfoque construccionista (Inédito, IMEPSIJ). <br> Coautor de los libros: <br>a) Psicología social. Perspectivas y aportaciones hacia un mundo posible (Asociación Mexicana de Alternativas en Psicología, AMAPSI, 1997).<br> b) Introducción a la psicología jurídica (2008).<br> México: Trillas.<br>c) Criminología. Retos y perspectivas contemporáneas (BUAP, 2012).<br>d) Victimología desde America Latina. Enfoque psico jurídico (ALPJF, 2015).<br>e) Psicología jurídica, derechos humanos y derecho penal (2019).<br> Barranquilla, Colombia, ALPJF/Ediciones de la Universidad del Norte.<br> Articulista colaborador de Psico-Logos, Revista de la Facultad de Psicología de la Universidad Autónoma de Sinaloa (UAS).<br> Ex Delegado Estatal en Puebla por la Academia Mexicana de Ciencias Periciales S.C. Se formó como psicólogo forense en el Instituto de Formación Profesional de la Procuraduría General de Justicia del Estado de Puebla, en donde fungió durante 10 años como Perito en Psicología de la Agencia Especializada en la Atención e Investigación de Delitos Sexuales. <br>Como perito, se ha especializado en la Investigación y Evaluación Psicológica Forense del Daño Psicológico en las Víctimas de Delitos Violentos, del Maltrato y Abuso Sexual Infantil, y de la Violencia de Género. <br>Es creador del Protocolo de Investigación Psicológica Forense Construccionista (PIPFC), que es un modelo alternativo a la psicología forense tradicional y que se caracteriza por proponer un análisis integrativo de los enfoques psicológico y psicosocial.<br> Investigador y activista social que, desde el 2015 y a través del Instituto Mexicano de Psicología Jurídica, solicitó la Alerta de Violencia de Género para el Estado de Puebla. Ha colaborado activamente con el Instituto Nacional de las Mujeres y con el Equipo de Trabajo aportandocasos de víctimas de violencia intrafamiliar y de género. <br>Profesor invitado por distintas universidades públicas y privadas en distintos estados de la República, para impartir más de 200 conferenciasmagistrales, cursos, talleres  psicología jurídica.<br>Docente del curso Atención y prevención de la violencia intrafamiliar impartido en los Tribunales Superiores de Justicia del país, en donde presenta los temas El informe pericial en psicología desde la perspectiva de género y La violencia intrafamiliar y de género desde la Psicología Jurídica y Forense.<br> Catedrático invitado y fundador en los siguientes posgrados:<br> a) Doctorado en Derecho Judicial, Universidad Judicial del Poder Judicial del Estado de Durango, en donde imparte la materia de “Psicología Judicial”.<br> b) Doctorado en Psicología, Universidad de Tijuana, en donde imparte la materia de “Psicología Jurídica”.<br> c) Maestría en Psicología Forense, Universidad de San Carlos de Guatemala.<br> d) Maestría en Atención y Prevención de la Violencia, Escuela Libre de Psicología.<br> e) Maestría en Criminología y Criminalística, Colegio Libre de Estudios Universitarios.<br> f) Maestría en Psicología Jurídica y Criminología, Instituto Universitario Puebla.<br> g) Maestría en Criminología de la Universidad del Valle de Tlaxcala.<br>
+
+                                                                </h3>
                                                             </div>
-                                                            <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-1 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                         </div>
-                                                    </li>
-                                                    <li class="gdlr-item gdlr-speaker-item">
-                                                        <div class="gdlr-speaker-thumbnail"><img src="rede_4_jue_civ/red/images/img_ponentes/Ulises_Canosa_.png" alt width=400 height=400></div>
-                                                        <div class=gdlr-speaker-item-content>
-                                                            <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr . Ulises Canosa Suarez</h3>
-                                                            <div class=gdlr-lightbox-form id=gdlr-form-2>
-                                                                <div class="gdlr-paypal-form-wrapper">
-                                                                     <h3 style="text-align: justify">
-                                                                        Presidente del Instituto Colombiano de Derecho Procesal. Miembro del Instituto Iberoamericano de Derecho Procesal, de la  Academia Colombiana de Jurisprudencia y del Colegio de Abogados  Comercialistas. Miembro de la Comisión Redactora y de la Revisora de la Ley  1564 de 2012 o Código General del Proceso de Colombia, lo mismo que de la Comisión que redactó el Decreto de digitalización de la justicia colombiana,
-                                                                        806 de 2020, que se convirtió en legislación permanente con la Ley 2213 de 2022. Abogado de la Universidad Libre de Colombia, Doctor en Derecho Cum Laude de la Universidad de Salamanca, con maestría en Pruebas de la Universidad de Girona y maestría en Derechos Humanos en la Universidad
-                                                                        Alfonso X UAX de España, con cursos de Especialización en Derecho Procesal y Derecho Financiero en la Universidad del Rosario, Derecho Comercial de la Universidad Externado, Derecho Constitucional en la Universidad de Salamanca y estudios de Dirección Empresarial en el Instituto Europeo de Administración de Negocios INSEAD, en la Universidad de Navarra en España y en el INALDE de Colombia. Ha sido profesor en pregrado y cursos de especialización y maestría en las Universidades de los Andes, Externado de Colombia, Rosario, ICESI y Libre, entre otras. Recibió el premio a la Docencia de Excelencia Juan Agustín Uricoechea y Navarro del Colegio Mayor de Nuestra Señora del Rosario en el 2005. Es Miembro de la Junta Directiva de la Corporación Excelencia en la Justicia. Ha sido Director Jurídico y Miembro de junta directiva de varias empresas privadas de Colombia.<br>
-                                                                    </h3>
-                                                                </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-1 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_4_jue_civ/red/images/img_ponentes/Ulises_Canosa_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr . Ulises Canosa Suarez</h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-2>
+                                                            <div class="gdlr-paypal-form-wrapper">
+                                                                 <h3 style="text-align: justify">
+                                                                   Presidente del Instituto Colombiano de Derecho Procesal. Miembro del Instituto Iberoamericano de Derecho Procesal, de la  Academia Colombiana de Jurisprudencia y del Colegio de Abogados  Comercialistas. Miembro de la Comisión Redactora y de la Revisora de la Ley  1564 de 2012 o Código General del Proceso de Colombia, lo mismo que de la Comisión que redactó el Decreto de digitalización de la justicia colombiana, 806 de 2020, que se convirtió en legislación permanente con la Ley 2213 de 2022. Abogado de la Universidad Libre de Colombia, Doctor en Derecho Cum Laude de la Universidad de Salamanca, con maestría en Pruebas de la Universidad de Girona y maestría en Derechos Humanos en la Universidad Alfonso X UAX de España, con cursos de Especialización en Derecho Procesal y Derecho Financiero en la Universidad del Rosario, Derecho Comercial de la Universidad Externado, Derecho Constitucional en la Universidad de Salamanca y estudios de Dirección Empresarial en el Instituto Europeo de Administración de Negocios INSEAD, en la Universidad de Navarra en España y en el INALDE de Colombia. Ha sido profesor en pregrado y cursos de especialización y maestría en las Universidades de los Andes, Externado de Colombia, Rosario, ICESI y Libre, entre otras. Recibió el premio a la Docencia de Excelencia Juan Agustín Uricoechea y Navarro del Colegio Mayor de Nuestra Señora del Rosario en el 2005. Es Miembro de la Junta Directiva de la Corporación Excelencia en la Justicia. Ha sido Director Jurídico y Miembro de junta directiva de varias empresas privadas de Colombia.<br>
+
+                                                                </h3>
                                                             </div>
-                                                            <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-2 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                         </div>
-                                                    </li>
-                                                    <li class="gdlr-item gdlr-speaker-item">
-                                                        <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/diego.jpg" alt width=400 height=400></div>
-                                                        <div class=gdlr-speaker-item-content>
-                                                            <h3 class="gdlr-speaker-item-title gdlr-skin-title">Diego Zalamea </h3>
-                                                            <div class=gdlr-lightbox-form id=gdlr-form-6>
-                                                                <div class=gdlr-paypal-form-wrapper>
-                                                                    <h3 style="text-align: justify">
-                                                                        Es Doctor en Derecho, Master en Criminología. Docente en la Universidad de las Américas. Ha sido Director Nacional de Gestión Procesal, Política Penal y del Programa de Protección a Víctimas y Testigos de la Fiscalía General de Estado; coordinador con órganos autónomos del Consejo de la judicatura; miembro del Comité de Expertos de Selección de la Corte Nacional; perito ante la Corte Interamericana de Derechos Humanos; promotor de la reforma dispositivo oral en la Constitución, así como en las leyes de materia penal y no penal.<br>
-                                                                    </h3>
-                                                                </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-2 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/diego.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Diego Zalamea </h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-6>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Es Doctor en Derecho, Master en Criminología. Docente en la Universidad de las Américas. Ha sido Director Nacional de Gestión Procesal, Política Penal y del Programa de Protección a Víctimas y Testigos de la Fiscalía General de Estado; coordinador con órganos autónomos del Consejo de la judicatura; miembro del Comité de Expertos de Selección de la Corte Nacional; perito ante la Corte Interamericana de Derechos Humanos; promotor de la reforma dispositivo oral en la Constitución, así como en las leyes de materia penal y no penal.<br>
+
+                                                                </h3>
                                                             </div>
-                                                            <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-6 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                         </div>
-                                                    </li>
-                                                    <li class="gdlr-item gdlr-speaker-item">
-                                                        <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Marlenne_Hernandez_.png" alt width=400 height=400></div>
-                                                        <div class=gdlr-speaker-item-content>
-                                                            <h3 class="gdlr-speaker-item-title gdlr-skin-title">MARLENNE HERNANDEZ GALVAN</h3>
-                                                            <div class=gdlr-lightbox-form id=gdlr-form-7>
-                                                                <div class=gdlr-paypal-form-wrapper>
-                                                                    <h3 style="text-align: justify">
-                                                                       Formación:<br>
-                                                                        Licenciatura en Psicología
-                                                                        Facultad de Psicología
-                                                                        Universidad Nacional Autónoma de México (UNAM)
-                                                                        Diplomado “La Regulación Emocional en la Psicoterapia Infantil y
-                                                                        del Adolescente”
-                                                                        División de Educación Continua de la Facultad de Psicología-UNAM
-                                                                        Diplomado “Psicología Jurídica y Forense en Materia Penal” (en
-                                                                        curso)
-                                                                        Instituto Mexicano de Psicología Jurídica A.C. (IMEPSIJ)
-                                                                        Diplomado “Psicología Jurídica y Forense de la Familia”(en curso)
-                                                                        Instituto Mexicano de Psicología Jurídica A.C. (IMEPSIJ)
-                                                                        Diplomado “Psicodiagnóstico del Niño y Adolescente” (en curso)
-                                                                        Instituto Mexicano de Educación e Investigación en Psicología A.C.
-                                                                        (IMEIP)
-                                                                        Inglés
-                                                                        Centro de Lenguas Extranjeras (CELEX) de la Unidad Profesional
-                                                                        Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas
-                                                                        (UPIICSA)
-                                                                        Instituto Politécnico Nacional (IPN)}
-                                                                        Francés
-                                                                        CELEX-UPIICSA-IPN
-                                                                        Alemán
-                                                                        CELEX-UPIICSA-IPN<br>
-                                                                        Experiencia:<br>
-                                                                        Departamento de Evaluación Psicológica (actual)
-                                                                        TSJCDMX-PJCDMX
-                                                                        7° Sala Civil
-                                                                        TSJCDMX-PJCDMX
-                                                                        Departamento de Psicología
-                                                                        Centro de Evaluación y Control de Confianza (CECC)
-                                                                        Fiscalía General de la República (FGR)
-                                                                        Servicio Social-Juzgado de Proceso Oral Civil
-                                                                        TSJCDMX-PJCDMX
-                                                                        Prácticas Profesionales
-                                                                        Clínica de Tabaquismo del Instituto Nacional de Enfermedades
-                                                                        Respiratorias (INER)
-                                                                    </h3>
-                                                                </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-6 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Marlenne_Hernandez_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MARLENNE HERNANDEZ GALVAN</h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-7>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                   Formación:<br> Licenciatura en Psicología Facultad de Psicología Universidad Nacional Autónoma de México (UNAM) Diplomado “La Regulación Emocional en la Psicoterapia Infantil y del Adolescente” División de Educación Continua de la Facultad de Psicología-UNAM Diplomado “Psicología Jurídica y Forense en Materia Penal” (en curso) Instituto Mexicano de Psicología Jurídica A.C. (IMEPSIJ) Diplomado “Psicología Jurídica y Forense de la Familia”(en curso) Instituto Mexicano de Psicología Jurídica A.C. (IMEPSIJ) Diplomado “Psicodiagnóstico del Niño y Adolescente” (en curso) Instituto Mexicano de Educación e Investigación en Psicología A.C.(IMEIP). <br> Inglés Centro de Lenguas Extranjeras (CELEX) de la Unidad Profesional <br> Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas (UPIICSA) <br>Instituto Politécnico Nacional (IPN)} <br>Francés CELEX-UPIICSA-IPN Alemán CELEX-UPIICSA-IPN<br> Experiencia:<br> Departamento de Evaluación Psicológica (actual) TSJCDMX-PJCDMX 7° Sala Civil TSJCDMX-PJCDMX Departamento de Psicología Centro de Evaluación y Control de Confianza (CECC) Fiscalía General de la República (FGR) Servicio Social-Juzgado de Proceso Oral Civil TSJCDMX-PJCDMX Prácticas Profesionales Clínica de Tabaquismo del Instituto Nacional de Enfermedades Respiratorias (INER).<br>
+
+                                                                </h3>
                                                             </div>
-                                                            <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-7 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                         </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-7 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+
+
+
+                                            </ul>
                                         </div>
-                                        <div class=clear></div>
                                     </div>
+                                    <div class=clear></div>
                                 </div>
+                            </div>
+
+
+
+
+						<div class=speaker-item-wrapper style="margin-bottom: 30px;">
+                                <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                            <ul class=slides>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/ALE_VERA.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Ministro Alejandro Vera Quilodrán  </h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-5>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Actual Ministro de Corte de Apelaciones de Temuco, Chile, Director de la Asociación Nacional de Magistradas y Magistrados de Chile (ANM), Director Concejero de la Academia Judicial de Chile.. Doctorando en Derecho de la Universidad Complutense de Madrid. Magíster de Derecho de la Universidad Diego Portales de Chile. Pos titulado en Ciencias Políticas, Diplomado en Administración, y Diplomado en Derechos Humanos. Monitor de la Reforma Procesal Penal y Tribunales de Familia de la Academia Judicial de Chile. Autor del Libro Delito e Informática y de diversos artículos sobre la reforma judicial en Chile, publicados en Latinoamérica y Estados Unidos de Norteamérica. Miembro Fundador de la Escuela Judicial de América Latina (EJAL)
+<br>
+
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-5 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_4_jue_civ/red/images/img_ponentes/Johan_Quesnay_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. JOHAN QUESNAY CASUSOL</h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-8>
+                                                            <div class="gdlr-paypal-form-wrapper">
+                                                                 <h3 style="text-align: justify">
+                                                                   Abogado – Universidad Nacional de San Agustín de Arequipa, Doctor en Derecho por la Universidad Nacional San Agustín de Arequipa.<br> Magíster en Administración de Negocios por la Pontificia Universidad Católica del Perú PUCP - (MBA).<br> Máster en Tutela Judicial de Derechos y Jurisdicción Contencioso - Administrativa por la Universidad de Jaén - España.<br> Especialización en:<br> Litigación oral, Universidad de Salamanca España y Centro de Estudios para la Justicia - CEJA, Chile Argumentación Jurídica - Universidad de Alicante España.<br>Varios libros publicados, entre otros: La litigación oral en el proceso civil; Litigación oral, el juez y los abogados en el proceso Docente universitario PUCP, U. Católica Santa María Arequipa, U. San Agustín de Arequipa y U. Privada de Tacna Juez del 7mo. JUZGADO ESPECIALIZADO EN LO CIVIL (litigación oral) <br>
+
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-8 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Gloria_Negroni_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">GLORIA NEGRONI </h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-9>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Jueza del Tercer Juzgado de Familia en Santiago, Abogada. <br>Licenciada en Ciencias Jurídicas, Pontificia Universidad Católica de Chile.<br> Master en Derechos Fundamentales, Género Infancia y Familia por la Universidad de Jaen y Malaga, España.<br>
+
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-9 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+
+                                                    <div class=gdlr-speaker-item-content>
+
+
+
+                                                    </div>
+                                                </li>
+
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class=clear></div>
+                                </div>
+                            </div>
                             <div class=clear></div>
                     </section>
                 </div>
@@ -757,7 +719,7 @@
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">
-                    <div class=copyright-left> © Copyright CONATRIB 2021</div>
+                    <div class=copyright-left> © Copyright CONATRIB 2022</div>
                     <div class=copyright-right> <a href="https://conatrib.org.mx/">P&aacute;gina web</a> | <a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">Youtube</a> | <a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a> | <a href="https://twitter.com/ConatribMx">Twitter</a></div>
                     <div class=clear></div>
                 </div>
