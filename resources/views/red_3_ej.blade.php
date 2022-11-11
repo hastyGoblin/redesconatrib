@@ -170,7 +170,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 a 10:15 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 HRS.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -232,11 +232,76 @@
                                             </div>
                                           <div class="clear"></div>
                                         </div>
+
+                                        <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:30 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="gdlr-session-item-excerpt">Ponente:</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Silvia Gabriela Ortiz Rascón</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Secretaria de Estudio y Cuenta de la SCJN, en representación de la Ministra Yasmín Esquivel Mossa.</a>
+																</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">“INDICADORES CON PERSPECTIVA DE GÉNERO”.</h3>
+                                                <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
+                                                <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/1W5V9SnFjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+
+                                        <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:45 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="gdlr-session-item-excerpt">Ponente:</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>DRA. MA FABIOLA ALANÍS SÁMANO</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM).</a></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Estructura Actual y Horizontes del Banco Nacional de Datos e Información sobre Casos de Violencia contra las Mujeres (BANAVIM).</h3>
+                                                <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
+                                                <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/1W5V9SnFjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+
+                                        {{-- MAESTRO A LAS 11 --}}
 										<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:30 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:00 hrs.</div>
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -263,11 +328,20 @@
                                             </div>
                                           <div class="clear"></div>
                                         </div>
+
+                                        <div class=gdlr-session-item-content-wrapper>
+                                            <div class=gdlr-session-item-divider></div>
+                                            <div class=session-break-content>
+                                                <div class=session-break-info><i class="fa fa-clock-o"></i>11:15 a 11:30 hrs.</div>
+                                                <h3 class="gdlr-session-break-title">Receso</h3></div>
+                                            <div class=clear></div>
+                                        </div>
+
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:45  hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:30  hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -298,7 +372,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:45 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -325,18 +399,12 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <div class=gdlr-session-item-content-wrapper>
-                                                <div class=gdlr-session-item-divider></div>
-                                                <div class=session-break-content>
-                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>11:15 a 11:30 hrs.</div>
-                                                    <h3 class="gdlr-session-break-title">Receso</h3></div>
-                                                <div class=clear></div>
-                                            </div>
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:30 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -363,67 +431,7 @@
                                             <div class="clear"></div>
                                         </div>
 
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:45 hrs.</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Ponente:</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>DRA. MA FABIOLA ALANÍS SÁMANO</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM).</a></div>
 
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Estructura Actual y Horizontes del Banco Nacional de Datos e Información sobre Casos de Violencia contra las Mujeres (BANAVIM).</h3>
-                                                <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/1W5V9SnFjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:00 hrs.</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Silvia Gabriela Ortiz Rascón</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Secretaria de Estudio y Cuenta de la SCJN, en representación de la Ministra Yasmín Esquivel Mossa.</a>
-																</div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">“INDICADORES CON PERSPECTIVA DE GÉNERO”.</h3>
-                                                <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/1W5V9SnFjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
