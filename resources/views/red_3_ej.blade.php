@@ -170,13 +170,13 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 HRS.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -232,82 +232,17 @@
                                             </div>
                                           <div class="clear"></div>
                                         </div>
-
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:30 hrs.</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Silvia Gabriela Ortiz Rascón</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Secretaria de Estudio y Cuenta de la SCJN, en representación de la Ministra Yasmín Esquivel Mossa.</a>
-																</div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">“INDICADORES CON PERSPECTIVA DE GÉNERO”.</h3>
-                                                <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/1W5V9SnFjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-
-                                        <div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:45 hrs.</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Ponente:</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>DRA. MA FABIOLA ALANÍS SÁMANO</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM).</a></div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Estructura Actual y Horizontes del Banco Nacional de Datos e Información sobre Casos de Violencia contra las Mujeres (BANAVIM).</h3>
-                                                <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/1W5V9SnFjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
-                                            </div>
-                                            <div class="clear"></div>
-                                        </div>
-
-                                        {{-- MAESTRO A LAS 11 --}}
 										<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:30 hrs.</div>
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Arístides Rodrigo Guerrero García</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinador de la Comisión de Protección de Datos Personales del Sistema Nacional de Transparencia.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Silvia Gabriela Ortiz Rascón</a></div>
+																<div class="gdlr-session-item-excerpt">Secretaria de Estudio y Cuenta de la SCJN, en representación de la Ministra Yasmín Esquivel Mossa.</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -315,7 +250,7 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-                                               <h3 class="gdlr-session-item-title">Protección de Datos Personales en las Sentencias</h3>
+                                               <h3 class="gdlr-session-item-title">INDICADORES CON PERSPECTIVA DE GÉNERO</h3>
 												<div class="gdlr-session-item-excerpt">Ponencia Magistral</div>
 											    <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
@@ -328,26 +263,18 @@
                                             </div>
                                           <div class="clear"></div>
                                         </div>
-
-                                        <div class=gdlr-session-item-content-wrapper>
-                                            <div class=gdlr-session-item-divider></div>
-                                            <div class=session-break-content>
-                                                <div class=session-break-info><i class="fa fa-clock-o"></i>11:15 a 11:30 hrs.</div>
-                                                <h3 class="gdlr-session-break-title">Receso</h3></div>
-                                            <div class=clear></div>
-                                        </div>
-
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:30  hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:45  hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>LIC. VALERIA PARADA SÁNCHEZ</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora de Información Pública y Estadística del Poder Judicial de la Ciudad de México.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Ma Fabiola Alanís Sámano</a></div>
+																<div class="gdlr-session-item-excerpt">Comisionada Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM).</div>
+
 
                                                             </div>
                                                         </div>
@@ -356,7 +283,7 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Retos y Avances de los Tribunales Superiores de Justicia para la Elaboración de Versiones Públicas de Sentencias.</h3>
+                                                <h3 class="gdlr-session-item-title">ESTRUCTURA ACTUAL Y HORIZONTES DEL BANCO NACIONAL DE DATOS E INFORMACIÓN SOBRE CASOS DE VIOLENCIA CONTRA LAS MUJERES (BANAVIM)</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
                                                 <article class="type-post">
 															<div class="entry-cover">
@@ -369,6 +296,75 @@
                                         </div>
 
 										<div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:00 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="gdlr-session-item-excerpt">Ponente:</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Arístides Rodrigo Guerrero García</a></div>
+                                                               <div class="gdlr-session-item-excerpt">Coordinador de la Comisión de Protección de Datos Personales del Sistema Nacional de Transparencia.</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">PROTECCIÓN DE DATOS PERSONALES EN LAS SENTENCIAS</h3>
+                                                <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
+                                                <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/1W5V9SnFjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+
+                                        <div class=gdlr-session-item-content-wrapper>
+                                                <div class=gdlr-session-item-divider></div>
+                                                <div class=session-break-content>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>11:15 a 11:30 hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Receso</h3></div>
+                                                <div class=clear></div>
+                                            </div>
+                                        <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:30 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="gdlr-session-item-excerpt">Ponente:</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Valeria Parada Sánchez</a></div>
+                                                               <div class="gdlr-session-item-excerpt">Coordinadora de Información Pública y Estadística del Poder Judicial de la Ciudad de México.</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">RETOS Y AVANCES DE LOS TRIBUNALES SUPERIORES DE JUSTICIA PARA LA ELABORACIÓN DE VERSIONES PÚBLICAS DE SENTENCIAS.</h3>
+                                                <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
+                                                <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/1W5V9SnFjl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+
+                                        <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
@@ -377,8 +373,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. José Guillermo Castillo Koschnick</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Director General Adjunto de Políticas y Censos Nacionales de Gobierno del Instituto Nacional de Estadística y Geografía (INEGI).</a></div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. José Guillermo Castillo Koschnick</a></div>
+                                                                <div class="gdlr-session-item-excerpt">Director General Adjunto de Políticas y Censos Nacionales de Gobierno del Instituto Nacional de Estadística y Geografía (INEGI).</div>
 
                                                             </div>
                                                         </div>
@@ -387,7 +383,7 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Retos para la Recopilación de Información Estadística a partir de la entrada en vigor de la Reforma en Materia de Justicia Laboral.</h3>
+                                                <h3 class="gdlr-session-item-title">RETOS PARA LA RECOPILACIÓN DE INFORMACIÓN ESTADÍSTICA A TRAVÉS DE LA ENTRADA EN VIGOR DE LA REFORMA EN MATERIA DE JUSTICIA LABORAL.</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
                                                 <article class="type-post">
 															<div class="entry-cover">
@@ -398,8 +394,6 @@
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-
-
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -409,8 +403,9 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>LIC. JESÚS CONTRERAS MARTÍNEZ</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Director General de Normatividad y Asistencia a Entidades Federativas de la Secretaría del Trabajo y Previsión Social.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Jesús Contreras Martínez</a></div>
+                                                                <div class="gdlr-session-item-excerpt">Director General de Normatividad y Asistencia a Entidades Federativas de la Secretaría del Trabajo y Previsión Social.
+																</div>
 
                                                             </div>
                                                         </div>
@@ -419,7 +414,7 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Estadísticas del Nuevo Sistema de Justicia Laboral.</h3>
+                                                <h3 class="gdlr-session-item-title">ESTADÍSTICAS DEL NUEVO SISTEMA DE JUSTICIA LABORAL.</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
                                                 <article class="type-post">
 															<div class="entry-cover">
@@ -430,8 +425,6 @@
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-
-
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -442,10 +435,10 @@
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Ponentes:</div>
 
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MTRA. MARTHA BEATRIZ VARGAS ROJAS</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Directora de Estadística de la Presidencia del Poder Judicial de la Ciudad de México.</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Ing. Hernán Sánchez Zúñiga</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Jefe de Unidad Departamental de Apoyo Tecnológico para la Generación de Estadística del Poder Judicial de la Ciudad de México.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Martha Beatriz Vargas Rojas</a></div>
+                                                                <div class="gdlr-session-item-excerpt">Directora de Estadística de la Presidencia del Poder Judicial de la Ciudad de México.</div>
+																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Ing. Hernán Sánchez Zúñiga</a></div>
+                                                                <div class="gdlr-session-item-excerpt">Jefe de Unidad Departamental de Apoyo Tecnológico para la Generación de Estadística del Poder Judicial de la Ciudad de México.</div>
 
                                                             </div>
                                                         </div>
@@ -454,7 +447,7 @@
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Implementación del Sistema de Información Estadística de las Entidades Federativas (SIEEFE).</h3>
+                                                <h3 class="gdlr-session-item-title">IMPLEMENTACIÓN DEL SISTEMA DE INFORMACIÓN ESTADÍSTICA DE LAS ENTIDADES FEDERATIVAS (SIEEFE).</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
                                                 <article class="type-post">
 															<div class="entry-cover">
@@ -513,7 +506,7 @@
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Valeria Parada Sánchez
 														 </h3>
-														<div class="gdlr-session-item-excerpt">Coordinadora de Información Pública y Estadística del Poder Judicial de la Ciudad De México.
+														<div class="gdlr-session-item-excerpt">Coordinadora de la Red Nacional de Estadísticas Judiciales de la CONATRIB.
                                                         </div>
 
                                                         <div class=gdlr-lightbox-form id=gdlr-form-16>
@@ -531,7 +524,7 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Aristedes_Rodrigo_Guerrero.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. ARÍSTIDES RODRIGO GUERRERO GARCÍA</h3>
-														<div class="gdlr-session-item-excerpt">Comisión de Protección de Datos Personales (CPDP) del Sistema Nacional de Transparencia (SNT).
+														<div class="gdlr-session-item-excerpt">Coordinador de la Comisión de Protección de Datos Personales del Sistema Nacional de Transparencia.
                                                         </div>
 
                                                         <div class=gdlr-lightbox-form id=gdlr-form-17>
@@ -548,7 +541,7 @@
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Jose_Guillermo_Castillo.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. José Guillermo Castillo Koschnick</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. José Guillermo Castillo Koschnick</h3>
 														<div class="gdlr-session-item-excerpt"> Director General Adjunto de Políticas y Censos Nacionales de Gobierno del Instituto Nacional de Estadística y Geografía (INEGI).
                                                         </div>
 
@@ -596,7 +589,7 @@
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Alberto_Menendez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. Alberto Menéndez Vásquez </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Alberto Menéndez Vázquez </h3>
 														<div class="gdlr-session-item-excerpt">Director de Estadísticas. Unidad de Enlace para la Reforma al Sistema de Justicia Laboral
                                                         </div>
 
@@ -654,7 +647,7 @@
 														<div class="gdlr-session-item-excerpt">Comisionada Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM).
                                                         </div>
 
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-22>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-23>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                    Es doctora en ciencias sociales en la línea de relaciones de poder y cultura política por la Universidad Autónoma Metropolitana Unidad Xochimilco, maestra en ciencia política por la Universidad Laval de Québec, Canadá y licenciada en economía por la Universidad Michoacana de San Nicolás de Hidalgo.<br> Se ha especializado en políticas públicas con perspectiva de género a partir de diversas experiencias y modelos latinoamericanos.<br> Sus temas de mayor interés en el campo de la investigación y la docencia son:<br> Mujeres en conflicto armado no internacional, mujeres y seguridad, políticas públicas con perspectiva de género, Estado y relaciones de poder.<br> Se autodefine como una militante de izquierda y feminista. Desde diversos espacios de la administración pública ha sido impulsora de programas y acciones en beneficio de las mujeres, las niñas y los niños. <br>Diseñó el Programa MujerArte y promovió la incorporación productiva de las mujeres indígenas desde el Servicio del Empleo de la STPS de Michoacán.<br> Participó en el diseño y operación del Programa “Palabra de Mujer”, reconocido por el PNUD como una experiencia exitosa de inclusión financiera en la región latinoamericana y del Caribe.<br> Promovió la elaboración del Protocolo Integral para la atención a niñas, niños y adolescentes en orfandad por feminicidio, emitido por el Gobierno de la República a través del SNDIF-CONAVIM e INMUJERES.<br> Es co-diseñadora del Programa Mujeres Constructoras de Paz (MUCPAZ), dirigido por el INMUJERES con el financiamiento del SESNSP del Gobierno de México.<br> El Programa se inserta en el Resolutivo 1325 del Consejo de Seguridad de la ONU/ Mujeres, Paz y Seguridad.<br>
@@ -662,7 +655,7 @@
 																</h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-22 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-23 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -683,7 +676,7 @@
 														<div class="gdlr-session-item-excerpt">Director General de Normatividad y Asistencia a Entidades Federativas de la Secretaría del Trabajo y Previsión Social.
                                                         </div>
 
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-20>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-24>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Abogado por la Escuela Libre de Derecho. En el sector privado fue Director Editorial de la revista El Mundo del Abogado y coordinador editorial de la revista Foro Jurídico.<br> En el sector público se ha desempeñado como Jefe de Departamento en la Fiscalía Especializada para la Atención de Delitos Electorales de la Procuraduría General de la República (FEPADE); Coordinador de Proyecto, en el entonces Fondo Nacional de Apoyo a Empresas en Solidaridad (FONAES); Subdirector de área y Director de carrera judicial e investigación en el Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México (CDMX); Titular de la Unidad de Supervisión de Medidas Cautelares y Suspensión Condicional del Proceso de la CDMX.<br> En la Secretaría del Trabajo y Previsión Social se ha desempeñado como Director General Adjunto de Evaluación, Estadística y Vinculación, así como Director General de Normatividad y Difusión en la Unidad de Enlace para la Reforma al Sistema de Justicia Laboral. Actualmente es Director General de Normatividad y Seguimiento a Entidades Federativas.<br>
@@ -691,7 +684,7 @@
 																</h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-20 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-24 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
@@ -701,7 +694,7 @@
 														<div class="gdlr-session-item-excerpt">Secretaria de Estudio y Cuenta de la SCJN, en representación de la Ministra Yasmín Esquivel Mossa.
                                                         </div>
 
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-21>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-25>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Lugar y fecha de nacimiento: 27 de diciembre de 1959 en la Ciudad de México.<br>Formación Académica: <br>Escuela Libre de Derecho (1978 – 1983), con la tesis profesional “La responsabilidad de los Servidores Públicos y el Fuero Constitucional”, habiendo recibido mención especial por el jurado examinador. Curso de Postgrado, Universidad Carlos III de Madrid “Problemas Actuales de los Derechos Fundamentales y Transformaciones del Estado” (2006).<br> Experiencia Profesional:<br> En la Suprema Corte de Justicia de la Nación como Secretaria de Estudio y Cuenta comisionada a las ponencias de las señoras Ministras Margarita Beatriz Luna Ramos (diciembre 2010-febrero de 2018) y Yasmín Esquivel Mossa (marzo 2018 a la fecha). <br> Escuela Libre de Derecho en la que se desempeñó como  Secretaria General a cargo de las áreas académica y de administración (agosto 2008– diciembre 2010). <br>Tribunal Electoral del Poder Judicial de la Federación como Secretaria General de Acuerdos (nov. 2006 – sept. 2007); Coordinadora en Ponencia (octubre 2005 – octubre 2006); Coordinadora General de Asesores de la Presidencia (2004-2006), Secretaria de Estudio y Cuenta (2000-2006), Secretaria Auxiliar (2996-2000). <br> Tribunal Superior de Justicia del Distrito Federal teniendo el cargo de Secretaria Proyectista de la Sexta Sala Civil (mayo 1993 – mayo 1996). Así también ocupó diversos cargos en la Secretaría de Comercio y Fomento Industrial, y en la Secretaría de Hacienda y Crédito Público, Dirección General De Seguros y Valores.<br> Profesora titular por oposición de la Cátedra de Derecho Electoral en la Escuela Libre de Derecho desde 2012.<br>Participación como congresista y en cursos relacionados con derecho electoral: Como docente en el curso de preparación para el Proceso Electoral Federal 2002-2003, Tribunal Electoral del Poder Judicial de la Federación. Como asistente al III curso de formación judicial electoral México-España (2002), con la coautoría del tema “Democracia interna de los partidos políticos”, presentado en dicho foro. Como congresista en el XII congreso mundial de derecho procesal (2003).<br> Otros:<br>Participante en el proceso de selección de Magistrados para integrar la Sala Superior del Tribunal Electoral del Poder Judicial de la Federación, habiendo sido seleccionada por votación unánime como aspirante por la Suprema Corte de Justicia de la Nación, así como integrando una de las seis ternas que aprobó el Senado de la República para la designación definitiva.<br>
@@ -709,7 +702,7 @@
 																</h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-21 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-25 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
 
