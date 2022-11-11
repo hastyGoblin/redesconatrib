@@ -15,7 +15,7 @@ class BitacoraUsuario extends Migration
     {
         Schema::create('bitacoraUsuario', function (Blueprint $table) {
             $table->increments('ID');
-            $table->dateTime('FechaEvento', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->dateTime('fechaEvento', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->integer('fk_usuarioBitacora')->unsigned();
             $table->foreign('fk_usuarioBitacora')->references('ID')->on('users');
             $table->tinyInteger('fk_tipoEvento');

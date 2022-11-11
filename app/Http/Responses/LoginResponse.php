@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\cat_redesconatrib;
 use App\Models\Roles;
 use App\Models\usersRoles;
+use App\Models\bitacoraUsuario;
 use App\Models\User;
 use Carbon\Carbon;
 use Auth;
@@ -31,6 +32,12 @@ class LoginResponse extends FortifyLoginResponse
         $red_id = Auth::user()->id_red;
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
+
+        bitacoraUsuario::create([
+            "fechaEvento" => Carbon::now(),
+            "fk_usuarioBitacora" => $id,
+            "fk_tipoEvento" => 1,
+            "activo" => 1]);
 
         if ($rol[0]->fk_roles == '1') {
 
