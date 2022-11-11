@@ -377,7 +377,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. José Guillermo Castillo Koschnick</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. José Guillermo Castillo Koschnick</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Director General Adjunto de Políticas y Censos Nacionales de Gobierno del Instituto Nacional de Estadística y Geografía (INEGI).</a></div>
 
                                                             </div>
@@ -443,9 +443,9 @@
 																<div class="gdlr-session-item-excerpt">Ponentes:</div>
 
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MTRA. MARTHA BEATRIZ VARGAS ROJAS</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora de la Directora de Estadística de la Presidencia.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Directora de Estadística de la Presidencia del Poder Judicial de la Ciudad de México.</a></div>
 																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Ing. Hernán Sánchez Zúñiga</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Jefe de Unidad Departamental de Apoyo Tecnológico para la Generación de Estadística, ambos del Tribunal Superior de Justicia del Poder Judicial de la Ciudad de México.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Jefe de Unidad Departamental de Apoyo Tecnológico para la Generación de Estadística del Poder Judicial de la Ciudad de México.</a></div>
 
                                                             </div>
                                                         </div>
