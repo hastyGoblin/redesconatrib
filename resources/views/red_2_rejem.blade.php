@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="{!! asset('rede_2_esc_jud/red/upload/logo_escuelas.png') !!}" alt=""> </a>
+                        <a href=""> <img src="{!! asset('rede_2_esc_jud/red/upload/logo_escuelas.png') !!}" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">

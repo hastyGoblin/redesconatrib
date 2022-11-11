@@ -98,9 +98,9 @@ class HomeController extends Controller
                     return view('red_4_jjocmed');
                     break;
 
-                case 8:
-                    $mensaje= "Red 8";
-                    return view('disponible');
+                case 9:
+                    $mensaje= "Red 9";
+                    return view('red_8_aj');
                     break;
 
                 default:

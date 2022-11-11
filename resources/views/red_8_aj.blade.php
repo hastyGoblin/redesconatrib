@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="rede_8_aj/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/plugins/dl-menu/component.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_8_aj/red/rede_8_aj/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_8_aj/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/css/style-responsive.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/css/style-custom.css" type="text/css" media="all">
@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="rede_8_aj/red/images/logo_cooperacion.png" alt=""> </a>
+                        <a href=""> <img src="{!! asset('rede_8_aj/red/images/logo_cooperacion.png') !!}" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -68,27 +68,14 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                @if (Auth::user()->constancia == 1)
-                                <li class="menu-item menu-item-has-children">
-                                    <a class="dropdown-item" href="{{ route('descargaConstancia') }}"  target="_blank"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('constancia-form').submit();">
-                                        {{ __('Constancia') }}
-                                    </a>
-
-                                    <form id="constancia-form" action="{{ route('descargaConstancia') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
-                                @endif
-                                <li class="menu-item menu-item-has-children">
+                                <li class="menu-item"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </li>
@@ -118,7 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -163,7 +150,7 @@
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -171,14 +158,11 @@
                                     <div class="gdlr-session-item-head">
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-1">
                                             <div class="gdlr-session-head-day">D&iacute;a 1</div>
-                                            <div class="gdlr-session-head-date">13 Diciembre 2021</div>
+                                            <div class="gdlr-session-head-date">14 de noviembre de 2022</div>
                                         </div>
-                                        <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-2">
-                                            <div class="gdlr-session-head-day">D&iacute;a 2</div>
-                                            <div class="gdlr-session-head-date">14 Diciembre 2021</div>
-                                        </div>
-										
-										
+
+
+
                                         <div class="clear"></div>
                                     </div>
 
@@ -188,152 +172,290 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magistrado Rafael Guerra &Aacute;lvarez</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Presidente del Poder Judicial de la CDMX y Presidente de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).</a></div>
-
-                                                                <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Mtra. Carmen Patricia Bencomo Ferrales</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora de la Red Nacional de Archivos Judiciales de la Comisión Nacional de Tribunales Superiores de Justicia (CONATRIB).</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
                                                             </div>
-
-                                                            
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
+                                                            </div>
                                                         </div>
-                                                    
                                                     </div>
-                                                
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Mensaje de Inauguración</a></h3>
-                                                
+                                                <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://youtu.be/q7U2avizVEI"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
-                                                </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/P-PbGLcxXyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
 
 
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:15</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:25 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Carlos Enrique Ruíz Abreu</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Director General del Archivo General de la Nación.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Myriam Victoria Hemiindez Acosta</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrada Presidenta del Tribunal Superior de Justicia y del Consejo de la Judicatura del Poder Judicial del Estado de Chihuahua.
+                                                            </div>
+                                                        </div>
+														<div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Ricardo Alfredo Sodi Cuellar</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Tribunal Superior de Justicia y del Consejo de Ia Judicatura del Poder Judicial del Estado de México.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Palabras y Agradecimiento</h3>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/P-PbGLcxXyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                            </div>
 
+
+										<div class=gdlr-session-item-content-wrapper>
+                                                <div class=gdlr-session-item-divider></div>
+                                                <div class=session-break-content>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>10:45 hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">RECESO</h3></div>
+                                                <div class=clear></div>
+                                            </div>
+										<div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:00 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes:</a></div>
+																<div class="session-speaker-list-item"><a> Región I</a></div>
+
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Carmen Patricia Bencomo Ferrales</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Directora General de Archivos del Poder Judicial del Estado de Chihuahua
+                                                            </div>
+                                                        </div>
+														<div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+
+																<div class="session-speaker-list-item"><a> Región II</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Alfredo Ríos Guajardo</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Director del Archivo Judicial del Consejo de la Judicatura y del Poder Judicial del Estado de Nuevo León
+                                                            </div>
+															<div class="session-speaker-list">
+
+																<div class="session-speaker-list-item"><a> Región III</a></div>
+
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Ana Margarita De Luna Mora</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Coordinadora del Sistema de Archivo y Responsable del Archivo de Concentración del Poder Judicial del Estado de Aguascalientes
+                                                            </div>
+															<div class="session-speaker-list">
+
+																<div class="session-speaker-list-item"><a> Región IV</a></div>
+
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Luis Eduardo Pérez Merchant</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Director del Archivo Judicial del Poder Judicial del Estado de Puebla
+                                                            </div>
+															<div class="session-speaker-list">
+
+																<div class="session-speaker-list-item"><a> Región V</a></div>
+
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Ruth Maria Flores Bustillos</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Directora del Archivo Judicial del Poder Judicial del Estado de Quintana Roo
                                                             </div>
 
-                                                            
+
                                                         </div>
-                                                    
+
+
                                                     </div>
-                                                
+
+
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Conferencia de apertura</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Aspectos centrales y prioritarios para el desarrollo archivístico de los Poderes Judiciales como sujetos obligados.
-                                                    <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e62218e05605dcfb981e75f0819c41979"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
-                                                </div>
+                                           <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">Diagnóstico a cargo de los representantes de las regiones (10 minutos por Estado)</h3>
+												<div class="gdlr-session-item-excerpt">Ponencia Magistral:</div>
+											    <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/HRrLUVpqazI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                 </div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
 
+                                             <div class="clear"></div>
+                                            </div>
 
 										<div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
-                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>11:15 hrs.</div>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>12:00 hrs.</div>
                                                     <h3 class="gdlr-session-break-title">RECESO</h3></div>
                                                 <div class=clear></div>
-                                            </div>
+                                        </div>
+
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
+
+                                            </div>
+
+											<div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>11:30</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Presidentes de los Poderes Judiciales de cuatro Estados.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Beatriz Ortega Sandoval</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Directora de Archivos del Poder Judicial del Estado de Guanajuato
+                                                            </div>
+															<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Infraestructura esencial para la conservación y preservación de los archivos judiciales</a></div>
 
-                                                                <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderador: Magistrado Román Souberville Gónzalez</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Integrante de la Primera Sala Penal y Titular de la Tercera Sala Unitaria del Sistema Penal Acusatorio del Poder Judicial del Estado de Hidalgo</a></div>
-													          </div>
-															
                                                         </div>
-                                                    </div>
-												
-                                                    <div class="clear"></div>
+														<div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Claudia A. Escoto Yelázquez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Directora de Gestión Documental del INAI
+                                                            </div>
+															<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>El rol de las tecnologías de la información para la gestión electrónica y convencional de los expedientes judiciales</a></div>
+
+                                                        </div>
+														<div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Carlos Ortiz Paniagua</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Consultor independiente en materia de administración de documentos, archivos, transparencia. acceso a la información y protección de datos personales
+                                                            </div>
+															<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>La capacitación y profesionalización del personal archivístico judicial: hacia una estrategia de formación integral</a></div>
+
+                                                        </div>
+												   </div>
+													 <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Mesa 1</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Diagnóstico y prospectiva de los archivos judiciales: una evaluación necesaria de cara al cumplimiento de la LGA.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <h3 class="gdlr-session-item-title">Mesa de trabajo</h3>
+
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e62218e05605dcfb981e75f0819c41979"><button class="newsletter-submit gdlr-button with-border">Ver mesa</button></a>
-                                                </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/P-PbGLcxXyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
-										
+
 										<div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
-                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>13:00 hrs.</div>
-                                                    <h3 class="gdlr-session-break-title">RECESO</h3></div>
+                                                    <div class=session-break-info><i class="fa fa-clock-o"></i>l3:45 hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Sesión de Conclusiones</h3></div>
                                                 <div class=clear></div>
-                                            </div>
+                                        </div>
+
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>14:00</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>14:15 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Coordinadores de Archivos de los Poderes Judiciales de cuatro Estados.</a></div>
-
-                                                                <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderador: Lic. José Antonio Ramírez Deleón</a></div>
-                                                            <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Consultor en Sistemas de Gestión de Documentos.</a></div>
-													          </div>
-															
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Bibiana Peralta Hernrindez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Coordinadora de Archivos del Tribunal de Justicia Administrativa de la Ciudad de México.
+                                                            </div>
                                                         </div>
                                                     </div>
-												
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title"><a>Mesa 2</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Desarrollo Archivístico en los Poderes Judiciales locales: Planeación e implementación de los Sistemas Institucionales de Archivos.
-													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+
+
+                                                <h3 class="gdlr-session-item-title">Cestión Documental y Transparencia: Una Ecuación Indisoluble</h3>
+											<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
+
                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e62218e05605dcfb981e75f0819c41979"><button class="newsletter-submit gdlr-button with-border">Ver mesa</button></a>
-                                                </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/P-PbGLcxXyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
                                             </div>
-                                            <div class="clear"></div>
-                                        </div>
-                                        
-    
+
+
                                     </div>
                                     <!-- termina dia -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                        
-                                       
-                                        
+
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -342,19 +464,14 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Gisela González Flores</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora de Archivos del Poder Judicial del Estado de México.</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Luis Eduardo Pérez Merchat</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinador de Archivos del Estado de Puebla.</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Ma. Del Refugio Vizcaya</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora General de Archivos del Estado de Hidalgo.</a></div>
-															   <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderador: Dr. Raúl Carrillo del Muro</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Representante de la Red Nacional de Escuelas Judiciales.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Encargados de los programas de capacitación interna de cuatro Estados.</a></div>
+
+                                                                <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderador: Pendiente</a></div>
 													          </div>
-															
+
                                                         </div>
                                                     </div>
-												
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -368,7 +485,7 @@
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-										
+
 										<div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
@@ -380,18 +497,18 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Josefina Román Vergara</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Josefina Román Vergara.</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada del INAI</a></div>
 													          </div>
-															
-															
+
+
                                                         </div>
                                                     </div>
-												
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -416,16 +533,16 @@
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Carmen Patricia Bencomo Ferrales</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora de la Red Nacional de Archivos Judiciales y Coordinadora de Archivos del Poder Judicial del Estado de Chihuahua.</a></div>
 													          </div>
-															
+
                                                         </div>
                                                     </div>
-												
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title"><a>Conclusiones y acuerdos</a></h3>
-                                               
+
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver conclusiones</button></a>
                                                 </div>
@@ -440,26 +557,26 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Marco Emiliano Anchondo Paredes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Magistrado de la Octava Sala Civil de Tribunal Superior de Justicia.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magda. Miriam Victoria Hernández Acosta</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Presidenta del Tribunal Superior de Justicia del Estado de Chihuahua.</a></div>
 													          </div>
-															
+
                                                         </div>
                                                     </div>
-												
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title"><a>Clausura</a></h3>
-                                               
+
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver clausura</button></a>
                                                 </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-										
+
 								  </div>
 									            <!-- termina dia -->
                                 </div>
@@ -469,11 +586,11 @@
                         </div>
                             </div>
                         </div>
-                        
+
                     </section>
                     <div class="section-container container">
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
@@ -486,22 +603,21 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/josefina.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Alfredo_Rios_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">COMISIONADA JOSEFINA ROMÁN VERGARA</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. ALFREDO RÍOS GUAJARDO</h3>
                                                         <div class="gdlr-lightbox-form id=gdlr-form-5">
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                  <h3 style="text-align: justify">
-                                                                    Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.<br>
+                                                                    Egresado de la Licenciatura en Derecho por la Facultad de Derecho y Criminología de la Universidad Autónoma de Nuevo León.<br>
 
-Josefina Román Vergara, es Licenciada en Derecho por la Universidad Autónoma del Estado de México, Maestra en Derecho Corporativo por la Universidad Anáhuac y Doctora en Derecho por el Centro de Estudios de Posgrado en Derecho.<br>
-Con una carrera de más de 30 años en el servicio público, ha ocupado diversos cargos de dirección en distintas áreas del Gobierno del Estado de México y a nivel federal en el Servicio de Administración Tributaria. <br>
-Fue nombrada Comisionada del Instituto de Transparencia, Acceso a la Información Pública y Protección de Datos Personales del Estado de México y Municipios, donde además fue elegida Comisionada Presidenta.<br>
-Fue electa la Primera Coordinadora de Organismos Garantes de las Entidades Federativas del Sistema Nacional de Transparencia, Acceso a la Información Pública y Protección de Datos Personales.<br>
-Ocupó el cargo como la Primera Secretaria Técnica de la Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios.<br>
-Ha sido docente por muchos años en distintas instituciones tanto públicas como privadas y actualmente continúa como catedrática en la Facultad de Derecho de la Universidad Nacional Autónoma de México.<br>
-Recibió por parte del Senado de la República el nombramiento como Comisionada del Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales, para el periodo 2019 – 2026; donde encabeza las Comisiones Permanentes de Normatividad de Datos Personales y Gestión Documental y Archivos.<br>
+                                                                    Maestro en Derecho con orientación en Amparo, por la misma Facultad, grado obtenido con mención honorífica.<br>
 
+                                                                    Ha colaborado con el Poder Judicial del Estado de Nuevo León desde el año 2005 dos mil cinco, iniciando como meritorio y practicante en el Juzgado Séptimo de Jurisdicción Concurrente, para luego integrarse formalmente a la carrera judicial con la categoría de Escribiente de juzgado a principios del año 2006 dos mil seis, cargo que de igual forma desempeñó en la Segunda Instancia. Fungió como Actuario Judicial en Juzgado de Primera Instancia, así como en la Unidad de Medios de Comunicación. Posteriormente se desempeñó como Secretario Líder en la Gestión Judicial para los Juzgados de Juicio Familiar Oral.<br>
+
+                                                                    En el ámbito administrativo, colaboró como Coordinador de Servicios Escolares y Administrativos, así como Coordinador de Formación Judicial y Capacitación Continua en el Instituto de la Judicatura, formando parte además del Claustro Académico del mencionado Centro de Formación Judicial, desde el año 2016 dos mil dieciséis, impartiendo las asignaturas de Gestión Judicial, Generalidades de la Función Actuarial, así como Notificaciones en Materia Civil, Familiar y Mercantil.<br>
+
+                                                                    Actualmente se desempeña como Director del Archivo Judicial del Consejo de la Judicatura del Estado de Nuevo León.<br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -509,24 +625,24 @@ Recibió por parte del Senado de la República el nombramiento como Comisionada 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/ana.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Ana_M_DeLuna_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. ANA MARGARITA DE LUNA MORA</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. ANA MARGARITA DE LUNA MORA
+                                                        </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    •	Grado Académico:<br>
-Licenciatura en Derecho.<br>
-•Capacitación Profesional:<br>
-Diplomado en archivonomía impartido por la Universidad Autónoma de Aguascalientes.<br>
-•Experiencia Profesional en el Poder Judicial del Estado de Aguascalientes:<br>
-De enero de 2001 a enero de 2002: Jefe de Archivo.<br>
-De enero de 2002 a junio de 2003: Auxiliar de Archivo.<br>
-De junio de 2003 a enero de 2011: Jefe de Departamento de Selección de Documentos adscrito al Archivo Judicial.<br>
-De  enero de 2011 a noviembre de 2019: Directora del Archivo Judicial.<br>
-De noviembre de 2019 a la fecha: Coordinadora del Sistema de Archivo del Poder Judicial y Responsable del Archivo de Concentración. <br>
-
-
+                                                                    Grado Académico:<br>
+                                                                    Licenciatura en Derecho.<br>
+                                                                    Capacitación Profesional:<br>
+                                                                    Diplomado en archivonomía impartido por la Universidad Autónoma de Aguascalientes.<br>
+                                                                    Experiencia Profesional en el Poder Judicial del Estado de Aguascalientes:<br>
+                                                                    De enero de 2001 a enero de 2002: Jefe de Archivo.<br>
+                                                                    De enero de 2002 a junio de 2003: Auxiliar de Archivo.<br>
+                                                                    De junio de 2003 a enero de 2011: Jefe de Departamento de Selección de Documentos adscrito al Archivo Judicial.<br>
+                                                                    De  enero de 2011 a noviembre de 2019: Directora del Archivo Judicial.<br>
+                                                                    De noviembre de 2019 a la fecha: Coordinadora del Sistema de Archivo del Poder Judicial y Responsable del Archivo de Concentración.
+                                                                    <br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -534,43 +650,63 @@ De noviembre de 2019 a la fecha: Coordinadora del Sistema de Archivo del Poder J
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/miguel.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Beatriz_Ortega_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MAGISTRADO MIGUEL FELIPE MERY AYUP</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">BEATRIZ ORTEGA SANDOVAL</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-4>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Formación académica<br>
-Es Licenciado en Derecho por la Facultad de Jurisprudencia de la Universidad Autónoma de Coahuila; cuenta con una Maestría en Política Aplicada, Instituciones y Procesos Políticos, efectuada en el Instituto Universitario de Investigación Ortega y Gasset (IUIOG); además de un Diplomado en Gobernanza Local y Liderazgo Territorial por la Fundación José Ortega y Gasset (FOM).<br>
-Experiencia laboral<br>
-Magistrado presidente de la sala regional torreón del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza (2019). Primer regidor de torreón (2014-2017). Republicano ayuntamiento de Torreón, Coahuila. Secretario del Republicano Ayuntamiento (2010-2013). Gobierno Municipal de Torreón, Coahuila. Subsecretario de Desarrollo y Cooperación Política (2009). Gobierno del Estado de Coahuila de Zaragoza. Diputado local (2003-2005). Congreso del Estado de Coahuila de Zaragoza. Director General de Desarrollo Social (2000-2002). Gobierno Municipal de Torreón, Coahuila. Secretario particular adjunto al gobernador (1996-1999). Gobierno del Estado de Coahuila de Zaragoza.<br>
-Logros y proyectos realizados<br>
-Autor del Libro “La nueva vía, hacia un modelo de ciudad” (2017). En “La nueva vía” se proyecta una visión de ciudad para torreón a 20 años, a partir de Modelos Nacionales e Internacionales de Desarrollo. Sistema de Normatividad Municipal (2015). Coordinador del Sistema de Normatividad Municipal de Torreón, dentro del cual se realizó una reforma reglamentaria a la totalidad de los Ordenamientos del Municipio y una Plataforma en línea con el acervo de Torreón. Re-Ingeniería Administrativa del Gobierno Municipal (2014). Coordinador de la Reforma Orgánica y Re-Ingeniería administrativa en la administración pública Municipal de Torreón. Reformando la estructura en 5 ejes temáticos. Monitor de cabildo (2011-2012). Coordinador del Desarrollo del Primer Monitor de Cabildo en el País, una herramienta de transparencia que permite al Cabildo dar a conocer sus actividades como ediles en lo Individual y como parte de un Cuerpo Colegiado en Comisiones y Sesiones de Cabildo.<br>
-Actividades académicas<br>
-1.	Catedrático en la Maestría en Políticas Públicas en la UAdeC.<br>
-2.	Catedrático en Derecho Constitucional en la UAdeC.<br>
-3.	Catedrático en Teoría del Estado en la UAdeC.<br>
-4.	Catedrático en Administración Pública en la UAdeC.<br>
-5.	Catedrático en Administración en la UAdeC.<br>
+                                                                    Licenciada en Historia por la Universidad de Guanajuato, con el trabajo de Descripción Documental Inventario del Grupo Documental Matrimonios contenido en el Archivo General de la Nación, México 1993.<br>
 
+                                                                    Desarrollo Laboral:<br>
+                                                                    Mi ejercicio en los archivos comenzó en el año 1989 en el Archivo General del Gobierno del Estado de Guanajuato como responsable del acervo bibliográfico, posteriormente ingresé al Archivo General de la Nación como integrante del Centro de referencias y posteriormente en el Departamento de Control de acervos.  En 1996 se dio mi ingreso al Archivo General del Poder Judicial de la Federación en la Ciudad de México y en ese mismo año me otorgaron el puesto de Titular de la Casa de la Cultura Jurídica de la Suprema Corte de Justicia de la Nación en el Estado de Guanajuato hasta 1999, año que fui invitada a trabajar en el Poder Judicial del Estado de Guanajuato, con el nombramiento de responsable de la Biblioteca del Supremo Tribunal de Justicia, en el año 2002 como Coordinadora de Biblioteca y Archivo General del Poder Judicial del Estado de Guanajuato. En el año 2013 obtengo el cargo de Directora Archivo General del Poder Judicial del Estado de Guanajuato y en enero de 2021 el de Directora de Archivos del Poder Judicial del Estado de Guanajuato.<br>
 
+                                                                    Cursos impartidos y recibidos:<br>
+                                                                    He impartido cursos Archivística a los responsables de archivos de trámite de Poder Judicial del Estado del Guanajuato del año 2008 a 2019, así como a los integrantes del Sistema Estatal de Archivos Generales de  Guanajuato (SEAGG).
+                                                                    Recibí cursos y seminarios sobre Administración de Documentos, Valoración de documentos, Paleografía y Diplomática, Conservación de Documentos, Quehacer del archivista, Introducción al Sistema Oral Penal, Oralidad Familiar, Archivos Electrónicos, Expedientes electrónicos, Gestión de Documentos y Administración de Archivos, impartidos por diversas instituciones. Fui participante en XV Escuela de Archivos para Iberoamérica, “Teoría y Prácticas Archivísticas en España” como becaria por el Ministerio de Cultura de España. Alcalá de Henares, España. 2005.<br>
+
+                                                                    Asistencia a Congresos Internacionales:<br>
+                                                                    XV Congreso Internacional de Archivos. 2004, Viena, Austria.
+                                                                    Congreso Internacional Archivos Digitales Sustentables: “Conservación y acceso a las colecciones sonoras y audiovisuales para las sociedades del futuro”. 2015, Centro de Investigaciones Bibliotecológicas y de la Información de la Universidad Autónoma de México, Ciudad de México.
+                                                                    III Congreso Internacional de Archivos Digitales: “Forjando el futuro: Inteligencia artificial y Big data para la preservación digital, sonora y audiovisual”.  2019, Centro de Investigaciones Bibliotecológicas y de la Información de la Universidad Autónoma de México, Ciudad de México.
+
+                                                                    Nombramientos :<br>
+                                                                    Miembro del Colegio de Historiadores de Guanajuato.
+                                                                    Miembro del Órgano Técnico Consultivo como Historiadora del Archivo General del Estado de Guanajuato, 2010 - 2014.
+                                                                    Miembro del Comité Técnico Consultivo como Secretaria Técnica del Poder Judicial del Estado de Guanajuato, 2008 – 2020.
+                                                                    Miembro del Sistema Nacional de Archivos Judiciales convocado por la Suprema Corte de Justicia de la Nación y la Asociación Nacional de Impartidores de Justicia (AMIJ). Participación en las Reuniones Ordinarias del SINAJ de 2010 a 2018.
+                                                                    Miembro del Sistema Estatal de Archivos Generales del Estado de Guanajuato. Activo.
+                                                                    Miembro de la Red Nacional de Archivos Judiciales. Activo.<br>
+
+                                                                    Publicaciones:<br>
+                                                                    Colaboración en la publicación “San Pedro Cholula. Título de Ciudad, 27 de octubre de 1537”. Archivo General de la Nación. México, 1993.
+                                                                    “El Juicio de Allende” en Gaceta Judicial (Edición especial, 195 años del Poder Judicial del Estado de Guanajuato). Poder Judicial del Estado de Guanajuato, Revista trimestral, junio de 2019. <br>
                                                                 </h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-4 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-                                                
+
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/antonio.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Carlos_Ortiz_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MAGISTRADO JOSÉ ANTONIO LEÓN RUIZ</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">CARLOS ORTIZ PANIAGUA
+                                                        </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-7>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    El Magistrado José Antonio León Ruiz es Licenciado en Derecho por la Universidad Autónoma de Yucatán; en el ámbito profesional se desempeñó como asesor en la LV Legislatura en el Senado de la República; y en el Gobierno Federal como Coordinador de Servicios Especiales de la Oficialía Mayor de la Secretaría de Turismo. En el Poder Judicial del Estado de Quintana Roo fue designado como Magistrado Consejero y durante ese encargo fungió como Secretario Técnico de la CONATRIB (Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos). <br>Actualmente es Presidente del Tribunal Superior de Justicia y del Consejo de la Judicatura del Poder Judicial del Estado de Quintana Roo y Vicepresidente de la Región Sureste de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.<br>
-
-
+                                                                    Especialista en materia de administración de documentos, archivos, transparencia, acceso a la información y protección de datos personales.<br>
+                                                                    Ha sido consultor independiente en materia de administración de documentos, archivos, transparencia, acceso a la información y protección de datos personales.<br>
+                                                                    Cuenta con estudios de licenciatura en Derecho Administrativo por la Universidad Autónoma Metropolitana-Azcapotzalco (UAM); de Historia por la Escuela Nacional de Antropología e Historia, (ENAH),  y Diplomado en archivos por el Ministerio de Cultura, Educación y Deportes de España y por el Archivo General de la Nación-México; en transparencia por la Universidad Autónoma Metropolitana y el Instituto de Acceso a la Información Pública del Distrito Federal UAM-INFODF; de Datos Personales por la Universidad Autónoma Metropolitana y el Instituto de Acceso a la información Pública del Distrito Federal UAM-INFODF.<br>
+                                                                    Como funcionario público ha trabajado para el Archivo General de la Nación (AGN) en dos etapas: de 1992 a 1996 como responsable de la documentación del siglo XIX; del Centro de Información Gráfica; de la atención a investigadores de posgrado (maestría y doctorado) del Centro de Referencias, y; del Programa de Incorporación de nuevos Fondos Documentales; y de 2000 a 2004 como Jefe del Departamento de Asesoría Archivística; Jefe de la División de Archivos Estatales, y; Director del Sistema Nacional de Archivos.<br>
+                                                                    En 1998 - 1999 fue Subdirector de la Oficina Privada C. Presidente de la República responsable del Archivo Privado del C. Presidente de la república.
+                                                                    En 2004 participó como coordinador por parte del Archivo General de la Nación en la creación de los Lineamientos Generales para la Organización y Conservación de los Archivos de las Dependencias y Entidades de la Administración Pública Federal y, posteriormente, desde el INFODF en el borrador de la Ley de Archivos para el Distrito Federal de 2007.<br>
+                                                                    De 2007 a 2009 laboró en el Instituto de Acceso a la Información y Protección de Datos Personales del Distrito Federal como responsable del Archivo Institucional y de la asesoría en la materia a los entes obligados.
+                                                                    De 2009 a 2011 participó en la creación de la Subdirección de Protección de Datos Personales, el control del Registro Electrónico de Sistemas de Datos Personales y la asesoría a los entes obligados.<br>
+                                                                    Ha impartido más de 125 cursos en materia de Administración de documentos, archivos, transparencia y protección de datos personales a lo largo del país y en las principales instituciones académicas.<br>
+                                                                    También ha laborado en la Suprema Corte de Justicia de la Nación en el proyecto de creación de las Casas de la Cultura Jurídica, teniendo a su cargo la correspondiente al Estado de Hidalgo, en el Tribunal Electoral del Distrito Federal, en la Comisión Federal de Telecomunicaciones, el Fideicomiso Educación Garantizada del Distrito Federal, Servicio Postal Mexicano y actualmente en el Centro Federal de Conciliación y Registro Laboral, siempre en materia de archivos, protección de datos personales, transparencia y acceso a la información.
+                                                                    En 2000 obtuvo por oposición la beca otorgada por el Ministerio de Cultura, Educación y Deportes de España para participar en el Curso “Escuela Iberoamericana de Archivos” y en el año 2003 recibió un reconocimiento especial del Archivo General de la Nación por sus aportaciones en materia de normatividad archivística.<br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -583,46 +719,23 @@ Actividades académicas<br>
                                     <div class=clear></div>
                                 </div>
                             </div>
-						
+
 						<div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/jose.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Carmen_P_Bencomo_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">JOSÉ ANTONIO RAMÍREZ DE LEÓN</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">CARMEN PATRICIA BENCOMO FERRALES</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-5>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Estudió la licenciatura en Economía en la UNAM. Cursó estudios de Valoración Documental en la Facultad de Ciencias y Artes de la Universidad de Montreal y un Diplomado en Investigación de Operaciones y Sistemas por el ITAM. Cuenta con 41 años de experiencia en materia de Archivos. Actualmente es socio director del despacho de consultoría en sistemas de gestión de documentos JARD Corporativo S.C. Fue director del Sistema Nacional de Archivos en el Archivo General de la Nación (1980 -1994). Instructor en Diplomados y cursos de capacitación organizados por la UNAM, el Info DF y la UAM, el INAI y el Archivo General de la Nación. Cuneta con Registro de instructor externo expedido por la Secretaría del Trabajo y Previsión Social.<br>
-
-Autor, entre otros, de los libros siguientes: <br>
-
-1.	“Archivos Gubernamentales: un dilema de la transparencia” publicado por el Instituto de Acceso a la Información Pública del Distrito Federal (Info DF) en 2007. 
-
-2.	“Manual de Autoaprendizaje en Administración de Documentos y Gestión de Archivos” publicado por el Instituto de Acceso a la Información Pública del Distrito Federal (Info DF) en 2007.<br>
- 
-3.	El libro “Servicios básicos de los Archivos Diplomáticos Iberoamericanos: Modelo técnico”. Publicado por la (RADI) Red de Archivos Diplomáticos Iberoamericanos, (2011). Secretaría de Relaciones Exteriores de México.<br>
-
-4.	Colección “Cuadernos Metodológicos para la Gestión de Documentos (5 Cuadernos)”, publicados por el Instituto Federal de Acceso a la Información y Protección de Datos IFAI, actualizados en 2017, y publicados por el INAI.<br>
-
-5.	Es autor del ensayo Los Archivos Históricos y la Gestión Documental, publicado por el INAI en la Colección Cuadernos de Transparencia. No. 27, 2019.<br>
-
-6.	Coautor del libro Archivos Administrativos Iberoamericanos. Modelo y perspectivas de una tradición archivística. Publicado por el Ministerio de Cultura de España y el Archivo General de la Nación de Colombia. (1996).<br>
-
-7.	Es autor de más de cincuenta artículos publicados en revistas nacionales e internacionales en materia de Gestión de Documentos y Administración de Archivos.<br>
-
-En su experiencia internacional, fue asesor del Archivo General de la Nación de Colombia y de la Red de Archivos Diplomáticos Iberoamericanos, mecanismo de cooperación archivística de las Cancillerías de Iberoamérica. <br>
-
-Fue coordinador general técnico del proyecto SIAGA (Sistema de Administración y Gestión de Archivos para los Tribunales Superiores de Justicia de la zona centro del país). Proyecto avalado por la H. Suprema Corte de Justicia de la Nación. <br>
-
-Ha participado en los procesos de emisión de la Ley de Archivos del Distrito Federal y las Leyes Federal y General de Archivos. Fue autor de los Lineamientos Generales para la Organización y Conservación de Archivos del Distrito Federal, hoy Ciudad de México.<br>
-
-Ciudad de México, 2021.<br>
-
-
+                                                                    Egresada de la Universidad Regional del Norte donde obtuvo la licenciatura en ingeniería financiera, cuenta con estudios de Maestría en Administración por la Facultad de Contaduría y Administración de la Universidad Autónoma de Chihuahua.<br>
+                                                                    Se ha desarrollado profesionalmente en cargos como Escribiente adscrita al Juzgado Tercero Familiar del Distrito Judicial Morelos, Asesora Técnica adscrita a la Oficialía Mayor del Tribunal Superior de Justicia, Jefa del Departamento de Recursos Materiales del Tribunal Superior de Justicia y Directora de Operaciones del Poder Judicial del Estado de Chihuahua.<br>
+                                                                    Actualmente ocupa el cargo de Directora General y Coordinadora de Archivos del Poder Judicial del Estado de Chihuahua lo que le ha permitido desarrollarse en puestos como Presidenta del Grupo Interdisciplinario de Archivos del Poder Judicial del Estado de Chihuahua, fue nombrada representante General de la Red Nacional de Archivos de los Poderes Judiciales locales ante la Comisión Nacional de Tribunales Superiores (CONATRIB).<br>
+                                                                    Ha realizado participación activa y permanente en las mesas técnicas para la armonización de la Ley de Archivos del Estado de Chihuahua con la Ley General de Archivos y se nombró Representante del Poder Judicial del Estado de Chihuahua ante el Consejo Estatal de Archivos.<br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -630,60 +743,31 @@ Ciudad de México, 2021.<br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/persona1.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Luis_E_Perez_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LUIS EDUARDO PEREZ MERCHANT</h3>
-                                                        <div class="gdlr-lightbox-form id=gdlr-form-6">
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-10>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                 <h3 style="text-align: justify">
-                                                                    
-Escolaridad:<br>
-Licenciado en Derecho por la Universidad de las Américas<br>
-Maestría en Administración <br>
-Certificado en el estándar ECO 176 (competencia laboral)<br>
-
-En el Poder Judicial del Estado de Puebla 2018- a la fecha:<br>
-Director del Archivo Judicial del Tribunal Superior de Justicia y Titular del Área Coordinadora de Archivos<br>
-
+                                                                <h3 style="text-align: justify">
+                                                                    Escolaridad: <br>Licenciado en Derecho por la Universidad de las Américas <br> Maestría en Administración <br>Certificado en el estándar ECO 176 (competencia laboral) <br> En el Poder Judicial del Estado de Puebla 2018- a la fecha: <br>Director del Archivo Judicial del Tribunal Superior de Justicia y Titular del Área Coordinadora de Archivos<br>
                                                                 </h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-6 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-10 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/refugio.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/persona1.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">María del Refugio Vizcaya Durán</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">CLAUDIA ALIN ESCOTO VELÁZQUEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-7>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Escolaridad:<br>
-
-Licenciada en Derecho y Licenciada en Historia de México por la Universidad Autónoma del Estado de Hidalgo.<br>
-
-Experiencia en el servicio público:<br>
-
-En el Poder Judicial del Estado de Hidalgo 1993-2021:<br>
-
-	Coordinadora General de Archivos (a partir de marzo de 2021)<br>
-	Directora del Archivo Histórico <br>
-	Directora del Instituto de Profesionalización e Investigaciones Jurídicas<br>
-	Coordinadora de Investigación <br>
-	Subdirectora de la Contraloría General <br>
-	Secretaria particular del Presidente del Tribunal Superior de Justicia<br>
-	Subdirectora de Quejas del Tribunal Superior de Justicia<br>
-	Subdirectora del Instituto de Capacitación del Tribunal Superior de Justicia<br>
-
-En el Poder Ejecutivo 1980-1993:<br>
-
-	Coordinadora de la Sección Legal de la Junta General de Asistencia del Estado. <br>
-	Subdirectora de supervisión del Sistema de Radio y Televisión del Gobierno del Estado.<br>
-	Jefe de la Unidad Jurídica de la Coordinación General de Desarrollo Urbano, Vivienda y Ecología del Gobierno del Estado.<br>
-	Jefe de Departamento en la Dirección Jurídica del Gobierno del Estado.<br>
-	Jefe del Departamento Jurídico del Centro de Readaptación Social para Adultos del Estado.<br>
-
-
+                                                                    Maestra en Derecho con Orientación a Acceso a la Información por la UNAM y Especialista en el Reglamento General de Protección de Datos de la Unión Europea, impartido por la UNED. Diplomada en “Privacidad, Regulación y Gobernanza de Datos” por el CIDE y en “Gestión de Información para la Transparencia” por la Fundación de las Ciencias de la Documentación (España). Ha tomado cursos de “Implantación de Sistemas de Gestión para Documentos según ISO 30300/30301” en la Universidad Autónoma de Barcelona, de “Proyectos Digitales para el Gobierno Abierto” en la OEA, “Interpretación de la Norma ISO 27000 Sistemas de Gestión de Seguridad de la Información (NYCE) y de Especialización en el Cybersecurity Summer Bootcamp – Policy Makers – Intensivo, organizado por la Universidad de León e INCIBE con la colaboración de la OEA.<br>
+                                                                    Actualmente es Subdirectora de Gestión en el INAI y cuenta con más de 25 años de experiencia en la administración pública, ha participado en proyectos de archivos, transparencia, acceso a la información, protección de datos personales y el uso de tecnologías de la información; así como en la conformación de diversos proyectos normativos tales la conformación de la Ley General de Archivos de México y los Lineamientos para la organización y la conservación de archivos emitidos por el Consejo del Sistema Nacional de Transparencia.<br>
+                                                                    Es Miembro del Pleno del Grupo de Trabajo sobre Acceso a la Información y Transparencia de la Asociación Latinoamericana de Archivos, así como afiliada del Consejo Internacional de Archivos (ICA, por sus siglas en inglés) y la Asociación Internacional de Profesionales de la Privacidad (IAPP).<br>
+                                                                    Ha participado como docente en diversos diplomados, cursos y talleres y cuenta con diversas publicaciones académicas entre las que se destacan “El uso de blockchain para la valoración documental con miras a la conformación de la memoria histórica en México” en la Revista Iberoamericana de Derecho Informático (FIADI), “Hacia una Ley General de Archivos y la protección de datos personales” en el libro Visiones contemporáneas del Derecho a la Información (Tirant lo Blanch-INAI-UNAM), “Los sistemas automatizados para la gestión documental como facilitadores para la transparencia, el acceso a la información, la protección de datos personales y la rendición de cuentas” (Simposio Internacional de Archivos. Archivo, documentación e información en escenarios híbridos), “El metaverso y sus beneficios para el derecho de acceso a la información en México a través de sus archivos” (FIADI), entre otros.
+                                                                    <br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -691,44 +775,23 @@ En el Poder Ejecutivo 1980-1993:<br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/maribel.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Elisa_B_Peralta_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Licenciada Maribel Flores Garza</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MAESTRA ELSA BIBIANA PERALTA HERNÁNDEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-8>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Juez de Primera Instancia, en comisión de Directora del Archivo Judicial del Consejo de la Judicatura del Estado de Nuevo León.<br>
-
-FORMACIÓN<br>
-Licenciada en Derecho por la Facultad de Derecho y Criminología de la Universidad Autónoma de Nuevo León (2009).<br>
-Estudios de Maestría en Derecho Procesal Penal con Orientación en Juicios Orales por el Instituto Nacional de Estudios Superiores en Derecho Penal (2016).<br>
-
-ACTIVIDAD PROFESIONAL<br>
-o	Es representante de la Red Nacional de Archivos de los Poderes Judiciales locales, ante el Consejo Nacional de Archivos.<br>
-o	Es representante del Estado de Nuevo León en la Asociación Noreste de Archivos.<br>
-
-o	Preside el Comité Consultivo del Archivo Judicial del Consejo de la Judicatura del Estado de Nuevo León.<br>
-
-o	Es Jefa del Comité Legal y de Vinculación de la Asociación Noreste de Archivos.<br>
-
-o	Forma parte del Comité Legal de la iniciativa “Día del Patrimonio de Nuevo León”.<br>
-
-o	Forma parte del Comité Consultivo de la Visitaduría Judicial  del Consejo de la Judicatura del Estado de Nuevo León.<br>
-
-o	Forma parte del Comité Consultivo de Servicios Transversales  del Consejo de la Judicatura del Estado de Nuevo León.<br>
-
-o	Formó parte del Consejo Editorial de la revista Crónicas del Pleno del Tribunal Superior de Justicia del Estado.<br>
-
-o	Es locutora del programa de radio “Entre páginas y letras”, y anteriormente lo fue del diverso “Tribunal a tu Alcance”.<br>
-
-o	Ha sido coautora de iniciativas reglamentarias y de proyectos de reforma.<br>
-
-o	Ha participado en diversas conferencias y foros.<br>
-
-TRAYECTORIA PROFESIONAL<br>
-A principios del año 2007 ingresa al Poder Judicial del Estado de Nuevo León como meritoria, para después desempeñar sucesivamente los cargos de Auxiliar Administrativo, Escribiente, Asistente Jurídico, Secretario, Secretario Auxiliar de la Presidencia y del Pleno del Tribunal, Coordinadora del Archivo Judicial, Directora del Archivo Judicial y Juez de Primera Instancia.<br>
-
-
+                                                                   Actualmente es la primera Titular del Área Coordinadora de Archivos del TJACDMX. Fue Comisionada Ciudadana del Instituto de Transparencia, Acceso a la Información Pública, Protección de Datos Personales y Rendición de Cuentas de la Ciudad de México, coordinando durante su gestión las Direcciones Jurídica y de Protección de Datos; integrando al Instituto como invitado permanente al Comité de Igualdad de Género de los Órganos Impartidores de Justicia de la Ciudad de México (CDMX). Representó a dicha Institución en la implementación del PDH CDMX en los temas de derecho de acceso a la información y protección de datos personales. Estuvo sola al frente durante nueve meses, lo que constituyó un hecho inédito.<br>
+                                                                    En el Sistema Nacional de Transparencia coordinó la Comisión de Rendición de Cuentas, de la cual también fue Secretaria Técnica, así como de la de Comisión Jurídica, de Criterios y Resoluciones, y durante dos períodos consecutivos, al mismo tiempo, de la de Archivos y Gestión Documental y de la de Datos Personales. Durante toda su gestión que duró seis años, integró de manera activa dichas comisiones, así como también las de Tecnologías de la Información y Plataforma Nacional de Transparencia, y la de Derechos Humanos, Género e Inclusión.<br>
+                                                                    Ha participado de manera activa en la organización; así como, como ponente o moderadora, en diversos Foros de Transparencia, Protección de Datos Personales, Archivos, Anticorrupción y Género, tanto en la República Mexicana, como en el ámbito internacional en países como Argentina, Chile, Uruguay, Colombia, Perú, El Salvador y España.<br>
+                                                                    Fue la primera Contralora General del Tribunal Superior de Justicia del Distrito Federal y del Consejo de la Judicatura, así como Encargada del Despacho de la Oficina de Información Pública del mismo. Fue Asesora y Secretaría Técnica de la Presidencia de dichos órganos. Durante más de 20 años, fungió como Secretaria Proyectista de Tribunal Colegiado y Unitario, Secretaria Proyectista de Sala, Actuaria de Juzgado de Distrito y Oficial Judicial en diversos Órganos Jurisdiccionales, tanto Locales como Federales y en la SCJN.<br>
+                                                                    Es Maestra en Administración Pública por el Instituto Nacional de Administración Pública, con Mención Honorifica. Es Licenciada en Derecho por la Universidad Nacional Autónoma de México. Es Doctorante en Administración y Políticas Públicas. Curso diversos diplomados, seminarios y especialidades en las materias mencionadas, destacando el Seminario de Capacitación de Servidores Públicos Mexicanos, por invitación de la Escuela de Gobernanza en China.
+                                                                    De manera honorífica Coordinó la Comisión de Transparencia y Rendición de Cuentas y el Primer Comité de Igualdad de Género, en el Instituto Nacional de Administración Pública.<br>
+                                                                    Es miembro activo de la Barra Mexicana Colegio de Abogados y Subcoordinadora de la Comisión de Datos Personales.
+                                                                    Actualmente es fundadora de la RED DE MUJERES POR LA TRANSPARENCIA, e integra diversos grupos y colectivos feministas.
+                                                                    Actualmente es titular del Programa #LALUPA que se transmite por internet y diversas redes sociales, como Facebook Live, YouTube, Instagram, Linkedln, Twitter y Tik Tok. Es invitada habitual en programas de Radio y Televisión como especialista en las materias mencionadas; así como articulista en diversos libros, revistas y columnas especializadas. Cuenta con la publicación del libro denominado “Reflexiones Femeninas”, que ella denomina “Poesía Feminista”.<br>
+                                                                    Ha impartido cátedra en diversas Instituciones del Sector Público en materia de Transparencia, Protección de Datos Personales, Archivos, Anticorrupción y Género, tanto en la República Mexicana, como en el ámbito Internacional.
+                                                                    <br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -741,57 +804,24 @@ A principios del año 2007 ingresa al Poder Judicial del Estado de Nuevo León c
                                     <div class=clear></div>
                                 </div>
                             </div>
-						
+
 						<div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
+
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/mercedes.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Ruth_M_Flores_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MERCEDES DE VEGA</h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-10>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Licenciada en Filosofía por la Universidad Iberoamericana y doctora en Historia por El Colegio de México. Archivóloga por vocación y actividad profesional.<br>
-Su vida laboral se ha distinguido por su dedicación e impulso a la educación, la cultura, la generación de conocimientos y el patrimonio documental de México. Profesora universitaria durante más de tres décadas, autora, editora, coordinadora de proyectos de investigación nacionales e internacionales, directora de museos, archivos y bibliotecas, y curadora de exposiciones. <br>
-
-Considera que los archivos son elementos insustituibles para garantizar el disfrute de los derechos humanos, convicción que ha demostrado como directora general del Acervo Histórico Diplomático de la Cancillería, del Archivo General de la Nación y fundadora del Archivo General del Estado de Zacatecas. Coordinadora de la Red de Archivos Diplomáticos Iberoamericanos de la Cumbre Iberoamericana, y presidenta de la Asociación Latinoamericana de Archivos, desde donde promovió la cooperación internacional entre los países de la región. Fue consultora en archivos de la Oficina de las Naciones Unidas contra la Droga y el Delito y es consejera del Fondo Internacional para el Desarrollo de los Archivos del Consejo Internacional de Archivos. Actualmente es consultora independiente y se dedica a la investigación académica.<br>
-
-Fue miembro del Sistema Nacional de Investigadores y del Servicio Exterior Mexicano. En 2017 fue condecorada por el Ministerio de Cultura y de la Comunicación de la República Francesa como Caballero de la Orden de las Artes y las Letras.<br>
-Considera a la cultura y a la educación como la vía para apropiarnos de nuestro destino, no sólo por el afán de crear y de aproximarnos a un anhelo de verdad, sino con la mira de ayudarnos a vivir, luchar contra la oscuridad y expandir nuestra conciencia en la tierra. Es ferviente defensora de que solo con la unión de hombres y mujeres podremos construir un mundo mejor. <br>
-
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-10 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/myriam.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MYRIAM VICTORIA HERNÁNDEZ ACOSTA</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. RUTH MARÍA FLORES BUSTILLOS</h3>
                                                         <div class="gdlr-lightbox-form id=gdlr-form-11">
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                  <h3 style="text-align: justify">
-                                                                    TRIBUNAL SUPERIOR DE JUSTICIA DEL ESTADO DE CHIHUAHUA.<br>
-
--	Estudió la Licenciatura en Derecho en la Universidad Autónoma de Chihuahua.<br>
--	Realizó la Maestría en Derecho de Familia y de Menores en el Instituto de Formación y Actualización Judicial.<br>
--	Cuenta con una Especialización en Psicología y Derecho de la Familia, en la Universidad de Sonora.<br>
--	Es desde 1998 Funcionaria Judicial del Poder Judicial de Chihuahua, y quien cuenta con 24 años de experiencia en su carrera judicial; la cual inició como Oficial Notificador y Ministro Ejecutor en un juzgado de Primera Instancia del Distrito Judicial Hidalgo, posteriormente se desempeño como Secretaria Proyectista del Juzgado. <br>
--	Desde el año 2006 ocupó la Titularidad provisional y luego definitiva como Juez de Primera Instancia del Distrito Judicial Camargo.<br>
--	En noviembre del 2014 fue nombrada Magistrada del Tribunal Superior de Justicia con adscripción en la Tercera Sala Civil.<br>
--	Actualmente es Presidenta del Tribunal Superior de Justicia del Estado de Chihuahua, desde el 12 de noviembre del año 2021, siendo la primera Mujer en ocupar dicho cargo en los 196 años de existencia del Poder Judicial en el Estado.<br>
--	Catedrática de la materia de Derecho Procesal en la Universidad Regional del Norte. <br>
--	Diplomada en Juicio Oral Mercantil.<br>
--	Realizó el curso de “Taller de Juicio Oral Mercantil”.<br>
--	Curso el programa de “Utilización de los Hijos en el Conflicto Parental” y “Circulos Transformativos y Peacemaking”.<br>
--	Participó en el Cuarto Foro Regional en materia de adopción SNDIF-CONATRIB, impartido por la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos y El Sistema Nacional para el Desarrolloo Integral de la Familia.<br>
--	Participó en la VII Conferencia Binacional sobre “Sustracción y Protección de Menores”, impartido por la Secretaria de Relaciónes Exteriores, por medio del Consulado General de México en San Diego, Country of San Diego Health and Human Services Agency, San Diego District Attorney, California, Office of Attorney General, California Departament of Justice, que tuvó lugar en San Diego, California, EEUU.<br>
-
+                                                                    Licenciada en Ciencias Jurídicas egresada del Centro de Estudios Universitarios, Facultad de Derecho en la ciudad de Monterrey, Nuevo León; con Maestría en Derecho Judicial de la Escuela Judicial del Poder Judicial del Estado de Quintana Roo. <br>
+                                                                    Ha sido catedrática en la Universidad de Quintana Roo por un periodo de seis años. En el Poder Legislativo del Estado de Quintana Roo, durante tres años, tuvo a su cargo la Subdirección del Control de Proceso Legislativo y posteriormente, por dos años, estuvo al frente de la Subdirección del Archivo, en donde coordinó los trabajos para la implementación de la Ley General de Archivos. Asimismo, en el Poder Judicial del Estado de Quintana Roo, a lo largo de más de 15 años, desempeñó cargos como Secretaria de Acuerdos en Juzgados de Primera Instancia, Secretaria de Estudio y Cuenta en Segunda Instancia, Secretaria de Acuerdos de la Sala Penal y actualmente, Directora del Archivo Judicial, en donde desde 2018, ha dirigido los trabajos para la implementación del Sistema Institucional de Archivos, instalación del Grupo Interdisciplinario y demás acciones inherentes a la materia.<br>
+                                                                    Ha participado impartiendo diversos cursos, conferencias y asesorías en materia de archivo, tanto al interior del Poder Judicial del Estado de Quintana Roo, así como en organismos autónomos como la Auditoría Superior del Estado, Centro de Conciliación Laboral del Estado de Quintana Roo; Instituto de Movilidad, entre otros. De igual forma, ha participado como expositora en la Red Nacional de Archivos de la CONATRIB, con el tema “Plan de Valoración Documental”.<br>
+                                                                    La Mtra. Flores Bustillos, actualmente es Representante de la Región 5 de la Red Nacional de Archivos de CONATRIB, en la que se encuentran los estados de Campeche, Chiapas, Oaxaca, Quintana Roo y Yucatán.<br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -799,31 +829,20 @@ Considera a la cultura y a la educación como la vía para apropiarnos de nuestr
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/persona1.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/roman.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. RICARDO ALFREDO SODI CUELLAR 
-															</h3>
-														<div class="gdlr-session-item-excerpt">MAGISTRADO PRESIDENTE DEL TRIBUNAL SUPERIOR DE JUSTICIA Y PRESIDENTE DEL CONSEJO DE LA JUDICATURA DEL PODER JUDICIAL DEL ESTADO DE MÉXICO.
-                                                        </div>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">ROMÁN SOUBERVILLE GONZÁLEZ</h3>
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-12>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Licenciado en Derecho por la Escuela Libre de Derecho<br>
-Estudios de Postgrado:<br>
-•	Curso de Especialización Judicial, en el Instituto de la Judicatura Federal de la Suprema Corte de Justicia de la Nación, 1999;<br>
-•	Diploma de Estudios Avanzados en Derecho (DEA), otorgado por la Universidad Complutense de Madrid, por la defensa de la tesis "Presupuestos Constitucionales de la Jurisdicción Militar". (octubre del 2006);<br>
-•	Doctor en Derecho por la Universidad Complutense de Madrid, "Sobresaliente Cum Laude", por la defensa de la tesis Configuración Constitucional de la Jurisdicción Penal Militar en Tiempo de Paz. El caso de México.<br>
-
-Como académico ha sido profesor en:<br>
-•	Universidad Anáhuac: Titular de la Cátedra de Derecho Constitucional, desde 1992 a la fecha.<br>
-•	Escuelas Judiciales de los estados de México, Campeche, Quintana Roo, Guanajuato, Oaxaca, Sinaloa, San Luis Potosí, Yucatán, Tabasco, Chihuahua y Coahuila para capacitar a jueces y magistrados en el nuevo sistema de justicia penal que se implementa en México.<br>
-•	Instituto de la Judicatura Federal.<br>
-•	Casas de la Cultura Jurídica de la Suprema Corte de Justicia de la Nación en los estados de México Oaxaca, Puebla, Campeche y Ciudad Juárez.<br>
-•	Colegio de la Defensa Nacional de la Secretaría de la Defensa Nacional.<br>
-•	Centro de Estudios Superiores Navales (CESNAV) de la Secretaría de Marina, Armada de México<br>
-•	Ha publicado diversos libros, 2 individuales y 14 colectivos, para editorial Porrúa, para el Instituto Nacional de Ciencias Penales y para el Tribunal Superior de Justicia del estado de México.<br> 
-
-
+                                                                    Licenciado en Derecho por la Universidad Autónoma del Estado de Hidalgo con Titulación automática por promedio, también es egresado de la Licenciatura en Relaciones Internacionales por la Universidad Nacional Autónoma de México. <br>
+                                                                    Tiene estudios de especialización en Amparo, por la Universidad Iberoamericana y diplomado en Juicio de Amparo por la UNAM y la SCJN.<br>
+                                                                    Cuenta con diplomado en Juicio de Amparo por la casa de la Cultura Jurídica de la SCJN.<br>
+                                                                    Ha realizado cursos en Derecho Procesal Constitucional en el Tribunal Electoral del Poder Judicial de la Federación. Así como la pasantía de capacitación del Sistema Acusatorio Adversarial, en Santiago de chile. Diplomado por Especialización para nuevos aspirantes a jueces de Control y Juicio Oral. <br> Asimismo, Curso de Nuevo sistema de Justicia Penal de Aspirantes a Jueces que cuenten con nivel avanzado de capacitación. <br>
+                                                                    Curso en capacitación especializada para Magistrados y Consejeros del Sistema Penal Acusatorio.<br>
+                                                                    Ha sido abogado postulante, catedrático en diferentes instituciones educativas y ha ocupado diversos cargos en la Administración Pública a nivel Municipal, Estatal y Federal.<br>
+                                                                    En el Poder Judicial del Estado, ha sido Consejero de la Judicatura, Presidente de la Sala Unitaria de Justicia Penal para Adolescentes, integrante de la Segunda Sala Pena y, actualmente, se desempeña como integrante de la Primera Sala Penal.<br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -837,125 +856,48 @@ Como académico ha sido profesor en:<br>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-13>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   FORMACION ACADEMICA <br>
+                                                                    FORMACION ACADEMICA <br>
 
-PRIMARIA: PRESIDENTE MIGUEL ALEMAN EN LA CIUDAD DE TEPIC, NAYARIT. <br>
+                                                                    PRIMARIA: PRESIDENTE MIGUEL ALEMAN EN LA CIUDAD DE TEPIC, NAYARIT. <br>
 
-SECUNDARIA: SECUNDARIA FEDERAL NUMERO 2, EN LA CIUDAD DE TEPIC, NAYARIT. <br>
+                                                                    SECUNDARIA: SECUNDARIA FEDERAL NUMERO 2, EN LA CIUDAD DE TEPIC, NAYARIT. <br>
 
-BACHILLERATO: INSTITUTO TECNOLOGICO DE TEPIC, NAYARIT. <br>
+                                                                    BACHILLERATO: INSTITUTO TECNOLOGICO DE TEPIC, NAYARIT. <br>
 
-PROF ESIONAL: LICENCIATURA EN CONTADURIA, LA UNIVERSIDAD DEL VALLE DE MATATIPAC.  <br>
+                                                                    PROF ESIONAL: LICENCIATURA EN CONTADURIA, LA UNIVERSIDAD DEL VALLE DE MATATIPAC.  <br>
 
-ACTIVIDADES PROFESISONALES<br>
+                                                                    ACTIVIDADES PROFESISONALES<br>
 
-EN EL MES DE OCTUBRE DEL AÑO 1988 AL 2008 TRABAJE EN LA INICIATIVA PRIVADA EN DIVERSOS LUGARES DESEMPEÑANDOME COMO CONTADOR PUBLICO COMO EN CASA DE CAMBIO EL RUBLO THARSOS CENTER NOTARIA 8, DESPACHO SIMANCAS COMO AUDITOR Y EN LOS ESTADOS UNIDOS COMO PREPARADORA DE IMPUESTOS DEL AÑO 2003 AL 2008.<br>
+                                                                    EN EL MES DE OCTUBRE DEL AÑO 1988 AL 2008 TRABAJE EN LA INICIATIVA PRIVADA EN DIVERSOS LUGARES DESEMPEÑANDOME COMO CONTADOR PUBLICO COMO EN CASA DE CAMBIO EL RUBLO THARSOS CENTER NOTARIA 8, DESPACHO SIMANCAS COMO AUDITOR Y EN LOS ESTADOS UNIDOS COMO PREPARADORA DE IMPUESTOS DEL AÑO 2003 AL 2008.<br>
 
-EN EL AÑO 2008 COMENCE A TRABAJAR EN EL GOBIERNO DEL ESTADO EN LA CON TRALORIA DEL ESTADO HASTA EL AÑO 2011. DESEMPEÑAMDO EL PUESTO DE AUDITOR.<br>
-EN EL AÑO 2011 ME DESEMPEÑE EN EL CARGO DE TRANSPARENCIA EN EL DESPACHO DEL EJECUTIVO DURANTE EL GOBIERNO DEL ROBERTO SANDOVAL CASTAÑEDA.<br>
+                                                                    EN EL AÑO 2008 COMENCE A TRABAJAR EN EL GOBIERNO DEL ESTADO EN LA CON TRALORIA DEL ESTADO HASTA EL AÑO 2011. DESEMPEÑAMDO EL PUESTO DE AUDITOR.<br>
+                                                                    EN EL AÑO 2011 ME DESEMPEÑE EN EL CARGO DE TRANSPARENCIA EN EL DESPACHO DEL EJECUTIVO DURANTE EL GOBIERNO DEL ROBERTO SANDOVAL CASTAÑEDA.<br>
 
-EN EL AÑO 2014 COMENCE A OCUPAR EL CARGO DE JEFA DE RECURSOS HUMANOS EN EL PODER JUDICIAL DEL ESTADO DE NAYARIT. HASTA EL 2017<br>
+                                                                    EN EL AÑO 2014 COMENCE A OCUPAR EL CARGO DE JEFA DE RECURSOS HUMANOS EN EL PODER JUDICIAL DEL ESTADO DE NAYARIT. HASTA EL 2017<br>
 
-EN EL AÑO DEL 2017 ME DESEMPEÑE COMO JEFA DEL DEPARTAMENTO DE BIENES Y SERVICIOS. <br>
+                                                                    EN EL AÑO DEL 2017 ME DESEMPEÑE COMO JEFA DEL DEPARTAMENTO DE BIENES Y SERVICIOS. <br>
 
-Y EN EL AÑO 2018 ME ASIGNAN COMO JEFA DEL ARCHIVO JUDICIAL DEL ESTADO DE NAYARIT HASTA LA FECHA <br>
-
+                                                                    Y EN EL AÑO 2018 ME ASIGNAN COMO JEFA DEL ARCHIVO JUDICIAL DEL ESTADO DE NAYARIT HASTA LA FECHA. <br>
 																</h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-13 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class=clear></div>
-                                </div>
-                            </div>
-						
-						<div class=speaker-item-wrapper style="margin-bottom: 30px;">
-                                <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                            <ul class=slides>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/roman.jpg" alt width=400 height=400></div>
+												<li class="gdlr-item gdlr-speaker-item">
+
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">ROMÁN SOUBERVILLE GONZÁLEZ</h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-15>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"></h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-10>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciado en Derecho por la Universidad Autónoma del Estado de Hidalgo con Titulación automática por promedio, también es egresado de la Licenciatura en Relaciones Internacionales por la Universidad Nacional Autónoma de México. <br>
-Tiene estudios de especialización en Amparo, por la Universidad Iberoamericana y diplomado en Juicio de Amparo por la UNAM y la SCJN.<br>
-Cuenta con diplomado en Juicio de Amparo por la casa de la Cultura Jurídica de la SCJN.<br>
-Ha realizado cursos en Derecho Procesal Constitucional en el Tribunal Electoral del Poder Judicial de la Federación. Así como la pasantía de capacitación del Sistema Acusatorio Adversarial, en Santiago de chile. Diplomado por Especialización para nuevos aspirantes a jueces de Control y Juicio Oral. Asimismo, Curso de Nuevo sistema de Justicia Penal de Aspirantes a Jueces que cuenten con nivel avanzado de capacitación. <br>
-Curso en capacitación especializada para Magistrados y Consejeros del Sistema Penal Acusatorio.
-Ha sido abogado postulante, catedrático en diferentes instituciones educativas y ha ocupado diversos cargos en la Administración Pública a nivel Municipal, Estatal y Federal.
-En el Poder Judicial del Estado, ha sido Consejero de la Judicatura, Presidente de la Sala Unitaria de Justicia Penal para Adolescentes, integrante de la Segunda Sala Pena y, actualmente, se desempeña como integrante de la Primera Sala Penal.<br>
+
 
 
                                                                 </h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-15 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/carmen.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">CARMEN PATRICIA BENCOMO FERRALES</h3>
-                                                        <div class="gdlr-lightbox-form id=gdlr-form-16">
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                 <h3 style="text-align: justify">
-                                                                    Egresada de la Universidad Regional del Norte donde obtuvo la licenciatura en ingeniería financiera, cuenta con estudios de Maestría en Administración por la Facultad de Contaduría y Administración de la Universidad Autónoma de Chihuahua.<br>
-Se ha desarrollado profesionalmente en cargos como Escribiente adscrita al Juzgado Tercero Familiar del Distrito Judicial Morelos, Asesora Técnica adscrita a la Oficialía Mayor del Tribunal Superior de Justicia, Jefa del Departamento de Recursos Materiales del Tribunal Superior de Justicia y Directora de Operaciones del Poder Judicial del Estado de Chihuahua.<br>
-Actualmente ocupa el cargo de Directora General y Coordinadora de Archivos del Poder Judicial del Estado de Chihuahua lo que le ha permitido desarrollarse en puestos como Presidenta del Grupo Interdisciplinario de Archivos del Poder Judicial del Estado de Chihuahua, fue nombrada representante General de la Red Nacional de Archivos de los Poderes Judiciales locales ante la Comisión Nacional de Tribunales Superiores (CONATRIB).<br>
-Ha realizado participación activa y permanente en las mesas técnicas para la armonización de la Ley de Archivos del Estado de Chihuahua con la Ley General de Archivos y se nombró Representante del Poder Judicial del Estado de Chihuahua ante el Consejo Estatal de Archivos.<br>
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-16 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/gisela.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Gisela González Flores</h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-17>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                   Licenciada en Administración por la Universidad Autónoma de Hidalgo. Certificada en los estándares de competencia laboral EC0076 “Evaluación de la competencia de candidatos con base en estándares de competencia” y EC0217.01 “Impartición de cursos de formación del capital humano de manera presencial grupal”, emitidos por el Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER).<br> 
-
- Con mas de veinticinco años de ejercicio profesional en la iniciativa privada y la pública.<br> 
-
-Destaca en su ejercicio profesional, quince años de servicio en el Poder Judicial del estado de Hidalgo, en sistemas de calidad ISO 9001, transparencia, estadística, planeación estratégica y archivos; los últimos ocho, como Coordinadora General de Planeación y Programas. En el ámbito archivístico, coordinó las acciones del Proyecto Sistema Integral de Administración y Gestión de Archivos Judiciales (SIAGA), que integró, a través de la Asociación Mexicana de Impartidores de Justicia, a ocho poderes judiciales estatales.<br> 
-
-En su paso por el Archivo General de la Nación México, como directora del Archivo Histórico de la Nación, tuvo la oportunidad de formar parte del grupo de trabajo que coordinó la elaboración del proyecto de la Ley General de Archivos; así como representar a esa institución en la Red de Transparencia y Acceso a la Información (RTA), en las sesiones celebradas en Bogotá y Brasilia; en las cuales se presentó a consideración de los miembros de esta red el proyecto de un Modelo de Gestión Documental (MGD), para recibir aportaciones y retroalimentación.<br> 
-
-Desde el año 2019, se desempeña como Coordinadora de Archivos del Poder Judicial del estado de México en donde impulsa el desarrollo de una normativa archivística en el ámbito judicial, la construcción de cultura archivística y la profesionalización de la función archivística, como elementos centrales de la modernización de los archivos.
-<br> 
-
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-17 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/persona1.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> </h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-18>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                   <br>
-
-																</h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-18 data-rel=fancybox data-fancybox-type=inline>  </a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-10 data-rel=fancybox data-fancybox-type=inline></a></div>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -964,13 +906,15 @@ Desde el año 2019, se desempeña como Coordinadora de Archivos del Poder Judici
                                     <div class=clear></div>
                                 </div>
                             </div>
+
+
                             <div class=clear></div>
                     </section>
                 </div>
-				
-			 
-				
-				
+
+
+
+
                 </div>
             </div>
         </div>
@@ -979,7 +923,7 @@ Desde el año 2019, se desempeña como Coordinadora de Archivos del Poder Judici
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">
-                    <div class=copyright-left> © Copyright CONATRIB 2021</div>
+                    <div class=copyright-left> © Copyright CONATRIB 2022</div>
                     <div class=copyright-right> <a href="https://conatrib.org.mx/">P&aacute;gina web</a> | <a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">Youtube</a> | <a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a> | <a href="https://twitter.com/ConatribMx">Twitter</a></div>
                     <div class=clear></div>
                 </div>
@@ -1054,17 +998,17 @@ Desde el año 2019, se desempeña como Coordinadora de Archivos del Poder Judici
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 
