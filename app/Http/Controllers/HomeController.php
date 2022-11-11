@@ -59,8 +59,8 @@ class HomeController extends Controller
 
                 case 1:
                     $mensaje= "Red 1";
-                    // return view('disponible');
-                    return view('red_6_cjpn');
+                    return view('disponible');
+                    //return view('red_6_cjpn');
                     break;
 
                 case 2:
@@ -71,36 +71,38 @@ class HomeController extends Controller
 
                 case 3:
                     $mensaje= "Red 3";
-                    // return view('disponible');
-                    return view('red_7_sijpa');
+                    return view('disponible');
+                    // return view('red_7_sijpa');
                     break;
 
                 case 4:
                     $mensaje= "Red 4";
-                    return view('red_2_rejem');
+                    return view('disponible');
+                    //return view('red_2_rejem');
                     break;
 
                 case 5:
                     $mensaje= "Red 5";
-                    // return view('disponible');
-                    return view('red_5_masc');
+                    return view('disponible');
+                    // return view('red_5_masc');
                     break;
 
                 case 6:
                     $mensaje= "Red 6";
-                    // return view('disponible');
-                    return view('red_1_cecofam');
+                    return view('disponible');
+                    // return view('red_1_cecofam');
                     break;
 
                 case 7:
                     $mensaje= "Red 7";
-                    // return view('disponible');
-                    return view('red_4_jjocmed');
+                    return view('disponible');
+                    //return view('red_4_jjocmed');
                     break;
 
                 case 9:
                     $mensaje= "Red 9";
-                    return view('red_8_aj');
+                    return view('disponible');
+                    //return view('red_8_aj');
                     break;
 
                 default:

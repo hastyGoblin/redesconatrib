@@ -19,7 +19,7 @@ class BitacoraUsuario extends Migration
             $table->integer('fk_usuarioBitacora')->unsigned();
             $table->foreign('fk_usuarioBitacora')->references('ID')->on('users');
             $table->tinyInteger('fk_tipoEvento');
-            $table->foreign('fk_tipoEvento')->references('ID')->on('TipoEvento');
+            $table->foreign('fk_tipoEvento')->references('ID')->on('tipoEvento');
             $table->boolean('activo')->default(0);
         });
     }
