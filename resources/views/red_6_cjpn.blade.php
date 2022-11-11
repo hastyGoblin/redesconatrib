@@ -98,8 +98,8 @@
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                         <div class="gdlr-item-title-head">
-                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">Cooperación Judicial para la</h4>
-                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">Protecci&oacute;n de la Ni&ntilde;ez </h4>
+                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">13 a Reunión de  la Red Mexicana</h4>
+                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large"> Cooperación Judicial  para la Protecci&oacute;n de la Ni&ntilde;ez </h4>
                                             <div class="clear"></div>
                                         </div>
                                     </div>
@@ -183,7 +183,7 @@
                                                             <div class="session-speaker-list">
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -231,7 +231,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/oosLWisUhhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -259,7 +259,7 @@
                                                             <div class="session-speaker-list">
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. María Margarita Gallegos López</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Jueza Séptimo de lo Familiar de la Ciudad de México con Especialidad en Restitución Internacional de Menores.</div>
+															<div class="gdlr-session-item-excerpt"> Jueza Séptimo de lo Familiar de la CDMX con especialidad en Restitución Internacional de Menores.</div>
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
@@ -272,7 +272,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/vtlemrW6evM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -316,7 +316,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/QPRRuwJ0APA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -353,7 +353,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/bkXhjnFvQPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -399,7 +399,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/mCY_K4j3Pq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -444,7 +444,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/uFFwRKeXf5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -482,7 +482,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/d-fgPyN6bJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -517,7 +517,7 @@
 														<div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Secretaría de Relaciones Exteriores</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Claudia Sierra González
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Claudia Sierra Martínez
 																	<div class="gdlr-session-item-excerpt">Subdirectora de Restitución y Custodia Internacional de Menores</div>
 </a></div>
                                                             </div>
@@ -535,7 +535,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/WNG37BVVyQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/FvKkWcO1AcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -577,7 +577,7 @@
 
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONENTES</h3>
                                         <br>
                                     </div>
                                 </div>
@@ -589,7 +589,7 @@
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Claudia_Sierra.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Claudia Sierra González</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Claudia Sierra Martínez</h3>
 														<div class="gdlr-session-item-excerpt">Subdirectora de Restitución y Custodia Internacional de Menores</div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-1>
                                                             <div class=gdlr-paypal-form-wrapper>

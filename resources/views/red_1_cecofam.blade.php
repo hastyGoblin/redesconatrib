@@ -10,16 +10,16 @@
 
     <title>Red &#8211; Cecofam</title>
 
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/superfish/css/superfish.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/dl-menu/component.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/master-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/dl-menu/component.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/css/style-responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/css/style-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="rede_1_cecofam/red/css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href=""> <img src="images/logo_red_1.png" alt=""> </a>
+                        <a href="index.html"> <img src="{!! asset('rede_1_cecofam/red/images/logo_red_1.png') !!}" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -93,7 +93,7 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_1_cecofam/red/upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -112,7 +112,7 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-                    <section id="historia">
+                    <!--<section id="historia">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -143,7 +143,7 @@
                             </div>
                         </div>
                         <div class="clear"></div>
-                    </section>
+                    </section>-->
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -187,7 +187,7 @@
                                                             <div class="session-speaker-list">
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -495,7 +495,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -529,7 +529,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -562,7 +562,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -597,7 +597,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -630,7 +630,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/Z70ljR95N0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -663,7 +663,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -697,7 +697,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -728,7 +728,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -759,7 +759,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -800,7 +800,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -835,7 +835,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -869,7 +869,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -902,7 +902,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -934,7 +934,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -966,7 +966,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -999,7 +999,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1032,7 +1032,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1066,7 +1066,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1095,7 +1095,7 @@
 
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONENTES</h3>
                                         <br>
                                     </div>
                                 </div>
@@ -1105,15 +1105,15 @@
                                         <div class="flexslider" data-type="carousel" data-nav-container="speaker-item-wrapper" data-columns="4">
                                             <ul class="slides">
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/erika.jpg" alt width="400" height="400"></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/erika.jpg" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">ERIKA TRINIDAD CH&Aacute;VEZ</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-50>
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                 <h3 style="text-align: justify">
                                                                     Licenciada en Trabajo Social por la Escuela Nacional de Trabajo Social, actualmente Maestrante en Trabajo Social; diplomada en peritaje en materia de Trabajo Social, teoría y práctica docente y mediación familiar, todos por la Universidad Nacional Autónoma de México.<br>
-Es Consejera en Trabajo Social del Grupo Hibrys “Adultos Mayores Emprendedores”, docente en la Escuela Nacional de Trabajo Social de la UNAM y en el Colegio de Trabajadores Sociales de México A.C., ha fungido como perito en Trabajo Social de manera oficial y particular, actualmente se desempeña como Subdirectora de Trabajo Social en el Tribunal Superior de Justicia de la Ciudad de México.<br>
-Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social de la Ciudad de México 2019. Categoría: “Buenas prácticas de intervención social con personal adultas mayores”.
+                                                                    Es Consejera en Trabajo Social del Grupo Hibrys “Adultos Mayores Emprendedores”, docente en la Escuela Nacional de Trabajo Social de la UNAM y en el Colegio de Trabajadores Sociales de México A.C., ha fungido como perito en Trabajo Social de manera oficial y particular, actualmente se desempeña como Subdirectora de Trabajo Social en el Tribunal Superior de Justicia de la Ciudad de México.<br>
+                                                                    Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social de la Ciudad de México 2019. Categoría: “Buenas prácticas de intervención social con personal adultas mayores”.
 
                                                                 </h3>
                                                             </div>
@@ -1122,14 +1122,14 @@ Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social d
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/itzel.jpg" alt width="400" height="400"></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/itzel.jpg" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">ITZEL NADCHIE LIIHI BERNAL DE ANDA </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-51>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style=text-align: justify>
-                                                                   Actualmente ocupa el puesto de subdirectora de cecofam “niños héroes” en el pjcdmx.
-Es licenciada y maestra en psicología por la universidad nacional autónoma de méxico. <br> En la actualidad cursa el doctorado en el programa de posgrado de psicología en la misma casa de estudios, desarrollando investigación relacionada con familias en conflictos judiciales.<br> Tiene una certificación por la Uc Davis Health para aplicar la terapia pc- care, intervención especializada para mejorar la relación parento-filial.<br> Cuenta con experiencia en psicoterapia clínica con más de 20 años, abordando diferentes problemáticas infantiles, familiares y de adultos.<br>Ha participado como docente a nivel licenciatura y posgrado en distintas universidades a nivel nacional.
+                                                                    Actualmente ocupa el puesto de subdirectora de cecofam “niños héroes” en el PJCDMX.
+                                                                    Es licenciada y maestra en psicología por la universidad nacional autónoma de méxico. <br> En la actualidad cursa el doctorado en el programa de posgrado de psicología en la misma casa de estudios, desarrollando investigación relacionada con familias en conflictos judiciales.<br> Tiene una certificación por la Uc Davis Health para aplicar la terapia pc- care, intervención especializada para mejorar la relación parento-filial.<br> Cuenta con experiencia en psicoterapia clínica con más de 20 años, abordando diferentes problemáticas infantiles, familiares y de adultos.<br>Ha participado como docente a nivel licenciatura y posgrado en distintas universidades a nivel nacional.
 
                                                                 </h3>
                                                             </div>
@@ -1138,14 +1138,13 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/CDMX/fotos/aline.jpg" alt width="400" height="400"></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/Aline_Liliana_Miranda.png" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">ALINE LILIANA MIRANDA HERNÁNDEZ</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. ALINE LILIANA MIRANDA HERNÁNDEZ</h3>
                                                         <div class="gdlr-lightbox-form" id="gdlr-form-52">
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                <h3 style="text-align: justify">
-                                                                    Es licenciada en Derecho y Psicología, titulada por la Universidad del Valle de México, cursa la Maestría en Conciencia Plena Aplicada (Mindfulness), Diplomada en Psicología Jurídica por la Universidad Nacional Autónoma de México y Diplomada en Terapia Familiar por la Universidad Autónoma de Tlaxcala, con múltiples cursos y talleres en el área de Derechos Humanos, Evaluación Psicológica, Perspectiva de Género, Detección de Abuso Sexual en Niñas, Niños y Adolescentes, Alienación Parental, Aplicación e Interpretación de Pruebas Proyectivas y Psicométricas, Interferencias Parentales, Atención a niñas, niños y adolescentes con Espectro Autista, Coordinación de Parentalidad, entre otros. <br> Tiene una trayectoria de 17 años en el Poder Judicial de la Ciudad de México, en el que ha sido titular de la Jefatura Departamental de Aplicación y Diagnóstico, Subdirección de Evaluación Psicológica, Subdirección de Intervención Psicológica y actualmente es Directora del Centro de Convivencia Familiar Supervisada y Secretaria Ejecutiva de la Red nacional de los Centros de Convivencia y Afines de la República Mexicana.
-
+                                                                    Originaria de la Ciudad de México, licenciada en Derecho y Psicología por la Universidad del Valle de México, Maestra en Conciencia Plena Aplicada por la Universidad Tecnológica (UTEL), Diplomada en Psicología Jurídica por la Universidad Nacional Autónoma de México, así como en Terapia Sistémica Familiar y Técnicas de Intervención Sistémica, Breve y Postmoderna por la Universidad de Tlaxcala, con múltiples cursos y talleres en el área de Derechos Humanos, Evaluación Psicológica, Perspectiva de Género, Detección de Abuso Sexual en Niñas, Niños y Adolescentes, Alienación Parental, Aplicación e Interpretación de Pruebas Proyectivas y Psicométricas, Interferencias Parentales, Atención a niñas, niños y adolescentes con Espectro Autista, Coordinación Parental, entre otros.   <br> Con una trayectoria de 18 años en el Poder Judicial de la Ciudad de México, en el que se ha desempeñado como auxiliar de la impartición de justicia en Materia Familiar, en los siguientes cargos: Administrativa Especializada, Jefa de Unidad Departamental de Aplicación y Diagnóstico, Subdirectora de Evaluación Psicológica, Subdirectora de Intervención Psicológica.  <br> Desde hace 5 años es Directora del Centro de Convivencia Familiar de dicha institución, área en la cual contribuyó en el desarrollo e implementación del modelo de intervención multidisciplinario y transitorio denominado “Programa de Revinculación Familiar”.  <br> A partir de octubre de 2021, es Secretaria Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar y Organismos Afines de la República Mexicana de la Comisión Nacional de Tribunales de la República Mexicana (CONATRIB). <br>
                                                                </h3>
                                                             </div>
                                                         </div>
@@ -1282,7 +1281,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Jueza de Primera Instancia en el Estado de Chiapas, Adscrita al Juzgado Cuarto de lo Familiar del Distrito Judicial de Tuxtla.  <br> Secretaria Técnica del Centro de Convivencia Familiar del Estado de Chiapas. <br> Egresada de la Licenciatura en Derecho por el Instituto de Estudios Superiores de Chiapas, Licenciada en Derechos Humanos por la Universidad Autónoma de Chiapas y Maestra en Constitucional y Amparo por la Universidad Autónoma de Chiapas, en donde fue distinguida con mención honorifica, y actualmente cursa el Doctorado en Educación.  <br> Su desarrollo profesional ha sido en la administración de justicia, en donde cuenta con carrera judicial, habiendo sido meritoria, oficinista, Actuaria, en materia penal, civil, y familiar, Secretaria proyectista y Secretaria de Acuerdos.  <br> Por examen de oposición ocupó el cargo de Secretaria de Estudio y Cuenta en la Segunda Sala Civil de este Distrito Judicial y Jueza de Primera Instancia, a partir de enero del año 2009 dos mil nueve hasta la presente fecha, actualmente adscrita al Juzgado Cuarto de lo Familiar del Distrito Judicial de Tuxtla.  <br> En su trayectoria profesional ha venido recibiendo cursos, diplomados, conferencias, talleres, congresos tanto en el Estado como fuera del mismo, entre los que destacan el derecho de las mujeres a la justicia, introducción a la perspectiva de género, violencia familiar y medicación, la construcción cultural de las mujeres en el sistema de justicia, sistema acusatorio con enfoque de género, nuevo sistema de protección para la mujer víctima, derecho de familia y los tribunales internacionales, derechos de la infancia, derechos humanos y el acceso a la Justicia, derecho procesal civil, Materia de Amparo y Derecho Familiar, y continúa con la misma disposición de aprendizaje para hacer realidad los derechos humanos. <br> Asimismo, ha sido reconocida por su desempeño y lealtad en la administración de Justicia, por la Asociación de Abogados Chiapanecos “Lic. Manuel Flores Tovilla, A.C, por Mujeres en Renovación A.C, y la Comisión Sur Sureste para la Defensa de los Derechos Humanos A.C, así como por el Poder Judicial del Estado de Chiapas.  <br> Ha participado como docente en el Instituto de Formación, Profesionalización y Carrera Judicial, en programas de radio y comunicación, conferencias al interior y exterior del Poder judicial, en el que como operadora de justicia da a conocer a la comunidad en general el acceso a la justicia y el fortalecimiento del Estado de Derecho.  <br>
-  </h3>
+                                                                </h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-25 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
@@ -1359,8 +1358,6 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Licenciada en Psicología por la Universidad Autónoma de Nuevo León, egresada de la Maestría en Psicoterapia Breve Sistémica en el Centro de Crecimiento Personal y Familiar, Instituto Milton Erickson de Monterrey. Cuenta con una certificación internacional en Psicopatología Forense y Sistema de Justicia por CIFAL Argentina / UNITAR. <br> Ha trabajado en el ámbito privado y en instituciones públicas, como la Secretaria de Desarrollo Social y la Facultad de Psicología de la UANL, brindando terapia psicológica y en la intervención con grupos terapéuticos de niños, niñas y adolescentes, así como en la elaboración, aplicación y evaluación de programas preventivos. <br> Ha participado en talleres y diplomados con las siguientes temáticas: psicología forense, derechos humanos, derechos de la infancia y acceso a la justicia, mediación en materia familiar, coordinación parental y otros. Además, ha impartido conferencias sobre temas del ámbito familiar. <br> Cuenta con más de 11 años de experiencia en la intervención con familias conflicto, brindando servicios en los que se busca la prevalencia de los vínculos parento filiales, además de aplicar el programa de intervención psicológica con enfoque sistémico, para realizar el servicio de Terapia de Integración en el Centro de Convivencia Familiar. <br>Actualmente funge como Encargada de la Unidad de Convivencia Contry del Centro de Convivencia Familiar del Poder Judicial del Estado de Nuevo León.
-
-
                                                                 </h3>
                                                             </div>
                                                         </div>
