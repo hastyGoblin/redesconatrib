@@ -46,7 +46,7 @@
 					
                     <div class="form-sent">
                         <div class="website-logo">
-                            <a href="https://conatrib.org.mx/congreso_redes/">
+                            
                                 <div class="logo">
                                     <img class="logo-size" src="images/Img_Conatrib.png" alt="">
                                 </div>

@@ -28,8 +28,10 @@ class EnviaCorreoController extends Controller
         // $email = Auth::user()->email;
         // $red_id =  Auth::user()->id_red;
 
-        $enviaCrorreo = User::whereBetween('id',[901, 1043])->get();
-        //$count = 1;
+        #$enviaCrorreo = User::whereBetween('id',[901, 1043])->get();
+        //$enviaCrorreo = User::where('id_red', '=', 4)->whereNotIn('id',[8,9,158])->get();
+        $enviaCrorreo = User::where('id_red', '=', 4)->whereIn('id',[4759, 5020, 5023, 5072])->get();
+        $count = 0;
         foreach ($enviaCrorreo as $Correo){
             //echo $count." ".$Correo->name."<br>";  
             //echo $count." ".$Correo->email."<br>";  
@@ -37,7 +39,7 @@ class EnviaCorreoController extends Controller
             $red = cat_redesconatrib::where('id','=', $Correo->id_red)->get();
             //echo $count." ".$red[0]->red."<br>"; 
             $info = [
-                'tipo_correo' => 1,
+                'tipo_correo' => 2,
                 'texto' => 'Registro exitoso',
                 'name' => $Correo->name,
                 'correo' => $Correo->email,
@@ -47,8 +49,9 @@ class EnviaCorreoController extends Controller
             echo"<br>";
 
             //Mail::to($Correo->email)->send(new RegistroMail($info));
-            //$count++;  
+            $count++;  
         }
+        echo $count;
         
 
 
