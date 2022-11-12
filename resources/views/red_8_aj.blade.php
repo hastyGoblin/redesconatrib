@@ -74,7 +74,6 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
@@ -191,7 +190,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/P-PbGLcxXyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/mtIOqiZY1mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -213,7 +212,7 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Myriam Victoria Hemiindez Acosta</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Myriam Victoria Hernández Acosta</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Magistrada Presidenta del Tribunal Superior de Justicia y del Consejo de la Judicatura del Poder Judicial del Estado de Chihuahua.
                                                             </div>
@@ -235,7 +234,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/P-PbGLcxXyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/mtIOqiZY1mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -322,7 +321,7 @@
 											    <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/HRrLUVpqazI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/mtIOqiZY1mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -361,7 +360,7 @@
                                                         </div>
 														<div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Claudia A. Escoto Yelázquez</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Claudia A. Escoto Velázquez</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Directora de Gestión Documental del INAI
                                                             </div>
@@ -388,7 +387,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/P-PbGLcxXyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/mtIOqiZY1mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -417,7 +416,7 @@
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Bibiana Peralta Hernrindez</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Bibiana Peralta Hernández</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Coordinadora de Archivos del Tribunal de Justicia Administrativa de la Ciudad de México.
                                                             </div>
@@ -436,7 +435,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/P-PbGLcxXyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/mtIOqiZY1mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -586,11 +585,9 @@
                         </div>
                             </div>
                         </div>
-
                     </section>
                     <div class="section-container container">
                     <section id="ponentescdmx">
-
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
@@ -610,13 +607,9 @@
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                  <h3 style="text-align: justify">
                                                                     Egresado de la Licenciatura en Derecho por la Facultad de Derecho y Criminología de la Universidad Autónoma de Nuevo León.<br>
-
                                                                     Maestro en Derecho con orientación en Amparo, por la misma Facultad, grado obtenido con mención honorífica.<br>
-
                                                                     Ha colaborado con el Poder Judicial del Estado de Nuevo León desde el año 2005 dos mil cinco, iniciando como meritorio y practicante en el Juzgado Séptimo de Jurisdicción Concurrente, para luego integrarse formalmente a la carrera judicial con la categoría de Escribiente de juzgado a principios del año 2006 dos mil seis, cargo que de igual forma desempeñó en la Segunda Instancia. Fungió como Actuario Judicial en Juzgado de Primera Instancia, así como en la Unidad de Medios de Comunicación. Posteriormente se desempeñó como Secretario Líder en la Gestión Judicial para los Juzgados de Juicio Familiar Oral.<br>
-
                                                                     En el ámbito administrativo, colaboró como Coordinador de Servicios Escolares y Administrativos, así como Coordinador de Formación Judicial y Capacitación Continua en el Instituto de la Judicatura, formando parte además del Claustro Académico del mencionado Centro de Formación Judicial, desde el año 2016 dos mil dieciséis, impartiendo las asignaturas de Gestión Judicial, Generalidades de la Función Actuarial, así como Notificaciones en Materia Civil, Familiar y Mercantil.<br>
-
                                                                     Actualmente se desempeña como Director del Archivo Judicial del Consejo de la Judicatura del Estado de Nuevo León.<br>
                                                                 </h3>
                                                             </div>
@@ -657,19 +650,15 @@
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Licenciada en Historia por la Universidad de Guanajuato, con el trabajo de Descripción Documental Inventario del Grupo Documental Matrimonios contenido en el Archivo General de la Nación, México 1993.<br>
-
                                                                     Desarrollo Laboral:<br>
                                                                     Mi ejercicio en los archivos comenzó en el año 1989 en el Archivo General del Gobierno del Estado de Guanajuato como responsable del acervo bibliográfico, posteriormente ingresé al Archivo General de la Nación como integrante del Centro de referencias y posteriormente en el Departamento de Control de acervos.  En 1996 se dio mi ingreso al Archivo General del Poder Judicial de la Federación en la Ciudad de México y en ese mismo año me otorgaron el puesto de Titular de la Casa de la Cultura Jurídica de la Suprema Corte de Justicia de la Nación en el Estado de Guanajuato hasta 1999, año que fui invitada a trabajar en el Poder Judicial del Estado de Guanajuato, con el nombramiento de responsable de la Biblioteca del Supremo Tribunal de Justicia, en el año 2002 como Coordinadora de Biblioteca y Archivo General del Poder Judicial del Estado de Guanajuato. En el año 2013 obtengo el cargo de Directora Archivo General del Poder Judicial del Estado de Guanajuato y en enero de 2021 el de Directora de Archivos del Poder Judicial del Estado de Guanajuato.<br>
-
                                                                     Cursos impartidos y recibidos:<br>
                                                                     He impartido cursos Archivística a los responsables de archivos de trámite de Poder Judicial del Estado del Guanajuato del año 2008 a 2019, así como a los integrantes del Sistema Estatal de Archivos Generales de  Guanajuato (SEAGG).
                                                                     Recibí cursos y seminarios sobre Administración de Documentos, Valoración de documentos, Paleografía y Diplomática, Conservación de Documentos, Quehacer del archivista, Introducción al Sistema Oral Penal, Oralidad Familiar, Archivos Electrónicos, Expedientes electrónicos, Gestión de Documentos y Administración de Archivos, impartidos por diversas instituciones. Fui participante en XV Escuela de Archivos para Iberoamérica, “Teoría y Prácticas Archivísticas en España” como becaria por el Ministerio de Cultura de España. Alcalá de Henares, España. 2005.<br>
-
                                                                     Asistencia a Congresos Internacionales:<br>
                                                                     XV Congreso Internacional de Archivos. 2004, Viena, Austria.
                                                                     Congreso Internacional Archivos Digitales Sustentables: “Conservación y acceso a las colecciones sonoras y audiovisuales para las sociedades del futuro”. 2015, Centro de Investigaciones Bibliotecológicas y de la Información de la Universidad Autónoma de México, Ciudad de México.
                                                                     III Congreso Internacional de Archivos Digitales: “Forjando el futuro: Inteligencia artificial y Big data para la preservación digital, sonora y audiovisual”.  2019, Centro de Investigaciones Bibliotecológicas y de la Información de la Universidad Autónoma de México, Ciudad de México.
-
                                                                     Nombramientos :<br>
                                                                     Miembro del Colegio de Historiadores de Guanajuato.
                                                                     Miembro del Órgano Técnico Consultivo como Historiadora del Archivo General del Estado de Guanajuato, 2010 - 2014.
@@ -677,7 +666,6 @@
                                                                     Miembro del Sistema Nacional de Archivos Judiciales convocado por la Suprema Corte de Justicia de la Nación y la Asociación Nacional de Impartidores de Justicia (AMIJ). Participación en las Reuniones Ordinarias del SINAJ de 2010 a 2018.
                                                                     Miembro del Sistema Estatal de Archivos Generales del Estado de Guanajuato. Activo.
                                                                     Miembro de la Red Nacional de Archivos Judiciales. Activo.<br>
-
                                                                     Publicaciones:<br>
                                                                     Colaboración en la publicación “San Pedro Cholula. Título de Ciudad, 27 de octubre de 1537”. Archivo General de la Nación. México, 1993.
                                                                     “El Juicio de Allende” en Gaceta Judicial (Edición especial, 195 años del Poder Judicial del Estado de Guanajuato). Poder Judicial del Estado de Guanajuato, Revista trimestral, junio de 2019. <br>
@@ -719,7 +707,6 @@
                                     <div class=clear></div>
                                 </div>
                             </div>
-
 						<div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
@@ -781,7 +768,7 @@
                                                         <div class=gdlr-lightbox-form id=gdlr-form-8>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Actualmente es la primera Titular del Área Coordinadora de Archivos del TJACDMX. Fue Comisionada Ciudadana del Instituto de Transparencia, Acceso a la Información Pública, Protección de Datos Personales y Rendición de Cuentas de la Ciudad de México, coordinando durante su gestión las Direcciones Jurídica y de Protección de Datos; integrando al Instituto como invitado permanente al Comité de Igualdad de Género de los Órganos Impartidores de Justicia de la Ciudad de México (CDMX). Representó a dicha Institución en la implementación del PDH CDMX en los temas de derecho de acceso a la información y protección de datos personales. Estuvo sola al frente durante nueve meses, lo que constituyó un hecho inédito.<br>
+                                                                    Actualmente es la primera Titular del Área Coordinadora de Archivos del TJACDMX. Fue Comisionada Ciudadana del Instituto de Transparencia, Acceso a la Información Pública, Protección de Datos Personales y Rendición de Cuentas de la Ciudad de México, coordinando durante su gestión las Direcciones Jurídica y de Protección de Datos; integrando al Instituto como invitado permanente al Comité de Igualdad de Género de los Órganos Impartidores de Justicia de la Ciudad de México (CDMX). Representó a dicha Institución en la implementación del PDH CDMX en los temas de derecho de acceso a la información y protección de datos personales. Estuvo sola al frente durante nueve meses, lo que constituyó un hecho inédito.<br>
                                                                     En el Sistema Nacional de Transparencia coordinó la Comisión de Rendición de Cuentas, de la cual también fue Secretaria Técnica, así como de la de Comisión Jurídica, de Criterios y Resoluciones, y durante dos períodos consecutivos, al mismo tiempo, de la de Archivos y Gestión Documental y de la de Datos Personales. Durante toda su gestión que duró seis años, integró de manera activa dichas comisiones, así como también las de Tecnologías de la Información y Plataforma Nacional de Transparencia, y la de Derechos Humanos, Género e Inclusión.<br>
                                                                     Ha participado de manera activa en la organización; así como, como ponente o moderadora, en diversos Foros de Transparencia, Protección de Datos Personales, Archivos, Anticorrupción y Género, tanto en la República Mexicana, como en el ámbito internacional en países como Argentina, Chile, Uruguay, Colombia, Perú, El Salvador y España.<br>
                                                                     Fue la primera Contralora General del Tribunal Superior de Justicia del Distrito Federal y del Consejo de la Judicatura, así como Encargada del Despacho de la Oficina de Información Pública del mismo. Fue Asesora y Secretaría Técnica de la Presidencia de dichos órganos. Durante más de 20 años, fungió como Secretaria Proyectista de Tribunal Colegiado y Unitario, Secretaria Proyectista de Sala, Actuaria de Juzgado de Distrito y Oficial Judicial en diversos Órganos Jurisdiccionales, tanto Locales como Federales y en la SCJN.<br>
@@ -810,7 +797,6 @@
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
-
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Ruth_M_Flores_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
@@ -857,26 +843,16 @@
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     FORMACION ACADEMICA <br>
-
                                                                     PRIMARIA: PRESIDENTE MIGUEL ALEMAN EN LA CIUDAD DE TEPIC, NAYARIT. <br>
-
                                                                     SECUNDARIA: SECUNDARIA FEDERAL NUMERO 2, EN LA CIUDAD DE TEPIC, NAYARIT. <br>
-
                                                                     BACHILLERATO: INSTITUTO TECNOLOGICO DE TEPIC, NAYARIT. <br>
-
                                                                     PROF ESIONAL: LICENCIATURA EN CONTADURIA, LA UNIVERSIDAD DEL VALLE DE MATATIPAC.  <br>
-
                                                                     ACTIVIDADES PROFESISONALES<br>
-
                                                                     EN EL MES DE OCTUBRE DEL AÑO 1988 AL 2008 TRABAJE EN LA INICIATIVA PRIVADA EN DIVERSOS LUGARES DESEMPEÑANDOME COMO CONTADOR PUBLICO COMO EN CASA DE CAMBIO EL RUBLO THARSOS CENTER NOTARIA 8, DESPACHO SIMANCAS COMO AUDITOR Y EN LOS ESTADOS UNIDOS COMO PREPARADORA DE IMPUESTOS DEL AÑO 2003 AL 2008.<br>
-
                                                                     EN EL AÑO 2008 COMENCE A TRABAJAR EN EL GOBIERNO DEL ESTADO EN LA CON TRALORIA DEL ESTADO HASTA EL AÑO 2011. DESEMPEÑAMDO EL PUESTO DE AUDITOR.<br>
                                                                     EN EL AÑO 2011 ME DESEMPEÑE EN EL CARGO DE TRANSPARENCIA EN EL DESPACHO DEL EJECUTIVO DURANTE EL GOBIERNO DEL ROBERTO SANDOVAL CASTAÑEDA.<br>
-
                                                                     EN EL AÑO 2014 COMENCE A OCUPAR EL CARGO DE JEFA DE RECURSOS HUMANOS EN EL PODER JUDICIAL DEL ESTADO DE NAYARIT. HASTA EL 2017<br>
-
                                                                     EN EL AÑO DEL 2017 ME DESEMPEÑE COMO JEFA DEL DEPARTAMENTO DE BIENES Y SERVICIOS. <br>
-
                                                                     Y EN EL AÑO 2018 ME ASIGNAN COMO JEFA DEL ARCHIVO JUDICIAL DEL ESTADO DE NAYARIT HASTA LA FECHA. <br>
 																</h3>
                                                             </div>
@@ -891,9 +867,6 @@
                                                         <div class=gdlr-lightbox-form id=gdlr-form-10>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-
-
-
                                                                 </h3>
                                                             </div>
                                                         </div>

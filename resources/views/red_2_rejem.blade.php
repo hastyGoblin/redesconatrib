@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
 
-    <title>Red &#8211; EJ</title>
+    <title>Red &#8211; Estadisticas Judiciales</title>
 
     <link rel="stylesheet" href="rede_2_esc_jud/red/css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_2_esc_jud/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
@@ -74,7 +74,6 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
@@ -130,7 +129,7 @@
                                                     <div class="testimonial-content gdlr-skin-content">
                                                         <p>Con el objetivo compartir, comparar y evaluar las buenas prácticas en formación de Carrera Judicial, así como, proponer modelos y técnicas de enseñanza que coadyuven a un mejor aprendizaje a la altura de los nuevos retos, reformas y modelos de comunicación en las Escuelas Judiciales de los Estados de la República Mexicana, y con el objeto de seguir motivando proyectos académicos en conjunto. </p>
                                                     </div>
-                                                    <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
+                                                    <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la Red </span><span class="testimonial-position gdlr-skin-info"><span> </span></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -174,7 +173,7 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -193,7 +192,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/zPmJ8q6uBQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/h0YkLcjCkdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -229,7 +228,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/zPmJ8q6uBQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/h0YkLcjCkdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -242,34 +241,76 @@
                                              <div class="clear"></div>
                                             </div>
 
+										<div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:15 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Jordi Ferrer Beltrán</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Director del Máster sobre Razonamiento Probatorio de la Universidad de Girona, España.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Sistemas de Justicia y Racionalidad.</h3>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														      </div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+                                            </div>
+										<div class="gdlr-session-item-content-wrapper">
+                                                <div class="gdlr-session-item-divider"></div>
+                                                <div class="session-break-content">
+                                                    <div class="session-break-info"><i class="fa fa-clock-o"></i>12:30 hrs. - 12:40 hrs.</div>
+                                                    <h3 class="gdlr-session-break-title">Receso</h3></div>
+                                                <div class="clear"></div>
+                                         </div>
+
+
+
 									<div class="gdlr-session-item-content-wrapper">
                                           <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:30 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:40  hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Panelistas:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Jaime López Reyes</a></div>
+																<div class="gdlr-session-item-excerpt">Presentación del Centro de Ética Judicial</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Maley Infante Moreno</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director de la Escuela Judicial del Estado de México.
+															<div class="gdlr-session-item-excerpt">Directora General del Centro de Ética Judicial.
                                                             </div>
+															<div class="gdlr-session-item-excerpt">Ponente:</div>
 															<div class="session-speaker-list">
-																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Jesús Demetrio Cadena Montoya</a></div>
+																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rodolfo Luis Vigo</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director General del Instituto de la Judicatura del Estado de Nuevo León. (Por confirmar)
+															<div class="gdlr-session-item-excerpt">Director del Departamento de Derecho Judicial de la Universidad de Austral Buenos Aires.
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director de la Escuela Judicial del Estado de México.
-                                                            </div>
+
+
+
 															<div class="session-speaker-list">
-																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Luis Ernesto González González</a></div>
-                                                            </div>
-															<div class="gdlr-session-item-excerpt">Director de la Escuela de Estudios e Investigación Judicial del Estado de Guanajuato.
-                                                            </div>
-															<div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Moderadora:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Mónica Rocío Farfán García</a></div>
+
+
                                                             </div>
 
                                                         </div>
@@ -278,13 +319,13 @@
                                                 </div>
                                             </div>
 										 <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Implementación de un modelo de Carrera Judicial.</h3>
-                                                <div class="gdlr-session-item-excerpt">Panel</div>
+                                                <h3 class="gdlr-session-item-title">Importancia de la Ética y Derechos Humanos en la Formación Judicial.</h3>
+                                                <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/zPmJ8q6uBQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/h0YkLcjCkdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -300,7 +341,7 @@
 										<div class="gdlr-session-item-content-wrapper">
                                                 <div class="gdlr-session-item-divider"></div>
                                                 <div class="session-break-content">
-                                                    <div class="session-break-info"><i class="fa fa-clock-o"></i>12:30 hrs. - 12:40 hrs.</div>
+                                                    <div class="session-break-info"><i class="fa fa-clock-o"></i>16:00  hrs. - 16:00</div>
                                                     <h3 class="gdlr-session-break-title">Receso</h3></div>
                                                 <div class="clear"></div>
                                          </div>
@@ -309,16 +350,33 @@
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:40 hrs.</div>
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>16:00  hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Jordi Ferrer Beltrán</a></div>
+																<div class="gdlr-session-item-excerpt">Panelistas:</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Jaime López Reyes</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director del Máster sobre Razonamiento Probatorio de la Universidad de Girona, España.
+															<div class="gdlr-session-item-excerpt">Director General de la Escuela Judicial del Estado de México.
                                                             </div>
 															<div class="session-speaker-list">
+
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Jesús Demetrio Cadena Montoya</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Director General del Instituto de la Judicatura del Estado de Nuevo León.
+                                                            </div>
+															<div class="session-speaker-list">
+
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Luis Ernesto González González</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Director de la Escuela de Estudios e Investigación Judicial del Estado de Guanajuato.
+                                                            </div>
+															<div class="session-speaker-list">
+																<div class="gdlr-session-item-excerpt">Moderadora:</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Mónica Rocío Farfán García</a></div>
+                                                            </div>
+
+                                                        <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Moderadora:</div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Mónica Rocío Farfán García</a></div>
                                                             </div>
@@ -335,7 +393,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/zPmJ8q6uBQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/h0YkLcjCkdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -348,56 +406,7 @@
                                              <div class="clear"></div>
                                             </div>
 
-										<div class="gdlr-session-item-content-wrapper">
-                                                <div class="gdlr-session-item-divider"></div>
-                                                <div class="session-break-content">
-                                                    <div class="session-break-info"><i class="fa fa-clock-o"></i>14:30 hrs. – 17:00 hrs.</div>
-                                                    <h3 class="gdlr-session-break-title"> RECESO</h3></div>
-                                                <div class="clear"></div>
-                                         </div>
 
-										<div class="gdlr-session-item-content-wrapper">
-                                            <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:40 hrs.</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Ponente:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Jordi Ferrer Beltrán</a></div>
-                                                            </div>
-															<div class="gdlr-session-item-excerpt">Director del Máster sobre Razonamiento Probatorio de la Universidad de Girona, España.
-                                                            </div>
-															<div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Moderadora:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Mónica Rocío Farfán García</a></div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-										 <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Sistemas de Justicia y Racionalidad.</h3>
-                                                <div class="gdlr-session-item-excerpt">Conferencia</div>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/zPmJ8q6uBQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
-														      </div>
-                                                    </div>
-                                              </div>
-                                             <div class="clear"></div>
-                                            </div>
 						   </div>
 
                                     <!-- termina dia 1 -->
@@ -414,7 +423,7 @@
 																<div class="gdlr-session-item-excerpt">Panelistas:</div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. María Elena Ramírez Sánchez</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Jueza de la Ciudad de México
+															<div class="gdlr-session-item-excerpt">Jueza Familiar del Poder Judicial de la Ciudad de México.
                                                             </div>
 															<div class="session-speaker-list">
 																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Arturo Nahle García</a></div>
@@ -450,7 +459,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/zPmJ8q6uBQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/h0YkLcjCkdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -490,10 +499,9 @@
 															<div class="session-speaker-list">
 																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Jesús Ignacio Escobedo Correa</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director de la Escuela Judicial por Poder Judicial del Estado de Jalisco (Por confirmar).
+															<div class="gdlr-session-item-excerpt">Director de la Escuela Judicial por Poder Judicial del Estado de Jalisco.
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director de la Escuela Judicial del Estado de México.
-                                                            </div>
+
 															<div class="session-speaker-list">
 																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Gerardo García Silva</a></div>
                                                             </div>
@@ -516,7 +524,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/zPmJ8q6uBQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/h0YkLcjCkdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -539,7 +547,7 @@
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Raúl Carrillo del Muro</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director de la Escuela Judicial del Poder Judicial de Zacatecas y Secretario General de la Red de Escuelas Judiciales de los Estados de la República Mexicana.
+															<div class="gdlr-session-item-excerpt">Secretario General de la Red de Escuelas Judiciales de los Estados de la República Mexicana.
                                                             </div>
 
                                                         </div>
@@ -604,8 +612,6 @@
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     DISTINCIONES:<br>
-
-
                                                                     Investigador honorario sistema estatal de investigadores del Consejo estatal de Ciencia y tecnología del estado de Quintana Roo.
                                                                     Miembro fundador del Claustro de Doctores de la Facultad de Derecho de la UNAM (2017)
                                                                     Miembro del Consejo Académico del Centro de Estudios de Posgrado (CEP) (2017)
@@ -619,40 +625,18 @@
                                                                     Miembro del Consejo Editorial de la Revista Amicus Curiae, de la Facultad de Derecho de la UNAM (2015)
                                                                     Miembro del Padrón de Dictaminadores de la Revista Multidisciplina, de la FES Acatlán, UNAM (2016)
                                                                     Miembro de la cartera de árbitros del Boletín Mexicano de Derecho Comparado del Instituto de Investigaciones Jurídicas de la UNAM (2012).<br>
-																	EXPERIENCIA:<br> DIRECTOR DEL INSTITUTO DE PROFESIONALIZACIÓN E INVESTIGACIONES
-
+                                                                                                                                        EXPERIENCIA:<br> DIRECTOR DEL INSTITUTO DE PROFESIONALIZACIÓN E INVESTIGACIONES
 
                                                                     JURÍDICAS DEL PODER JUDICIAL DEL ESTADO DE HIDALGO (2021- )
-
-
-
                                                                     CONSULTOR EN MATERIA PENAL, PROCESAL PENAL Y SEGURIDAD, DOCENTE E INVESTIGADOR A NIVEL POSGRADO, CAPACITADOR CERTIFICADO Y EVALUADOR INDEPENDIENTE (2013-)
-
-
                                                                     DIRECTOR ACADÉMICO EN EL INSTITUTO MEXICANO DEL JUICIO ORAL, CONSULTORÍA Y CAPACITACIÓN, S.C. /IMEJO, S.C.) (2010-2013)
-
-
                                                                     PROFESOR INVESTIGADOR, EN EL INSTITUTO DE CIENCIAS PENALES (INACIPE) (2009-2010)
-
-
                                                                     DIRECTOR JURÍDICO EN EL INSTITUTO DE CIENCIAS PENALES (INACIPE) (2008-2009)
-
-
                                                                     DIRECTOR DE INVESTIGACIÓN EN EL INSTITUTO DE CIENCIAS PENALES (INACIPE) (2008-2009)
-
-
                                                                     DIRECTOR DE CAPACITACIÓN EN EL INSTITUTO NACIONAL DE CIENCIAS PENALES (INACIPE) (2003-2006)
-
-
                                                                     DIRECTOR DE SERVICIOS A LA COMUNIDAD EN LA PROCURADURÍA GENERAL DE LA REPUBLICA, (PGR) (1977-2000)
-
-
                                                                     ABOGADO LITIGANTE (1995-1997)
-
-
                                                                     ANALISTA JURÍDICO Y COORDINADOR DE ASUNTOS INDÍGENAS EN LA COMISIÓN NACIONAL DE LOS DERECHOS HUMANOS (1933-1995)<br>
-
-
                                                                     DIRECTOR DE OPERACIONES Y CONVENIOS EN LA PROCURADURÍA GENERAL DE LA REPUBLICA, (PGR) (2000-2003) <br> FORMACIÓN:<br>Doctor en Derecho, con mención honorífica por la División de Estudios de Posgrado de la Universidad Nacional Autónoma de México (UNAM).
                                                                     Maestro en Ciencias Penales con Especialización en Ciencia Jurídico Penal, con mención honorífica por el Instituto Nacional de Ciencias Penales (INACIPE).
                                                                     Maestro en Derecho por la División de Estudios de Posgrado de la Universidad Nacional Autónoma de México (UNAM).
@@ -668,7 +652,6 @@
                                                                     “Derivaciones a tratamiento por mandato Ministerial y Judicial”, en Coautoría con Joahana Del Río Rebolledo, dentro de la obra colectiva Actualidades en Adicciones 2012, Libro 5 Adicciones y Grupos Específicos: Grupos Vulnerables y Personas en conflicto con la Ley, Secretaría de Salud Consejo Nacional Contra las Adicciones (CONADIC), México, 2012.
                                                                     Es coautor junto con la Mtra. Joahana Del Río Rebolledo del Volumen 1 de la Serie: “Manual del Litigante en el Nuevo Proceso Penal Acusatorio y el Juicio Oral en México”.
                                                                     Asimismo, cuenta con diversos artículos publicados en diferentes revistas especializadas como: Iter Criminis, Revista Mexicana de Justicia, Revista del Tribunal Superior de Justicia del Distrito Federal, Tribunal Superior de Justicia de Nuevo León, Revista de la Secretaría Técnica para la Implementación de la reforma constitucional, Revista del Instituto Federal de Defensoría Pública, Revista Mexicana de Justicia, Revista Derecho Penal Mínimo, Revista Defensa Penal, Jurípolis del Tec de Monterrey, entre otras.<br>
-
 																</h3>
                                                             </div>
                                                         </div>
@@ -679,12 +662,10 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Jordi_Ferrer_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. JORDI FERRER BELTRÁN</h3>
-
                                                         <div class=gdlr-lightbox-form id=gdlr-form-18>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Jordi Ferrer Beltrán es profesor titular de filosofía del derecho de la Universidad de Girona (España) y Director de la Cátedra de Cultura Jurídica de esa misma universidad. Entre sus publicaciones más destacadas: Las normas de competencia.<br> Un aspecto de la dinámica jurídica (2000), Prueba y verdad en el derecho (2002), La valoración racional de la prueba (2007), junto a Jorge Rodríguez, Jerarquías normativas y dinámica de los sistemas jurídicos (2011) y Motivación y racionalidad de la prueba (2016).<br> Ha coeditado la serie de tres volúmenes Law, Politics, and Morality: European Perspectives (2003, 2006 y 2007), La laicidad desde el Derecho (2010), The Logic of Legal Requirements: Essays on Legal Defeasibility (2011), El realismo jurídico genovés (2011) y Seguridad jurídica y democracia en Iberoamérica (2015). También ha publicado un buen número de artículos en revistas como Rechtstheorie, Associations, Analisi e diritto, Ragion Pratica, Legal Theory, Law and Philosophy, Teoria Politica e Isonomía, entre otras.<br>
-
 																</h3>
                                                             </div>
                                                         </div>
@@ -695,7 +676,6 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Rodolfo_L_Vigo_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Rodolfo Luis Vigo</h3>
-
                                                         <div class=gdlr-lightbox-form id=gdlr-form-19>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -712,13 +692,117 @@
                                     <div class=clear></div>
                                 </div>
                             </div>
+                    </section>
+                </div>
 
+				<div class="section-container container">
+                    <section id="ponentescdmx">
+                        <div class="gdlr-item-title-wrapper gdlr-item pos-center "></div>
+                            <div class=speaker-item-wrapper style="margin-bottom: 30px;">
+                                <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                            <ul class=slides>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Jaime_lopez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Jaime López Reyes</h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-20>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Director General de la Escuela Judicial del Estado de México.<br>
+                                                                    El Dr. Jaime López Reyes es Director General de la Escuela Judicial del Estado de México.<br>
+                                                                    Es Doctor en Ciencias de la Educación por la Universidad Santander, España.<br>
+                                                                    Cuenta con Licenciatura y Maestría en Administración Militar.<br>
+                                                                    Trayectoria <br>
+                                                                    Se ha desempeñado como vicerrector general de la Universidad del Ejército y Fuerza Aérea y subdirector general de Educación Militar, director del Centro de Estudios del Ejército y Fuerza Aérea, Director de la Escuela Superior de Guerra, Rector de la Universidad del Ejército y Fuerza Aérea entre 2014 y 2016, y Director General de Educación Militar, durante su gestión implementó el Modelo Educativo con enfoque por competencias.<br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-20 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/demetrio_cadena.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. JESÚS DEMETRIO CADENA MONTOYA</h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-21>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Actualmente realiza un Doctorado en Derecho con   acentuación en Derecho Procesal por la Universidad Autónoma de Nuevo León.<br>
+                                                                    Miembro del servicio de carrera judicial en el Poder Judicial de Nuevo León, confirmado y declarado inamovible como Juez de Primera Instancia, actualmente comisionado como Director General del Instituto de la Judicatura. Fue también Director de Control Disciplinario del Consejo de la Judicatura del Estado. Ha sido Subprocurador de la Defensa del Menor y la Familia en el Estado y asesor jurídico del Oficial Mayor de la Secretaría de Economía del Gobierno de la República.<br>
+                                                                    Primer juez mexicano en implementar el programa de Tribunal de Tratamiento de Adicciones, (conocido
+                                                                    también como programa de Justicia Terapéutica), con el apoyo de la Secretaría de Gobernación, la Procuraduría General de la República, la Comisión Nacional contra las Adicciones, la Organización de Estados Americanos (OEA), la National Association of Drug Court Professional (NADCP), y el Departamento de Estado de los Estados Unidos de América.<br>
+                                                                    Colaboró con la Comisión Interamericana para el Control del Abuso de Drogas (CICAD- OEA), en el desarrollo, divulgación e implementación a nivel Hemisférico, de programas que constituyan alternativas al tratamiento carcelario para adictos en conflicto con la ley penal. Siendo instructor y conferencista en Talleres de Alto Nivel así como en Encuentros celebrados en Morelos, Estado de México y CDMX, así como en Buenos Aires, Argentina, Boston Ma. y Washington D. C.<br>
+                                                                    Coautor de la publicación “Tribunales de Tratamiento de Drogas: Una Respuesta Internacional para Infractores Dependientes de Drogas” publicado por la Comisión Interamericana para el Control del Abuso de Drogas de la Organización de los Estados Americanos (OEA); y School of Public Affairs de la American University, Washington. D. C.<br>
+                                                                    Coautor del libro "Visiones Interdisciplinarias sobre la Justicia Terapéutica en México" publicado por la Universidad Nacional Autónoma de México. 2020.<br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-21 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/maria_elena.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DRA. MARÍA ELENA RAMÍREZ SÁNCHEZ</h3>
 
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-22>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Es Doctora en Derecho Familiar por la Universidad Tepantlato.<br>
+                                                                    Especialista en Derecho Privado por la Universidad Nacional Autónoma de México. <br>
+                                                                    Maestra en Derecho por el Instituto de Ciencias Jurídicas de Egresados de la UNAM Campus Aragón.<br>
+                                                                    Obtuvo el   Máster internacional en Derecho civil y familiar, en la Universidad Autónoma de Barcelona.<br>
+                                                                    Egresada de la Licenciatura en Derecho en la Universidad Nacional Autónoma de México, Facultad de Derecho <br>
+                                                                    Trayectoria en el Tribunal Superior de Justicia de la Ciudad de México.<br>
+                                                                    Secretaria de Acuerdos “A” del Juzgado Vigésimo Cuarto Mixto de Paz.<br>
+                                                                    Secretaría de Acuerdos “A” del Juzgado Vigésimo Primero de lo Familiar. <br>
+                                                                    Juez Vigésimo Familiar.  <br>
+                                                                    Juez Tercero de lo Familiar en Adopción Internacional.<br>
+                                                                    Magistrada por Ministerio de Ley de la Quinta Sala Familiar del Tribunal Superior de Justicia del Distrito Federal
+                                                                    Juez Décimo de Proceso Oral Familiar.<br>
+                                                                    Directora General del Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México.
+                                                                    Actualmente Jueza Familiar del Poder Judicial de la Ciudad de México <br>
+                                                                    Experiencia académica <br>
+                                                                    Maestra en el Centro de Estudios Universitarios, Universidad Latinoamericana, Instituto Nacional de Desarrollo Jurídico, Instituto de Ciencias Jurídicas de Egresados de la UNAM campus Aragón e Instituto de Estudios Judiciales del Tribunal Superior de Justicia del Distrito Federal, Universidad Tepantlato, Barra Nacional de Abogados, ponente en múltiples cursos y talleres en el Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México.
+                                                                    Obra editorial.<br>
+                                                                    Participación en el ejemplar Conoce tus Derechos en Materia Familiar, y en el Código de Procedimientos Civiles para el Distrito Federal comentado por jueces del Tribunal Superior de Justicia.<br>
+                                                                    Cursos y talleres <br>
+                                                                    Ponente y participante en   de diversos cursos, talleres, diplomados, conferencias, mesas redondas, relativos a la materia familiar, psicología, derechos humanos, equidad de género, docencia jurídica, curso de litigación en juicios orales impartido por el Departamento de Justicia de los Estados Unidos de Norteamérica en San Juan Puerto Rico, así como, el de la Universidad de Nebraska.
+                                                                    <br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-22 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                             <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Luis_Ernesto.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Luis Ernesto González González</h3>
 
-
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-23>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Abogado, Licenciado en Ciencias Políticas y Doctor en Ciencias Jurídicas y Sociales, se desempeñó como Juez de la Cámara en lo Civil y Comercial (1984-1988) y Ministro de la Corte Suprema de Justicia de la Provincia de Santa Fe, Argentina (1988-2007), Presidente de la Junta Federal de Cortes Supremas y Superiores Tribunales de las provincias argentinas (1994- 1997),  Premio Konex en el rubro jueces (1998),  destacado Profesor y conferencista en distintas Universidades en América y Europa,  miembro del Consejo Editorial de distintas revistas jurídicas, Co-redactor junto a Manuel Atienza del Código Modelo de Ética Judicial para Iberoamérica aprobado por la Cumbre Judicial Iberoamericana en 2006 y Primer Secretario Ejecutivo de la Comisión Iberoamericana de Ética Judicial (2006-2010),  Presidente de la Asociación Argentina de Filosofía del Derecho (2006-2010),  Miembro titular de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires, y miembro correspondiente de la Academia de Derecho y Ciencias Sociales de Córdoba (Argentina) y de la Real Academia de Ciencias Morales y Políticas de España, se desempeñó también Director o Coordinador de distintos posgrados universitarios y publicaciones periódica, ha recibido Doctorados Honoris Causa y es Autor de más de veinticinco libros, destaca también en su trayectoria la Cátedra "Rodolfo Luis Vigo" creada en el 2010 por el Poder Judicial de Tabasco, México.<br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-23 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class=clear></div>
+                                </div>
+                            </div>
                             <div class=clear></div>
                     </section>
                 </div>
+
+
                 </div>
             </div>
         </div>
