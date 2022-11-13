@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
 
-    <title>Red &#8211; Estadisticas Judiciales</title>
+    <title>Red &#8211; Escuelas Judiciales</title>
 
     <link rel="stylesheet" href="rede_2_esc_jud/red/css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_2_esc_jud/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
@@ -341,7 +341,7 @@
 										<div class="gdlr-session-item-content-wrapper">
                                                 <div class="gdlr-session-item-divider"></div>
                                                 <div class="session-break-content">
-                                                    <div class="session-break-info"><i class="fa fa-clock-o"></i>16:00  hrs. - 16:00</div>
+                                                    <div class="session-break-info"><i class="fa fa-clock-o"></i>14:10  hrs. - 16:00 hrs.</div>
                                                     <h3 class="gdlr-session-break-title">Receso</h3></div>
                                                 <div class="clear"></div>
                                          </div>
@@ -376,10 +376,7 @@
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Mónica Rocío Farfán García</a></div>
                                                             </div>
 
-                                                        <div class="session-speaker-list">
-																<div class="gdlr-session-item-excerpt">Moderadora:</div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Mónica Rocío Farfán García</a></div>
-                                                            </div>
+
 
                                                         </div>
                                                     </div>
@@ -596,7 +593,6 @@
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Nació en la Ciudad de Río Grande, Zacatecas el 29 de agosto de 1961. Licenciado en Derecho por la UNAM, con Maestría en Juicios Orales y Doctorado en Administración Pública. En Zacatecas ha sido Secretario General de Gobierno (2000- 2003), Procurador General de Justicia (2010-2015) y Magistrado del TSJZAC (2016-2021); Actualmente es Presidente de dicho Tribunal.<br> En la Federación fue Diputado Federal (2003-2006) y Subsecretario de Estado (2015).<br> También fue Secretario y Coordinador General Jurídico del Gobierno del Estado de Hidalgo (1993-1998) y en el Gobierno de la Ciudad de México fue Subsecretario de Enlace Legislativo (2007-2009).<br> Consultor, Catedrático en diversas instituciones de Educación Superior y Editorialista en diversos medios de comunicación locales y nacionales.<br>
-
 																</h3>
                                                             </div>
                                                         </div>
@@ -624,19 +620,42 @@
                                                                     Miembro del Padrón de Dictaminadores de la Dirección de Investigación del Instituto Nacional de Ciencias Penales (INACIPE) (2010)
                                                                     Miembro del Consejo Editorial de la Revista Amicus Curiae, de la Facultad de Derecho de la UNAM (2015)
                                                                     Miembro del Padrón de Dictaminadores de la Revista Multidisciplina, de la FES Acatlán, UNAM (2016)
+
                                                                     Miembro de la cartera de árbitros del Boletín Mexicano de Derecho Comparado del Instituto de Investigaciones Jurídicas de la UNAM (2012).<br>
                                                                                                                                         EXPERIENCIA:<br> DIRECTOR DEL INSTITUTO DE PROFESIONALIZACIÓN E INVESTIGACIONES
 
+
                                                                     JURÍDICAS DEL PODER JUDICIAL DEL ESTADO DE HIDALGO (2021- )
+
+
+
                                                                     CONSULTOR EN MATERIA PENAL, PROCESAL PENAL Y SEGURIDAD, DOCENTE E INVESTIGADOR A NIVEL POSGRADO, CAPACITADOR CERTIFICADO Y EVALUADOR INDEPENDIENTE (2013-)
+
+
                                                                     DIRECTOR ACADÉMICO EN EL INSTITUTO MEXICANO DEL JUICIO ORAL, CONSULTORÍA Y CAPACITACIÓN, S.C. /IMEJO, S.C.) (2010-2013)
+
+
                                                                     PROFESOR INVESTIGADOR, EN EL INSTITUTO DE CIENCIAS PENALES (INACIPE) (2009-2010)
+
+
                                                                     DIRECTOR JURÍDICO EN EL INSTITUTO DE CIENCIAS PENALES (INACIPE) (2008-2009)
+
+
                                                                     DIRECTOR DE INVESTIGACIÓN EN EL INSTITUTO DE CIENCIAS PENALES (INACIPE) (2008-2009)
+
+
                                                                     DIRECTOR DE CAPACITACIÓN EN EL INSTITUTO NACIONAL DE CIENCIAS PENALES (INACIPE) (2003-2006)
+
+
                                                                     DIRECTOR DE SERVICIOS A LA COMUNIDAD EN LA PROCURADURÍA GENERAL DE LA REPUBLICA, (PGR) (1977-2000)
+
+
                                                                     ABOGADO LITIGANTE (1995-1997)
+
+
                                                                     ANALISTA JURÍDICO Y COORDINADOR DE ASUNTOS INDÍGENAS EN LA COMISIÓN NACIONAL DE LOS DERECHOS HUMANOS (1933-1995)<br>
+
+
                                                                     DIRECTOR DE OPERACIONES Y CONVENIOS EN LA PROCURADURÍA GENERAL DE LA REPUBLICA, (PGR) (2000-2003) <br> FORMACIÓN:<br>Doctor en Derecho, con mención honorífica por la División de Estudios de Posgrado de la Universidad Nacional Autónoma de México (UNAM).
                                                                     Maestro en Ciencias Penales con Especialización en Ciencia Jurídico Penal, con mención honorífica por el Instituto Nacional de Ciencias Penales (INACIPE).
                                                                     Maestro en Derecho por la División de Estudios de Posgrado de la Universidad Nacional Autónoma de México (UNAM).
@@ -662,10 +681,12 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Jordi_Ferrer_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. JORDI FERRER BELTRÁN</h3>
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-18>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Jordi Ferrer Beltrán es profesor titular de filosofía del derecho de la Universidad de Girona (España) y Director de la Cátedra de Cultura Jurídica de esa misma universidad. Entre sus publicaciones más destacadas: Las normas de competencia.<br> Un aspecto de la dinámica jurídica (2000), Prueba y verdad en el derecho (2002), La valoración racional de la prueba (2007), junto a Jorge Rodríguez, Jerarquías normativas y dinámica de los sistemas jurídicos (2011) y Motivación y racionalidad de la prueba (2016).<br> Ha coeditado la serie de tres volúmenes Law, Politics, and Morality: European Perspectives (2003, 2006 y 2007), La laicidad desde el Derecho (2010), The Logic of Legal Requirements: Essays on Legal Defeasibility (2011), El realismo jurídico genovés (2011) y Seguridad jurídica y democracia en Iberoamérica (2015). También ha publicado un buen número de artículos en revistas como Rechtstheorie, Associations, Analisi e diritto, Ragion Pratica, Legal Theory, Law and Philosophy, Teoria Politica e Isonomía, entre otras.<br>
+
 																</h3>
                                                             </div>
                                                         </div>
@@ -676,6 +697,7 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Rodolfo_L_Vigo_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Rodolfo Luis Vigo</h3>
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-19>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -692,12 +714,18 @@
                                     <div class=clear></div>
                                 </div>
                             </div>
+
                     </section>
                 </div>
 
+
 				<div class="section-container container">
+
                     <section id="ponentescdmx">
-                        <div class="gdlr-item-title-wrapper gdlr-item pos-center "></div>
+
+                        <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
+
+                                </div>
                             <div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
@@ -707,13 +735,17 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Jaime_lopez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Jaime López Reyes</h3>
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-20>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Director General de la Escuela Judicial del Estado de México.<br>
+
                                                                     El Dr. Jaime López Reyes es Director General de la Escuela Judicial del Estado de México.<br>
+
                                                                     Es Doctor en Ciencias de la Educación por la Universidad Santander, España.<br>
                                                                     Cuenta con Licenciatura y Maestría en Administración Militar.<br>
+
                                                                     Trayectoria <br>
                                                                     Se ha desempeñado como vicerrector general de la Universidad del Ejército y Fuerza Aérea y subdirector general de Educación Militar, director del Centro de Estudios del Ejército y Fuerza Aérea, Director de la Escuela Superior de Guerra, Rector de la Universidad del Ejército y Fuerza Aérea entre 2014 y 2016, y Director General de Educación Militar, durante su gestión implementó el Modelo Educativo con enfoque por competencias.<br>
 																</h3>
@@ -726,11 +758,13 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/demetrio_cadena.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. JESÚS DEMETRIO CADENA MONTOYA</h3>
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-21>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Actualmente realiza un Doctorado en Derecho con   acentuación en Derecho Procesal por la Universidad Autónoma de Nuevo León.<br>
                                                                     Miembro del servicio de carrera judicial en el Poder Judicial de Nuevo León, confirmado y declarado inamovible como Juez de Primera Instancia, actualmente comisionado como Director General del Instituto de la Judicatura. Fue también Director de Control Disciplinario del Consejo de la Judicatura del Estado. Ha sido Subprocurador de la Defensa del Menor y la Familia en el Estado y asesor jurídico del Oficial Mayor de la Secretaría de Economía del Gobierno de la República.<br>
+
                                                                     Primer juez mexicano en implementar el programa de Tribunal de Tratamiento de Adicciones, (conocido
                                                                     también como programa de Justicia Terapéutica), con el apoyo de la Secretaría de Gobernación, la Procuraduría General de la República, la Comisión Nacional contra las Adicciones, la Organización de Estados Americanos (OEA), la National Association of Drug Court Professional (NADCP), y el Departamento de Estado de los Estados Unidos de América.<br>
                                                                     Colaboró con la Comisión Interamericana para el Control del Abuso de Drogas (CICAD- OEA), en el desarrollo, divulgación e implementación a nivel Hemisférico, de programas que constituyan alternativas al tratamiento carcelario para adictos en conflicto con la ley penal. Siendo instructor y conferencista en Talleres de Alto Nivel así como en Encuentros celebrados en Morelos, Estado de México y CDMX, así como en Buenos Aires, Argentina, Boston Ma. y Washington D. C.<br>
@@ -755,7 +789,9 @@
                                                                     Maestra en Derecho por el Instituto de Ciencias Jurídicas de Egresados de la UNAM Campus Aragón.<br>
                                                                     Obtuvo el   Máster internacional en Derecho civil y familiar, en la Universidad Autónoma de Barcelona.<br>
                                                                     Egresada de la Licenciatura en Derecho en la Universidad Nacional Autónoma de México, Facultad de Derecho <br>
+
                                                                     Trayectoria en el Tribunal Superior de Justicia de la Ciudad de México.<br>
+
                                                                     Secretaria de Acuerdos “A” del Juzgado Vigésimo Cuarto Mixto de Paz.<br>
                                                                     Secretaría de Acuerdos “A” del Juzgado Vigésimo Primero de lo Familiar. <br>
                                                                     Juez Vigésimo Familiar.  <br>
@@ -764,11 +800,23 @@
                                                                     Juez Décimo de Proceso Oral Familiar.<br>
                                                                     Directora General del Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México.
                                                                     Actualmente Jueza Familiar del Poder Judicial de la Ciudad de México <br>
+
+
                                                                     Experiencia académica <br>
+
                                                                     Maestra en el Centro de Estudios Universitarios, Universidad Latinoamericana, Instituto Nacional de Desarrollo Jurídico, Instituto de Ciencias Jurídicas de Egresados de la UNAM campus Aragón e Instituto de Estudios Judiciales del Tribunal Superior de Justicia del Distrito Federal, Universidad Tepantlato, Barra Nacional de Abogados, ponente en múltiples cursos y talleres en el Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México.
                                                                     Obra editorial.<br>
+
+
+
+
+
+
                                                                     Participación en el ejemplar Conoce tus Derechos en Materia Familiar, y en el Código de Procedimientos Civiles para el Distrito Federal comentado por jueces del Tribunal Superior de Justicia.<br>
+
                                                                     Cursos y talleres <br>
+
+
                                                                     Ponente y participante en   de diversos cursos, talleres, diplomados, conferencias, mesas redondas, relativos a la materia familiar, psicología, derechos humanos, equidad de género, docencia jurídica, curso de litigación en juicios orales impartido por el Departamento de Justicia de los Estados Unidos de Norteamérica en San Juan Puerto Rico, así como, el de la Universidad de Nebraska.
                                                                     <br>
 																</h3>
@@ -798,10 +846,293 @@
                                     <div class=clear></div>
                                 </div>
                             </div>
+
+
+
+
                             <div class=clear></div>
                     </section>
                 </div>
 
+
+			<div class="section-container container">
+
+                    <section id="ponentescdmx">
+
+                        <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
+
+                                </div>
+                            <div class=speaker-item-wrapper style="margin-bottom: 30px;">
+                                <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                            <ul class=slides>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/JOSE_CHACON.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. JOSÉ LUIS CHACÓN RODRÍGUEZ</h3>
+
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-30>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Licenciado en Derecho expedido por la Facultad de Derecho de la Universidad Autónoma de Chihuahua, con mención especial, Maestría en amparo y Doctor en Derecho con Cédula de doctorado 7928901.<br>
+
+                                                                    Reconocimiento de la Suprema Corte de Justicia de la Nación, por la participación en la Reforma Penal Integral.<br>
+
+
+                                                                    En su experiencia profesional de 1992 a 2005 fue abogado litigante en despachos privados de la ciudad de Chihuahua en las materias de amparo y de 2005 a la fecha en el despacho CHACÓN Y ASOCIADOS, en la Ciudad de Chihuahua, Chih. <br>
+
+                                                                    Actualmente director del Instituto de Formación y Actualización Judicial del Tribunal Superior de Justicia del Estado de Chihuahua.<br>
+
+                                                                    Catedrático de la Maestría en Amparo y en Juicios Orales en la Universidad Autónoma de Durango en diversos campus como la ciudad de Nogales y Hermosillo en el Estado de Sonora, Tijuana Baja California, Zacatecas, Zacatecas, así como en ciudad Juárez y Chihuahua, Chihuahua.<br>
+
+
+                                                                    Catedrático en el Doctorado en Derecho impartiendo las Cátedras de Derechos Humanos, Didáctica aplicada al Derecho, Instituciones del Derecho Constitucional, Coordinación de Grupos Educativos y Seminario de Tesis. Cátedras impartidas en Hermosillo y Navojoa Sonora, Juárez Chihuahua, Monterrey Nuevo León y Zacatecas, Zac.<br>
+
+                                                                    Catedrático de la Universidad del Valle de México de la Materia de Derecho Constitucional y Derecho Procesal Constitucional en el campus de Hermosillo y Nogales, Sonora.<br>
+
+                                                                    Dentro de sus publicaciones y coautorías están:<br>
+
+
+                                                                    Autor del libro “La última instancia en la protección y defensa de los Derechos Humanos en México”, ,1° y 2ª Edición Actualizada.<br>
+
+                                                                    Autor del libro “Temas fundamentales de derecho constitucional y control de convencionalidad”, publicado por Tirand lo Blanch, 2018.
+
+                                                                    Autor del libro “Apuntes y comentarios sobre metodología de la investigación jurídica. Estrategias para la elaboración de tesis de grado.”<br>
+                                                                    Publicado en febrero del 2015<br>
+
+                                                                    Coautor del libro “La Seguridad Pública en México” publicado por Tirant lo blanch en 2020. <br>
+
+                                                                    Coautor del libro “El derecho humano del acceso a la justicia y sus implicaciones”.<br>
+
+                                                                    Coautor del libro “Reflexiones sobre los derechos humanos y el control de Convencionalidad” que escribe el Colegio de Doctores en derecho San Felipe el Real A.C. de la Ciudad de Chihuahua.<br>
+
+                                                                    Coautor del libro “Inseguridad y Derechos Humanos” en proceso de publicación. <br>
+
+                                                                    Autor de publicaciones en la revista indexada Lecturas Jurídicas  y la revista arbitrada Ubi Societas Ubi Jus de la Facultad de Derecho de la Universidad Autónoma de Chihuahua. <br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-30 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/VICENTE_SOLIS.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. VICENTE SOLÍS ARANA</h3>
+
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-31>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Integrante de la Comisión Redactora del Nuevo y Código Civil para la CDMX. <br>
+                                                                    FORMACIÓN ACADÉMICA:<br>
+                                                                    •	Doctor en Derecho.<br>
+                                                                    •	Maestro en Derecho Civil y Familiar. <br>
+                                                                    •	Licenciado en Derecho. UNAM.<br>
+                                                                    •	Universidad Panamericana. U.P. Derecho. Diplomado en Derecho Civil, Mercantil, Corporativo.<br>
+                                                                    •	Universidad de Estudios de Postgrado. UEPD. Derecho. Diplomado en Derecho Civil, Mercantil, Corporativo.<br>
+
+                                                                    EXPERIENCIA LABORAL:<br>
+                                                                    Diversas Notarías en la Ciudad de México.<br>
+                                                                    Aspirante a Notario de la CDMX. <br>
+                                                                    DOCENCIA:<br>
+                                                                    Universidad Nacional Autónoma de México. Facultad de Derecho. C.U.
+                                                                    Desde el año 2000, actualmente es Profesor de todos los cursos de Derecho Civil.
+                                                                    Conductor del Programa Jurídico “CONTRAFIRMA”, en Canal Ius Multimedia, estación de radio de la Facultad de Derecho de la UNAM. <br>
+                                                                    Vicepresidente del Colegio de Profesores de Derecho Civil de la UNAM.
+                                                                    Profesor Invitado en diversas Universidades, Escuelas e Institutos del País, y Centros e Institutos de Capacitación Empresarial, Notarial y de la Judicatura, principalmente a nivel postgrado.<br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-31 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/MALEY_INFANTE.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. MALEY INFANTE MORENO</h3>
+
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-32>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Actualmente es Directora General del Centro de Ética Judicial desde octubre 2021. <br>
+
+                                                                    Licenciada en Derecho en (2009 – 2014). egresada de la Universidad Panamericana.<br>
+                                                                    Cursó la Especialidad en Derecho en (2014 – 2015). En la Universidad Panamericana. <br>
+
+                                                                    Cargos: <br>
+                                                                    Abogada consultora de Amparo de 2018 a 2022. <br>
+                                                                    Subsecretaría de egresos de la SHCP. (1 año 4 meses).<br>
+                                                                    Directora de área (10 meses).<br>
+                                                                    Subdirectora de área (7 meses). Análisis legislativo.<br>
+
+                                                                    Maley Infante Moreno, Directora General del Centro de Ética Judicial, presentó la “Guía de Aplicación de Tratados Internacionales de Derechos Humanos para la labor jurisdiccional”, destacando la intención de que esta facilite la tarea de los impartidores de justicia en materia de derechos humanos, (esto en varios Tribunales Superiores de Justicia en conferencias virtuales).
+                                                                    <br>
+
+
+                                                                    Experiencia académica <br>
+
+                                                                    Maestra en el Centro de Estudios Universitarios, Universidad Latinoamericana, Instituto Nacional de Desarrollo Jurídico, Instituto de Ciencias Jurídicas de Egresados de la UNAM campus Aragón e Instituto de Estudios Judiciales del Tribunal Superior de Justicia del Distrito Federal, Universidad Tepantlato, Barra Nacional de Abogados, ponente en múltiples cursos y talleres en el Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México.
+                                                                    Obra editorial.<br>
+
+
+
+
+
+
+                                                                    Participación en el ejemplar Conoce tus Derechos en Materia Familiar, y en el Código de Procedimientos Civiles para el Distrito Federal comentado por jueces del Tribunal Superior de Justicia.<br>
+
+                                                                    Cursos y talleres <br>
+
+
+                                                                    Ponente y participante en   de diversos cursos, talleres, diplomados, conferencias, mesas redondas, relativos a la materia familiar, psicología, derechos humanos, equidad de género, docencia jurídica, curso de litigación en juicios orales impartido por el Departamento de Justicia de los Estados Unidos de Norteamérica en San Juan Puerto Rico, así como, el de la Universidad de Nebraska.
+                                                                    <br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-32 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                             <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/EMMANUEL_ROA.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. EMMANUEL ROA ORTIZ</h3>
+
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-33>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Originario de Morelia, Michoacán, es Licenciado en Derecho por la Facultad de Derecho y Ciencias Sociales de la Universidad Michoacana de San Nicolás de Hidalgo (Mejor Promedio de la Generación 86-91; Medalla al Mérito Académico “Adolfo Cano”; Mejor Estudiante de México 1991 en el área de Derecho); Maestro en Derecho Comunitario Europeo por la Universidad Autónoma de Madrid, España; Candidato a Doctor en Derecho Constitucional por la Universidad Complutense de Madrid, España.<br>
+                                                                    Asimismo, tiene estudios de especialización en Derecho Privado por la Universidad de Salamanca, España; en Derecho Comunitario Europeo por la Universidad de Granada, España; en Integración Económica por la Universidad Carlos III de Madrid, España; y es Diplomado en Altos Estudios Internacionales por la Sociedad de Estudios Internacionales de Madrid, España.<br>
+
+                                                                    Ha desarrollado estancias académicas en las universidades de Friburgo, Suiza; y de Amsterdam, Holanda y cursado estudios de especialización en la Academia de Derecho Internacional de La Haya, Holanda.<br>
+
+                                                                    De abril de 1999 a enero de 2001 fungió como Coordinador del Programa de Educación Judicial a Distancia en el Instituto de Especialización Judicial del Supremo Tribunal de Justicia del Estado de Michoacán. A partir de febrero de 2001 se desempeñó como Director del mismo Instituto de Especialización Judicial, actualmente Instituto de la Judicatura del Consejo del Poder Judicial del Estado de Michoacán.<br>
+
+
+                                                                    Profesor de Derecho Internacional Público y Privado en la Facultad de Derecho y Ciencias Sociales de la Universidad Michoacana de San Nicolás de Hidalgo; y en la Escuela de Derecho en la Universidad Latina de América, en donde imparte las asignaturas de Derecho Internacional Privado, Deontología Jurídica y Derecho Arbitral.<br>
+
+                                                                    Es también Profesor de la División de Estudios de Posgrado de la Facultad de Derecho y Ciencias Sociales de la propia Universidad Michoacana, impartiendo Sistemas Jurídicos Contemporáneos y Arbitraje Internacional. Desde junio del año 2001 al 1º. de septiembre de 2005 fungió como Jefe de la propia División de Estudios de Posgrado. Coordinador de la Maestría en Derecho Constitucional de la Universidad Latina de América en el período septiembre de 2005 a febrero de 2007. Ha sido también Profesor visitante en Universidades nacionales, impartiendo cursos de su especialidad (Universidad de Quintana Roo y La Salle Bajío, Gto).<br>
+
+                                                                    Es autor de varios artículos, notas, semblanzas biográficas y recensiones bibliográficas que han sido publicados en diversas revistas y órganos de información jurídicos tanto del país como del extranjero, abordando temas de su especialidad: Derecho Internacional Público, Derecho Comparado, Derecho de la Integración y Derecho Comunitario Europeo.<br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-33 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class=clear></div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class=clear></div>
+                    </section>
+                </div>
+
+
+				<div class="section-container container">
+
+                    <section id="ponentescdmx">
+
+                        <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
+
+                                </div>
+                            <div class=speaker-item-wrapper style="margin-bottom: 30px;">
+                                <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                            <ul class=slides>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/VIGO.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. RODOLFO LUIS VIGO</h3>
+
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-40>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    Abogado, Licenciado en Ciencias Políticas y Doctor en Ciencias Jurídicas y Sociales, se desempeñó como Juez de la Cámara en lo Civil y Comercial (1984-1988) y Ministro de la Corte Suprema de Justicia de la Provincia de Santa Fe, Argentina (1988-2007), Presidente de la Junta Federal de Cortes Supremas y Superiores Tribunales de las provincias argentinas (1994- 1997),  Premio Konex en el rubro jueces (1998),  destacado Profesor y conferencista en distintas Universidades en América y Europa,  miembro del Consejo Editorial de distintas revistas jurídicas, Co-redactor junto a Manuel Atienza del Código Modelo de Ética Judicial para Iberoamérica aprobado por la Cumbre Judicial Iberoamericana en 2006 y Primer Secretario Ejecutivo de la Comisión Iberoamericana de Ética Judicial (2006-2010),  Presidente de la Asociación Argentina de Filosofía del Derecho (2006-2010),  Miembro titular de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires, y miembro correspondiente de la Academia de Derecho y Ciencias Sociales de Córdoba (Argentina) y de la Real Academia de Ciencias Morales y Políticas de España, se desempeñó también Director o Coordinador de distintos posgrados universitarios y publicaciones periódica, ha recibido Doctorados Honoris Causa y es Autor de más de veinticinco libros, destaca también en su trayectoria la Cátedra "Rodolfo Luis Vigo" creada en el 2010 por el Poder Judicial de Tabasco, México.<br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-40 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/JESUS_IGNACIO_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. JESÚS IGNACIO ESCOBEDO CORREA</h3>
+
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-41>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                    FORMACIÓN:<br>
+                                                                    Abogado por la Universidad de Guadalajara, Maestro de en Administración Pública de la Universidad
+                                                                    del Valle de México, campus Guadalajara, Doctorante en Administración Pública en el Instituto de Administración Pública del Estado de Jalisco y sus Municipios A.C <br>
+
+                                                                    DOCENCIA E INVESTIGACIÓN: <br>
+
+                                                                    -Profesor universitario de las asignaturas de Derecho Constitucional y Estudio de Caso a nivel licenciatura y Estadística, Análisis Cualitativo y Expresión Oral y Corporal a nivel posgrado. <br>
+
+                                                                    - Coordinador y coautor en varias publicaciones relacionadas a la profesión académica, reformas constitucionales, gobernanza, democracia y función jurisdiccional. <br>
+
+                                                                    EXPERIENCIA LABORAL:<br>
+
+                                                                    - Encargado de la Dirección de Servicios Educativos de la Secretaría de Educación del Gobierno Municipal de Guadalajara de 2014 a 2015.<br>
+                                                                    - Coordinador de Consejos Regionales de Seguridad Pública del Consejo Estatal de Seguridad Pública del Gobierno del Estado de Jalisco de 2015 a 2018.<br>
+                                                                    - Secretario Relator del Supremo Tribunal de Justicia del Estado de Jalisco del 01 agosto de 2019 al 31 de diciembre de 2020.<br>
+                                                                    -Jefe de Sección en la Unidad Departamental de Estadística del Consejo de la Judicatura del Estado de Jalisco de abril a diciembre de 2021. <br>
+                                                                    -Secretario Técnico del Comité de Planeación del Poder Judicial del Estado de Jalisco de 2020 a la fecha. <br>
+                                                                    -Actualmente, Director de la Escuela del Poder Judicial del Supremo Tribunal de Justicia del Estado de Jalisco.
+                                                                    <br>
+																</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-41 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                    </div>
+                                                </li>
+                                                <li class="gdlr-item gdlr-speaker-item">
+
+                                                    <div class=gdlr-speaker-item-content>
+                                                      <div class=gdlr-lightbox-form id=gdlr-form-32>
+                                                            <div class=gdlr-paypal-form-wrapper>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"></div>
+                                                    </div>
+                                                </li>
+
+                                             <li class="gdlr-item gdlr-speaker-item">
+
+                                                    <div class=gdlr-speaker-item-content>
+
+
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-33>
+                                                            <div class=gdlr-paypal-form-wrapper>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class=clear></div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class=clear></div>
+                    </section>
+                </div>
 
                 </div>
             </div>
