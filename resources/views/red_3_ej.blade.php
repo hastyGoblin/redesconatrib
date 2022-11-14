@@ -68,10 +68,9 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                <li class="menu-item"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                <li class="menu-item">
+                                    <a class="dropdown-item"
+                                       onclick="regLogout();event.preventDefault();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -766,7 +765,8 @@
     <script src='plugins/jquery.isotope.min.js'></script>
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
-
+    <script src="js/jquery.min.js"></script>
+    <script src='js/bitacoraLogout.js'></script>
 
 
     <!-- MAster Slider Activation -->
