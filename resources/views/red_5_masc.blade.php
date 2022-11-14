@@ -177,7 +177,7 @@
                                                             <div class="session-speaker-list">
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB).
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -226,7 +226,7 @@
 											    <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/LeZYVuI-SvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -257,7 +257,7 @@
 											    <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/LeZYVuI-SvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -300,7 +300,7 @@
 											    <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/uLcXCZjqesM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/LeZYVuI-SvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -333,7 +333,7 @@
 
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONENTES</h3>
                                     </div>
                        </div>
                        <div class=clear></div>
@@ -354,7 +354,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_5_masc/red/images/img_ponentes/Amelia_Iruretegoya.png') !!}" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Amelia_Iruretegoya.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DRA. AMELIA IRURETAGOYA QUIROZ</h3>
 														<div class="gdlr-session-item-excerpt">Coordinadora y Facilitadora de la Asociación Hermosillo ¿Cómo Vamos? </div>
@@ -371,7 +371,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_5_masc/red/images/img_ponentes/elishe.jpg') !!}" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/elishe.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. ELISHEBA GOLDHABER PASILLAS</h3>
 														<div class="gdlr-session-item-excerpt">Directora General del Centro Estatal de Justicia Alternativa del estado de Chiapas </div>
@@ -386,7 +386,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_5_masc/red/images/img_ponentes/Emilio_Navas.png') !!}" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Emilio_Navas.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. EMILIO NAVAS PAÚS</h3>
 														<div class="gdlr-session-item-excerpt">Director del Master de Mediación de la Universidad Francisco de Vitoria en Madrid, España.</div>
@@ -402,7 +402,7 @@
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_5_masc/red/images/img_ponentes/Guillermo_Raul_Zepeda.png') !!}" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Guillermo_Raul_Zepeda.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. GUILLERMO ZEPEDA LECUONA</h3>
 														<div class="gdlr-session-item-excerpt">Director General del Instituto de Justicia Alternativa del Poder Judicial de Jalisco.</div>
@@ -430,7 +430,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_5_masc/red/images/img_ponentes/Hiliana_Nunez.png') !!}" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Hiliana_Nunez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. HILIANA NUÑEZ GARCÍA</h3>
 														<div class="gdlr-session-item-excerpt">Subdirectora General del Centro Estatal de Justicia Alternativa del Poder Judicial del Estado de Durango.</div>
@@ -447,7 +447,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_5_masc/red/images/img_ponentes/Juan_Jesus_Castro_.png') !!}" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Juan_Jesus_Castro_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. JUAN CASTRO PALACIOS</h3>
 														<div class="gdlr-session-item-excerpt">Director del Centro de Justicia Alternativa del Poder Judicial del Estado de Quintana Roo.</div>
@@ -463,7 +463,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_5_masc/red/images/img_ponentes/Ruben_Cardoza.png') !!}" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Ruben_Cardoza.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. RUBEN CARDOZA MOYRON </h3>
 
@@ -479,7 +479,7 @@
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="{!! asset('rede_5_masc/red/images/img_ponentes/Sergio_Arturo_Valls.png') !!}" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Sergio_Arturo_Valls.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Magistrado Sergio Arturo Valls Esponda</h3>
 														<div class="gdlr-session-item-excerpt">Director General del Centro Estatal de Mediación, Conciliación y Justicia Restaurativa del Estado de México.</div>
@@ -548,6 +548,7 @@
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
     <script src="js/jquery.min.js"></script>
     <script src='js/bitacoraLogout.js'></script>
+
 
 
     <!-- MAster Slider Activation -->
