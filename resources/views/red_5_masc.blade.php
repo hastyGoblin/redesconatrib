@@ -212,7 +212,7 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MDRA. AMELIA IRURETAGOYA QUIROZ</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>DRA. AMELIA IRURETAGOYA QUIROZ</a></div>
 																<div class="gdlr-session-item-excerpt">Coordinadora y Facilitadora de la Asociación Hermosillo ¿Cómo Vamos?. </div>
                                                             </div>
                                                         </div>
