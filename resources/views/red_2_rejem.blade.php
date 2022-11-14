@@ -104,7 +104,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -149,7 +149,7 @@
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -163,7 +163,7 @@
                                             <div class="gdlr-session-head-day">D&iacute;a 2</div>
                                             <div class="gdlr-session-head-date">15 Noviembre 2022</div>
                                         </div>
-                                       
+
                                         <div class="clear"></div>
                                     </div>
 
@@ -204,7 +204,7 @@
                                               </div>
                                              <div class="clear"></div>
                                             </div>
-										
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -240,7 +240,7 @@
                                               </div>
                                              <div class="clear"></div>
                                             </div>
-										
+
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -283,9 +283,9 @@
                                                     <h3 class="gdlr-session-break-title">Receso</h3></div>
                                                 <div class="clear"></div>
                                          </div>
-										
-										
-										
+
+
+
 									<div class="gdlr-session-item-content-wrapper">
                                           <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -305,14 +305,14 @@
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Director del Departamento de Derecho Judicial de la Universidad de Austral Buenos Aires.
                                                             </div>
-															
-															
-															
+
+
+
 															<div class="session-speaker-list">
-																
-                                                                
+
+
                                                             </div>
-															
+
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
@@ -337,7 +337,7 @@
                                               </div>
                                              <div class="clear"></div>
                                        </div>
-										
+
 										<div class="gdlr-session-item-content-wrapper">
                                                 <div class="gdlr-session-item-divider"></div>
                                                 <div class="session-break-content">
@@ -345,7 +345,7 @@
                                                     <h3 class="gdlr-session-break-title">Receso</h3></div>
                                                 <div class="clear"></div>
                                          </div>
-										
+
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -357,16 +357,16 @@
 																<div class="gdlr-session-item-excerpt">Panelistas:</div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Jaime López Reyes</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director General de la Escuela Judicial del Estado de México. 
+															<div class="gdlr-session-item-excerpt">Director General de la Escuela Judicial del Estado de México.
                                                             </div>
 															<div class="session-speaker-list">
-																
+
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Jesús Demetrio Cadena Montoya</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Director General del Instituto de la Judicatura del Estado de Nuevo León. 
+															<div class="gdlr-session-item-excerpt">Director General del Instituto de la Judicatura del Estado de Nuevo León.
                                                             </div>
 															<div class="session-speaker-list">
-																
+
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Luis Ernesto González González</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Director de la Escuela de Estudios e Investigación Judicial del Estado de Guanajuato.
@@ -375,9 +375,9 @@
 																<div class="gdlr-session-item-excerpt">Moderadora:</div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Mónica Rocío Farfán García</a></div>
                                                             </div>
-															
-                                                        
-															
+
+
+
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
@@ -402,10 +402,10 @@
                                               </div>
                                              <div class="clear"></div>
                                             </div>
-										
-									
+
+
 						   </div>
-									
+
                                     <!-- termina dia 1 -->
                                     <!-- Inicia dia 2 -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
@@ -443,7 +443,7 @@
 																<div class="gdlr-session-item-excerpt">Moderadora:</div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Mónica Rocío Farfán García</a></div>
                                                             </div>
-															
+
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
@@ -468,9 +468,9 @@
                                               </div>
                                              <div class="clear"></div>
                                        </div>
-										
-										
-                                        
+
+
+
 										<div class="gdlr-session-item-content-wrapper">
                                                 <div class="gdlr-session-item-divider"></div>
                                                 <div class="session-break-content">
@@ -478,8 +478,8 @@
                                                     <h3 class="gdlr-session-break-title"> RECESO</h3></div>
                                                 <div class="clear"></div>
                                          </div>
-										
-										
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                           <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -498,7 +498,7 @@
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Director de la Escuela Judicial por Poder Judicial del Estado de Jalisco.
                                                             </div>
-														
+
 															<div class="session-speaker-list">
 																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Gerardo García Silva</a></div>
                                                             </div>
@@ -508,7 +508,7 @@
 																<div class="gdlr-session-item-excerpt">Moderadora:</div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra Mónica Rocío Farfán García</a></div>
                                                             </div>
-															
+
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
@@ -533,8 +533,8 @@
                                               </div>
                                              <div class="clear"></div>
                                        </div>
-										
-										
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                                 <div class="gdlr-session-item-divider"></div>
                                                 <div class="session-break-content">
@@ -546,17 +546,17 @@
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Secretario General de la Red de Escuelas Judiciales de los Estados de la República Mexicana.
                                                             </div>
-														
+
                                                         </div>
 											</div>
-											
+
                                                 <div class="clear"></div>
-											
-											
+
+
                                          </div>
 									 </div>
                                      <!-- termina dia 2 -->
-                                     
+
 
                                 </div>
                                 <div class=clear></div>
@@ -565,14 +565,14 @@
                         </div>
                             </div>
                         </div>
-                        
+
                     </section>
-				
-                    
+
+
 			<div class="section-container container">
-				
+
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
 
@@ -588,7 +588,7 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Arturo_Nahle_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. ARTURO NAHLE GARCÍA</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-16>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -604,11 +604,11 @@
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Gerardo_Garcia_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">GERARDO GARCÍA SILVA </h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-17>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    DISTINCIONES:<br> 
+                                                                    DISTINCIONES:<br>
 
 
 Investigador honorario sistema estatal de investigadores del Consejo estatal de Ciencia y tecnología del estado de Quintana Roo.
@@ -623,8 +623,8 @@ Miembro del Programa “Verano de la Investigación Científica” de la Academi
 Miembro del Padrón de Dictaminadores de la Dirección de Investigación del Instituto Nacional de Ciencias Penales (INACIPE) (2010)
 Miembro del Consejo Editorial de la Revista Amicus Curiae, de la Facultad de Derecho de la UNAM (2015)
 Miembro del Padrón de Dictaminadores de la Revista Multidisciplina, de la FES Acatlán, UNAM (2016)
-	
-Miembro de la cartera de árbitros del Boletín Mexicano de Derecho Comparado del Instituto de Investigaciones Jurídicas de la UNAM (2012).<br> 
+
+Miembro de la cartera de árbitros del Boletín Mexicano de Derecho Comparado del Instituto de Investigaciones Jurídicas de la UNAM (2012).<br>
 																	EXPERIENCIA:<br> DIRECTOR DEL INSTITUTO DE PROFESIONALIZACIÓN E INVESTIGACIONES
 
 
@@ -650,13 +650,13 @@ DIRECTOR DE INVESTIGACIÓN EN EL INSTITUTO DE CIENCIAS PENALES (INACIPE) (2008-2
 DIRECTOR DE CAPACITACIÓN EN EL INSTITUTO NACIONAL DE CIENCIAS PENALES (INACIPE) (2003-2006)
 
 
-DIRECTOR DE SERVICIOS A LA COMUNIDAD EN LA PROCURADURÍA GENERAL DE LA REPUBLICA, (PGR) (1977-2000) 
+DIRECTOR DE SERVICIOS A LA COMUNIDAD EN LA PROCURADURÍA GENERAL DE LA REPUBLICA, (PGR) (1977-2000)
 
 
 ABOGADO LITIGANTE (1995-1997)
 
 
-ANALISTA JURÍDICO Y COORDINADOR DE ASUNTOS INDÍGENAS EN LA COMISIÓN NACIONAL DE LOS DERECHOS HUMANOS (1933-1995)<br> 
+ANALISTA JURÍDICO Y COORDINADOR DE ASUNTOS INDÍGENAS EN LA COMISIÓN NACIONAL DE LOS DERECHOS HUMANOS (1933-1995)<br>
 
 
 DIRECTOR DE OPERACIONES Y CONVENIOS EN LA PROCURADURÍA GENERAL DE LA REPUBLICA, (PGR) (2000-2003) <br> FORMACIÓN:<br>Doctor en Derecho, con mención honorífica por la División de Estudios de Posgrado de la Universidad Nacional Autónoma de México (UNAM).
@@ -685,7 +685,7 @@ Asimismo, cuenta con diversos artículos publicados en diferentes revistas espec
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Jordi_Ferrer_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. JORDI FERRER BELTRÁN</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-18>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -701,7 +701,7 @@ Asimismo, cuenta con diversos artículos publicados en diferentes revistas espec
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Rodolfo_L_Vigo_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Rodolfo Luis Vigo</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-19>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -718,17 +718,17 @@ Asimismo, cuenta con diversos artículos publicados en diferentes revistas espec
                                     <div class=clear></div>
                                 </div>
                             </div>
-						
+
                     </section>
                 </div>
-				
-				
+
+
 				<div class="section-container container">
-				
+
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
-                                    
+
                                 </div>
                             <div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
@@ -739,7 +739,7 @@ Asimismo, cuenta con diversos artículos publicados en diferentes revistas espec
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Jaime_lopez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Jaime López Reyes</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-20>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -763,7 +763,7 @@ Se ha desempeñado como vicerrector general de la Universidad del Ejército y Fu
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/demetrio_cadena.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. JESÚS DEMETRIO CADENA MONTOYA</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-21>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -787,7 +787,7 @@ Coautor del libro "Visiones Interdisciplinarias sobre la Justicia Terapéutica e
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/maria_elena.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DRA. MARÍA ELENA RAMÍREZ SÁNCHEZ</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-22>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -796,22 +796,22 @@ Especialista en Derecho Privado por la Universidad Nacional Autónoma de México
 Maestra en Derecho por el Instituto de Ciencias Jurídicas de Egresados de la UNAM Campus Aragón.<br>
 Obtuvo el   Máster internacional en Derecho civil y familiar, en la Universidad Autónoma de Barcelona.<br>
 Egresada de la Licenciatura en Derecho en la Universidad Nacional Autónoma de México, Facultad de Derecho <br>
- 
+
 Trayectoria en el Tribunal Superior de Justicia de la Ciudad de México.<br>
 
 Secretaria de Acuerdos “A” del Juzgado Vigésimo Cuarto Mixto de Paz.<br>
 Secretaría de Acuerdos “A” del Juzgado Vigésimo Primero de lo Familiar. <br>
 Juez Vigésimo Familiar.  <br>
 Juez Tercero de lo Familiar en Adopción Internacional.<br>
-Magistrada por Ministerio de Ley de la Quinta Sala Familiar del Tribunal Superior de Justicia del Distrito Federal 
+Magistrada por Ministerio de Ley de la Quinta Sala Familiar del Tribunal Superior de Justicia del Distrito Federal
 Juez Décimo de Proceso Oral Familiar.<br>
- Directora General del Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México. 
+ Directora General del Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México.
 Actualmente Jueza Familiar del Poder Judicial de la Ciudad de México <br>
 
 
 Experiencia académica <br>
 
-Maestra en el Centro de Estudios Universitarios, Universidad Latinoamericana, Instituto Nacional de Desarrollo Jurídico, Instituto de Ciencias Jurídicas de Egresados de la UNAM campus Aragón e Instituto de Estudios Judiciales del Tribunal Superior de Justicia del Distrito Federal, Universidad Tepantlato, Barra Nacional de Abogados, ponente en múltiples cursos y talleres en el Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México. 
+Maestra en el Centro de Estudios Universitarios, Universidad Latinoamericana, Instituto Nacional de Desarrollo Jurídico, Instituto de Ciencias Jurídicas de Egresados de la UNAM campus Aragón e Instituto de Estudios Judiciales del Tribunal Superior de Justicia del Distrito Federal, Universidad Tepantlato, Barra Nacional de Abogados, ponente en múltiples cursos y talleres en el Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México.
 Obra editorial.<br>
 
 
@@ -824,7 +824,7 @@ Participación en el ejemplar Conoce tus Derechos en Materia Familiar, y en el C
 Cursos y talleres <br>
 
 
-Ponente y participante en   de diversos cursos, talleres, diplomados, conferencias, mesas redondas, relativos a la materia familiar, psicología, derechos humanos, equidad de género, docencia jurídica, curso de litigación en juicios orales impartido por el Departamento de Justicia de los Estados Unidos de Norteamérica en San Juan Puerto Rico, así como, el de la Universidad de Nebraska. 
+Ponente y participante en   de diversos cursos, talleres, diplomados, conferencias, mesas redondas, relativos a la materia familiar, psicología, derechos humanos, equidad de género, docencia jurídica, curso de litigación en juicios orales impartido por el Departamento de Justicia de los Estados Unidos de Norteamérica en San Juan Puerto Rico, así como, el de la Universidad de Nebraska.
 <br>
 
 																</h3>
@@ -837,7 +837,7 @@ Ponente y participante en   de diversos cursos, talleres, diplomados, conferenci
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/Luis_Ernesto.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Luis Ernesto González González</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-23>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -854,21 +854,21 @@ Ponente y participante en   de diversos cursos, talleres, diplomados, conferenci
                                     <div class=clear></div>
                                 </div>
                             </div>
-						
-						
-						
-					
+
+
+
+
                             <div class=clear></div>
                     </section>
                 </div>
-			
-			
+
+
 			<div class="section-container container">
-				
+
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
-                                    
+
                                 </div>
                             <div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
@@ -879,7 +879,7 @@ Ponente y participante en   de diversos cursos, talleres, diplomados, conferenci
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/JOSE_CHACON.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. JOSÉ LUIS CHACÓN RODRÍGUEZ</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-30>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -929,11 +929,11 @@ Autor de publicaciones en la revista indexada Lecturas Jurídicas  y la revista 
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/VICENTE_SOLIS.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. VICENTE SOLÍS ARANA</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-31>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Integrante de la Comisión Redactora del Nuevo y Código Civil para la CDMX. <br> 
+                                                                    Integrante de la Comisión Redactora del Nuevo y Código Civil para la CDMX. <br>
 FORMACIÓN ACADÉMICA:<br>
 •	Doctor en Derecho.<br>
 •	Maestro en Derecho Civil y Familiar. <br>
@@ -948,7 +948,7 @@ DOCENCIA:<br>
 Universidad Nacional Autónoma de México. Facultad de Derecho. C.U.
 Desde el año 2000, actualmente es Profesor de todos los cursos de Derecho Civil.
 Conductor del Programa Jurídico “CONTRAFIRMA”, en Canal Ius Multimedia, estación de radio de la Facultad de Derecho de la UNAM. <br>
-Vicepresidente del Colegio de Profesores de Derecho Civil de la UNAM. 
+Vicepresidente del Colegio de Profesores de Derecho Civil de la UNAM.
 Profesor Invitado en diversas Universidades, Escuelas e Institutos del País, y Centros e Institutos de Capacitación Empresarial, Notarial y de la Judicatura, principalmente a nivel postgrado.<br>
 
 																</h3>
@@ -961,13 +961,13 @@ Profesor Invitado en diversas Universidades, Escuelas e Institutos del País, y 
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/MALEY_INFANTE.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. MALEY INFANTE MORENO</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-32>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Actualmente es Directora General del Centro de Ética Judicial desde octubre 2021. <br>
 
-Licenciada en Derecho en (2009 – 2014). egresada de la Universidad Panamericana.<br> 
+Licenciada en Derecho en (2009 – 2014). egresada de la Universidad Panamericana.<br>
 Cursó la Especialidad en Derecho en (2014 – 2015). En la Universidad Panamericana. <br>
 
 Cargos: <br>
@@ -982,7 +982,7 @@ Maley Infante Moreno, Directora General del Centro de Ética Judicial, presentó
 
 Experiencia académica <br>
 
-Maestra en el Centro de Estudios Universitarios, Universidad Latinoamericana, Instituto Nacional de Desarrollo Jurídico, Instituto de Ciencias Jurídicas de Egresados de la UNAM campus Aragón e Instituto de Estudios Judiciales del Tribunal Superior de Justicia del Distrito Federal, Universidad Tepantlato, Barra Nacional de Abogados, ponente en múltiples cursos y talleres en el Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México. 
+Maestra en el Centro de Estudios Universitarios, Universidad Latinoamericana, Instituto Nacional de Desarrollo Jurídico, Instituto de Ciencias Jurídicas de Egresados de la UNAM campus Aragón e Instituto de Estudios Judiciales del Tribunal Superior de Justicia del Distrito Federal, Universidad Tepantlato, Barra Nacional de Abogados, ponente en múltiples cursos y talleres en el Instituto de Estudios Judiciales del Tribunal Superior de Justicia de la Ciudad de México.
 Obra editorial.<br>
 
 
@@ -995,7 +995,7 @@ Participación en el ejemplar Conoce tus Derechos en Materia Familiar, y en el C
 Cursos y talleres <br>
 
 
-Ponente y participante en   de diversos cursos, talleres, diplomados, conferencias, mesas redondas, relativos a la materia familiar, psicología, derechos humanos, equidad de género, docencia jurídica, curso de litigación en juicios orales impartido por el Departamento de Justicia de los Estados Unidos de Norteamérica en San Juan Puerto Rico, así como, el de la Universidad de Nebraska. 
+Ponente y participante en   de diversos cursos, talleres, diplomados, conferencias, mesas redondas, relativos a la materia familiar, psicología, derechos humanos, equidad de género, docencia jurídica, curso de litigación en juicios orales impartido por el Departamento de Justicia de los Estados Unidos de Norteamérica en San Juan Puerto Rico, así como, el de la Universidad de Nebraska.
 <br>
 
 																</h3>
@@ -1008,23 +1008,23 @@ Ponente y participante en   de diversos cursos, talleres, diplomados, conferenci
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/EMMANUEL_ROA.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. EMMANUEL ROA ORTIZ</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-33>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Originario de Morelia, Michoacán, es Licenciado en Derecho por la Facultad de Derecho y Ciencias Sociales de la Universidad Michoacana de San Nicolás de Hidalgo (Mejor Promedio de la Generación 86-91; Medalla al Mérito Académico “Adolfo Cano”; Mejor Estudiante de México 1991 en el área de Derecho); Maestro en Derecho Comunitario Europeo por la Universidad Autónoma de Madrid, España; Candidato a Doctor en Derecho Constitucional por la Universidad Complutense de Madrid, España.<br>
- 
+
 Asimismo, tiene estudios de especialización en Derecho Privado por la Universidad de Salamanca, España; en Derecho Comunitario Europeo por la Universidad de Granada, España; en Integración Económica por la Universidad Carlos III de Madrid, España; y es Diplomado en Altos Estudios Internacionales por la Sociedad de Estudios Internacionales de Madrid, España.<br>
-           
+
 Ha desarrollado estancias académicas en las universidades de Friburgo, Suiza; y de Amsterdam, Holanda y cursado estudios de especialización en la Academia de Derecho Internacional de La Haya, Holanda.<br>
- 
+
 De abril de 1999 a enero de 2001 fungió como Coordinador del Programa de Educación Judicial a Distancia en el Instituto de Especialización Judicial del Supremo Tribunal de Justicia del Estado de Michoacán. A partir de febrero de 2001 se desempeñó como Director del mismo Instituto de Especialización Judicial, actualmente Instituto de la Judicatura del Consejo del Poder Judicial del Estado de Michoacán.<br>
 
 
 Profesor de Derecho Internacional Público y Privado en la Facultad de Derecho y Ciencias Sociales de la Universidad Michoacana de San Nicolás de Hidalgo; y en la Escuela de Derecho en la Universidad Latina de América, en donde imparte las asignaturas de Derecho Internacional Privado, Deontología Jurídica y Derecho Arbitral.<br>
- 
+
 Es también Profesor de la División de Estudios de Posgrado de la Facultad de Derecho y Ciencias Sociales de la propia Universidad Michoacana, impartiendo Sistemas Jurídicos Contemporáneos y Arbitraje Internacional. Desde junio del año 2001 al 1º. de septiembre de 2005 fungió como Jefe de la propia División de Estudios de Posgrado. Coordinador de la Maestría en Derecho Constitucional de la Universidad Latina de América en el período septiembre de 2005 a febrero de 2007. Ha sido también Profesor visitante en Universidades nacionales, impartiendo cursos de su especialidad (Universidad de Quintana Roo y La Salle Bajío, Gto).<br>
- 
+
 Es autor de varios artículos, notas, semblanzas biográficas y recensiones bibliográficas que han sido publicados en diversas revistas y órganos de información jurídicos tanto del país como del extranjero, abordando temas de su especialidad: Derecho Internacional Público, Derecho Comparado, Derecho de la Integración y Derecho Comunitario Europeo.<br>
 																</h3>
                                                             </div>
@@ -1038,21 +1038,21 @@ Es autor de varios artículos, notas, semblanzas biográficas y recensiones bibl
                                     <div class=clear></div>
                                 </div>
                             </div>
-						
-						
-						
-					
+
+
+
+
                             <div class=clear></div>
                     </section>
                 </div>
-				
-				
+
+
 				<div class="section-container container">
-				
+
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
-                                    
+
                                 </div>
                             <div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
@@ -1063,7 +1063,7 @@ Es autor de varios artículos, notas, semblanzas biográficas y recensiones bibl
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/VIGO.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. RODOLFO LUIS VIGO</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-40>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1079,13 +1079,13 @@ Es autor de varios artículos, notas, semblanzas biográficas y recensiones bibl
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_2_esc_jud/red/images/img_ponentes/JESUS_IGNACIO_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. JESÚS IGNACIO ESCOBEDO CORREA</h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-41>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     FORMACIÓN:<br>
 
-Abogado por la Universidad de Guadalajara, Maestro de en Administración Pública de la Universidad 
+Abogado por la Universidad de Guadalajara, Maestro de en Administración Pública de la Universidad
 del Valle de México, campus Guadalajara, Doctorante en Administración Pública en el Instituto de Administración Pública del Estado de Jalisco y sus Municipios A.C <br>
 
 DOCENCIA E INVESTIGACIÓN: <br>
@@ -1111,25 +1111,25 @@ EXPERIENCIA LABORAL:<br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    
+
                                                     <div class=gdlr-speaker-item-content>
                                                       <div class=gdlr-lightbox-form id=gdlr-form-32>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                
+
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"></div>
                                                     </div>
                                                 </li>
-												
+
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    
+
                                                     <div class=gdlr-speaker-item-content>
-                                                        
-														
+
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-33>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                
+
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"></div>
@@ -1141,14 +1141,14 @@ EXPERIENCIA LABORAL:<br>
                                     <div class=clear></div>
                                 </div>
                             </div>
-						
-						
-						
-					
+
+
+
+
                             <div class=clear></div>
                     </section>
                 </div>
-				
+
                 </div>
             </div>
         </div>
@@ -1232,17 +1232,17 @@ EXPERIENCIA LABORAL:<br>
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 
