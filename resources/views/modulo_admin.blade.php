@@ -87,9 +87,8 @@
                                 </li>
 
                                 <li class="menu-item">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    <a class="dropdown-item"
+                                       onclick="regLogout();event.preventDefault();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -287,6 +286,7 @@
     </div>
 
     <script src='administrador/red/js/jquery/jquery.js'></script>
+    <script src='administrador/red/js/jquery/jquery.js'></script>
     <script src='administrador/red/js/jquery/jquery-migrate.min.js'></script>
     <script src='administrador/red/plugins/superfish/js/superfish.js'></script>
     <script src='administrador/red/js/hoverIntent.min.js'></script>
@@ -298,6 +298,7 @@
     <script src='administrador/red/plugins/fancybox/helpers/jquery.fancybox-thumbs.js'></script>
     <script src='administrador/red/plugins/flexslider/jquery.flexslider.js'></script>
     <script src='administrador/red/plugins/jquery.isotope.min.js'></script>
-    <script src='administrador/red/js/plugins.min.js'></script>
+    <script src="js/jquery.min.js"></script>
+    <script src='js/bitacoraLogout.js'></script>
 </body>
 </html>

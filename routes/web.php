@@ -7,6 +7,7 @@ use App\Http\Controllers\bcryptPassword;
 use App\Http\Controllers\EstatusController;
 use App\Http\Controllers\AceptadoRechazadoController;
 use App\Http\Controllers\CalendarioController;
+use App\Http\Controllers\LogoutBitacoraController;
 use App\Mail\RegistroMail;
 use Illuminate\Support\Facades\Mail;
 /*
@@ -37,6 +38,7 @@ Route::post('/rechazarUsuario', [EstatusController::class, 'rechazarUsuario'])->
 Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
 Route::post('/usuarioRechazado', [AceptadoRechazadoController::class, 'usuarioRechazado'])->name('usuarioRechazado');
 Route::post('/validarInicio', [AceptadoRechazadoController::class, 'validaInicioRed'])->name('validarInicio');
+Route::get('/regLogout', [LogoutBitacoraController::class, 'registraLogout'])->name('regLogout');
 
 Route::post('/usuarioConstancias', [generaConstancia::class, 'descargaConstancia'])->name('usuarioConstancias');
 //Route::post('/calendario', [CalendarioController::class, 'redCalendario'])->name('calendario');
