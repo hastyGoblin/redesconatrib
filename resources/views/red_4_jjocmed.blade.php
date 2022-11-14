@@ -737,6 +737,8 @@ JUDICIAL DE CHILE PARA LOS PROGRAMAS DE FORMACION DE FUTUROS JUECES CHILENOS.<br
     <script src='plugins/jquery.isotope.min.js'></script>
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
+    <script src="js/jquery.min.js"></script>
+    <script src='js/bitacoraLogout.js'></script>
 
 
 
