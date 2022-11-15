@@ -529,6 +529,7 @@
         </footer>
     </div>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
 
@@ -545,7 +546,7 @@
     <script src='plugins/jquery.isotope.min.js'></script>
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
-    <script src="js/jquery.min.js"></script>
+
     <script src='js/bitacoraLogout.js'></script>
 
 

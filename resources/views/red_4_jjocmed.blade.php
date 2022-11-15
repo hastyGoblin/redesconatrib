@@ -104,7 +104,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -143,15 +143,15 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-					
-					
+
+
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -173,11 +173,11 @@
                                     </div>
 
                                 <!-- inicia dia -->
-									
+
                                     <div class="gdlr-session-item-tab-content gdlr-tab-1 gdlr-active">
-										
+
 										<div class="gdlr-session-item-content">
-                                                
+
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
@@ -209,7 +209,7 @@
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            
+
                                              <div class="clear"></div>
                                             </div>
 										<div class="gdlr-session-item-content-wrapper">
@@ -230,7 +230,7 @@
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            
+
                                              <div class="clear"></div>
                                             </div>
 										<div class="gdlr-session-item-content-wrapper">
@@ -252,10 +252,10 @@
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            
+
                                              <div class="clear"></div>
                                             </div>
-										
+
 										<div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
@@ -263,8 +263,8 @@
                                                     <h3 class="gdlr-session-break-title">Sesión de preguntas y respuestas</h3></div>
                                                 <div class=clear></div>
                                          </div>
-										
-										
+
+
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -285,7 +285,7 @@
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            
+
                                              <div class="clear"></div>
                                             </div>
 										<div class=gdlr-session-item-content-wrapper>
@@ -297,13 +297,13 @@
                                          </div>
                                 </div>
 							 </div>
-									
-									
+
+
                                     <!-- termina dia -->
-									
+
 									<!-- inicia dia -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                        
+
                                        <div class="gdlr-session-item-content-wrapper">
 										   <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
@@ -334,14 +334,14 @@
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Johan M. Quessnay Casusol</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Juez Superior de la Tercera Sala Civil de la Corte de Lima  (Perú)</div>
-															
-															
+
+
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            
+
                                              <div class="clear"></div>
                                             </div>
 										<div class=gdlr-session-item-content-wrapper>
@@ -364,17 +364,17 @@
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Gloria Negroni</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Juez de Familia Poder Judicial de Chile</div>
-															
-														
+
+
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            
+
                                              <div class="clear"></div>
                                             </div>
-										
+
                                         <div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
@@ -382,18 +382,18 @@
                                                     <h3 class="gdlr-session-break-title">Sesión de preguntas y respuestas</h3></div>
                                                 <div class=clear></div>
                                          </div>
-										
+
 								  </div>
-							
-									
-									
-											
+
+
+
+
                                     <!-- termina dia -->
-									
+
 									<!-- inicia dia -->
-									
+
 									<div class="gdlr-session-item-tab-content gdlr-tab-3">
-                                        
+
                                        <div class="gdlr-session-item-content-wrapper">
 										   <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
@@ -414,13 +414,13 @@
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:00 a 18:00 hrs.</div>
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
-															
+
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
                                                 <h3 class="gdlr-session-item-title">El enfoque de la psicología jurídica en las actuaciones y decisiones judiciales. Una visión interdisciplinaria</h3>
-										
-                                                
-                                         
+
+
+
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Marlene Hernández Galván</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">(México)</div>
@@ -428,14 +428,14 @@
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Manuel Galván Castañeda</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">(México)</div>
-															
-															
+
+
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
-                                            
+
                                              <div class="clear"></div>
                                             </div>
 										<div class=gdlr-session-item-content-wrapper>
@@ -455,24 +455,24 @@
                                                             <div class="session-speaker-list">
 																<div class="gdlr-session-item-excerpt">Conferencia magistral</div>
 																<h3 class="gdlr-session-item-title">Dirección de Audiencias, herramientas indispensables</h3>
-											
-                                                
+
+
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Diego Zalamea</a></div>
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Ecuador</div>
-															
-														
+
+
                                                         </div>
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
-                                                
+
                                               </div>
                                              <div class="clear"></div>
                                             </div>
-									
+
                                         <div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
@@ -487,11 +487,11 @@
                             </div>
                             <div class=clear></div>
                         </div>
-                    </div> 
+                    </div>
                </section>
-					
-		        <!-- termina dia -->	
-					
+
+		        <!-- termina dia -->
+
                 <div class="section-container container">
                     <section id="ponentescdmx">
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -526,7 +526,7 @@
                                                         <div class=gdlr-lightbox-form id=gdlr-form-5>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Actual Ministro de Corte de Apelaciones de Temuco, Chile, Director de la Asociación Nacional de Magistradas y Magistrados de Chile (ANM), Director Concejero de la Academia Judicial de Chile.. Doctorando en Derecho de la Universidad Complutense de Madrid. Magíster de Derecho de la Universidad Diego Portales de Chile. Pos titulado en Ciencias Políticas, Diplomado en Administración, y Diplomado en Derechos Humanos. Monitor de la Reforma Procesal Penal y Tribunales de Familia de la Academia Judicial de Chile. Autor del Libro Delito e Informática y de diversos artículos sobre la reforma judicial en Chile, publicados en Latinoamérica y Estados Unidos de Norteamérica. Miembro Fundador de la Escuela Judicial de América Latina (EJAL)  
+                                                                    Actual Ministro de Corte de Apelaciones de Temuco, Chile, Director de la Asociación Nacional de Magistradas y Magistrados de Chile (ANM), Director Concejero de la Academia Judicial de Chile.. Doctorando en Derecho de la Universidad Complutense de Madrid. Magíster de Derecho de la Universidad Diego Portales de Chile. Pos titulado en Ciencias Políticas, Diplomado en Administración, y Diplomado en Derechos Humanos. Monitor de la Reforma Procesal Penal y Tribunales de Familia de la Academia Judicial de Chile. Autor del Libro Delito e Informática y de diversos artículos sobre la reforma judicial en Chile, publicados en Latinoamérica y Estados Unidos de Norteamérica. Miembro Fundador de la Escuela Judicial de América Latina (EJAL)
                                                                     <br>
                                                                 </h3>
                                                             </div>
@@ -551,7 +551,7 @@
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-8 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-                                                                                              
+
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Carlos_Polanco.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
@@ -583,8 +583,8 @@
                                     <div class=clear></div>
                                 </div>
                             </div>
-						
-						
+
+
 						<div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
@@ -639,7 +639,7 @@
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Semblanza curricular:<br>Es maestro en psicología social y licenciado en psicología por la Benemérita Universidad Autónoma de Puebla, titulado con mención honorífica. Autor de la tesis de maestría Representaciones sociales del agresor sexual en el derecho penal. Una aproximación desde la psicología social jurídica, en la que contribuye teóricamente a la construcción de la psicología social jurídica. Pionero de la psicología jurídica en México que ha contribuido a la difusión de este campo en el país por más de 25 años. Es autor de artículos científicos en el campo de la psicología jurídica difundidos a nivel nacional e internacional. Cibercongresista y ex Director Científico en México de la Asociación Latinoamericana de Psicología Jurídica y Forense (ALPJF). Su práctica social la despliega, en sociedad con un grupo de juristas, como Presidente Fundador del Instituto Mexicano de Psicología Jurídica A.C., en donde funge como profesor investigador, perito en psicología y mediador.<br>Director científico y creador de los Diplomados: «Psicología Jurídica de la Familia», «Psicología Jurídica y Sistema Penal Acusatorio», «Psicología Jurídica y Forense», y «Psicología Jurídica y Forense Victimológica en el Proceso Penal Acusatorio». <br> Ha sido invitado como Conferencista Magistral por la Universidad de la Habana, Cuba, en el marco del VIII Congreso Internacional de Estudiantes de Psicología.<br> Autor del libro: Psicología jurídica, forense y sistema penal acusatorio Enigmas de la mente criminal desde un enfoque construccionista (Inédito, IMEPSIJ). <br> Coautor de los libros: <br>a) Psicología social. Perspectivas y aportaciones hacia un mundo posible (Asociación Mexicana de Alternativas en Psicología, AMAPSI, 1997).<br> b) Introducción a la psicología jurídica (2008).<br> México: Trillas.<br>c) Criminología. Retos y perspectivas contemporáneas (BUAP, 2012).<br>d) Victimología desde America Latina. Enfoque psico jurídico (ALPJF, 2015).<br>e) Psicología jurídica, derechos humanos y derecho penal (2019).<br> Barranquilla, Colombia, ALPJF/Ediciones de la Universidad del Norte.<br> Articulista colaborador de Psico-Logos, Revista de la Facultad de Psicología de la Universidad Autónoma de Sinaloa (UAS).<br> Ex Delegado Estatal en Puebla por la Academia Mexicana de Ciencias Periciales S.C. Se formó como psicólogo forense en el Instituto de Formación Profesional de la Procuraduría General de Justicia del Estado de Puebla, en donde fungió durante 10 años como Perito en Psicología de la Agencia Especializada en la Atención e Investigación de Delitos Sexuales. <br>Como perito, se ha especializado en la Investigación y Evaluación Psicológica Forense del Daño Psicológico en las Víctimas de Delitos Violentos, del Maltrato y Abuso Sexual Infantil, y de la Violencia de Género. <br>Es creador del Protocolo de Investigación Psicológica Forense Construccionista (PIPFC), que es un modelo alternativo a la psicología forense tradicional y que se caracteriza por proponer un análisis integrativo de los enfoques psicológico y psicosocial.<br> Investigador y activista social que, desde el 2015 y a través del Instituto Mexicano de Psicología Jurídica, solicitó la Alerta de Violencia de Género para el Estado de Puebla. Ha colaborado activamente con el Instituto Nacional de las Mujeres y con el Equipo de Trabajo aportandocasos de víctimas de violencia intrafamiliar y de género. <br>Profesor invitado por distintas universidades públicas y privadas en distintos estados de la República, para impartir más de 200 conferenciasmagistrales, cursos, talleres  psicología jurídica.<br>Docente del curso Atención y prevención de la violencia intrafamiliar impartido en los Tribunales Superiores de Justicia del país, en donde presenta los temas El informe pericial en psicología desde la perspectiva de género y La violencia intrafamiliar y de género desde la Psicología Jurídica y Forense.<br> Catedrático invitado y fundador en los siguientes posgrados:<br> a) Doctorado en Derecho Judicial, Universidad Judicial del Poder Judicial del Estado de Durango, en donde imparte la materia de “Psicología Judicial”.<br> b) Doctorado en Psicología, Universidad de Tijuana, en donde imparte la materia de “Psicología Jurídica”.<br> c) Maestría en Psicología Forense, Universidad de San Carlos de Guatemala.<br> d) Maestría en Atención y Prevención de la Violencia, Escuela Libre de Psicología.<br> e) Maestría en Criminología y Criminalística, Colegio Libre de Estudios Universitarios.<br> f) Maestría en Psicología Jurídica y Criminología, Instituto Universitario Puebla.<br> g) Maestría en Criminología de la Universidad del Valle de Tlaxcala.<br>
-													
+
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -661,7 +661,7 @@
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-7 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-                                                
+
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/diego.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
@@ -675,7 +675,7 @@
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-6 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
-                                                </li>                                                                                                	
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -686,7 +686,7 @@
                     </section>
                 </div>
                 {{-- creo que este div esta de mas --}}
-                </div> 
+                </div>
             </div>
         </div>
 
@@ -702,6 +702,7 @@
         </footer>
     </div>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
 
@@ -718,7 +719,7 @@
     <script src='plugins/jquery.isotope.min.js'></script>
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
-    <script src="js/jquery.min.js"></script>
+
     <script src='js/bitacoraLogout.js'></script>
 
 
@@ -771,17 +772,17 @@
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 

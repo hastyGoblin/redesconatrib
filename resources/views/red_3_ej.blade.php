@@ -104,7 +104,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -149,7 +149,7 @@
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -159,7 +159,7 @@
                                             <div class="gdlr-session-head-day">D&iacute;a 1</div>
                                             <div class="gdlr-session-head-date">14 de noviembre de 2022</div>
                                         </div>
-                                       
+
                                         <div class="clear"></div>
                                     </div>
 
@@ -219,7 +219,7 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
                                                <h3 class="gdlr-session-item-title">Introducción a la sesión</h3>
-												
+
 											    <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
@@ -273,7 +273,7 @@
 																<div class="gdlr-session-item-excerpt">Ponente:</div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Ma Fabiola Alanís Sámano</a></div>
 																<div class="gdlr-session-item-excerpt">Comisionada Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM).</div>
-                                                               
+
 
                                                             </div>
                                                         </div>
@@ -293,7 +293,7 @@
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-										
+
 										<div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -324,7 +324,7 @@
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-										
+
                                         <div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
@@ -465,11 +465,11 @@
                                                     <h3 class="gdlr-session-break-title">Conclusiones y acuerdos del encuentro</h3></div>
                                                 <div class=clear></div>
                                             </div>
-    
+
                                     </div>
                                     <!-- termina dia 1 -->
-                                    
-                                     
+
+
 
                                 </div>
                                 <div class=clear></div>
@@ -478,11 +478,11 @@
                         </div>
                             </div>
                         </div>
-                        
+
                     </section>
                     <div class="section-container container">
                      <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONENTES</h3>
@@ -491,10 +491,10 @@
                             <div class=clear></div>
                      </section>
                     </div>
-				
+
 		<div class="section-container container">
                     <section>
-                        
+
                          <div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
@@ -507,7 +507,7 @@
 														 </h3>
 														<div class="gdlr-session-item-excerpt">Coordinadora de la Red Nacional de Estadísticas Judiciales de la CONATRIB.
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-16>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -525,7 +525,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. ARÍSTIDES RODRIGO GUERRERO GARCÍA</h3>
 														<div class="gdlr-session-item-excerpt">Coordinador de la Comisión de Protección de Datos Personales del Sistema Nacional de Transparencia.
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-17>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -543,7 +543,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. José Guillermo Castillo Koschnick</h3>
 														<div class="gdlr-session-item-excerpt"> Director General Adjunto de Políticas y Censos Nacionales de Gobierno del Instituto Nacional de Estadística y Geografía (INEGI).
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-18>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -562,7 +562,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. María Jacqueline Martínez Uriarte</h3>
 														<div class="gdlr-session-item-excerpt">Directora General de Gestión Judicial del Consejo de la Judicatura Federal.
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-19>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -591,7 +591,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Alberto Menéndez Vázquez </h3>
 														<div class="gdlr-session-item-excerpt">Director de Estadísticas. Unidad de Enlace para la Reforma al Sistema de Justicia Laboral
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-20>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -609,7 +609,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRA. MARTHA BEATRIZ VARGAS ROJAS</h3>
 														<div class="gdlr-session-item-excerpt">Directora de Estadística de la Presidencia.
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-21>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -627,7 +627,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Ing. Hernán Sánchez Zúñiga</h3>
 														<div class="gdlr-session-item-excerpt">Jefe de Unidad Departamental de Apoyo Tecnológico para la Generación de Estadística.
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-22>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -645,7 +645,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DRA. MA FABIOLA ALANÍS SÁMANO</h3>
 														<div class="gdlr-session-item-excerpt">Comisionada Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM).
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-23>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -674,7 +674,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">LIC. JESÚS CONTRERAS MARTÍNEZ</h3>
 														<div class="gdlr-session-item-excerpt">Director General de Normatividad y Asistencia a Entidades Federativas de la Secretaría del Trabajo y Previsión Social.
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-24>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -692,7 +692,7 @@
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Silvia Gabriela Ortiz Rascón</h3>
 														<div class="gdlr-session-item-excerpt">Secretaria de Estudio y Cuenta de la SCJN, en representación de la Ministra Yasmín Esquivel Mossa.
                                                         </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-25>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -704,23 +704,23 @@
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-25 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-                                                
+
 												<li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail></div>
                                                     <div class=gdlr-speaker-item-content>
                                                        <div class=gdlr-lightbox-form id=gdlr-form-22>
-                                                            
+
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail></div>
                                                     <div class=gdlr-speaker-item-content>
                                                        <div class=gdlr-lightbox-form id=gdlr-form-22>
-                                                            
+
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </li>
                                             </ul>
@@ -729,7 +729,7 @@
                                     <div class=clear></div>
                                 </div>
                             </div>
-					
+
                             <div class=clear></div>
                     </section>
                 </div>
@@ -749,6 +749,7 @@
         </footer>
     </div>
 
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
 
@@ -765,7 +766,7 @@
     <script src='plugins/jquery.isotope.min.js'></script>
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
-    <script src="js/jquery.min.js"></script>
+
     <script src='js/bitacoraLogout.js'></script>
 
 
@@ -817,17 +818,17 @@
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 
