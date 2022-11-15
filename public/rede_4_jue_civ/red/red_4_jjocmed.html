@@ -10,16 +10,16 @@
 
     <title>Red &#8211;NACIONAL DE JUEZAS Y JUECES ORALES CIVILES, MERCANTILES Y DE EXTINCIÓN DE DOMINIO</title>
 
-    <link rel="stylesheet" href="rede_4_jue_civ/red/css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/plugins/dl-menu/component.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/css/style-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/css/style-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_4_jue_civ/red/css/master-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/superfish/css/superfish.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/dl-menu/component.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href=""> <img src="{!! asset('rede_4_jue_civ/red/images/logo_red_1.png') !!}" alt=""> </a>
+                        <a href="index.html"> <img src="images/logo_red_1.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -68,16 +68,6 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                <li class="menu-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a class="dropdown-item"
-                                       onclick="regLogout();event.preventDefault();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
                             </ul>
                         </nav>
                         <div class="clear"></div>
@@ -92,7 +82,7 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_4_jue_civ/red/upload/juezas_jueces.jpg'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('upload/juezas_jueces.jpg'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -143,8 +133,6 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-					
-					
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -165,15 +153,14 @@
                                             <div class="gdlr-session-head-day">D&iacute;a 2</div>
                                             <div class="gdlr-session-head-date">15 de Noviembre de 2022</div>
                                         </div>
-										<div class="gdlr-session-item-head-info" data-tab="gdlr-tab-3">
+										<div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-3">
                                             <div class="gdlr-session-head-day">D&iacute;a 3</div>
                                             <div class="gdlr-session-head-date">16 de Noviembre de 2022</div>
                                         </div>
                                         <div class="clear"></div>
                                     </div>
 
-                                <!-- inicia dia -->
-									
+                                    <!-- inicia dia -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-1 gdlr-active">
 										
 										<div class="gdlr-session-item-content">
@@ -301,7 +288,7 @@
 									
                                     <!-- termina dia -->
 									
-									<!-- inicia dia -->
+									
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
                                         
                                        <div class="gdlr-session-item-content-wrapper">
@@ -309,7 +296,7 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gssOQ6Fy6wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/gP-4OZDSbLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
 															    <!--<div class="entry-title">
@@ -389,8 +376,6 @@
 									
 											
                                     <!-- termina dia -->
-									
-									<!-- inicia dia -->
 									
 									<div class="gdlr-session-item-tab-content gdlr-tab-3">
                                         
@@ -472,28 +457,29 @@
                                               </div>
                                              <div class="clear"></div>
                                             </div>
-									
+										
                                         <div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
                                                     <div class=session-break-info><i class="fa fa-clock-o"></i>20:00  hrs.</div>
-                                                    <h3 class="gdlr-session-break-title">Cierre de los trabajos de la Red</h3>
-                                                </div>
+                                                    <h3 class="gdlr-session-break-title">Cierre de los trabajos de la Red</h3></div>
                                                 <div class=clear></div>
                                          </div>
+										
 								  </div>
+                                 
                                 </div>
                                 <div class=clear></div>
                             </div>
                             <div class=clear></div>
                         </div>
-                    </div> 
-               </section>
-					
-		        <!-- termina dia -->	
-					
-                <div class="section-container container">
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <div class="section-container container">
                     <section id="ponentescdmx">
+                        
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
@@ -506,13 +492,14 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_4_jue_civ/red/images/img_ponentes/Ulises_Canosa_.png" alt width=400 height=400></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="images/img_ponentes/Ulises_Canosa_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr . Ulises Canosa Suarez</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-2>
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                  <h3 style="text-align: justify">
                                                                    Presidente del Instituto Colombiano de Derecho Procesal. Miembro del Instituto Iberoamericano de Derecho Procesal, de la  Academia Colombiana de Jurisprudencia y del Colegio de Abogados  Comercialistas. Miembro de la Comisión Redactora y de la Revisora de la Ley  1564 de 2012 o Código General del Proceso de Colombia, lo mismo que de la Comisión que redactó el Decreto de digitalización de la justicia colombiana, 806 de 2020, que se convirtió en legislación permanente con la Ley 2213 de 2022. Abogado de la Universidad Libre de Colombia, Doctor en Derecho Cum Laude de la Universidad de Salamanca, con maestría en Pruebas de la Universidad de Girona y maestría en Derechos Humanos en la Universidad Alfonso X UAX de España, con cursos de Especialización en Derecho Procesal y Derecho Financiero en la Universidad del Rosario, Derecho Comercial de la Universidad Externado, Derecho Constitucional en la Universidad de Salamanca y estudios de Dirección Empresarial en el Instituto Europeo de Administración de Negocios INSEAD, en la Universidad de Navarra en España y en el INALDE de Colombia. Ha sido profesor en pregrado y cursos de especialización y maestría en las Universidades de los Andes, Externado de Colombia, Rosario, ICESI y Libre, entre otras. Recibió el premio a la Docencia de Excelencia Juan Agustín Uricoechea y Navarro del Colegio Mayor de Nuestra Señora del Rosario en el 2005. Es Miembro de la Junta Directiva de la Corporación Excelencia en la Justicia. Ha sido Director Jurídico y Miembro de junta directiva de varias empresas privadas de Colombia.<br>
+
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -520,14 +507,15 @@
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/ALE_VERA.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/ALE_VERA.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Ministro Alejandro Vera Quilodrán  </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-5>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Actual Ministro de Corte de Apelaciones de Temuco, Chile, Director de la Asociación Nacional de Magistradas y Magistrados de Chile (ANM), Director Concejero de la Academia Judicial de Chile.. Doctorando en Derecho de la Universidad Complutense de Madrid. Magíster de Derecho de la Universidad Diego Portales de Chile. Pos titulado en Ciencias Políticas, Diplomado en Administración, y Diplomado en Derechos Humanos. Monitor de la Reforma Procesal Penal y Tribunales de Familia de la Academia Judicial de Chile. Autor del Libro Delito e Informática y de diversos artículos sobre la reforma judicial en Chile, publicados en Latinoamérica y Estados Unidos de Norteamérica. Miembro Fundador de la Escuela Judicial de América Latina (EJAL)  
-                                                                    <br>
+<br>
+													
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -535,48 +523,58 @@
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_4_jue_civ/red/images/img_ponentes/Johan_Quesnay_.png" alt width=400 height=400></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="images/img_ponentes/Johan_Quesnay_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">DR. JOHAN QUESNAY CASUSOL</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-8>
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                  <h3 style="text-align: justify">
-                                                                    Doctor en Derecho y Ciencias Políticas.<br>
-                                                                    Maestro en Derecho con mención en Derecho Civil y Derecho Comercia.l<br>
-                                                                    Juez Titular Especializado Civil.<br>
-                                                                    Juez Coordinador del Módulo Civil Corporativo de Litigación Oral de Trujillo. <br>
+                                                                
+Doctor en Derecho y Ciencias Políticas.<br>
+Maestro en Derecho con mención en Derecho Civil y Derecho Comercia.l<br>
+Juez Titular Especializado Civil.<br>
+Juez Coordinador del Módulo Civil Corporativo de Litigación Oral de Trujillo. <br>
+
                                                                 </h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-8 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-                                                                                              
+                                               
+                                                
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Carlos_Polanco.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Carlos_Polanco.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Carlos E. Polanco Gutiérrez.</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Abogado – Universidad Nacional de San Agustín de Arequipa,
-                                                                    Doctor en Derecho por la Universidad Nacional San Agustín de Arequipa.<br>
-                                                                    Magíster en Administración de Negocios por la Pontificia Universidad Católica del Perú PUCP - (MBA).<br>
-                                                                    Máster en Tutela Judicial de Derechos y Jurisdicción Contencioso - Administrativa por la Universidad de Jaén - España.
-                                                                    Especialización en:<br>
-                                                                    Litigación oral, Universidad de Salamanca España y Centro de Estudios para la Justicia - CEJA, Chile
-                                                                    Argumentación Jurídica - Universidad de Alicante España.<br>
-                                                                    Varios libros publicados, entre otros: La litigación oral en el proceso civil; Litigación oral, el juez y los abogados en el proceso
-                                                                    Docente universitario
-                                                                    PUCP, U. Católica Santa María Arequipa, U. San Agustín de Arequipa y U. Privada de Tacna
-                                                                    Juez del 7mo. JUZGADO ESPECIALIZADO EN LO CIVIL (litigación oral)
-                                                                    <br>
+Doctor en Derecho por la Universidad Nacional San Agustín de Arequipa.<br>
+Magíster en Administración de Negocios por la Pontificia Universidad Católica del Perú PUCP - (MBA).<br>
+Máster en Tutela Judicial de Derechos y Jurisdicción Contencioso - Administrativa por la Universidad de Jaén - España.
+Especialización en:<br>
+Litigación oral, Universidad de Salamanca España y Centro de Estudios para la Justicia - CEJA, Chile
+Argumentación Jurídica - Universidad de Alicante España.<br>
+
+Varios libros publicados, entre otros: La litigación oral en el proceso civil; Litigación oral, el juez y los abogados en el proceso
+
+Docente universitario
+PUCP, U. Católica Santa María Arequipa, U. San Agustín de Arequipa y U. Privada de Tacna
+Juez del 7mo. JUZGADO ESPECIALIZADO EN LO CIVIL (litigación oral)
+<br>
+
                                                                 </h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-6 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
+                                                
+                                                
+                                                
+												
                                             </ul>
                                         </div>
                                     </div>
@@ -585,46 +583,49 @@
                             </div>
 						
 						
+						
+						
 						<div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Gloria_Negroni_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Gloria_Negroni_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">GLORIA NEGRONI </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-9>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     ES ABOGADA, DE LA PONTIFICIA UNIVERSIDAD CATÓLICA DE CHILE, JUEZ DE FAMILIA EN
-                                                                    SANTIAGO DE CHILE DE DESDE ABRIL DE 2005,
-                                                                    ES DIVORCIADA, MADRE DE UN HIJO DE 20 AÑOS, ENZO.<br>
-                                                                    ES MASTER EN DERECHOS FUNDAMENTALES, FAMILIA, INFANCIA Y ADOLESCENCIA
-                                                                    UNIVERSIDAD JAEN Y MALAGA.<br>
-                                                                    DIPLOMADA EN DERECHO DE FAMILIA, DE LA UNIVERSIDAD DIEGO PORTALES, AÑO 2012;
-                                                                    ES DIPLOMADA EN MINDFULLNES: “LA MENTE COMO HERRAMIENTA DE TRABAJO Y
-                                                                    AUTOCUIDADO” UNIVERSIDAD DEL DESARROLLO, 2013;
-                                                                    ES MIEMBRO DEL PROGRAMA DE VISITANTES INTERNACIONALES DE LIDERAZGO, BECARIA
-                                                                    EMBAJADA DE ESTADOS UNIDOS DEL PROGRAMA TITULADO “LA LUCHA CONTRA EL
-                                                                    TRÁFICO DE PERSONAS Y VIOLENCIA CONTRA LA MUJER Y NIÑOS”, EN USA DE JULIO -
-                                                                    AGOSTO DE 2011;
-                                                                    INTEGRÓ LA TERCERA COMISIÓN PARA REVISAR EL CUMPLIMIENTO DEL CONVENIO DE LA
-                                                                    HAYA SOBRE ADOPCIÓN INTERNACIONAL, EN LA HAYA HOLANDA, JUNIO DE 2010;
-                                                                    PARTICIPO EN EL SEMINARIO INTERNACIONAL SOBRE VIOLENCIA DE GÉNERO REALIZADO EN
-                                                                    MADRID ORGANIZADO POR EL COMJIB, JUNIO 2009;
-                                                                    PARTICIPÓ EN EL SEMINARIO INTERNACIONAL SOBRE PROTECCIÓN JURISDICCIONAL DE LOS
-                                                                    DERECHOS DEL NIÑO ORGANIZADO POR UNICEF Y LA UNIVERSIDAD DIEGO PORTALES,
-                                                                    BOGOTA, COLOMBIA OCTUBRE DE 2008.-<br>
-                                                                    LE HA CORRESPONDIDO UNA ACTIVA PARTICIPACIÓN EN COMISIONES DEL SENADO Y
-                                                                    CÁMARA DE DIPUTADOS EN PROYECTOS DE LEY DE MODIFICACIÓN DE LA LEY DE
-                                                                    TRIBUNALES DE FAMILIA, CUIDADO PERSONAL, ALIMENTOS, VIOLENCIA INTRAFAMILIAR Y
-                                                                    UNIONES DE HECHO.<br>
-                                                                    REALIZA CLASES Y CHARLAS EN MATERIAS DE FAMILIA E INFANCIA, GESTION JUDICIAL, Y
-                                                                    OTROS TOPICOS EN ESCUELA DERECHO Y DE CIENCIAS SOCIALES DE LA UNIVERSIDAD DE
-                                                                    CHILE; UNIVERSIDAD FINIS TERRAE, UNIVERSIDAD UNIAC, UNIVERSIDAD ALBERTO
-                                                                    HURTADO, UNIVERSIDAD BERNARDO O´HIGGINS, Y ES DOCENTE Y TUTORA DE LA ACADEMIA
-                                                                    JUDICIAL DE CHILE PARA LOS PROGRAMAS DE FORMACION DE FUTUROS JUECES CHILENOS.<br>
+SANTIAGO DE CHILE DE DESDE ABRIL DE 2005,
+ES DIVORCIADA, MADRE DE UN HIJO DE 20 AÑOS, ENZO.<br>
+ES MASTER EN DERECHOS FUNDAMENTALES, FAMILIA, INFANCIA Y ADOLESCENCIA
+UNIVERSIDAD JAEN Y MALAGA.<br>
+DIPLOMADA EN DERECHO DE FAMILIA, DE LA UNIVERSIDAD DIEGO PORTALES, AÑO 2012;
+ES DIPLOMADA EN MINDFULLNES: “LA MENTE COMO HERRAMIENTA DE TRABAJO Y
+AUTOCUIDADO” UNIVERSIDAD DEL DESARROLLO, 2013;
+ES MIEMBRO DEL PROGRAMA DE VISITANTES INTERNACIONALES DE LIDERAZGO, BECARIA
+EMBAJADA DE ESTADOS UNIDOS DEL PROGRAMA TITULADO “LA LUCHA CONTRA EL
+TRÁFICO DE PERSONAS Y VIOLENCIA CONTRA LA MUJER Y NIÑOS”, EN USA DE JULIO -
+AGOSTO DE 2011;
+INTEGRÓ LA TERCERA COMISIÓN PARA REVISAR EL CUMPLIMIENTO DEL CONVENIO DE LA
+HAYA SOBRE ADOPCIÓN INTERNACIONAL, EN LA HAYA HOLANDA, JUNIO DE 2010;
+PARTICIPO EN EL SEMINARIO INTERNACIONAL SOBRE VIOLENCIA DE GÉNERO REALIZADO EN
+MADRID ORGANIZADO POR EL COMJIB, JUNIO 2009;
+PARTICIPÓ EN EL SEMINARIO INTERNACIONAL SOBRE PROTECCIÓN JURISDICCIONAL DE LOS
+DERECHOS DEL NIÑO ORGANIZADO POR UNICEF Y LA UNIVERSIDAD DIEGO PORTALES,
+BOGOTA, COLOMBIA OCTUBRE DE 2008.-<br>
+LE HA CORRESPONDIDO UNA ACTIVA PARTICIPACIÓN EN COMISIONES DEL SENADO Y
+CÁMARA DE DIPUTADOS EN PROYECTOS DE LEY DE MODIFICACIÓN DE LA LEY DE
+TRIBUNALES DE FAMILIA, CUIDADO PERSONAL, ALIMENTOS, VIOLENCIA INTRAFAMILIAR Y
+UNIONES DE HECHO.<br>
+REALIZA CLASES Y CHARLAS EN MATERIAS DE FAMILIA E INFANCIA, GESTION JUDICIAL, Y
+OTROS TOPICOS EN ESCUELA DERECHO Y DE CIENCIAS SOCIALES DE LA UNIVERSIDAD DE
+CHILE; UNIVERSIDAD FINIS TERRAE, UNIVERSIDAD UNIAC, UNIVERSIDAD ALBERTO
+HURTADO, UNIVERSIDAD BERNARDO O´HIGGINS, Y ES DOCENTE Y TUTORA DE LA ACADEMIA
+JUDICIAL DE CHILE PARA LOS PROGRAMAS DE FORMACION DE FUTUROS JUECES CHILENOS.<br>
+
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -632,7 +633,7 @@
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Manuel_Galvan_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Manuel_Galvan_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Manuel Galván Castañeda</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-1>
@@ -647,7 +648,7 @@
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/Marlenne_Hernandez_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Marlenne_Hernandez_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MARLENNE HERNANDEZ GALVAN</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-7>
@@ -662,20 +663,25 @@
                                                     </div>
                                                 </li>
                                                 
+                                                
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_4_jue_civ/red/images/img_ponentes/diego.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/diego.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Diego Zalamea </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Es Doctor en Derecho, Master en Criminología. Docente en la Universidad de las Américas. Ha sido Director Nacional de Gestión Procesal, Política Penal y del Programa de Protección a Víctimas y Testigos de la Fiscalía General de Estado; coordinador con órganos autónomos del Consejo de la judicatura; miembro del Comité de Expertos de Selección de la Corte Nacional; perito ante la Corte Interamericana de Derechos Humanos; promotor de la reforma dispositivo oral en la Constitución, así como en las leyes de materia penal y no penal.<br>
+
                                                                 </h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-6 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
-                                                </li>                                                                                                	
+                                                </li>
+                                                
+                                                
+												
                                             </ul>
                                         </div>
                                     </div>
@@ -685,8 +691,11 @@
                             <div class=clear></div>
                     </section>
                 </div>
-                {{-- creo que este div esta de mas --}}
-                </div> 
+				
+			 
+				
+				
+                </div>
             </div>
         </div>
 
@@ -718,8 +727,6 @@
     <script src='plugins/jquery.isotope.min.js'></script>
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
-    <script src="js/jquery.min.js"></script>
-    <script src='js/bitacoraLogout.js'></script>
 
 
 
