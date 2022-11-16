@@ -77,11 +77,11 @@ class EnviaCorreoController extends Controller
 ])->get();
         $count = 0;
         foreach ($enviaCrorreo as $Correo){
-            //echo $count." ".$Correo->name."<br>";  
-            //echo $count." ".$Correo->email."<br>";  
-            //echo $count." ".$Correo->id_red."<br>";   
+            //echo $count." ".$Correo->name."<br>";
+            //echo $count." ".$Correo->email."<br>";
+            //echo $count." ".$Correo->id_red."<br>";
             $red = cat_redesconatrib::where('id','=', $Correo->id_red)->get();
-            //echo $count." ".$red[0]->red."<br>"; 
+            //echo $count." ".$red[0]->red."<br>";
             $info = [
                 'tipo_correo' => 2,
                 'texto' => 'Registro exitoso',
@@ -93,10 +93,10 @@ class EnviaCorreoController extends Controller
             echo"<br>";
 
             //Mail::to($Correo->email)->send(new RegistroMail($info));
-            $count++;  
+            $count++;
         }
         echo $count;
-        
+
 
 
 
