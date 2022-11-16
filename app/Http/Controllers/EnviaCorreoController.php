@@ -30,7 +30,51 @@ class EnviaCorreoController extends Controller
 
         #$enviaCrorreo = User::whereBetween('id',[901, 1043])->get();
         //$enviaCrorreo = User::where('id_red', '=', 4)->whereNotIn('id',[8,9,158])->get();
-        $enviaCrorreo = User::where('id_red', '=', 4)->whereIn('id',[4759, 5020, 5023, 5072])->get();
+        $enviaCrorreo = User::where('id_red', '=', 5)->whereIn('id',[
+956,
+958,
+961,
+962,
+965,
+970,
+971,
+977,
+986,
+998,
+1001,
+1028,
+1030,
+1037,
+1039,
+1049,
+1052,
+1060,
+1084,
+1094,
+1193,
+1195,
+1244,
+1276,
+1355,
+1361,
+1364,
+1378,
+1388,
+1513,
+1595,
+1601,
+1634,
+1699,
+1711,
+1751,
+1777,
+1783,
+1789,
+1877,
+2240,
+2285,
+2404
+])->get();
         $count = 0;
         foreach ($enviaCrorreo as $Correo){
             //echo $count." ".$Correo->name."<br>";  
