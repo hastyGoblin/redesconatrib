@@ -156,7 +156,7 @@
                                             <div class=gdlr-session-head-day>
                                                     Aceptadas
 
-                                                <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="POST" class="d-none">
+                                                <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
                                                     @csrf
                                                 </form>
 
@@ -182,7 +182,7 @@
                                                                  document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
                                             <div class=gdlr-session-head-day>
                                                     Constancias
-                                                <form id="rechazado-form" action="{{ route('usuarioConstancias')}}" method="POST" class="d-none">
+                                                <form id="constancia-form" action="{{ route('usuarioConstancias')}}" method="POST" class="d-none">
                                                     @csrf
                                                 </form>
                                             </div>

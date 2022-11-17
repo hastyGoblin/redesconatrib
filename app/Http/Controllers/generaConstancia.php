@@ -4,14 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Codedge\Fpdf\Fpdf\Fpdf;
+use App\Models\constanciasUsuarios;
 use Auth;
 use User;
 
 class generaConstancia extends Controller
 {
 
-
     private $fpdf;
+
+    public function habilitaConstancia(Request $request){
+        constanciasUsuarios::create([
+            "fk_users" => $request->id_user,
+            "activo" => 1,
+        ]); 
+
+        return redirect()->route('usuarioAceptado')->with('success','Constancia Habilitada');
+    }
 
     public function descargaConstancia(){
 

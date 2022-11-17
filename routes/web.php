@@ -35,11 +35,12 @@ Route::get('/actualizaPassword', [bcryptPassword::class, 'updatePassword'])->nam
 Route::post('/aceptarUsuario', [EstatusController::class, 'aceptarUsuario'])->name('aceptarUsuario');
 Route::post('/rechazarUsuario', [EstatusController::class, 'rechazarUsuario'])->name('rechazarUsuario');
 
-Route::post('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
+Route::get('/usuarioAceptado', [AceptadoRechazadoController::class, 'usuarioAceptado'])->name('usuarioAceptado');
 Route::post('/usuarioRechazado', [AceptadoRechazadoController::class, 'usuarioRechazado'])->name('usuarioRechazado');
 Route::post('/validarInicio', [AceptadoRechazadoController::class, 'validaInicioRed'])->name('validarInicio');
 Route::get('/regLogout', [LogoutBitacoraController::class, 'registraLogout'])->name('regLogout');
 
+Route::post('/habilitaConstancia', [generaConstancia::class, 'habilitaConstancia'])->name('habilitaConstancia');
 Route::post('/usuarioConstancias', [generaConstancia::class, 'descargaConstancia'])->name('usuarioConstancias');
 //Route::post('/calendario', [CalendarioController::class, 'redCalendario'])->name('calendario');
 

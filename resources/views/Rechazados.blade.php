@@ -148,7 +148,7 @@
                                                 @csrf
                                             </form>
 
-                                            <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="POST" class="d-none">
+                                            <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
                                                 @csrf
                                             </form>
 

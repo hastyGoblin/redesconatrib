@@ -149,7 +149,7 @@
                                                 @csrf
                                             </form>
 
-                                            <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="POST" class="d-none">
+                                            <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
                                                 @csrf
                                             </form>
 
@@ -178,7 +178,7 @@
 
                                     @if($message = Session::get('success'))
                                         <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
-                                            <font color="#155724">El usuario ha sido aceptado</font>
+                                            <font color="#155724">{{ $message }}</font>
                                         </div>
                                     @endif
 
@@ -186,57 +186,55 @@
                                         <div style="background-color: #d4edda;" class="alert alert-danger" >
                                             <font color="#721c24">{{ $message }}</font>
                                         </div>
-                                    @endif
-
-                                    <br>
-
-                                    <table border="1px">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Estado</th>
-                                                <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Correo</th>
-                                                <!-- <th colspan="10">Acciones</th> -->
-
-                                            </tr>
-                                        </thead>
-
-                                        @foreach($aceptado as $registrados)
-                                            <tbody>
-                                                <tr>
-                                                    <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
-                                                    <td>{{$registrados->entidad}}</td>
-                                                    <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                </tr>
-                                            </tbody>
-                                        @endforeach
-
-                                    </table>
-
-                                            <div class=container>
-                                                 <div class="gdlr-subscribe-item gdlr-item"></div>
-                                                 <div class=clear></div>
-                                            </div>
-                                           <div class=clear></div>
+                                    @endif                                
                                 </div>
                             </div>
-                                            <div class=clear></div><br><br><br>
-                                            <br>
+                                            <div class=clear></div>
 
                         </div>
                     </section>
-                         <div>
-
-        </div>
                 </div>
             </div>
         </div>
+
+
+
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Estado</th>
+                    <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Correo</th>
+                    <th colspan="10">Acciones</th>
+
+                </tr>
+            </thead>
+
+            @foreach($aceptado as $registrados)
+                <tbody>
+                    <tr>
+                        <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
+                        <td>{{$registrados->entidad}}</td>
+                        <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <form method="post" name="habilitarConstancia" action="{{ url('habilitaConstancia') }}">
+                                @csrf
+                                <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                <input type="submit" name="habilitar" value="Habilitar Constancia">
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            @endforeach
+
+        </table>
+
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">
