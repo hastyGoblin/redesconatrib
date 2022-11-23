@@ -186,7 +186,7 @@
                                         <div style="background-color: #d4edda;" class="alert alert-danger" >
                                             <font color="#721c24">{{ $message }}</font>
                                         </div>
-                                    @endif                                
+                                    @endif
                                 </div>
                             </div>
                                             <div class=clear></div>
@@ -222,13 +222,21 @@
                         <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td>
-                            <form method="post" name="habilitarConstancia" action="{{ url('habilitaConstancia') }}">
-                                @csrf
-                                <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                <input type="submit" name="habilitar" value="Habilitar Constancia">
-                            </form>
-                        </td>
+
+                        @if ($registrados->estatus_const==1)
+
+                            <td>Constancia habilitada</td>
+                        @else
+                            <td>
+                                <form method="post" name="habilitarConstancia" action="{{ url('habilitaConstancia') }}">
+                                    @csrf
+                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                    <input type="submit" name="habilitar" value="Habilitar Constancia">
+                                </form>
+                            </td>
+
+                        @endif
+
                     </tr>
                 </tbody>
             @endforeach

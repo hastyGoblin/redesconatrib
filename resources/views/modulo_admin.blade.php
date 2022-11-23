@@ -300,5 +300,6 @@
     <script src='administrador/red/plugins/jquery.isotope.min.js'></script>
     <script src="js/jquery.min.js"></script>
     <script src='js/bitacoraLogout.js'></script>
+
 </body>
 </html>

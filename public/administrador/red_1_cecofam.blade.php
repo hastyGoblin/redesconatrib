@@ -105,7 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -150,7 +150,7 @@
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -202,8 +202,8 @@
                                             </div>
                                             <div class="clear"></div>
                                         </div>
-                                       
-    
+
+
                                     </div>
                                     <!-- termina dia 1-->
                                     <!-- inicia dia 2 -->
@@ -213,7 +213,7 @@
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>9:30 hrs.</div>
-                                                    
+
                                                     <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -226,12 +226,12 @@
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Mensaje de Bienvenida</h3>
-                                                <div class="gdlr-session-item-excerpt">Secretaria Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar Supervisada y Afines de la República Mexicana y Directora del Centro de Convivencia Familiar Supervisada del Poder Judicial de la Ciudad de México. 
+                                                <div class="gdlr-session-item-excerpt">Secretaria Ejecutiva de la Red Nacional de los Centros de Convivencia Familiar Supervisada y Afines de la República Mexicana y Directora del Centro de Convivencia Familiar Supervisada del Poder Judicial de la Ciudad de México.
                                                     <div class="clear"></div></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -245,7 +245,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Alejandra Nieves Ramírez.</a></div>
-                                                               
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -261,7 +261,7 @@
                                                 </div>
 											</div>
                                             <div class="clear"></div>
-                                        </div> 
+                                        </div>
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -282,7 +282,7 @@
                                             </div>
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title"><a href="../session/creating-productivity-1/index.html">Conversatorio</a></h3>
-                                                <div class="gdlr-session-item-excerpt">Revinculación Familiar ante el Covid-19: Retos y Oportunidades. 
+                                                <div class="gdlr-session-item-excerpt">Revinculación Familiar ante el Covid-19: Retos y Oportunidades.
                                                   <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                      <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
@@ -313,7 +313,7 @@
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                      <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -340,7 +340,7 @@
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -367,7 +367,7 @@
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -396,7 +396,7 @@
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -406,7 +406,7 @@
                                                 <div class="gdlr-session-info">
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:10 hrs.</div>
                                                     <div class="session-info session-location"><i class="fa fa-location-arrow"></i>Guerrero</div>
-                                                    
+
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -417,7 +417,7 @@
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -444,7 +444,7 @@
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://www.youtube.com/watch?v=cUYcMAb1awM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -460,7 +460,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Aníbal Vaquera Guerrero</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -474,7 +474,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -490,7 +490,7 @@
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Norma Edith Acevedo Hernández</a></div>
 																<div class=session-speaker-list-item  style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Mtro. Alejandro Alva Reyes</a></div>
 																<div class=session-speaker-list-item  style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Mtra. Mariana Celeste Díaz Herrera</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -504,7 +504,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://www.youtube.com/watch?v=mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conversatorio</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -518,7 +518,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Nadia Miroslava López Álvarez</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -532,7 +532,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -546,7 +546,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Susana López Bustamante</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -560,7 +560,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Conferencia</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -574,7 +574,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Mariana Ortiz Castañares</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -588,7 +588,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -602,7 +602,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Edgar Antonio Cabrera Meneses</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -616,7 +616,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -630,7 +630,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtra. Patricia Esperanza Guerrero Suárez</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -644,7 +644,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -653,8 +653,8 @@
                                             <div class=gdlr-session-item-content-info>
                                                 <div class=gdlr-session-info>
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:50 hrs.</div>
-                                                    
-                                                    
+
+
                                                     <div class=clear></div>
                                                 </div>
                                             </div>
@@ -665,11 +665,11 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/mPiRZVaXdmE" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
-									
+
 							 </div>
                                     <div class="gdlr-session-item-tab-content gdlr-tab-4 ">
                                         <div class=gdlr-session-item-content-wrapper>
@@ -682,7 +682,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aline Liliana Hernández Miranda</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -696,11 +696,11 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
-										
+
                                         <div class=gdlr-session-item-content-wrapper>
                                             <div class=gdlr-session-item-divider></div>
                                             <div class=gdlr-session-item-content-info>
@@ -713,7 +713,7 @@
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtro. Sergio Vargas González</a></div>
 																<div class=session-speaker-list-item style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Dra. Olga Lidia Sanabria Tellez</a></div>
 																<div class=session-speaker-list-item style="padding-top: 2em !important;"><i class="fa fa-user"></i><a>Lic. Cynthia Vergara Mendoza</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -727,11 +727,11 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Conversatorio</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
-										
+
                                         <div class=gdlr-session-item-content-wrapper>
                                             <div class=gdlr-session-item-divider></div>
                                             <div class=gdlr-session-item-content-info>
@@ -742,7 +742,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Mtro. Sergio Aguilar Álvarez Bay</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -756,11 +756,11 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
-										
+
                                         <div class=gdlr-session-item-content-wrapper>
                                             <div class=gdlr-session-item-divider></div>
                                             <div class=gdlr-session-item-content-info>
@@ -771,7 +771,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Emma Janeth García Ortiz</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -785,11 +785,11 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
-										
+
                                         <div class=gdlr-session-item-content-wrapper>
                                             <div class=gdlr-session-item-divider></div>
                                             <div class=gdlr-session-item-content-info>
@@ -800,7 +800,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aristeo Arturo Rodríguez Martínez</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -814,7 +814,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -828,7 +828,7 @@
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Mariana Herrerejón Gutiérrez</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -842,7 +842,7 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver capsula</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
@@ -851,12 +851,12 @@
                                             <div class=gdlr-session-item-content-info>
                                                 <div class=gdlr-session-info>
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:10 hrs.</div>
-                                                    
+
                                                     <div class="session-info session-speaker">
                                                         <div class=session-speaker-inner>
                                                             <div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><i class="fa fa-user"></i><a>Lic. Aline Liliana Miranda Hernández.</a></div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -870,12 +870,12 @@
 												<div class=gdlr-session-thumbnail-wrapper>
                                                     <a href="https://youtu.be/vW5M2RpPfIM" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Ponencia</button></a>
                                                 </div>
-                                                
+
                                             </div>
                                             <div class=clear></div>
                                         </div>
-										
-                                    </div> 
+
+                                    </div>
                                 </div>
                                 <div class=clear></div>
                             </div>
@@ -883,11 +883,11 @@
                         </div>
                             </div>
                         </div>
-                        
+
                     </section>
                     <div class="section-container container">
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONETES</h3>
@@ -925,7 +925,7 @@ Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social d
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                    Actualmente ocupa el puesto de subdirectora de cecofam “niños héroes” en el pjcdmx.
-Es licenciada y maestra en psicología por la universidad nacional autónoma de méxico. <br> En la actualidad cursa el doctorado en el programa de posgrado de psicología en la misma casa de estudios, desarrollando investigación relacionada con familias en conflictos judiciales.<br> Tiene una certificación por la Uc Davis Health para aplicar la terapia pc- care, intervención especializada para mejorar la relación parento-filial.<br> Cuenta con experiencia en psicoterapia clínica con más de 20 años, abordando diferentes problemáticas infantiles, familiares y de adultos.<br>Ha participado como docente a nivel licenciatura y posgrado en distintas universidades a nivel nacional. 
+Es licenciada y maestra en psicología por la universidad nacional autónoma de méxico. <br> En la actualidad cursa el doctorado en el programa de posgrado de psicología en la misma casa de estudios, desarrollando investigación relacionada con familias en conflictos judiciales.<br> Tiene una certificación por la Uc Davis Health para aplicar la terapia pc- care, intervención especializada para mejorar la relación parento-filial.<br> Cuenta con experiencia en psicoterapia clínica con más de 20 años, abordando diferentes problemáticas infantiles, familiares y de adultos.<br>Ha participado como docente a nivel licenciatura y posgrado en distintas universidades a nivel nacional.
 
                                                                 </h3>
                                                             </div>
@@ -955,7 +955,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <div class=gdlr-lightbox-form id=gdlr-form-5>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                  <h3 style="text-align: justify">
-                                                                    Es Licenciada en Psicología por la Universidad del Valle de México, cuenta con diversos cursos en el área de evaluación psicológica e intervención con familias en litigio. <br> Desde el año 2012 labora como Piscóloga Especializada en el Poder Judicial de la Ciudad de México, actualmente está adscrita al Centro de Convivencia Familiar Supervisada de la CDMX, donde realiza entrevistas diagnósticas a los integrantes de la familia que se encuentran inmersos en una Controversia Familiar, a efecto de sugerir la implementación del Programa de Revinculación Familiar. 
+                                                                    Es Licenciada en Psicología por la Universidad del Valle de México, cuenta con diversos cursos en el área de evaluación psicológica e intervención con familias en litigio. <br> Desde el año 2012 labora como Piscóloga Especializada en el Poder Judicial de la Ciudad de México, actualmente está adscrita al Centro de Convivencia Familiar Supervisada de la CDMX, donde realiza entrevistas diagnósticas a los integrantes de la familia que se encuentran inmersos en una Controversia Familiar, a efecto de sugerir la implementación del Programa de Revinculación Familiar.
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -1029,7 +1029,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <div class=gdlr-lightbox-form id=gdlr-form-10>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                <h3 style="text-align: justify">
-                                                                    Es licenciada en Derecho y Psicología, titulada por la Universidad del Valle de México, cursa la Maestría en Conciencia Plena Aplicada (Mindfulness), Diplomada en Psicología Jurídica por la Universidad Nacional Autónoma de México y Diplomada en Terapia Familiar por la Universidad Autónoma de Tlaxcala, con múltiples cursos y talleres en el área de Derechos Humanos, Evaluación Psicológica, Perspectiva de Género, Detección de Abuso Sexual en Niñas, Niños y Adolescentes, Alienación Parental, Aplicación e Interpretación de Pruebas Proyectivas y Psicométricas, Interferencias Parentales, Atención a niñas, niños y adolescentes con Espectro Autista, Coordinación de Parentalidad, entre otros. <br> Tiene una trayectoria de 17 años en el Poder Judicial de la Ciudad de México, en el que ha sido titular de la Jefatura Departamental de Aplicación y Diagnóstico, Subdirección de Evaluación Psicológica, Subdirección de Intervención Psicológica y actualmente es Directora del Centro de Convivencia Familiar Supervisada y Secretaria Ejecutiva de la Red nacional de los Centros de Convivencia y Afines de la República Mexicana. 
+                                                                    Es licenciada en Derecho y Psicología, titulada por la Universidad del Valle de México, cursa la Maestría en Conciencia Plena Aplicada (Mindfulness), Diplomada en Psicología Jurídica por la Universidad Nacional Autónoma de México y Diplomada en Terapia Familiar por la Universidad Autónoma de Tlaxcala, con múltiples cursos y talleres en el área de Derechos Humanos, Evaluación Psicológica, Perspectiva de Género, Detección de Abuso Sexual en Niñas, Niños y Adolescentes, Alienación Parental, Aplicación e Interpretación de Pruebas Proyectivas y Psicométricas, Interferencias Parentales, Atención a niñas, niños y adolescentes con Espectro Autista, Coordinación de Parentalidad, entre otros. <br> Tiene una trayectoria de 17 años en el Poder Judicial de la Ciudad de México, en el que ha sido titular de la Jefatura Departamental de Aplicación y Diagnóstico, Subdirección de Evaluación Psicológica, Subdirección de Intervención Psicológica y actualmente es Directora del Centro de Convivencia Familiar Supervisada y Secretaria Ejecutiva de la Red nacional de los Centros de Convivencia y Afines de la República Mexicana.
 
                                                                </h3>
                                                             </div>
@@ -1046,13 +1046,13 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                             <div class=clear></div>
                     </section>
                 </div>
-				
+
 				<div class="section-container container">
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
-                                       
+
                                         <br>
                                         <h1 style="font-size: 20px;"class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Estado de M&eacute;xico</h1>
                                     </div>
@@ -1113,7 +1113,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <div class=gdlr-lightbox-form id=gdlr-form-28>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                  <h3 style="text-align: justify">
-                                                                    Licenciado en Derecho y Maestro en Política Criminal por la Universidad Nacional Autónoma de México; Diplomado en “Ética Gubernamental y Corporativa, Anticorrupción y Prevención de Conflicto de Intereses”, por la Escuela Libre de Derecho; Archivista Judicial en la entonces Segunda Sala Colegiada Penal de Tlalnepantla; Analista Jurídico y Líder de Proyecto en la Dirección General de Contraloría; Delegado de la Contraloría en Texcoco; Delegado de la Contraloría en Tlalnepantla (regiones judiciales de Tlalnepantla y Ecatepec); actualmente es Director de Servicios Periciales del Poder Judicial del Estado de México. 
+                                                                    Licenciado en Derecho y Maestro en Política Criminal por la Universidad Nacional Autónoma de México; Diplomado en “Ética Gubernamental y Corporativa, Anticorrupción y Prevención de Conflicto de Intereses”, por la Escuela Libre de Derecho; Archivista Judicial en la entonces Segunda Sala Colegiada Penal de Tlalnepantla; Analista Jurídico y Líder de Proyecto en la Dirección General de Contraloría; Delegado de la Contraloría en Texcoco; Delegado de la Contraloría en Tlalnepantla (regiones judiciales de Tlalnepantla y Ecatepec); actualmente es Director de Servicios Periciales del Poder Judicial del Estado de México.
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -1156,8 +1156,8 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <div class=gdlr-lightbox-form id=gdlr-form-31>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Maestro en Ciencias de la Educación por parte de la Universidad Etac y licenciado en psicología egresado de la Universidad Autónoma del Estado de México, actualmente se desempeña como jefe del Departamento de Apoyo y Acompañamiento Emocional del Poder Judicial del Estado de México mediante la cual se brinda soporte psicológico a los servidores judiciales de la institución.<br> Diplomados en “Desarrollo de las teorías filosóficas para la nueva dinámica en la educación superior”, “Herramientas básicas para el desarrollo de escenarios curriculares, institucionales y de investigación educativa”, “Habilidades comunicativas, administrativas” y de “Gestión en los centros de convivencia familiar” “Alienación Parental, Contención Emocional”, “Formación humana y mecánica mental”, “Comunicación asertiva, Procesos y procedimientos de atención”, todos por la Escuela Judicial del Estado de México, “Psicología Forense especializada en niñas niños y adolescentes” por la Suprema Corte de Justicia de la Nación.<br>Dentro de su experiencia profesional cuenta con habilidades para la docencia a diferentes desde nivel primaria hasta licenciatura, del mismo modo desarrollado como especialista del Centro de convivencia familiar de Toluca.<br> 
-<br> 
+                                                                   Maestro en Ciencias de la Educación por parte de la Universidad Etac y licenciado en psicología egresado de la Universidad Autónoma del Estado de México, actualmente se desempeña como jefe del Departamento de Apoyo y Acompañamiento Emocional del Poder Judicial del Estado de México mediante la cual se brinda soporte psicológico a los servidores judiciales de la institución.<br> Diplomados en “Desarrollo de las teorías filosóficas para la nueva dinámica en la educación superior”, “Herramientas básicas para el desarrollo de escenarios curriculares, institucionales y de investigación educativa”, “Habilidades comunicativas, administrativas” y de “Gestión en los centros de convivencia familiar” “Alienación Parental, Contención Emocional”, “Formación humana y mecánica mental”, “Comunicación asertiva, Procesos y procedimientos de atención”, todos por la Escuela Judicial del Estado de México, “Psicología Forense especializada en niñas niños y adolescentes” por la Suprema Corte de Justicia de la Nación.<br>Dentro de su experiencia profesional cuenta con habilidades para la docencia a diferentes desde nivel primaria hasta licenciatura, del mismo modo desarrollado como especialista del Centro de convivencia familiar de Toluca.<br>
+<br>
 
                                                                 </h3>
                                                             </div>
@@ -1172,7 +1172,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <div class=gdlr-lightbox-form id=gdlr-form-32>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                <h3 style="text-align: justify">
-                                                                   Licenciada en psicología por la Universidad del Valle de México, maestra en psicoterapia Ericksoniana egresada del Centro Ericksoniano de México. Participante en el “VII Congreso Internacional de Psicología Jurídica y criminológica, conducta antisocial”, “Coloquio internacional IIPCS, facetas de la depresión”, “Seminario de Desmitificación infantil TDA NEGATIVISMO DESAFIANTE”, “Fundamentos generales de terapia de juego”, “Acompañamiento en proceso de Duelo”. <br> Con desempeño profesional en el ámbito psicoterapéutico, además de orientación educativa y dirección académica en niveles de educación superior, actualmente se desempeña como especialista en el departamento de Apoyo y Acompañamiento Emocional del Poder Judicial del Estado de México donde brinda atención psicoemocional a servidores judiciales y en el desarrollo de talleres psicoeducativos.<br> 
+                                                                   Licenciada en psicología por la Universidad del Valle de México, maestra en psicoterapia Ericksoniana egresada del Centro Ericksoniano de México. Participante en el “VII Congreso Internacional de Psicología Jurídica y criminológica, conducta antisocial”, “Coloquio internacional IIPCS, facetas de la depresión”, “Seminario de Desmitificación infantil TDA NEGATIVISMO DESAFIANTE”, “Fundamentos generales de terapia de juego”, “Acompañamiento en proceso de Duelo”. <br> Con desempeño profesional en el ámbito psicoterapéutico, además de orientación educativa y dirección académica en niveles de educación superior, actualmente se desempeña como especialista en el departamento de Apoyo y Acompañamiento Emocional del Poder Judicial del Estado de México donde brinda atención psicoemocional a servidores judiciales y en el desarrollo de talleres psicoeducativos.<br>
 
                                                                </h3>
                                                             </div>
@@ -1180,7 +1180,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-32 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-												
+
                                             </ul>
                                         </div>
                                     </div>
@@ -1190,13 +1190,13 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                             <div class=clear></div>
                     </section>
                 </div>
-				
-				
-				
+
+
+
 
                 <div class="section-container container">
                     <section>
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <br>
@@ -1214,7 +1214,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">SANDRA VICTORIA CADENAS SANTIAGO</h3>
 														<div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><a>Chiapas</a></div>
-                                                                
+
                                                             </div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-12>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -1236,7 +1236,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                           <div class=gdlr-lightbox-form id=gdlr-form-13>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciada en Psicología por la Universidad Autónoma del Estado de Morelos. <br> Cuenta con diplomados en: Especialización en enfoque de género y derechos humanos de las mujeres; Psicología forense; Psicopatología forense; Psicología forense especializada en niñas, niños y adolescentes; y en la Elaboración del dictamen médico psicológico para la evaluación de tortura, mediante las directrices del Protocolo de Estambul.<br> Actualmente cursa el diplomado La Suprema Corte y los Derechos humanos.<br> Cuenta con certificaciones nacionales en Psicopatología Forense y en Protocolo de Estambul. <br> Se ha desempeñado como Psicóloga clínica y Perito en Psicología en la Fiscalía General del Estado de Morelos, y desde el 2017 labora en el Poder Judicial del Estado de Morelos, adscrita al Departamento de Orientación Familiar del H. Tribunal Superior de Justicia, en donde realiza diversas funciones como psicóloga forense, en asuntos de materia familiar, civil y penal. 
+                                                                    Licenciada en Psicología por la Universidad Autónoma del Estado de Morelos. <br> Cuenta con diplomados en: Especialización en enfoque de género y derechos humanos de las mujeres; Psicología forense; Psicopatología forense; Psicología forense especializada en niñas, niños y adolescentes; y en la Elaboración del dictamen médico psicológico para la evaluación de tortura, mediante las directrices del Protocolo de Estambul.<br> Actualmente cursa el diplomado La Suprema Corte y los Derechos humanos.<br> Cuenta con certificaciones nacionales en Psicopatología Forense y en Protocolo de Estambul. <br> Se ha desempeñado como Psicóloga clínica y Perito en Psicología en la Fiscalía General del Estado de Morelos, y desde el 2017 labora en el Poder Judicial del Estado de Morelos, adscrita al Departamento de Orientación Familiar del H. Tribunal Superior de Justicia, en donde realiza diversas funciones como psicóloga forense, en asuntos de materia familiar, civil y penal.
 
                                                                 </h3>
                                                             </div>
@@ -1279,7 +1279,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-38 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
-                                             
+
                                             </ul>
                                         </div>
                                     </div>
@@ -1289,10 +1289,10 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                             <div class=clear></div>
                     </section>
                 </div>
-				
+
 				<div class="section-container container">
                     <section>
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <br>
@@ -1310,7 +1310,7 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Emma Janeth García Ortiz</h3>
 														<div class=session-speaker-list>
                                                                 <div class=session-speaker-list-item><a>Nuevo Le&oacute;n</a></div>
-                                                                
+
                                                             </div>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-16>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -1401,6 +1401,8 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
         </footer>
     </div>
 
+    <div id="fondoModal" name="fondoModal" class="background-Modal"></div>
+
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
 
@@ -1468,17 +1470,17 @@ Es licenciada y maestra en psicología por la universidad nacional autónoma de 
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 

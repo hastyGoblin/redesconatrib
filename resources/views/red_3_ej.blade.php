@@ -35,15 +35,15 @@
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
                         <a href=""> <img src="{!! asset('rede_3_est_jud/red/upload/logo_estadistica_judicial.png') !!}" alt=""> </a>
-                        <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
+                        <!--<div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <!--<li class="menu-item">
+                                <li class="menu-item">
                                     <a href="#historia">Objetivo</a>
-                                </li>-->
+                                </li>
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -51,7 +51,7 @@
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="gdlr-navigation-wrapper">
                         <nav class="gdlr-navigation" id="gdlr-main-navigation role=navigation">
@@ -59,15 +59,20 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <!--<li class="menu-item">
+                                <li class="menu-item">
                                     <a href="#historia">Objetivo</a>
-                                </li>-->
+                                </li>
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
+                                @if ($activo==1)
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </li>
+                                @endif
                                 <li class="menu-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item"
                                        onclick="regLogout();event.preventDefault();">
@@ -80,6 +85,34 @@
                                 </li>
                             </ul>
                         </nav>
+                        @if ($activo==1)
+                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;position: absolute;">
+                                <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                                <div class=gdlr-speaker-item-content>
+                                                    <div class=gdlr-lightbox-form id=gdlr-form-200>
+                                                        <div class=gdlr-paypal-form-wrapper>
+                                                            <form method="POST" action="{{ route('descargaConstancia') }}" target="_blank">
+                                                                @csrf
+                                                                <h3>Si encuentra alg&uacute;n error en su nombre actualice, por favor</h3>
+                                                                <h3>Nombre:</h3>
+                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}">
+                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}">
+                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}">
+                                                                <input type="hidden" name="iduser" id="iduser" value="{{$id_user}}">
+                                                                <input type="hidden" name="idred" id="idred" value="{{$idred}}">
+                                                                <input type="submit" name="btncons" id="btncons">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                        <div><a style="font-size: 11px;text-transform: uppercase;font-weight: 800;letter-spacing: 2px;color:#8e8e8e !important;font-family: Raleway;" href=#gdlr-form-200 data-rel=fancybox data-fancybox-type=inline>Descarga Constancia</a></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
@@ -769,6 +802,15 @@
 
     <script src='js/bitacoraLogout.js'></script>
 
+    <script>
+        $(document).ready(function(){
+
+            $("#btncons").click(function(){
+            setTimeout('document.location.reload()',20000);
+
+            });
+        });
+        </script>
 
     <!-- MAster Slider Activation -->
 

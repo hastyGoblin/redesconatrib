@@ -42,5 +42,7 @@ Route::get('/regLogout', [LogoutBitacoraController::class, 'registraLogout'])->n
 
 Route::post('/habilitaConstancia', [generaConstancia::class, 'habilitaConstancia'])->name('habilitaConstancia');
 Route::post('/usuarioConstancias', [generaConstancia::class, 'descargaConstancia'])->name('usuarioConstancias');
+
+Route::post('/descargaConstancia', [generaConstancia::class, 'descargaConstancia'])->name('descargaConstancia');
 //Route::post('/calendario', [CalendarioController::class, 'redCalendario'])->name('calendario');
 

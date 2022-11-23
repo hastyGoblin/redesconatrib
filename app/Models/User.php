@@ -24,11 +24,12 @@ class User extends Authenticatable
         'dependencia',
         'fk_estado',
         'fk_estatus',
-        'cargo', 
+        'cargo',
         'numero_celular',
         'email',
         'password',
         'id_red',
+        'estatus_const',
         //'constancia',
         //'correoConstancia',
     ];

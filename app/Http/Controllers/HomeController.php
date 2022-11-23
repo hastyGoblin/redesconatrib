@@ -8,7 +8,9 @@ use App\Models\cat_redesconatrib;
 use App\Models\Roles;
 use App\Models\usersRoles;
 use App\Models\User;
+use App\Models\constanciasUsuarios;
 use Illuminate\Database\Eloquent\Builder\SortDesc;
+use DB;
 
 class HomeController extends Controller
 {
@@ -27,6 +29,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
     public function index()
     {
         $id = Auth::user()->id;
@@ -36,7 +39,6 @@ class HomeController extends Controller
 
 
         if ($rol[0]->fk_roles == '1') {
-
 
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad')
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
@@ -49,60 +51,114 @@ class HomeController extends Controller
             ->where('UR.fk_roles','=','2')
             ->where('users.id_red','=',$red_id)
             ->orderBy('users.created_at','asc')
-            //->where('users.created_at','<','CR.fechaInicio')
             ->get();
+
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
 
         }
         elseif ($rol[0]->fk_roles == '2') {
+
+            $registradosRed = User::select('name','apellido_paterno','apellido_materno','id_red','users.id')
+            ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
+            ->join('roles AS R','R.ID','=','UR.fk_roles')
+           ->where('users.activo','=','1')
+            ->where('users.fk_estatus','=','2')
+            ->where('UR.fk_roles','=','2')
+            ->where('users.id_red','=',$red_id)
+            ->where('users.id','=',$id)
+            ->get();
+
+            $activoConst=constanciasusuarios::where('fk_users','=', $id )->get();
+            $existe = $activoConst->count();
+
+            if ($existe == 0) {
+                $activo = 0;
+            }else {
+                $activo=$activoConst[0]->activo;
+            }
+
+           $consulta= DB::table('constanciasusuarios')->where('fk_users','=', $id )->get();}
+
             switch ($red_id) {
 
                 case 1:
                     $mensaje= "Red 1";
                     //return view('disponible');
-                    return view('red_6_cjpn');
+                    return view('red_6_cjpn')->with('id_user',$id)->with('activo',$activo)
+                    ->with('nombre',$registradosRed[0]->name)
+                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                    ->with('idred',$red_id);
                     break;
 
                 case 2:
                     $mensaje= "Red 2";
                     //return view('disponible');
-                    return view('red_3_ej');
+                    return view('red_3_ej')->with('id_user',$id)->with('activo',$activo)
+                    ->with('nombre',$registradosRed[0]->name)
+                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                    ->with('idred',$red_id);
                     break;
 
                 case 3:
                     $mensaje= "Red 3";
                     // return view('disponible'); activar
-                    return view('red_7_sijpa');
+                    return view('red_7_sijpa')->with('id_user',$id)->with('activo',$activo)
+                    ->with('nombre',$registradosRed[0]->name)
+                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                    ->with('idred',$red_id);
                     break;
 
                 case 4:
                     $mensaje= "Red 4";
                     // return view('disponible');
-                    return view('red_2_rejem');
+                    return view('red_2_rejem')->with('id_user',$id)->with('activo',$activo)
+                    ->with('nombre',$registradosRed[0]->name)
+                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                    ->with('idred',$red_id);
                     break;
 
                 case 5:
                     $mensaje= "Red 5";
                     //return view('disponible'); activar
-                    return view('red_5_masc');
+                    return view('red_5_masc')->with('id_user',$id)->with('activo',$activo)
+                    ->with('nombre',$registradosRed[0]->name)
+                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                    ->with('idred',$red_id);
                     break;
 
                 case 6:
                     $mensaje= "Red 6";
                     // return view('disponible'); activar
-                    return view('red_1_cecofam');
+                    return view('red_1_cecofam')->with('id_user',$id)->with('activo',$activo)
+                    ->with('nombre',$registradosRed[0]->name)
+                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                    ->with('idred',$red_id);
                     break;
 
                 case 7:
                     $mensaje= "Red 7";
                     // return view('disponible'); activar
-                    return view('red_4_jjocmed');
+                    return view('red_4_jjocmed')->with('id_user',$id)->with('activo',$activo)
+                    ->with('nombre',$registradosRed[0]->name)
+                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                    ->with('idred',$red_id);
                     break;
 
                 case 9:
                     $mensaje= "Red 9";
                     // return view('disponible'); activar
-                    return view('red_8_aj');
+                    return view('red_8_aj')->with('id_user',$id)->with('activo',$activo)
+                    ->with('nombre',$registradosRed[0]->name)
+                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                    ->with('idred',$red_id);
                     break;
 
                 default:
@@ -110,8 +166,9 @@ class HomeController extends Controller
                 break;
 
             }
-            //return redirect()->route('home');
+            return redirect()->route('home');
         }
-        //return view('auth.aceptar');
-    }
+    //     return view('auth.aceptar');
+
+
 }

@@ -33,6 +33,7 @@ class CreateUsersTable extends Migration
             $table->foreign('fk_estatus')->references('ID')->on('estatusUsers');
             $table->tinyinteger('id_red');
             $table->foreign('id_red')->references('id')->on('cat_redesconatrib');
+            $table->tinyinteger('estatus_const')->default(0);
 
             $table->dateTime('created_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP '));
             $table->dateTime('updated_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));

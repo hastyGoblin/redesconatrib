@@ -11,6 +11,7 @@ use App\Models\Roles;
 use App\Models\EntidadFederativa;
 use Carbon\Carbon;
 
+
 class AceptadoRechazadoController extends Controller
 {
     public function usuarioAceptado(Request $request){
@@ -21,7 +22,7 @@ class AceptadoRechazadoController extends Controller
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
 
-        $aceptado = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad')
+        $aceptado = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad','estatus_const')
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
@@ -33,7 +34,14 @@ class AceptadoRechazadoController extends Controller
             ->where('users.id_red','=',$red_id)
             ->orderBy('users.updated_at')
             ->get();
+
             return view('Aceptados')->with('rol',$rol)->with('red',$red)->with('aceptado',$aceptado);
+    }
+
+    public function usuarioExiste(){
+
+
+
     }
 
 

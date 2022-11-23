@@ -26,16 +26,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
 
+    <link rel="stylesheet" href="rede_6_cjpn/red/css/modales.css" type="text/css" media="all">
+
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3304 _masterslider _msp_version_3.2.7">
+
+
+
     <div class="body-wrapper  float-menu" data-home="index.html">
         <header class="gdlr-header-wrapper">
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
                         <a href=""> <img src="{!! asset('rede_6_cjpn/red/images/logo_cooperacion.png') !!}" alt=""> </a>
-                        <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
+                        {{-- <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
                                 <li class="menu-item menu-item-home current-menu-item">
@@ -50,8 +55,13 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
+                                @if ($activo==1)
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" onclick="javascript:modal();">Descargar ggggggonstancia</a>
+                                    </li>
+                                @endif
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="gdlr-navigation-wrapper">
                         <nav class="gdlr-navigation" id="gdlr-main-navigation role=navigation">
@@ -68,6 +78,13 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
+
+                                @if ($activo==1)
+                                    <li>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </li>
+                                @endif
+
                                 <li class="menu-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item"
                                        onclick="regLogout();event.preventDefault();">
@@ -80,6 +97,34 @@
                                 </li>
                             </ul>
                         </nav>
+                        @if ($activo==1)
+                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;position: absolute;">
+                                <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                                <div class=gdlr-speaker-item-content>
+                                                    <div class=gdlr-lightbox-form id=gdlr-form-200>
+                                                        <div class=gdlr-paypal-form-wrapper>
+                                                            <form method="POST" action="{{ route('descargaConstancia') }}" target="_blank">
+                                                                @csrf
+                                                                <h3>Si encuentra alg&uacute;n error en su nombre actualice, por favor</h3>
+                                                                <h3>Nombre:</h3>
+                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}">
+                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}">
+                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}">
+                                                                <input type="hidden" name="iduser" id="iduser" value="{{$id_user}}">
+                                                                <input type="hidden" name="idred" id="idred" value="{{$idred}}">
+                                                                <input type="submit" name="btncons" id="btncons">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                        <div><a style="font-size: 11px;text-transform: uppercase;font-weight: 800;letter-spacing: 2px;color:#8e8e8e !important;font-family: Raleway;" href=#gdlr-form-200 data-rel=fancybox data-fancybox-type=inline>Descarga Constancia</a></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
@@ -104,7 +149,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
-                                
+
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -149,7 +194,7 @@
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
-                                        
+
                                     </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -283,14 +328,14 @@
                                               </div>
                                              <div class="clear"></div>
                                            </div>
-										
+
                                   </div>
                                  <!-- termina dia -->
-									
+
 								 <!-- inicia dia -->
-									
+
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                        
+
                                        <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -303,7 +348,7 @@
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Magistrado Décimo Primer Tribunal Colegiado en materia Civil del Primer Circuito de la Ciudad de México </div>
                                                         </div>
-														
+
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
@@ -327,7 +372,7 @@
                                               </div>
                                              <div class="clear"></div>
                                            </div>
-										
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -340,7 +385,7 @@
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Magistrada Presidenta de la Sala Familiar del Tribunal Superior de Justicia de Querétaro</div>
                                                         </div>
-														
+
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
@@ -364,8 +409,8 @@
                                               </div>
                                              <div class="clear"></div>
                                           </div>
-										
-										
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -386,7 +431,7 @@
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Mediadora, Conciliadora y Facilitadora del Poder Judicial del estado de México</div>
                                                         </div>
-														
+
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
@@ -410,15 +455,15 @@
                                               </div>
                                              <div class="clear"></div>
                                           </div>
-										
+
 								  </div>
-									
+
 									     <!-- termina dia -->
 										 <!-- inicia dia -->
-									
-									
+
+
                                     <div class="gdlr-session-item-tab-content gdlr-tab-3">
-                                        
+
                                        <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -431,7 +476,7 @@
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Magistrado del Segundo Tribunal Colegiado en materia Civil del Segundo Circuito de Toluca, estado de México</div>
                                                         </div>
-														
+
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
@@ -455,8 +500,8 @@
                                               </div>
                                              <div class="clear"></div>
                                           </div>
-										
-										
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -469,7 +514,7 @@
                                                             </div>
 															<div class="gdlr-session-item-excerpt">Juez en retiro, Monterrey Nuevo León</div>
                                                         </div>
-														
+
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
@@ -493,8 +538,8 @@
                                               </div>
                                              <div class="clear"></div>
                                           </div>
-										
-										
+
+
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -506,7 +551,7 @@
 																<div class="gdlr-session-item-excerpt">Poder Judicial de la CDMX</div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magdo. Dr. Oscar Gregorio Cervera Rivero</a></div>
                                                             </div>
-														
+
                                                         </div>
 														<div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -520,9 +565,9 @@
 																	<div class="gdlr-session-item-excerpt">Subdirectora de Restitución y Custodia Internacional de Menores</div>
 </a></div>
                                                             </div>
-														
+
                                                         </div>
-														
+
                                                     </div>
                                                     <div class="clear"></div>
                                                 </div>
@@ -543,25 +588,25 @@
 														 </article>
 														      </div>
                                                     </div>
-												
+
 												<div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title"><a>Lectura de conclusiones.</a></h3>
 											 <h3 class="gdlr-session-item-title"><a>Clausura.</a></h3>
-                                               
-                                                
+
+
                                         </div>
                                               </div>
-											
-											
+
+
                                              <div class="clear"></div>
                                           </div>
-									
+
 								  </div>
-									
+
 									<div class="gdlr-session-item-tab-content gdlr-tab-4">
-                                     
+
                                  </div>
-                                 
+
                                 </div>
                                 <div class=clear></div>
                             </div>
@@ -569,11 +614,11 @@
                         </div>
                             </div>
                         </div>
-                        
+
                     </section>
                     <div class="section-container container">
                     <section id="ponentescdmx">
-                        
+
                         <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class=gdlr-item-title-head>
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">SEMBLANZA DE LOS PONENTES</h3>
@@ -593,7 +638,7 @@
                                                         <div class=gdlr-lightbox-form id=gdlr-form-1>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    LICENCIADA EN DERECHO POR LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO CON UNA ESPECIALIDAD EN DERECHO ADMINISTRATIVO Y UN DIPLOMADO EN MEDIACIÓN FAMILIAR.  <br> LA LIC. CLAUDIA SIERRA HA PARTICIPADO COMO PONENTE EN LAS REUNIONES DE LA RED MEXICANA DE COOPERACIÓN JUDICIAL PARA LA PROTECCIÓN DE LA NIÑEZ, ESCUELAS JUDICIALES ESTATALES, ASÍ COMO EN LAS JORNADAS DE ACTUALIZACIÓN EN MATERIA CIVIL Y ADMINISTRATIVA EN EL CONSEJO DE LA JUDICATURA FEDERAL. <br> SE HA DESEMPEÑADO COMO ABOGADA DICTAMINADORA EN LA DIRECCIÓN DE NACIONALIDAD Y NATURALIZACIÓN DE LA DIRECCIÓN GENERAL DE ASUNTOS JURÍDICOS Y JEFA DEL DEPARTAMENTO DE RECUPERACIÓN DE ALIMENTOS EN EL EXTRANJERO AMBAS EN LA SECRETARÍA DE RELACIONES EXTERIORES. <br>  EN ESTE MOMENTO FUNGE COMO SUBDIRECTORA DE RESTITUCIÓN Y CUSTODIA INTERNACIONAL DE MENORES EN LA DIRECCIÓN GENERAL ADJUNTA DE DERECHO DE FAMILIA, OFICINA DESIGNADA COMO AUTORIDAD CENTRAL PARA LAS CONVENCIONES EN MATERIA DE SUSTRACCIÓN INTERNACIONAL DE MENORES ASÍ COMO ENCARGADA DE LOS CASOS DE REUNIFICACIÓN FAMILIAR ESTADOS UNIDOS-MÉXICO.   <br> 
+                                                                    LICENCIADA EN DERECHO POR LA UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO CON UNA ESPECIALIDAD EN DERECHO ADMINISTRATIVO Y UN DIPLOMADO EN MEDIACIÓN FAMILIAR.  <br> LA LIC. CLAUDIA SIERRA HA PARTICIPADO COMO PONENTE EN LAS REUNIONES DE LA RED MEXICANA DE COOPERACIÓN JUDICIAL PARA LA PROTECCIÓN DE LA NIÑEZ, ESCUELAS JUDICIALES ESTATALES, ASÍ COMO EN LAS JORNADAS DE ACTUALIZACIÓN EN MATERIA CIVIL Y ADMINISTRATIVA EN EL CONSEJO DE LA JUDICATURA FEDERAL. <br> SE HA DESEMPEÑADO COMO ABOGADA DICTAMINADORA EN LA DIRECCIÓN DE NACIONALIDAD Y NATURALIZACIÓN DE LA DIRECCIÓN GENERAL DE ASUNTOS JURÍDICOS Y JEFA DEL DEPARTAMENTO DE RECUPERACIÓN DE ALIMENTOS EN EL EXTRANJERO AMBAS EN LA SECRETARÍA DE RELACIONES EXTERIORES. <br>  EN ESTE MOMENTO FUNGE COMO SUBDIRECTORA DE RESTITUCIÓN Y CUSTODIA INTERNACIONAL DE MENORES EN LA DIRECCIÓN GENERAL ADJUNTA DE DERECHO DE FAMILIA, OFICINA DESIGNADA COMO AUTORIDAD CENTRAL PARA LAS CONVENCIONES EN MATERIA DE SUSTRACCIÓN INTERNACIONAL DE MENORES ASÍ COMO ENCARGADA DE LOS CASOS DE REUNIFICACIÓN FAMILIAR ESTADOS UNIDOS-MÉXICO.   <br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -624,7 +669,7 @@
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
 																	Formación académica<br>
-                                                                    LICENCIADO EN DERECHO POR LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br>MAESTRÍA EN DERECHO PROCESAL PENAL, POR EL INSTITUTO DE ESTUDIOS SUPERIORES EN DERECHO PENAL A.C.<br>DOCTORA EN DERECHO, POR EL INSTITUTO DE ESTUDIOS SUPERIORES EN DERECHO PENAL A.C.<br> DOCTORA EN DERECHO POR EL CENTRO DE ESTUDIOS DE POSGRADO EN DERECHO.<br>DIPLOMADO EN MEDIACIÓN Y CONCILIACIÓN, POR LA ESCUELA JUDICIAL DEL ESTADO DE MÉXICO.<br> CERTIFICACIÓN POR LA UNIVERSIDAD JAVERIANA DE CALI COLOMBIA, DEL DIPLOMADO VIRTUAL EN JUSTICIA RESTAURATIVA.<br> DIVERSOS DIPLOMADOS EN DERECHOS HUMANOS POR LA COMISIÓN NACIONAL DE DERECHOS HUMANOS.<br> Trayectoria Profesional <br> SE HA DESEMPEÑADO COMO COMO CATEDRÁTICO Y DISERTANTE EN DIVERSOS CURSOS, TALLERES Y SEMINARIOS RELACIONADOS CON LOS MÉTODOS ALTERNOS DE SOLUCIÓN DE CONFLICTOS.<br>  FACILITADORA DE PROCESOS RESTAURATIVOS EN JUSTICIA PENAL PARA ADULTOS Y ADOLESCENTES.<br>  ACTUALMENTE SE DESEMPEÑA COMO MEDIADORA- CONCILIADORA Y FACILITADORA DEL CENTRO ESTATAL DEL PODER JUDICIAL DEL ESTADO DE MÉXICO.<br> 
+                                                                    LICENCIADO EN DERECHO POR LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br>MAESTRÍA EN DERECHO PROCESAL PENAL, POR EL INSTITUTO DE ESTUDIOS SUPERIORES EN DERECHO PENAL A.C.<br>DOCTORA EN DERECHO, POR EL INSTITUTO DE ESTUDIOS SUPERIORES EN DERECHO PENAL A.C.<br> DOCTORA EN DERECHO POR EL CENTRO DE ESTUDIOS DE POSGRADO EN DERECHO.<br>DIPLOMADO EN MEDIACIÓN Y CONCILIACIÓN, POR LA ESCUELA JUDICIAL DEL ESTADO DE MÉXICO.<br> CERTIFICACIÓN POR LA UNIVERSIDAD JAVERIANA DE CALI COLOMBIA, DEL DIPLOMADO VIRTUAL EN JUSTICIA RESTAURATIVA.<br> DIVERSOS DIPLOMADOS EN DERECHOS HUMANOS POR LA COMISIÓN NACIONAL DE DERECHOS HUMANOS.<br> Trayectoria Profesional <br> SE HA DESEMPEÑADO COMO COMO CATEDRÁTICO Y DISERTANTE EN DIVERSOS CURSOS, TALLERES Y SEMINARIOS RELACIONADOS CON LOS MÉTODOS ALTERNOS DE SOLUCIÓN DE CONFLICTOS.<br>  FACILITADORA DE PROCESOS RESTAURATIVOS EN JUSTICIA PENAL PARA ADULTOS Y ADOLESCENTES.<br>  ACTUALMENTE SE DESEMPEÑA COMO MEDIADORA- CONCILIADORA Y FACILITADORA DEL CENTRO ESTATAL DEL PODER JUDICIAL DEL ESTADO DE MÉXICO.<br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -653,7 +698,7 @@
                                     <div class=clear></div>
                                 </div>
                             </div>
-						<div class=speaker-item-wrapper style="margin-bottom: 30px;">   
+						<div class=speaker-item-wrapper style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
@@ -663,7 +708,7 @@
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Juan Carlos Ortega Castro</h3>
 														<div class="gdlr-session-item-excerpt">Magistrado del Segundo Tribunal Colegiado en materia Civil del Segundo Circuito de Toluca, estado de México </div>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-5>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -684,7 +729,7 @@
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                     Formación académica: <br>LICENCIADO EN DERECHO POR LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br> MAESTRÍA EN DERECHO PROCESAL CIVIL POR EL CENTRO DE ESTUDIOS SUPERIORES EN CIENCIAS JURÍDICAS Y CRIMINOLÓGICAS.<br> ESPECIALIDAD EN DERECHO PROCESAL CIVIL LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br> ESPECIALIDAD EN AMPARO POR LA UNIVERSIDAD AUTÓNOMA DEL ESTADO DE MÉXICO.<br> ESPECIALIDAD EN DERECHO JUDICIAL POR LA ESCUELA JUDICIAL DEL PODER JUDICIAL DEL ESTADO DE MÉXICO.<br>Trayectoria Profesional:<br>SE HA DESEMPEÑADO EN EL TRIBUNAL SUPERIOR DE JUSTICIA DEL ESTADO DE MÉXICO POR MÁS DE 30 AÑOS; ENTRE LOS PUESTOS QUE HA OCUPADO SE ENCUENTRAN: <br>TÉCNICO JUDICIAL, NOTIFICADOR JUDICIAL, SECRETARIO DE ACUERDOS, PROYECTISTA Y JUEZ DE CUANTÍA MENOR.<br> ACTUALMENTE SE DESEMPEÑA COMO JUEZ DE CUANTÍA MAYOR DENTRO DEL ANTES MENCIONADO. <br>
-																	
+
 
 																</h3>
                                                             </div>
@@ -735,7 +780,7 @@
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
-                                           
+
                                              <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Oscar_G_Cervera_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
@@ -749,7 +794,8 @@
 																</h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-9 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info">
+                                                            <a class=gdlr-ticket-button href=#gdlr-form-9 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
@@ -771,7 +817,7 @@
                                                     <div class=gdlr-speaker-thumbnail></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title"> </h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-11>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -787,7 +833,7 @@
                                                     <div class=gdlr-speaker-thumbnail></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">  </h3>
-														
+
                                                         <div class=gdlr-lightbox-form id=gdlr-form-12>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -808,10 +854,8 @@
                             <div class=clear></div>
                     </section>
                 </div>
-				
-			 
-				
-				
+
+
                 </div>
             </div>
         </div>
@@ -826,12 +870,15 @@
                 </div>
             </div>
         </footer>
+
     </div>
+
+    {{-- <div id="fondoModal" name="fondoModal" class="background-Modal"></div> --}}
+
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
-
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>
@@ -848,11 +895,18 @@
 
     <script src='js/bitacoraLogout.js'></script>
 
+    <script>
+        $(document).ready(function(){
 
+            $("#btncons").click(function(){
+            setTimeout('document.location.reload()',20000);
 
-    <!-- MAster Slider Activation -->
+            });
+        });
+        </script>
 
     <script>
+
     (function ( $ ) {
         "use strict";
 
@@ -898,17 +952,17 @@
 				parallaxMode    : 'swipe',
 				view            : "basic"
             });
-            
 
-            
+
+
             $("head").append( "<link rel='stylesheet' id='ms-fonts'  href='//fonts.googleapis.com/css?family=Raleway:300,800,regular' type=text/css media='all' />" );
 
             window.masterslider_instances = window.masterslider_instances || {};
             window.masterslider_instances["5_d1da"] = masterslider_d1da;
          });
-        
+
     })(jQuery);
-    </script> 
+    </script>
 
 </body>
 

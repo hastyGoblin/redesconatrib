@@ -28,16 +28,13 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items" style="margin: auto;">
-                        <h3>El contenido estar&aacute; disponible a partir del d&iacute;a de la inauguraci&oacute;n de tu Red</h3>
+                        <h3>Constancia ya generada</h3>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        <form id="logout-form" action="{{ route('home') }}" method="POST" class="d-none">
                             @csrf
                         </form>
                            <!-- <input class="form-control" type="text" name="username" placeholder="E-mail Address" required>-->
                             <div class="form-button full-width">
-
-                                <button id="submit" type="submit" class="ibtn btn-forget" onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">Regresar</button>
                             </div>
                     </div>
 

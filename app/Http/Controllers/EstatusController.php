@@ -20,7 +20,7 @@ class EstatusController extends Controller
         $estatus = User::where('id', $user)->update(['fk_estatus' => '2', 'activo' => '1']);
 
         $datos_user = User::where('id','=', $user)->get();
-        
+
         $red = cat_redesconatrib::where('id','=', $datos_user[0]->id_red)->get();
 
         $info = [
@@ -29,7 +29,7 @@ class EstatusController extends Controller
                 'correo' => $datos_user[0]->email,
                 'red' => $red[0]->red,
                 ];
-                
+
         Mail::to($datos_user[0]->email)->send(new RegistroMail($info));
 
         return redirect()->route('home')->with('success','Usuario aceptado');
@@ -42,7 +42,7 @@ class EstatusController extends Controller
         $estatus = User::where('id', $user)->update(['fk_estatus' => '3']);
 
         $datos_user = User::where('id','=', $user)->get();
-        
+
         $red = cat_redesconatrib::where('id','=', $datos_user[0]->id_red)->get();
 
         $info = [
@@ -51,7 +51,7 @@ class EstatusController extends Controller
                 'correo' => $datos_user[0]->email,
                 'red' => $red[0]->red,
                 ];
-                
+
         //Mail::to($datos_user[0]->email)->send(new RegistroMail($info));
 
         return redirect()->route('home')->with('danger','Usuario rechazado');
