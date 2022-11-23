@@ -55,13 +55,28 @@ class HomeController extends Controller
 
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
 
+        // }elseif ($rol[0]->fk_roles == '3') {
+        //     $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','entidad.entidad')
+        //     ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
+        //     ->join('roles AS R','R.ID','=','UR.fk_roles')
+        //     ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
+        //     ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
+        //     ->join('entidadfederativa AS entidad','entidad.id','=','users.fk_estado')
+        //     ->where('users.activo','=','0')
+        //     ->where('users.fk_estatus','=','1')
+        //     ->where('UR.fk_roles','=','2')
+        //     ->where('id_red','=',$red_id)
+        //     ->orderBy('users.created_at','asc')
+        //     ->get();
+
+        //     return view('moduloAdminTodos')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
         }
         elseif ($rol[0]->fk_roles == '2') {
 
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','id_red','users.id')
             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
             ->join('roles AS R','R.ID','=','UR.fk_roles')
-           ->where('users.activo','=','1')
+            ->where('users.activo','=','1')
             ->where('users.fk_estatus','=','2')
             ->where('UR.fk_roles','=','2')
             ->where('users.id_red','=',$red_id)

@@ -22,6 +22,10 @@ class rol extends Seeder
         DB::table('roles')->insert([
             'ID'=>2,
             'rol'=> "Usuario",
-        ]); 
+        ]);
+        // DB::table('roles')->insert([
+        //     'ID'=>3,
+        //     'rol'=> "Administrador",
+        // ]);
     }
 }

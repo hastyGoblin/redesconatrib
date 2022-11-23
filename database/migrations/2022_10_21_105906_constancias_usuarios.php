@@ -13,7 +13,7 @@ class constanciasUsuarios extends Migration
      */
     public function up()
     {
-        Schema::create('ConstanciasUsuarios', function (Blueprint $table){
+        Schema::create('constanciasUsuarios', function (Blueprint $table){
 
             $table->increments('ID');
             $table->integer('fk_users')->unsigned();
@@ -32,6 +32,6 @@ class constanciasUsuarios extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ConstanciasUsuarios');
+        Schema::dropIfExists('constanciasUsuarios');
     }
 }
