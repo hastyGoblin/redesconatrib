@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use \Codedge\Fpdf\Fpdf;
+use Codedge\Fpdf\Fpdf;
 use App\Models\constanciasUsuarios;
 use Auth;
 use User;
