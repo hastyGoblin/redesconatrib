@@ -83,7 +83,7 @@ class HomeController extends Controller
             ->where('users.id','=',$id)
             ->get();
 
-            $activoConst=constanciasusuarios::where('fk_users','=', $id )->get();
+            $activoConst=constanciasUsuarios::where('fk_users','=', $id )->get();
             $existe = $activoConst->count();
 
             if ($existe == 0) {
@@ -92,7 +92,7 @@ class HomeController extends Controller
                 $activo=$activoConst[0]->activo;
             }
 
-           $consulta= DB::table('constanciasusuarios')->where('fk_users','=', $id )->get();}
+           $consulta= DB::table('constanciasUsuarios')->where('fk_users','=', $id )->get();}
 
             switch ($red_id) {
 
