@@ -9,7 +9,7 @@ class constanciasUsuarios extends Model
 {
     use HasFactory;
 
-    protected $table = 'constanciasusuarios';
+    protected $table = 'constanciasUsuarios';
     protected $primaryKey = 'ID';
     protected $fillable = [
         'fk_users',
