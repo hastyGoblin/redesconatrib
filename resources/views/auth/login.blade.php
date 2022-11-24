@@ -46,9 +46,10 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                                <button id="submit" type="submit" class="ibtn">Ingresar</button> 
+                                <button id="submit" type="submit" class="ibtn">Ingresar</button>
                                 <button id="rpassword" type="button" onclick="location.href='{{ route('register') }}';"  class="ibtn">Registrate</button><hr>
-                                <button id="rpassword" type="button" onclick="location.href='{{ route('password.request') }}';"  class="ibtn">Recuperar Constrase&ntilde;a</button> 
+                                <button id="rpassword" type="button" onclick="location.href='{{ route('password.request') }}';"  class="ibtn">Recuperar Constrase&ntilde;a</button><hr>
+                                <button id="rpassword" type="button" onclick="location.href='{{ route('descargaManual') }}';"  class="ibtn">Descargar Manual de Usuario</button>
                             </div>
                         </form>
                          <div class="other-links">

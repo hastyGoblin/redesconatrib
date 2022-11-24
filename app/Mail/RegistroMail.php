@@ -15,7 +15,7 @@ class RegistroMail extends Mailable
      * Create a new message instance.
      *
      * @return void
-     */ 
+     */
     public function __construct($info)
     {
         $this->info =$info;//
@@ -41,13 +41,15 @@ class RegistroMail extends Mailable
             case 3://CORREO RECHAZADO
                 return $this->view('email.email_rechazo')->with('info',$this->info);
                 break;
-            
+            case 4://CORREO CONFIRMACIÓN CONSTANCIA
+                return $this->view('email.correoConstancia')->with('info',$this->info);
+                break;
             default:
                 // code...
                 break;
         }
         //return $this->view('register')->with('info',$this->info);
         //return $this->view('email.email_registro_2')->with('info',$this->info);
-        
+
     }
 }

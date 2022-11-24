@@ -97,9 +97,9 @@
                                                                 @csrf
                                                                 <h3>Si encuentra alg&uacute;n error en su nombre actualice, por favor</h3>
                                                                 <h3>Nombre:</h3>
-                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}">
-                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}">
-                                                                <input type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}">
+                                                                <input style="text-transform: uppercase;" maxlength="50" type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}">
+                                                                <input style="text-transform: uppercase;" maxlength="50" type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}">
+                                                                <input style="text-transform: uppercase;" maxlength="50" type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}">
                                                                 <input type="hidden" name="iduser" id="iduser" value="{{$id_user}}">
                                                                 <input type="hidden" name="idred" id="idred" value="{{$idred}}">
                                                                 <input type="submit" name="btncons" id="btncons">

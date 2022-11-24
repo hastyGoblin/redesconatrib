@@ -5,9 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Codedge\Fpdf\Fpdf\Fpdf;
 use App\Models\constanciasUsuarios;
+use App\Models\cat_redesconatrib;
+use App\Mail\RegistroMail;
 use Auth;
-use User;
+use App\Models\User;
 use DB;
+use Mail;
 
 class generaConstancia extends Controller
 {
@@ -15,6 +18,12 @@ class generaConstancia extends Controller
     private $fpdf;
 
     public function habilitaConstancia(Request $request){
+
+        $user = $request['id_user'];
+        $datos_user = User::where('id','=', $user)->get();
+
+        $red_id = Auth::user()->id_red;
+
         constanciasUsuarios::create([
             "fk_users" => $request->id_user,
             "activo" => 1,
@@ -24,15 +33,35 @@ class generaConstancia extends Controller
         ->where ('id','=',$request->id_user)
         ->update(['estatus_const'=>1]);
 
+        $red = cat_redesconatrib::where('id','=', $red_id)->get();
+
+        $info = [
+                'tipo_correo' => 4,
+                'nombre' => $datos_user[0]->name,
+                'correo' => $datos_user[0]->email,
+                'red' => $red[0]->red,
+                ];
+
+        Mail::to($datos_user[0]->email)->send(new RegistroMail($info));
+
         return redirect()->route('usuarioAceptado')->with('success','Constancia Habilitada');
+    }
+
+    public function descargaManual(){
+        $filename = "ManualUsuario/Manual_de_Usuario_Conatrib.pdf"; // el nombre con el que se descargará, puede ser diferente al original
+        /*header("Content-Type: application/octet-stream");*/
+        header("Content-Type: application/force-download");
+        header("Content-Disposition: attachment; filename=\"$filename\"");
+        readfile($filename);
+        echo "descarga manual";
     }
 
     public function descargaConstancia(Request $request){
 
         $id = $request->iduser;
-        $nombre = $request->nombre;
-        $appat = $request->appat;
-        $apmat = $request->apmat;
+        $nombre = strtoupper($request->nombre);
+        $appat = strtoupper($request->appat);
+        $apmat = strtoupper($request->apmat);
         $red = $request->idred;
 
         $consulta = constanciasUsuarios::select('activo')
@@ -42,7 +71,7 @@ class generaConstancia extends Controller
         if ($consulta[0]->activo == 0) {
            return view('disponible');
         }else {
-            $nom_com=utf8_decode(utf8_encode($nombre." ".$appat." ".$apmat));
+            $nom_com=utf8_decode(utf8_encode (mb_strtoupper($nombre." ".$appat." ".$apmat)));
 
             DB::table('constanciasUsuarios')
             ->where ('fk_users','=',$id)
