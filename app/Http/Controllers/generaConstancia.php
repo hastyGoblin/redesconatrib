@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Codedge\Fpdf\fpdf\Fpdf;
+required('Codedge\Fpdf\fpdf\Fpdf.php');
 use App\Models\constanciasUsuarios;
 use Auth;
 use User;
