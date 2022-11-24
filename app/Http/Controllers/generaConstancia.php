@@ -48,7 +48,7 @@ class generaConstancia extends Controller
     }
 
     public function descargaManual(){
-        $filename = "ManualUsuario/Manual_de_Usuario_Conatrib.pdf"; // el nombre con el que se descargará, puede ser diferente al original
+        $filename = "ManualUsuario/241122_ManualdeUsuario_CONSTANCIA.pdf"; // el nombre con el que se descargará, puede ser diferente al original
         /*header("Content-Type: application/octet-stream");*/
         header("Content-Type: application/force-download");
         header("Content-Disposition: attachment; filename=\"$filename\"");
