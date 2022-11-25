@@ -178,7 +178,7 @@
                                         </div>
 
 
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
+                                        {{-- <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
                                                                  document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
                                             <div class=gdlr-session-head-day>
                                                     Constancias
@@ -187,7 +187,7 @@
                                                 </form>
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div>
+                                        </div> --}}
 
 
 

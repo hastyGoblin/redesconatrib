@@ -172,10 +172,10 @@
 
 
 
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-4>
+                                        {{-- <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-4>
                                             <div class=gdlr-session-head-day>Constancias</div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div>
+                                        </div> --}}
                                         <div class=clear></div>
                                     </div>
 
