@@ -95,13 +95,16 @@
                                                         <div class=gdlr-paypal-form-wrapper>
                                                             <form method="POST" action="{{ route('descargaConstancia') }}" target="_blank">
                                                                 @csrf
-                                                                <h3>Si encuentra alg&uacute;n error en su nombre actualice, por favor</h3>
-                                                                <h3>Nombre:</h3>
-                                                                <input style="text-transform: uppercase;" maxlength="50" type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}">
-                                                                <input style="text-transform: uppercase;" maxlength="50" type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}">
-                                                                <input style="text-transform: uppercase;" maxlength="50" type="text" style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}">
+                                                                <h3>Si encuentra alg&uacute;n error en su nombre por favor de hacer la corrección en los siguientes campos: </h3>
+                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}" style="text-transform: uppercase;" maxlength="50">
+                                                                <h5>Nombre</h5>
+                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}" style="text-transform: uppercase;" maxlength="50">
+                                                                <h5>Apellido Paterno</h5>
+                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}" style="text-transform: uppercase;" maxlength="50">
+                                                                <h5>Apellido Materno</h5>
                                                                 <input type="hidden" name="iduser" id="iduser" value="{{$id_user}}">
                                                                 <input type="hidden" name="idred" id="idred" value="{{$idred}}">
+                                                                <br>
                                                                 <input type="submit" name="btncons" id="btncons">
                                                             </form>
                                                         </div>

@@ -42,7 +42,7 @@ class RegistroMail extends Mailable
                 return $this->view('email.email_rechazo')->with('info',$this->info);
                 break;
             case 4://CORREO CONFIRMACIÓN CONSTANCIA
-                return $this->view('email.correoConstancia')->with('info',$this->info);
+                return $this->view('email.correoConstancia')->subject("Constancia CONATRIB")->with('info',$this->info);
                 break;
             default:
                 // code...
