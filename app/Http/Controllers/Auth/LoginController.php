@@ -53,8 +53,8 @@ class LoginController extends Controller
             "fk_tipoEvento" => 2,
             "activo" => 1]);
 
-        $this->doLogout($request);
-        return redirect()->route('login');
+        // $this->doLogout($request);
+        // return redirect()->route('login');
     }
 
 }

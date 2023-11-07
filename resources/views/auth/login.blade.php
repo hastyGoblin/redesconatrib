@@ -29,7 +29,6 @@
                 <div class="form-content">
                     <div class="form-items">
                         <h3>Ingresa tu correo para acceder a tu red</h3>
-                       <!-- <p>Texto texto.</p> -->
                         <br>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
@@ -47,9 +46,9 @@
                                     </span>
                                 @enderror
                                 <button id="submit" type="submit" class="ibtn">Ingresar</button>
-                                <button id="rpassword" type="button" onclick="location.href='{{ route('register') }}';"  class="ibtn">Registrate</button><hr>
-                                <button id="rpassword" type="button" onclick="location.href='{{ route('password.request') }}';"  class="ibtn">Recuperar Constrase&ntilde;a</button><hr>
-                                <button id="rpassword" type="button" onclick="location.href='{{ route('descargaManual') }}';"  class="ibtn" style="text-align: right">Descargar Manual para la <br> Generación de Constancia</button>
+                                <button id="rpassword" type="button" onclick="location.href='{{ route('register') }}';" class="ibtn">Registrate</button><hr>
+                                <button id="rpassword" type="button" onclick="location.href='{{ route('password.request') }}';" class="ibtn">Recuperar Constrase&ntilde;a</button><hr>
+                                <button id="rpassword" type="button" onclick="location.href='{{ route('descargaManual') }}';" class="ibtn" style="text-align: right">Descargar Manual para la <br> Generación de Constancia</button>
                             </div>
                         </form>
                          <div class="other-links">

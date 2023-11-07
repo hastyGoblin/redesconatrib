@@ -33,11 +33,16 @@ class LoginResponse extends FortifyLoginResponse
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
-        bitacoraUsuario::create([
+        $formatodiaAgendado = new Carbon();
+        $formatodias =$formatodiaAgendado->format('Y-m-d');
+        // return $formatodias;
+
+        $bitacoraUser = bitacoraUsuario::create([
             "fechaEvento" => Carbon::now(),
             "fk_usuarioBitacora" => $id,
             "fk_tipoEvento" => 1,
             "activo" => 1]);
+            // return $red[0]->fechaInicio;
 
         if ($rol[0]->fk_roles == '1') {
 
@@ -53,10 +58,22 @@ class LoginResponse extends FortifyLoginResponse
             ->where('users.id_red','=',$red_id)
             ->orderBy('users.created_at','asc')
             ->get();
+
             return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
 
         }elseif ($rol[0]->fk_roles == '2') {
+            
             return redirect()->route('home');
+
         }
     }
 }
+
+// elseif ($formatodias >= $red[0]->fechaInicio && $rol[0]->fk_roles == '2') {
+            
+//     return redirect()->route('home');
+
+// }else {
+
+//     return view('disponible');
+// }

@@ -27,7 +27,6 @@
     <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
     <link rel="stylesheet" type="text/css" href="css/iofrm-theme2.css">
 
-
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
@@ -47,213 +46,155 @@
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <!--<li class="menu-item">
-                                    <a href="#historia">Objetivo</a>
-                                </li>-->
-                               <!-- <li class="menu-item">
-                                    <a href="#programa">Programa</a>
-                                </li>-->
-                             <!--   <li class="menu-item menu-item-has-children">
-                                    <a href="#ponentescdmx">Ponentes</a>
-                                </li>-->
                             </ul>
                         </div>
                     </div>
                     <div class="gdlr-navigation-wrapper">
                         <nav class="gdlr-navigation" id="gdlr-main-navigation role=navigation">
                             <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
-                               <!-- <li class="menu-item menu-item-home">
-                                    <a href="#inicio" aria-current="page">Inicio</a>
-                                </li>-->
-                                <!--<li class="menu-item">
-                                    <a href="#historia">Historia</a>
-                                </li>-->
-
                                 <li class="menu-item">
                                     <a class="dropdown-item">{{Auth::user()->name}}</a>
                                 </li>
-
                                 <li class="menu-item">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
-                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
                                 </li>
-
-
-
-
                             </ul>
                         </nav>
-                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrapper">
+        <div class="gdlr-content">
+            <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
+                <section id="inicio">
+                    <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('administrador/red/upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="container">
+                            <div class="gdlr-title-item" style="margin-bottom: 40px;">
+                                <div class="gdlr-item-title-wrapper gdlr-item pos-center">
+                                    <div class="gdlr-item-title-head">
+                                        <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">{{$red[0]->red}}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="clear"></div>
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-        </header>
-        <div id="gdlr-header-substitute"></div>
-        <div class="content-wrapper">
-            <div class="gdlr-content">
-                <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
-                    <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('administrador/red/upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
-                            <div class="container">
-                                <div class="gdlr-title-item" style="margin-bottom: 40px;">
-                                    <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
-                                        <div class="gdlr-item-title-head">
-                                            <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">{{$red[0]->red}}</h4>
-                                            <div class="clear"></div>
+                </section>
+                <div class=content-wrapper>
+                    <div class=gdlr-content>
+                        <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
+                            <section id=content-section-1>
+                                <div class="section-container container">
+                                    <div class=session-item-wrapper style="margin-bottom: 75px;">
+                                        <div class="gdlr-session-item gdlr-small-session-item gdlr-item">
+                                            <div class=gdlr-session-item-head>
+                                                <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-1 onclick="event.preventDefault();
+                                                                            document.getElementById('solicitud-form').submit();">
+                                                    <div class=gdlr-session-head-day>
+                                                        Solicitudes
+                                                    </div>
+                                                    <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
+                                                </div>
+                                                <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-2 onclick="event.preventDefault();
+                                                                            document.getElementById('usuario-form').submit();">
+                                                    <div class=gdlr-session-head-day>
+                                                        Aceptadas
+                                                    </div>
+
+                                                    <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
+                                                        @csrf
+                                                    </form>
+
+                                                    <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
+                                                        @csrf
+                                                    </form>
+
+                                                    <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                                </div>
+                                                <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
+                                                                        document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
+                                                    <div class=gdlr-session-head-day>
+                                                        Rechazadas
+                                                        <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
+                                                            @csrf
+                                                        </form>
+                                                    </div>
+                                                    <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                                </div>
+                                                <div class=clear></div>
+                                            </div>
+
+                                            @if($message = Session::get('success'))
+                                                <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
+                                                    <font color="#155724">{{ $message }}</font>
+                                                </div>
+                                            @endif
+
+                                            @if($message = Session::get('danger'))
+                                                <div style="background-color: #d4edda;" class="alert alert-danger" >
+                                                    <font color="#721c24">{{ $message }}</font>
+                                                </div>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
-                                <div class="clear"></div>
-
-                                <div class="clear"></div>
-                                <div class="clear"></div>
-                            </div>
+                            </section>
                         </div>
-                        <div class="clear"></div>
-                    </section>
-        <div class=content-wrapper>
-            <div class=gdlr-content>
-                <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
-
-                    <section id=content-section-1>
-                        <div class="section-container container">
-                            <div class=session-item-wrapper style="margin-bottom: 75px;">
-                                <div class="gdlr-session-item gdlr-small-session-item gdlr-item">
-                                    <div class=gdlr-session-item-head>
-                                        <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-1 onclick="event.preventDefault();
-                                                                     document.getElementById('solicitud-form').submit();">
-                                            <div class=gdlr-session-head-day>
-                                                Solicitudes
-
-                                            </div>
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
-                                        </div>
-
-                                        <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-2 onclick="event.preventDefault();
-                                                                     document.getElementById('usuario-form').submit();">
-                                            <div class=gdlr-session-head-day>
-                                                Aceptadas
-                                            </div>
-
-                                            <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
-                                                @csrf
-                                            </form>
-
-                                            <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
-                                                @csrf
-                                            </form>
-
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div>
-
-
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
-                                                                 document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
-                                            <div class=gdlr-session-head-day>
-                                                Rechazadas
-
-                                                <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
-                                                    @csrf
-                                                </form>
-                                            </div>
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div>
-
-                                        {{-- <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-4>
-                                            <div class=gdlr-session-head-day>Constancias</div>
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div> --}}
-                                        <div class=clear></div>
-                                    </div>
-
-                                    @if($message = Session::get('success'))
-                                        <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
-                                            <font color="#155724">{{ $message }}</font>
-                                        </div>
-                                    @endif
-
-                                    @if($message = Session::get('danger'))
-                                        <div style="background-color: #d4edda;" class="alert alert-danger" >
-                                            <font color="#721c24">{{ $message }}</font>
-                                        </div>
-                                    @endif
-                                </div>
-                            </div>
-                                            <div class=clear></div>
-
-                        </div>
-                    </section>
+                    </div>
                 </div>
+                <table border="1px">
+                    <thead>
+                        <tr>
+                            <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th>Estado</th>
+                            <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th>Correo</th>
+                            <th colspan="10">Acciones</th>
+                        </tr>
+                    </thead>
+                    @foreach($aceptado as $registrados)
+                        <tbody>
+                            <tr>
+                                <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
+                                <td>{{$registrados->entidad}}</td>
+                                <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                @if ($registrados->estatus_const==1)
+                                    <td>Constancia habilitada</td>
+                                @else
+                                    <td>
+                                        <form method="post" name="habilitarConstancia" action="{{ url('habilitaConstancia') }}">
+                                            @csrf
+                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                            <input type="submit" name="habilitar" value="Habilitar Constancia">
+                                        </form>
+                                    </td>
+                                @endif
+                            </tr>
+                        </tbody>
+                    @endforeach
+                </table>
+                <footer class=footer-wrapper>
+                    <div class=copyright-wrapper>
+                        <div class="copyright-container container">
+                            <div class=copyright-left> © Copyright CONATRIB 2022</div>
+                            <div class=copyright-right> <a href="https://conatrib.org.mx/">P&aacute;gina web</a> | <a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">Youtube</a> | <a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a> | <a href="https://twitter.com/ConatribMx">Twitter</a></div>
+                            <div class=clear></div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
-
-
-
-        <table border="1px">
-            <thead>
-                <tr>
-                    <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                    <th>Estado</th>
-                    <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                    <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                    <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                    <th>Correo</th>
-                    <th colspan="10">Acciones</th>
-
-                </tr>
-            </thead>
-
-            @foreach($aceptado as $registrados)
-                <tbody>
-                    <tr>
-                        <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
-                        <td>{{$registrados->entidad}}</td>
-                        <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-
-                        @if ($registrados->estatus_const==1)
-
-                            <td>Constancia habilitada</td>
-                        @else
-                            <td>
-                                <form method="post" name="habilitarConstancia" action="{{ url('habilitaConstancia') }}">
-                                    @csrf
-                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                    <input type="submit" name="habilitar" value="Habilitar Constancia">
-                                </form>
-                            </td>
-
-                        @endif
-
-                    </tr>
-                </tbody>
-            @endforeach
-
-        </table>
-
-        <footer class=footer-wrapper>
-            <div class=copyright-wrapper>
-                <div class="copyright-container container">
-                    <div class=copyright-left> © Copyright CONATRIB 2022</div>
-                    <div class=copyright-right> <a href="https://conatrib.org.mx/">P&aacute;gina web</a> | <a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">Youtube</a> | <a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a> | <a href="https://twitter.com/ConatribMx">Twitter</a></div>
-                    <div class=clear></div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    </div>
     </div>
 
     <script src='administrador/red/js/jquery/jquery.js'></script>

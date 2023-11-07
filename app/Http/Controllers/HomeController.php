@@ -98,7 +98,7 @@ class HomeController extends Controller
 
                 case 1:
                     $mensaje= "Red 1";
-                    //return view('disponible');
+                    return view('disponible');
                     return view('red_6_cjpn')->with('id_user',$id)->with('activo',$activo)
                     ->with('nombre',$registradosRed[0]->name)
                     ->with('appat',$registradosRed[0]->apellido_paterno)
@@ -108,7 +108,7 @@ class HomeController extends Controller
 
                 case 2:
                     $mensaje= "Red 2";
-                    //return view('disponible');
+                    return view('disponible');
                     return view('red_3_ej')->with('id_user',$id)->with('activo',$activo)
                     ->with('nombre',$registradosRed[0]->name)
                     ->with('appat',$registradosRed[0]->apellido_paterno)
@@ -118,7 +118,7 @@ class HomeController extends Controller
 
                 case 3:
                     $mensaje= "Red 3";
-                    // return view('disponible'); activar
+                    return view('disponible');
                     return view('red_7_sijpa')->with('id_user',$id)->with('activo',$activo)
                     ->with('nombre',$registradosRed[0]->name)
                     ->with('appat',$registradosRed[0]->apellido_paterno)
@@ -128,7 +128,7 @@ class HomeController extends Controller
 
                 case 4:
                     $mensaje= "Red 4";
-                    // return view('disponible');
+                    return view('disponible');
                     return view('red_2_rejem')->with('id_user',$id)->with('activo',$activo)
                     ->with('nombre',$registradosRed[0]->name)
                     ->with('appat',$registradosRed[0]->apellido_paterno)
@@ -138,7 +138,7 @@ class HomeController extends Controller
 
                 case 5:
                     $mensaje= "Red 5";
-                    //return view('disponible'); activar
+                    return view('disponible');
                     return view('red_5_masc')->with('id_user',$id)->with('activo',$activo)
                     ->with('nombre',$registradosRed[0]->name)
                     ->with('appat',$registradosRed[0]->apellido_paterno)
@@ -148,7 +148,7 @@ class HomeController extends Controller
 
                 case 6:
                     $mensaje= "Red 6";
-                    // return view('disponible'); activar
+                    return view('disponible');
                     return view('red_1_cecofam')->with('id_user',$id)->with('activo',$activo)
                     ->with('nombre',$registradosRed[0]->name)
                     ->with('appat',$registradosRed[0]->apellido_paterno)
@@ -158,7 +158,7 @@ class HomeController extends Controller
 
                 case 7:
                     $mensaje= "Red 7";
-                    // return view('disponible'); activar
+                    return view('disponible');
                     return view('red_4_jjocmed')->with('id_user',$id)->with('activo',$activo)
                     ->with('nombre',$registradosRed[0]->name)
                     ->with('appat',$registradosRed[0]->apellido_paterno)
@@ -168,7 +168,7 @@ class HomeController extends Controller
 
                 case 9:
                     $mensaje= "Red 9";
-                    // return view('disponible'); activar
+                    return view('disponible');
                     return view('red_8_aj')->with('id_user',$id)->with('activo',$activo)
                     ->with('nombre',$registradosRed[0]->name)
                     ->with('appat',$registradosRed[0]->apellido_paterno)
