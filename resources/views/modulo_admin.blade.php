@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang=en-US><![endif]-->
-<!--[if IE 8]><html class="ie ie8 ltie9" lang=en-US><![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html lang=en-US>
-
 <head>
     <meta charset=UTF-8>
     <meta name=viewport content="initial-scale=1.0">
@@ -39,7 +35,6 @@
     <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
     <link rel="stylesheet" type="text/css" href="css/iofrm-theme2.css">
 
-
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
@@ -59,44 +54,24 @@
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <!--<li class="menu-item">
-                                    <a href="#historia">Objetivo</a>
-                                </li>-->
-                               <!-- <li class="menu-item">
-                                    <a href="#programa">Programa</a>
-                                </li>-->
-                             <!--   <li class="menu-item menu-item-has-children">
-                                    <a href="#ponentescdmx">Ponentes</a>
-                                </li>-->
                             </ul>
                         </div>
                     </div>
-
-
                     <div class="gdlr-navigation-wrapper">
                         <nav class="gdlr-navigation" id="gdlr-main-navigation role=navigation">
                             <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
-                               <!-- <li class="menu-item menu-item-home">
-                                    <a href="#inicio" aria-current="page">Inicio</a>
-                                </li>-->
-                                <!--<li class="menu-item">
-                                    <a href="#historia">Historia</a>
-                                </li>-->
                                 <li class="menu-item">
                                     <a class="dropdown-item">{{Auth::user()->name}}</a>
                                 </li>
-
                                 <li class="menu-item">
                                     <a class="dropdown-item"
                                        onclick="regLogout();event.preventDefault();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </li>
-
                             </ul>
                         </nav>
                         <div class="clear"></div>
@@ -121,13 +96,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="clear"></div>
-
-                                <div class="clear"></div>
-                                <div class="clear"></div>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </section>
                 </div>
             </div>
@@ -135,7 +105,6 @@
         <div class=content-wrapper>
             <div class=gdlr-content>
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
-
                     <section id=content-section-1>
                         <div class="section-container container">
                             <div class=session-item-wrapper style="margin-bottom: auto;">
@@ -143,31 +112,20 @@
                                     <div class=gdlr-session-item-head>
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-1>
                                             <div class=gdlr-session-head-day>
-
                                                 Solicitudes
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
                                         </div>
-
-
-
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-2 onclick="event.preventDefault();
-                                                                 document.getElementById('usuario-form').submit();" style="text-decoration: none;">
+                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-2 onclick="event.preventDefault(); document.getElementById('usuario-form').submit();" style="text-decoration: none;">
                                             <div class=gdlr-session-head-day>
                                                     Aceptadas
-
                                                 <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
                                                     @csrf
                                                 </form>
-
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
-
-
-
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
-                                                                 document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
+                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault(); document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
                                             <div class=gdlr-session-head-day>
                                                     Rechazadas
                                                 <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
@@ -176,21 +134,6 @@
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
-
-
-                                        {{-- <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
-                                                                 document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
-                                            <div class=gdlr-session-head-day>
-                                                    Constancias
-                                                <form id="constancia-form" action="{{ route('usuarioConstancias')}}" method="POST" class="d-none">
-                                                    @csrf
-                                                </form>
-                                            </div>
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div> --}}
-
-
-
                                     </div>
 
                                     @if($message = Session::get('success'))
@@ -203,77 +146,59 @@
                                         <div style="background-color: #d4edda;" class="alert alert-danger" >
                                             <font color="#721c24">{{ $message }}</font>
                                         </div>
-                                    @endif
-
-                                    <br>
-
-
-                                    </div>
+                                    @endif<br>
                                 </div>
                             </div>
                         </div>
                     </section>
-
-
-                    <br>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="table-responsive-sm">
-                                            <table border="1px" class="table">
-                                                <thead>
-                                                    <tr >
-                                                        <th>Nombre Completo</th>
-                                                        <!--<th>A.Paterno&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                        <th>A.Materno&nbsp;&nbsp;&nbsp;&nbsp;</th>-->
-                                                        <th>Estado</th>
-                                                        <th>Dependencia</th>
-                                                        <th>Cargo</th>
-                                                        <th>Teléfono</th>
-                                                        <th>Correo</th>
-                                                        <th colspan="10">Acciones</th>
+    <div class="table-responsive-sm">
+        <table border="1px" class="table">
+            <thead>
+                <tr >
+                    <th>Nombre Completo</th>
+                    <th>Estado</th>
+                    <th>Dependencia</th>
+                    <th>Cargo</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th colspan="10">Acciones</th>
+                </tr>
+            </thead>
+            @foreach($registradosRed as $registrados)
+                <tbody>
+                    <tr>
+                        <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
+                        <td>{{$registrados->entidad}}</td>
+                        <td>{{ $registrados->dependencia }}</td>
+                        <td>{{ $registrados->cargo }}</td>
+                        <td>{{ $registrados->numero_celular }}</td>
+                        <td>{{ $registrados->email }}</td>
+                        <td colspan="5">
+                            <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
+                            @csrf
+                                <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                <input type="submit" name="Aceptar" value="Aceptar">
+                            </form>
+                        </td>
+                        <td colspan="5">
+                            <form method="post" name="Rechazar" action="{{ url('rechazarUsuario') }}">
+                            @csrf
+                                <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                <input type="submit"  name="Rechazar" value="Rechazar">
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            @endforeach
+        </table>
+    </div>
 
-                                                    </tr>
-                                                </thead>
-
-                                                @foreach($registradosRed as $registrados)
-
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
-                                                            <td>{{$registrados->entidad}}</td>
-                                                            <!--<td>{{ $registrados->apellido_paterno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                            <td>{{ $registrados->apellido_materno }}&nbsp;&nbsp;&nbsp;&nbsp;</td>-->
-                                                            <td>{{ $registrados->dependencia }}</td>
-                                                            <td>{{ $registrados->cargo }}</td>
-                                                            <td>{{ $registrados->numero_celular }}</td>
-                                                            <td>{{ $registrados->email }}</td>
-
-                                                            <td colspan="5">
-                                                                <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
-                                                                @csrf
-                                                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                                    <input type="submit" name="Aceptar" value="Aceptar">
-                                                                </form>
-                                                            </td>
-
-                                                            <td colspan="5">
-                                                                <form method="post" name="Rechazar" action="{{ url('rechazarUsuario') }}">
-                                                                @csrf
-                                                                    <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                                                    <input type="submit"  name="Rechazar" value="Rechazar">
-                                                                </form>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-
-                                                @endforeach
-
-                                            </table>
-                                        </div>
-
-
+    <div>
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">
@@ -300,6 +225,5 @@
     <script src='administrador/red/plugins/jquery.isotope.min.js'></script>
     <script src="js/jquery.min.js"></script>
     <script src='js/bitacoraLogout.js'></script>
-
 </body>
 </html>

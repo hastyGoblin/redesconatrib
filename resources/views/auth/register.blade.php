@@ -22,21 +22,18 @@
         <div class="row">
             <div class="img-holder">
                 <div class="bg" style="background-image: url(images/RedesConatrib.png) !important;"></div>
-                <div class="info-holder">
-
-                </div>
             </div>
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-
+                        {{-- Mensajes de validación --}}
                         @if($message = Session::get('warning'))
                         <div class="alert alert-warning" >
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             {{ $message }}
                         </div>
                         @endif
-
+                        
                         @if($message = Session::get('error'))
                         <div class="alert alert-danger" >
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -44,51 +41,41 @@
                         </div>
                         @endif
 
-                        <h3>Registrate</h3>
-                       <!-- <p>Texto texto.</p> -->
-                        <!--<div class="page-links">
-                            <a href="login2.html">Acceso</a><a href="register2.html" class="active">Reg&iacute;strate</a>
-                        </div>-->
+                        <h3>Registrate</h3><br>
+
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="form-group row">
-
                                 <div class="col-md-12">
                                     <input style="text-transform: uppercase;" id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre" maxlength="50">
                                     <input class="form-control" type="text" id="paterno" name="paterno" placeholder="Apellido paterno" style="text-transform: uppercase;" value="{{ old('paterno') }}" required maxlength="50">
                                     <input class="form-control" type="text" id="materno" name="materno" placeholder="Apellido materno" style="text-transform: uppercase;" value="{{ old('materno') }}" required maxlength="50">
                                     <input class="form-control" type="text" id="dependencia" name="dependencia" placeholder="Dependencia" style="text-transform: uppercase;" value="{{ old('dependencia') }}" required maxlength="120">
-
-                                <select class="custom-select" required id="fk_estado" name="fk_estado" style="text-transform: uppercase;">
-                                     <option value="">Selecciona una entidad</option>
-                                    @foreach($entidades as $entidad)
-                                     <option value="{{$entidad->id}}">{{$entidad->entidad}} </option>
-                                    @endforeach
-                                </select> <br> <br>
-
-
-                                    <input class="form-control" type="text" id="cargo" name="cargo" placeholder="Cargo" style="text-transform: uppercase;" value="{{ old('cargo') }}" required maxlength="120">
-                                    <input class="form-control" type="text" id="celular" name="celular" placeholder="NÚMERO CELULAR" value="{{ old('celular') }}" required maxlength="15">
-                                    <input class="form-control @error('email') is-invalid @enderror" id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="CORREO ELECTRÓNICO">
-
-                                    @if ($errors->has('email'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('email') }}</strong>
-                                        </span>
-                                    @endif
-
-                                <label>Red en la que desea participar</label> <br>
-                                <select class="custom-select" required name="id_red" id="id_red" style="text-transform: uppercase;">
-                                     <option value="">Selecciona una red</option>
-                                    @foreach($rconatrib as $redes)
-                                     <option value="{{$redes->id}}">{{$redes->red}} </option>
-                                    @endforeach
-                                </select>
-
-
+                                    <select class="custom-select" required id="fk_estado" name="fk_estado" style="text-transform: uppercase;">
+                                        <option value="">Selecciona una entidad</option>
+                                        @foreach($entidades as $entidad)
+                                        <option value="{{$entidad->id}}">{{$entidad->entidad}} </option>
+                                        @endforeach
+                                    </select> <br> <br>
+                                        <input class="form-control" type="text" id="cargo" name="cargo" placeholder="Cargo" style="text-transform: uppercase;" value="{{ old('cargo') }}" required maxlength="120">
+                                        <input class="form-control" type="text" id="celular" name="celular" placeholder="NÚMERO CELULAR" value="{{ old('celular') }}" required maxlength="15">
+                                        <input class="form-control @error('email') is-invalid @enderror" id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="CORREO ELECTRÓNICO">
+                                        @if ($errors->has('email'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                                        @endif
+                                    <label>Red en la que desea participar</label> <br>
+                                    <select class="custom-select" required name="id_red" id="id_red" style="text-transform: uppercase;">
+                                        <option value="">Selecciona una red</option>
+                                        @foreach($rconatrib as $redes)
+                                        <option value="{{$redes->id}}">{{$redes->red}} </option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
-                            <label>Nota: La contraseña deberá contener un minimo de 8 digitos</label>
+                            {{-- Contraseña --}}
+                            <label><strong>Nota:</strong> La contraseña deberá contener un minimo de 8 digitos</label>
                             <div class="form-group row">
                                 <div class="col-md-12">
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="CONTRASEÑA">
@@ -99,27 +86,17 @@
                                     @enderror
                                 </div>
                             </div>
-
+                            {{-- Confirmar contraseña --}}
                             <div class="form-group row">
-
-
                                 <div class="col-md-12">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="CONFIRMA CONTRASEÑA">
                                 </div>
                             </div>
-                            <!--<input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-							<input type="hidden" name="red" value="convivencia_familiar">
-                            <a onclick="showPWD()" style="color: #FFF; cursor:pointer; ">Ver contrase&ntilde;a</a>-->
                             @php
                                 if( isset($_GET['IdRed']) ){
                                     echo '<input id="idRed" name="idRed" type="hidden" value="'.$_GET['IdRed'].'"></input>';
                                 }
                             @endphp
-
                             @error('idRed')
                                 <div class="form-group row">
                                     <div class="col-md-12">
@@ -130,11 +107,7 @@
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">Registrar</button>
                             </div>
-
-
-
                         </form>
-
                        <div class="other-links">
                             <span></span><a href="https://conatrib.org.mx/">P&aacute;gina web</a><a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a><a href="https://twitter.com/ConatribMx">Twitter</a><a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">YouTube</a>
                       </div>

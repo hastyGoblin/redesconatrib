@@ -18,7 +18,7 @@ class RegistroMail extends Mailable
      */
     public function __construct($info)
     {
-        $this->info =$info;//
+        $this->info =$info;
     }
 
     /**
@@ -41,9 +41,11 @@ class RegistroMail extends Mailable
             case 3://CORREO RECHAZADO
                 return $this->view('email.email_rechazo')->with('info',$this->info);
                 break;
+
             case 4://CORREO CONFIRMACIÓN CONSTANCIA
                 return $this->view('email.correoConstancia')->subject("Constancia CONATRIB")->with('info',$this->info);
                 break;
+                
             default:
                 // code...
                 break;

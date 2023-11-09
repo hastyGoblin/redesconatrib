@@ -16,19 +16,14 @@
                 <div class="form-content">
                     <div class="form-items">
                          <div class="website-logo">
-            			 <a href="https://conatrib.org.mx/congreso_redes/">
-               				 <div>
-                    			<img class="logo-size" src="images/Img_Conatrib.png" alt="">
-             				 </div>
-                         </a>
+                            <a href="https://conatrib.org.mx/congreso_redes/">
+                                <div><img class="logo-size" src="images/Img_Conatrib.png" alt=""></div>
+                            </a>
         				</div>
                         <h3>¡Estimado/a {!! nl2br($info['name']) !!}!</h3>
                         <p style="text-align: justify">Has completado tu solicitud de registro a la {!! nl2br($info['red']) !!}, en el marco de la XLIV Congreso Nacional CONATRIB 2022.</p>
 						<p style="text-align: justify">Una vez aprobado tu registro, recibirás un email de aceptación, con las instrucciones para ingresar al micrositio del evento.</p>
-                   
                    </div>
-					
-					
                     <div class="form-sent">
                         <div class="website-logo">
                             <a href="https://conatrib.org.mx/congreso_redes/">
@@ -37,9 +32,7 @@
                                 </div>
                             </a>
                         </div>
-                       <div class="info-holder">
-                 
-                        </div>
+                       <div class="info-holder"></div>
                     </div>
                 </div>
             </div>

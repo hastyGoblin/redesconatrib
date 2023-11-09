@@ -84,7 +84,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="clear"></div>
                 </section>
                 <div class=content-wrapper>
                     <div class=gdlr-content>
@@ -103,17 +102,7 @@
                                                 </div>
                                                 <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-2 onclick="event.preventDefault();
                                                                             document.getElementById('usuario-form').submit();">
-                                                    <div class=gdlr-session-head-day>
-                                                        Aceptadas
-                                                    </div>
-
-                                                    <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
-                                                        @csrf
-                                                    </form>
-
-                                                    <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
-                                                        @csrf
-                                                    </form>
+                                                    <div class=gdlr-session-head-day>Aceptadas</div>
 
                                                     <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                                 </div>
