@@ -31,15 +31,15 @@ class RegistroMail extends Mailable
 
         switch ($this->info['tipo_correo']) {
             case 1://CORREO REGISTRO
-                return $this->view('email.email_registro_2')->with('info',$this->info);
+                return $this->view('email.email_registro_usuario')->with('info',$this->info);
                 break;
 
             case 2://CORREO ACEPTADO
-                return $this->view('email.email_registro')->with('info',$this->info);
+                return $this->view('email.email_usuario_aceptado')->with('info',$this->info);
                 break;
 
             case 3://CORREO RECHAZADO
-                return $this->view('email.email_rechazo')->with('info',$this->info);
+                return $this->view('email.email_rechazo_usuario')->with('info',$this->info);
                 break;
 
             case 4://CORREO CONFIRMACIÓN CONSTANCIA
@@ -51,7 +51,7 @@ class RegistroMail extends Mailable
                 break;
         }
         //return $this->view('register')->with('info',$this->info);
-        //return $this->view('email.email_registro_2')->with('info',$this->info);
+        //return $this->view('email.email_registro_usuario')->with('info',$this->info);
 
     }
 }
