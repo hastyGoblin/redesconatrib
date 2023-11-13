@@ -30,7 +30,7 @@
 						<p style="text-align: justify">Recuerda que los datos de acceso son los que introdujiste en la plataforma</p>
 						<p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante el siguiente link:</p>
                         <div class="form-button">
-                            @if ($info['id_red'] <= 4)
+                            @if ($info['id_red'] <= 3)
                                 {{-- <a name="" id="" class="btn btn-primary" href="172.19.223.140/login" role="button">Ingresar</a> --}}
                                 <button type="button" id="btnIngresar" name="btnIngresar" class="btn btn-primary">
                                     <a class="btnIngresar" href="http://redesconatrib.poderjudicialcdmx.gob.mx/login">Ingresar</a>

@@ -161,7 +161,7 @@ class usuarioCoordinadorSeeder extends Seeder
             'numero_celular'=>"5521369745",
             'email'=>"rafael.alegria@tsjcdmx.gob.mx",
             'password'=>bcrypt('12345678'),
-            'id_red'=>5,
+            'id_red'=>6,
             'activo'=>1,
         ]);
 
