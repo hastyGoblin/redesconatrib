@@ -15,7 +15,7 @@
                 <div class="form-content">
                     <div class="form-items">
                         <h3>Apreciable {!! nl2br($info['nombre']) !!}</h3>
-                        <p style="text-align: justify">Nos complace informarle que su constancia ya se encuentra disponible para su descarga en el micrositio <b>{!! nl2br($info['red']) !!} <br></p>
+                        <p style="text-align: justify">Nos complace informarle que su constancia ya se encuentra disponible para su descarga en el micrositio <strong>{!! nl2br($info['red']) !!}</strong>.</p>
                         <p style="text-align: justify">Pasos para la descarga: </p>
 
                         <p style="text-align: justify">

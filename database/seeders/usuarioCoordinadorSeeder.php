@@ -15,79 +15,170 @@ class usuarioCoordinadorSeeder extends Seeder
      */
     public function run()
     {
+        //Reunión de la Red de Cooperación para la Protección de la Niñez
         DB::table('users')->insert([
-            'name'=>"Coordinador1",
-            'apellido_paterno'=>"Pavon",
-            'apellido_materno'=>"Rosales",
+            'name'=>"EMANUEL",
+            'apellido_paterno'=>"VELASCO",
+            'apellido_materno'=>"LÓPEZ",
             'dependencia'=>"PDJCDMX",
-            'fk_estado'=>1,
+            'fk_estado'=>10,
             'fk_estatus'=>2,
             'cargo'=>"Coordinador1",
             'numero_celular'=>"7292870740",
-            'email'=>"Coordinador1@prueba.com",
+            'email'=>"emanuel.velasco@tsjcdmx.gob.mx",
+            'password'=>bcrypt('12345678'),
+            'id_red'=>1,
+            'activo'=>1,
+        ]);
+        DB::table('users')->insert([
+            'name'=>"GABRIELA",
+            'apellido_paterno'=>"HERNÁNDEZ",
+            'apellido_materno'=>"VÁZQUEZ",
+            'dependencia'=>"PDJCDMX",
+            'fk_estado'=>10,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador2",
+            'numero_celular'=>"7292870740",
+            'email'=>"gabriela.vazquez@tsjcdmx.gob.mx",
+            'password'=>bcrypt('12345678'),
+            'id_red'=>1,
+            'activo'=>1,
+        ]);
+        DB::table('users')->insert([
+            'name'=>"MARTHA",
+            'apellido_paterno'=>"BAUTISTA",
+            'apellido_materno'=>"MORALES",
+            'dependencia'=>"PDJCDMX",
+            'fk_estado'=>10,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador3",
+            'numero_celular'=>"7292870740",
+            'email'=>"gmartha.morales@tsjcdmx.gob.mx",
             'password'=>bcrypt('12345678'),
             'id_red'=>1,
             'activo'=>1,
         ]);
 
+        //Reunión de la Red Nacional de Estadísticas Judiciales
         DB::table('users')->insert([
-            'name'=>"Coordinador2",
-            'apellido_paterno'=>"Perez",
-            'apellido_materno'=>"Morales",
+            'name'=>"LEIDI",
+            'apellido_paterno'=>"VALDEZ",
+            'apellido_materno'=>"ENRÍQUEZ",
             'dependencia'=>"PDJCDMX",
-            'fk_estado'=>1,
+            'fk_estado'=>10,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador1",
+            'numero_celular'=>"5521369745",
+            'email'=>"leidi.valdez@tsjcdmx.gob.mx",
+            'password'=>bcrypt('12345678'),
+            'id_red'=>2,
+            'activo'=>1,
+        ]);
+        DB::table('users')->insert([
+            'name'=>"FERNANDA",
+            'apellido_paterno'=>"BENITEZ",
+            'apellido_materno'=>"BENITEZ",
+            'dependencia'=>"PDJCDMX",
+            'fk_estado'=>10,
             'fk_estatus'=>2,
             'cargo'=>"Coordinador2",
-            'numero_celular'=>"7292870740",
-            'email'=>"Coordinador2@prueba.com",
+            'numero_celular'=>"5521369745",
+            'email'=>"fernanda.benitez@tsjcdmx.gob.mx",
             'password'=>bcrypt('12345678'),
             'id_red'=>2,
             'activo'=>1,
         ]);
 
+        //Reunión de la Red de Escuelas Judiciales de los Estados de los Estados de la República Mexicana
         DB::table('users')->insert([
-            'name'=>"Usuario1",
-            'apellido_paterno'=>"Gomez",
-            'apellido_materno'=>"Perez",
+            'name'=>"MÓNICA ROCÍO",
+            'apellido_paterno'=>"FARFÁN",
+            'apellido_materno'=>"GARCÍA",
             'dependencia'=>"PDJCDMX",
-            'fk_estado'=>2,
-            'fk_estatus'=>1,
-            'cargo'=>"Supervisor",
-            'numero_celular'=>"5521369745",
-            'email'=>"Usuario1@prueba.com",
-            'password'=>bcrypt('12345678'),
-            'id_red'=>1,
-            'activo'=>0,
-        ]);
-
-        DB::table('users')->insert([
-            'name'=>"Usuario2",
-            'apellido_paterno'=>"Gomez",
-            'apellido_materno'=>"Perez",
-            'dependencia'=>"PDJCDMX",
-            'fk_estado'=>3,
+            'fk_estado'=>10,
             'fk_estatus'=>2,
-            'cargo'=>"Supervisor",
+            'cargo'=>"Coordinador1",
             'numero_celular'=>"5521369745",
-            'email'=>"Usuario2@prueba.com",
+            'email'=>"monica.farfan@tsjcdmx.gob.mx",
             'password'=>bcrypt('12345678'),
-            'id_red'=>1,
+            'id_red'=>4,
+            'activo'=>1,
+        ]);
+        DB::table('users')->insert([
+            'name'=>"ANGELA",
+            'apellido_paterno'=>"SÁNCHEZ",
+            'apellido_materno'=>"GARCÍA",
+            'dependencia'=>"PDJCDMX",
+            'fk_estado'=>10,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador2",
+            'numero_celular'=>"5521369745",
+            'email'=>"angela.sanchez@tsjcmx.gob.mx",
+            'password'=>bcrypt('12345678'),
+            'id_red'=>4,
             'activo'=>1,
         ]);
 
+        //Reunión de la Red de Mecanismos Alternativos de Solución de Controversias
         DB::table('users')->insert([
-            'name'=>"Usuario3",
-            'apellido_paterno'=>"Gomez",
-            'apellido_materno'=>"Perez",
+            'name'=>"CARMEN JULIA",
+            'apellido_paterno'=>"REYES",
+            'apellido_materno'=>"MONTALVO",
             'dependencia'=>"PDJCDMX",
-            'fk_estado'=>3,
-            'fk_estatus'=>3,
-            'cargo'=>"Supervisor",
+            'fk_estado'=>10,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador1",
             'numero_celular'=>"5521369745",
-            'email'=>"Usuario3@prueba.com",
+            'email'=>"carmen.reyes@tsjcdmx.gob.mx",
             'password'=>bcrypt('12345678'),
-            'id_red'=>1,
-            'activo'=>0,
+            'id_red'=>5,
+            'activo'=>1,
+        ]);
+        DB::table('users')->insert([
+            'name'=>"JULIA VALERIA",
+            'apellido_paterno'=>"GUERRA",
+            'apellido_materno'=>"FLORES",
+            'dependencia'=>"PDJCDMX",
+            'fk_estado'=>10,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador2",
+            'numero_celular'=>"5521369745",
+            'email'=>"julia.guerra@tsjcdmx.gob.mx",
+            'password'=>bcrypt('12345678'),
+            'id_red'=>5,
+            'activo'=>1,
+        ]);
+
+        //Reunión de la Red de Centros de Convivencias Familiar Supervisada
+        DB::table('users')->insert([
+            'name'=>"RAFAEL",
+            'apellido_paterno'=>"ALEGRÍA",
+            'apellido_materno'=>"LECONA",
+            'dependencia'=>"PDJCDMX",
+            'fk_estado'=>10,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador1",
+            'numero_celular'=>"5521369745",
+            'email'=>"rafael.alegria@tsjcdmx.gob.mx",
+            'password'=>bcrypt('12345678'),
+            'id_red'=>5,
+            'activo'=>1,
+        ]);
+
+        //Red Nacional de Archivos Judiciales 
+        DB::table('users')->insert([
+            'name'=>"DANYA",
+            'apellido_paterno'=>"GUILLÉN",
+            'apellido_materno'=>"RODRÍGUEZ",
+            'dependencia'=>"PDJCDMX",
+            'fk_estado'=>10,
+            'fk_estatus'=>2,
+            'cargo'=>"Coordinador1",
+            'numero_celular'=>"5521369745",
+            'email'=>"danya.guillen@tsjcdmx.gob.mx",
+            'password'=>bcrypt('12345678'),
+            'id_red'=>9,
+            'activo'=>1,
         ]);
 
     }
