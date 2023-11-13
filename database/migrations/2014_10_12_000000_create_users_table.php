@@ -29,8 +29,10 @@ class CreateUsersTable extends Migration
 
             $table->tinyinteger('fk_estado');
             $table->foreign('fk_estado')->references('id')->on('entidadfederativa');
+
             $table->tinyinteger('fk_estatus')->default(1);
             $table->foreign('fk_estatus')->references('ID')->on('estatusUsers');
+            
             $table->tinyinteger('id_red');
             $table->foreign('id_red')->references('id')->on('cat_redesconatrib');
             $table->tinyinteger('estatus_const')->default(0);
