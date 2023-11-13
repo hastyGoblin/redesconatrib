@@ -63,13 +63,13 @@ class AceptadoRechazadoController extends Controller
 
         $red= $request->id_red;
         $fechaIniRed = cat_redesconatrib::select('fechaInicio')->where('id','=', $red)->get();
-
+ 
         $hoy = Carbon::now();
 
         if ($hoy < $fechaIniRed[0]->fechaInicio) {
             return response()->json(
                 [
-                    'registro' => 0
+                    'registro' => 1
                 ]
             );
         }else {

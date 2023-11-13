@@ -31,14 +31,9 @@
 						<p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante el siguiente link:</p>
                         <div class="form-button">
                             @if ($info['id_red'] == 6 || $info['id_red'] == 4 || $info['id_red'] == 9)
-                                {{-- <a name="" id="" class="btn btn-primary" href="172.19.223.140/login" role="button">Ingresar</a> --}}
-                                <button type="button" id="btnIngresar" name="btnIngresar" class="btn btn-primary">
-                                    <a class="btnIngresar" href="http://redesconatrib.poderjudicialcdmx.gob.mx/login">Ingresar</a>
-                                </button>
+                                <a name="" id="" class="btn btn-primary" href="http://redesconatrib.poderjudicialcdmx.gob.mx/login" role="button">Ingresar</a>
                             @else
-                                <button type="button" id="btnIngresarP" name="btnIngresarP" class="btn btn-primary">
-                                    <a href="http://redesconatribp.poderjudicialcdmx.gob.mx/login">Ingresar</a>
-                                </button>
+                                <a href="http://redesconatribp.poderjudicialcdmx.gob.mx/login">Ingresar</a>
                             @endif
                         </div>
                    </div>
