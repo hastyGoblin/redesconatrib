@@ -79,14 +79,14 @@ class HomeController extends Controller
 
            $consulta= DB::table('constanciasUsuarios')->where('fk_users','=', $id )->get();}
 
-           $fechaIniRed = cat_redesconatrib::select('fechaInicio')->where('id','=', $red_id)->get();
+           $fechaRed = cat_redesconatrib::select('fechaFin')->where('id','=', $red_id)->get();
    
            $hoy = Carbon::now();
 
             switch ($red_id) {
                 case 1:
                     $mensaje= "Red 1";
-                    if ($hoy < $fechaIniRed[0]->fechaInicio) {
+                    if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {
                         return view('red_6_cjpn')->with('id_user',$id)->with('activo',$activo)
@@ -99,7 +99,7 @@ class HomeController extends Controller
                 
                 case 2:
                     $mensaje= "Red 2";
-                    if ($hoy < $fechaIniRed[0]->fechaInicio) {
+                    if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {
                         return view('red_3_ej')->with('id_user',$id)->with('activo',$activo)
@@ -113,7 +113,7 @@ class HomeController extends Controller
                 case 3:
                     $mensaje= "Red 3";
 
-                    if ($hoy < $fechaIniRed[0]->fechaInicio) {
+                    if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {
                         return view('red_7_sijpa')->with('id_user',$id)->with('activo',$activo)
@@ -126,7 +126,7 @@ class HomeController extends Controller
 
                 case 4:
                     $mensaje= "Red 4";
-                    if ($hoy < $fechaIniRed[0]->fechaInicio) {
+                    if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {
                         return view('red_2_rejem')->with('id_user',$id)->with('activo',$activo)
@@ -139,7 +139,7 @@ class HomeController extends Controller
 
                 case 5:
                     $mensaje= "Red 5";
-                    if ($hoy < $fechaIniRed[0]->fechaInicio) {
+                    if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {
                         return view('red_5_masc')->with('id_user',$id)->with('activo',$activo)
@@ -152,7 +152,7 @@ class HomeController extends Controller
 
                 case 6:
                     $mensaje= "Red 6";
-                    if ($hoy < $fechaIniRed[0]->fechaInicio) {
+                    if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {
                         return view('red_1_cecofam')->with('id_user',$id)->with('activo',$activo)
@@ -165,7 +165,7 @@ class HomeController extends Controller
 
                 case 7:
                     $mensaje= "Red 7";
-                    if ($hoy < $fechaIniRed[0]->fechaInicio) {
+                    if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {
                         return view('red_4_jjocmed')->with('id_user',$id)->with('activo',$activo)
@@ -178,7 +178,7 @@ class HomeController extends Controller
 
                 case 9:
                     $mensaje= "Red 9";
-                    if ($hoy < $fechaIniRed[0]->fechaInicio) {
+                    if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {
                         return view('red_8_aj')->with('id_user',$id)->with('activo',$activo)
