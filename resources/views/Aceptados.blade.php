@@ -100,10 +100,17 @@
                                                     </div>
                                                     <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
                                                 </div>
-                                                <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-2 onclick="event.preventDefault();
-                                                                            document.getElementById('usuario-form').submit();">
-                                                    <div class=gdlr-session-head-day>Aceptadas</div>
-
+                                                <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-2 onclick="event.preventDefault();
+                                                                     document.getElementById('usuario-form').submit();">
+                                                    <div class=gdlr-session-head-day>
+                                                        Aceptadas
+                                                    </div>
+                                                    <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                    <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
+                                                        @csrf
+                                                    </form>
                                                     <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                                 </div>
                                                 <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
@@ -146,6 +153,8 @@
                             <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
                             <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
                             <th>Correo</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
                             <th colspan="10">Acciones</th>
                         </tr>
                     </thead>
@@ -158,6 +167,8 @@
                                 <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ $registrados->updated_at->format('d-m-Y') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ $registrados->updated_at->format('H:i:s') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 @if ($registrados->estatus_const==1)
                                     <td>Constancia habilitada</td>
                                 @else
@@ -172,7 +183,7 @@
                             </tr>
                         </tbody>
                     @endforeach
-                </table>
+                </table><br><br><br>
                 <footer class=footer-wrapper>
                     <div class=copyright-wrapper>
                         <div class="copyright-container container">

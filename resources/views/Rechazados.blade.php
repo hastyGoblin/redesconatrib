@@ -47,47 +47,25 @@
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <!--<li class="menu-item">
-                                    <a href="#historia">Objetivo</a>
-                                </li>-->
-                               <!-- <li class="menu-item">
-                                    <a href="#programa">Programa</a>
-                                </li>-->
-                             <!--   <li class="menu-item menu-item-has-children">
-                                    <a href="#ponentescdmx">Ponentes</a>
-                                </li>-->
                             </ul>
                         </div>
                     </div>
                     <div class="gdlr-navigation-wrapper">
                         <nav class="gdlr-navigation" id="gdlr-main-navigation role=navigation">
                             <ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu">
-                               <!-- <li class="menu-item menu-item-home">
-                                    <a href="#inicio" aria-current="page">Inicio</a>
-                                </li>-->
-                                <!--<li class="menu-item">
-                                    <a href="#historia">Historia</a>
-                                </li>-->
-
                                 <li class="menu-item">
                                     <a class="dropdown-item">{{Auth::user()->name}}</a>
                                 </li>
-
                                 <li class="menu-item">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </li>
-
-
-
-
                             </ul>
                         </nav>
                         <div class="clear"></div>
@@ -97,7 +75,6 @@
             </div>
             <div class="clear"></div>
         </header>
-        <div id="gdlr-header-substitute"></div>
         <div class="content-wrapper">
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
@@ -108,22 +85,19 @@
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                         <div class="gdlr-item-title-head">
                                             <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">{{$red[0]->red}}</h4>
-                                            <div class="clear"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="clear"></div>
-
-                                <div class="clear"></div>
-                                <div class="clear"></div>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </section>
+                </div>
+            </div>
+        </div>
+
         <div class=content-wrapper>
             <div class=gdlr-content>
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
-
                     <section id=content-section-1>
                         <div class="section-container container">
                             <div class=session-item-wrapper style="margin-bottom: 75px;">
@@ -132,53 +106,35 @@
                                         <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-1 onclick="event.preventDefault();
                                                                      document.getElementById('solicitud-form').submit();">
                                             <div class=gdlr-session-head-day>
-                                                    Solicitudes
-
+                                                Solicitudes
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
                                         </div>
-
                                         <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-2 onclick="event.preventDefault();
                                                                      document.getElementById('usuario-form').submit();">
                                             <div class=gdlr-session-head-day>
                                                 Aceptadas
                                             </div>
-
                                             <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
                                                 @csrf
                                             </form>
-
                                             <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
                                                 @csrf
                                             </form>
-
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
-
-
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-3 onclick="event.preventDefault();
                                                                  document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
                                             <div class=gdlr-session-head-day>
-
                                                 Rechazadas
-
                                                 <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
                                                     @csrf
                                                 </form>
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                         </div>
-
-
-
-
-                                        {{-- <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-4>
-                                            <div class=gdlr-session-head-day>Constancias</div>
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div> --}}
-                                        <div class=clear></div>
                                     </div>
-
+                                    {{-- Validacion de Mensajes --}}
                                     @if($message = Session::get('success'))
                                         <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
                                             <font color="#155724">El usuario ha sido aceptado</font>
@@ -190,56 +146,43 @@
                                             <font color="#721c24">{{ $message }}</font>
                                         </div>
                                     @endif
-
-                                    <br>
-
-                                    <table border="1px">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Estado</th>
-                                                <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                                                <th>Correo</th>
-                                                <!-- <th colspan="10">Acciones</th> -->
-
-                                            </tr>
-                                        </thead>
-
-                                        @foreach($rechazados as $registrados)
-                                            <tbody>
-                                                <tr>
-                                                    <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
-                                                    <td>{{$registrados->entidad}}</td>
-                                                    <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                                    <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-
-                                                </tr>
-                                            </tbody>
-                                        @endforeach
-
-                                    </table>
-
-                                            <div class=container>
-                                                 <div class="gdlr-subscribe-item gdlr-item"></div>
-                                                 <div class=clear></div>
-                                            </div>
-                                           <div class=clear></div>
+                                    
                                 </div>
                             </div>
-                                            <div class=clear></div>
                         </div>
                     </section>
-                    <br><br><br><br><br>
-                         <div>
-
-        </div>
                 </div>
             </div>
         </div>
+
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Estado</th>
+                    <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th>Correo</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            @foreach($rechazados as $registrados)
+            <tbody>
+                <tr>
+                    <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
+                    <td>{{$registrados->entidad}}</td>
+                    <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>{{ $registrados->updated_at->format('d-m-Y') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>{{ $registrados->updated_at->format('H:i:s') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                </tbody>
+            @endforeach
+        </table> <br><br><br>
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">
