@@ -52,8 +52,10 @@ class HomeController extends Controller
                                     ->where('users.id_red','=',$red_id)
                                     ->orderBy('users.created_at','asc')
                                     ->get();
+                                    
+            return view('modulo_admin', compact('registradosRed', 'rol', 'red'));
 
-            return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
+            //return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
 
         }elseif ($rol[0]->fk_roles == '2') 
         {

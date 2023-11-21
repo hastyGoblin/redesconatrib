@@ -166,8 +166,7 @@
                     <th>Cargo</th>
                     <th>Teléfono</th>
                     <th>Correo</th>
-                    <th>Fecha</th>
-                    <th>Hora</th>
+                    
                     <th colspan="10">Acciones</th>
                 </tr>
             </thead>
@@ -180,8 +179,7 @@
                         <td>{{ $registrados->cargo }}</td>
                         <td>{{ $registrados->numero_celular }}</td>
                         <td>{{ $registrados->email }}</td>
-                        <td>{{ $registrados->created_at->format('d-m-Y') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        <td>{{ $registrados->created_at->format('H:i:s') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        
                         <td colspan="5">
                             <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
                             @csrf
