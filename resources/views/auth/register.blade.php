@@ -41,7 +41,7 @@
                         </div>
                         @endif
 
-                        <h3>Registrate</h3><br>
+                        <h3>Registro</h3><br>
 
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
