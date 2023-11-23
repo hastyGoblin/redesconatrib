@@ -38,6 +38,14 @@ class HomeController extends Controller
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
+        // $fechaHora = User::first()->created_at;
+        // // $formato = Carbon::now();
+        // $newDate = date("d/m/Y", strtotime($fechaHora));
+
+        // $formatoFecha = $formato('Y-m-d');
+        // $formatoDia = $fechaHora->format('Y-m-d'); //Damos formato al día 
+        // return $newDate;
+
         if ($rol[0]->fk_roles == '1') {
 
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad', 'users.created_at')
@@ -55,9 +63,7 @@ class HomeController extends Controller
                                     
             return view('modulo_admin', compact('registradosRed', 'rol', 'red'));
 
-            //return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
-
-        }elseif ($rol[0]->fk_roles == '2') 
+        }elseif ($rol[0]->fk_roles == '2')
         {
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','id_red','users.id')
                                     ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
@@ -114,7 +120,6 @@ class HomeController extends Controller
 
                 case 3:
                     $mensaje= "Red 3";
-
                     if ($hoy <= $fechaRed[0]->fechaFin) {
                         return view('disponible');
                     }else {

@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang=en-US><![endif]-->
-<!--[if IE 8]><html class="ie ie8 ltie9" lang=en-US><![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html lang="en-US">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
@@ -25,7 +21,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
-
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3304 _masterslider _msp_version_3.2.7">
@@ -559,7 +554,7 @@
 
             });
         });
-        </script>
+    </script>
 
     <!-- MAster Slider Activation -->
 

@@ -61,12 +61,18 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
                                 </li>
                             </ul>
                         </nav>
+                        <div class="clear"></div>
                     </div>
+                    <div class="clear"></div>
                 </div>
             </div>
+            <div class="clear"></div>
         </header>
     </div>
     <div class="content-wrapper">
@@ -168,7 +174,7 @@
                                 <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td>{{ $registrados->updated_at->format('d-m-Y') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>{{ $registrados->updated_at->format('H:i:s') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ $registrados->updated_at->isoFormat('H:mm:ss A') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 @if ($registrados->estatus_const==1)
                                     <td>Constancia habilitada</td>
                                 @else

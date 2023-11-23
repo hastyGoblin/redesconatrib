@@ -63,7 +63,8 @@ class cat_redesconatrib_seeder extends Seeder
 
         DB::table('cat_redesconatrib')->insert([
             'id'=>"6",
-            'red'=>"Reunión de la Red de Centros de Convivencias Familiar Supervisada",
+            // 'red'=>"Reunión de la Red de Centros de Convivencias Familiar Supervisada",
+            'Reunión de la Red Nacional de Intervención Especializada para Apoyo Judicial',
             'fechaInicio'=>"2023-11-27",
             'fechaFin'=>"2023-11-30",
             'activo'=> 1,

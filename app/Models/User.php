@@ -30,7 +30,7 @@ class User extends Authenticatable
         'password',
         'id_red',
         'estatus_const',
-        //'constancia',
+        'created_at' => 'datetime:Y-m-d H:i:s',
         //'correoConstancia',
     ];
 
