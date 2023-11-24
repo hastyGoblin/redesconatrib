@@ -10,16 +10,16 @@
 
     <title>Red &#8211; Cooperación Judicial para la Protecci&oacute;n de la Ni&ntilde;ez</title>
 
-    <link rel="stylesheet" href="rede_6_cjpn/red/css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/plugins/dl-menu/component.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/css/style-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/css/style-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_6_cjpn/red/css/master-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/superfish/css/superfish.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/dl-menu/component.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href=""> <img src="rede_6_cjpn/red/images/logo_cooperacion.png" alt=""> </a>
+                        <a href="index.html"> <img src="images/logo_cooperacion.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -68,16 +68,6 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                {{-- CIERRE DE SESIÓN --}}
-                                <li class="menu-item">
-                                    <a class="dropdown-item" href=""
-                                       onclick="regLogout();event.preventDefault();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
                             </ul>
                         </nav>
                         <div class="clear"></div>
@@ -92,7 +82,7 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_6_cjpn/red/upload/cooperacion_judicial.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('upload/cooperacion_judicial.png'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -588,7 +578,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Claudia_Sierra.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Claudia_Sierra.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Claudia Sierra Martínez</h3>
 														<div class="gdlr-session-item-excerpt">Subdirectora de Restitución y Custodia Internacional de Menores</div>
@@ -603,7 +593,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Fernando_Rangel_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Fernando_Rangel_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MAGISTRADO FERNANDO RANGEL RAM&Iacute;REZ</h3>
 														<div class="gdlr-session-item-excerpt">Magistrado Décimo Primer Tribunal Colegiado en materia Civil del Primer Circuito de la Ciudad de México </div>
@@ -618,7 +608,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Maria_M_Gallegos.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Maria_M_Gallegos.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. María Margarita Gallegos López</h3>
 														<div class="gdlr-session-item-excerpt"> Jueza Séptimo de lo Familiar de la Ciudad de México con especialidad en Restitución Internacional de Menores</div>
@@ -634,7 +624,7 @@
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Jose_R_Trevino_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Jose_R_Trevino_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. José Roberto de Jesús Treviño Sosa </h3>
 														<div class="gdlr-session-item-excerpt">Juez en retiro, Monterrey Nuevo León</div>
@@ -677,7 +667,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Juan_C_Ortega_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Juan_C_Ortega_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Juan Carlos Ortega Castro</h3>
 														<div class="gdlr-session-item-excerpt">Magistrado del Segundo Tribunal Colegiado en materia Civil del Segundo Circuito de Toluca, estado de México </div>
@@ -694,7 +684,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Oscar_G_Cervera_.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Oscar_G_Cervera_.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Oscar Gregorio Cervera Rivero </h3>
 														<div class="gdlr-session-item-excerpt">Magistrado de la Segunda Sala Familiar del Poder Judicial de la Ciudad de México</div>
@@ -710,7 +700,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/JUAN_MIGUEL.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/JUAN_MIGUEL.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">JUAN MIGUEL MORALES MONTER</h3>
 														<div class="gdlr-session-item-excerpt">Juez 5º Familiar de proceso escrito.</div>
@@ -796,9 +786,9 @@ Cursos, talleres, diplomados, conferencias, y demás actualizaciones en materia 
         </footer>
     </div>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
+
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>
@@ -813,17 +803,7 @@ Cursos, talleres, diplomados, conferencias, y demás actualizaciones en materia 
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
 
-    <script src='js/bitacoraLogout.js'></script>
 
-    <script>
-        $(document).ready(function(){
-
-            $("#btncons").click(function(){
-            setTimeout('document.location.reload()',20000);
-
-            });
-        });
-    </script>
 
     <!-- MAster Slider Activation -->
 

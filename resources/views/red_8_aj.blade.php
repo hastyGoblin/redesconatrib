@@ -206,20 +206,23 @@
                                                 <h3 class="gdlr-session-item-title">Palabras y Agradecimiento</h3>
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-                                                        <article class="type-post">
-                                                                <div class="entry-cover">
-                                                                    <article class="type-post">
-                                                            <div class="entry-cover">
-                                                                <img src="rede_8_aj/red/images/tarjeta_contacto_archivos.jpg" alt width=560 height=315>
-                                                            </div>
-                                                                <div class="entry-block"></div>
-                                                        </article>
-                                                                </div>
-                                                                <div class="entry-block"></div>
-                                                        </article>
-                                                    </div>
+														<article class="type-post">
+																<div class="entry-cover">
+																	<article class="type-post">
+															<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjem.webex.com/pjem/j.php?MTID=me43dc2d782c1e783a14f0528fc77c37b"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
                                                 </div>
-                                            </div>
+													            <div class="entry-block"></div>
+													 </article>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+													  </article>
+											      </div>
+                                              </div>
+                                        </div>
                                             <div class="clear"></div>
                                         </div>
                                         <div class="gdlr-session-item-content-wrapper">
@@ -257,18 +260,18 @@
                                                         <div class="clear"></div>
                                                     </div>
                                                 </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">PONENCIA MAGISTRAL</h3>
-                                                    <!-- <div class="gdlr-session-item-excerpt">Ponencia Magistral:</div> -->
-                                                    <div class="gdlr-session-thumbnail-wrapper">
-                                                        <article class="type-post">
-                                                                <div class="entry-cover">
-                                                                    <img src="rede_8_aj/red/images/tarjeta_contacto_archivos.jpg" alt width=560 height=315>
-                                                                </div>
-                                                                    <div class="entry-block"></div>
-                                                            </article>
-                                                    </div>
-                                                </div>
+                                                <div class="gdlr-session-item-content">
+                                                    <h3 class="gdlr-session-item-title">PONENCIA MAGISTRAL</h3>
+                                                     <!-- <div class="gdlr-session-item-excerpt">Ponencia Magistral:</div> -->
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                          <article class="type-post">
+                                                                 <div class="gdlr-session-thumbnail-wrapper">
+                                                         <a href="https://pjem.webex.com/pjem/j.php?MTID=me43dc2d782c1e783a14f0528fc77c37b"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                     </div>
+                                                                     <div class="entry-block"></div>
+                                                          </article>
+                                                  </div>
+                         </div>
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="gdlr-session-item-content-wrapper">

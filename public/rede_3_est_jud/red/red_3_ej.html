@@ -10,16 +10,16 @@
 
     <title>Red &#8211; NACIONAL DE ESTAD&Iacute;STICAS JUDICIALES</title>
 
-    <link rel="stylesheet" href="rede_3_est_jud/red/css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/dl-menu/component.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/css/style-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/css/style-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_3_est_jud/red/css/master-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/superfish/css/superfish.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/dl-menu/component.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/font-awesome-new/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style-custom.css" type="text/css" media="all">
+    <link rel="stylesheet" href="plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
@@ -34,7 +34,7 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href=""> <img src="rede_3_est_jud/red/upload/logo_estadistica_judicial.png" alt=""> </a>
+                        <a href="index.html"> <img src="upload/logo_estadistica_judicial.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
@@ -68,50 +68,8 @@
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                {{-- CIERRE DE SESIÓN --}}
-                                <li class="menu-item">
-                                    <a class="dropdown-item" href=""
-                                       onclick="regLogout();event.preventDefault();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
                             </ul>
                         </nav>
-                        {{-- CONSTANCIA --}}
-                        @if ($activo==1)
-                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;position: absolute;">
-                                <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                            <div class=gdlr-speaker-item-content>
-                                                <div class=gdlr-lightbox-form id=gdlr-form-200>
-                                                    <div class=gdlr-paypal-form-wrapper>
-                                                        <form method="POST" action="{{ route('descargaConstancia') }}" target="_blank">
-                                                            @csrf
-                                                            <h3>Si encuentra alg&uacute;n error en su nombre por favor de hacer la corrección en los siguientes campos: </h3>
-                                                            <input style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}" style="text-transform: uppercase;" maxlength="50">
-                                                            <h5>Nombre</h5>
-                                                            <input style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}" style="text-transform: uppercase;" maxlength="50">
-                                                            <h5>Apellido Paterno</h5>
-                                                            <input style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}" style="text-transform: uppercase;" maxlength="50">
-                                                            <h5>Apellido Materno</h5>
-                                                            <input type="hidden" name="iduser" id="iduser" value="{{$id_user}}">
-                                                            <input type="hidden" name="idred" id="idred" value="{{$idred}}">
-                                                            <br>
-                                                            <input type="submit" name="btncons" id="btncons">
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                                    <div><a style="font-size: 11px;text-transform: uppercase;font-weight: 800;letter-spacing: 2px;color:#8e8e8e !important;font-family: Raleway;" href=#gdlr-form-200 data-rel=fancybox data-fancybox-type=inline>Descarga Constancia</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
@@ -124,7 +82,7 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_3_est_jud/red/upload/estadisticas_judiciales.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('upload/estadisticas_judiciales.png'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -587,7 +545,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Maria-Jacqueline-.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Maria-Jacqueline-.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. María Jacqueline Martínez Uriarte
 														 </h3>
@@ -612,7 +570,7 @@ Participó como Vocal del Comité Técnico Especializado de Información con Per
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Dr.-Alberto-Menendez-Vazquez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Dr.-Alberto-Menendez-Vazquez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Alberto Menéndez Vázquez </h3>
 														<div class="gdlr-session-item-excerpt">Director de Estadística de la Unidad de Enlace para la Reforma al Sistema de Justicia Laboral. 
@@ -634,7 +592,7 @@ Funcionario público del Gobierno de México y de la Ciudad de México en temas 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Mtro.-Heriberto-Robles-Alanis.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Mtro.-Heriberto-Robles-Alanis.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Heriberto Robles Alanís </h3>
 														<div class="gdlr-session-item-excerpt"> Director de Políticas de Información Gubernamental del Instituto Nacional de Estadística y Geografía. 
@@ -665,7 +623,7 @@ Finalmente, ha publicado sobre evaluación de política pública en materia de i
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Dr.-Markus-Gottsbacher.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Dr.-Markus-Gottsbacher.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Markus Gottsbacher </h3>
 														<div class="gdlr-session-item-excerpt">Oficial de Programa de Gobernanza Incluyente y Democrática en el Centro Internacional de Investigaciones para el Desarrollo [IDRC] de Canadá. 
@@ -694,7 +652,7 @@ Finalmente, ha publicado sobre evaluación de política pública en materia de i
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Mtra.-Sofia-Brito.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Mtra.-Sofia-Brito.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Sofía Brito  </h3>
 														<div class="gdlr-session-item-excerpt">Diálogo Diverso, Ecuador
@@ -712,7 +670,7 @@ Finalmente, ha publicado sobre evaluación de política pública en materia de i
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Lic.-Samuel-Jair-Martinez-Cruz.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Lic.-Samuel-Jair-Martinez-Cruz.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Samuel Jair Martínez </h3>
 														<div class="gdlr-session-item-excerpt">Investigador de la organización Letra S. Sida, Cultura y Vida Cotidiana, A.C integrante de la Red Sin Violencia LGBTI.  
@@ -730,7 +688,7 @@ Finalmente, ha publicado sobre evaluación de política pública en materia de i
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Lic.-Karen-Anaya-Cortez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Lic.-Karen-Anaya-Cortez.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Karen Anaya </h3>
 														<div class="gdlr-session-item-excerpt">Secretaria técnica de la Red Sin Violencia LGBTI
@@ -750,7 +708,7 @@ Finalmente, ha publicado sobre evaluación de política pública en materia de i
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Mtra.-Veronica-Martinez-Solares.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Mtra.-Veronica-Martinez-Solares.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Verónica Martínez Solares </h3>
 														<div class="gdlr-session-item-excerpt">Consejera de la Fundación para el Estudio de la Seguridad y Gobernanza, A.C. 
@@ -779,7 +737,7 @@ Finalmente, ha publicado sobre evaluación de política pública en materia de i
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Sra.-Paulina-Grobet-Vallarta.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Sra.-Paulina-Grobet-Vallarta.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Sra. Paulina Grobet Vallarta </h3>
 														<div class="gdlr-session-item-excerpt">Asesora de ONU Mujeres México. 
@@ -806,7 +764,7 @@ Como coordinadora del Centro Global de Excelencia en Estadísticas de Género li
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Celia-Aguilar-Setien.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Celia-Aguilar-Setien.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Celia Aguilar Setién</h3>
 														<div class="gdlr-session-item-excerpt">Secretaria de Estudio y Cuenta de la SCJN, en representación de la Ministra Yasmín Esquivel Mossa.
@@ -828,7 +786,7 @@ Trabajó por 20 años en Centroamérica en donde su trabajo se desarrolló princ
                                                 </li>
                                                 
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Dra.-Mila-Paspalanova.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Dra.-Mila-Paspalanova.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content><h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. Mila Paspalanova </h3>
 														<div class="gdlr-session-item-excerpt">Asesora de No-Discriminación Racial para Europa. Oficina del Alto Comisionado de las Naciones Unidas para los Derechos Humanos. 
                                                         </div>
@@ -848,7 +806,7 @@ Trabajó por 20 años en Centroamérica en donde su trabajo se desarrolló princ
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_3_est_jud/red/images/img_ponentes/Martha_Beatriz_Vargas.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="images/img_ponentes/Martha_Beatriz_Vargas.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content><h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Martha Beatriz Vargas Rojas </h3>
 														<div class="gdlr-session-item-excerpt">Directora de Estadística de la Presidencia del Poder Judicial de la Ciudad de México. 
                                                         </div>
@@ -903,9 +861,9 @@ Es licenciada en Derecho por la UNAM, Maestra en Criminología por la Universida
         </footer>
     </div>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
+
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>
@@ -920,17 +878,7 @@ Es licenciada en Derecho por la UNAM, Maestra en Criminología por la Universida
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
 
-    <script src='js/bitacoraLogout.js'></script>
 
-    <script>
-        $(document).ready(function(){
-
-            $("#btncons").click(function(){
-            setTimeout('document.location.reload()',20000);
-
-            });
-        });
-    </script>
 
     <!-- MAster Slider Activation -->
 
