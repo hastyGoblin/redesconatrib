@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
             },*/
             success: function (respuesta) {
                 console.log(respuesta);
-                if(respuesta['registro'] == 1){
+                if(respuesta['registro'] == 0){
                 	document.querySelector('#name').value = "";
                     document.querySelector('#paterno').value = "";
                     document.querySelector('#materno').value = "";
@@ -38,20 +38,6 @@ window.addEventListener('load', function(){
                 else{
                 	console.log("Si te puedes registrar");
                 }
-                /*if(respuesta.exito == 1){
-                    $('#tipoConflicto').attr("disabled", false);
-                    var selectTipoConflicto = "<option value=''>Seleccione una opción</option>";
-                    for(let i in respuesta.listaTipoConflicto){
-                        selectTipoConflicto+= '<option value="'+respuesta.listaTipoConflicto[i].iidtipoconflicto +'">'+respuesta.listaTipoConflicto[i].cdescripcion+'</option>';
-                    }
-                    document.querySelector("#tipoConflicto").innerHTML = selectTipoConflicto;
-                    //console.log(respuesta);
-                }else{
-                    $('#tipoConflicto').attr("disabled", true);
-                    var selectTipoConflicto = "<option value=''>Seleccione una opción</option>";
-                    document.querySelector("#tipoConflicto").innerHTML = selectTipoConflicto;
-                    //console.log(respuesta);
-                }*/
 
             },
             error: function (jqXHR, textStatus, errorThrown) {

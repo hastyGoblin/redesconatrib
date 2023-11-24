@@ -183,6 +183,14 @@
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
                                         
                                     </div>
+									
+									
+									<br>
+									<br>
+									<div class="gdlr-session-thumbnail-wrapper">
+                                        <a href="{{ URL::asset('/rede_3_est_jud/red/images/PROGRAMA_RNEJ_2023.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
+
+                                   </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
                                 <div class="gdlr-session-item gdlr-tab-session-item gdlr-item">
@@ -253,13 +261,10 @@
                                                <h3 class="gdlr-session-item-title">Introducción al Encuentro</h3>
 												
 											    <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
-                                                 </div>
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                             </div>
                                           <div class="clear"></div>
                                         </div>
@@ -284,12 +289,11 @@
 											 <h3 class="gdlr-session-item-title">Introducción a la Sesión</h3>
                                                
 											    <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                                  </div>
                                             </div>
                                           <div class="clear"></div>
@@ -316,12 +320,11 @@
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Estadísticas del Sistema de Justicia Laboral</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -347,12 +350,11 @@
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Estadísticas del Registro Administrativo en Materia Laboral (RALAB)</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -384,12 +386,11 @@
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Importancia de datos y estadísticas para la visibilización de la migración y homicidios de personas LGBTI+</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -415,12 +416,11 @@
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">La triangulación en el proceso de evaluación de la calidad de la justicia</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -446,12 +446,11 @@
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Estadística con perspectiva de género</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -476,12 +475,11 @@
                                             <div class="gdlr-session-item-content">
                                                 <h3 class="gdlr-session-item-title">Perspectiva de género en los programas estadísticos de impartición de justicia</h3>
                                                 <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                                <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -505,12 +503,11 @@
                                           <div class="gdlr-session-item-content">
                                             <h3 class="gdlr-session-item-title">Indicadores de derechos humanos</h3>
                                             <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                            <article class="type-post">
-                                              <div class="entry-cover">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                              </div>
-                                              <div class="entry-block"></div>
-                                            </article>
+                                            <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                           </div>
                                           <div class="clear"></div>
                                         </div>
@@ -534,12 +531,11 @@
                                         <div class="gdlr-session-item-content">
                                           <h3 class="gdlr-session-item-title">Resultados del Sistema de Información Estadística de las Entidades Federativas (SIEEFE)</h3>
                                           <div class="gdlr-session-item-excerpt">Ponencia Magistral. </div>
-                                          <article class="type-post">
-                                            <div class="entry-cover">
-                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/MmhRK3fY8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            </div>
-                                            <div class="entry-block"></div>
-                                          </article>
+                                          <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=mb97c611b51ff7b3d980813f7b9136875"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                                </div>
                                         </div>
                                         <div class="clear"></div>
                                       </div>
@@ -906,6 +902,7 @@ Es licenciada en Derecho por la UNAM, Maestra en Criminología por la Universida
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
+
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>

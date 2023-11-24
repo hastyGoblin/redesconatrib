@@ -80,6 +80,38 @@
                                 </li>
                             </ul>
                         </nav>
+                        {{-- CONSTANCIA --}}
+                        @if ($activo==1)
+                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;position: absolute;">
+                                <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                                <div class=gdlr-speaker-item-content>
+                                                    <div class=gdlr-lightbox-form id=gdlr-form-200>
+                                                        <div class=gdlr-paypal-form-wrapper>
+                                                            <form method="POST" action="{{ route('descargaConstancia') }}" target="_blank">
+                                                                @csrf
+                                                                <h3>Si encuentra alg&uacute;n error en su nombre por favor de hacer la corrección en los siguientes campos: </h3>
+                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}" style="text-transform: uppercase;" maxlength="50">
+                                                                <h5>Nombre</h5>
+                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}" style="text-transform: uppercase;" maxlength="50">
+                                                                <h5>Apellido Paterno</h5>
+                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}" style="text-transform: uppercase;" maxlength="50">
+                                                                <h5>Apellido Materno</h5>
+                                                                <input type="hidden" name="iduser" id="iduser" value="{{$id_user}}">
+                                                                <input type="hidden" name="idred" id="idred" value="{{$idred}}">
+                                                                <br>
+                                                                <input type="submit" name="btncons" id="btncons">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                        <div><a style="font-size: 11px;text-transform: uppercase;font-weight: 800;letter-spacing: 2px;color:#8e8e8e !important;font-family: Raleway;" href=#gdlr-form-200 data-rel=fancybox data-fancybox-type=inline>Descarga Constancia</a></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
@@ -151,6 +183,13 @@
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
                                         
                                     </div>
+									
+									<br>
+									<br>
+									<div class="gdlr-session-thumbnail-wrapper">
+                                        <a href="{{ URL::asset('/rede_6_cjpn/red/images/Programa_Red_Ninez_2023.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
+                                                    
+                                   </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
                                 <div class="gdlr-session-item gdlr-tab-session-item gdlr-item">
@@ -230,15 +269,9 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/oosLWisUhhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
+											<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
                                               </div>
@@ -273,15 +306,9 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/vtlemrW6evM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
+														<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
                                               </div>
@@ -319,15 +346,9 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/QPRRuwJ0APA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
+														<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
                                               </div>
@@ -358,15 +379,9 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/bkXhjnFvQPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
+														<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
                                               </div>
@@ -405,15 +420,9 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/uFFwRKeXf5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
+														<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
                                               </div>
@@ -444,15 +453,9 @@
                                                 <h3 class="gdlr-session-item-title">Indemnización en los casos de violencia familiar</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/d-fgPyN6bJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
+														<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
                                               </div>
@@ -503,15 +506,9 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/FvKkWcO1AcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
+														<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
 											</div>
@@ -543,15 +540,9 @@
                                                 <h3 class="gdlr-session-item-title">Ceremonia de Clausura.</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/d-fgPyN6bJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
+														<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
                                               </div>
@@ -799,6 +790,7 @@ Cursos, talleres, diplomados, conferencias, y demás actualizaciones en materia 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
+
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>

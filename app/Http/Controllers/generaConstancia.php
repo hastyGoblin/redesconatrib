@@ -56,6 +56,15 @@ class generaConstancia extends Controller
         echo "descarga manual";
     }
 
+    public function descargaPdf(){
+        $filename = "ManualUsuario/241122_ManualdeUsuario_CONSTANCIA.pdf"; // el nombre con el que se descargará, puede ser diferente al original
+        /*header("Content-Type: application/octet-stream");*/
+        header("Content-Type: application/force-download");
+        header("Content-Disposition: attachment; filename=\"$filename\"");
+        readfile($filename);
+        echo "descarga manual";
+    }
+
     public function descargaConstancia(Request $request){
 
         $id = $request->iduser;

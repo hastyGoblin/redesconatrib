@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang=en-US><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang=en-US><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
@@ -13,7 +17,7 @@
     <link rel="stylesheet" href="rede_8_aj/red/plugins/fancybox/jquery.fancybox.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/plugins/flexslider/flexslider.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/css/style-responsive.css" type="text/css" media="all">
-    <link rel="stylesheet" href="rede_8_aj/red/css/style-custom.css" type="text/css" media="all"> 
+    <link rel="stylesheet" href="rede_8_aj/red/css/style-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_8_aj/red/css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -21,6 +25,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
+
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3304 _masterslider _msp_version_3.2.7">
@@ -29,13 +34,16 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href=""> <img src="{{asset('rede_8_aj/red/images/logo_cooperacion.png')}}" alt=""> </a>
+                        <a href=""> <img src="rede_8_aj/red/images/logo_cooperacion.png" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
+                                <!--<li class="menu-item">
+                                    <a href="#historia">Objetivo</a>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -51,6 +59,9 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
+                               <!-- <li class="menu-item">
+                                    <a href="#historia">Objetivo</a>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -125,66 +136,114 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
+                                
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
                         </div>
                         <div class="clear"></div>
                     </section>
+                    <!--<section id="historia">
+                        <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
+                            <div class="container">
+                                <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
+                                    <div class="gdlr-item-title-head">
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Objetivo de la red</h3>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-testimonial-item-wrapper">
+                                    <div class="clear"></div>
+                                    <div class=" Two columns">
+                                        <div class="gdlr-item gdlr-testimonial-item plain-style">
+                                            <div class="gdlr-ux gdlr-testimonial-ux">
+                                                <div class="testimonial-item">
+                                                    <div class="testimonial-content gdlr-skin-content">
+                                                        <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo.</p>
+                                                    </div>
+                                                    <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </section>-->
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
                                 <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
                                     <div class="gdlr-item-title-head">
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
+                                        
                                     </div>
+									
+									<br>
+									<br>
+									<div class="gdlr-session-thumbnail-wrapper">
+                                        <a href="{{ URL::asset('/rede_8_aj/red/images/Prorgama_RNAJ_2023.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
+                                                    {{-- <a href="images/Prorgama_RNAJ_2023.pdf"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a> --}}
+                                   </div>
                                 </div>
-                                <div class="session-item-wrapper" style="margin-bottom: 75px;">
-                                    <div class="gdlr-session-item gdlr-tab-session-item gdlr-item">
-                                        <div class="gdlr-session-item-head">
-                                            <div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-1">
-                                                <div class="gdlr-session-head-day">D&iacute;a 1</div>
-                                                <div class="gdlr-session-head-date">27 de noviembre de 2023</div>
-                                            </div>
-                                            <div class="clear"></div>
+                            <div class="session-item-wrapper" style="margin-bottom: 75px;">
+                                <div class="gdlr-session-item gdlr-tab-session-item gdlr-item">
+                                    <div class="gdlr-session-item-head">
+                                        <div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-1">
+                                            <div class="gdlr-session-head-day">D&iacute;a 1</div>
+                                            <div class="gdlr-session-head-date">27 de noviembre de 2023</div>
                                         </div>
+                                        
+										
+										
+                                        <div class="clear"></div>
+                                    </div>
 
-                                        <!-- inicia dia -->
-                                        <div class="gdlr-session-item-tab-content gdlr-tab-1 gdlr-active">
-                                            <div class="gdlr-session-item-content-wrapper">
-                                                <div class="gdlr-session-item-divider"></div>
-                                                <div class="gdlr-session-item-content-info">
-                                                    <div class="gdlr-session-info">
-                                                        <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:00 hrs.</div>
-                                                        <div class="session-info session-speaker">
-                                                            <div class="session-speaker-inner">
-                                                                <div class="session-speaker-list">
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
-                                                                </div>
-                                                                <div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
-                                                                </div>
+                                    <!-- inicia dia -->
+                                    <div class="gdlr-session-item-tab-content gdlr-tab-1 gdlr-active">
+                                        <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:00 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
                                                             </div>
                                                         </div>
-                                                        <div class="clear"></div>
                                                     </div>
+                                                    <div class="clear"></div>
                                                 </div>
-                                                <div class="gdlr-session-item-content">
-                                                    <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
-                                                    <div class="gdlr-session-thumbnail-wrapper">
-                                                        <div class="col-md-6 col-sm-6 col-xs-6">
-                                                            <article class="type-post">
-                                                                    <div class="entry-cover">
-                                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nOR3IrqcOrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                                    </div>
-                                                                    <div class="entry-block"></div>
-                                                            </article>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
                                             </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/nOR3IrqcOrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+													  </article>
+											      </div>
+                                              </div>
+                                          </div>
+                                             <div class="clear"></div>
+                                      </div>
 
-                                        <div class="gdlr-session-item-content-wrapper">
+
+                                      <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
@@ -194,11 +253,10 @@
                                                             <div class="session-speaker-list">
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a> Dr. Ricardo Alfredo Sodi Cuellar </a></div>
                                                             </div>
-                                                            <div class="gdlr-session-item-excerpt">
-                                                                Presidente del Tribunal Superior de Justicia y del Consejo de la Judicatura del Poder Judicial del Estado de México.
+															<div class="gdlr-session-item-excerpt">Presidente del Tribunal Superior de Justicia y del Consejo de la Judicatura del Poder Judicial del Estado de México.
                                                             </div>
                                                         </div>
-                                                    </div>
+</div>
                                                     <div class="clear"></div>
                                                 </div>
                                             </div>
@@ -223,185 +281,209 @@
 											      </div>
                                               </div>
                                         </div>
+                                             <div class="clear"></div>
+                                            </div>
+<div class="gdlr-session-item-content-wrapper">
+                    <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:15 hrs.</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes:</a></div>
+																<!--<div class="session-speaker-list-item"><a> Región I</a></div> -->
+																
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Ing. Erick Cardoso Espinoza</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">CEO y fundador de la empresa Petra Heritage
+                                                            </div>
+                                                        </div>
+														<div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+															
+																<!-- <div class="session-speaker-list-item"><a> Región II</a></div>-->
+																
+                                                              <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Yolanda Martínez Mancilla</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Coordinadora de Estrategia Digital Nacional
+                                                            </div>
+															<div class="session-speaker-list">
+																
+																<!-- <div class="session-speaker-list-item"><a> Región III</a></div> -->
+																
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Joel Gómez Treviño</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Presidente Fundador de la Academia Mexicana de Derecho Informático
+                                                            </div>
+</div>
+														
+														
+                                                    </div>
+													
+										
+													
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                           <div class="gdlr-session-item-content">
+                                               <h3 class="gdlr-session-item-title">PONENCIA MAGISTRAL</h3>
+												<!-- <div class="gdlr-session-item-excerpt">Ponencia Magistral:</div> -->
+											    <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjem.webex.com/pjem/j.php?MTID=me43dc2d782c1e783a14f0528fc77c37b"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                </div>
+													            <div class="entry-block"></div>
+													 </article>
+                                             </div>
+                    </div>
+											
+                                             <div class="clear"></div>
+                                      </div>
+<div class="gdlr-session-item-content-wrapper">
+                      <div class="gdlr-session-item-divider"></div>
+<div class="clear"></div>
+                                      </div>
+                                        
+    
+                                    </div>
+                                    <!-- termina dia -->
+                                    <div class="gdlr-session-item-tab-content gdlr-tab-2">
+                                        
+                                       
+                                        
+                                        <div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Encargados de los programas de capacitación interna de cuatro Estados.</a></div>
+
+                                                                <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderador: Pendiente</a></div>
+													          </div>
+															
+                                                        </div>
+                                                    </div>
+												
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title"><a>Mesa 3</a></h3>
+                                                <div class="gdlr-session-item-excerpt">Desarrollo y profesionalización de los servidores públicos adscritos a los servicios documentales y archivísticos de los Poderes Judiciales locales.
+													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=e307174283ab161b1813ff3274b40aff1"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
+                                                </div>
+                                            </div>
                                             <div class="clear"></div>
                                         </div>
-                                        <div class="gdlr-session-item-content-wrapper">
-                                                <div class="gdlr-session-item-divider"></div>
-                                                <div class="gdlr-session-item-content-info">
-                                                    <div class="gdlr-session-info">
-                                                        <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:15 hrs.</div>
-                                                        <div class="session-info session-speaker">
-                                                            <div class="session-speaker-inner">
-                                                                <div class="session-speaker-list">
-                                                                    <div class="session-speaker-list-item"><a>Ponentes:</a></div>
-                                                                    <!--<div class="session-speaker-list-item"><a> Región I</a></div> -->
-                                                                    
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Ing. Erick Cardoso Espinoza</a></div>
-                                                                </div>
-                                                                <div class="gdlr-session-item-excerpt">CEO y fundador de la empresa Petra Heritage
-                                                                </div>
-                                                            </div>
-                                                            <div class="session-speaker-inner">
-                                                                <div class="session-speaker-list">
-                                                                    <!-- <div class="session-speaker-list-item"><a> Región II</a></div>-->
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Yolanda Martínez Mancilla</a></div>
-                                                                </div>
-                                                                <div class="gdlr-session-item-excerpt">
-                                                                    Coordinadora de Estrategia Digital Nacional
-                                                                </div>
-                                                                <div class="session-speaker-list">
-                                                                    <!-- <div class="session-speaker-list-item"><a> Región III</a></div> -->
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Joel Gómez Treviño</a></div>
-                                                                </div>
-                                                                <div class="gdlr-session-item-excerpt">Presidente Fundador de la Academia Mexicana de Derecho Informático
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="gdlr-session-item-content">
-                                                    <h3 class="gdlr-session-item-title">PONENCIA MAGISTRAL</h3>
-                                                     <!-- <div class="gdlr-session-item-excerpt">Ponencia Magistral:</div> -->
-                                                     <div class="gdlr-session-thumbnail-wrapper">
-                                                          <article class="type-post">
-                                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                         <a href="https://pjem.webex.com/pjem/j.php?MTID=me43dc2d782c1e783a14f0528fc77c37b"><button class="newsletter-submit gdlr-button with-border">Ver mensaje</button></a>
-                                                     </div>
-                                                                     <div class="entry-block"></div>
-                                                          </article>
-                                                  </div>
-                         </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                            <div class="gdlr-session-item-content-wrapper">
-                                                <div class="gdlr-session-item-divider"></div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                        <!-- termina dia -->
-
-                                        <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                            <div class="gdlr-session-item-content-wrapper">
-                                                <div class="gdlr-session-item-divider"></div>
-                                                <div class="gdlr-session-item-content-info">
-                                                    <div class="gdlr-session-info">
-                                                        <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00</div>
-                                                        <div class="session-info session-speaker">
-                                                            <div class="session-speaker-inner">
-                                                                <div class="session-speaker-list">
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Encargados de los programas de capacitación interna de cuatro Estados.</a></div>
-                                                                    <div class="session-speaker-list-item" style="padding-top: 2em !important;"><i class="fa fa-user-circle" aria-hidden="true"></i><a>Moderador: Pendiente</a></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="gdlr-session-item-content">
-                                                    <h3 class="gdlr-session-item-title"><a>Mesa 3</a></h3>
-                                                    <div class="gdlr-session-item-excerpt">Desarrollo y profesionalización de los servidores públicos adscritos a los servicios documentales y archivísticos de los Poderes Judiciales locales.
-                                                        <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
-                                                    <div class="gdlr-session-thumbnail-wrapper">
-                                                        <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver mesa</button></a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                            
-                                            <div class=gdlr-session-item-content-wrapper>
+										
+										<div class=gdlr-session-item-content-wrapper>
                                                 <div class=gdlr-session-item-divider></div>
                                                 <div class=session-break-content>
                                                     <div class=session-break-info><i class="fa fa-clock-o"></i>12:00 hrs.</div>
-                                                    <h3 class="gdlr-session-break-title">RECESO</h3>
-                                                </div>
+                                                    <h3 class="gdlr-session-break-title">RECESO</h3></div>
                                                 <div class=clear></div>
                                             </div>
-                                            <div class="gdlr-session-item-content-wrapper">
-                                                <div class="gdlr-session-item-divider"></div>
-                                                <div class="gdlr-session-item-content-info">
-                                                    <div class="gdlr-session-info">
-                                                        <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15</div>
-                                                        <div class="session-info session-speaker">
-                                                            <div class="session-speaker-inner">
-                                                                <div class="session-speaker-list">
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Josefina Román Vergara.</a></div>
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada del INAI</a></div>
-                                                                </div>
-                                                            </div>
+										<div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>12:15</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Josefina Román Vergara.</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Comisionada del INAI</a></div>
+													          </div>
+															
+															
                                                         </div>
-                                                        <div class="clear"></div>
                                                     </div>
+												
+                                                    <div class="clear"></div>
                                                 </div>
-                                                <div class="gdlr-session-item-content">
-                                                    <h3 class="gdlr-session-item-title"><a>Conferencia de cierre</a></h3>
-                                                    <div class="gdlr-session-item-excerpt">Mecanismos de coordinación de los Archivos Judiciales con los Consejos Estatales y el Consejo Nacional de Archivos.
-                                                        <div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a>
-                                                    </div>
-                                                    <div class="gdlr-session-thumbnail-wrapper">
-                                                        <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
                                             </div>
-                                            <div class="gdlr-session-item-content-wrapper">
-                                                <div class="gdlr-session-item-divider"></div>
-                                                <div class="gdlr-session-item-content-info">
-                                                    <div class="gdlr-session-info">
-                                                        <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:15</div>
-                                                        <div class="session-info session-speaker">
-                                                            <div class="session-speaker-inner">
-                                                                <div class="session-speaker-list">
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Carmen Patricia Bencomo Ferrales</a></div>
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora de la Red Nacional de Archivos Judiciales y Coordinadora de Archivos del Poder Judicial del Estado de Chihuahua.</a></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title"><a>Conferencia de cierre</a></h3>
+                                                <div class="gdlr-session-item-excerpt">Mecanismos de coordinación de los Archivos Judiciales con los Consejos Estatales y el Consejo Nacional de Archivos.
+													<div class="clear"></div><a href="../session/welcoming-and-introduction/index.html" class="gdlr-info-font excerpt-read-more">Hola mundo</a></div>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver conferencia</button></a>
                                                 </div>
-                                                <div class="gdlr-session-item-content">
-                                                    <h3 class="gdlr-session-item-title"><a>Conclusiones y acuerdos</a></h3>
-                                                    <div class="gdlr-session-thumbnail-wrapper">
-                                                        <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver conclusiones</button></a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
                                             </div>
-                                            <div class="gdlr-session-item-content-wrapper">
-                                                <div class="gdlr-session-item-divider"></div>
-                                                <div class="gdlr-session-item-content-info">
-                                                    <div class="gdlr-session-info">
-                                                        <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:45</div>
-                                                        <div class="session-info session-speaker">
-                                                            <div class="session-speaker-inner">
-                                                                <div class="session-speaker-list">
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magda. Miriam Victoria Hernández Acosta</a></div>
-                                                                    <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Presidenta del Tribunal Superior de Justicia del Estado de Chihuahua.</a></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="gdlr-session-item-content">
-                                                    <h3 class="gdlr-session-item-title"><a>Clausura</a></h3>
-                                                    <div class="gdlr-session-thumbnail-wrapper">
-                                                        <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver clausura</button></a>
-                                                    </div>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
+                                            <div class="clear"></div>
                                         </div>
-                                        <!-- termina dia -->
-
-                                    </div>
-                                    <div class=clear></div>
+										<div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:15</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Carmen Patricia Bencomo Ferrales</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Coordinadora de la Red Nacional de Archivos Judiciales y Coordinadora de Archivos del Poder Judicial del Estado de Chihuahua.</a></div>
+													          </div>
+															
+                                                        </div>
+                                                    </div>
+												
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title"><a>Conclusiones y acuerdos</a></h3>
+                                               
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver conclusiones</button></a>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+										<div class="gdlr-session-item-content-wrapper">
+                                            <div class="gdlr-session-item-divider"></div>
+                                            <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>13:45</div>
+                                                    <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magda. Miriam Victoria Hernández Acosta</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-address-card" aria-hidden="true"></i><a>Presidenta del Tribunal Superior de Justicia del Estado de Chihuahua.</a></div>
+													          </div>
+															
+                                                        </div>
+                                                    </div>
+												
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title"><a>Clausura</a></h3>
+                                               
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://tsjcdmx.webex.com/tsjcdmx-sp/onstage/g.php?MTID=edbb3fdb9860f09a754225167d3d5960e"><button class="newsletter-submit gdlr-button with-border">Ver clausura</button></a>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+										
+								  </div>
+									            <!-- termina dia -->
                                 </div>
                                 <div class=clear></div>
                             </div>
+                            <div class=clear></div>
                         </div>
-                    </div>
+                            </div>
+                        </div>
+                        
                     </section>
                     <div class="section-container container">
                     <section id="ponentescdmx">
@@ -418,7 +500,7 @@
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=3>
                                             <ul class=slides>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/images/img_ponentes/Erick Cardoso Espinoza.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_8_aj/red/4images/img_ponentes/Erick Cardoso Espinoza.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Ing. Erick Cardoso Espinoza</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-5>
@@ -553,6 +635,7 @@ En 2000 obtuvo por oposición la beca otorgada por el Ministerio de Cultura, Edu
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
+
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>

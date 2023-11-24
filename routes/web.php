@@ -45,5 +45,6 @@ Route::post('/usuarioConstancias', [generaConstancia::class, 'descargaConstancia
 
 Route::post('/descargaConstancia', [generaConstancia::class, 'descargaConstancia'])->name('descargaConstancia');
 Route::get('/descargaManual', [generaConstancia::class, 'descargaManual'])->name('descargaManual');
+Route::get('/DescargaPdf', [generaConstancia::class, 'DescargaPdf'])->name('DescargaPdf');
 //Route::post('/calendario', [CalendarioController::class, 'redCalendario'])->name('calendario');
 

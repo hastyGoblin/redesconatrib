@@ -41,9 +41,9 @@
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <li class="menu-item">
+                               <!-- <li class="menu-item">
                                     <a href="#historia">Historia</a>
-                                </li>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -59,9 +59,9 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <li class="menu-item">
+                                <!-- <li class="menu-item">
                                     <a href="#historia">Historia</a>
-                                </li>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -143,38 +143,6 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-                    <!--<section id="historia">
-                        <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
-                            <div class="container">
-                                <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
-                                    <div class="gdlr-item-title-head">
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Historia de la red</h3>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-testimonial-item-wrapper">
-                                    <div class="clear"></div>
-                                    <div class=" Two columns">
-                                        <div class="gdlr-item gdlr-testimonial-item plain-style">
-                                            <div class="gdlr-ux gdlr-testimonial-ux">
-                                                <div class="testimonial-item">
-                                                    <div class="testimonial-content gdlr-skin-content">
-                                                        <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo.</p>
-                                                    </div>
-                                                    <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </section>-->
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -183,6 +151,11 @@
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
                                         
                                     </div>
+									<br>
+									<br>
+									<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="{{ URL::asset('/rede_1_cecofam/red/images/PROGRAMA_RED_NACIONAL_INTERVENCIÓN_ESPECIALIZADA_APOYO_JUDICIAL.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
+                                                </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
                                 <div class="gdlr-session-item gdlr-tab-session-item gdlr-item">
@@ -212,9 +185,6 @@
                                           <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>XX:00 hrs.</div>-->
-                                                    
-													
 													<div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -224,45 +194,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-													<div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><a>Se contará con la participación</a></div>
-																<div class="session-speaker-list-item"><a>Dr. Guillermo Fernández-Maldonado Castro</a></div>
-                                                            </div>
-															<div class="gdlr-session-item-excerpt">Representante en México del Alto Comisionado de las Naciones Unidas para los Derechos Humanos.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-													
-													<div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                               <div class="session-speaker-list-item"><a>Lcda. Marisela Zúñiga Cerón</a></div>
-                                                            </div>
-															<div class="gdlr-session-item-excerpt">Representante en Diputada Presidenta de la Comisión de Derechos Humanos del Congreso de la Ciudad de México.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-													<div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                               <div class="session-speaker-list-item"><a>Dra. Irma Guadalupe García Mendoza</a></div>
-                                                            </div>
-															<div class="gdlr-session-item-excerpt">Representante en Consejera de la Judicatura y Presidenta del Comité para Incluirla Perspectiva de Género en el Poder Judicial de la Ciudad de México.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-													<div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                               <div class="session-speaker-list-item"><a>Dr. Andrés Linares Carranza</a></div>
-                                                            </div>
-															<div class="gdlr-session-item-excerpt">Representante en Consejero de la Judicatura y Presidente del Comité para el Fomento, Promoción y Difusión de los Derechos de la Personas con Discapacidad en el Poder Judicial de la Ciudad de México.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
+												    <div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
@@ -274,49 +206,46 @@
 																	<iframe width="560" height="315" src="https://www.youtube.com/embed/nOR3IrqcOrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
 														 </article>
-														</div>
-                                                    </div>
-                                              </div>
-                                             <div class="clear"></div>
+													</div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+											
+									<!----------------------- -->
+											
+									<div class="gdlr-session-item-content-wrapper">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+                                    </div> 
+											
+									<!----------------------- -->
+											
                                        <div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>
+                                                  <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Margarita Castilla Peón</a></div>
-																<div class="gdlr-session-item-excerpt">Secretaria Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México. </div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Luis Alberto Disanto</a></div>
+																<div class="gdlr-session-item-excerpt">Director del Programa de Actualización en Psicología Investigativa Criminal (UBA).</div>
                                                             </div>
                                                         </div>
-														  <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Moderadora</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mgda. Sonia Margarita Blanquel Díaz</a></div>
-																<div class="gdlr-session-item-excerpt">Secretaria Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México.</div>
-                                                            </div>
-                                                        </div>
+														  
                                                       </div>
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-                                               <h3 class="gdlr-session-item-title">“La Competencia del Juez de Ejecución para la Protección de la Niñez”.</h3>
-												<div class="gdlr-session-item-excerpt">Ponencia Magistral:</div>
-											    <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
-                                                 </div>
+												<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Importancia del análisis victimológico en la investigación criminal”.</h3>
+												
+											    
                                             </div>
                                           <div class="clear"></div>
                                         </div> 
@@ -327,38 +256,26 @@
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Margarita Castilla Peón</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Olga Verónica Ochoa</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga de los Centros de Convivencia Familiar del Poder Judicial del Estado de Baja California.</div>
 															 </div>
 														 </div>
                                                       </div>
-													<div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Moderadora</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mgda. Sonia Margarita Blanquel Díaz</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México.</div>
-															 </div>
-														 </div>
-                                                      </div>
+													
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-                                               <h3 class="gdlr-session-item-title">“La Competencia del Juez de Ejecución para la Protección de la Niñez 2022”.</h3>
-												<div class="gdlr-session-item-excerpt">Ponencia Magistral: </div>
+												<div class="gdlr-session-item-excerpt">Cápsula: </div>
+                                               <h3 class="gdlr-session-item-title">“La Relación de las Habilidades Parentales con las Habilidades Socioemocionales”.</h3>
+												
                                                  <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                     
                                                    </div>
                                             </div>
                                           <div class="clear"></div>
@@ -367,37 +284,258 @@
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>19:30  hrs.</div>
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Margarita Castilla Peón</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México. </div>
-																<div class="session-speaker-list-item"><a>Moderadora</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mgda. Sonia Margarita Blanquel Díaz</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Mayra Alejandra Mora Miranda</a></div>
+																<div class="gdlr-session-item-excerpt">Escritora e Investigadora en la evaluación e intervención psicológica en enfermedades crónico-degenerativas </div>
+																
                                                             </div>
                                                         </div>
                                                       </div>
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
-                                            <div class="gdlr-session-item-content">
-                                               <h3 class="gdlr-session-item-title">“La Competencia del Juez de Ejecución para la Protección de la Niñez 2022”.</h3>
-												<div class="gdlr-session-item-excerpt">Ponencia Magistral:</div>
-                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Antídotos Prácticos para la Violencia”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
                                       </div>  
 											
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Juez Edgar Tello Arcos</a></div>
+																<div class="gdlr-session-item-excerpt">Juez Séptimo familiar del Primer Partido Judicial.</div>
+																
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Violencia en Niñas, Niños y Adolescentes Ocasionada por la Separación de los Padres que Derivan Convivencia en un CECOFAM”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                      </div>  
+									
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Yesenia Reyes García</a></div>
+																<div class="gdlr-session-item-excerpt">Perita en materia de Trabajo Social en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
+																
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
+                                               <h3 class="gdlr-session-item-title">“Violencia en el ámbito Familiar: Maltrato Infantil”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                      </div>  
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Pedro Daniel González García</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo en el Centro Estatal de Convivencia Familiar del Poder Judicial del Estado de Nuevo León</div>
+																
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Evaluación Sistémica en Casos de Violencia Familiar”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                      </div>  
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Fabiola Silva Escalante</a></div>
+																<div class="gdlr-session-item-excerpt">Encargada Administrativa de la Unidad de Servicios Psicológicos en el Poder Judicial del Estado de Tabasco.</div>
+																
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
+                                               <h3 class="gdlr-session-item-title">“Ciclo de la Violencia”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                      </div> 
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Rocío Estela López Orozco</a></div>
+																<div class="gdlr-session-item-excerpt">Subdirectora de Evaluación Psicológica del Poder Judicial de la Ciudad de México.</div>
+																
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Feminicidio”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                      </div> 
+											
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magdo. Dr. Raúl Aarón Romero Ortega</a></div>
+																<div class="gdlr-session-item-excerpt">Consejero del Poder Judicial del Estado de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Jueza Mtra. Dora Nuño Mejía</a></div>
+																<div class="gdlr-session-item-excerpt">Titular del Juzgado Sexto Familiar de Cuautitlán México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Daniel Alejandro Pérez Martínez</a></div>
+																<div class="gdlr-session-item-excerpt">Coordinador de Parentalidad en los Centros de Convivencia Familiar del Poder Judicial del Estado de México.</div>
+																
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Conversatorio:</div>
+                                               <h3 class="gdlr-session-item-title">“La Coordinación de Parentalidad y sus Retos en los Juicios de Violencia Familiar”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                     </div> 
+											
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Leonor Olivia Ruvalcaba Vargas</a></div>
+																<div class="gdlr-session-item-excerpt">Juez Especializada en Violencia Contra las Mujeres.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. María de Jesús Salazar Martínez</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga CECOFAM Chilpancingo..</div>
+															 </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
+                                               <h3 class="gdlr-session-item-title">“Procedimiento de Escuchas Judiciales a Niñas, Niños y Adolescentes”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                     </div>
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente:</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Sofía Durón Cárdenas</a></div>
+																<div class="gdlr-session-item-excerpt">Subdirectora del CECOFAM del Poder Judicial de la Ciudad México, sede Niños Héroes.</div>
+																
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Prácticas Violentas como Forma de Ejercer Disciplina en las Niñas, Niños y Adolescentes”.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                     </div> 
+											
+											
+								
+							
 							    </div>			
 							 </div>
 									
@@ -407,36 +545,40 @@
 									
                          <!-- inicia dia 2 -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
-                                        <div class="gdlr-session-item-content-wrapper">
+										<br>
+									<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
+								<!----------------------- -->
+											
+									<div class="gdlr-session-item-content-wrapper">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+                                    </div> 
+											
+									<!----------------------- -->
+											
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>
+                                              <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div> -->
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Margarita Castilla Peón</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México. </div>
-																<div class="session-speaker-list-item"><a>Moderadora</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mgda. Sonia Margarita Blanquel Díaz</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México.</div>
-                                                            </div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Carolina Santillán Torres Torija</a></div>
+																<div class="gdlr-session-item-excerpt">Profesora en la Universidad Nacional Autónoma de México y miembro del Sistema Nacional de Investigadores CONACYT.</div>
+															</div>
                                                         </div>
                                                       </div>
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-                                               <h3 class="gdlr-session-item-title">“La Competencia del Juez de Ejecución para la Protección de la Niñez”.</h3>
-												<div class="gdlr-session-item-excerpt">Ponencia Magistral:</div>
-                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+											   <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Conductas Asociadas al Suicidio y su Relación con la Violencia”.</h3>
+												  <div class="gdlr-session-thumbnail-wrapper">
+                                                     
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -448,16 +590,14 @@
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>
+													 
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Margarita Castilla Peón</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México. </div>
-																<div class="session-speaker-list-item"><a>Moderadora</a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mgda. Sonia Margarita Blanquel Díaz</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Diego Alberto Beaurregard Zentella</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo en la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco.</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -465,40 +605,333 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-                                               <h3 class="gdlr-session-item-title">“La Competencia del Juez de Ejecución para la Protección de la Niñez 2022”.</h3>
-												<div class="gdlr-session-item-excerpt">Ponencia Magistral:</div>
-                                                 <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+											    <div class="gdlr-session-item-excerpt">Cápsula:</div>
+                                               <h3 class="gdlr-session-item-title">“Masculinidades Libres de Violencia”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
                                         </div>	
+										
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+													 
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Sergio Vargas González</a></div>
+																<div class="gdlr-session-item-excerpt">Consejero del Poder Judicial del Estado de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Ana María Castelán Rowe</a></div>
+																<div class="gdlr-session-item-excerpt">Perito en Materia de Psicología en el Poder Judicial del Estado de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Gloria López Santiago</a></div>
+																<div class="gdlr-session-item-excerpt">Perito Oficial en Materia de Psicología, en Materia de Familia y Niñez, Victimología y Género en el Poder Judicial del Estado de México.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conversatorio:</div>
+                                               <h3 class="gdlr-session-item-title">“La Valoración en Psicología en los Juicios de Violencia Familiar”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+													 
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Rosario Flores Rodríguez</a></div>
+																<div class="gdlr-session-item-excerpt">Perita en materia de Trabajo Social en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
+                                               <h3 class="gdlr-session-item-title">“Círculo de la Violencia”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>
+										
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Miguel Ángel Miranda Aquino</a></div>
+																<div class="gdlr-session-item-excerpt">Integrante en el Departamento de Orientación Familiar en el Poder Judicial del Estado de Morelos.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Violencia y Acceso a la Justicia de las Personas con Discapacidad en México”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>
+										
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Pedro Daniel Martínez Sierra</a></div>
+																<div class="gdlr-session-item-excerpt">Profesor de Carrera Asociado “C” en la Escuela Nacional de Trabajo Social de la UNAM.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Niñas, Niños y Adolescentes en Escenarios de Violencia Social”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>
+										
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+													 
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Mónica Karina Illan Meza</a></div>
+																<div class="gdlr-session-item-excerpt">Jefa del Centro de Convivencia Familiar de Zapopan.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Edgar Tello Arcos</a></div>
+																<div class="gdlr-session-item-excerpt">Juez Séptimo Familiar del Primer Partido Judicial.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Juez Sergio Vladimir Cabrales Becerra</a></div>
+																<div class="gdlr-session-item-excerpt">Juez de Control Adscrito al Centro de Justicia para la Mujer.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Mesa de Diálogo:</div>
+                                               <h3 class="gdlr-session-item-title">“Convivencia, Violencia y Protección desde los Juzgados y del CECOFAM de Zapopan del Estado de Jalisco”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+										
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Erika Trinidad Chávez</a></div>
+																<div class="gdlr-session-item-excerpt">Subdirectora de Trabajo Social en el Poder Judicial de la Ciudad de México.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“La Intervención del Profesional de Trabajo Social en Casos de Violencia Familiarl”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+								
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Erika Paola García Almazán</a></div>
+																<div class="gdlr-session-item-excerpt">Encargada del Centro de Convivencia Familiar Apodaca del Estado de Nuevo León.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Intervención Activa durante Convivencias Supervisadas, en Situaciones de Violencia”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>
+										
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Aracelli del Carmen Abundis</a></div>
+																<div class="gdlr-session-item-excerpt">Supervisora y Asistente en los Juzgados Familiares y de Oralidad en el Estado de Nayarit.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. María de la Luz García Medina</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga del Poder Judicial del Estado de Nayarit, Adscrita al Centro Estatal de Convivencia Familiar.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Violencia Vicaria”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>
+										
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Tirso Febronio Tejeda Sanabria</a></div>
+																<div class="gdlr-session-item-excerpt">Psicoterapeuta y Tallerista en la Academia Anamar Orihuela.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Cápsula:</div>
+                                               <h3 class="gdlr-session-item-title">“La Importancia de la Comunicación con un Lenguaje no Violento”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>		
 										
 						 </div>	
 						 <!-- termina dia 2-->
 									
 									
                          <!-- inicia dia 3 -->
-								<div class="gdlr-session-item-tab-content gdlr-tab-3">		
+								<div class="gdlr-session-item-tab-content gdlr-tab-3">	
+									
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+										<br>
+										
+										<!----------------------- -->
+											
+									<div class="gdlr-session-item-content-wrapper">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+                                    </div> 
+											
+									<!----------------------- -->
+											
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Adriana María Isabel Núñez García</a></div>
+																<div class="gdlr-session-item-excerpt">Perita en Materia de Trabajo Social en la Fiscalía de Investigación del Delito de Feminicidio, en la Fiscalía General de Justicia de la CDMX.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Espiral de la Violencia, Rueda de Poder y Control como Obstáculo en el Camino de las Mujeres Víctimas de Violencia de Género en la Búsqueda y Acceso a la Justicia”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+									
 								<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>19:30 hrs.</div>
+													
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>19:30 hrs.</div>-->
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponente </a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Margarita Castilla Peón </a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México.</div>
-																<div class="session-speaker-list-item"><a>Moderadora </a></div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mgda. Sonia Margarita Blanquel Díaz </a></div>
-																<div class="gdlr-session-item-excerpt">Coordinadora Técnica de Presidencia y Agenda de la Infancia Trans de la Comisión de Derechos Humanos de la Ciudad de México.</div>
+																<div class="session-speaker-list-item"><a>Ponentes </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Luisa Isabel Morales Reynoso </a></div>
+																<div class="gdlr-session-item-excerpt">Jueza en Línea Familiar del Poder Judicial del Estado de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Jueza Mtra. Nohemí García Rosales</a></div>
+																<div class="gdlr-session-item-excerpt">Jueza en Línea en Materia de Violencia Familiar y Protección de Niñas, Niños y Adolescentes del Estado de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Olga Lidia Sanabria Téllez</a></div>
+																<div class="gdlr-session-item-excerpt">Directora General del Centro de Convivencia Familiar del Poder Judicial del Estado de México.</div>
 															</div>
                                                         </div>
                                                       </div>
@@ -506,26 +939,526 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-                                               <h3 class="gdlr-session-item-title">“La Competencia del Juez de Ejecución para la Protección de la Niñez 2022”.</h3>
-												<div class="gdlr-session-item-excerpt">Ponencia Magistral:</div>
+												<div class="gdlr-session-item-excerpt">Conversatorio:</div>
+                                               <h3 class="gdlr-session-item-title">“El Juzgado en Línea Especializado en Violencia Familiar y Protección de Niñas, Niños y Adolescentes y su Vinculación con los Centros de Convivencia Familiar”.</h3>
+												
                                                  <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                     
                                                   </div>
                                             </div>
+									 <div class="clear"></div>
+                              </div>
 									
-                                        <div class="clear"></div>
-                                        	
-							</div>
-							</div>		
-						<!-- termina dia 3-->
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Itzel Nadchie liihi Bernal de Anda</a></div>
+																<div class="gdlr-session-item-excerpt">Directora de Evaluación e Intervención Psicológica del Poder Judicial de la Ciudad de México.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
+                                               <h3 class="gdlr-session-item-title">“Estadísticas de Violencia en México”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>	
+								
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Juez Sergio Vladimir Cabrales Becerra</a></div>
+																<div class="gdlr-session-item-excerpt">Juez de Control adscrito al Centro de Justicia para la Mujer en el Supremo Tribunal de Justicia del Estado de Jalisco.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“La Efectividad de los Binomios de Geolocalización para Combatir la Violencia en Razón de Género”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                                </div>
+									
+						<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Cristina Peña Pedrazaa</a></div>
+																<div class="gdlr-session-item-excerpt">Perito en Trabajo Social en el Poder Judicial del Estado de Nuevo León.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“La Evaluación de Trabajo Social en Situación de Violencia de Familiar”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                                </div>
+							<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Alejandra Maa Rosas</a></div>
+																<div class="gdlr-session-item-excerpt">Terapeuta en la Clínica de la Ansiedad.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Normalización de la Violencia”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                                </div>		
+						<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Ileska Karelia Vega Trapero</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga del Centro de Convivencia Familiar Supervisada, del Poder Judicial del Estado de Sinaloa.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Convivencias “Forzadas” una Forma de Violencia en los Conflictos jurídicofamiliares”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                                </div>				
+					<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Fernando López Munguía</a></div>
+																<div class="gdlr-session-item-excerpt">Jefe de Psiquiatría Legal del Hospital Psiquiátrico Fray Bernardino Álvarez.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Violencia: Perspectiva Psiquiátrica”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>	
+									
+					<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Annel Rosado Lara</a></div>
+																<div class="gdlr-session-item-excerpt">Jefa del Departamento de Atención a la Violencia de Género del Consejo de la Judicatura del Poder Judicial del Estado de Yucatán.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Actuación Judicial con Perspectiva de Género”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+									
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Joani Lizbeth Ortíz Romero</a></div>
+																<div class="gdlr-session-item-excerpt">Perita en materia de Trabajo Social en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
+                                               <h3 class="gdlr-session-item-title">“Violencia Económica, una Perspectiva desde Trabajo Social”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>					
+						
+					<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Alejandra Nieves Ramírez</a></div>
+																<div class="gdlr-session-item-excerpt">Perita en Psicología en el Poder Judicial del Estado de Morelos.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Jesús Salvador López Gutiérrez</a></div>
+																<div class="gdlr-session-item-excerpt">Dictaminador Pericial en Materia de Psicología en el Poder Judicial del Estado de Morelos.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conversatorio:</div>
+                                               <h3 class="gdlr-session-item-title">“Alcances y Limitaciones en las Convivencias Familiares Supervisadas”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>					
+				</div>		
+ <!-- termina dia 3-->
                                    
  <!-- inicia dia 4-->
 			<div class="gdlr-session-item-tab-content gdlr-tab-4">		
+								<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+									
+									<br>
+									<!----------------------- -->
+											
+									<div class="gdlr-session-item-content-wrapper">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+                                    </div> 
+											
+									<!----------------------- -->
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                 <!--<div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 – 09:40 hrs       </div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Ignacio Bautista Santamaria </a></div>
+																<div class="gdlr-session-item-excerpt">Coordinación Parental en el CECOFAM del Poder Judicial de la Ciudad de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Luz Angélica Brisset Jiménez San Pedro </a></div>
+																<div class="gdlr-session-item-excerpt">Coordinación Parental del Poder Judicial de la Ciudad de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Paola Viloria Ochoa</a></div>
+																<div class="gdlr-session-item-excerpt">Coordinación Parental del Poder Judicial de la Ciudad de México.</div>
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Conversatorio</div>
+                                               <h3 class="gdlr-session-item-title">El Impacto del Establecimiento de las Relaciones Parentales como Compañeros de Crianza en Padres Divorciados.</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>
+				
+				
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Eréndira Toledo Cortés</a></div>
+																<div class="gdlr-session-item-excerpt">Coordinadora de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Violencia como Factor Contaminante”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+				
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Sergio Vargas González</a></div>
+																<div class="gdlr-session-item-excerpt">Titular de Servicios Periciales en el Poder Judicial del Estado de México.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
+                                               <h3 class="gdlr-session-item-title">“Valoración en Psicología Forense por Medios Electrónicos”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Arisbet Cueriel Aguilar</a></div>
+																<div class="gdlr-session-item-excerpt">Poder Judicial del Estado de Hidalgo.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Violencia Familiar Desde la Perspectiva Social”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Oscar Ricardo Galicia Castillo</a></div>
+																<div class="gdlr-session-item-excerpt">Jefe de Área y Procesos Básicos y Jefe de Laboratorios de Neurociencias y Miembro del Sistema Nacional de Investigadores del CONAHCYT.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Las Bases Fisiológicas de la Agresión y la Violencia”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Juan Alejandro Anguiano</a></div>
+																<div class="gdlr-session-item-excerpt">Coordinador del Centro Municipal para la Atención y Trabajo con Hombres y Masculinidades.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“El Trabajo con Hombres para el Alcance de la Igualdad”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. María Fernanda González Castro</a></div>
+																<div class="gdlr-session-item-excerpt">Coordinadora del Área de Psicología y Trabajo Social del Poder Judicial del Estado de Chiapas.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Consecuencias Psicológicas de las Niñas, Niños y Adolescentes, ante el Conflicto Legal del Divorcio de sus Padres”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+				
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Maribel Campos Delgado</a></div>
+																<div class="gdlr-session-item-excerpt">Perita en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Angélica Mena Ramírez</a></div>
+																<div class="gdlr-session-item-excerpt">Perita en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“El lado invisible de la Violencia”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                      
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+				
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Emma Janeth García Ortiz</a></div>
+																<div class="gdlr-session-item-excerpt">Encargada de la Unidad de Convivencia Contry del Centro de Convivencia Familiar del Poder Judicial del Estado de Nuevo León.</div>
+															</div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Repercusiones Psicológicas en Niñas, Niños y Adolescentes Expuestos a Situaciones de Violencia”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>
+				
+				 </div>	
+				
+	<!-- termina dia 4-->
+				
+	<!-- inicia dia 5-->
+			<div class="gdlr-session-item-tab-content gdlr-tab-5">		
 								<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
@@ -557,11 +1490,8 @@
                                             </div>
                                           <div class="clear"></div>
                                         </div>		
-				 </div>	
-				
-	<!-- termina dia 4-->
-				
-
+				</div>
+	<!-- termina dia 5-->
 									
 				 </div>
           
@@ -609,7 +1539,7 @@ Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social d
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Cinthya Magdalena Torres García </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-51>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style='text-align: justify'>
+                                                                <h3 style=text-align: justify>
                                                                    Lic. En Psicología.<br>
 Especialista en Psicología infantil, abuso sexual y derechos de la infancia.<br>
 Más de 10 años trabajando con los derechos de la infancia.<br>
@@ -2282,6 +3212,7 @@ Desde 2012 realiza actividades intervención de personas en situación de violen
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
+
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>
