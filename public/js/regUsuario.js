@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
             },*/
             success: function (respuesta) {
                 console.log(respuesta);
-                if(respuesta['registro'] == 0){
+                if(respuesta['registro'] == 1){
                 	document.querySelector('#name').value = "";
                     document.querySelector('#paterno').value = "";
                     document.querySelector('#materno').value = "";
