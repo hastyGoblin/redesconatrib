@@ -69,7 +69,7 @@
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
                                 {{-- CIERRE DE SESIÓN --}}
-                                <li class="menu-item">
+                                <li class="menu-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href=""
                                        onclick="regLogout();event.preventDefault();">
                                         {{ __('Logout') }}
@@ -80,7 +80,6 @@
                                 </li>
                             </ul>
                         </nav>
-                        {{-- CONSTANCIA --}}
                         @if ($activo==1)
                             <div class="" style="margin-bottom: 30px;top:198px;right:280px;position: absolute;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
@@ -187,8 +186,7 @@
 									<br>
 									<br>
 									<div class="gdlr-session-thumbnail-wrapper">
-                                        <a href="{{ URL::asset('/rede_6_cjpn/red/images/Programa_Red_Ninez_2023.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
-                                                    
+                                        <a href="{{ URL::asset('/rede_3_est_jud/red/images/Programa_Red_Ninez_2023.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
                                    </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -213,37 +211,19 @@
                                     <div class="gdlr-session-item-tab-content gdlr-tab-1 gdlr-active">
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00 hrs.</div>
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
-                                                            </div>
-															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/nOR3IrqcOrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
-														      </div>
-                                                    </div>
-                                              </div>
+											
+								<!----------------------- -->
+											
+									<div class="gdlr-session-item-content-wrapper">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/S2juE_BtnNg?si=4xrB9qsm0cKxow0a&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+                                    </div> 
+											
+									<!----------------------- -->
+                                            
+                                            
                                              <div class="clear"></div>
                                            </div>
 										<div class="gdlr-session-item-content-wrapper">
@@ -269,9 +249,7 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-											<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>
+											
 														      </div>
                                                     </div>
                                               </div>
@@ -306,9 +284,7 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>
+														
 														      </div>
                                                     </div>
                                               </div>
@@ -324,6 +300,19 @@
                                         
                                        <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
+										   
+										   
+										   
+										   <!----------------------- -->
+											
+									<div class="gdlr-session-item-content-wrapper">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/UIcBUCFLJNQ?si=0MfGrZ-ZJ4rCHcaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+                                    </div> 
+											
+									<!----------------------- -->
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00  hrs.</div>
@@ -346,9 +335,7 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>
+														
 														      </div>
                                                     </div>
                                               </div>
@@ -379,9 +366,7 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>
+														
 														      </div>
                                                     </div>
                                               </div>
@@ -398,6 +383,17 @@
                                         
                                        <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
+										   
+							 <!----------------------- -->
+											
+									<div class="gdlr-session-item-content-wrapper">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/MVlQwoB1dEM?si=YQcX6i6MTbzXJEik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+                                    </div> 
+											
+									<!----------------------- -->
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
                                                     <div class="session-info session-time"><i class="fa fa-clock-o"></i>10:00  hrs.</div>
@@ -420,16 +416,23 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>
+														
 														      </div>
                                                     </div>
                                               </div>
                                              <div class="clear"></div>
                                           </div>
 										
-										
+										 <!----------------------- -->
+											
+									<div class="gdlr-session-item-content-wrapper">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/iWsZYKBzdP4?si=yb5yMW7PxmQS655R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+                                    </div> 
+											
+									<!----------------------- -->
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
@@ -453,9 +456,7 @@
                                                 <h3 class="gdlr-session-item-title">Indemnización en los casos de violencia familiar</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>
+														
 														      </div>
                                                     </div>
                                               </div>
@@ -506,9 +507,9 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<div class="gdlr-session-thumbnail-wrapper">
+														<!--<div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>
+                                                </div>-->
 														      </div>
                                                     </div>
 											</div>
@@ -540,9 +541,9 @@
                                                 <h3 class="gdlr-session-item-title">Ceremonia de Clausura.</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<div class="gdlr-session-thumbnail-wrapper">
+													<!--	<div class="gdlr-session-thumbnail-wrapper">
                                                     <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>
+                                                </div>-->
 														      </div>
                                                     </div>
                                               </div>
@@ -790,7 +791,6 @@ Cursos, talleres, diplomados, conferencias, y demás actualizaciones en materia 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
-
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>

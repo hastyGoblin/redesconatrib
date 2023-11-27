@@ -41,6 +41,9 @@
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
+                                 <!--<li class="menu-item">
+                                    <a href="#historia">Objetivo</a>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -56,6 +59,9 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
+                                 <!--<li class="menu-item">
+                                    <a href="#historia">Objetivo</a>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -63,7 +69,7 @@
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
                                 {{-- CIERRE DE SESIÓN --}}
-                                <li class="menu-item">
+                                <li class="menu-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href=""
                                        onclick="regLogout();event.preventDefault();">
                                         {{ __('Logout') }}
@@ -137,38 +143,6 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-                    <!--<section id="historia">
-                        <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
-                            <div class="container">
-                                <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
-                                    <div class="gdlr-item-title-head">
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Historia de la red</h3>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-testimonial-item-wrapper">
-                                    <div class="clear"></div>
-                                    <div class=" Two columns">
-                                        <div class="gdlr-item gdlr-testimonial-item plain-style">
-                                            <div class="gdlr-ux gdlr-testimonial-ux">
-                                                <div class="testimonial-item">
-                                                    <div class="testimonial-content gdlr-skin-content">
-                                                        <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo.</p>
-                                                    </div>
-                                                    <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </section>-->
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -177,12 +151,20 @@
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
                                         
                                     </div>
+									
+									<br>
+									<br>
+									<div class="gdlr-session-thumbnail-wrapper">
+                                        <a href="{{ URL::asset('/rede_5_masc/red/images/programa_Red_MASC.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
+                                   </div>
+									
+									
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
                                 <div class="gdlr-session-item gdlr-tab-session-item gdlr-item">
                                     <div class="gdlr-session-item-head">
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-1">
-                                            <div class="gdlr-session-head-day">D&iacute;a 1</div>
+                                            
                                             <div class="gdlr-session-head-date">28 de Noviembre 2023</div>
                                         </div>
                                         
@@ -195,40 +177,8 @@
                                   <div class="gdlr-session-item-tab-content gdlr-tab-1 gdlr-active">
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
-                                            <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"> </i>17:00 – 17:10 hrs. hrs.</div>-->
-                                                    <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
-                                                            </div>
-															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </div>
-                                            <div class="gdlr-session-item-content">
-                                                <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
-                                                <div class="gdlr-session-thumbnail-wrapper">
-                                                    <div class="col-md-6 col-sm-6 col-xs-6">
-														
-												 <article class="type-post">
-															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/LeZYVuI-SvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-													  
-											      </div>
-                                              </div>
+                                            
+                                            
                                           </div>
                                              <div class="clear"></div>
                                       </div>
@@ -238,7 +188,7 @@
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
-                                                    <div class="session-info session-time"><i class="fa fa-clock-o"></i>16:45 hrs.</div>
+                                                    
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -254,12 +204,9 @@
                                                <h3 class="gdlr-session-item-title">Conferencia Magistral</h3>
 												<div class="gdlr-session-item-excerpt"></div>
 											    <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<img src="rede_5_masc/red/images/tarjetas_contacto_mecanismo.jpg" alt width=560 height=315>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://us02web.zoom.us/j/89018266597?pwd=REdhYWhoU3h0N0JvR0J2QlpvQVhZdz09" target="_blank"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
                                               </div>
                                             </div>
                                           <div class="clear"></div>
@@ -285,12 +232,11 @@
                                                <h3 class="gdlr-session-item-title">Conferencia Magistral</h3>
 												<div class="gdlr-session-item-excerpt"></div>
 											    <div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post">
-															<div class="entry-cover">
-																<img src="rede_5_masc/red/images/tarjetas_contacto_mecanismo.jpg" alt width=560 height=315>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                     <div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://us02web.zoom.us/j/89018266597?pwd=REdhYWhoU3h0N0JvR0J2QlpvQVhZdz09" target="_blank"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
+                                              </div>
                                               </div>
                                             </div>
                                           <div class="clear"></div>
@@ -357,7 +303,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Sergio_Arturo_Valls.png" alt width=200 height=200></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_5_masc/red/images/img_ponentes/Sergio_Arturo_Valls.png" alt width=200 height=200></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">MTRO. SERGIO VALLS</h3>
 														<div class="gdlr-session-item-excerpt">Coordinador Nacional de la Red de Mecanismos Alternativos de Solución de Controversias </div>

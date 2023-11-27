@@ -69,7 +69,7 @@
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
                                 {{-- CIERRE DE SESIÓN --}}
-                                <li class="menu-item">
+                                <li class="menu-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href=""
                                        onclick="regLogout();event.preventDefault();">
                                         {{ __('Logout') }}
@@ -124,7 +124,7 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_1_cecofam/red/upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -143,6 +143,38 @@
                         </div>
                         <div class="clear"></div>
                     </section>
+                    <!--<section id="historia">
+                        <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
+                            <div class="container">
+                                <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
+                                    <div class="gdlr-item-title-head">
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Historia de la red</h3>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-testimonial-item-wrapper">
+                                    <div class="clear"></div>
+                                    <div class=" Two columns">
+                                        <div class="gdlr-item gdlr-testimonial-item plain-style">
+                                            <div class="gdlr-ux gdlr-testimonial-ux">
+                                                <div class="testimonial-item">
+                                                    <div class="testimonial-content gdlr-skin-content">
+                                                        <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo.</p>
+                                                    </div>
+                                                    <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </section>-->
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -154,7 +186,7 @@
 									<br>
 									<br>
 									<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="{{ URL::asset('/rede_1_cecofam/red/images/PROGRAMA_RED_NACIONAL_INTERVENCIÓN_ESPECIALIZADA_APOYO_JUDICIAL.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
+                                        <a href="{{ URL::asset('/rede_1_cecofam/red/images/PROGRAMA_RED_NACIONAL_INTERVENCIÓN_ESPECIALIZADA_APOYO_JUDICIAL.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
                                                 </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -175,7 +207,11 @@
                                         <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-4">
                                             <div class="gdlr-session-head-day">D&iacute;a 4</div>
                                             <div class="gdlr-session-head-date">30 Noviembre 2023</div>
-                                        </div>
+                                        </div> 
+									<!--	<div class="gdlr-session-item-head-info" data-tab="gdlr-tab-5">
+                                            <div class="gdlr-session-head-day">D&iacute;a 5</div>
+                                            <div class="gdlr-session-head-date">18 Noviembre 2023</div>
+                                        </div> -->
                                         <div class="clear"></div>
                                     </div>
 
@@ -185,16 +221,21 @@
                                           <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>XX:00 hrs.</div>-->
+                                                    
+													
 													<div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MTRA. MARIANA ORTIZ CASTAÑARES</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB)
+															<div class="gdlr-session-item-excerpt">COORDINADORA DE INTERVENCION ESPECIALIZADA PARA APOYO JUDICIAL
                                                             </div>
                                                         </div>
                                                     </div>
-												    <div class="clear"></div>
+													
+													
+												<div class="clear"></div>
                                                 </div>
                                             </div>
                                             <div class="gdlr-session-item-content">
@@ -203,20 +244,44 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/nOR3IrqcOrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/s4ke7hHjVow?si=AGi9AykX90cYexwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
 														 </article>
-													</div>
+														</div>
+                                                    </div>
+                                              </div>
+                                             <div class="clear"></div>
+									<!--		
+								<div class="gdlr-session-item-content-wrapper">
+									
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">-->
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <!--<div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post aligncenter">
+															<div class="entry-cover">
+																<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                                    <div class="clear"></div>
                                                 </div>
-                                            </div>
-                                            <div class="clear"></div>
+                                             </div>
+                                           
+                                          <div class="clear"></div>
+                                     </div> -->
 											
 									<!----------------------- -->
 											
 									<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/HnPUR6jK3fU?si=oxRc7ecVwgkPVOxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
                                     </div> 
@@ -550,12 +615,12 @@
                                            <div class="gdlr-session-item-divider"></div>
 								<!----------------------- -->
 											
-									<div class="gdlr-session-item-content-wrapper">
+								<!--	<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/0UnPwdnErN0?si=x5b_xDJW8OuMpCjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
-                                    </div> 
+                                    </div> -->
 											
 									<!----------------------- -->
 											
@@ -882,12 +947,12 @@
 										
 										<!----------------------- -->
 											
-									<div class="gdlr-session-item-content-wrapper">
+								<!--	<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
 											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
-                                    </div> 
+                                    </div> -->
 											
 									<!----------------------- -->
 											
@@ -1201,12 +1266,12 @@
 									<br>
 									<!----------------------- -->
 											
-									<div class="gdlr-session-item-content-wrapper">
+								<!---	<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
 											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
-                                    </div> 
+                                    </div> -->
 											
 									<!----------------------- -->
                                              <div class="gdlr-session-item-content-info">
