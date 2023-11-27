@@ -216,7 +216,7 @@
 											
 									<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/S2juE_BtnNg?si=4xrB9qsm0cKxow0a&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/LpoAtwqPipc?si=1YZGcst3lPozLYw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
                                     </div> 
@@ -748,14 +748,19 @@ Cursos, talleres, diplomados, conferencias, y demás actualizaciones en materia 
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_6_cjpn/red/images/img_ponentes/Noemi_Hernandez.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                      <div class=gdlr-lightbox-form id=gdlr-form-8>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">María Noemí Hernández Téllez</h3>
+														<div class="gdlr-session-item-excerpt">Ministra</div>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-19>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                
+                                                                <h3 style="text-align: justify">
+                                                                    La Ministra Noemi Hernández nació en la Ciudad de México. Es miembro del Servicio Exterior Mexicano desde 1992, luego de haber ingresado mediante concurso y haber concluido los cursos de rigor en el Instituto Matias Romero de Estudios Diplomáticos. Prestó sus servicios en la Consultoría Jurídica de la S.R.E. entre 1986 y 1988, de 1990 a 1992 y de 2008 a 2010.<br> En el Servicio Diplomático, prestó sus servicios en los Consulados de México en Hamburgo, Alemania, Houston, Texas, Saint Louis, Missouri, Kansas City, Missouri y fue Cónsul Titular de la Sección Consular de la Embajada de México en Paris, Francia. Entre 2016 y enero de 2023, fungió sucesivamente como Encargada de Negocios a.i. y como Representante Permanente Alterna de México ante el Consejo de Europa en Estrasburgo, Francia.<br> Antes de incorporarse al servicio público, colaboró con la Oficina del Abogado General de la UNAM, en la Dirección General de Legislación Universtaria.<br> Participó en el curso de Derecho Internacional Privado de la Academia de la Haya de Derecho Internacional de la Corte Internacional de Justicia y en el curso de la ONU sobre Derecho internacional en Ginebra, entre otros.<br> La Ministra Hernández obtuvo el grado de Licenciada en Derecho con Mención Honorífica en la Facultad de Derecho de la UNAM en la Ciudad de México, posteriormente obtuvo el grado de LL.M. en Derecho Internacional en la Universidad de Heidelberg, Alemania y el grado de LL.M. en derecho estadunidense la Universidad de Houston, Law School.<br> Sus idiomas de trabajo son el español, inglés, alemán y francés. Es coautora del libro publicado por la S.R.E. “Memorias diplomáticas” (2022). <br>Desde enero de 2023, se encuentra a cargo de la Coordinación de Derecho de Familia en la Dirección General de Protección Consular y Planeación Estratégica, Oficina que funge como Autoridad Central en la materia de Derecho de Familia, en la S.R.E., en la Ciudad de México.<br>
+
+																</h3>
                                                             </div>
                                                         </div>
-                                                        
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-19 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                             </ul>
