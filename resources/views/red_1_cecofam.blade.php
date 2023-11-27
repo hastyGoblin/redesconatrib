@@ -502,7 +502,7 @@
                                              </div>
                                            <div class="gdlr-session-item-content">
 											<div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Feminicidio”.</h3>
+                                               <h3 class="gdlr-session-item-title">“Amores que matan: Familicidios”.</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      
                                                   </div>
@@ -3277,7 +3277,6 @@ Desde 2012 realiza actividades intervención de personas en situación de violen
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
-
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>
