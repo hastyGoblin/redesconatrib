@@ -159,15 +159,15 @@ class HomeController extends Controller
 
                 case 6:
                     $mensaje= "Red 6";
-                    if ($hoy <= $fechaRed[0]->fechaFin) {
-                        return view('disponible');
-                    }else {
+                    // if ($hoy <= $fechaRed[0]->fechaFin) {
+                        // return view('disponible');
+                    // }else {
                         return view('red_1_cecofam')->with('id_user',$id)->with('activo',$activo)
                                                 ->with('nombre',$registradosRed[0]->name)
                                                 ->with('appat',$registradosRed[0]->apellido_paterno)
                                                 ->with('apmat',$registradosRed[0]->apellido_materno)
                                                 ->with('idred',$red_id);
-                    }
+                    // }
                     break;
 
                 case 7:

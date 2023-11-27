@@ -615,12 +615,12 @@
                                            <div class="gdlr-session-item-divider"></div>
 								<!----------------------- -->
 											
-								<!--	<div class="gdlr-session-item-content-wrapper">
+									<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
 											<iframe width="1024" height="576" src="https://www.youtube.com/embed/0UnPwdnErN0?si=x5b_xDJW8OuMpCjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
-                                    </div> -->
+                                    </div> 
 											
 									<!----------------------- -->
 											
@@ -906,6 +906,34 @@
                                             </div>
                                           <div class="clear"></div>
                                         </div>
+										
+										<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Psicóloga Clínica María Fernanda Salth Barba</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga en el Centro de Convivencia Familiar en el Poder Judicial de Chiapas.</div>
+															 </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Las Emociones como Clave para la Salud Mental”.</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                        </div>
+										
 										
 								<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
