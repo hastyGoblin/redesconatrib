@@ -975,12 +975,12 @@
 										
 										<!----------------------- -->
 											
-								<!--	<div class="gdlr-session-item-content-wrapper">
+								<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/nhAjmV61BfE?si=JGJWzAPJfA2fh4j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
-                                    </div> -->
+                                    </div> 
 											
 									<!----------------------- -->
 											
@@ -2679,23 +2679,24 @@ en un juicio familiar donde se vean involucrados niños, niñas y/o adolescentes
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Edgar_Tello_Arcos.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title"> MTRO. EDGAR TELLO ARCOS </h3>
+														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-48>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                Formación Académica y Carrera Judicial:<br>
-                                                                ❖ Egresado de la Universidad de Guadalajara, como Licenciado en Derecho.<br>
-                                                                ❖ Maestría de Derecho Civil y Financiero en la Universidad de Guadalajara.<br>
-                                                                ❖ Actualmente Doctorando por le Instituto Internacional del Derecho y del Estado.<br>
-                                                                ❖ Ingresando al Poder Judicial en el año de 1995 mil novecientos noventa y cinco,
-                                                                teniendo diversos cargos, como; Notificador, Secretario y Secretario de Sala.<br>
-                                                                ❖ Nombrado como Juez en el mes de septiembre del año 2007 dos mil siete, y, con
-                                                                motivo de ello; ha sido titular en los siguientes Juzgados:<br>
-                                                                ❖ Juzgado Primero Penal con sede en Puerto Vallarta, Jalisco.<br>
-                                                                ❖ Juzgados Regionales de Justicia Integral para Adolescentes de Puerto Vallarta,
-                                                                Ciudad Guzmán y Lagos de Moreno, todos dentro del Estado de Jalisco.<br> 
-                                                                ❖ Juzgados Primero, Cuarto, Quinto Auxiliar, Noveno y Actualmente, Adscrito al
-                                                                Juzgado Séptimo de lo Familiar del Primer Partido Judicial.<br>
-                                                                </h3>
+                                                                    Formación Académica y Carrera Judicial:<br>
+❖ Egresado de la Universidad de Guadalajara, como Licenciado en Derecho.<br>
+❖ Maestría de Derecho Civil y Financiero en la Universidad de Guadalajara.<br>
+❖ Actualmente Doctorando por le Instituto Internacional del Derecho y del Estado.<br>
+❖ Ingresando al Poder Judicial en el año de 1995 mil novecientos noventa y cinco,
+teniendo diversos cargos, como; Notificador, Secretario y Secretario de Sala.<br>
+❖ Nombrado como Juez en el mes de septiembre del año 2007 dos mil siete, y, con
+motivo de ello; ha sido titular en los siguientes Juzgados:<br>
+❖ Juzgado Primero Penal con sede en Puerto Vallarta, Jalisco.<br>
+❖ Juzgados Regionales de Justicia Integral para Adolescentes de Puerto Vallarta,
+Ciudad Guzmán y Lagos de Moreno, todos dentro del Estado de Jalisco.<br> 
+❖ Juzgados Primero, Cuarto, Quinto Auxiliar, Noveno y Actualmente, Adscrito al
+Juzgado Séptimo de lo Familiar del Primer Partido Judicial.<br>
+</h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-48 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
@@ -2705,39 +2706,43 @@ en un juicio familiar donde se vean involucrados niños, niñas y/o adolescentes
                                                   <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Monica_Karina_Illan_Meza.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Monica Karina Illan Meza</h3>
-                                                            <div class=gdlr-lightbox-form id=gdlr-form-49>
-                                                                <div class=gdlr-paypal-form-wrapper>
-                                                                    <h3 style="text-align: justify">
-                                                                    Jefa del Centro de Convivencia
-                                                                    Familiar de Zapopan desde el
-                                                                    2021. Actualmente pertenece a la
-                                                                    Red de CECOFAMS, representando
-                                                                    al Estado de Jalisco, es líder de la
-                                                                    Comisión de Difusión.
-                                                                    Ha trabajado con NNA desde el
-                                                                    2004, en el sector educacional y
-                                                                    jurídico.
-                                                                    Velando siempre por el interés
-                                                                    superior de la niñez, busca estar
-                                                                    en constante actualización en
-                                                                    temas Psicológico-Jurídico<br>
-                                                                                                                                        
-                                                                    Universidad de las Ciencias Jurídica<br>
+														
+                                                          <div class=gdlr-lightbox-form id=gdlr-form-49>
+                                                            <div class=gdlr-paypal-form-wrapper>
+                                                                <h3 style="text-align: justify">
+                                                                 Jefa del Centro de Convivencia
+Familiar de Zapopan desde el
+2021. Actualmente pertenece a la
+Red de CECOFAMS, representando
+al Estado de Jalisco, es líder de la
+Comisión de Difusión.
+Ha trabajado con NNA desde el
+2004, en el sector educacional y
+jurídico.
+Velando siempre por el interés
+superior de la niñez, busca estar
+en constante actualización en
+temas Psicológico-Jurídico<br>
+																	
+Universidad de las Ciencias Jurídica<br>
 
-                                                                    Universidad Internacional UI<br>
-                                                                    Maestría en Psicología Jurídica
-                                                                    Forense.<br>
-                                                                    Especialidad en dictaminación Pericial (actualmente).<br>
-                                                                    E X P E R I E N C I A<br>
-                                                                    Jefa del Centro de Convivencia Familiar de Zapopan<br>
-                                                                    Psicologa<br>
-                                                                    Juzgados Municipales de Zapopan<br>
-                                                                    Consejo	<br>
-                                                                    Inspección y Vigilancia de Zapopan<br>
-                                                                    Asistente de área.<br>
-                                                                    </h3>
-                                                                </div>
+Universidad Internacional UI<br>
+Maestría en Psicología Jurídica
+Forense.<br>
+Especialidad en dictaminación Pericial (actualmente).<br>
+E X P E R I E N C I A<br>
+Jefa del Centro de Convivencia Familiar de Zapopan<br>
+Psicologa<br>
+Juzgados Municipales de Zapopan<br>
+Consejo	<br>
+Inspección y Vigilancia de Zapopan<br>
+Asistente de área.<br>
+																	
+																	
+																	
+                                                         </h3>
                                                             </div>
+                                                          </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-60 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
