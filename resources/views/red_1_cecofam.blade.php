@@ -187,7 +187,7 @@
 									<br>
 									<div class="gdlr-session-thumbnail-wrapper">
                                         <a href="{{ URL::asset('/rede_1_cecofam/red/images/PROGRAMA_RED_NACIONAL_INTERVENCIÓN_ESPECIALIZADA_APOYO_JUDICIAL.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
-                                                </div>
+                                    </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
                                 <div class="gdlr-session-item gdlr-tab-session-item gdlr-item">
@@ -1131,7 +1131,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Alejandra Maa Rosas</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Alejandra Maa Rosas</a></div>
 																<div class="gdlr-session-item-excerpt">Terapeuta en la Clínica de la Ansiedad.</div>
                                                             </div>
                                                         </div>
@@ -1210,7 +1210,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Annel Rosado Lara</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MIV. Annel Rosado Lara</a></div>
 																<div class="gdlr-session-item-excerpt">Jefa del Departamento de Atención a la Violencia de Género del Consejo de la Judicatura del Poder Judicial del Estado de Yucatán.</div>
                                                             </div>
                                                         </div>
@@ -1341,7 +1341,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Eréndira Toledo Cortés</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Eréndira Toledo Cortés</a></div>
 																<div class="gdlr-session-item-excerpt">Coordinadora de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco.</div>
                                                             </div>
                                                         </div>
@@ -1627,24 +1627,28 @@ Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social d
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/Cinthya_Magdalena_Torres.jpg" alt width="400" height="400"></div>
-                                                    <div class="gdlr-speaker-item-content">
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Cinthya Magdalena Torres García </h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-51>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Annel_Rosado_Lara.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-item-content>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> MIV. Annel Rosado Lara</h3>
+														
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-73>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style=text-align: justify>
-                                                                   Lic. En Psicología.<br>
-Especialista en Psicología infantil, abuso sexual y derechos de la infancia.<br>
-Más de 10 años trabajando con los derechos de la infancia.<br>
-Coordinadora del Programa infantil Centro de Atención y Orientación Familiar, A.C. (CENAFAM).<br>
-Operadora de Programa de riesgo psicosociales del Desarrollo Integral de las Familias (DIF).<br>
-Coordinadora de los Centros de Convivencia Familiar del Poder Judicial del Estado de Baja California (CECOFAM).<br>
-
-
-                                                                </h3>
+                                                                <h3 style="text-align: justify">
+Estudió la Licenciatura en Derecho en el “Centro de Estudios Superiores CTM Justo Sierra O’Reilly”. <br>
+Se especializó en atención a personas en situación de violencia por razón de género, al realizar la maestría en Intervención de Violencia en el “Centro de Estudios Superiores de Sexualidad”.  <br>
+También se formó como mediadora, con el “Programa Integral de Formadores de Mediadores con Sede Judicial” por el Instituto de Mediación de México, S.C”. 
+Realizó los estudios “Sistema Integral de justicia para Adolescentes” impartido por el Instituto Nacional de Ciencias Penales” (INACIPE).
+Ha ampliado sus conocimientos en atención a personas víctimas de discriminación y violencia a través de diversos seminarios, talleres, cursos y diplomados relativos al tema de la atención y argumentación para la protección y garantía de Derechos Humanos de personas víctimas en la administración de justicia.
+Cómo actividad de investigación en el año de 2011 a julio de 2012 fue enlace del Poder Judicial para llevar a cabo un diagnóstico sobre acceso de las mujeres a la justicia que realizó la Comisión Nacional de Tribunales Superiores de Justicia (CONATRIB), la Suprema Corte de Justicia de la Nación (SCJN) y la Asociación Mexicana de Impartidores de Justicia (AMIJ). <br>
+Asimismo, ha colaborado en el diseño de programas, cursos, talleres de capacitación en Derechos Humanos de las Mujeres, Perspectiva de género, Argumentación Jurídica y atención a mujeres víctimas de violencia de género, en instituciones del Estado como, por ejemplo: el Instituto para la Igualdad entre Mujeres y Hombres (IPIEMH), la Fiscalía General del Estado (FGE), el Instituto de la Mujer (IM) y en los poderes Judiciales de Quintana Roo, Campeche y Yucatán. 
+En materia de difusión ha participado con diversas asociaciones de la sociedad civil, impartiendo, cursos, talleres, conferencias, dirigidos a la ciudadanía en general entre otras actividades. <br>
+De 2018 a 2021 se desempeñó como Consejera Consultiva de la Comisión Estatal de los Derechos Humanos del estado de Yucatán y formó parte del Comité de seguimiento de la Solicitud de Alerta de Género (SAVG), como Consejera de dicha institución.
+Desde 2012 realiza actividades intervención de personas en situación de violencia por razón de género en el Poder Judicial del estado de Yucatán, actualmente se desempeña como docente de la Escuela Judicial del Poder Judicial y es Jefa del Departamento de Atención a la Violencia de Género del Consejo de la Judicatura del Poder Judicial del estado de Yucatán; participa en el Consejo de Violencia del Estado y realiza actividades de vinculación entre el Poder Judicial e Instituciones del Poder Ejecutivo para difundir contenido de Derechos Humanos de las Mujeres y coordinar acciones de prevención, atención y sanción con instituciones del Estado para Prevenir, Atender, Sancionar y Erradicar la violencia por razón de género. 
+ <br>
+																</h3>
                                                             </div>
                                                         </div>
-                                                     <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-51 data-rel="fancybox" data-fancybox-type="inline">Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-73 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
@@ -1679,7 +1683,7 @@ ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER 
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/Oscar_Ricardo_Galicia_Costilla.jpg" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Oscar Ricardo Galicia Castillo</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Oscar Ricardo Galicia Castillo</h3>
                                                         <div class="gdlr-lightbox-form" id="gdlr-form-5">
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                  <h3 style="text-align: justify">
@@ -1712,7 +1716,7 @@ ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER 
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Pedro_Daniel_Martinez_Sierra.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Pedro Daniel Martínez Sierra</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Pedro Daniel Martínez Sierra</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1729,7 +1733,7 @@ ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER 
                                               <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Angelica_Mena_Ramirez.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Angélica Mena Ramírez</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Angélica Mena Ramírez</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-7>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1745,7 +1749,7 @@ ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER 
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Tirso_Febronio_Tejeda_Sanabria.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Tirso Febronio Tejeda Sanabria</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Tirso Febronio Tejeda Sanabria</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-8>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1771,7 +1775,7 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
 											<li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Erika_Trinidad_Chavez.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Erika Trinidad Chávez</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Erika Trinidad Chávez</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-9>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                <h3 style="text-align: justify">
@@ -1810,7 +1814,7 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Joani_Lizbeth_Ortiz_Romero.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Joani Lizbeth Ortiz Romero</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Joani Lizbeth Ortiz Romero</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-25>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1824,7 +1828,7 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maribel_Campos_Delgado.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Maribel Campos Delgado</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Maribel Campos Delgado</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-26>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1839,7 +1843,7 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Yesenia_Reyes_Garcia.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Yesenia Reyes García </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Yesenia Reyes García </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-27>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1854,7 +1858,7 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Adriana_Isabel_Nunez_Garcia.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Adriana María Isabel Núñez García</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Adriana María Isabel Núñez García</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-28>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                  <h3 style="text-align: justify">
@@ -1899,7 +1903,7 @@ Investigación del Delito de Feminicidio. <br>
                                              <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Alejandra_Maa_Rosas.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Alejandra Maa Rosas </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Alejandra Maa Rosas </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-29>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1914,7 +1918,7 @@ Investigación del Delito de Feminicidio. <br>
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Itzel_Nadchie_liihi_Bernal_de_Anda.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">ITZEL NADCHIE LIIHI BERNAL DE ANDA</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. ITZEL NADCHIE LIIHI BERNAL DE ANDA</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-30>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1963,88 +1967,23 @@ evaluación e intervención psicológica en enfermedades crónico-degenerativas.
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Sandra_Gabriela_Cedillo_Chacon.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Fabiola_Silva_Escalante.jpeg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Sandra Gabriela Cedillo Chacón.</h3>
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-32>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic.  Fabiola Silva Escalante</h3>
+														
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-72>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                               <h3 style="text-align: justify">
-                                                                   Candidata a Doctora en Terapia Familiar y de Pareja por el Instituto Regional de la
-Familia.
--  Maestra en Terapia Familiar Sistémica por el Instituto Regional de la Familia.
-- Licda. Psicología por la Universidad Carls Rogers . 
-- Licda. Derecho por la Universidad Interamericana.
-- Hipnoterapeuta por la UNAM.
-- Diplomado en XXII Diplomado Multidisciplinario sobre Violencia Familiar y
-Derechos Humanos, 2023 por la UNAM.
-- Diplomado en Bioética y Derecho por el Instituto de Formación y Actualización
-Judicial.
-- Diplomado en Derechos Humanos por la Universidad Autónoma de Chihuahua. 
-- Diplomado en Coparentalidad.
-- Diplomado en Diversos acercamientos Terapéuticos por la Universidad Carls
-Rogers. 
-- Diplomado en Criminalística, por el Centro Universitario de Ciudad Juárez. 
--  Diplomado en Criminología por el Centro Universitario de Ciudad Juárez.
--  Diplomado en Investigación por el Centro de Investigación y Seguridad Nacional. 
-- Especialidad en Seguridad Pública y Privada por el Centro Universitario de
-Ciudad Juárez. 
-- Certificación Internacional en Terapia Familiar Colaborativa basada en Fortalezas
-Adolescentes desafiantes y sus familias.
-- Certificación Internacional en abordaje del Suicidio desde el modelo Centrado en
-Soluciones.
-- Constancia de Curso Taller “Internacional de prácticas narrativas, trabajo con
-quienes ejercen y quienes resisten el abuso y la violencia”.
-- Constancia Curso de “Paquete de Servicios Esenciales” por Spotlight.
-- Múltiples cursos y talleres en materia de Psicología, Derechos Humanos e
-Perspectiva de Género.<br> 
-																   
-EXPERIENCIA LABORAL 
+                                                                <h3 style="text-align: justify">
+                                                                    Licenciatura en Administración<br>
+Cuenta con doce años de experiencia en administración de empresas privadas e instituciones públicas, destacando atención a derechohabientes, organización interna, gestiones presupuestales, planificación y supervisión de equipos de trabajo, creación y seguimiento de proyectos de mejora continua, así como control de padrones internos.<br>
+Actualmente pertenece a la Unidad de Servicios Psicológicos, encargada del área administrativa de la Unidad, donde se gestionan las atenciones y seguimientos de las personas usuarias.<br>
+Ha sido encargada de las relaciones públicas directas con personal tomadora de decisiones en los espacios de la Administración Pública.
+ <br>
 
-Actualmente:
--Adscrita como Asesora Técnica en la Dirección de Derechos Humanos e
-Igualdad de Género, del Tribunal Superior de Justicia del Estado de
-Chihuahua.
-																   
-Entre mis actividades se encuentran:
-
--Acompañamiento a Víctimas de Violencia Laboral, Acoso y
-Hostigamiento Sexual en los Procesos de Responsabilidades
-Administrativas.
-- Diseño y estrategias de acompañamiento multidisciplinario para las
-víctimas.
-- Desarrollo de Protocolos relacionados con la violencia laboral,
-acoso y hostigamiento sexual, así como de aquellos que tengan
-que ver con la NOM-035-STPS-2018.
-- Encargada del Programa de Prevención a la Violencia Laboral.
-- Capacitadora en temas relacionados con la Violencia Laboral,
-Acoso y Hostigamiento Sexual, asi como de Sensibilización en
-temas relacionados con la Violencia de Género.
-- Coordinadora de conferencias, mesas de trabajo y encuentros
-relacionados con Psicología Jurídica.
-- Psicoterapeuta e Hipnoterapeuta en el ámbito privado. 
-- Conferencista, capacitadora y talleristas en el hábito particular.<br>
-																   
- Así mismo laboré como:
-
--  Titular de la Dirección de Derechos Humanos e Igualdad de Género del Poder
-Judicial del Estado de Chihuahua.
-- Coordinadora del Centro de Convivencia Familiar Supervisada del Tribunal
-Superior de Justicia del Distrito Judicial Morelos. 
-- Coordinadora del área de Psicología de la Granja Hogar.  
-- Docente del Instituto Regional de la Familia en Maestría y especialidad
-en Atención y prevención a la Violencia Familiar.
-
-- Conferencista, capacitadora, tallerista y diseñadora en temas relacionados con
-la Atención a la Familia de la asociación civil, Escuela para Padres ONEAMI.  
-- Coordinadora del Comité Ciudadano y Previamente Analista e
-Investigadora criminológica en la Dirección de Seguridad Pública Municipal.
-- Investigadora en el Centro de Investigación y Seguridad Nacional.
-																   
-
-                                                               </h3>
+                                                                </h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-32 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-72 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
 												
@@ -2261,7 +2200,7 @@ Desde el año 2020 está adscrito al Centro de Convivencias Familiar Supervisada
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                   <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Luz_Angelica_Brisset_Jimenez_San_Pedro.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Luz Angélica Brisset Jiménez San Pedro </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Luz Angélica Brisset Jiménez San Pedro </h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-17>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2338,7 +2277,7 @@ años. <br>
                                              <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Rosario_Flores_Rodriguez.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Rosario Flores Rodríguez</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Rosario Flores Rodríguez</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-19>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2371,7 +2310,7 @@ años. <br>
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maria_Fernanda_Gonzalez_Castro.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> María Fernanda González Castro </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Mtra. María Fernanda González Castro </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-36>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2422,7 +2361,7 @@ Mujeres que sufrían Violencia y sus hijas e hijos.
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                   <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maria_Fernanda_Stalth_Barba.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">María Fernanda Stahl Barba </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. María Fernanda Stahl Barba </h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-37>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2580,7 +2519,7 @@ Colombia.<br>
                                              <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Nohemi_Garcia_Rosales.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">NOHEMI GARCIA ROSALES</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. NOHEMI GARCIA ROSALES</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-43>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2686,7 +2625,7 @@ así como la Valoración en Psicología Forense por Medios Electrónicos. <br>
                                              <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Arisbet_Cueriel_Aguilar.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Arisbet Curiel Aguilar</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Arisbet Curiel Aguilar</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-47>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2739,25 +2678,24 @@ en un juicio familiar donde se vean involucrados niños, niñas y/o adolescentes
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Edgar_Tello_Arcos.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> MAESTRO EN DERECHO EDGAR TELLO ARCOS </h3>
-														
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> MTRO. EDGAR TELLO ARCOS </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-48>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Formación Académica y Carrera Judicial:<br>
-❖ Egresado de la Universidad de Guadalajara, como Licenciado en Derecho.<br>
-❖ Maestría de Derecho Civil y Financiero en la Universidad de Guadalajara.<br>
-❖ Actualmente Doctorando por le Instituto Internacional del Derecho y del Estado.<br>
-❖ Ingresando al Poder Judicial en el año de 1995 mil novecientos noventa y cinco,
-teniendo diversos cargos, como; Notificador, Secretario y Secretario de Sala.<br>
-❖ Nombrado como Juez en el mes de septiembre del año 2007 dos mil siete, y, con
-motivo de ello; ha sido titular en los siguientes Juzgados:<br>
-❖ Juzgado Primero Penal con sede en Puerto Vallarta, Jalisco.<br>
-❖ Juzgados Regionales de Justicia Integral para Adolescentes de Puerto Vallarta,
-Ciudad Guzmán y Lagos de Moreno, todos dentro del Estado de Jalisco.<br> 
-❖ Juzgados Primero, Cuarto, Quinto Auxiliar, Noveno y Actualmente, Adscrito al
-Juzgado Séptimo de lo Familiar del Primer Partido Judicial.<br>
-</h3>
+                                                                Formación Académica y Carrera Judicial:<br>
+                                                                ❖ Egresado de la Universidad de Guadalajara, como Licenciado en Derecho.<br>
+                                                                ❖ Maestría de Derecho Civil y Financiero en la Universidad de Guadalajara.<br>
+                                                                ❖ Actualmente Doctorando por le Instituto Internacional del Derecho y del Estado.<br>
+                                                                ❖ Ingresando al Poder Judicial en el año de 1995 mil novecientos noventa y cinco,
+                                                                teniendo diversos cargos, como; Notificador, Secretario y Secretario de Sala.<br>
+                                                                ❖ Nombrado como Juez en el mes de septiembre del año 2007 dos mil siete, y, con
+                                                                motivo de ello; ha sido titular en los siguientes Juzgados:<br>
+                                                                ❖ Juzgado Primero Penal con sede en Puerto Vallarta, Jalisco.<br>
+                                                                ❖ Juzgados Regionales de Justicia Integral para Adolescentes de Puerto Vallarta,
+                                                                Ciudad Guzmán y Lagos de Moreno, todos dentro del Estado de Jalisco.<br> 
+                                                                ❖ Juzgados Primero, Cuarto, Quinto Auxiliar, Noveno y Actualmente, Adscrito al
+                                                                Juzgado Séptimo de lo Familiar del Primer Partido Judicial.<br>
+                                                                </h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-48 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
@@ -2766,51 +2704,47 @@ Juzgado Séptimo de lo Familiar del Primer Partido Judicial.<br>
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                   <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Monica_Karina_Illan_Meza.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Monica Karina Illan Meza</h3>
-														
-                                                          <div class=gdlr-lightbox-form id=gdlr-form-49>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                 Jefa del Centro de Convivencia
-Familiar de Zapopan desde el
-2021. Actualmente pertenece a la
-Red de CECOFAMS, representando
-al Estado de Jalisco, es líder de la
-Comisión de Difusión.
-Ha trabajado con NNA desde el
-2004, en el sector educacional y
-jurídico.
-Velando siempre por el interés
-superior de la niñez, busca estar
-en constante actualización en
-temas Psicológico-Jurídico<br>
-																	
-Universidad de las Ciencias Jurídica<br>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Monica Karina Illan Meza</h3>
+                                                            <div class=gdlr-lightbox-form id=gdlr-form-49>
+                                                                <div class=gdlr-paypal-form-wrapper>
+                                                                    <h3 style="text-align: justify">
+                                                                    Jefa del Centro de Convivencia
+                                                                    Familiar de Zapopan desde el
+                                                                    2021. Actualmente pertenece a la
+                                                                    Red de CECOFAMS, representando
+                                                                    al Estado de Jalisco, es líder de la
+                                                                    Comisión de Difusión.
+                                                                    Ha trabajado con NNA desde el
+                                                                    2004, en el sector educacional y
+                                                                    jurídico.
+                                                                    Velando siempre por el interés
+                                                                    superior de la niñez, busca estar
+                                                                    en constante actualización en
+                                                                    temas Psicológico-Jurídico<br>
+                                                                                                                                        
+                                                                    Universidad de las Ciencias Jurídica<br>
 
-Universidad Internacional UI<br>
-Maestría en Psicología Jurídica
-Forense.<br>
-Especialidad en dictaminación Pericial (actualmente).<br>
-E X P E R I E N C I A<br>
-Jefa del Centro de Convivencia Familiar de Zapopan<br>
-Psicologa<br>
-Juzgados Municipales de Zapopan<br>
-Consejo	<br>
-Inspección y Vigilancia de Zapopan<br>
-Asistente de área.<br>
-																	
-																	
-																	
-                                                         </h3>
+                                                                    Universidad Internacional UI<br>
+                                                                    Maestría en Psicología Jurídica
+                                                                    Forense.<br>
+                                                                    Especialidad en dictaminación Pericial (actualmente).<br>
+                                                                    E X P E R I E N C I A<br>
+                                                                    Jefa del Centro de Convivencia Familiar de Zapopan<br>
+                                                                    Psicologa<br>
+                                                                    Juzgados Municipales de Zapopan<br>
+                                                                    Consejo	<br>
+                                                                    Inspección y Vigilancia de Zapopan<br>
+                                                                    Asistente de área.<br>
+                                                                    </h3>
+                                                                </div>
                                                             </div>
-                                                          </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-60 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Sergio_Vladimir_Cabrales_Becerra.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Sergio Vladimir Cabrales Becerra</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Juez Sergio Vladimir Cabrales Becerra</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-61>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2826,7 +2760,7 @@ Asistente de área.<br>
                                              <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Alejandra_Nieves_Ramirez.jpeg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">PSICÓLOGA ALEJANDRA NIEVES RAMÍREZ</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">PSIC.  ALEJANDRA NIEVES RAMÍREZ</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-63>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2884,7 +2818,7 @@ Desarrollo Humano Policial<br>
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                   <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Miguel_Angel_Miranda_Aquino.png" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. en Psicología Miguel Angel Miranda Aquino</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Miguel Angel Miranda Aquino</h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-53>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -2969,7 +2903,7 @@ Diplomado Intervención de La violencia sexual infantil desde una perspectiva ps
                                              <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maria_de_la_Luz_Garcia_Medina.jpeg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> María de la Luz García Medina</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic.  María de la Luz García Medina</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-55>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -3014,7 +2948,7 @@ Experiencia profesional.<br>
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Cristina_Pena_Pedraza.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Licda. Cristina Peña Pedraza</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Lic. Cristina Peña Pedraza</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-65>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -3041,7 +2975,7 @@ Funciones: Manejo y aplicación del modelo de Evaluación psicológica con enfoq
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                   <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Emma_Janeth_Garcia_Ortiz.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Licda. Emma Janeth García Ortiz</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Emma Janeth García Ortiz</h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-66>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -3113,7 +3047,7 @@ Estatal de Convivencia familiar desde el año 2013. <br>
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Ileska_Karelia_Vega_Trapero.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Psic. Jesús Salvador López Gutiérrez</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Lic. Ileska Karelia Vega Trapero</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-69>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -3140,7 +3074,7 @@ Docente de la materia psicología criminal en la UadO campus Culiacán, de 2005 
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                   <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Diego_Alberto_Beaurregard_Zentella.jpeg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Diego Alberto Beaurregard Zentella</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Diego Alberto Beaurregard Zentella</h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-70>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -3161,7 +3095,7 @@ Ha cursado el diplomado Reeducación para hombres promovido por el Poder Judicia
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Erendira_Toledo_Cortes.jpeg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Eréndira Toledo Cortés</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. Eréndira Toledo Cortés</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-71>
                                                             <div class=gdlr-paypal-form-wrapper>
@@ -3199,24 +3133,8 @@ Ha impartido formaciones a la sociedad civil, empresas privadas, funcionariados 
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Fabiola_Silva_Escalante.jpeg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Fabiola Silva Escalante</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-72>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Licenciatura en Administración<br>
-Cuenta con doce años de experiencia en administración de empresas privadas e instituciones públicas, destacando atención a derechohabientes, organización interna, gestiones presupuestales, planificación y supervisión de equipos de trabajo, creación y seguimiento de proyectos de mejora continua, así como control de padrones internos.<br>
-Actualmente pertenece a la Unidad de Servicios Psicológicos, encargada del área administrativa de la Unidad, donde se gestionan las atenciones y seguimientos de las personas usuarias.<br>
-Ha sido encargada de las relaciones públicas directas con personal tomadora de decisiones en los espacios de la Administración Pública.
- <br>
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-72 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
+                                                    
+                                                    
                                                 </li>
                                             </ul>
                                         </div>
@@ -3227,62 +3145,7 @@ Ha sido encargada de las relaciones públicas directas con personal tomadora de 
                             <div class=clear></div>
                     </section>
 						
-						<section>
-                         <div class=speaker-item-wrapper style="margin-bottom: 30px;">
-                                <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                            <ul class=slides>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Annel_Rosado_Lara.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Annel Rosado Lara</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-73>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-Estudió la Licenciatura en Derecho en el “Centro de Estudios Superiores CTM Justo Sierra O’Reilly”. <br>
-Se especializó en atención a personas en situación de violencia por razón de género, al realizar la maestría en Intervención de Violencia en el “Centro de Estudios Superiores de Sexualidad”.  <br>
-También se formó como mediadora, con el “Programa Integral de Formadores de Mediadores con Sede Judicial” por el Instituto de Mediación de México, S.C”. 
-Realizó los estudios “Sistema Integral de justicia para Adolescentes” impartido por el Instituto Nacional de Ciencias Penales” (INACIPE).
-Ha ampliado sus conocimientos en atención a personas víctimas de discriminación y violencia a través de diversos seminarios, talleres, cursos y diplomados relativos al tema de la atención y argumentación para la protección y garantía de Derechos Humanos de personas víctimas en la administración de justicia.
-Cómo actividad de investigación en el año de 2011 a julio de 2012 fue enlace del Poder Judicial para llevar a cabo un diagnóstico sobre acceso de las mujeres a la justicia que realizó la Comisión Nacional de Tribunales Superiores de Justicia (CONATRIB), la Suprema Corte de Justicia de la Nación (SCJN) y la Asociación Mexicana de Impartidores de Justicia (AMIJ). <br>
-Asimismo, ha colaborado en el diseño de programas, cursos, talleres de capacitación en Derechos Humanos de las Mujeres, Perspectiva de género, Argumentación Jurídica y atención a mujeres víctimas de violencia de género, en instituciones del Estado como, por ejemplo: el Instituto para la Igualdad entre Mujeres y Hombres (IPIEMH), la Fiscalía General del Estado (FGE), el Instituto de la Mujer (IM) y en los poderes Judiciales de Quintana Roo, Campeche y Yucatán. 
-En materia de difusión ha participado con diversas asociaciones de la sociedad civil, impartiendo, cursos, talleres, conferencias, dirigidos a la ciudadanía en general entre otras actividades. <br>
-De 2018 a 2021 se desempeñó como Consejera Consultiva de la Comisión Estatal de los Derechos Humanos del estado de Yucatán y formó parte del Comité de seguimiento de la Solicitud de Alerta de Género (SAVG), como Consejera de dicha institución.
-Desde 2012 realiza actividades intervención de personas en situación de violencia por razón de género en el Poder Judicial del estado de Yucatán, actualmente se desempeña como docente de la Escuela Judicial del Poder Judicial y es Jefa del Departamento de Atención a la Violencia de Género del Consejo de la Judicatura del Poder Judicial del estado de Yucatán; participa en el Consejo de Violencia del Estado y realiza actividades de vinculación entre el Poder Judicial e Instituciones del Poder Ejecutivo para difundir contenido de Derechos Humanos de las Mujeres y coordinar acciones de prevención, atención y sanción con instituciones del Estado para Prevenir, Atender, Sancionar y Erradicar la violencia por razón de género. 
- <br>
-																</h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-73 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                  
-                                                    <div class=gdlr-speaker-item-content>
-                                                        
-														
-                                                          
-                                                        
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    
-                                                    
-                                                </li>
-                                             <li class="gdlr-item gdlr-speaker-item">
-                                                    
-                                                    
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class=clear></div>
-                                </div>
-                            </div>
-                            <div class=clear></div>
-                    </section>
+						
                 </div>
 					
 					
