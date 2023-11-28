@@ -186,7 +186,7 @@
 									<br>
 									<br>
 									<div class="gdlr-session-thumbnail-wrapper">
-                                        <a href="{{ URL::asset('/rede_3_est_jud/red/images/Programa_Red_Ninez_2023.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
+                                        <a href="{{ URL::asset('/rede_6_cjpn/red/images/Programa_Red_Ninez_2023.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
                                    </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
@@ -212,11 +212,48 @@
                                         <div class="gdlr-session-item-content-wrapper">
                                             <div class="gdlr-session-item-divider"></div>
 											
+											
+											<div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>XX:00 hrs.</div>-->
+                                                    
+													
+													<div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>DR. OSCAR GREGORIO CERVERA RIVERO</a></div>
+                                                            </div>
+															<div class="gdlr-session-item-excerpt">Magistrado de la Segunda Sala Familiar del Poder Judicial de la Ciudad de México
+                                                            </div>
+                                                        </div>
+                                                    </div>
+													
+													
+												<div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-session-item-content">
+                                                <h3 class="gdlr-session-item-title">Mensaje Inaugural</h3>
+                                                <div class="gdlr-session-thumbnail-wrapper">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+														<article class="type-post">
+																<div class="entry-cover">
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/LpoAtwqPipc?si=hYzX0SEPC_8VQRMl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																</div>
+															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
+														 </article>
+														</div>
+                                                    </div>
+                                              </div>
+											
 								<!----------------------- -->
 											
 									<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/LpoAtwqPipc?si=1YZGcst3lPozLYw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/o5Vp08BgkL4?si=jrt7EdQ-MmR3bvc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
                                     </div> 
@@ -307,7 +344,7 @@
 											
 									<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/UIcBUCFLJNQ?si=0MfGrZ-ZJ4rCHcaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/AqMNAFVqajU?si=tWMVC9xLwO8NHUxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
                                     </div> 
@@ -388,7 +425,7 @@
 											
 									<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/MVlQwoB1dEM?si=YQcX6i6MTbzXJEik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/YuJYqw2EON4?si=SnTkykWy3R2U2rX_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
                                     </div> 
@@ -427,7 +464,7 @@
 											
 									<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/iWsZYKBzdP4?si=yb5yMW7PxmQS655R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/EjFAUKhwjhM?si=iI3bTmuLTYyIMu5m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
                                     </div> 
