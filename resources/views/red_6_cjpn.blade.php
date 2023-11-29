@@ -544,9 +544,9 @@
 												
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<!--<div class="gdlr-session-thumbnail-wrapper">
-                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
-                                                </div>-->
+														<div class="gdlr-session-thumbnail-wrapper">
+                                                    <a href="https://pjcdmx.webex.com/pjcdmx/j.php?MTID=m6e635f44b888a3d203106306d7e3602c" target="_blank"><button class="newsletter-submit gdlr-button with-border">Entrar</button></a>
+                                                </div>
 														      </div>
                                                     </div>
 											</div>

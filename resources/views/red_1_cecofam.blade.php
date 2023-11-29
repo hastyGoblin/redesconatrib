@@ -1294,12 +1294,12 @@
 									<br>
 									<!----------------------- -->
 											
-								<!---	<div class="gdlr-session-item-content-wrapper">
+							<div class="gdlr-session-item-content-wrapper">
 										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											<iframe width="1024" height="576" src="https://www.youtube.com/embed/2FmgDe5ZTGw?si=Z20zFc19ciGV6-7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 											</iframe>
 										</div>
-                                    </div> -->
+                                    </div> 
 											
 									<!----------------------- -->
                                              <div class="gdlr-session-item-content-info">
@@ -3173,6 +3173,7 @@ Ha impartido formaciones a la sociedad civil, empresas privadas, funcionariados 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src='js/jquery/jquery.js'></script>
     <script src='js/jquery/jquery-migrate.min.js'></script>
+
 
     <script src='plugins/superfish/js/superfish.js'></script>
     <script src='js/hoverIntent.min.js'></script>
