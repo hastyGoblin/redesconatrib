@@ -98,10 +98,10 @@ class HomeController extends Controller
                         return view('disponible');
                     }else {
                         return view('red_6_cjpn')->with('id_user',$id)->with('activo',$activo)
-                                                ->with('nombre',$registradosRed[0]->name)
-                                                ->with('appat',$registradosRed[0]->apellido_paterno)
-                                                ->with('apmat',$registradosRed[0]->apellido_materno)
-                                                ->with('idred',$red_id);
+                                                    ->with('nombre',$registradosRed[0]->name)
+                                                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                                                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                                                    ->with('idred',$red_id);
                     }
                     break;
                 
@@ -111,10 +111,10 @@ class HomeController extends Controller
                         return view('disponible');
                     }else {
                         return view('red_3_ej')->with('id_user',$id)->with('activo',$activo)
-                                                ->with('nombre',$registradosRed[0]->name)
-                                                ->with('appat',$registradosRed[0]->apellido_paterno)
-                                                ->with('apmat',$registradosRed[0]->apellido_materno)
-                                                ->with('idred',$red_id);
+                                                    ->with('nombre',$registradosRed[0]->name)
+                                                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                                                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                                                    ->with('idred',$red_id);
                     }
                     break;
 
@@ -150,10 +150,10 @@ class HomeController extends Controller
                         return view('disponible');
                     }else {
                         return view('red_5_masc')->with('id_user',$id)->with('activo',$activo)
-                                                ->with('nombre',$registradosRed[0]->name)
-                                                ->with('appat',$registradosRed[0]->apellido_paterno)
-                                                ->with('apmat',$registradosRed[0]->apellido_materno)
-                                                ->with('idred',$red_id);
+                                                    ->with('nombre',$registradosRed[0]->name)
+                                                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                                                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                                                    ->with('idred',$red_id);
                     }
                     break;
 
@@ -163,10 +163,10 @@ class HomeController extends Controller
                         return view('disponible');
                     }else {
                         return view('red_1_cecofam')->with('id_user',$id)->with('activo',$activo)
-                                                ->with('nombre',$registradosRed[0]->name)
-                                                ->with('appat',$registradosRed[0]->apellido_paterno)
-                                                ->with('apmat',$registradosRed[0]->apellido_materno)
-                                                ->with('idred',$red_id);
+                                                    ->with('nombre',$registradosRed[0]->name)
+                                                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                                                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                                                    ->with('idred',$red_id);
                     }
                     break;
 
@@ -189,10 +189,10 @@ class HomeController extends Controller
                         return view('disponible');
                     }else {
                         return view('red_8_aj')->with('id_user',$id)->with('activo',$activo)
-                                                ->with('nombre',$registradosRed[0]->name)
-                                                ->with('appat',$registradosRed[0]->apellido_paterno)
-                                                ->with('apmat',$registradosRed[0]->apellido_materno)
-                                                ->with('idred',$red_id);
+                                                    ->with('nombre',$registradosRed[0]->name)
+                                                    ->with('appat',$registradosRed[0]->apellido_paterno)
+                                                    ->with('apmat',$registradosRed[0]->apellido_materno)
+                                                    ->with('idred',$red_id);
                     }
                     break;
 

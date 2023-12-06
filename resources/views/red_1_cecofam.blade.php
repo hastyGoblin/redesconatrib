@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
 
+    
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3304 _masterslider _msp_version_3.2.7">
@@ -34,16 +35,16 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href=""> <img src="rede_1_cecofam/red/images/logo_red_1.png" alt=""> </a>
+                        <a href=""> <img src="{!! asset('rede_1_cecofam/red/images/logo_red_1.png') !!}" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                               <!-- <li class="menu-item">
+                                <li class="menu-item">
                                     <a href="#historia">Historia</a>
-                                </li>-->
+                                </li>
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -59,30 +60,30 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <!-- <li class="menu-item">
+                                <li class="menu-item">
                                     <a href="#historia">Historia</a>
-                                </li>-->
+                                </li>
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                {{-- CIERRE DE SESIÓN --}}
+                                
                                 <li class="menu-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a class="dropdown-item" href=""
+                                    <a class="dropdown-item" href="#"
                                        onclick="regLogout();event.preventDefault();">
                                         {{ __('Logout') }}
                                     </a>
+
                                     <form id="logout-form" action="{{ route('logout')}}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </li>
                             </ul>
                         </nav>
-                        {{-- CONSTANCIA --}}
                         @if ($activo==1)
-                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;position: absolute;">
+                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
@@ -105,7 +106,7 @@
                                                             </form>
                                                         </div>
                                                     </div>
-                                                        <div><a style="font-size: 11px;text-transform: uppercase;font-weight: 800;letter-spacing: 2px;color:#8e8e8e !important;font-family: Raleway;" href=#gdlr-form-200 data-rel=fancybox data-fancybox-type=inline>Descarga Constancia</a></div>
+                                                    <div><a style="font-size: 11px;text-transform: uppercase;font-weight: 800;letter-spacing: 2px;color:#8e8e8e !important;font-family: Raleway;" href=#gdlr-form-200 data-rel=fancybox data-fancybox-type=inline>Constancia</a></div>
                                                 </div>
                                         </div>
                                     </div>

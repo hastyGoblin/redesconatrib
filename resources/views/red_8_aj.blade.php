@@ -82,7 +82,7 @@
                         </nav>
                         {{-- CONSTANCIA --}}
                         @if ($activo==1)
-                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;position: absolute;">
+                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>

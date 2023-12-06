@@ -49,16 +49,6 @@ class generaConstancia extends Controller
 
     public function descargaManual(){
         $filename = "ManualUsuario/241122_ManualdeUsuario_CONSTANCIA.pdf"; // el nombre con el que se descargará, puede ser diferente al original
-        /*header("Content-Type: application/octet-stream");*/
-        header("Content-Type: application/force-download");
-        header("Content-Disposition: attachment; filename=\"$filename\"");
-        readfile($filename);
-        echo "descarga manual";
-    }
-
-    public function descargaPdf(){
-        $filename = "ManualUsuario/241122_ManualdeUsuario_CONSTANCIA.pdf"; // el nombre con el que se descargará, puede ser diferente al original
-        /*header("Content-Type: application/octet-stream");*/
         header("Content-Type: application/force-download");
         header("Content-Disposition: attachment; filename=\"$filename\"");
         readfile($filename);
@@ -91,17 +81,14 @@ class generaConstancia extends Controller
             ->where ('id','=', $id)
             ->update(['name'=>$nombre, 'apellido_paterno'=>$appat, 'apellido_materno'=>$apmat]);
 
-            // return $actualiza;
-
-
             switch ($red) {
 
                 case 1:
-                    $ruta= "images/Constancias/red06_fondo_red_niñez.jpg";
+                    $ruta= "images/Constancias/proteccion_niñes.jpg";
                     break;
 
                 case 2:
-                    $ruta= "images/Constancias/red03_fondo_red_estadisticas.jpg";
+                    $ruta= "images/Constancias/estadisticas_judiciales.jpg";
                     break;
 
                 case 3:
@@ -109,7 +96,7 @@ class generaConstancia extends Controller
                     break;
 
                 case 4:
-                    $ruta= "images/Constancias/red02_fondo_red_escuelas.jpg";
+                    $ruta= "images/Constancias/escuelas_judiciales.jpg";
                     break;
 
                 case 5:
@@ -117,7 +104,7 @@ class generaConstancia extends Controller
                     break;
 
                 case 6:
-                    $ruta= "images/Constancias/red01_fondo_red_centros_de_convivencia.jpg";
+                    $ruta= "images/Constancias/Apoyo_judicial_intervencion.jpg";
                     break;
 
                 case 7:
@@ -132,7 +119,6 @@ class generaConstancia extends Controller
                     $ruta= "";
                     break;
             }
-
 
             $this->fpdf = new Fpdf;
 
