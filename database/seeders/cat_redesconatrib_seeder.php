@@ -39,7 +39,7 @@ class cat_redesconatrib_seeder extends Seeder
             'red'=>"Reunión Nacional del Sistema Integral de Justicia Penal para Adolescentes",
             'fechaInicio'=>"2023-11-08",
             'fechaFin'=>"2023-11-15",
-            'activo'=> 0,
+            'activo'=> 1,
             'landingPage'=> "HTML3",
         ]);
 
@@ -62,14 +62,14 @@ class cat_redesconatrib_seeder extends Seeder
         ]);
 
         DB::table('cat_redesconatrib')->insert([
-            'id'=>"6",
-            // 'red'=>"Reunión de la Red de Centros de Convivencias Familiar Supervisada",
-            'Reunión de la Red Nacional de Intervención Especializada para Apoyo Judicial',
-            'fechaInicio'=>"2023-11-27",
-            'fechaFin'=>"2023-11-30",
-            'activo'=> 1,
-            'landingPage'=> "HTML6",
+            'id' => "6",
+            'red' => "Reunión de la Red Nacional de Intervención Especializada para Apoyo Judicial",
+            'fechaInicio' => "2023-11-27",
+            'fechaFin' => "2023-11-30",
+            'activo' => 1,
+            'landingPage' => "HTML6",
         ]);
+
 
         //Red desabiltada
         DB::table('cat_redesconatrib')->insert([
@@ -77,7 +77,7 @@ class cat_redesconatrib_seeder extends Seeder
             'red'=>"Reunión de la Red de Juezas y Jueces Orales, Civiles, Mercantiles y de Extinción de Dominio",
             'fechaInicio'=>"2023-11-08",
             'fechaFin'=>"2023-11-15",
-            'activo'=> 0,
+            'activo'=> 1,
             'landingPage'=> "HTML7",
         ]);
 
@@ -87,7 +87,7 @@ class cat_redesconatrib_seeder extends Seeder
             'red'=>"Reunión de la Red de Oficiales Mayores y Directores Generales de Administración de los Poderes Judiciales de la República Mexicana",
             'fechaInicio'=>"2023-11-08",
             'fechaFin'=>"2023-11-15",
-            'activo'=> 0,
+            'activo'=> 1,
             'landingPage'=> "HTML8",
         ]);
 
