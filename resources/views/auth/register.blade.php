@@ -26,13 +26,6 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        {{-- Mensajes de validación --}}
-                        @if($message = Session::get('warning'))
-                        <div class="alert alert-warning" >
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                            {{ $message }}
-                        </div>
-                        @endif
                         
                         @if($message = Session::get('error'))
                         <div class="alert alert-danger" >
@@ -96,14 +89,14 @@
                                 if( isset($_GET['IdRed']) ){
                                     echo '<input id="idRed" name="idRed" type="hidden" value="'.$_GET['IdRed'].'"></input>';
                                 }
-                            @endphp
+                                @endphp
                             @error('idRed')
-                                <div class="form-group row">
-                                    <div class="col-md-12">
+                            <div class="form-group row">
+                                <div class="col-md-12">
                                         <strong>No existe el Identificador</strong>
                                     </div>
                                 </div>
-                            @enderror
+                                @enderror
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">Registrar</button>
                             </div>
@@ -122,6 +115,20 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/regUsuario.js"></script>
-
+<!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{{-- Mensajes de validación de Registro--}}
+@if(session('success'))
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Swal.fire({
+                title: '¡Registro Exitoso!',
+                text: "{{ session('success') }}",
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
+        });
+    </script>
+@endif
 </body>
 </html>
