@@ -14,12 +14,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(cat_redesconatrib_seeder::class);// \App\Models\User::factory(10)->create();
-        $this->call(TipoEvento::class);
         $this->call(EntidadFederativa::class);
         $this->call(EstatusUsers::class);
         $this->call(usuarioCoordinadorSeeder::class);
         $this->call(rol::class);
         $this->call(usersRoles::class);
+        $this->call(TipoEvento::class);
 
         //$this->call(userSeeder::class);
     }
