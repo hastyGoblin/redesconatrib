@@ -7,19 +7,13 @@ window.addEventListener('load', function(){
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-
-        /* SELECT TIPO CONFLICTO*/
         $.ajax({
             type: 'POST',
             url: '/validarInicio',
             data: {
                 id_red: $('#id_red').val(),
             },
-            /*beforeSend: function () {
-                alert('Enviaré mis datos va.'+ $('#materia').val());
-            },*/
             success: function (respuesta) {
-                console.log(respuesta);
                 if(respuesta['registro'] == 1){
                 	document.querySelector('#name').value = "";
                     document.querySelector('#paterno').value = "";
@@ -32,17 +26,13 @@ window.addEventListener('load', function(){
                     document.querySelector('#id_red').value = "";
                     document.querySelector('#password').value = "";
                     document.querySelector('#password-confirm').value = "";
-                	alert("El periodo de registro para esta red ha finalizado");
-                	console.log("No te puedes registrar");
+                    Swal.fire({
+                        icon: 'info',
+                        title: 'Registro no disponible',
+                        text: 'El periodo de registro para esta red comenzará en la fecha indicada. Por favor, inténtelo de nuevo más adelante.',
+                    });
                 }
-                else{
-                	console.log("Si te puedes registrar");
-                }
-
             },
-            error: function (jqXHR, textStatus, errorThrown) {
-            //    alert('Ocurrio un errror, intente de nuevo.' + jqXHR.responseText )
-            }
         });
     }
 

@@ -62,7 +62,9 @@ class AceptadoRechazadoController extends Controller
     public function validaInicioRed(Request $request){
 
         $red= $request->id_red;
-        $fechaIniRed = cat_redesconatrib::select('fechaInicio')->where('id','=', $red)->get();
+        $fechaIniRed = cat_redesconatrib::select('fechaInicio')
+                        ->where('id','=', $red)
+                        ->get();
  
         $hoy = Carbon::now();
 

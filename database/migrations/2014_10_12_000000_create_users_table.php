@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateUsersTable extends Migration
@@ -30,7 +31,7 @@ class CreateUsersTable extends Migration
             $table->tinyinteger('fk_estado');
             $table->foreign('fk_estado')->references('id')->on('entidadfederativa');
 
-            $table->tinyinteger('fk_estatus')->default(1);
+            $table->tinyinteger('fk_estatus')->default(2);
             $table->foreign('fk_estatus')->references('ID')->on('estatusUsers');
             
             $table->tinyinteger('id_red');
@@ -39,7 +40,7 @@ class CreateUsersTable extends Migration
 
             $table->dateTime('created_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP '));
             $table->dateTime('updated_at', $precision = 0)->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-            $table->boolean('activo')->default(0);
+            $table->boolean('activo')->default(1);
         });
     }
 
