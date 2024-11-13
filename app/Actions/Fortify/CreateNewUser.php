@@ -7,27 +7,17 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
-use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use App\Models\cat_redesconatrib;
 use App\Models\usersRoles;
-use Auth;
-
+use Exception;
 
 class CreateNewUser implements CreatesNewUsers
 {
     use PasswordValidationRules;
 
-    /**
-     * Validate and create a newly registered user.
-     *
-     * @param  array  $input
-     * @return \App\Models\User
-     */
     public function create(array $input)
     {
-        //$redes = User::cat_redesconatrib()->id_red;
-
         Validator::make($input, [
             'name' => ['required', 'string', 'max:50'],
             'paterno' => ['required', 'string', 'max:50'],
@@ -46,19 +36,24 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
             'id_red' => ['required', 'string', 'max:255', 'min:1'],
         ])->validate();
-        /*echo $fechaInicio['id_red'];
 
-        $fecha = cat_redesconatrib::select('fechaInicio')->where('id','=', $fechaInicio['id_red'])->get();
+        // Obtener la red y validar la fecha de inicio
+        $red = cat_redesconatrib::find($input['id_red']);
+        $hoy = Carbon::now()->format('Y-m-d');
 
-        $hoy = Carbon::now();
-        echo $hoy.' '.$fecha;
+        // Lanza una excepción si la fecha de inicio aún no ha llegado
+        if ($red->fechaInicio > $hoy) {
+            // return redirect()->route('register');
+            // return view('auth.register');
+            throw new Exception('El periodo de registro para esta red comenzará en la fecha indicada. Por favor, inténtelo de nuevo más adelante.');
+        }
 
-        if ($hoy < $fecha[0]->fechaInicio) {*/
+        // Crear el usuario
         $create = User::create([
             'name' => strtoupper($input['name']),
             'apellido_paterno' => strtoupper($input['paterno']),
             'apellido_materno' => strtoupper($input['materno']),
-            'dependencia' => strtoupper ($input['dependencia']),
+            'dependencia' => strtoupper($input['dependencia']),
             'fk_estado' => strtoupper($input['fk_estado']),
             'cargo' => strtoupper($input['cargo']),
             'numero_celular' => $input['celular'],
@@ -67,14 +62,12 @@ class CreateNewUser implements CreatesNewUsers
             'id_red' => $input['id_red'],
         ]);
 
-        $rolesdecanela = usersRoles::create([
-            'fk_UsersRoles'=>$create->id,
-            'fk_roles'=>2,
+        // Asignar el rol predeterminado al usuario
+        usersRoles::create([
+            'fk_UsersRoles' => $create->id,
+            'fk_roles' => 2,
         ]);
 
         return $create;
-        /*}else{
-            return view('auth.register')->withErrors($fechaInicio);
-        }*/
     }
 }

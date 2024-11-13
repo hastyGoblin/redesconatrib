@@ -34,8 +34,12 @@
                         </div>
                         @endif
 
-                        <h3>REGISTRO</h3><br>
-
+                        <h3>REGISTRO <br><br>
+                            @foreach($rconatrib as $redes)
+                                {{$redes->red}}
+                            @endforeach
+                        </h3><br>
+                        
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="form-group row">
@@ -58,11 +62,11 @@
                                                 <strong>{{ $errors->first('email') }}</strong>
                                             </span>
                                         @endif
-                                    <label>Red en la que desea participar</label> <br>
-                                    <select class="custom-select" required name="id_red" id="id_red" style="text-transform: uppercase;">
+                                    {{-- <label>Red en la que desea participar</label> <br> --}}
+                                    <select class="custom-select" required name="id_red" id="id_red" style="text-transform: uppercase;" hidden>
                                         <option value="">Selecciona una red</option>
                                         @foreach($rconatrib as $redes)
-                                        <option value="{{$redes->id}}">{{$redes->red}} </option>
+                                            <option selected value="{{$redes->id}}">{{$redes->red}} </option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -98,7 +102,9 @@
                                 </div>
                                 @enderror
                             <div class="form-button">
-                                <button id="submit" type="submit" class="ibtn">Registrar</button>
+                                <center>
+                                    <button id="submit" type="submit" class="ibtn">Registrar</button>
+                                </center>
                             </div>
                         </form>
                        <div class="other-links">
@@ -110,14 +116,23 @@
         </div>
     </div>
 <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <!-- SweetAlert2 -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/regUsuario.js"></script>
 {{-- Mensajes de validación de Registro--}}
+@if(session('warning'))
+    <script>
+        Swal.fire({
+            icon: 'info',
+            title: 'Registro no disponible',
+            text: "{{ session('warning') }}",
+            confirmButtonText: 'Aceptar'
+        });
+    </script>
+@endif
 @if(session('success'))
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -130,5 +145,6 @@
         });
     </script>
 @endif
+
 </body>
 </html>

@@ -2,14 +2,14 @@
 
 namespace App\Http\Responses;
 
+use App\Actions\Fortify\CreateNewUser;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Laravel\Fortify\Http\Responses\RegisterResponse as FortifyRegisterResponse;
 use App\Mail\RegistroMail;
 use App\Models\cat_redesconatrib;
-use Carbon\Carbon;
-use Auth;
+use GuzzleHttp\Psr7\Request;
 use Mail;
-
+use Illuminate\Support\Facades\Auth;
 
 class RegisterResponse extends FortifyRegisterResponse
 {
@@ -37,10 +37,8 @@ class RegisterResponse extends FortifyRegisterResponse
                 'red' => $red[0]->red,
                 ];
 
-       Mail::to($email)->send(new RegistroMail($info));
+        Mail::to($email)->send(new RegistroMail($info));
 
-        // return redirect()->route('register')->with('warning','Registro exitoso se envió un correo a tu cuenta proporcionada');
         return redirect()->route('register')->with('success', 'Se envió un correo a tu cuenta proporcionada');
-
     }
 }

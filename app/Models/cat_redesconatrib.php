@@ -14,6 +14,8 @@ class cat_redesconatrib extends Model
     protected $primaryKey = 'id';
     protected $fillable = [
         'red',
+        'fechaInicio',
+        'fechaFin',
         'landingPage',
         'activo',
     ];
