@@ -43,8 +43,6 @@ class CreateNewUser implements CreatesNewUsers
 
         // Lanza una excepción si la fecha de inicio aún no ha llegado
         if ($red->fechaInicio > $hoy) {
-            // return redirect()->route('register');
-            // return view('auth.register');
             throw new Exception('El periodo de registro para esta red comenzará en la fecha indicada. Por favor, inténtelo de nuevo más adelante.');
         }
 
