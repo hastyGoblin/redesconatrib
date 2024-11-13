@@ -110,22 +110,26 @@
                             <div class=session-item-wrapper style="margin-bottom: auto;">
                                 <div class="gdlr-session-item gdlr-small-session-item gdlr-item">
                                     <div class=gdlr-session-item-head>
-                                        <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-1>
+                                        {{-- <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-1>
                                             <div class=gdlr-session-head-day>
                                                 Solicitudes
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
-                                        </div>
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-2 onclick="event.preventDefault(); document.getElementById('usuario-form').submit();" style="text-decoration: none;">
-                                            <div class=gdlr-session-head-day>
-                                                    Aceptadas
-                                                <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
-                                                    @csrf
-                                                </form>
-                                            </div>
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div>
-                                        <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault(); document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
+                                        </div> --}}
+                                        <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-2 onclick="event.preventDefault();
+                                                                     document.getElementById('usuario-form').submit();">
+                                                    <div class=gdlr-session-head-day>
+                                                        USUARIOS REGISTRADOS
+                                                    </div>
+                                                    <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                    <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                    <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                                </div>
+                                        {{-- <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault(); document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
                                             <div class=gdlr-session-head-day>
                                                     Rechazadas
                                                 <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
@@ -133,7 +137,7 @@
                                                 </form>
                                             </div>
                                             <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div>
+                                        </div> --}}
                                     </div>
 
                                     @if($message = Session::get('success'))

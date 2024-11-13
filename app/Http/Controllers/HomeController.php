@@ -38,14 +38,6 @@ class HomeController extends Controller
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
-        // $fechaHora = User::first()->created_at;
-        // // $formato = Carbon::now();
-        // $newDate = date("d/m/Y", strtotime($fechaHora));
-
-        // $formatoFecha = $formato('Y-m-d');
-        // $formatoDia = $fechaHora->format('Y-m-d'); //Damos formato al día 
-        // return $newDate;
-
         if ($rol[0]->fk_roles == '1') {
 
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad', 'users.created_at')

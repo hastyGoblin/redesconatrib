@@ -4,15 +4,12 @@ namespace App\Http\Responses;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Laravel\Fortify\Http\Responses\LoginResponse as FortifyLoginResponse;
-use Illuminate\Support\Facades\DB;
 use App\Models\cat_redesconatrib;
-use App\Models\Roles;
 use App\Models\usersRoles;
 use App\Models\bitacoraUsuario;
 use App\Models\User;
 use Carbon\Carbon;
-use Auth;
-use Mail;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Builder\SortDesc;
 
 
@@ -27,22 +24,20 @@ class LoginResponse extends FortifyLoginResponse
 
     public function toResponse($request)
     {
-
         $id = Auth::user()->id;
         $red_id = Auth::user()->id_red;
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
         $formatodiaAgendado = new Carbon();
-        $formatodias =$formatodiaAgendado->format('Y-m-d');
-        // return $formatodias;
+        $formatodiaAgendado->format('Y-m-d');
 
-        $bitacoraUser = bitacoraUsuario::create([
+        bitacoraUsuario::create([
             "fechaEvento" => Carbon::now(),
             "fk_usuarioBitacora" => $id,
             "fk_tipoEvento" => 1,
-            "activo" => 1]);
-            // return $red[0]->fechaInicio;
+            "activo" => 1
+        ]);
 
         if ($rol[0]->fk_roles == '1') {
 
@@ -68,12 +63,3 @@ class LoginResponse extends FortifyLoginResponse
         }
     }
 }
-
-// elseif ($formatodias >= $red[0]->fechaInicio && $rol[0]->fk_roles == '2') {
-            
-//     return redirect()->route('home');
-
-// }else {
-
-//     return view('disponible');
-// }
