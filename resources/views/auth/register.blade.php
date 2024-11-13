@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>Redes Conatrib</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
-    <link rel="stylesheet" type="text/css" href="css/iofrm-theme2.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/iofrm-style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/iofrm-theme2.css') }}">
 </head>
 <body>
     <div class="form-body">
         <div class="website-logo">
-            <a href="{{route('login')}}">
+            <a href="{{ route('login') }}">
                 <div>
-                    <img class="logo-size" src="images/Img_Conatrib.png" alt="">
+                    <img class="logo-size" src="{{ asset('images/Img_Conatrib.png') }}" alt="">
                 </div>
             </a>
         </div>
         <div class="row">
             <div class="img-holder">
-                <div class="bg" style="background-image: url(images/RedesConatrib.png) !important;"></div>
+                <div class="bg" style="background-image: url('{{ asset('images/RedesConatrib.png') }}') !important;"></div>
             </div>
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
                         
                         @if($message = Session::get('error'))
-                        <div class="alert alert-danger" >
+                        <div class="alert alert-danger">
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             {{ $message }}
                         </div>
@@ -36,7 +36,7 @@
 
                         <h3>REGISTRO <br><br>
                             @foreach($rconatrib as $redes)
-                                {{$redes->red}}
+                                {{ $redes->red }}
                             @endforeach
                         </h3><br>
                         
@@ -51,28 +51,26 @@
                                     <select class="custom-select" required id="fk_estado" name="fk_estado" style="text-transform: uppercase;">
                                         <option value="">Selecciona una entidad</option>
                                         @foreach($entidades as $entidad)
-                                        <option value="{{$entidad->id}}">{{$entidad->entidad}} </option>
+                                        <option value="{{ $entidad->id }}">{{ $entidad->entidad }}</option>
                                         @endforeach
                                     </select> <br> <br>
-                                        <input class="form-control" type="text" id="cargo" name="cargo" placeholder="Cargo" style="text-transform: uppercase;" value="{{ old('cargo') }}" required maxlength="120">
-                                        <input class="form-control" type="text" id="celular" name="celular" placeholder="NÚMERO CELULAR" value="{{ old('celular') }}" required maxlength="15">
-                                        <input class="form-control @error('email') is-invalid @enderror" id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="CORREO ELECTRÓNICO">
-                                        @if ($errors->has('email'))
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('email') }}</strong>
-                                            </span>
-                                        @endif
-                                    {{-- <label>Red en la que desea participar</label> <br> --}}
+                                    <input class="form-control" type="text" id="cargo" name="cargo" placeholder="Cargo" style="text-transform: uppercase;" value="{{ old('cargo') }}" required maxlength="120">
+                                    <input class="form-control" type="text" id="celular" name="celular" placeholder="NÚMERO CELULAR" value="{{ old('celular') }}" required maxlength="15">
+                                    <input class="form-control @error('email') is-invalid @enderror" id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="CORREO ELECTRÓNICO">
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+
                                     <select class="custom-select" required name="id_red" id="id_red" style="text-transform: uppercase;" hidden>
-                                        <option value="">Selecciona una red</option>
                                         @foreach($rconatrib as $redes)
-                                            <option selected value="{{$redes->id}}">{{$redes->red}} </option>
+                                            <option selected value="{{ $redes->id }}">{{ $redes->red }}</option>
                                         @endforeach
                                     </select>
                                 </div>
                             </div>
-                            {{-- Contraseña --}}
-                            <label><strong>Nota:</strong> La contraseña deberá contener un minimo de 8 digitos</label>
+                            <label><strong>Nota:</strong> La contraseña deberá contener un mínimo de 8 dígitos</label>
                             <div class="form-group row">
                                 <div class="col-md-12">
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="CONTRASEÑA">
@@ -83,33 +81,33 @@
                                     @enderror
                                 </div>
                             </div>
-                            {{-- Confirmar contraseña --}}
                             <div class="form-group row">
                                 <div class="col-md-12">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="CONFIRMA CONTRASEÑA">
                                 </div>
                             </div>
-                            @php
-                                if( isset($_GET['IdRed']) ){
-                                    echo '<input id="idRed" name="idRed" type="hidden" value="'.$_GET['IdRed'].'"></input>';
-                                }
-                                @endphp
+                            @if(isset($_GET['IdRed']))
+                                <input id="idRed" name="idRed" type="hidden" value="{{ $_GET['IdRed'] }}">
+                            @endif
                             @error('idRed')
                             <div class="form-group row">
                                 <div class="col-md-12">
                                         <strong>No existe el Identificador</strong>
                                     </div>
                                 </div>
-                                @enderror
+                            @enderror
                             <div class="form-button">
                                 <center>
                                     <button id="submit" type="submit" class="ibtn">Registrar</button>
                                 </center>
                             </div>
                         </form>
-                       <div class="other-links">
-                            <span></span><a href="https://conatrib.org.mx/">P&aacute;gina web</a><a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a><a href="https://twitter.com/ConatribMx">Twitter</a><a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">YouTube</a>
-                      </div>
+                        <div class="other-links">
+                            <a href="https://conatrib.org.mx/">Página web</a> |
+                            <a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a> |
+                            <a href="https://twitter.com/ConatribMx">Twitter</a> |
+                            <a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">YouTube</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,12 +115,10 @@
     </div>
 <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- SweetAlert2 -->
-<script src="js/regUsuario.js"></script>
-{{-- Mensajes de validación de Registro--}}
+<script src="{{ asset('js/popper.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/regUsuario.js') }}"></script>
 @if(session('warning'))
     <script>
         Swal.fire({
@@ -145,6 +141,5 @@
         });
     </script>
 @endif
-
 </body>
 </html>
