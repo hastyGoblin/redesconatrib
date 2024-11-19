@@ -54,7 +54,7 @@ class LoginResponse extends FortifyLoginResponse
             ->orderBy('users.created_at','asc')
             ->get();
 
-            return view('modulo_admin')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
+            return view('Aceptados')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
 
         }elseif ($rol[0]->fk_roles == '2') {
             

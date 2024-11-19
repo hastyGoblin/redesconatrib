@@ -34,7 +34,7 @@
                         </div>
                         @endif
 
-                        <h3>REGISTRO <br><br>
+                        <h3>Registro del 20 de noviembre al 04 de diciembre de 2024<br><br>
                             @foreach($rconatrib as $redes)
                                 {{$redes->red}}
                             @endforeach

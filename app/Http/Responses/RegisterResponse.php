@@ -22,6 +22,7 @@ class RegisterResponse extends FortifyRegisterResponse
 
     public function toResponse($request)
     {
+        // echo"hola";
         $name = Auth::user()->name;
         $email = Auth::user()->email;
         $red_id =  Auth::user()->id_red;

@@ -64,7 +64,7 @@ class EntidadFederativa extends Seeder
         ]);//
         DB::table('entidadfederativa')->insert([
           'id'=>"10",
-          'entidad'=>"Distrito Federal",
+          'entidad'=>"Ciudad de México",
           'activo'=> 1,
         ]);//
         DB::table('entidadfederativa')->insert([
