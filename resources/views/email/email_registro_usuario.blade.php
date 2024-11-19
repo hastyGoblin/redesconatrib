@@ -21,7 +21,7 @@
                             </a>
         				</div>
                         <h3>¡Felicidades {!! nl2br($info['name']) !!}!</h3>
-                        <p style="text-align: justify">Has completado tu registro a la 2a. <strong>{!! nl2br($info['red']) !!}</strong> 2024.</p>
+                        <p style="text-align: justify">Has completado tu registro a la <strong>{!! nl2br($info['red']) !!}</strong> 2024.</p>
 						<p style="text-align: justify">Con tu registro, podrás ingresar al micrositio del evento, de igual manera accederás a las ponencias y material de apoyo que sea provisto por los organizadores.</p>
                         <p style="text-align: justify">Recuerda que los datos de acceso son con los que realizaste tu registro en la plataforma.</p>
                         <p style="text-align: justify">Cercanos a la fecha de inicio, podrás acceder al micrositio mediante el siguiente link: http://redesconatrib.poderjudicialcdmx.gob.mx/login</p>

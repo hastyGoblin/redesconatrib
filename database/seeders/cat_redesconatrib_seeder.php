@@ -63,7 +63,7 @@ class cat_redesconatrib_seeder extends Seeder
 
         DB::table('cat_redesconatrib')->insert([
             'id' => "6",
-            'red' => "Reunión de la Red Nacional de Intervención Especializada para Apoyo Judicial",
+            'red' => "2a. Reunión de la Red Nacional de Intervención Especializada para Apoyo Judicial",
             'fechaInicio' => "2024-11-20",
             'fechaFin' => "2024-12-01",
             'activo' => 1,
