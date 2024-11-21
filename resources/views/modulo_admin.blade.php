@@ -110,34 +110,18 @@
                             <div class=session-item-wrapper style="margin-bottom: auto;">
                                 <div class="gdlr-session-item gdlr-small-session-item gdlr-item">
                                     <div class=gdlr-session-item-head>
-                                        {{-- <div class="gdlr-session-item-head-info gdlr-active" data-tab=gdlr-tab-1>
+                                        <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-2 onclick="event.preventDefault(); document.getElementById('usuario-form').submit();">
                                             <div class=gdlr-session-head-day>
-                                                Solicitudes
+                                                USUARIOS REGISTRADOS
                                             </div>
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
-                                        </div> --}}
-                                        <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-2 onclick="event.preventDefault();
-                                                                     document.getElementById('usuario-form').submit();">
-                                                    <div class=gdlr-session-head-day>
-                                                        USUARIOS REGISTRADOS
-                                                    </div>
-                                                    <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
-                                                        @csrf
-                                                    </form>
-                                                    <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
-                                                        @csrf
-                                                    </form>
-                                                    <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                                </div>
-                                        {{-- <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault(); document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
-                                            <div class=gdlr-session-head-day>
-                                                    Rechazadas
-                                                <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
-                                                    @csrf
-                                                </form>
-                                            </div>
-                                            <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                        </div> --}}
+                                            {{-- <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
+                                                @csrf
+                                            </form>
+                                            <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
+                                                @csrf
+                                            </form> --}}
+                                            {{-- <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div> --}}
+                                        </div>
                                     </div>
 
                                     @if($message = Session::get('success'))
@@ -171,7 +155,6 @@
                     <th>Teléfono</th>
                     <th>Correo</th>
                     <th>Fecha</th>
-                    {{-- <th>Hora</th> --}}
                     <th colspan="10">Acciones</th>
                 </tr>
             </thead>
@@ -184,9 +167,7 @@
                         <td>{{ $registrados->cargo }}</td>
                         <td>{{ $registrados->numero_celular }}</td>
                         <td>{{ $registrados->email }}</td>
-                        {{-- @dd($registrados) --}}
                         <td>{{ $registrados->created_at }} </td>
-                        {{-- <td>{{ $registrados->created_at->isoFormat('H:mm:ss A') }}</td> --}}
                         <td colspan="5">
                             <form method="post" name="Aceptar" action="{{ url('aceptarUsuario') }}">
                             @csrf

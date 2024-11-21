@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang=en-US><![endif]-->
-<!--[if IE 8]><html class="ie ie8 ltie9" lang=en-US><![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html lang=en-US>
-
 <head>
     <meta charset=UTF-8>
     <meta name=viewport content="initial-scale=1.0">
@@ -20,7 +16,7 @@
     <link rel="stylesheet" href="administrador/red/css/style-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="administrador/red/plugins/masterslider/public/assets/css/masterslider.main.css" type="text/css" media="all">
     <link rel="stylesheet" href="administrador/red/css/master-custom.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> --}}
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
@@ -30,10 +26,14 @@
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
     <link rel=stylesheet href='https://fonts.googleapis.com/css?family=Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221' type=text/css media=all>
-
+    {{-- Estilos de la tabla --}}
+    <link rel="stylesheet" href="{{asset('css/tableConteiner.css')}}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+  
 </head>
 
 <body data-rsssl=1 class="home page-template-default page page-id-3304 _masterslider _msp_version_3.2.7">
+    <!-- Encabezado -->
     <div class="body-wrapper  float-menu" data-home=index.html>
         <header class="gdlr-header-wrapper">
             <div class="dlr-header-inner">
@@ -75,6 +75,8 @@
             <div class="clear"></div>
         </header>
     </div>
+
+    <!-- Contenido -->
     <div class="content-wrapper">
         <div class="gdlr-content">
             <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
@@ -86,11 +88,12 @@
                                     <div class="gdlr-item-title-head">
                                         <h4 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-large">{{$red[0]->red}}</h4>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
                 </section>
+                
                 <div class=content-wrapper>
                     <div class=gdlr-content>
                         <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
@@ -98,40 +101,18 @@
                                 <div class="section-container container">
                                     <div class=session-item-wrapper style="margin-bottom: 75px;">
                                         <div class="gdlr-session-item gdlr-small-session-item gdlr-item">
-                                            <div class=gdlr-session-item-head>
-                                                {{-- <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-1 onclick="event.preventDefault();
-                                                                            document.getElementById('solicitud-form').submit();">
-                                                    <div class=gdlr-session-head-day>
-                                                        Solicitudes
-                                                    </div>
-                                                    <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp; </div>
-                                                </div> --}}
-                                                <div class="gdlr-session-item-head-info" data-tab=gdlr-tab-2 onclick="event.preventDefault();
-                                                                     document.getElementById('usuario-form').submit();">
-                                                    <div class=gdlr-session-head-day>
+                                            
+                                            <!-- Título -->
+                                            <div class="gdlr-session-item-head">
+                                                <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-2" style="user-select: none; cursor: pointer;">
+                                                    <h3 class="gdlr-session-head-day" style="font-size: 20px; font-weight: bold; text-transform: uppercase;">
                                                         USUARIOS REGISTRADOS
-                                                    </div>
-                                                    <form id="solicitud-form" action="{{ route('home')}}" method="GET" class="d-none">
-                                                        @csrf
-                                                    </form>
-                                                    <form id="usuario-form" action="{{ route('usuarioAceptado')}}" method="get" class="d-none">
-                                                        @csrf
-                                                    </form>
-                                                    <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                                    </h3>
                                                 </div>
-                                                {{-- <div class="gdlr-session-item-head-info " data-tab=gdlr-tab-3 onclick="event.preventDefault();
-                                                                        document.getElementById('rechazado-form').submit();" style="text-decoration: none;">
-                                                    <div class=gdlr-session-head-day>
-                                                        Rechazadas
-                                                        <form id="rechazado-form" action="{{ route('usuarioRechazado')}}" method="POST" class="d-none">
-                                                            @csrf
-                                                        </form>
-                                                    </div>
-                                                    <div class=gdlr-session-head-date>&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                                                </div> --}}
-                                                <div class=clear></div>
+                                                <div class="clear"></div>
                                             </div>
 
+                                            <!-- Mensajes -->
                                             @if($message = Session::get('success'))
                                                 <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
                                                     <font color="#155724">{{ $message }}</font>
@@ -150,46 +131,97 @@
                         </div>
                     </div>
                 </div>
-                <table border="1px">
+                
+                <!-- Tabla -->
+                {{-- <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                                <th>Dependencia</th>
+                                <th>Cargo</th>
+                                <th>Teléfono</th>
+                                <th>Correo</th>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($registradosRed as $registrados)
+                            <tr>
+                                <td data-label="Nombre">{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
+                                <td data-label="Estado">{{ $registrados->entidad }}</td>
+                                <td data-label="Dependencia">{{ $registrados->dependencia }}</td>
+                                <td data-label="Cargo">{{ $registrados->cargo }}</td>
+                                <td data-label="Teléfono">{{ $registrados->numero_celular }}</td>
+                                <td data-label="Correo">{{ $registrados->email }}</td>
+                                <td data-label="Fecha">{{ $registrados->updated_at->format('d-m-Y') }}</td>
+                                <td data-label="Hora">{{ $registrados->updated_at->isoFormat('H:mm:ss A') }}</td>
+                                <td data-label="Acciones">
+                                    @if ($registrados->estatus_const==1)
+                                        Constancia habilitada
+                                    @else
+                                        <form method="post" action="{{ url('habilitaConstancia') }}">
+                                            @csrf
+                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                            <button type="submit" class="btn btn-primary">Habilitar Constancia</button>
+                                        </form>
+                                    @endif
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div> --}}
+
+                <div class="table-container">
+                    <table id="myTable" class="display">
                     <thead>
                         <tr>
-                            <th>Nombre&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th>Numero de Registro</th>
+                            <th>Nombre</th>
                             <th>Estado</th>
-                            <th>Dependencia&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                            <th>Cargo&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                            <th>Telefono&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th>Dependencia</th>
+                            <th>Cargo</th>
+                            <th>Teléfono</th>
                             <th>Correo</th>
                             <th>Fecha</th>
                             <th>Hora</th>
-                            <th colspan="10">Acciones</th>
+                            {{-- <th>Acciones</th> --}}
                         </tr>
                     </thead>
-                    @foreach($aceptado as $registrados)
-                        <tbody>
-                            <tr>
-                                <td>{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
-                                <td>{{$registrados->entidad}}</td>
-                                <td>{{ $registrados->dependencia }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>{{ $registrados->cargo }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>{{ $registrados->numero_celular }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>{{ $registrados->email }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>{{ $registrados->updated_at->format('d-m-Y') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>{{ $registrados->updated_at->isoFormat('H:mm:ss A') }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <tbody>
+                        @foreach($registradosRed as $registrados)
+                        <tr>
+                            <td data-label="Estado">{{ $registrados->id }}</td>
+                            <td data-label="Nombre">{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
+                            <td data-label="Estado">{{ $registrados->entidad }}</td>
+                            <td data-label="Dependencia">{{ $registrados->dependencia }}</td>
+                            <td data-label="Cargo">{{ $registrados->cargo }}</td>
+                            <td data-label="Teléfono">{{ $registrados->numero_celular }}</td>
+                            <td data-label="Correo">{{ $registrados->email }}</td>
+                            <td data-label="Fecha">{{ $registrados->updated_at->format('d-m-Y') }}</td>
+                            <td data-label="Hora">{{ $registrados->updated_at->isoFormat('H:mm:ss A') }}</td>
+                            {{-- <td data-label="Acciones">
                                 @if ($registrados->estatus_const==1)
-                                    <td>Constancia habilitada</td>
+                                    Constancia habilitada
                                 @else
-                                    <td>
-                                        <form method="post" name="habilitarConstancia" action="{{ url('habilitaConstancia') }}">
-                                            @csrf
-                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                            <input type="submit" name="habilitar" value="Habilitar Constancia">
-                                        </form>
-                                    </td>
+                                    <form method="post" action="{{ url('habilitaConstancia') }}">
+                                        @csrf
+                                        <input type="hidden" name="id_user" value="{{ $registrados->id }}">
+                                        <button type="submit" class="btn btn-primary">Habilitar Constancia</button>
+                                    </form>
                                 @endif
-                            </tr>
-                        </tbody>
-                    @endforeach
-                </table><br><br><br>
+                            </td> --}}
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                </div>
+
+                <!-- Pie de página -->
                 <footer class=footer-wrapper>
                     <div class=copyright-wrapper>
                         <div class="copyright-container container">
@@ -203,8 +235,12 @@
         </div>
     </div>
 
-    <script src='administrador/red/js/jquery/jquery.js'></script>
-    <script src='administrador/red/js/jquery/jquery-migrate.min.js'></script>
+    <!-- Scripts -->
+    {{-- <script src='administrador/red/js/jquery/jquery.js'></script> --}}
+    {{-- <script src='administrador/red/js/jquery/jquery-migrate.min.js'></script> --}}
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+
     <script src='administrador/red/plugins/superfish/js/superfish.js'></script>
     <script src='administrador/red/js/hoverIntent.min.js'></script>
     <script src='administrador/red/plugins/dl-menu/modernizr.custom.js'></script>
@@ -215,6 +251,13 @@
     <script src='administrador/red/plugins/fancybox/helpers/jquery.fancybox-thumbs.js'></script>
     <script src='administrador/red/plugins/flexslider/jquery.flexslider.js'></script>
     <script src='administrador/red/plugins/jquery.isotope.min.js'></script>
-    <script src='administrador/red/js/plugins.min.js'></script>
+    {{-- <script src='administrador/red/js/plugins.min.js'></script> --}}
+    <script>
+        $(document).ready(function () {
+            let table = new DataTable('#myTable', {
+                // config options...
+            });
+        });
+    </script>
 </body>
 </html>

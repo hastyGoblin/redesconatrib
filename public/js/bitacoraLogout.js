@@ -1,33 +1,21 @@
-	function regLogout(){
-    	/*$.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+function regLogout() {
+    $.ajax({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        type: 'POST', // Cambiado a POST
+        url: '/regLogout',
+        success: function (respuesta) {
+            console.log("RegistroLogout");
+            const logoutForm = document.getElementById('logout-form');
+            if (logoutForm) {
+                logoutForm.submit();
+            } else {
+                console.error("El formulario de logout no fue encontrado.");
             }
-        });*/
-
-        /* SELECT TIPO CONFLICTO*/
-        $.ajax({
-            type: 'GET',
-            url: '/regLogout',
-            data: {
-                
-            },
-            /*beforeSend: function () {
-                alert('Enviaré mis datos va.'+ $('#materia').val());
-            },*/
-            success: function (respuesta) {
-
-                console.log("RegistroLogout");
-                document.getElementById('logout-form').submit();
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-               alert('Ocurrio un errror, intente de nuevo.' + jqXHR.responseText )
-            }
-        });
-    }
-
-	/*var logOutButton = document.querySelector("#id_red");
-
-	red.addEventListener('change', function(){
-        validaInicioRed();
-    });*/
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert('Ocurrió un error, intente de nuevo: ' + jqXHR.responseText);
+        }
+    });
+}

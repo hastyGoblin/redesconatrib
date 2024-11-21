@@ -42,9 +42,9 @@ class generaConstancia extends Controller
                 'red' => $red[0]->red,
                 ];
 
-        Mail::to($datos_user[0]->email)->send(new RegistroMail($info));
+        // Mail::to($datos_user[0]->email)->send(new RegistroMail($info));
 
-        return redirect()->route('usuarioAceptado')->with('success','Constancia Habilitada');
+        return redirect()->route('home')->with('success','Constancia Habilitada');
     }
 
     public function descargaManual(){

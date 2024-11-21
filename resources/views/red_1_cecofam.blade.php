@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang=en-US><![endif]-->
-<!--[if IE 8]><html class="ie ie8 ltie9" lang=en-US><![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Red &#8211; Cecofam</title>
 
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="rede_1_cecofam/red/css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_1_cecofam/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_1_cecofam/red/plugins/dl-menu/component.css" type="text/css" media="all">
@@ -22,11 +21,10 @@
     <link rel="stylesheet" href="rede_1_cecofam/red/css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
-
-    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&subset=latin" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i&subset=latin" type="text/css" media="all">
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3304 _masterslider _msp_version_3.2.7">
@@ -42,9 +40,9 @@
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <li class="menu-item">
+                               <!-- <li class="menu-item">
                                     <a href="#historia">Historia</a>
-                                </li>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -60,16 +58,15 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
-                                <li class="menu-item">
+                                <!-- <li class="menu-item">
                                     <a href="#historia">Historia</a>
-                                </li>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
                                 </li>
-                                
                                 <li class="menu-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a class="dropdown-item" href="#"
                                        onclick="regLogout();event.preventDefault();">
@@ -83,35 +80,40 @@
                             </ul>
                         </nav>
                         @if ($activo==1)
-                            <div class="" style="margin-bottom: 30px;top:198px;right:280px;">
-                                <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                                <div class=gdlr-speaker-item-content>
-                                                    <div class=gdlr-lightbox-form id=gdlr-form-200>
-                                                        <div class=gdlr-paypal-form-wrapper>
-                                                            <form method="POST" action="{{ route('descargaConstancia') }}" target="_blank">
-                                                                @csrf
-                                                                <h3>Si encuentra alg&uacute;n error en su nombre por favor de hacer la corrección en los siguientes campos: </h3>
-                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre" id="nombre" value="{{$nombre}}" style="text-transform: uppercase;" maxlength="50">
-                                                                <h5>Nombre</h5>
-                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="appat" id="appat" value="{{$appat}}" style="text-transform: uppercase;" maxlength="50">
-                                                                <h5>Apellido Paterno</h5>
-                                                                <input style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat" id="apmat" value="{{$apmat}}" style="text-transform: uppercase;" maxlength="50">
-                                                                <h5>Apellido Materno</h5>
-                                                                <input type="hidden" name="iduser" id="iduser" value="{{$id_user}}">
-                                                                <input type="hidden" name="idred" id="idred" value="{{$idred}}">
-                                                                <br>
-                                                                <input type="submit" name="btncons" id="btncons">
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <div><a style="font-size: 11px;text-transform: uppercase;font-weight: 800;letter-spacing: 2px;color:#8e8e8e !important;font-family: Raleway;" href=#gdlr-form-200 data-rel=fancybox data-fancybox-type=inline>Constancia</a></div>
+                        <div class="" style="margin-bottom: 30px;top:198px;right:280px;">
+                            <div class="speaker-item-holder gdlr-speaker-type-circle">
+                                <div class="gdlr-item gdlr-speaker-carousel-wrapper">
+                                    <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
+                                        <div class=gdlr-speaker-item-content>
+                                            <div class=gdlr-lightbox-form id=gdlr-form-200>
+                                                <div class=gdlr-paypal-form-wrapper>
+                                                    <form method="POST" action="{{ route('descargaConstancia') }}" target="_blank">
+                                                        @csrf
+                                                        <h3>Si encuentra alg&uacute;n error en su nombre por favor de hacer la corrección en los
+                                                            siguientes campos: </h3>
+                                                        <input style="font-size: 14px;font-family: ariel; color:black!important;" name="nombre"
+                                                            id="nombre" value="{{$nombre}}" style="text-transform: uppercase;" maxlength="50">
+                                                        <h5>Nombre</h5>
+                                                        <input style="font-size: 14px;font-family: ariel; color:black!important;" name="appat"
+                                                            id="appat" value="{{$appat}}" style="text-transform: uppercase;" maxlength="50">
+                                                        <h5>Apellido Paterno</h5>
+                                                        <input style="font-size: 14px;font-family: ariel; color:black!important;" name="apmat"
+                                                            id="apmat" value="{{$apmat}}" style="text-transform: uppercase;" maxlength="50">
+                                                        <h5>Apellido Materno</h5>
+                                                        <input type="hidden" name="iduser" id="iduser" value="{{$id_user}}">
+                                                        <input type="hidden" name="idred" id="idred" value="{{$idred}}">
+                                                        <br>
+                                                        <input type="submit" name="btncons" id="btncons">
+                                                    </form>
                                                 </div>
+                                            </div>
+                                            <div><a style="font-size: 11px;text-transform: uppercase;font-weight: 800;letter-spacing: 2px;color:#8e8e8e !important;font-family: Raleway;"
+                                                    href=#gdlr-form-200 data-rel=fancybox data-fancybox-type=inline>Constancia</a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         @endif
                         <div class="clear"></div>
                     </div>
@@ -125,7 +127,7 @@
             <div class="gdlr-content">
                 <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
                     <section id="inicio">
-                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('rede_1_cecofam/red/upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
+                        <div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin" id="gdlr-parallax-wrapper-2 data-bgspeed=0.2" style="background-image: url('upload/centros_convivencia.png'); padding-top: 100px; padding-bottom: 70px; ">
                             <div class="container">
                                 <div class="gdlr-title-item" style="margin-bottom: 40px;">
                                     <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
@@ -144,38 +146,6 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-                    <!--<section id="historia">
-                        <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
-                            <div class="container">
-                                <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
-                                    <div class="gdlr-item-title-head">
-                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Historia de la red</h3>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                                <div class="gdlr-testimonial-item-wrapper">
-                                    <div class="clear"></div>
-                                    <div class=" Two columns">
-                                        <div class="gdlr-item gdlr-testimonial-item plain-style">
-                                            <div class="gdlr-ux gdlr-testimonial-ux">
-                                                <div class="testimonial-item">
-                                                    <div class="testimonial-content gdlr-skin-content">
-                                                        <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo.</p>
-                                                    </div>
-                                                    <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </section>-->
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -184,35 +154,22 @@
                                         <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Programa de eventos</h3>
                                         
                                     </div>
-									<br>
-									<br>
-									<div class="gdlr-session-thumbnail-wrapper">
-                                        <a href="{{ URL::asset('/rede_1_cecofam/red/images/PROGRAMA_RED_NACIONAL_INTERVENCIÓN_ESPECIALIZADA_APOYO_JUDICIAL.pdf') }}" target="_blank"><button class="newsletter-submit gdlr-button with-border">Ver Programa Completo PDF</button></a>
-                                    </div>
                                 </div>
                             <div class="session-item-wrapper" style="margin-bottom: 75px;">
                                 <div class="gdlr-session-item gdlr-tab-session-item gdlr-item">
                                     <div class="gdlr-session-item-head">
                                         <div class="gdlr-session-item-head-info gdlr-active" data-tab="gdlr-tab-1">
                                             <div class="gdlr-session-head-day">D&iacute;a 1</div>
-                                            <div class="gdlr-session-head-date">27 Noviembre 2023</div>
+                                            <div class="gdlr-session-head-date">9 Diciembre 2024</div>
                                         </div>
                                         <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-2">
                                             <div class="gdlr-session-head-day">D&iacute;a 2</div>
-                                            <div class="gdlr-session-head-date">28 Noviembre 2023</div>
+                                            <div class="gdlr-session-head-date">10 Diciembre 2024</div>
                                         </div>
                                         <div class="gdlr-session-item-head-info " data-tab="gdlr-tab-3">
                                             <div class="gdlr-session-head-day">D&iacute;a 3</div>
-                                            <div class="gdlr-session-head-date">29 Noviembre 2023</div>
+                                            <div class="gdlr-session-head-date">11 Diciembre 2024</div>
                                         </div>
-                                        <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-4">
-                                            <div class="gdlr-session-head-day">D&iacute;a 4</div>
-                                            <div class="gdlr-session-head-date">30 Noviembre 2023</div>
-                                        </div> 
-									<!--	<div class="gdlr-session-item-head-info" data-tab="gdlr-tab-5">
-                                            <div class="gdlr-session-head-day">D&iacute;a 5</div>
-                                            <div class="gdlr-session-head-date">18 Noviembre 2023</div>
-                                        </div> -->
                                         <div class="clear"></div>
                                     </div>
 
@@ -228,9 +185,9 @@
 													<div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MTRA. MARIANA ORTIZ CASTAÑARES</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Rafael Guerra &Aacute;lvarez</a></div>
                                                             </div>
-															<div class="gdlr-session-item-excerpt">COORDINADORA DE INTERVENCION ESPECIALIZADA PARA APOYO JUDICIAL
+															<div class="gdlr-session-item-excerpt">Magistrado Presidente del Poder Judicial de la Ciudad de México y de la Comisión Nacional de Tribunales Superiores de Justicia de los Estados Unidos Mexicanos (CONATRIB)
                                                             </div>
                                                         </div>
                                                     </div>
@@ -243,52 +200,16 @@
                                                 <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://www.youtube.com/embed/s4ke7hHjVow?si=AGi9AykX90cYexwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-															    <!--<div class="entry-title">
-												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
-																    </div>-->
-														 </article>
-														</div>
+                                                        <article class="type-post">
+                                                            <div class="entry-cover">
+                                                                <iframe width="560" height="315" src="https://youtu.be/ue_foQLs6BI?si=Vxm21YHJTxohGptY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                            </div>
+                                                            <div class="entry-block"></div>
+                                                        </article>
                                                     </div>
+                                                </div>
                                               </div>
                                              <div class="clear"></div>
-									<!--		
-								<div class="gdlr-session-item-content-wrapper">
-									
-                                           <div class="gdlr-session-item-divider"></div>
-                                             <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">-->
-                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
-                                                      <!--<div class="gdlr-session-thumbnail-wrapper">
-                                                     <article class="type-post aligncenter">
-															<div class="entry-cover">
-																<iframe width="1024" height="576" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-															</div>
-													            <div class="entry-block"></div>
-													 </article>
-                                                  </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                             </div>
-                                           
-                                          <div class="clear"></div>
-                                     </div> -->
-											
-									<!----------------------- -->
-											
-									<div class="gdlr-session-item-content-wrapper">
-										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/HnPUR6jK3fU?si=oxRc7ecVwgkPVOxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-											</iframe>
-										</div>
-                                    </div> 
-											
-									<!----------------------- -->
-											
                                        <div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
@@ -298,8 +219,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Luis Alberto Disanto</a></div>
-																<div class="gdlr-session-item-excerpt">Director del Programa de Actualización en Psicología Investigativa Criminal (UBA).</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Jonathan López Flores</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo en el Consejo de Familia del Poder Judicial del Estado de Hidalgo</div>
                                                             </div>
                                                         </div>
 														  
@@ -309,9 +230,16 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 												<div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Importancia del análisis victimológico en la investigación criminal”.</h3>
+                                               <h3 class="gdlr-session-item-title">“Relaciones Insanas”</h3>
 												
-											    
+											    <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                 </div>
                                             </div>
                                           <div class="clear"></div>
                                         </div> 
@@ -327,8 +255,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Olga Verónica Ochoa</a></div>
-																<div class="gdlr-session-item-excerpt">Psicóloga de los Centros de Convivencia Familiar del Poder Judicial del Estado de Baja California.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Diego Alberto Beaurregard Zentella</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo en la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco</div>
 															 </div>
 														 </div>
                                                       </div>
@@ -337,11 +265,16 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-												<div class="gdlr-session-item-excerpt">Cápsula: </div>
-                                               <h3 class="gdlr-session-item-title">“La Relación de las Habilidades Parentales con las Habilidades Socioemocionales”.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia: </div>
+                                               <h3 class="gdlr-session-item-title">“Técnica de Retiro”</h3>
 												
                                                  <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                    </div>
                                             </div>
                                           <div class="clear"></div>
@@ -355,8 +288,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Mayra Alejandra Mora Miranda</a></div>
-																<div class="gdlr-session-item-excerpt">Escritora e Investigadora en la evaluación e intervención psicológica en enfermedades crónico-degenerativas </div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Pedro Daniel González García</a></div>
+																<div class="gdlr-session-item-excerpt">Centro Estatal de Convivencia Familiar del Estado de Nuevo León</div>
 																
                                                             </div>
                                                         </div>
@@ -366,9 +299,14 @@
                                              </div>
                                            <div class="gdlr-session-item-content">
 											<div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Antídotos Prácticos para la Violencia”.</h3>
+                                               <h3 class="gdlr-session-item-title">“Evaluación Psicológica en Casos de Infidelidad”</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -382,21 +320,33 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Juez Edgar Tello Arcos</a></div>
-																<div class="gdlr-session-item-excerpt">Juez Séptimo familiar del Primer Partido Judicial.</div>
-																
-                                                            </div>
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Claudia Ibeth Navarrete Mendoza</a></div>
+																<div class="gdlr-session-item-excerpt">Directora General de los CECOFAM en el Estado de Guerrero</div>
+															</div>
+															<div class="session-speaker-list">
+																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Dulce Anyra Cota Salazar</a></div>
+																<div class="gdlr-session-item-excerpt">Directora del CECOFAM de Baja California Sur </div>
+															</div>
+															<div class="session-speaker-list">
+																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Edgar Antonio Cabrera Meneses </a></div>
+																<div class="gdlr-session-item-excerpt">Director de Psicología del Poder Judicial del Estado de Hidalgo </div>
+															</div>
                                                         </div>
                                                       </div>
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
                                            <div class="gdlr-session-item-content">
-											<div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Violencia en Niñas, Niños y Adolescentes Ocasionada por la Separación de los Padres que Derivan Convivencia en un CECOFAM”.</h3>
+											<div class="gdlr-session-item-excerpt">Conversatorio:</div>
+                                               <h3 class="gdlr-session-item-title">“Cuando el Conflicto de Pareja Daña el Desarrollo Infantil”</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -411,35 +361,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Yesenia Reyes García</a></div>
-																<div class="gdlr-session-item-excerpt">Perita en materia de Trabajo Social en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
-																
-                                                            </div>
-                                                        </div>
-                                                      </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                             </div>
-                                           <div class="gdlr-session-item-content">
-											<div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
-                                               <h3 class="gdlr-session-item-title">“Violencia en el ámbito Familiar: Maltrato Infantil”.</h3>
-												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
-                                                  </div>
-                                            </div>
-                                          <div class="clear"></div>
-                                      </div>  
-									<div class="gdlr-session-item-content-wrapper">
-                                           <div class="gdlr-session-item-divider"></div>
-                                             <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
-                                                      <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Pedro Daniel González García</a></div>
-																<div class="gdlr-session-item-excerpt">Psicólogo en el Centro Estatal de Convivencia Familiar del Poder Judicial del Estado de Nuevo León</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Sofía Flores Alonso</a></div>
+																<div class="gdlr-session-item-excerpt">Docente en diversas Instituciones Educativas</div>
 																
                                                             </div>
                                                         </div>
@@ -449,9 +372,14 @@
                                              </div>
                                            <div class="gdlr-session-item-content">
 											<div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Evaluación Sistémica en Casos de Violencia Familiar”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “Retos de la Pareja Contemporánea"</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -465,8 +393,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Fabiola Silva Escalante</a></div>
-																<div class="gdlr-session-item-excerpt">Encargada Administrativa de la Unidad de Servicios Psicológicos en el Poder Judicial del Estado de Tabasco.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Miguel Ángel Miranda Aquino</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo adscrito al Departamento de Orientación Familiar del Tribunal Superior de Justicia del Estado de Morelos</div>
 																
                                                             </div>
                                                         </div>
@@ -475,10 +403,47 @@
                                                 </div>
                                              </div>
                                            <div class="gdlr-session-item-content">
-											<div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
-                                               <h3 class="gdlr-session-item-title">“Ciclo de la Violencia”.</h3>
+											<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Consecuencias del Divorcio en la Salud Mental de Mujeres y Hombres”</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                          <div class="clear"></div>
+                                      </div>  
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Carla Rosalía Domínguez Morán</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga en el CECOFAM del Estado de Nayarit</div>
+																
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                           <div class="gdlr-session-item-content">
+											<div class="gdlr-session-item-excerpt">Cápsula:</div>
+                                               <h3 class="gdlr-session-item-title">“La Función del Psicólogo en la Escucha de Menores de Edad”</h3>
+												 <div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -492,8 +457,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Rocío Estela López Orozco</a></div>
-																<div class="gdlr-session-item-excerpt">Subdirectora de Evaluación Psicológica del Poder Judicial de la Ciudad de México.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Alán Joseph Blancas Chay</a></div>
+																<div class="gdlr-session-item-excerpt">Perito en Criminología y Psicología Forense. Participación del Poder Judicial del Estado de Quintana Roo</div>
 																
                                                             </div>
                                                         </div>
@@ -503,9 +468,14 @@
                                              </div>
                                            <div class="gdlr-session-item-content">
 											<div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Amores que matan: Familicidios”.</h3>
+                                               <h3 class="gdlr-session-item-title">“Trampas de la Violencia”</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -519,13 +489,9 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Magdo. Dr. Raúl Aarón Romero Ortega</a></div>
-																<div class="gdlr-session-item-excerpt">Consejero del Poder Judicial del Estado de México.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Jueza Mtra. Dora Nuño Mejía</a></div>
-																<div class="gdlr-session-item-excerpt">Titular del Juzgado Sexto Familiar de Cuautitlán México.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Daniel Alejandro Pérez Martínez</a></div>
-																<div class="gdlr-session-item-excerpt">Coordinador de Parentalidad en los Centros de Convivencia Familiar del Poder Judicial del Estado de México.</div>
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Rosa Ornelas Mejorada</a></div>
+																<div class="gdlr-session-item-excerpt">Docente en el Centro Interdisciplinario de Ciencias de la Salud del Instituto Politécnico Nacional. Participación del Poder Judicial de la CDMX</div>
 																
                                                             </div>
                                                         </div>
@@ -534,10 +500,15 @@
                                                 </div>
                                              </div>
                                            <div class="gdlr-session-item-content">
-											<div class="gdlr-session-item-excerpt">Conversatorio:</div>
-                                               <h3 class="gdlr-session-item-title">“La Coordinación de Parentalidad y sus Retos en los Juicios de Violencia Familiar”.</h3>
+											<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title"> “Aceptación y cambio. Elementos Clave en la Relación de Pareja”</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -551,11 +522,9 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Leonor Olivia Ruvalcaba Vargas</a></div>
-																<div class="gdlr-session-item-excerpt">Juez Especializada en Violencia Contra las Mujeres.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. María de Jesús Salazar Martínez</a></div>
-																<div class="gdlr-session-item-excerpt">Psicóloga CECOFAM Chilpancingo..</div>
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Juez José de Jesús Estrada Navarro</a></div>
+																<div class="gdlr-session-item-excerpt">Juzgado Décimo Primero en materia Familiar del Poder Judicial del Estado de Jalisco</div>
 															 </div>
                                                         </div>
                                                       </div>
@@ -563,44 +532,20 @@
                                                 </div>
                                              </div>
                                            <div class="gdlr-session-item-content">
-											<div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
-                                               <h3 class="gdlr-session-item-title">“Procedimiento de Escuchas Judiciales a Niñas, Niños y Adolescentes”.</h3>
+											<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title"> “Cómo Afecta o Beneficia la Relación de los Padres en el Interés Superior de los NNA”</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
                                      </div>
-								<div class="gdlr-session-item-content-wrapper">
-                                           <div class="gdlr-session-item-divider"></div>
-                                             <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-                                                    <!--  <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div>-->
-                                                      <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponente:</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Sofía Durón Cárdenas</a></div>
-																<div class="gdlr-session-item-excerpt">Subdirectora del CECOFAM del Poder Judicial de la Ciudad México, sede Niños Héroes.</div>
-																
-															</div>
-                                                        </div>
-                                                      </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                             </div>
-                                           <div class="gdlr-session-item-content">
-											<div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Prácticas Violentas como Forma de Ejercer Disciplina en las Niñas, Niños y Adolescentes”.</h3>
-												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
-                                                  </div>
-                                            </div>
-                                          <div class="clear"></div>
-                                     </div> 
-											
-											
-								
+									
 							
 							    </div>			
 							 </div>
@@ -611,20 +556,8 @@
 									
                          <!-- inicia dia 2 -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
-										<br>
-									<div class="gdlr-session-item-content-wrapper">
+                                        <div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
-								<!----------------------- -->
-											
-									<div class="gdlr-session-item-content-wrapper">
-										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/0UnPwdnErN0?si=x5b_xDJW8OuMpCjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-											</iframe>
-										</div>
-                                    </div> 
-											
-									<!----------------------- -->
-											
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
                                               <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>17:30 hrs.</div> -->
@@ -632,8 +565,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Carolina Santillán Torres Torija</a></div>
-																<div class="gdlr-session-item-excerpt">Profesora en la Universidad Nacional Autónoma de México y miembro del Sistema Nacional de Investigadores CONACYT.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. María Andrea Coronado Angulo</a></div>
+																<div class="gdlr-session-item-excerpt">Psicoterapeuta. Participación del Poder Judicial de la CDMX</div>
 															</div>
                                                         </div>
                                                       </div>
@@ -642,9 +575,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											   <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Conductas Asociadas al Suicidio y su Relación con la Violencia”.</h3>
+                                               <h3 class="gdlr-session-item-title">“Las Cinco Claves que Nunca te Enseñaron para Crecer en Pareja”</h3>
 												  <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -662,8 +600,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Diego Alberto Beaurregard Zentella</a></div>
-																<div class="gdlr-session-item-excerpt">Psicólogo en la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Fabiola Musmé Estrada Gallegos</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -671,10 +609,15 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Cápsula:</div>
-                                               <h3 class="gdlr-session-item-title">“Masculinidades Libres de Violencia”.</h3>
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Celotipia y Apego Evitativo, Un vínculo Adictivo”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -689,24 +632,25 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Sergio Vargas González</a></div>
-																<div class="gdlr-session-item-excerpt">Consejero del Poder Judicial del Estado de México.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Ana María Castelán Rowe</a></div>
-																<div class="gdlr-session-item-excerpt">Perito en Materia de Psicología en el Poder Judicial del Estado de México.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Gloria López Santiago</a></div>
-																<div class="gdlr-session-item-excerpt">Perito Oficial en Materia de Psicología, en Materia de Familia y Niñez, Victimología y Género en el Poder Judicial del Estado de México.</div>
-                                                            </div>
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Ulises Alejandro Torres Guevara</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo en la Unidad de Servicios Psicológicos y de Trabajo Social del Poder Judicial del Estado de Nuevo León</div>
+															</div>
                                                         </div>
                                                       </div>
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Conversatorio:</div>
-                                               <h3 class="gdlr-session-item-title">“La Valoración en Psicología en los Juicios de Violencia Familiar”.</h3>
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“La Dinámica Parental en Peritajes de Custodia”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -721,8 +665,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Rosario Flores Rodríguez</a></div>
-																<div class="gdlr-session-item-excerpt">Perita en materia de Trabajo Social en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Eric García-Lópe</a></div>
+																<div class="gdlr-session-item-excerpt">Investigador Titular C en el INACIPE y Miembro del Sistema Nacional de Investigadoras e Investigadores (SNII)</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -730,10 +674,15 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
-                                               <h3 class="gdlr-session-item-title">“Círculo de la Violencia”.</h3>
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Trastorno de Estrés Postraumático Complejo en Casos de Violencia Contra la Pareja”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -748,8 +697,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Miguel Ángel Miranda Aquino</a></div>
-																<div class="gdlr-session-item-excerpt">Integrante en el Departamento de Orientación Familiar en el Poder Judicial del Estado de Morelos.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Diana Lourdes Meléndez Rojas</a></div>
+																<div class="gdlr-session-item-excerpt">Docente, Conferencista y Tallerista en Instituciones Nacionales e Internacionales</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -758,9 +707,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Violencia y Acceso a la Justicia de las Personas con Discapacidad en México”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “Sexualidad, Intimidad y Pareja”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -775,7 +729,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Pedro Daniel Martínez Sierra</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Erendira Toledo Cortés </a></div>
 																<div class="gdlr-session-item-excerpt">Profesor de Carrera Asociado “C” en la Escuela Nacional de Trabajo Social de la UNAM.</div>
                                                             </div>
                                                         </div>
@@ -785,9 +739,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Niñas, Niños y Adolescentes en Escenarios de Violencia Social”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “Parejas Postmodernas, retos y Realidades Contemporáneas”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -802,24 +761,25 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Mónica Karina Illan Meza</a></div>
-																<div class="gdlr-session-item-excerpt">Jefa del Centro de Convivencia Familiar de Zapopan.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Edgar Tello Arcos</a></div>
-																<div class="gdlr-session-item-excerpt">Juez Séptimo Familiar del Primer Partido Judicial.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Juez Sergio Vladimir Cabrales Becerra</a></div>
-																<div class="gdlr-session-item-excerpt">Juez de Control Adscrito al Centro de Justicia para la Mujer.</div>
-                                                            </div>
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Paulina Cruz López </a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga en el Consejo de Familia del Poder Judicial del Estado de Hidalgo</div>
+															</div>
                                                         </div>
                                                       </div>
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Mesa de Diálogo:</div>
-                                               <h3 class="gdlr-session-item-title">“Convivencia, Violencia y Protección desde los Juzgados y del CECOFAM de Zapopan del Estado de Jalisco”.</h3>
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Comunicación Asertiva en las Parejas Siendo Padres”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -834,8 +794,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Erika Trinidad Chávez</a></div>
-																<div class="gdlr-session-item-excerpt">Subdirectora de Trabajo Social en el Poder Judicial de la Ciudad de México.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Lizbeth Ramírez Pérez </a></div>
+																<div class="gdlr-session-item-excerpt">Broker, Consultora Patrimonial y de Seguros </div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -844,9 +804,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“La Intervención del Profesional de Trabajo Social en Casos de Violencia Familiarl”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “Las Finanzas en Pareja son Básicas para una Sana Relación”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -861,8 +826,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Erika Paola García Almazán</a></div>
-																<div class="gdlr-session-item-excerpt">Encargada del Centro de Convivencia Familiar Apodaca del Estado de Nuevo León.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Juez Francisco Javier Ponce Barba</a></div>
+																<div class="gdlr-session-item-excerpt">Juzgado Quinto en materia Familiar en el Primer Partido Judicial del Estado de Jalisco</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -871,9 +836,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Intervención Activa durante Convivencias Supervisadas, en Situaciones de Violencia”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “Sistema Interamericano de Derechos Humanos con Perspectiva de Niñez y Adolescencia, Relacionado con la Interferencia Parental”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -887,54 +857,29 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Aracelli del Carmen Abundis</a></div>
-																<div class="gdlr-session-item-excerpt">Supervisora y Asistente en los Juzgados Familiares y de Oralidad en el Estado de Nayarit.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. María de la Luz García Medina</a></div>
-																<div class="gdlr-session-item-excerpt">Psicóloga del Poder Judicial del Estado de Nayarit, Adscrita al Centro Estatal de Convivencia Familiar.</div>
-                                                            </div>
-                                                        </div>
-                                                      </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                             </div>
-                                            <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Violencia Vicaria”.</h3>
-												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
-                                                  </div>
-                                            </div>
-                                          <div class="clear"></div>
-                                        </div>
-										
-										<div class="gdlr-session-item-content-wrapper">
-                                           <div class="gdlr-session-item-divider"></div>
-                                             <div class="gdlr-session-item-content-info">
-                                                <div class="gdlr-session-info">
-												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
-                                                      <div class="session-info session-speaker">
-                                                        <div class="session-speaker-inner">
-                                                            <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Psicóloga Clínica María Fernanda Salth Barba</a></div>
-																<div class="gdlr-session-item-excerpt">Psicóloga en el Centro de Convivencia Familiar en el Poder Judicial de Chiapas.</div>
-															 </div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Tirso Febronio Tejeda Sanabria</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo en el CECOFAM del Poder Judicial de la CDMX</div>
+															</div>
                                                         </div>
                                                       </div>
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Las Emociones como Clave para la Salud Mental”.</h3>
+											    <div class="gdlr-session-item-excerpt">Cápsula:</div>
+                                               <h3 class="gdlr-session-item-title">“Codependencia Emocional en las Relaciones de Pareja”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
                                         </div>
-										
 										
 								<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
@@ -945,8 +890,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Tirso Febronio Tejeda Sanabria</a></div>
-																<div class="gdlr-session-item-excerpt">Psicoterapeuta y Tallerista en la Academia Anamar Orihuela.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Daniela Ferman Castro</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga en el Consejo de Familia del Poder Judicial del Estado de Hidalgo</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -955,9 +900,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Cápsula:</div>
-                                               <h3 class="gdlr-session-item-title">“La Importancia de la Comunicación con un Lenguaje no Violento”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “La Resolución de Conflictos en la Relación de Pareja”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -972,39 +922,39 @@
 									
 									<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
-										<br>
-										
-										<!----------------------- -->
-											
-								<div class="gdlr-session-item-content-wrapper">
-										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/nhAjmV61BfE?si=JGJWzAPJfA2fh4j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-											</iframe>
-										</div>
-                                    </div> 
-											
-									<!----------------------- -->
-											
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
 												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
+                                                            <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Adriana María Isabel Núñez García</a></div>
-																<div class="gdlr-session-item-excerpt">Perita en Materia de Trabajo Social en la Fiscalía de Investigación del Delito de Feminicidio, en la Fiscalía General de Justicia de la CDMX.</div>
-                                                            </div>
+																<div class="session-speaker-list-item"><a>Ponentes: </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Dulce Rosario Serralta Contreras </a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga en el área de Evaluación del CECOFAM en Playa del Carmen</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Diana Laura Acosta Elvira</a></div>
+																<div class="gdlr-session-item-excerpt">Egresada de la Universidad Autónoma de Yucatán del CECOFAM en Playa del Carmen</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Rodolfo Antonio Ávila Muñoz</a></div>
+																<div class="gdlr-session-item-excerpt">Promotor de la Salud en Centros de Integración Juvenil </div>
+															</div>
+                                                        </div>
+                                                      </div>
                                                         </div>
                                                       </div>
                                                     <div class="clear"></div>
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Espiral de la Violencia, Rueda de Poder y Control como Obstáculo en el Camino de las Mujeres Víctimas de Violencia de Género en la Búsqueda y Acceso a la Justicia”.</h3>
+											    <div class="gdlr-session-item-excerpt">Conversatorio:</div>
+                                               <h3 class="gdlr-session-item-title">“Proceso de Duelo y su Impacto en las Familias Judicializadas”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -1019,13 +969,9 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes </a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Luisa Isabel Morales Reynoso </a></div>
-																<div class="gdlr-session-item-excerpt">Jueza en Línea Familiar del Poder Judicial del Estado de México.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Jueza Mtra. Nohemí García Rosales</a></div>
-																<div class="gdlr-session-item-excerpt">Jueza en Línea en Materia de Violencia Familiar y Protección de Niñas, Niños y Adolescentes del Estado de México.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Olga Lidia Sanabria Téllez</a></div>
-																<div class="gdlr-session-item-excerpt">Directora General del Centro de Convivencia Familiar del Poder Judicial del Estado de México.</div>
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Roberto González Toríz</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo Especializado en el Poder Judicial de la CDMX</div>
 															</div>
                                                         </div>
                                                       </div>
@@ -1033,11 +979,16 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-												<div class="gdlr-session-item-excerpt">Conversatorio:</div>
-                                               <h3 class="gdlr-session-item-title">“El Juzgado en Línea Especializado en Violencia Familiar y Protección de Niñas, Niños y Adolescentes y su Vinculación con los Centros de Convivencia Familiar”.</h3>
+												<div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title"> “Investigación Forense de la Violencia de Género”</h3>
 												
                                                  <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
 									 <div class="clear"></div>
@@ -1052,8 +1003,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Itzel Nadchie liihi Bernal de Anda</a></div>
-																<div class="gdlr-session-item-excerpt">Directora de Evaluación e Intervención Psicológica del Poder Judicial de la Ciudad de México.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Emma Janeth García Ortiz</a></div>
+																<div class="gdlr-session-item-excerpt">Encargada del CECOFAM del Poder Judicial del Estado de Nuevo León </div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1061,10 +1012,15 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
-                                               <h3 class="gdlr-session-item-title">“Estadísticas de Violencia en México”.</h3>
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title"> “Una Visión Sistémica de la Violencia de Pareja”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -1079,8 +1035,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Juez Sergio Vladimir Cabrales Becerra</a></div>
-																<div class="gdlr-session-item-excerpt">Juez de Control adscrito al Centro de Justicia para la Mujer en el Supremo Tribunal de Justicia del Estado de Jalisco.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Roberto González Toríz</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo Especializado en el Poder Judicial de la CDMX</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1089,9 +1045,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“La Efectividad de los Binomios de Geolocalización para Combatir la Violencia en Razón de Género”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “Investigación Forense de la Violencia de Género”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1106,8 +1067,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Cristina Peña Pedrazaa</a></div>
-																<div class="gdlr-session-item-excerpt">Perito en Trabajo Social en el Poder Judicial del Estado de Nuevo León.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Fabiola Silva Escalante</a></div>
+																<div class="gdlr-session-item-excerpt">Encargada de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1115,10 +1076,15 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“La Evaluación de Trabajo Social en Situación de Violencia de Familiar”.</h3>
+											    <div class="gdlr-session-item-excerpt">Cápsula:</div>
+                                               <h3 class="gdlr-session-item-title">Comunicación Efectiva y su Importancia en la Resolución de Conflictos de Pareja”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1132,8 +1098,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Alejandra Maa Rosas</a></div>
-																<div class="gdlr-session-item-excerpt">Terapeuta en la Clínica de la Ansiedad.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Jueza Alma Alejandra Murillo Gallardo</a></div>
+																<div class="gdlr-session-item-excerpt">Juzgado Décimo Familiar del Primer Partido Judicial del Estado de Jalisco, con sede en Zapopan, Jalisco</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1142,9 +1108,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Normalización de la Violencia”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “Marco Jurídico Sobre la Interferencia Parental”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1157,9 +1128,11 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Ileska Karelia Vega Trapero</a></div>
-																<div class="gdlr-session-item-excerpt">Psicóloga del Centro de Convivencia Familiar Supervisada, del Poder Judicial del Estado de Sinaloa.</div>
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Carla Jazmín Zetina Carrillo </a></div>
+																<div class="gdlr-session-item-excerpt">Perita en el Poder Judicial del Estado de Quintana Roo</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Alán Joseph Blancas Chay</a></div>
+																<div class="gdlr-session-item-excerpt">Perito en Criminología y Psicología Forense. Participación del Poder Judicial del Estado de Quintana Roo</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1167,10 +1140,15 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Convivencias “Forzadas” una Forma de Violencia en los Conflictos jurídicofamiliares”.</h3>
+											    <div class="gdlr-session-item-excerpt">Conversatorio:</div>
+                                               <h3 class="gdlr-session-item-title">“Erradicación del Patriarcado en la Educación Infantil”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1184,8 +1162,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Fernando López Munguía</a></div>
-																<div class="gdlr-session-item-excerpt">Jefe de Psiquiatría Legal del Hospital Psiquiátrico Fray Bernardino Álvarez.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Marlene Ramírez García</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga Especializada en el Poder Judicial de la CDMX</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1194,9 +1172,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Violencia: Perspectiva Psiquiátrica”.</h3>
+                                               <h3 class="gdlr-session-item-title">“Creencias del Amor Romántico y las Dificultades de Pareja”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1211,8 +1194,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>MIV. Annel Rosado Lara</a></div>
-																<div class="gdlr-session-item-excerpt">Jefa del Departamento de Atención a la Violencia de Género del Consejo de la Judicatura del Poder Judicial del Estado de Yucatán.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Cristina Peña Pedraza </a></div>
+																<div class="gdlr-session-item-excerpt">Perita en Trabajo Social adscrita a CECOFAM del Estado de Nuevo León</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1221,9 +1204,14 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title">“Actuación Judicial con Perspectiva de Género”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “La Relación de Pareja Vista Desde Una Perspectiva Social”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1238,8 +1226,8 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Joani Lizbeth Ortíz Romero</a></div>
-																<div class="gdlr-session-item-excerpt">Perita en materia de Trabajo Social en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Esneidy Hernández Muñoz</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga en el Consejo de Familia del Poder Judicial del Estado de Hidalgo</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1247,15 +1235,116 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
-                                               <h3 class="gdlr-session-item-title">“Violencia Económica, una Perspectiva desde Trabajo Social”.</h3>
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“TLP en las Relaciones de Pareja”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
-                            </div>					
-						
+                            </div>		
+									
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Claudia Cecilia Jiménez Ramos</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Cápsula:</div>
+                                               <h3 class="gdlr-session-item-title">“Gosting, desapareciendo en un click”</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>	
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Beatríz Garavito Gorostieta</a></div>
+																<div class="gdlr-session-item-excerpt">Perita en Psicología en el Tribunal Superior de Justicia del Estado de Morelos </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title">“Las Relaciones de Pareja en la Época Actual”</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>	
+									
+						<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Miriam Alejandra Ochoa Valdivia </a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga Encargada de la Unidad de Justicia Restaurativa del Tribunal Superior de Justicia del. Estado de Nayarit </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title"> “Los Cuatro Pilares de la Relación de Pareja”</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>	
+									
+									
 					<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
                                              <div class="gdlr-session-item-content-info">
@@ -1264,11 +1353,11 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Alejandra Nieves Ramírez</a></div>
-																<div class="gdlr-session-item-excerpt">Perita en Psicología en el Poder Judicial del Estado de Morelos.</div>
-																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Jesús Salvador López Gutiérrez</a></div>
-																<div class="gdlr-session-item-excerpt">Dictaminador Pericial en Materia de Psicología en el Poder Judicial del Estado de Morelos.</div>
+																<div class="session-speaker-list-item"><a>Ponentes:</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Cindy Yareli Santana Escamilla</a></div>
+																<div class="gdlr-session-item-excerpt">Psicóloga en el CECOFAM en Chetumal, Quintana Roo</div>
+																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Brianda Joselyn Palma Cahuich</a></div>
+																<div class="gdlr-session-item-excerpt">Adscrita al Poder Judicial del Estado de Quintana Roo</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1277,13 +1366,54 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conversatorio:</div>
-                                               <h3 class="gdlr-session-item-title">“Alcances y Limitaciones en las Convivencias Familiares Supervisadas”.</h3>
+                                               <h3 class="gdlr-session-item-title"> “El Valor de la Coparentalidad para el Bienestar de los Hijos”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
-                            </div>					
+                            </div>	
+									
+									
+				<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Karla Jazmín Cetina Carrillo </a></div>
+																<div class="gdlr-session-item-excerpt">Perita en el Poder Judicial del Estado de Quintana Roo </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title"> “Amor Romántico en las Relaciones de Pareja”</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                            </div>	
+									
+									
+									
 				</div>		
  <!-- termina dia 3-->
                                    
@@ -1291,25 +1421,13 @@
 			<div class="gdlr-session-item-tab-content gdlr-tab-4">		
 								<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
-									
-									<br>
-									<!----------------------- -->
-											
-							<div class="gdlr-session-item-content-wrapper">
-										<div class="col-md-12 col-sm-12 col-xs-12">
-											<iframe width="1024" height="576" src="https://www.youtube.com/embed/2FmgDe5ZTGw?si=Z20zFc19ciGV6-7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-											</iframe>
-										</div>
-                                    </div> 
-											
-									<!----------------------- -->
                                              <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
                                                  <!--<div class="session-info session-time"><i class="fa fa-clock-o"></i>09:00 – 09:40 hrs       </div>-->
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+																<div class="session-speaker-list-item"><a>Ponentes:</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Ignacio Bautista Santamaria </a></div>
 																<div class="gdlr-session-item-excerpt">Coordinación Parental en el CECOFAM del Poder Judicial de la Ciudad de México.</div>
 																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Luz Angélica Brisset Jiménez San Pedro </a></div>
@@ -1326,7 +1444,12 @@
 											<div class="gdlr-session-item-excerpt">Conversatorio</div>
                                                <h3 class="gdlr-session-item-title">El Impacto del Establecimiento de las Relaciones Parentales como Compañeros de Crianza en Padres Divorciados.</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/22pjZqxMXt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                           <div class="clear"></div>
@@ -1342,7 +1465,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Eréndira Toledo Cortés</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Eréndira Toledo Cortés</a></div>
 																<div class="gdlr-session-item-excerpt">Coordinadora de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco.</div>
                                                             </div>
                                                         </div>
@@ -1354,7 +1477,12 @@
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                <h3 class="gdlr-session-item-title">“Violencia como Factor Contaminante”.</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1381,7 +1509,12 @@
 											    <div class="gdlr-session-item-excerpt">Cápsula Informativa:</div>
                                                <h3 class="gdlr-session-item-title">“Valoración en Psicología Forense por Medios Electrónicos”.</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1407,7 +1540,12 @@
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                <h3 class="gdlr-session-item-title">“Violencia Familiar Desde la Perspectiva Social”.</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1433,7 +1571,12 @@
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                <h3 class="gdlr-session-item-title">“Las Bases Fisiológicas de la Agresión y la Violencia”.</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1459,7 +1602,12 @@
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                <h3 class="gdlr-session-item-title">“El Trabajo con Hombres para el Alcance de la Igualdad”.</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1485,7 +1633,12 @@
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                <h3 class="gdlr-session-item-title">“Consecuencias Psicológicas de las Niñas, Niños y Adolescentes, ante el Conflicto Legal del Divorcio de sus Padres”.</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1499,7 +1652,7 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+																<div class="session-speaker-list-item"><a>Ponentes:</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Maribel Campos Delgado</a></div>
 																<div class="gdlr-session-item-excerpt">Perita en la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.</div>
 																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Angélica Mena Ramírez</a></div>
@@ -1514,7 +1667,12 @@
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                <h3 class="gdlr-session-item-title">“El lado invisible de la Violencia”.</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                      
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1528,7 +1686,7 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponentes</a></div>
+																<div class="session-speaker-list-item"><a>Ponentes:</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lic. Emma Janeth García Ortiz</a></div>
 																<div class="gdlr-session-item-excerpt">Encargada de la Unidad de Convivencia Contry del Centro de Convivencia Familiar del Poder Judicial del Estado de Nuevo León.</div>
 															</div>
@@ -1541,7 +1699,12 @@
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                <h3 class="gdlr-session-item-title">“Repercusiones Psicológicas en Niñas, Niños y Adolescentes Expuestos a Situaciones de Violencia”.</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
-                                                     
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
                                                   </div>
                                             </div>
                                       <div class="clear"></div>
@@ -1602,24 +1765,16 @@
                             <div class="speaker-item-wrapper" style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class="flexslider" data-type="carousel" data-nav-container="speaker-item-wrapper" data-columns="4">
+                                        <div class="flexslider" data-type="carousel" data-nav-container="speaker-item-wrapper" data-columns="4"> 
                                             <ul class="slides">
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/Olga_Veronica_Ochoa.jpg" alt width="400" height="400"></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/2024/Claudia_Ibet_Navarrete_Mendoza_2024.jpg" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Olga Verónica Ochoa</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Claudia Ibet Navarrete Mendoza </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-50>
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                 <h3 style="text-align: justify">
-                                                                    Lic. En Psicología.
-Maestría en Educación Inclusiva.<br>
-Especialidad en Evaluación Neuropsicológica Infantil.<br>
-Más de 14 años trabajando en Orientación familiar y educativa.<br>
-Coordinadora Psicopedagógico en diferentes instituciones educativas del área privada.<br>
-Docente del Programa de Educación Socioemocional a adolescentes.<br>
-Psicóloga de los Centros de Convivencia Familiar del Poder Judicial del Estado de Baja California (CECOFAM).
-<br>
-Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social de la Ciudad de México 2019. Categoría: “Buenas prácticas de intervención social con personal adultas mayores”.<br>
+                                                                    La Mtra. Claudia Ibet Navarrete Mendoza es Psicóloga y Directora General de los Centros de Convivencia Familiar Supervisada (CECOFAM) en el estado de Guerrero. Es licenciada en Psicología por la Universidad Autónoma de Guerrero y cuenta con una maestría en Psicología Clínica con enfoque humanista. Se ha especializado en Psicoterapia Gestalt y posee diplomados en Psicología Jurídica y Forense, Coordinación de Parentalidad, Métodos Alternativos de Solución de Conflictos y Derecho de Familia. Su carrera incluye el puesto de Subdirectora en el Instituto para el Mejoramiento Judicial, además de haber fundado el primer CECOFAM en Acapulco.<br>
 
                                                                 </h3>
                                                             </div>
@@ -1628,51 +1783,29 @@ Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social d
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Annel_Rosado_Lara.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> MIV. Annel Rosado Lara</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-73>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/2024/Dulce_Anyra_Cota_Salazar.jpg" alt width="400" height="400"></div>
+                                                    <div class="gdlr-speaker-item-content">
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. Dulce Anyra Cota Salazar</h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-51>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-Estudió la Licenciatura en Derecho en el “Centro de Estudios Superiores CTM Justo Sierra O’Reilly”. <br>
-Se especializó en atención a personas en situación de violencia por razón de género, al realizar la maestría en Intervención de Violencia en el “Centro de Estudios Superiores de Sexualidad”.  <br>
-También se formó como mediadora, con el “Programa Integral de Formadores de Mediadores con Sede Judicial” por el Instituto de Mediación de México, S.C”. 
-Realizó los estudios “Sistema Integral de justicia para Adolescentes” impartido por el Instituto Nacional de Ciencias Penales” (INACIPE).
-Ha ampliado sus conocimientos en atención a personas víctimas de discriminación y violencia a través de diversos seminarios, talleres, cursos y diplomados relativos al tema de la atención y argumentación para la protección y garantía de Derechos Humanos de personas víctimas en la administración de justicia.
-Cómo actividad de investigación en el año de 2011 a julio de 2012 fue enlace del Poder Judicial para llevar a cabo un diagnóstico sobre acceso de las mujeres a la justicia que realizó la Comisión Nacional de Tribunales Superiores de Justicia (CONATRIB), la Suprema Corte de Justicia de la Nación (SCJN) y la Asociación Mexicana de Impartidores de Justicia (AMIJ). <br>
-Asimismo, ha colaborado en el diseño de programas, cursos, talleres de capacitación en Derechos Humanos de las Mujeres, Perspectiva de género, Argumentación Jurídica y atención a mujeres víctimas de violencia de género, en instituciones del Estado como, por ejemplo: el Instituto para la Igualdad entre Mujeres y Hombres (IPIEMH), la Fiscalía General del Estado (FGE), el Instituto de la Mujer (IM) y en los poderes Judiciales de Quintana Roo, Campeche y Yucatán. 
-En materia de difusión ha participado con diversas asociaciones de la sociedad civil, impartiendo, cursos, talleres, conferencias, dirigidos a la ciudadanía en general entre otras actividades. <br>
-De 2018 a 2021 se desempeñó como Consejera Consultiva de la Comisión Estatal de los Derechos Humanos del estado de Yucatán y formó parte del Comité de seguimiento de la Solicitud de Alerta de Género (SAVG), como Consejera de dicha institución.
-Desde 2012 realiza actividades intervención de personas en situación de violencia por razón de género en el Poder Judicial del estado de Yucatán, actualmente se desempeña como docente de la Escuela Judicial del Poder Judicial y es Jefa del Departamento de Atención a la Violencia de Género del Consejo de la Judicatura del Poder Judicial del estado de Yucatán; participa en el Consejo de Violencia del Estado y realiza actividades de vinculación entre el Poder Judicial e Instituciones del Poder Ejecutivo para difundir contenido de Derechos Humanos de las Mujeres y coordinar acciones de prevención, atención y sanción con instituciones del Estado para Prevenir, Atender, Sancionar y Erradicar la violencia por razón de género. 
- <br>
-																</h3>
+                                                                <h3 style=text-align: justify>
+                                                                  La Dra. Dulce Anyra Cota Salazar, originaria de La Paz, B.C.S., es una destacada psicoterapeuta infantil y grupal, así como investigadora. Como Directora del Centro de Convivencia Familiar Supervisada (CECOFAM) en La Paz, lidera equipos que atienden familias en conflictos judiciales y coordina a profesionales que trabajan en la rehabilitación e inclusión social de niños y adolescentes con trastornos del desarrollo. Con más de 17 años de experiencia como terapeuta A.B.A. y 18 años de docencia universitaria en el noroeste de México, también se especializa en evaluación psicométrica. Es autora del libro La lectura en México, su método y su enseñanza, y ha escrito diversos artículos científicos y cuentos infantiles. Además, es fundadora y voluntaria en la Fundación Ayuda Niños La Paz, dedicada al apoyo de comunidades vulnerables.<br>
+
+
+                                                                </h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-73 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                     <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-51 data-rel="fancybox" data-fancybox-type="inline">Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/Rocio_Estela_Lopez_Orozco.jpeg" alt width="400" height="400"></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/2024/Edgar_Antonio_Cabrera_Meneses.jpg" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. Rocio Estela López Orozco</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Edgar Antonio Cabrera Meneses </h3>
                                                         <div class="gdlr-lightbox-form" id="gdlr-form-52">
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                <h3 style="text-align: justify">
-                                                                    LICENCIATURA EN PSICOLOGIA POR LA UNAM (Ced: 2792046)<br>
-ENTRENAMIENTO ESPECIALIZADO EN AUTOPSIA PSICOLOGICA POR EL INSTITUTO CUBANO DE ANTROPOLOGIA. (Certificado No. 329)<br>
-MAESTRIA EN PREVENCION DEL DELITO Y SISTEMAS PENITENCIARIOS POR EL IPIP.  (Céd: 4333791)<br>
-DOCTORADO EN CIENCIAS PENALES Y POLITICA CRIMINAL POR EL INACIPE. CON MENCION HONORIFICA. (Céd. 08711976)<br>
-ESPECIALIDAD EN PSICOLOGIA FORENSE POR EL INSTITUTO DE CIENCIAS JURIDICAS DE NAYARIT (Diploma)<br>
-ESPECIALIZACIÓN EN GRAFOLOGÍA Y PERICIA CALIGRÁFICA. FUNIBER (cursando actualmente)<br>
-EXFUNCIONARIA DEL SISTEMA PENITENCIARIO (Coordinadora de técnicos penitenciarios, Jefa del C.O.C. de la Penitenciaría de Santa Martha Varonil, Jefa de Reclutamiento y selección de personal, Capacitadora profesional en el Instituto de Capacitación Penitenciaria)<br>
-EXFUNCIONARIA DEL SISTEMA DE JUSTICIA PARA ADOLESCENTES (Coordinadora de tratamiento en el Centro de Atención Especial Quiróz Cuarón, Subdirectora del Centro varonil de San Fernando, Tlalpan, Directora del área de prevención)<br>
-ASESORA PENITENCIARIA DEL GRUPO PRECOOR (Empresa dedicada a la elaboración de diagnósticos prospectivos del funcionamiento de prisiones e instituciones para menores infractores a nivel nacional)<br>
-JURADO INTERNACIONAL DEL MILLENIUM PROJECT DE LA ORGANIZACIÓN DE NACIONES UNIDAS EN CRIMEN TRANSNACIONAL ORGANIZADO.<br>
-EXPOSITORA EN FOROS NACIONALES E INTERNACIONALES<br>
-AUTORA DEL LIBRO: PSICOLOGIA FORENSE: DE LA TEORIA A LA PRACTICA, EDITORIAL VESALIUS, MEXICO 2020 (DIVERSAS PUBLICACIONES NACIONALES E INTERNACIONALES).<br>
-ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER JUDICIAL DE LA CDMX.
-<br>
+                                                                    Edgar Antonio Cabrera Meneses es Licenciado en Psicología por la Universidad Autónoma de Querétaro y en Derecho por la Universidad Mondragón México, con una Especialidad en Administración de Justicia Familiar por el Instituto de Especialización Judicial del Poder Judicial del Estado de Querétaro. Cuenta con un Diplomado en Psicología Jurídica y Forense, es aspirante a la Maestría en Psicología Clínica por la Universidad Autónoma de Querétaro y actualmente cursa la Maestría en Derecho Constitucional y Amparo en la Universidad Tecnológica de México. Desempeña el cargo de Secretario Técnico y suplente de la Secretaría Ejecutiva de la Red Nacional de Centros de Convivencia Familiar Supervisada de la CONATRIB y es coautor del artículo “La Psicología Jurídica en el Tribunal Superior de Justicia de Querétaro” en la Revista Crónica Judicial. Actualmente, es Titular de la Dirección de Psicología y del Centro de Convivencia Familiar Supervisada de Querétaro (CECOFAMQRO) en el Poder Judicial.<br>
 
 
                                                                </h3>
@@ -1682,13 +1815,14 @@ ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER 
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/Oscar_Ricardo_Galicia_Costilla.jpg" alt width="400" height="400"></div>
+                                                    <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtro_Roberto_Gonzalez_Toriz.jpeg.jpg" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Oscar Ricardo Galicia Castillo</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Roberto González Toríz </h3>
                                                         <div class="gdlr-lightbox-form" id="gdlr-form-5">
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                  <h3 style="text-align: justify">
-                                                                    Oscar Galicia Castillo estudió la Licenciatura en psicología en la Facultad de psicología de la UNAM, realizó su tesis de licenciatura en el Laboratorio de Neurofarmacología del Dr. Simón Brailowsky Klipstein donde se graduó con mención honorífica en 1992 con la tesis: “Efecto de la infusión crónica de GABA en el cuerpo estriado de la rata, en una tarea de alternancia espacial”.<br> Desarrollando en el proceso habilidades en técnicas de registro electrofisiológico y análisis de señales eléctricas que seguiría utilizando durante toda su formación de postgrado. Posteriormente realizó estudios de Maestría en Investigación Biomédica en el Departamento de Neurociencias del Instituto de Fisiología Celular de la UNAM, donde no optó por el título para continuar sus estudios de Doctorado en Investigación Biomédica en el Departamento de Fisiología de la Facultad de Medicina de la UNAM en el Laboratorio de Sueño, Neuroinfecciones y canabinoides del Dr. Oscar Prospéro García, donde se gradúa en el 2002 con la tésis “Efecto de la inyección de la proteína VIHgp120 sobre el potencial P300 en la rata”. Donde genera un modelo experimental para el registro de potenciales evocados de latencia larga en la rata. <br> En agosto del 2002 ingresó al Departamento de Psicología de la Universidad Iberoamericana como Jefe del Área de Procesos Básicos y posteriormente como Jefe del recien creado laboratorio de Neurociencias. En este mismo departamento ha sido Coordinador del Postgrado del Departamento de Psicología y Coordinador de la Licenciatura en Psicología.<br> Actualmente se desempeña como Jefe del Area de Procesos Básicos y Jefe de los laboratorios de Neurociencias y es miembro del Sistema Nacional de Investigadores del Conahcyt.<br> Sus líneas de investigación principales son la Fisiología de la conducta emotiva particularmente la agresión, la violencia y la atracción. Adicionalmente estudia los efectos fisiologicos y conductuales de los canabinodes.<br>
+                                                                   El Mtro. Roberto González Toríz es un reconocido profesional en psicología y criminología con una amplia trayectoria en el ámbito forense. Licenciado en Psicología por la Universidad Nacional Autónoma de México (UNAM), cuenta con una maestría en Criminología por el Instituto de Formación Profesional de la Fiscalía General de Justicia de la CDMX y una maestría en Psicología Criminal y Forense por el Instituto Ciencia Aplicada, además de una especialidad en Psicología Forense en el Instituto de Ciencias Jurídicas de Nayarit.<br>
+Ha obtenido certificaciones internacionales en Perfilación Criminal y Victimología Forense por la Academy of Behavioral Profiling y The Forensic Criminology Institute, y se ha formado en temas como la Psicología Forense en contextos familiares, penales y civiles. Con experiencia como perito en psicología en la Fiscalía General de Justicia de la CDMX, también es docente y capacitador en ciencias forenses en varias instituciones mexicanas. Es coautor del libro Psicología Forense en Materia Familiar: Guía para la elaboración del dictamen pericial, publicado por el Poder Judicial de la CDMX y Manual Moderno. Actualmente, ejerce como Psicólogo Especializado en la Subdirección de Evaluación Psicológica del Poder Judicial de la Ciudad de México.<br>
 
                                                                 </h3>
                                                             </div>
@@ -1715,14 +1849,15 @@ ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Pedro_Daniel_Martinez_Sierra.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lic_Lizbeth_Ramirez_Jimenez.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Pedro Daniel Martínez Sierra</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">La Lic. Lizbeth Ramírez Jiménez </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Doctor en Pedagogía por la Universidad Nacional Autónoma de México, graduado con mención honorifica. Maestro en Trabajo Social por la UNAM, acreedor a la medalla de posgrado “Alfonso Caso” versión 2012. Licenciado en Trabajo Social por de la UNAM, titulado por totalidad de créditos y alto rendimiento académico.<br> Técnico en Trabajo Social y acreedor a la Medalla al “Mérito Estudiantil versión 2003”. Docente en universidades públicas y privadas de nivel posgrado, licenciatura y bachillerato.<br> Conferencista y ponente en congresos nacionales e internacionales de Trabajo Social y Educación. Profesor invitado a la cátedra de “Bases teóricas de Trabajo Social” en la Facultad de Trabajo Social de la Universidad Complutense de Madrid, España.<br> Ha publicado diferentes artículos y capítulos de investigación y participado como dictaminador de libros, artículos y ponencias nacionales e internacionales.<br> Forma parte del Sistema Nacional de Investigadores como Investigador Nacional Nivel I.<br> Actualmente se desempeña como Profesor de Carrera Asociado “C” de Tiempo Completo en la Escuela Nacional de Trabajo Social de la UNAM, bajo el eje temático de grupos de atención prioritaria, específicamente en la línea de investigación social de niñas, niños y adolescentes.
-
+                                                                   La Lic. Lizbeth Ramírez Jiménez es una destacada profesional en seguros y consultoría patrimonial con más de 12 años de experiencia. Es licenciada en Ciencias de la Comunicación, con diplomados en Análisis Económico y en el Sistema Financiero Mexicano. Está certificada por la SHCP y la CNSF en riesgos especiales y cuenta con amplia experiencia en medios de comunicación, seguros y riesgos empresariales.<br> 
+Ha trabajado como agente de seguros en ING México, Subdirectora Asociada en AXA Seguros, y es Socio Comercial de AARCO Agente de Seguros y Fianzas. Actualmente, dirige su propia agencia como Broker Empresaria, ayudando a individuos y empresas a proteger y multiplicar su patrimonio mediante consultoría financiera. Además, ejerce como mentora en finanzas personales y de negocios, promoviendo la cultura financiera. Ha recibido múltiples reconocimientos, entre ellos el 1er lugar como Gerente de Formación en AXA Seguros y ha sido Convencionista Internacional de Allianz en París (2015) y Londres (2018). Actualmente, es Vicepresidenta Empresarial de la Asociación Mexicana de Mujeres Jefas de Empresa (AMMJE) para el periodo 2024-2026.
+<br> 
 
                                                                 </h3>
                                                             </div>
@@ -1732,13 +1867,15 @@ ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER 
                                                 </li>
 												
                                               <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Angelica_Mena_Ramirez.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Dra_Rosa_Elena_Ornelas_Mejorada.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Angélica Mena Ramírez</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. Rosa Elena Ornelas Mejorada </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-7>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciada en Trabajo Social por la Universidad Nacional Autónoma de México (UNAM), se encuentra como pasante de la especialidad en modelos de intervención con jóvenes y mediadora energética. <br>Ha colaborado en proyectos específicos de carácter social a través de la UNAM con diferentes instituciones de sector público y privado (Instituto del Fondo Nacional de la Vivienda para los Trabajadores, Comisión Federal de Electricidad, Instituto Mexicano del Seguro Social, Secretaría de Desarrollo Social, Ingenieros Civiles Asociados, Fundación Carlos Slim, entre otras) con la finalidad de intervenir en la elaboración, diseño, coordinación, aplicación y evaluación. Ha impartido clases en el Centro de Educación Continua de la Escuela Nacional de Trabajo Social (CEC) sobre “Diseño de proyectos comunitarios” y S.O.S Manejo terapéutico en abuso sexual; cuenta con diez años de experiencia en trabajo con comunidades y grupos. <br>Actualmente se desempeña como Perita adscrita a la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México. <br>
+                                                                    La Dra. Rosa Elena Ornelas Mejorada es una profesional destacada en psicología y salud mental con una sólida formación académica. Es licenciada en Psicología, maestra en Medicina Conductual y doctora en Psicología de la Salud, títulos obtenidos en la Universidad Nacional Autónoma de México (UNAM). <br>
+Desde 2004, se desempeña como profesora en el Centro Interdisciplinario de Ciencias de la Salud (CICS) del Instituto Politécnico Nacional (IPN) en la carrera de Psicología. Además, colaboró en el programa de Maestría en Intervención Psicológica del CICS-UST del IPN como docente, tutora y sinodal de 2016 a 2018. Fue Jefa del Departamento de Investigación del CICS-UST del IPN de 2013 a 2017, liderando proyectos en odontología, optometría y psicología. Asimismo, participa como sinodal externo en los programas de Maestría en Medicina Conductual y Doctorado en Psicología de la UNAM. Desde el año 2000, ha trabajado como psicoterapeuta en instituciones públicas y en el ámbito privado, especializada en terapia cognitivo-conductual.
+ <br>
 
                                                                 </h3>
                                                             </div>
@@ -1748,20 +1885,17 @@ ACTUALMENTE SE DESEMPEÑA COMO SUBDIRECTORA DE EVALUACION PSICOLOGICA DEL PODER 
                                                 </li>
 												
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Tirso_Febronio_Tejeda_Sanabria.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Diana_Lourdes_Melendez_Rojas.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Tirso Febronio Tejeda Sanabria</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Diana Lourdes Meléndez Rojas</h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-8>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Experiencia profesional. <br>  Egresado de la Universidad Nacional Autónoma de México, Facultad de Estudios Superiores Zaragoza, cómo Licenciado en Psicología y diplomado en Docencia Universitaria, con Master en MUSICOTERAPIA HUMANISTA, por el Instituto Mexicano de Musicoterapia Humanista,  más de 10 años de experiencia facilitando procesos emocionales y de crecimiento personal, individual y grupal, en diferentes espacios profesionales.<br> 
-																	He trabajado como docente y tallerista en distintos programas del área educativa. Incluyendo la co-creación e impartición del diplomado de “Musicoterapia Integral para la infancia y la adolescencia” en el Centro de Estudios Superiores, dentro del Hospital Nacional siglo XXI
-Trabajé como co-facilitador y docente dentro del Instituto Mexicano de Musicoterapia Humanista, en la formación del Master en Musicoterapia Humanista durante 4 años
-Trabajando actualmente como parte del equipo de psicoterapeutas y tallerista en Academia Anamar Orihuela, donde atiendo consultas individuales de terapia y acompañando grupos de crecimiento personal.<br> 
-Trabajé  en el Tribunal Superior de Justicia de la Ciudad de México, EN  sesiones de apoyo psicológico individual, impartiendo talleres de desarrollo personal y cómo autor de distintos artículos de la Gaceta desarrollo humano, como parte del Programa de Apoyo Psicológico y Emocional. Actualmente laborando dentro de esta misma institución, dentro del Centro de Convivencia Familiar, en el  área de talleres.<br>
-Desarrollo personal.<br>Desde hace más de 20 años la salud mental ha sido una búsqueda personal en mi proceso de vida, para mi es una búsqueda que nace desde la percepción de mis propios conflictos, asuntos pendientes y crisis emocionales, la vida me ha enseñado sobre la importancia de recibir apoyo.<br>
-En mi trabajo con la música, he aprendido que es un potenciador natural de nuestros estados emocionales, hay una sabiduría en los instrumentos y en las piezas musicales que proporcionan la contención, expresión, apoyo y consciencia.<br>
-Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y seguro, en el que los consultantes pueden explorar sus conflictos, creencias, corporalidad, emociones e imágenes internas. Creo en el desarrollo de una nueva humanidad, más justa, respetuosa, amorosa y consciente de sí misma.<br>
+                                                                   La Mtra. Diana Lourdes Meléndez Rojas, Dra. Honoris Causa con reconocimiento del CONAHCTyT (No. 2300180), es una destacada especialista en trabajo social, sexualidad y equidad de género. Posee una maestría en Trabajo Social por la Escuela Nacional de Trabajo Social (ENTS) de la UNAM y otra en Sexualidad y Equidad de Género por la Universidad Mexicana de Estudios de Posgrado.<br>
+Con una sólida formación académica, es especialista en modelos de intervención en trabajo social con jóvenes, violencia familiar y temas de sexualidad. Es licenciada en Trabajo Social por la Universidad de Guadalajara y cuenta con una certificación en competencias laborales otorgada por la SEP/CONOCER.<br>
+La Mtra. Meléndez ha cursado diplomados en diversas áreas, como educación de la sexualidad, VIH/SIDA, terapia familiar y temas de derechos humanos y políticas públicas. Es docente, conferencista y tallerista en foros nacionales e internacionales.
+Coautora de los libros Estudios Críticos de Discapacidad y Familia o familias en México, editados por la ENTS/UNAM, es reconocida por su compromiso en temas de diversidad, inclusión y justicia social.
+<br>
 
 
 
@@ -1774,13 +1908,15 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
 												
 												
 											<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Erika_Trinidad_Chavez.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Maria_Andrea_Coronado_Angulo.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Erika Trinidad Chávez</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. María Andrea Coronado Angulo </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-9>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                <h3 style="text-align: justify">
-                                                                    Licenciada en Trabajo Social por la Escuela Nacional de Trabajo Social, actualmente Maestrante en Trabajo Social; diplomada en peritaje en materia de Trabajo Social, teoría y práctica docente y mediación familiar, todos por la Universidad Nacional Autónoma de México.<br>  Es Consejera en Trabajo Social del Grupo Hibrys “Adultos Mayores Emprendedores”, docente en la Escuela Nacional de Trabajo Social de la UNAM y en el Colegio de Trabajadores Sociales de México A.C., ha fungido como perito en Trabajo Social de manera oficial y particular, actualmente se desempeña como Subdirectora de Trabajo Social del Tribunal Superior de Justicia de la Ciudad de México.<br>  Fue premiada con el Reconocimiento al Ejercicio Profesional del Trabajo Social de la Ciudad de México 2019. Categoría: Buenas prácticas de intervención social con personal adultas mayores. <br> 
+                                                                   La Mtra. María Andrea Coronado Angulo es una profesional de la psicología con amplia experiencia en orientación y psicoterapia. Es maestra en Orientación Psicológica por la Universidad Iberoamericana y licenciada en Psicología por la UNAM. Fue presidenta de la Asociación Mexicana de Orientación Psicológica y Psicoterapia (AMOPP) de 2013 a 2015 y miembro activo desde 2010.<br> 
+Desde 2005, ofrece consulta privada a adultos, adultos mayores y parejas, y cuenta con certificación como psicoterapeuta por la OPCA. Ha recibido entrenamiento en diversas modalidades de psicoterapia, lo que respalda su práctica profesional; y, desde 2016, imparte cursos y talleres de salud mental en instituciones públicas y privadas. Entre sus recientes colaboraciones destacan Assa Abloy, Yves Rocher, The Churchill School, Grupo Salinas, Estafeta y General Electric. Es coautora del Libro de las Emociones Extremas, publicado por la Universidad Iberoamericana.
+<br> 
 
                                                                </h3>
                                                             </div>
@@ -1813,13 +1949,15 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Joani_Lizbeth_Ortiz_Romero.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Marlen_Ramirez_Garcia.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Joani Lizbeth Ortiz Romero</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Marlen Ramírez García </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-25>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciada en Trabajo Social por la Universidad Nacional Autónoma de México, con experiencia profesional en el ámbito de peritaje social; desde el 2018 se encuentra adscrita a la Subdirección de Trabajo Social de la Coordinación de Intervención Especializada para Apoyo Judicial del Tribunal Superior de Justicia de la Ciudad de México, con el nombramiento de Perita en Trabajo Social, espacio donde ha recibido capacitación, a través, del diplomado, “Peritaje en Materia de Trabajo Social”, por la Universidad Nacional Autónoma de México, Escuela Nacional de Trabajo Social, Centro de Educación Continua, 2019, “Mediación Familiar”.<br>  Tribunal Superior de Justicia 2018, Consejo de la Judicatura, Centro de Justicia Alternativa del Tribunal Superior, y Coordinación de Intervención Especializada para el Apoyo Judicial, todos de la Ciudad de México, “Investigación Social y la Construcción del Informe Pericial”, Academia Forense Chile y taller de contrainterrogatorio avanzado para peritos. <br> 
+                                                                    La Mtra. Marlen Ramírez García es una psicóloga especializada en intervención clínica y psicología forense, con una destacada trayectoria académica y profesional. Cuenta con una maestría en Psicología por la UNAM y una licenciatura en Psicología por la Universidad del Valle de México, complementada con diplomados en Psicología Psicosomática y Sexualidad Humana. <br> 
+Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterapeuta, realizando intervenciones grupales para padres en procesos legales familiares. Anteriormente, de 2010 a 2015, se desempeñó como perito en evaluación psicológica en temas de custodia, violencia y abuso. Además, es conferencista en temas de salud mental y justicia, impartiendo charlas y videoconferencias para el Poder Judicial de la CDMX y la CONATRIB, enfocadas en el impacto emocional de la separación y el duelo infantil. También es autora de artículos en psicología forense y ha sido docente en el UNITEC; además cuenta con 15 años de experiencia en consulta privada, su práctica se enfoca en terapia familiar y mediación.
+ <br> 
 																</h3>
                                                             </div>
                                                         </div>
@@ -1827,13 +1965,13 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maribel_Campos_Delgado.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Sofia_Flores_Alonso.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Maribel Campos Delgado</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Sofía Flores Alonso </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-26>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                  Licenciada en Trabajo Social por la Universidad Nacional Autónoma de México (UNAM); se encuentra como pasante de la especialidad en modelos de intervención con adultos mayores. Ha colaborado en proyectos con la UNAM para el diseño, análisis y resultados de la evaluación de programas sociales dentro de la Alcaldía Coyoacán; cuenta con conocimiento y experiencia en investigación de campo, así como en el análisis y sistematización de información. Posee formación como perito en Trabajo Social Forense.<br> Ha colaborado como perita oficial en el Poder Judicial del Estado de México y actualmente se desempeña como Perita adscrita a la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México.<br>
+                                                                  Sofía Flores Alonso es Psicóloga clínica y social, con licenciatura por la Universidad de las Américas, A.C., y maestría en Terapia Familiar en la misma institución. Recién concluyó su Doctorado en Ciencias para la Familia. Su formación incluye una especialización en Psicología Positiva por la Universidad Iberoamericana y en Terapias Narrativas y Posmodernas en Grupo Campos Elíseos, además de una especialidad en dislexia por Davis Dyslexia Association International. Con 22 años de experiencia docente en bachillerato y posgrado en instituciones como el Colegio Internacional de México, la Universidad Anáhuac Sur y TecMilenio, también se dedica a la psicoterapia infantil, adolescente y familiar, y ha impartido talleres sobre bienestar y psicología positiva en diversas organizaciones.<br>
 
                                                                 </h3>
                                                             </div>
@@ -1842,13 +1980,13 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Yesenia_Reyes_Garcia.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/lic_tirso_febrinio_tejeda_sanabria.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Yesenia Reyes García </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Tirso Febronio Tejeda Sanabria  </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-27>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                Licenciada en Trabajo Social por la Universidad Nacional Autónoma de México, profesionalizada como perito a través del diplomado de “Peritaje en Materia de Trabajo Social 2022” impartido por el Colegio de Trabajadores Sociales de México A.C. y delCurso taller: “Investigación Social y la Construcción del Informe Pericial” con  por parte de la academia Forense de Chile, Diplomado “La suprema Corte y los DerechosHumanos 2021” impartido por la  “Situación jurídica de la familia” por la Escuela Nacional de Trabajo 2017, Taller “Contrainterrogatorio avanzado para peritos 20 22” por el Tribunal Superior de Justicia, desde el año 2022 Perito en materia de Trabajo Social, adscrita a la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México, donde ha desarrollado mencionada función principalmente en procedimientos del ámbito familiar.<br>
+                                                               Tirso Febronio Tejeda Sanabria es licenciado en Psicología y Diplomado en Docencia Universitaria por la UNAM, cuenta con un Master en Musicoterapia Humanista del Instituto Mexicano de Musicoterapia Humanista. Su trayectoria incluye roles como docente, tallerista y psicoterapeuta en diversas instituciones públicas y privadas, destacando su trabajo en el Centro de Estudios Superiores del Hospital Nacional Siglo XXI, el Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz y el Instituto Mexicano de Musicoterapia Humanista. En el Poder Judicial de la Ciudad de México, ha ejercido como psicólogo ofreciendo terapia individual y talleres para el personal. Es autor de artículos en la Gaceta de Desarrollo Humano, en el marco del Programa de Apoyo Psicológico y Emocional. Actualmente, colabora impartiendo talleres psicoeducativos en el Programa de Revinculación Familiar del Centro de Convivencia Familiar Supervisada.<br>
 
                                                                 </h3>
                                                             </div>
@@ -1857,25 +1995,13 @@ Considero al espacio psicoterapéutico, como un lugar de aprendizaje sagrado y s
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Adriana_Isabel_Nunez_Garcia.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Dr_Eric_Garcia_Lopez.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Adriana María Isabel Núñez García</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Erick García-López </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-28>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                  <h3 style="text-align: justify">
-                                                                   Licenciada en Trabajo Social por la Universidad Nacional Autónoma de México (UNAM),
-Maestra en Trabajo Social por la UNAM recibiendo mención honorífica por su defensa de
-tesis de maestría. Escribió un libro sobre juventudes en el barrio de Tepito editada por la
-UNAM. Ha participado como ponente en diferentes foros, congresos y conversatorios a
-nivel nacional e internacional, por mencionar algunos lugares como: el Senado de la
-República, diálogos en confianza, la Universidad de Costa Rica, la Universidad de
-Chapingo, la Escuela Nacional de Trabajo Social, la unidad de posgrado de la UNAM y
-COMECSO. <br>
-																	 Se ha desempeñado durante 10 años como Trabajadora Social en áreas críticas del
-Hospital General Ajusco Medio, Ha sido docente desde hace 5 años en la Escuela
-Nacional de Trabajo Social de la UNAM, fungió como Juez Dictaminador del programa
-(PACMYC), actualmente es Perita en Materia de Trabajo Social en la Fiscalía de
-Investigación del Delito de Feminicidio. <br>
+                                                                   El Dr. Erick García-López es un destacado investigador en psicopatología forense y neurociencia, con formación académica en Neurociencia por la Universidad Complutense de Madrid. Posee un postdoctorado en Evolución y Cognición Humana realizado en colaboración con el Instituto de Física Interdisciplinar y Sistemas Complejos de la Universitat de les Illes Balears. Actualmente, es investigador titular en el Instituto Nacional de Ciencias Penales y miembro del Sistema Nacional de Investigadoras e Investigadores. Su experiencia internacional incluye la participación en el Mental Health, Law and Policy Institute de Canadá y en el proyecto Neurociencia y Derecho Penal en la Universidad de Castilla-La Mancha. Además, colabora como editor asociado en diversas revistas científicas y es consultor para organizaciones como la UNODC y la UNESCO en temas de neuroderechos en México.<br>
 
                                                                 </h3>
                                                             </div>
@@ -1902,13 +2028,13 @@ Investigación del Delito de Feminicidio. <br>
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Alejandra_Maa_Rosas.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Psic_Esneidy_Hernandez _Munoz.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Alejandra Maa Rosas </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Esneidy Hernández Muñoz  </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-29>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    <br> 
+                                                                    Esneidy Hernández Muñoz es licenciada en Psicología por la Universidad Autónoma del Estado de Hidalgo y cuenta con una maestría en Psicología Jurídica y Forense. Ha realizado diplomados en Atención Victimal, impartidos por el Centro de Justicia del Estado de Hidalgo, y recientemente se certificó en el uso y manejo del programa “Antenas por los Niños.” Ha desempeñado roles como Responsable Delegacional de Recursos Humanos y enlace delegacional de la prueba psicométrica PACI, dentro del programa de Estancias Infantiles. Actualmente, trabaja como psicóloga en el Consejo de Familia de Pachuca, Hidalgo, aportando su experiencia en psicología forense y atención a víctimas.<br> 
 
                                                                 </h3>
                                                             </div>
@@ -1917,22 +2043,13 @@ Investigación del Delito de Feminicidio. <br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Itzel_Nadchie_liihi_Bernal_de_Anda.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Psic_Daniela_Ferman_Castro.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. ITZEL NADCHIE LIIHI BERNAL DE ANDA</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Daniela Ferman Castro </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-30>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Es licenciada y maestra en psicología por la Universidad Nacional Autónoma de
-México. En la actualidad es candidata a Doctora en el Programa de Posgrado de
-Psicología en la misma casa de estudios, desarrolló investigación relacionada con
-familias en conflictos judiciales. Tiene una certificación por la UC Davis Health
-para aplicar la terapia PC- CARE, intervención especializada para mejorar la
-relación parento-filial. Cuenta con experiencia en psicoterapia clínica de 25 años,
-abordando diferentes problemáticas infantiles, familiares y de adultos. Ha
-participado como docente a nivel licenciatura y posgrado en distintas
-universidades a nivel nacional. Actualmente ocupa el puesto de Directora de
-Evaluación e Intervención Psicológica del PJCDMX. <br>
+                                                                    Daniela Ferman Castro es licenciada en Psicología por la Universidad Autónoma del Estado de Hidalgo. Ha recibido formación en Primeros Auxilios Psicológicos y en Perfilación Criminal por la Universidad Autónoma de Tlaxcala. Como promotora de salud en Centros de Integración Juvenil, impartió talleres de sexualidad y habilidades socioemocionales para estudiantes de educación básica, y colaboró en jornadas preventivas de salud sobre adicciones en conjunto con la SEP. Además, ha completado cursos en equidad de género y diversidad sexual con instituciones como el Instituto Nacional de las Mujeres y la Red por los Derechos Sexuales y Reproductivos en México. Actualmente, es Psicóloga Titular en el Consejo de Familia de Pachuca, Hidalgo, y cuenta con certificación en el programa “Antenas por los Niños”.<br>
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -1940,26 +2057,13 @@ Evaluación e Intervención Psicológica del PJCDMX. <br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Mayra_Alejandra_Mora_Miranda.jpg " alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Psic_Paulina_Cruz_Lopez.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Mayra Alejandra Mora Miranda</h3> 
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Paulina Cruz López Miranda</h3> 
                                                         <div class=gdlr-lightbox-form id=gdlr-form-31>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Maestra en Psicología por la Universidad Nacional Autónoma de México con especialidad
-en Medicina Conductual. Docente con 12 años de experiencia a nivel licenciatura y
-posgrado en el área clínica y de la salud para la Universidad Nacional Autónoma de
-México, FES-Iztacala, la Universidad Anáhuac, Campus Sur y la Universidad
-Panamericana. Terapeuta cognitivo-conductual con 16 años de experiencia clínica en
-temas de ansiedad, depresión, estrés, violencia y pareja; cuenta con una especialidad en
-psicooncología y cuidados paliativos desde el 2009 y un diplomado en alimentación
-consciente en el 2022. <br> Ha sido tallerista y capacitadora en diversos temas de salud tanto
-a nivel en diversas organizaciones privadas y públicas.<br>  Fue prestadora de servicios
-especializados en atención psicológica y supervisión durante confinamiento por COVID-19
-a nivel público y privado abordando aspectos asociados al estrés, insomnio, soledad y
-aislamiento, violencia y primeros auxilios psicológicos.<br>  En los últimos 10 años, ha escrito
-y presentado trabajos de investigación relacionados con la supervisión clínica, y la
-evaluación e intervención psicológica en enfermedades crónico-degenerativas.<br> 
+                                                                   Paulina Cruz López es licenciada en Psicología por la Universidad Autónoma del Estado de Hidalgo y tiene un año y medio de experiencia como psicóloga en el Consejo de Familia del estado de Hidalgo. Participó en el programa "1,2,3… Cuenta Conmigo," diseñando actividades para padres, niños y docentes sobre crianza, prevención de abuso sexual infantil y educación emocional. Ha asistido al Coloquio Internacional de Psicología de la UAEH y al 2do Congreso Internacional de Terapia Infantil y Abuso Sexual, donde realizó cursos como “Creación de programas de estimulación temprana” y “El tigre de bengala: Técnicas lúdicas para prevenir el abuso sexual.” Además, completó un curso en Psicología Forense en la Suprema Corte de Justicia de la Nación. Actualmente, estudia una Maestría en Psicología Criminal con especialidad en Psicología Forense en la Universidad Internacional Iberoamericana.<br> 
 
                                                                 </h3>
                                                             </div>
@@ -1968,23 +2072,19 @@ evaluación e intervención psicológica en enfermedades crónico-degenerativas.
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Fabiola_Silva_Escalante.jpeg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Psic_Jonathan_Lopez_Flores.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic.  Fabiola Silva Escalante</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-72>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psci. Jonathan López Flores </h3>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-32>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Licenciatura en Administración<br>
-Cuenta con doce años de experiencia en administración de empresas privadas e instituciones públicas, destacando atención a derechohabientes, organización interna, gestiones presupuestales, planificación y supervisión de equipos de trabajo, creación y seguimiento de proyectos de mejora continua, así como control de padrones internos.<br>
-Actualmente pertenece a la Unidad de Servicios Psicológicos, encargada del área administrativa de la Unidad, donde se gestionan las atenciones y seguimientos de las personas usuarias.<br>
-Ha sido encargada de las relaciones públicas directas con personal tomadora de decisiones en los espacios de la Administración Pública.
- <br>
+                                                               <h3 style="text-align: justify">
+                                                                   Jonathan López Flores es licenciado en Psicología por la Universidad Autónoma del Estado de Hidalgo, de donde egresó en 2016. Desde 2019, trabaja como Psicólogo Titular en el Poder Judicial del Estado de Hidalgo, en el Consejo de Familia de Tulancingo. Recientemente se certificó en el programa “Antenas por los Niños.” Ha realizado talleres y asistido a ponencias sobre Estrategias Parentales, Psicología Forense, desgaste emocional y fatiga. En su experiencia previa, se desempeñó como auxiliar en Staffing y Recursos Humanos, realizando funciones de reclutamiento, selección, capacitación de personal y aplicación de estudios socioeconómicos.<br>
+																   
 
-                                                                </h3>
+                                                               </h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-72 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-32 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
 												
@@ -2009,35 +2109,14 @@ Ha sido encargada de las relaciones públicas directas con personal tomadora de 
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Sofia__Duron_ Cardenas.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Juez_Francisco_Javie_Ponce_Barba.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Sofía Durón Cárdenas</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Juez Francisco Javier Ponce Barba</h3>
 													
                                                         <div class=gdlr-lightbox-form id=gdlr-form-12>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Originaria de la Ciudad de México. Estudió la carrera de Ciencias de la
-Comunicación, así como la de Psicología en la Universidad del Valle de México.<br>
-Tiene una especialidad en Logoterapia por la Universidad Anáhuac y es
-Maestra en Psicología por la Universidad del Valle de México, además de
-estudiar Ciencias Bíblicas y formación personal.<br>
-
-Durante su ejercicio profesional desarrolló, implementó y participó en proyectos estratégicos de
-comunicación y mercadotecnia para promocionar diferentes carreras en las preparatorias de la
-Ciudad de México. En Caritas V Vicaría creó e impartió cursos, conferencias y talleres de
-autoayuda para la mejora en la calidad de vida de las personas; dio asesorías psicológicas
-individuales. Además, fue dirigente Comunitaria de Moral, Eclesiología y Vida Interior e impartió
-pláticas en Estados Unidos a las poblaciones hispanas de Ohio, Cincinnati, Columbus y Los Ángeles.
-Actualmente continúa impartiendo conferencias, talleres y asesorías psicológicas en diferentes
-parroquias y grupos de autoayuda como Codependientes anónimos, comedores compulsivos y
-Alcohólicos anónimos.<br>
-En el año 2013 comenzó a laborar en el Tribunal Superior de Justicia de la Ciudad de México, ahora
-Poder Judicial; realizó Evaluaciones Psicológicas, Asistencias Técnicas en audiencias, supervisó
-Convivencias de las niñas, niños y adolescentes en el Centro de Convivencia Familiar Supervisada,
-posteriormente formó parte del equipo de Entrevista Diagnóstica de dicho Centro y actualmente
-es Subdirectora de Sede del CECOFAM.<br>
-A tomado diferentes cursos y congresos en relación a su labor como servidora pública y psicóloga
-del Poder Judicial. <br>
+                                                                   Juez Francisco Javier Ponce Barba es abogado por la Universidad de Guadalajara, con especialización en Impuestos, y cuenta con maestrías en Derecho Constitucional y Amparo, y en Derecho Penal Acusatorio Adversarial. Posee un Doctorado en Derecho por el Instituto Internacional de Ciencias Penales y un doctorado homologado en colaboración entre la Universidad de San Pablo-CEU de Madrid y la Universidad de Guadalajara. Es Doctor Honoris Causa por el Claustro Doctoral de Líderes Internacionales. Su trayectoria incluye roles en la Procuraduría General de la República como Agente del Ministerio Público de la Federación, y en el Consejo de la Judicatura del Estado de Jalisco, donde ha sido Director de Visitaduría y Coordinador de Amparos, entre otros cargos. Actualmente, es juez titular del Juzgado Quinto en Materia Familiar en Jalisco. Además, es docente de posgrado en instituciones como la Universidad Veracruzana, Universidad Cuauhtémoc, y en la Universidad de Guadalajara.<br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -2045,41 +2124,14 @@ del Poder Judicial. <br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Juan_Alejandro_Anguiano.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Jueza_Alma_Alejandra_Murillo_Gallardo.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Alejandro Anguiano</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Jueza Alma Alejandra Murillo Gallardo </h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-13>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Profesional con 15 años de experiencia en la elaboración de proyectos
-sociales, comunitarios e institucionales para la prevención social de la
-violencia desde el enfoque de los estudios de género de los hombres.<br>
- Licenciado en psicología por la Escuela Superior de Psicología de
-Ciudad Juárez.<br>
- Maestro en Psicoterapia Humanista y Educación para la Paz por la
-Universidad Autónoma de Ciudad Juárez.<br>
- Diplomado en estudios e intervención para la paz desde una
-perspectiva de derechos humanos, en prevención social de la violencia
-y la delincuencia, en víctimas del delito y de violaciones a sus derechos
-humanos, en psicoterapia basada en Mindfulness.<br>
- Estudios en trauma psicosocial, formación en círculos transformativos
-para la prevención y transformación de conflictos, asistencia integral a
-varones que ejercen violencia de género, evaluación psicológica
-forense de mujeres víctimas de violencia de género.<br>
- Coordinador del Centro Municipal para la Atención y Trabajo con
-Hombres y Masculinidades.<br>
- Co-fundador de la asociación civil Hombres en Rumbo de
-Restablecimiento y Equidad Social.<br>
- Creador del modelo para la atención a hombres que ejercen violencia
-de género “Las 4Rs de la responsabilidad”.<br>
- Integrante de la Red Latina para el Trabajo Critico con Hombres que
-Ejercen Violencia de Género.<br>
- Titular de la Dirección de Estudios Psicológicos y Socioeconómicos y
-los Centros de Convivencia Familiar Supervisada del Poder Judicial del
-Estado de Chihuahua (2018-2022).<br>
- Psicoterapeuta particular.<br>
- Perito y asesor psico jurídico particular. <br>
+                                                                    Jueza Alma Alejandra Murillo Gallardo es abogada por la Universidad de Guadalajara y Maestra en Derecho de la Función Judicial por la Escuela de Formación del Consejo de la Judicatura del Estado. Actualmente, cursa el Doctorado en Derecho de la Función Judicial en el Instituto de Ciencias Jurídicas de Nayarit. Con numerosos cursos y diplomados en justicia y derechos humanos, es catedrática en Derecho Civil, Procesal, Derechos Humanos, Derecho Laboral, y Oralidad Civil y Familiar. También imparte clases en la Maestría de Derecho de la Función Judicial del Consejo de la Judicatura del Estado de Jalisco. Con 26 años en el Poder Judicial de Jalisco, ha sido Auxiliar Judicial, Secretaria Conciliadora y Secretaria Relatora de Sala Civil, entre otros cargos. Actualmente, es Jueza Décimo Familiar del Primer Partido Judicial en Zapopan, Jalisco.<br>
 
                                                                 </h3>
                                                             </div>
@@ -2088,22 +2140,14 @@ Estado de Chihuahua (2018-2022).<br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Luis_Alberto_Disanto.jpeg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Juez_Jose_de_Jesus_Estrada_Navarro.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. Luis Alberto Disanto</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Juez José de Jesús Estrada Navarro o</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-14>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciado en Psicología (UBA), Especialista en Investigación Científica del
-delito (IUPFA), Especialista en Psicología Clínica con Orientación
-Psicoanalítica (UBA), Magister en Perfilacion y Análisis del Comportamiento
-Criminal (Universitat de Barcelona), Co-Director Diplomados Criminalística,
-Criminología y Psicología Investigativa (Universidad Siglo 21), Director del
-Programa Actualización en Psicología Investigativa Criminal (UBA).<br> Autor de
-artículos publicados en Argentina, Chile, Colombia, España, EE.UU y México.
-Docente UBA, Universidad Siglo 21, Universidad Internacional de Andalucía y
-Universidad Nacional de Córdoba. <br>
+                                                                    Juez José de Jesús Estrada Navarro es abogado por la Universidad de Guadalajara, Maestro en Derecho Electoral por el Tribunal Electoral del Estado de Jalisco y actualmente cursa el Doctorado en Derecho en la Universidad de Buenos Aires. Ha completado diplomados en la UNAM, Escuela Libre de Derecho, y el TEC de Monterrey, y cursos en Derechos Humanos, atención a víctimas e impartición de justicia con perspectiva de género. Es docente de posgrado en el Supremo Tribunal de Justicia de Jalisco y el Tribunal Electoral de Jalisco, además de impartir clases en el TEC de Monterrey. Con más de 15 años en el servicio público, ha sido Auxiliar judicial, Secretario, Secretario de acuerdos y Secretario relator, y desde 2016, se desempeña como juez, actualmente en el Juzgado Décimo Primero en Materia Familiar.<br>
 
                                                                 </h3>
                                                             </div>
@@ -2112,37 +2156,14 @@ Universidad Nacional de Córdoba. <br>
                                                     </div>
                                                 </li>
 												<li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Fernando_Lopez_Munguia.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Beatriz_Garavito_Gorostieta.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dr. FERNANDO LÓPEZ MUNGUÍA</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Beatriz Garavito Gorostieta </h3>
 													
                                                         <div class=gdlr-lightbox-form id=gdlr-form-38>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                               - LICENCIADO EN MEDICINA Y CIRUGÍA (UNAM).<br>
-- ESPECIALISTA EN PSIQUIATRÍA (UNAM y Hospital Psiquiátrico “Fray
-Bernardino Álvarez”).<br>
-- ESPECIALISTA EN PSIQUIATRÍA FORENSE (Universidad Complutense de
-Madrid, España).<br>
-- MIEMBRO RE-CERTIFICADO DEL CONSEJO MEXICANO DE PSIQUIATRÍA,
-A.C. NÚMERO: 9820814
-- EX-PRESIDENTE DE LA ASOCIACIÓN PSIQUIÁTRICA MEXICANA, A.C.
-- EX-SUBDIRECTOR MÉDICO DEL HOSPITAL PSIQUIÁTRICO “FRAY
-BERNARDINO ÁLVAREZ”.<br>
-- PROFESOR TITULAR DE PSIQUIATRÍA FORENSE CURSO DE POSGRADO
-PARA MÉDICOS ESPECIALISTAS (UNAM)
-- PROFESOR DE PSIQUIATRÍA FORENSE, CURSO DE ESPECILIZACIÓN EN
-PSIQUIATRÍA. UNAM.<br>
-- PROFESOR DE PSIQUIATRÍA EN PRE-GRADO EN LA UNIVERSIDAD
-AUTÓNOMA DE MÉXICO Y EN LA UNIVERSIDAD AUTÓNOMA
-METROPOLITANA.<br>
-- JEFE DE PSIQUIATRÍA LEGAL DEL HOSPITAL PSIQUIÁTRICO FRAY
-BERNARDINO ÁLVAREZ.<br>
-- PERITO EN PSIQUIATRÍA EN LA PRÁCTICA PRIVADA.
--CONFERENCISTA NACIONAL E INTERNACIONAL EN TEMA DE
-PSIQUIATRÍA FORENSE.<br>
--AUTOR Y COAUTOR EN DIVERSAS PUBLICACIONES (LIBROS Y REVISTAS)
-ESPECIALIZADAS EN PSIQUIATRÍA.<br>
+                                                              Beatriz Garavito Gorostieta es psicóloga egresada de la Universidad Autónoma del Estado de Morelos, con una maestría en Psicoterapia Psicoanalítica de niños y adolescentes por el Centro Universitario del Sur y certificación en Psicología Forense. Ha trabajado en el ámbito de Trabajo Social en escuelas secundarias técnicas en el Instituto de Educación Básica del Estado de Morelos, y como psicóloga en los Servicios de Salud y en el DIF Estatal. Actualmente, es perito en psicología en el Tribunal Superior de Justicia de Morelos. Posee un diplomado en abordaje psicosocial de la violencia intrafamiliar, complementado con capacitación en temas de salud mental, género y prevención de la violencia sexual. Ha participado como ponente en talleres y congresos, destacando sus aportes en el análisis del crimen y en la capacitación para el apoyo jurídico de mujeres en situación de violencia..<br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -2170,27 +2191,14 @@ ESPECIALIZADAS EN PSIQUIATRÍA.<br>
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Ignacio_Bautista_SantamarIa.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcdo_Miguel_Angel_Miranda_Aquino.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> LIC. IGNACIO BAUTISTA SANTAMARIA </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcdo. Miguel Ángel Miranda Aquino </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-16>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciado en Psicología por la Universidad Nacional Autónoma de México.<br>
-Ha realizado diversos cursos y diplomados, entre los que destacan:<br>
-Diplomado de Actualización Profesional: “Terapia Familiar Sistémica”, (2005). <br>
-Taller: “Diálogo Estratégico Aplicado”.<br>
-Cursos de: Pruebas Psicológicas (varios).<br>
-Taller: “Supervisión Clínica, Aplicación Contemporánea del Modelo Terapia Breve Resolución de Problemas”.<br>
-Curso: “El Coordinador de Parentalidad en Familias de Alto Conflicto.”<br>
-Diplomado en línea “Coordinación Parental: Una respuesta a los divorcios conflictivos”.<br>
-Curso: “Programa de capacitación para la implementación de la Coordinación Parental en el Poder Judicial de la Ciudad de México”.<br>
-Diplomado “Coordinación Parental: Una Propuesta a los Divorcios Conflictivos”.<br>
-Diplomado Online “Técnicas de Intervención Breve, Sistémica y Posmoderna”.<br>
-Dentro de su trayectoria en el Tribunal Superior de Justicia de la Ciudad de México la cual inicio en el año 2015, ha colaborado en Evaluación Psicológica y Asistencia Técnica en Salas y Juzgados.<br>
-Desde el año 2020 está adscrito al Centro de Convivencias Familiar Supervisada como Coordinador Parental. Asimismo, durante 22 años ha ejercido como terapeuta familiar particular y en instituciones no gubernamentales.
-<br>
+                                                                    Miguel Ángel Miranda Aquino es psicólogo egresado de la Universidad Autónoma del Estado de Morelos, con un diplomado en Criminología por la Facultad de Derecho y Ciencias Sociales de la misma universidad. Actualmente, está adscrito al Departamento de Orientación Familiar del Tribunal Superior de Justicia del Estado de Morelos, donde se especializa en temas de violencia, género y peritajes psicológicos. Su labor incluye la realización de evaluaciones y peritajes psicológicos en el contexto familiar y judicial, contribuyendo a la comprensión de factores de riesgo y dinámicas de violencia en casos específicos. Su experiencia le ha permitido colaborar en un entorno interdisciplinario, brindando orientación y apoyo en procesos legales relacionados con conflictos familiares y de género.<br>
 
 																</h3>
                                                             </div>
@@ -2199,34 +2207,14 @@ Desde el año 2020 está adscrito al Centro de Convivencias Familiar Supervisada
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Luz_Angelica_Brisset_Jimenez_San_Pedro.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcda_Miriam_Alejandra_Ochoa_Valdivia.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Luz Angélica Brisset Jiménez San Pedro </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcda. Miriam Alejandra Ochoa Valdivia  </h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-17>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Lic en Derecho y Mtra. en Derecho Penal con énfasis en Juicios Adversariales, por
-la Universidad Latina.<br> 
-Abogado litigante con conocimiento en materia familiar, laboral y fiscal. Servidor
-Público.<br> 
-Experiencia laboral:<br> 
-7 años de experiencia en el TSJCDMX dentro del Área Jurídica en la 6ta Sala Civil
-y Juzgado 26° Civil. Actividades administrativas y Asistente de Dirección en
-CECOFAM.<br> 
-3 años en el área de Coordinación Parental en TSJCDMX desde la creación e
-implementación de la figura a la fecha.<br> 
-Abogado litigante en Iniciativa privada, Corporativo PROSUM en materia Fiscal.
-Otros estudios:<br> 
-- Diplomado “Coordinación Parental: Una respuesta a los Divorcios Conflictivos”<br> 
-- Diplomado “Técnicas de Intervención Breve, Sistemática y Postmoderna”<br> 
-- Diplomado “Formación en Coordinación de Parentalidad”<br> 
-- Mediación y resolución pacífica de conflictos<br> 
-- Cursos en temas de Derechos Humanos, Derechos niños, niñas y adolescentes,
-Padres e Hijos Frente al Divorcio, Violencia Vicaria.<br> 
-- Cursos impartidos por Organizaciónes internacionales como la ONU, en temas
-de Género para empezar; Marcos internacionales para la igualdad de género,
-Violencia en contra de Mujeres y niñas y Migración.<br> 
+                                                                   Miriam Alejandra Ochoa Valdivia es psicóloga con especialización en Medios Alternos de Solución de Conflictos. Actualmente, es Psicóloga Encargada de la Unidad de Justicia Restaurativa del Tribunal Superior de Justicia de Nayarit y ha colaborado en el CECOFAM del mismo tribunal. Además, cuenta con experiencia en los departamentos psicopedagógicos de los colegios Simón Bolívar y Patria en Nayarit. Ha completado diversos diplomados, incluyendo Grafología Científica, Intervención en Violencia Sexual Infantil, Oralidad Familiar y Civil, Terapia de Pareja, y Psicodiagnóstico Infantil y Adolescente. También está formada en Justicia Restaurativa Familiar y es egresada de la Maestría en Terapia Sistémica de la Universidad Autónoma de Nayarit, actualmente en proceso de titulación.<br> 
                                                                 </h3>
                                                             </div>
                                                           </div>
@@ -2234,40 +2222,14 @@ Violencia en contra de Mujeres y niñas y Migración.<br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Paola_Viloria_Ochoa.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Carla_Rosalia_Dominguez_Moran.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Paola Viloria OchoaN</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Carla Rosalía Domínguez Morán</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-18>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Licenciada en Psicología por la Universidad Nacional Autónoma de México
-(UNAM) y Maestra en Psicomotricidad, por el Colegio Internacional de Educación
-Superior (CIES).<br>
-Ha realizado diversos diplomados y cursos, entre los que destacan:<br>
- Diplomado en Estimulación e Intervención temprana.<br>
- Diplomado en Psicoterapia de Juego.<br>
- Diplomado en Psiquiatría.<br>
- Diplomado en técnicas de Vanguardia para la selección y evaluación de
-personal.<br>
- Diplomado en Administración Gerencial de Recursos Humanos.<br>
- Inteligencia emocional en la familia.<br>
- Tanatología.<br>
- Primeros Auxilios emocionales y psicológicos por COVID.<br>
- Desarrollo Neuromotor.<br>
- Salud Mental.<br>
- Salud pública y migración.<br>
- Terapia sistémica.<br>
- Seminario de atención a víctima del delito.<br>
- ABC para el abordaje psicoterapéutico de divorcios conflictivos.<br>
-Experiencia laboral de 24 años en distintos ámbitos de la psicología. Durante 11 años
-laboró en Centros de Control de Confianza del ámbito federal, realizó evaluaciones
-psicológicas, y análisis de competencias laborales, ocupó puestos de evaluadora, jefa de
-departamento, Subdirectora y Directora del área de Psicología de dependencias federales
-y seguridad nacional. <br> Desde 2023 se encuentra adscrita en la Coordinación de
-Intervención Especializada para el Apoyo Judicial, en el TSJCDMX desempeñando
-funciones de Coordinadora de la Coordinación Parental. <br> Experiencia como terapeuta de 7
-años. <br>
+                                                                   Carla Rosalía Domínguez Morán es licenciada en Derecho por la Universidad Autónoma de Nayarit y en Psicología por el Instituto de Estudios Superiores y Tecnológicos Matatipac. Posee una maestría en Terapia Familiar Sistémica por la Universidad del Valle de Atemajac (UNIVA) en Tepic, Nayarit. Su formación complementaria incluye diplomados en Psicología Clínica, intervención en violencia sexual infantil, oralidad familiar y civil, psicoterapia infantil, y lenguaje corporal, además de una especialidad en medios alternos. Desde 2004, se ha desempeñado como psicóloga en el Centro de Convivencia Familiar, donde aplica sus conocimientos en derecho y psicología para abordar conflictos familiares y ofrecer intervenciones en casos de violencia y evaluación psicológica infantil.<br>
 
                                                                 </h3>
                                                             </div>
@@ -2276,14 +2238,14 @@ años. <br>
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Rosario_Flores_Rodriguez.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Emm_Janeth_Garcia_Ortiz.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Rosario Flores Rodríguez</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Emma Janeth García Ortiz </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-19>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3>
-                                                                   Licenciada en Trabajo Social por la Universidad Nacional Autónoma de México, profesionalizada como perito a través del diplomado de “Peritaje en Materia de Trabajo Social” y del curso “Fundamentación y Desahogo Escrito y Oral de la Prueba Pericial en Trabajo Social”, con formación especializada en materia de Derechos Humanos, por acreditación de los diplomados “La Suprema Corte y los Derechos Humanos 2022”, “Protección y Defensa de los Derechos Humanos” y “Desarrollo Integral con Perspectiva de Derechos Humanos”, otorgados por la Suprema Corte de Justicia de la Nación y la Comisión Nacional de los Derechos Humanos; desde el año 2019 Perito en materia de Trabajo Social, adscrita a la Subdirección de Trabajo Social del Poder Judicial de la Ciudad de México, donde ha desarrollado mencionada función principalmente en procedimientos del ámbito familiar y de derechos humanos, complementado dicha actuación con los cursos adicionales de “Ley de Protección de Datos Personales”, “Servidor Público”, “Genero, Masculinidades y Lenguaje Incluyente y No Sexista”, “Derecho al Trabajo”, “Derechos de las Personas con Discapacidad”, “Derechos Sexuales y Reproductivo”, “Derecho de la Diversidad Sexual”, entre otros. <br>
+                                                                   Emma Janeth García Ortiz es Licenciada en Psicología por la Universidad Autónoma de Nuevo León y Maestra en Psicoterapia Breve Sistémica por el Centro de Crecimiento Personal y Familiar. Actualmente, es pasante de la Maestría en Psicología Forense en el Colegio Internacional de Ciencias Criminológicas y Forenses y cuenta con una certificación internacional en Psicopatología Forense y Sistema de Justicia por CIFAL Argentina / UNITAR. Ha trabajado en el sector privado y en instituciones públicas, como la Secretaría de Desarrollo Social y la Facultad de Psicología de la UANL, donde brindó terapia psicológica y trabajó en programas preventivos para niños y adolescentes. Con más de 13 años de experiencia en intervención familiar, ha participado en talleres sobre psicología forense, derechos humanos, y mediación familiar. Actualmente, es Encargada del Centro de Convivencia Familiar del Poder Judicial del Estado de Nuevo León, donde aplica un enfoque sistémico en su labor de Terapia de Integración para fortalecer vínculos familiares. <br>
 
                                                                 </h3>
                                                             </div>
@@ -2309,49 +2271,14 @@ años. <br>
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maria_Fernanda_Gonzalez_Castro.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtro_Pedro_Daniel_Gonzalez_Garcia.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Mtra. María Fernanda González Castro </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Mtro. Pedro Daniel González García  </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-36>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciada en Psicología Social por la Universidad Valle del Grijalva, Maestría en Ciencias de la
-Educación por el Instituto de Estudios universitario, Maestría en Psicología Forense por la Facultad
-libre de Derecho del Estado de Chiapas. Certificada en Psicología jurídica y Forense por el Colegio
-Oficial de Psicólogos del Estado de Chiapas
-Diplomado: en Psicopatología clínica con enfoque forense; Diplomado: Derechos de las Niñas,
-Niños y Adolescentes. • Impartido por la Universidad Autónoma de Chiapas, Diplomado: Violencia
-contra las mujeres desde los derechos humanos, el género y la interculturalidad, para las y los
-servidores públicos del estado de Chiapas. • Impartido por la Universidad Autónoma de Chiapas y
-la Asociación Nacional de Consejos de Participación Cívica A.C. a través de la Fiscalía General del
-Estado; Diplomado: Intervención Psicológica Clínica en niños y Adolescente. • Impartido por el
-Instituto de Psicología y Psicoterapia de Chiapas en colaboración con el colegio Oficial de
-Psicólogos de Estado de Chiapas. Diplomado: Psicopatología y Psicometría Forense • Expedido por
-el Colegio de Estudios Universitarios, Campus Veracruz; Diplomado y Certificación como Perito en
-Psicología Jurídica y Forense • Impartido por el Colegio Oficial de Psicólogos del Estado de Chiapas;
-Diplomado en Intervención en el Abuso Sexual Infantil • Expedido por SERENDIPITY centro de
-Actividades Psicológicas.<br>
-Cursos, talleres, seminarios y conferencias en temas de Derechos humanos, psicología forense,
-autopsia psicología, psicología del testimonio, Violencia Familiar, clínica Infantil, Genero, derechos
-Humanos de la Infancia desde la Perspectiva de Género, sensibilización, Intervención en Crisis,
-Derechos de las Niñas, niños y Adolescentes, Violencia Sexual, entre otros.<br>
-																	
-Experiencia Laboral
-2009-Actualidad<br>
-Docente y Ponente •en Diplomados, talleres y cursos • en diversos temas de violencia en el
-Noviazgo, violencia doméstica, intervención en crisis, abuso sexual infantil, autoestima, Psicología
-Forense, Violencia de Género y Derechos Humanos, entre otros. • Diferentes Instituciones a nivel
-Nacional e internacional.<br>
-14 de octubre 2014 -2023
-Coordinadora del área de Psicología y Trabajo Social del Poder Judicial del Estado de Chiapas.
-Perito en Psicología del Poder Judicial del Estado de Chiapas y Coordinadora de Psicólogos y
-Trabajadores Sociales del Poder Judicial del Estado.<br>
-Labore en Instituciones como Procuraduría de la Familia y Adopciones del DIF estatal atendiendo a
-Niños, niñas y Adolescentes brindándoles atención y terapia psicológica; en la Secretaria para el
-Desarrollo y Empoderamiento de las Mujeres del Estado de Chiapas como tallerista en temas de
-Violencia de genero dirigido a Funcionarias y funcionarios, así como terapeuta en atención a
-Mujeres que sufrían Violencia y sus hijas e hijos.
+                                                                    Pedro Daniel González García es licenciado en Psicología por la Universidad Autónoma de Nuevo León (UANL), generación 2007, y cuenta con un grado de Máster en Psicología Analítica y formación como terapeuta en Arteterapia por la Fundación de Psicología Analítica Carl Gustav Jung en Buenos Aires, Argentina, generación 2009. Tiene amplia experiencia clínica trabajando con niños, adolescentes y adultos en contextos terapéuticos. Desde 2013, se desempeña como psicólogo en el Centro Estatal de Convivencia Familiar del Estado de Nuevo León, donde aplica su enfoque analítico y de arteterapia en el apoyo a familias y en la intervención en situaciones de conflicto familiar.
 <br>
 																</h3>
                                                             </div>
@@ -2360,14 +2287,14 @@ Mujeres que sufrían Violencia y sus hijas e hijos.
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maria_Fernanda_Stalth_Barba.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcdo_Ulises_Alejandro_Torres_Guevara.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. María Fernanda Stahl Barba </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcdo. Ulises Alejandro Torres Guevara </h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-37>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Psicóloga Clínica, psicoterapeuta Gestalt con 5 años de experiencia en acompañamiento psicológico a adultos. Diplomado en Intervención en maltrato y abuso sexual infantil. Diplomado en Terapia Breve. Actualmente psicóloga del Centro de Convivencia Familiar. Ponente en el taller virtual “Las emociones como clave para la salud mental” • Impartido a estudiantes de la Universidad Michoacana. Ponente en el taller “Gestión y Manejo de las emociones. • Impartido a directores y directoras de las diferentes áreas del Poder Judicial del Estado de Chiapas.<br> 
+                                                                   Ulises Alejandro Torres Guevara es licenciado en Psicología por la Facultad de Ciencias de la Conducta de la Universidad Autónoma del Estado de México (UAEM) y actualmente cursa la Especialidad en Psicología Forense en el Instituto Nacional de Ciencias Penales (INACIPE). Ha completado diplomados y talleres en áreas como Coordinación de Parentalidad, Derechos Humanos y Psicología Forense, impartidos por la Suprema Corte de Justicia de la Nación y la Comisión Estatal de Derechos Humanos del Estado de Nuevo León, entre otros. Cuenta con más de 11 años de experiencia en la intervención pericial como psicólogo forense y actualmente es Psicólogo Titular en la Unidad de Servicios Psicológicos y de Trabajo Social del Poder Judicial del Estado de Nuevo León, donde realiza evaluaciones especializadas y participa en el abordaje de situaciones de conflicto familiar.<br> 
                                                          </h3>
                                                             </div>
                                                           </div>
@@ -2375,16 +2302,16 @@ Mujeres que sufrían Violencia y sus hijas e hijos.
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Ana_Maria_Castelan_Rowe.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcda_Cristina_Pena_Pedraza.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtcc. Ana María Castelán Rowe</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcda. Cristina Peña Pedraza</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-38>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Perito en psicología forense y Psicoterapeuta cognitivo-conductual Es Maestra en Psicoterapia cognitivo-conductual por el Instituto de Psicoterapia Cognitivo Conductual, A.C. México, cuenta con Especialidad en Administración de Personal por el Instituto Nacional de Administración Pública (INAP) con Mención Honorífica, cursó el Diplomado en Psicoterapia Cognitivo-Conductual por la Universidad Nacional Autónoma de México, cuenta con el Diplomado en Psicoterapia de Esquemas por el Instituto de Psicoterapia Cognitivo Conductual. A.C. México.<br>
+                                                                   Cristina Peña Pedraza es Licenciada en Trabajo Social por la Universidad Autónoma de Nuevo León, con una década de experiencia en el ámbito de la asistencia social. Su labor se centra en la aplicación del método de caso y familia, realizando diagnósticos, evaluaciones y estudios socioeconómicos, así como en el desarrollo de proyectos comunitarios y la gestión de recursos. Desde hace seis años, se desempeña como perito en Trabajo Social en el Centro de Convivencia Familiar del Estado de Nuevo León, donde elabora dictámenes socioeconómicos y realiza visitas sociales y evaluaciones con un enfoque sistémico. Su trabajo en este contexto se realiza en conjunto con un equipo interdisciplinario de derecho y psicología. Además, participa activamente en cursos y talleres de peritaje y tiene experiencia en comparecencias en juicios familiares.<br>
 
-																	Es Licenciada en Psicología Clínica por la Universidad Autónoma Metropolitana Campus Xochimilco (UAM-X); ha cursado diversos cursos relacionados en el ámbito forense, clínico y educativo, ha impartido Cursos y Talleres; conferencista en diversas instituciones educativas y comentarista en mesa de discusión.<br> Profesionalmente se desempeñó en la Secretaría de Salud en el área educativa, en la Secretaria de Comunicaciones y Transportes en áreas de Recursos Humanos, Organización y Métodos y Capacitación, ambas a nivel federal, fue Directora de la Escuela Profesional de Psicología en el Instituto Universitario del Estado de México (IUEM), así como Profesora de Tiempo Completo y Docente Nivel Licenciatura en la Escuela Profesional de Psicología del mismo Instituto Universitario y en la Universidad del Valle de México. Campus Metepec, impartiendo diferentes asignaturas en el ámbito de la psicología, así como directora de tesis y trabajos de investigación a nivel Licenciatura. Tiene una carrera de 15 años en el Poder Judicial del Estado de México desempeñando el cargo de Perito en materia de psicología, es Psicoterapeuta en consulta privada desde hace más de 20 años.<br>
+																	
                                                                 </h3>
                                                             </div>
                                                         </div>
@@ -2392,25 +2319,14 @@ Mujeres que sufrían Violencia y sus hijas e hijos.
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Daniel_Alejandro_Perez_Martinez.png" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcda_Dulce_Rosario_Serralta_Contreras.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Daniel Alejandro Pérez Martínez</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcda. Dulce Rosario Serralta Contreras </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-39>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3>
-                                                                    Como psicólogo clínico empezó interviniendo con personas responsables de delito dentro del Centro Preventivo y de Readaptación Social de Santiaguito, brindando atención psicológica para la asimilación de sus circunstancias, así como su reintegración a la sociedad de forma saludable.<br> Dentro del ámbito privado desarrollando intervenciones de orientación psicológica mayormente enfocada al ámbito familiar, atendiendo las necesidades de niñas, niños y adolescentes ante procesos de separación de los padres, dinámicas familiares poco favorables para el desarrollo humano y condiciones de separación emocional de pareja.<br> Actualmente forma parte de los Centros de Convivencia Familiar del Poder Judicial del estado de México como Coordinador de Parentalidad, con un enfoque terapéutico familiar que permite la reestructuración y reintegración de esta figura social.<br>
-																	CURSOS:<br>
-➢ Diplomado en Educación.<br>
-➢ Curso de psicometría Penitenciaria.<br>
-➢ Curso de la psicopatía a la sociopatía.<br>
-➢ Conferencia. “Modelos para la elaboración de Talleres Psicoeducativos”.<br>
-➢ Congreso Nacional CONATRIB.<br>
-➢ Conferencia Divorcios Conflictivos.<br>
-➢ Curso ABC para el abordaje psicoterapéutico de divorcios conflictivos.<br>
-➢ Congreso Internacional de investigación sobre intervenciones en crisis de la coparentalidad.<br>
-“Nuevas orientaciones en justicia para la familia del siglo XXI” impartido por la Facultad<br>
-de Derecho de la Universidad Alberto Hurtado de Santiago de Chile.<br>
+                                                                    Contreras es licenciada en Psicología por la Universidad Humanista de Cancún, Quintana Roo, con especialidad en psicología clínica. También es licenciada en Ciencias de la Comunicación por el Instituto Comercial Bancarios de Mérida, Yucatán, y cuenta con un Diplomado en Coaching Ontológico por Red Consultores en Mérida. Inició su carrera como psicóloga en la Casa de Asistencia Temporal del DIF Municipal en Playa del Carmen, atendiendo a niños bajo resguardo de la Procuraduría de la Defensa del Menor y la Familia. Posteriormente, trabajó en el Complejo de Seguridad C5 de Quintana Roo, en Cancún, donde brindó apoyo psicológico en situaciones de emergencia de violencia familiar y de género. Fue psicóloga en el Centro de Reinserción Social Municipal en Playa del Carmen, ofreciendo terapia individual, familiar y talleres de desarrollo personal para los internos. Actualmente, se desempeña en el área de evaluación del Centro de Convivencia Familiar en Playa del Carmen.<br>
 																	
 																	
 
@@ -2438,63 +2354,30 @@ de Derecho de la Universidad Alberto Hurtado de Santiago de Chile.<br>
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Dora_Nuno_Mejia.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcda_Diana_Laura_Acosta_Elvira.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Jueza Mtra. Dora Nuño Mejía </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcda. Diana Laura Acosta Elvira 
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-40>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Formación Académica<br> Licenciada en Derecho, egresada de la Universidad Autónoma del Estado de México Especialidad en Derecho Procesal Civil en la referida Universidad Autónoma del Estado de México Diversos Diplomados, cursos y talleres impartidos por la Escuela Judicial del Estado de México, en materia de Derecho Civil, Mercantil y Familiar. Actualmente, cursando la maestría en Derecho Civil y Familiar en el Centro de Estudios Jurídicos Ameyalli.<br>
-																	Experiencia Laboral<br> Poder Judicial del Estado de México desde el año de 1989, donde me he desempeñado como taquimecanógrafa judicial, notificadora en Tribunal de Alzada, Secretario Judicial de Sala y Juzgado en materia Civil. Desde al año de 2001 me desempeño Juez de Primera Instancia en distintas adscripciones en materia civil, mercantil y familiar, actualmente titular del Juzgado Sexto Familiar de Cuautitán, México. Docente en materia Civil y Familiar en distintas Instituciones Escolares.
+                                                                    Diana Laura Acosta Elvira es egresada de la licenciatura en Trabajo Social por la Universidad Autónoma de Yucatán. Su experiencia se centra en la atención social a adultos mayores y a niños y niñas, además de su participación en proyectos sociales como "Conexión Segura: Redes Sociales" y "Mi Futuro, Mis Decisiones," ambos enfocados en jóvenes de 12 a 18 años en comunidades rurales de Yucatán. Ha recibido formación complementaria a través de cursos y talleres del Instituto Mexicano del Seguro Social (IMSS), destacándose "Prevención y Atención de la Violencia Familiar y Sexual contra las Mujeres" y "Prevención y Detección Oportuna de Maltrato Infantil." Ha presentado la ponencia "Las Implicaciones del Trabajo Social en los Procesos de Adopción."
 																	<br>
-</h3>
+																</h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-40 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Gloria_Lopez_Santiago.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcdo_Alan_Joseph_Blancas_Chay.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">DRA. GLORIA LOPEZ SANTIAGO</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcdo.Alan Joseph Blancas Chay </h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-41>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                   Doctora en Estudios de Familia por el Instituto de Terapia Familiar Cencalli
-• Maestra en Victimología por el Instituto Nacional de Ciencias Penales. Fiscalía General de la Republica Mexicana
-
-• Psicóloga, egresada den la Facultad de Estudios Superiores “Zaragoza”- Universidad Nacional Autónoma de México
-
-• Perito Oficial en materia de Psicología en materia de Familia y niñez, Victimologia y Género, adscrita al Poder Judicial del Estado de México desde el
-
-2011 a la fecha
-• Integrante de la Asociación Iberoamericana de Psicología
-
-Jurídica y forense
-
-Integrante de la Asociación Nacional de Psicología Jurídica AIPJ
-Integrante de Asociación Mexicana de Psicología Social AMEPSO
-Integrante de Red Iberoamérica de Estudios de Familia A.C.
-Integrante de Asociación Mexicana de Psicología Jurídica y Derecho Penal
-Instructora en materia de Victimología, Psicología Jurídica, Psicología
-Criminal y Forense para diversas instituciones del área de Psicología
-Jurídica y Forense, incluyendo la División de Educación Continua UNAM
-• Docente invitada de diferentes instituciones en Perú y Chile.
-• Instructora para el Ministerio Publico del Distrito Judicial de Ancash en Perú
-• Participación en diversos Congresos Nacionales e Internacionales<br> 
-																	
-Perito particular en materia de Psicología desde el 2005; con experiencia
-profesional por 5 años en evaluación de Control de Confianza en la Policía
-Bancaria e Industrial de la Ciudad de México.
-Participación en materia de “Psicología Forense y Violencia a niños” en el Libro,
-Rostros y huellas de las violencias en Iberoamérica, (2021), editado por la
-Universidad de Ciencias y Artes de Chiapas y la Red Iberoamericana de Estudios
-de Familia.
-Colaboración en capítulo del libro “Amor, empatía y conductas prosociales: una
-reflexión interdisciplinaria”, editado por la Universidad Católica Luis Amigo de
-Colombia.<br>
+                                                                   Alan Joseph Blancas Chay es licenciado en Psicología con experiencia en criminología y psicología forense. Ha participado en eventos como el Congreso Mundial de Estudiantes de Ciencias de la Educación y el Foro Mundial de Universitarios, ha recibido formación en perfilación criminal y análisis de tatuajes en el Instituto Pericial Judicial, así como en reconocimiento de comportamientos violentos con No Verbal Consulting Group. Su trayectoria incluye la implementación del protocolo de investigación para feminicidios en Quintana Roo en colaboración con el Instituto Quintanarroense de la Mujer y la evaluación de maltrato infantil durante la pandemia con el Centro de Integración Juvenil. Además, ha abordado temas de derechos humanos y enfoques de género en eventos organizados por la UNAM y Hombres por la Equidad. Sus competencias abarcan la evaluación psicológica forense y la capacitación en derechos humanos y autocuidado laboral.<br>
                                                          </h3>
                                                             </div>
                                                           </div>
@@ -2502,14 +2385,14 @@ Colombia.<br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Luisa_Isabel_Morales_Reynoso.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcda_Karla_Jazmin_Cetina_Carrillo.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. LUISA ISABEL MORALES REYNOSO</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcda. Karla Jazmín Cetina Carrillo </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-42>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciada en Derecho por la Universidad Autónoma del Estado de México.<br> Maestra en Garantías y Amparo por la Universidad Mexicana de Educación a Distancia.<br> Cuenta con múltiples cursos en materia de Derechos y Protección de los Niños, Niñas y Adolescentes, así como en materia de Derechos Humanos.<br> Tiene una trayectoria de 16 años en el Poder Judicial del Estado de México, iniciando como técnico judicial, secretario de acuerdos, secretario proyectista de sentencias y jueza familiar. <br>
+                                                                   Karla Jazmín Cetina Carrillo es Psicóloga certificada en evaluación psicológica forense en derecho familiar, con más de cinco años de experiencia. Realiza evaluaciones y peritajes psicológicos para el sistema judicial, especialmente en casos de custodia y capacidad parental. Es supervisora de convivencias y capacita al personal en temas como teorías de apego y parentalidad para mejorar su desempeño profesional. Además, es facilitadora certificada en yoga infantil, enseñando técnicas de regulación emocional y desarrollo de habilidades socioemocionales adaptadas a la infancia. Su formación incluye una licenciatura en Psicología, una certificación en Psicopatología criminal y forense, y una maestría en Psicoterapia Gestalt. Su enfoque combina métodos psicológicos y prácticas de bienestar para brindar una atención integral y efectiva en sus intervenciones tanto clínicas como forenses.<br>
 
                                                                 </h3>
                                                             </div>
@@ -2518,14 +2401,14 @@ Colombia.<br>
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Nohemi_Garcia_Rosales.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcda_Cindy_Yareli_Santana_Escamilla.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. NOHEMI GARCIA ROSALES</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcda. Cindy Yareli Santana Escamilla </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-43>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciada en Derecho por la Universidad Autónoma del Estado de México. Maestrante en derecho con área terminal en Justicia Constitucional en la Universidad Autónoma del Estado de México. Con diversos diplomados y cursos relativos a impartición de justicia en materia familiar, protección de Niños, Niñas y Adolescentes e impartición de justicia en casos en los que se encuentren involucrados personas con discapacidad. Trayectoria en el Poder Judicial del Estado de México, como secretario de acuerdos de cuantía menor, secretario de primera instancia y Juez de Primera Instancia, actualmente adscrita al Juzgado en Línea especializado en materia de Violencia Familiar y Protección de Niñas, Niños y Adolescentes del Estado de México. <br>
+                                                                    Cindy Yareli Santana Escamilla es Psicóloga clínica en el Centro de Convivencia Familiar Supervisada en Chetumal, Quintana Roo, egresada del Instituto Universitario Carl Rogers. Ha complementado su formación con un diplomado en arte, juego y resiliencia infantil, y tiene experiencia en el desarrollo de talleres de crecimiento emocional, creatividad y resiliencia en psicoterapia infantil. Además, ha participado en cursos especializados sobre el interés superior de los menores, involucramiento parental y equidad de derechos entre padres. Su enfoque profesional se orienta al bienestar emocional y la resiliencia infantil, utilizando técnicas innovadoras y prácticas que promueven el desarrollo integral de los niños, fortaleciendo así su capacidad para enfrentar situaciones adversas.<br>
 
                                                                 </h3>
                                                             </div>
@@ -2551,16 +2434,14 @@ Colombia.<br>
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Olga_Lidia_Sanabria_Tellez.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Bryanda_Joselyn_Palma_Cahuich.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Dra. Olga Lidia Sanabria Téllez </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Bryanda Joselyn Palma Cahuich  </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-44>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Licenciada en Derecho por la Universidad Autónoma del Estado de México, Maestra en Ciencias de la Educación, Maestra en Administración, Maestra en Competencias Educativas y Doctora en Derecho Penal. Formación en Justicia Restaurativa, Mecanismos Alternativos de Solución de Conflictos, Derechos de niñas, niños y adolescentes, atención a niñas, niños y adolescentes en conflictos familiares y Coordinación de Parentalidad. Se encuentra certificada en Intervención para la solución de conflictos por CONOCER.<br>
-																	En su desarrollo profesional ha sido abogada postulante del 2000 al 2009. Coach de vida del 2006 al 2010. Docente en diversas universidades como son la Universidad del Valle de México (UVM), Universidad Tecnológica de México (UNITEC), entre otras. Docente de la Escuela del Poder Judicial del Estado de México, ha impartido cursos en diversas materias en Escuelas Judiciales de los Estados de Campeche, Durango, Guanajuato, Sinaloa, San Luis Potosí, Sonora y Quintana Roo. En el Poder Judicial del Estado de México ha ocupado los siguientes encargos: Mediadora Conciliadora y Facilitadora del Centro Estatal, Subdirectora de Certificación, Capacitación y Extensión del Centro Estatal, Secretario Proyectista de la Sala Unitaria Penal de Barrientos. Actualmente es Directora General del Centro de Convivencia Familiar del Poder Judicial del Estado de México.<br>
-																	Conferencista, Tallerista y Ponente en diversas Actividades Académicas y Foros en materia de Justicia Alternativa, Familiar y Educativa. Asesora en la creación y desarrollo de la Licenciatura en Medios Alternos de la Universidad Autónoma del Estado de México. Ha publicado diversos artículos en materia de medios alternos y coordinación de parentalidad. Coordinadora y coautora de 14 cuadernos de apoyopsicoeducativos y  Poder Judicial del estado de México.<br>
+                                                                    Bryanda Joselyn Palma Cahuich es Psicóloga con una Maestría en Psicología Clínica y Psicoterapia por el Centro de Estudio Clínica e Investigación Psicológica (2020-2022) y una Licenciatura en Psicología por el Centro Universitario de Valladolid (2009-2012). Actualmente labora en el Centro de Convivencia Familiar Supervisada del Poder Judicial del Estado de Quintana Roo, donde supervisa convivencias familiares y brinda apoyo psicológico. Fue Coordinadora de Profesionales Especializados en Servicios Migratorios en el Instituto Nacional de Migración, gestionando atención a migrantes bajo una perspectiva de Derechos Humanos. Ha cursado talleres como "Educar para el Conflicto," "Evaluación Psicológica en Casos de Guarda y Custodia," y un Diplomado en Pruebas Psicométricas en Psicología Forense. Destaca en evaluación psicológica, comunicación efectiva, resolución de conflictos y trabajo en equipo.<br>
 																</h3>
                                                             </div>
                                                         </div>
@@ -2568,26 +2449,13 @@ Colombia.<br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Raul_Aaron_Romero_Ortega.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcdo_Rodolfo_Antonio_Avila_Munoz.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Consejero Mgdo. Dr. Raúl Aarón Romero Ortega</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcdo. Rodolfo Antonio Ávila Muñoz </h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-45>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">•Licenciado en Derecho por la Universidad Nacional Autónoma de México. Especialidad en Administración de Justicia Civil, por la, facultad de Derecho de la Universidad Autónoma del Estado de México. Maestro en Ciencias Penales con Especialidad en Área de Derecho Penal, por el instituto Nacional de Ciencias Penales, Maestría en Docencia y Desarrollo de ·Competencias, Doctorado en Derecho Judicial, en la Escuela Judicial del Estado de México.
-•	Diplomado "Experto en Estrategias Didácticas y Evaluación de Competencias en el Centro Universitario CIFE.
-•	Diplomado en legislación penal en el Tribunal Superior de Justicia y de la Universidad Autónoma de Estado de México.
-•	Diplomado en Derecho Indígena en el Instituto de la Judicatura Federal.
-•	VII Diplomado en gestión y transformación de conflictos.<br>
-																Juez de Cuantía Menor y de Primera Instancia del Poder Judicial del Estado de México. Magistrado del Tribunal Superior del Estado de México. Actualmente Consejero del Poder judicial del Estado de México.
-
-
-•	Escuela Judicial del Estado de México; en tos cursos de formación de Notificador, Ejecutor, Secretario, Juez en Materia Civil; Especialidad en Derecho Familiar y Maestría en Derecho Judicial.
-•	Profesor de la Maestría en Derecho del programa de posgrado en Derecho de la Universidad Nacional Autónoma de México; en tas materias de Teoría del Acto Jurídico, asi como Obligaciones y Contratación Actual.
-•	integrante de los Comités de Evaluación de tos Cursos de Formación para Juez de Primera Instancia Materia Civil y Cuantía Menor.
-•	En 2018, Reconocimiento al Mérito Docente por la Escueta ludida! del Estado de México.
-•	Parte del claustro docente del Instituto de la Judicatura Federal, extension Nezahulacoyotl en el Diplomado Nociones Generales de Derecho, en materia de derecho familiar.	
-																	
+                                                                <h3 style="text-align: justify">Licenciado en Derecho por la Universidad Rodolfo Antonio Ávila Muñoz es egresado del Instituto Universitario Carl Rogers en Chetumal, Quintana Roo, especializado en salud mental y educación. Ha trabajado como promotor de la salud en Centros de Integración Juvenil (CIJ), donde se ha enfocado en la prevención y el tratamiento de conductas adictivas, brindando atención a grupos vulnerables. También ha colaborado en la Unidad de Servicios de Apoyo a la Educación Regular (USAER), apoyando a alumnos con necesidades educativas especiales, asegurando una atención integral. Su compromiso en estos campos lo ha llevado a crear y facilitar talleres como "Los estragos del trago" y "Gestión de emociones," impactando positivamente en la comunidad educativa al fomentar la concientización y el desarrollo de habilidades emocionales en jóvenes.<br>						
 																	
                                                          </h3>
                                                             </div>
@@ -2596,26 +2464,14 @@ Colombia.<br>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Sergio_Vargas_Gonzalez.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcda_Fabiola_Silva_Escalante.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Sergio Vargas González</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcda. Fabiola Silva Escalante </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-46>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Formación Académica: Licenciado en Derecho y Maestro en Política Criminal por la
-Universidad Nacional Autónoma de México; Diplomado en “Ética Gubernamental y
-Corporativa, Anticorrupción y Prevención de Conflicto de Intereses”, por la Escuela Libre de
-Derecho.<br>
-Es profesor interino de Derechos Humanos, Garantías y Amparo en materia Penal de la
-Facultad de Estudios Superiores Acatlán, de la Universidad Nacional Autónoma de México.
-Experiencia laboral: actualmente es titular de la Coordinación de Servicios Periciales del
-Poder Judicial del Estado de México; desempeñó los cargos de Delegado de la Contraloría
-del Poder Judicial del Estado de México en Texcoco y Tlalnepantla y Líder de Proyecto en la
-Dirección General de Contraloría.<br>
-Desde 2020 es titular de los servicios periciales del Poder Judicial del Estado de México,
-implementando el primer proceso de selección para peritos oficiales en diversas materias,
-así como la Valoración en Psicología Forense por Medios Electrónicos. <br>
+                                                                    Fabiola Silva Escalante es licenciada en Administración, con trece años de experiencia en la gestión de empresas privadas e instituciones públicas. Su trayectoria destaca en áreas como atención a derechohabientes, organización interna, gestión presupuestal, planificación y supervisión de equipos de trabajo, además de creación y seguimiento de proyectos de mejora continua y control de padrones internos. Ha recibido formación en temas familiares y con perspectiva de género. Actualmente se desempeña en la Unidad de Servicios Psicológicos, encargada del área administrativa, gestionando atenciones y seguimiento a usuarios. También ha trabajado en relaciones públicas, colaborando con tomadores de decisiones en la Administración Pública.<br>
 
                                                                 </h3>
                                                             </div>
@@ -2624,34 +2480,14 @@ así como la Valoración en Psicología Forense por Medios Electrónicos. <br>
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Arisbet_Cueriel_Aguilar.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lcdo_Diego_Alberto_Beaurregard_Zentella.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Arisbet Curiel Aguilar</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcdo. Diego Alberto Beaurregard Zentella </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-47>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Año 2022 Maestría en Trabajo Social Jurídico<br>
-Pachuca Hgo. Centro de Estudios Interdisciplinarios CEDEI<br>
-            
-Año 2016 Licenciatura en Trabajo Social<br>
-Pachuca Hgo. Instituto de Ciencias Sociales y Humanidad<br>
-    
-EXPERIENCIA<br>
-
-Lugar: Consejo de Familia, Tribunal Superior de Justicia del Estado de Hidalgo<br>
-Duración:Julio 2017 - actual<br>
-
-Actividades desarrolladas:<br>
-
-•Realización de Estudios de Campo: cuando así lo ordena jueces y juezas familiares, en los casos donde se involucran niños, niñas, adolescentes e incapaces. <br>
-
-•Estudios socioeconómicos, entrevistas estructuradas: aplicación de instrumento e interpretación y análisis de los datos recopilados.<br>
-
-•Visitas domiciliarias: con el fin de corroborar la información proporcionada e investigar las condiciones económicas, sociales, familiares y culturales de las partes 
-en un juicio familiar donde se vean involucrados niños, niñas y/o adolescentes.
-
-<br>
+                                                                   Diego Alberto Beaurregard Zentella es licenciado en Psicología con especialidad clínica y actualmente labora en la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco. Con tres años de experiencia en la aplicación e interpretación de pruebas proyectivas y estandarizadas, se destaca también en actividades administrativas, atención a usuarios y organización interna. Ofrece consulta clínica para niños, niñas, adolescentes y asesoría familiar, además de contar con experiencia en el diseño y facilitación de talleres de salud mental a nivel secundaria. Ha cursado diplomados en reeducación para hombres y masculinidades antihegemónicas, así como cursos sobre derechos humanos, enfoque de género y trata de personas.<br>
 
                                                                 </h3>
                                                             </div>
@@ -2677,85 +2513,44 @@ en un juicio familiar donde se vean involucrados niños, niñas y/o adolescentes
                                         <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
                                             <ul class=slides>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Edgar_Tello_Arcos.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Fabiola_Musme_Estrada_Gallegos.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> MTRO. EDGAR TELLO ARCOS </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Mtra. Fabiola Musmé Estrada Gallegos  </h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-48>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Formación Académica y Carrera Judicial:<br>
-❖ Egresado de la Universidad de Guadalajara, como Licenciado en Derecho.<br>
-❖ Maestría de Derecho Civil y Financiero en la Universidad de Guadalajara.<br>
-❖ Actualmente Doctorando por le Instituto Internacional del Derecho y del Estado.<br>
-❖ Ingresando al Poder Judicial en el año de 1995 mil novecientos noventa y cinco,
-teniendo diversos cargos, como; Notificador, Secretario y Secretario de Sala.<br>
-❖ Nombrado como Juez en el mes de septiembre del año 2007 dos mil siete, y, con
-motivo de ello; ha sido titular en los siguientes Juzgados:<br>
-❖ Juzgado Primero Penal con sede en Puerto Vallarta, Jalisco.<br>
-❖ Juzgados Regionales de Justicia Integral para Adolescentes de Puerto Vallarta,
-Ciudad Guzmán y Lagos de Moreno, todos dentro del Estado de Jalisco.<br> 
-❖ Juzgados Primero, Cuarto, Quinto Auxiliar, Noveno y Actualmente, Adscrito al
-Juzgado Séptimo de lo Familiar del Primer Partido Judicial.<br>
-</h3>
+                                                                    Fabiola Musmé Estrada Gallegos es Psicóloga Clínica y Maestra en Educación con diez años de experiencia en entrevistas, aplicación de pruebas, y capacitación enfocada en el ámbito empresarial y de recursos humanos, así como en el desarrollo de programas psico-administrativos para empresas industriales. Ha trabajado en mejora continua y capacitación en sensibilización psicoeducativa. Durante más de cinco años, ha sido docente en niveles básico, superior y posgrado, elaborando contenidos con enfoque clínico, organizacional y de intervención social. Además, ofrece orientación vocacional en instituciones educativas. Cuenta con diplomados en Psicología Sexual Infantil, Educación Sexual Femenina y Psicología Forense especializada en la niñez. Actualmente, se desempeña como psicóloga en la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco, donde realiza dictámenes periciales para menores, adolescentes y adultos.<br>
+															   </h3>
                                                             </div>
                                                         </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-48 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Monica_Karina_Illan_Meza.jpg" alt width=400 height=400></div>
+                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Mtra_Claudia_Cecilia_Jimenez_Ramos.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Monica Karina Illan Meza</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Claudia Cecilia Jiménez Ramos </h3>
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-49>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                 Jefa del Centro de Convivencia
-Familiar de Zapopan desde el
-2021. Actualmente pertenece a la
-Red de CECOFAMS, representando
-al Estado de Jalisco, es líder de la
-Comisión de Difusión.
-Ha trabajado con NNA desde el
-2004, en el sector educacional y
-jurídico.
-Velando siempre por el interés
-superior de la niñez, busca estar
-en constante actualización en
-temas Psicológico-Jurídico<br>
-																	
-Universidad de las Ciencias Jurídica<br>
-
-Universidad Internacional UI<br>
-Maestría en Psicología Jurídica
-Forense.<br>
-Especialidad en dictaminación Pericial (actualmente).<br>
-E X P E R I E N C I A<br>
-Jefa del Centro de Convivencia Familiar de Zapopan<br>
-Psicologa<br>
-Juzgados Municipales de Zapopan<br>
-Consejo	<br>
-Inspección y Vigilancia de Zapopan<br>
-Asistente de área.<br>
-																	
-																	
-																	
-                                                         </h3>
+                                                                 Claudia Cecilia Jiménez Ramos es psicóloga con especialización en Psicología Organizacional por la Universidad Popular de la Chontalpa y tiene una Maestría en Psicoterapia Humanista por el Instituto Universitario Carl Rogers. Actualmente, cursa la Licenciatura en Enfermería y Obstetricia. Con diez años de experiencia en la aplicación de pruebas proyectivas y psicométricas, ha trabajado en orientación vocacional y evaluación de personalidad delictiva en jóvenes y adultos jóvenes. Diseñó y dirigió talleres sobre experiencias adictivas para adolescentes en reclusión. En su rol en el Colegio Nacional de Educación Profesional Técnica, lideró el Programa de Orientación Educativa, realizando contención y asesoría para estudiantes, docentes y familias. En el Hospital del Niño Rodolfo Nieto Padrón, tiene experiencia en contención emocional y terapia ocupacional para pacientes pediátricos con enfermedades crónico-degenerativas. Actualmente, trabaja en la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco, con tres años de experiencia en dictámenes periciales para menores, adolescentes y adultos.<br>
+														  </h3>
                                                             </div>
                                                           </div>
                                                         <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-60 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                                 <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Sergio_Vladimir_Cabrales_Becerra.jpg" alt width=400 height=400></div>
+                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Dra_Erendira_Toledo_Cortes.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Juez Sergio Vladimir Cabrales Becerra</h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. Eréndira Toledo Cortés</h3>
 														
                                                         <div class=gdlr-lightbox-form id=gdlr-form-61>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
-                                                                    Es abogado por la Universidad de Guadalajara, con Maestría en Derecho Penal por la Universidad Cuauhtémoc y actualmente cursando Maestría en Sistema Penal Acusatoria en la Universidad Panamericana. <br>Docente de la maestría en Sistema Acusatorio Adversarial, impartida en el Supremo Tribunal de Justicia del Estado de Jalisco. Desde el 31 de mayo de 2016 dos mil dieciséis, funge como Juez de Control, actualmente adscrito al Centro de Justicia para la Mujer, con sede en Guadalajara, Jalisco. <br>
+                                                                    Eréndira Toledo Cortés es Doctora en Estudios de Género y Prevención de las Violencias, con una Maestría en Estudios de Género y diversas subespecialidades en Psicopatología Gestalt, Desarrollo Humano y Sueños. Con 25 años de experiencia como facilitadora y once en temas de género, ha colaborado en instituciones como el Instituto Estatal de las Mujeres y el DIF Estatal, brindando apoyo a diversos grupos, incluyendo mujeres en situación de violencia y funcionarios públicos. Ha impartido talleres y conferencias sobre violencia de género, derechos humanos, autoestima, y liderazgos con perspectiva de género, y ha publicado artículos sobre temas de igualdad y género en revistas académicas y del Poder Judicial. También fue parte del equipo editorial de la Revista Quehaceres y colaboradora en la Revista Signos de la Universidad de la Chontalpa. <br>
 
                                                                 </h3>
                                                             </div>
@@ -2764,19 +2559,12 @@ Asistente de área.<br>
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Alejandra_Nieves_Ramirez.jpeg" alt width=400 height=400></div>
+                                                    
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">PSIC.  ALEJANDRA NIEVES RAMÍREZ</h3>
+                                                        
 														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-63>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Licenciada en Psicología por la Universidad Autónoma del Estado de Morelos; ha trabajado en la Fiscalía General del Estado de Morelos como perito en psicología realizando evaluaciones a víctimas de delito, mismo cargo que actualmente ejerce en el Tribunal Superior de Justicia del Poder Judicial del Estado de Morelos, donde además de realizar evaluaciones en materia familiar y penal, realiza labores de contención y apoyo emocional con víctimas de delito directas e indirectas. Cuenta con diversos diplomados y cursos de formación en: psicología forense, psicopatología forense, derechos humanos, perspectiva de género, pruebas psicológicas en el área forense, especialización en niñas, niños y adolescentes, elaboración del dictamen médico psicológico para la evaluación de tortura de acuerdo al Protocolo de Estambul; así como certificaciones nacionales en psicopatología forense y Protocolo de Estambul. Actualmente cursa la licenciatura en Derecho en el Centro Educativo Morelense y el “Curso Autogestivo sobre Protocolo de Estambul y la Defensa Pública Federal” por parte de la Escuela Federal de Formación Judicial. <br>
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-63 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        
+                                                        
                                                     </div>
                                                 </li>
                                             </ul>
@@ -2790,367 +2578,7 @@ Asistente de área.<br>
                 </div>
 					
 					<div class="section-container container">
-                    <section>
-                         <div class=speaker-item-wrapper style="margin-bottom: 30px;">
-                                <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                            <ul class=slides>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Jesus_Salvador_Lopez_Gutierrez.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Psic. Jesús Salvador López Gutiérrez</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-64>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Estudios de licenciatura en psicología en la Universidad Autónoma del Estado de Morelos. <br>
-Psicólogo en el Centro de Ejecución de Medidas Privativas de la Libertad Para Adolescentes en el Estado de Morelos, ejerciendo funciones tales como atención psicológica de los adolescentes bajo el enfoque terapéutico de corte breve, así mismo el desarrollo de dinámicas e intervención para la reinserción de los adolescentes, como lo fueron torneos deportivos, talleres de lectura y programas de regularización en sus respectivos grados escolares, estimulando su participación social y modos adecuados de convivencia.<br>
-Jefe de departamento del área de proyectos en la Comisión Estatal de Seguridad Pública de Morelos, realizando entrevistas de filtro para elementos de nuevo ingreso, atención psicológica de los elementos policiales que son canalizados a través de las áreas operativas, aplicación de baterías psicológicas para la Licencia Oficial Colectiva para la portación de arma de fuego emitida por SEDENA y revisión de perfiles para establecer las convocatorias de las áreas operativas de la policía.<br>
-Dirección General de Atención Especializada para Adolescentes, donde se desempeñan labores de acompañamiento en vida cotidiana con las personas adolescentes en con medida de internamiento, elaboración de informes y notas evolutivas de los avances en su medida de internamiento de las personas adolescentes.<br>
-Actualmente, laborando en el Tribunal Superior de Justicia del Estado de Morelos, realizando funciones como elaboración de dictámenes periciales en materia de psicología, supervisión de convivencias entre figuras parentales e hijos, impartición de pláticas de sensibilización, acompañamiento en presentaciones de infantes y adolescentes, acompañamiento de víctimas en juicios orales.<br>
-Docente con 10 años de labor en diferentes centros educativos tales como Universidad Hartmann, Colegio Jurista y Academia Estatal de Estudios Superiores de Seguridad.<br> Así mismo experiencia en asignaturas tales como:<br>
-Psicología Forense<br>
-Psicopatología<br>
-Justicia para Adolescentes<br>
-Formación Humana para la Atención Integral de Personas Adolescentes  <br>
-Desarrollo Humano Policial<br>
-</h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-64 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Miguel_Angel_Miranda_Aquino.png" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Miguel Angel Miranda Aquino</h3>
-														
-                                                          <div class=gdlr-lightbox-form id=gdlr-form-53>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                   EDUCACIÓN<br>
- Licenciado en Psicología Facultad de Psicología de la Universidad Autónoma del Estado de Morelos (2015-2019) <br>
-Diplomado en Criminología│ Facultad de Derecho y Ciencias Sociales de la Universidad Autónoma del Estado de Morelos (Enero 2022-Julio 2022) <br>
-
-EXPERIENCIA  LABORAL<br>
- Consultorio Particular<br>
- Marzo 2021- Actualidad<br>
-
- Tribunal Superior de Justicia del Estado de Morelos <br>
-Departamento de Orientación Familiar <br>
- Marzo 2023- Actualidad<br>
-
- Fiscalía General del Estado de Morelos <br>
-Proyecto AVG CONAVIM 2022 <br>
-Agosto 2022 – Diciembre 2022 <br>
-
-Tribunal Superior de Justicia del Estado de Morelos <br>
-Unidad de Igualdad de Género y Derechos Humanos <br>
-Mayo 2022-Agosto 2022 <br>
-
-Fiscalía General del Estado de Morelos<br>
-Proyecto AVG CONAVIM 2021 <br>
-Julio 2021-Diciembre 2021 <br>
-
-CURSOS Y TALLERES <br>
-Curso: Capacitación Sobre Feminicidios, Derechos Humanos y Acceso a la Justicia con Perspectiva de Género. (Mayo 2021) SEGOB, INACIPE Y BANAVIM <br>
-Curso: Acceso a la Justicia de las Personas con Discapacidad 2021 (Marzo 2021) Suprema Corte de Justicia de la Nación.<br>
-
-
-PARTICIPACIONES <br>
-Ponente en el Foro y Mesa de Iniciativa de Ley: "Discapacidad, Derechos Humanos y Participación” H. Congreso del Estado de Morelos 30 de enero del 2023 
-Foro “Logros, Retos y Perspectiva en la Implementación de la Convención de los Derechos de Personas con Discapacidad, Rumbo al 2030” H. Congreso del Estado de Morelos 03 de mayo del 2022 .<br>
-PUBLICACIONES <br>
-Artículo: “Consecuencias del divorcio en niños, niñas y adolescentes” Revista Jurídica Justicia y Libertad Numero. 01 Escuela Judicial del Poder Judicial del Estado de Morelos Abril 2021.
-<br>
-                                                         </h3>
-                                                            </div>
-                                                          </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-53 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Aracelli_del_Carmen_Abundis.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Aracelli Abundis Zepeda</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-54>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Experiencia laboral <br>
-Servidor Público <br>
-Poder Judicial del Estado de Nayarit CECOFAM 2015- a La fecha<br>
-
--Supervisar Convivencias programadas por los Juzgados Familiares<br>
--Asistencia a escucha de menores de edad en los Juzgados Familiares. así como Juzgados de Oralidad Penal del Estado.<br>
--Asistencia a Diligencias programadas como auxiliar en contención emocional.<br>
-
-Maestra escuela Milenio <br>
-Escuela Prisciliano Sánchez Pantanal Nayarit, 2011-2012<br>
--Materia impartida: recreación.<br>
--Actividades lúdicas recreativas a alumnos de 3º a 6º año de primaria.<br>
--Elaboración de planeación y objetivos específicos en el desarrollo de los menores de edad.<br>
-
-Datos académicos <br>
-FEELINK 
-Diplomado internacional en Neurobiología del Comportamiento Humano 11 <br>
-Poder Judicial del Estado de Nayarit/Carrera Judicial Especialidad en Medios Alternos de Solucion de Conflictos actualmente 
-IIDEJRE/Poder Judicial del Estado de Nayarit/Carrera Judicial Diplomado Justicia Restaurativa Familiar 25 ago- 26 nov. 2021 
-Servicios de Salud del Estado de Nayarit.<br>
-Diplomado Intervención de La violencia sexual infantil desde una perspectiva psicológica y jurídica 01jun-16 nov 2018.  <br>
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-54 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                             <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Maria_de_la_Luz_Garcia_Medina.jpeg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic.  María de la Luz García Medina</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-55>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Formación académica.<br>
-• Febrero-Mayo 2023 Curso-Taller, Terapia Familiar Sistémico.<br>
-• Noviembre 2021-actualidad. Especialidad en Medios Alternos de Solución de Conflicto (MASC).<br>
-• Diplomado en Justicia Restaurativa.<br>
-• Abril-julio 2021. Diplomado en terapia Infantil y Adolescente.<br>
-• Septiembre-marzo 2021. Diplomado en terapia de pareja.<br>
-• Noviembre 2019: Curso de capacitación Psicometría.<br>
-• Enero-junio 2018: seminario en Terapia de Juego con enfoque Ericksoniano.<br>
-• Junio-Diciembre 2016: Diplomado en Metodología de la Investigación.<br>
-• Lic. Psicología  Área de Ciencias Sociales y Humanidades de la Universidad Autónoma de Nayarit.<br>
-Experiencia profesional.<br>
-• 2017- actual. Psicóloga del Poder Judicial del Estado de Nayarit, adscrita al  Centro Estatal de Convivencia Familiar.<br>
-• 2022- Docente de Educación Especial (Área de Psicología en Lenguaje y Comunicación) USAER 29.<br>
-• Ciclos escolar 2016-2017, 2017-2018, 2018-2019 Maestra frente a grupo Preescolar y guardería Mundo Infantil. <br>
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-55 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class=clear></div>
-                                </div>
-                            </div>
-                            <div class=clear></div>
-                    </section>
-						
-						
-						<section>
-                         <div class=speaker-item-wrapper style="margin-bottom: 30px;">
-                                <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                            <ul class=slides>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Cristina_Pena_Pedraza.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Lic. Cristina Peña Pedraza</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-65>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Formación académica<br>
-Licenciatura en la Facultad de Trabajo Social y Desarrollo Humano, U.A.N.L.<br>
-
-Experiencia profesional<br>
-10 años en área de Asistencia social, mediante la intervención de caso y familias, estudios socioeconómicos e investigaciones sociales, proyectos, administración y procuración de fondos.<br>
-5 años como Perito en Trabajo Social en la elaboración de dictámenes socioeconómicos y sistémicos en colaboración con psicólogos. <br>
-
-Desempeño en la Unidad de Servicios Psicológicos y de Trabajo Social, del Centro Estatal de Convivencia Familiar.<br>
-
-Dependencia: Poder Judicial del Estado de Nuevo León.<br>
-Puesto: Perito en Trabajo social.<br>
-
-Funciones: Manejo y aplicación del modelo de Evaluación psicológica con enfoque sistémico (trabajo multidisciplinario con área de Psicología), elaboración de reportes de evaluación socioeconómica y visita social, mediante entrevistas individuales, visitas domiciliarias y de campo en instituciones, análisis de información, diagnósticos sociales, análisis familiar, elaboración de familiogramas, entre otros correspondientes al método de Trabajo Social en el ámbito Forense.<br>
-</h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-65 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Emma_Janeth_Garcia_Ortiz.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Emma Janeth García Ortiz</h3>
-														
-                                                          <div class=gdlr-lightbox-form id=gdlr-form-66>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                   Licenciada en Psicología por la Universidad Autónoma de Nuevo León. Maestra en Psicoterapia Breve Sistémica en el Centro de Crecimiento Personal y Familiar. <br> Actualmente cursando Maestría en Psicología Forense en el Colegio Internacional de Ciencias Criminológicas y  Forenses. Cuenta con una certificación internacional en Psicopatología Forense y Sistema de Justicia por CIFAL Argentina / UNITAR.<br>
-Ha trabajado en el ámbito privado y en instituciones públicas, como la Secretaria de Desarrollo Social y la Facultad de Psicología de la UANL, brindando terapia psicológica y en la intervención con grupos terapéuticos de niños, niñas y adolescentes, así como en la elaboración, aplicación y evaluación de programas preventivos. <br>
-Ha participado en talleres y diplomados con las siguientes temáticas: psicología forense, derechos  humanos, derechos de la infancia y acceso a la justicia,  mediación en materia familiar, coordinación parental y otros. Además ha impartido conferencias sobre temas del ámbito familiar.<br>
-Cuenta con más de  12 años de experiencia en la intervención con familias conflicto, brindando servicios en los que se busca la prevalencia de los vínculos parento filiales, además de aplicar el programa de intervención psicológica con enfoque sistémico, para realizar el servicio de Terapia de Integración en el Centro de Convivencia Familiar.
-Actualmente funge como Encargada de la Unidad de Convivencia Contry del Centro de Convivencia Familiar del Poder Judicial del Estado de Nuevo León.<br>
-                                                         </h3>
-                                                            </div>
-                                                          </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-66 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Pedro_Daniel_Gonzalez_Garcia.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">LICDO. PEDRO DANIEL GONZÁLEZ GARCÍA</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-67>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Licenciado en psicología por la UANL, generación 2007, grado Master
-en psicología analítica, así como la carrera de terapeuta en arte terapia,
-ambas por la Fundación de psicología analítica Carl Gustav Jung, en
-Buenos Aires, Argentina, generación 2009; experiencia clínica con
-niños, adolescentes y adultos, actualmente psicólogo en el Centro
-Estatal de Convivencia familiar desde el año 2013. <br>
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-67 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                             <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Erika_Paola_Garcia_Almazan.jpeg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Lic. Erika Paola García Almazán</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-68>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                     <br>
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-68 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class=clear></div>
-                                </div>
-                            </div>
-                            <div class=clear></div>
-                    </section>
-						
-						
-						<section>
-                         <div class=speaker-item-wrapper style="margin-bottom: 30px;">
-                                <div class="speaker-item-holder gdlr-speaker-type-circle">
-                                    <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class=flexslider data-type=carousel data-nav-container=speaker-item-wrapper data-columns=4>
-                                            <ul class=slides>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Ileska_Karelia_Vega_Trapero.jpg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title"> Lic. Ileska Karelia Vega Trapero</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-69>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-Formación académica:<br>
-																	
-Licenciada en Psicología por la UAS, con cédula profesional 4502811 (1998-2003); con estudios de Maestría en Criminología certificados por el Instituto de Criminología y Ciencias Penales del Noroeste A.C. (2003-2005); Con Certificado en fundamentos de la psicología positiva, por la Universidad Tec Milenio (2018); certificado en Políticas efectivas de desarrollo infantil, por el Banco interamericano de desarrollo (2020). Curso Psicología Forense especializada en niñas, niños y adolescentes, y curso “Los derechos de la infancia y el acceso a la justicia”, impartidos por La SCJN, ODDI A.C., AMIJ, UNICEF (2020). Asistente a los cursos-taller, “Buenas prácticas en el tema de centros de convivencia familiar supervisada”, impartido por Ricardo Carrillo Franco (2017), “Victimología” impartido por el Dr. Luis Rodríguez Manzanera (2021), “Intervención psicológica con enfoque sistémico” impartido por la comisión nacional de tribunales superiores de justicia de los estados unidos mexicanos CONATRIB (2022), y “Violencia de género y familiar: estrategias de valoración psicológica” organizado por el poder judicial del estado de Guerrero (2023).<br>
-
-																	Actividades formativas:<br>
-
-Instructor de los módulos “Introducción al estudio del crimen: objeto y función de la criminología”, y “Taller de investigación”, en el Diplomado en sociología de la criminalidad impartido por la UAS (2008); Instructor del módulo “Psicología Jurídica”, en el Diplomado en psicología Criminal impartido por la UAS (2008); Instructor del Taller “perfilación criminal” en el I Congreso Internacional de Derecho, Culiacán Sinaloa (2009); Instructor del Taller “perfilación criminal” en el marco de la jornada académica de criminología, Universidad Autónoma de Durango campus Guasave (2014); Ponente en el módulo “Aspectos psicosociales del delincuente” en el diplomado Sociología Criminal, impartido por la UAS (2014); Ponente con el tema “Psicología Jurídico-familiar” dentro del marco del Curso Introducción a la Psicología Forense impartido por la UAS (2017), Ponente con la conferencia “La causalidad psicógena de la capacidad victimal como síntoma de la personalidad” dentro del 6º coloquio internacional sobre violencia, realizado por la UAS (2019), Ponente en el módulo “psicología jurídica, intervención judicial” en el diplomado virtual de Psicología Criminal, impartido por la UAS (2021).<br>
-
-																	Experiencia Laboral:<br>
-
-Docente de la materia psicología criminal en la UadO campus Culiacán, de 2005 a 2010; Psicóloga adscrita al Juzgado de Primera Instancia Tercero Familiar de abril 2011 a noviembre de 2016; Docente en el Instituto de Neurociencias y Educación de Sinaloa, de 2017 a la fecha; Psicóloga adscrita al Centro de Convivencia Familiar Supervisada del Poder Judicial del Estado, Culiacán Sinaloa de noviembre de 2016 a la fecha.<br>
-
-																	
-</h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-69 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                  <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Diego_Alberto_Beaurregard_Zentella.jpeg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Diego Alberto Beaurregard Zentella</h3>
-														
-                                                          <div class=gdlr-lightbox-form id=gdlr-form-70>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                   Licenciatura en psicología con especialidad clínica<br>
-
-Trabaja en la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco.<br>
-Cuenta con dos años experiencia en aplicación e interpretación de pruebas proyectivas y estandarizadas, cuatro en actividades administrativas y de gestión, atención a clientes/usuarios, así como en la organización interna de la Unidad.<br>
-Atiende consulta clínica a niñas, niños y adolescentes, así como asesorías familiares.<br>
-Tiene un año de experiencia en diseño y facilitación de talleres enfocados a la salud mental de nivel secundaria
-Ha cursado el diplomado Reeducación para hombres promovido por el Poder Judicial del Estado de Tabasco e impartido por el Psc. Victor Hugo Saldaña y los cursos en línea Aspectos Fundamentales de Derechos Humanos, Derechos Humanos de las Personas Adultas Mayores y por último La trata de Personas, promovidos por la Comisión de Derechos Humanos del Estado de Puebla.<br>
-                                                         </h3>
-                                                            </div>
-                                                          </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-70 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                                <li class="gdlr-item gdlr-speaker-item">
-                                                    <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/Erendira_Toledo_Cortes.jpeg" alt width=400 height=400></div>
-                                                    <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Dra. Eréndira Toledo Cortés</h3>
-														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-71>
-                                                            <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">
-                                                                    Doctora en Estudios de Género y Prevención de las Violencias<br>
-Maestra en Estudios de Género <br>
-Sub especialidad en Experiencia Disfuncional (Psicopatología en Gestalt)<br>
-Sub especialidad en Sueños desde la perspectiva Gestalt<br>
-Sub especialidad en Síntomas <br>
-Sub especialidad en Desarrollo Humano<br>
-Psicoterapeuta Gestalt<br>
-Licenciada en Comunicación
-<br>
-Certificación en Estándar de Competencias 539 Atención de Primer Contacto a mujeres víctimas de violencia de género<br>
-Certificación en Estándar de Competencias 293 Elaboración de Peritajes Grafológicos<br>
-Certificación en Estándares de Competencia 308, Capacitación presencial a servidoras y servidores públicos en y dese el enfoque de igualdad entre mujeres y hombres <br>
-Certificación en Estándares de Competencia 217, Impartición de Cursos de Formación de Capital Humano de manera presencial. <br>
-																	Actualmente es la coordinadora de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco, donde se realizan valoraciones psicológicas y emisión de dictámenes psicológicos de personas usuarias que tienen procesos jurídicos en matera familiar o civil, implementando la Perspectiva de Género en todos los procesos.<br>
-																	Cuenta con 23 años de experiencia como facilitadora y diez en temas Género. Ha colaborado en el Instituto Estatal de las Mujeres, Centros de Salud, DIF Estatal e iniciativa privada. Ha trabajado con población infantil, adolescente, adulta y en mayor medida con funcionariado público tomadores de decisiones y mujeres en situación de violencia.<br>
-Desde el perfil de género, imparte talleres, pláticas y conferencias con temáticas como Socialización de género, Derechos Humanos y de las Mujeres, Tipos y Ámbitos de la Violencia, Violencia en el noviazgo, Acoso y Hostigamiento sexual en los ámbitos  laboral y callejero, Lenguaje Incluyente y no Sexista, Autoestima con perspectiva de Género, Liderazgos con perspectiva de Género, entre otros.<br>
-																	
-																	Ha colaborado con artículos en libros: Diagnóstico de la violencia en el noviazgo en jóvenes de 15 a 18 años en Tabasco y Camino hacia la igualdad, memoria de acciones en materia de atención y prevención de la violencia de género, publicados por el IEM. <br>
-Publicó el artículo de investigación: TRANSVERSALIZACIÓN DE LA PERSPECTIVA DE GÉNERO EN LA ADMINISTRACIÓN PÚBLICA: CASO UNIDAD DE SERVICIO PSICOLÓGICOS DEL TRIBUNAL SUPERIOR DE JUSTICIA (TABASCO, MÉXICO), en la revista Investigación, Desarrollo, Innovación y Emprendimiento (IDIE), volumen 2, número 1, de la Universidad Tecnológica Autónoma del  Pacífico, Cali, Colombia, 2023.<br>
-Fue parte del equipo editorial de la Revista Quehaceres, con perfil de género y coolaboradora de la Revista Signos de la Universidad de la Chontalpa.
-Ha cursado talleres, diplomados y Seminarios en Derechos Humanos, Acceso a la justicia para personas con Discapacidad, Psicología Forense especializada para NNyA,  Identificación de personalidades peligrosas y de alto riesgo, entrevista y diagnóstico, Modelo de Gestión de proyectos sociales, Perspectiva de Género, Violencia de Género, Igualdad y no Discriminación, Ley para la Igualdad entre Mujeres y Hombres; sí como de Desarrollo Humano, Formación de Talleristas con perspectiva de género, Metodología del Marco Lógico con Perspectiva de Género, Elaboración de manuales de Procedimiento, entre otros.<br>
-Ha impartido formaciones a la sociedad civil, empresas privadas, funcionariados municipales y estatales, grupos vulnerables, Centro de Salud y Organizaciones No Gubernamentales. Destacan Tribunal Superior de Justicia, Fiscalía General del Estado, Policía Federal, Secretaría de Seguridad Pública, Secretaría de Educación DIF, DAM, INEGI, PEMEX, CONAFE, UJAT, IMSS, CONAGUA, Comisión Nacional de Seguridad, Ayuntamientos Municipales, Universidades, Colegios.<br>
-
-
-
-
-                                                                </h3>
-                                                            </div>
-                                                        </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-71 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
-                                                    </div>
-                                                </li>
-                                             <li class="gdlr-item gdlr-speaker-item">
-                                                    
-                                                    
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class=clear></div>
-                                </div>
-                            </div>
-                            <div class=clear></div>
-                    </section>
-						
+       
 						
                 </div>
 					
@@ -3163,7 +2591,7 @@ Ha impartido formaciones a la sociedad civil, empresas privadas, funcionariados 
         <footer class=footer-wrapper>
             <div class=copyright-wrapper>
                 <div class="copyright-container container">
-                    <div class=copyright-left> © Copyright CONATRIB 2023</div>
+                    <div class=copyright-left> © Copyright CONATRIB 2024</div>
                     <div class=copyright-right> <a href="https://conatrib.org.mx/">P&aacute;gina web</a> | <a href="https://www.youtube.com/channel/UCjy09Wgg2LXoqTAtLXLpeQQ">Youtube</a> | <a href="https://m.facebook.com/CONATRIBoficial/">Facebook</a> | <a href="https://twitter.com/ConatribMx">Twitter</a></div>
                     <div class=clear></div>
                 </div>
@@ -3172,8 +2600,8 @@ Ha impartido formaciones a la sociedad civil, empresas privadas, funcionariados 
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src='js/jquery/jquery.js'></script>
-    <script src='js/jquery/jquery-migrate.min.js'></script>
+    {{-- <script src='js/jquery/jquery.js'></script>
+    <script src='js/jquery/jquery-migrate.min.js'></script> --}}
 
 
     <script src='plugins/superfish/js/superfish.js'></script>
@@ -3192,10 +2620,10 @@ Ha impartido formaciones a la sociedad civil, empresas privadas, funcionariados 
     <script src='js/bitacoraLogout.js'></script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
 
-            $("#btncons").click(function(){
-            setTimeout('document.location.reload()',20000);
+            $("#btncons").click(function () {
+                setTimeout('document.location.reload()', 20000);
 
             });
         });

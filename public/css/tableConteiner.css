@@ -1,0 +1,78 @@
+.table-container {
+    max-width: 100%;
+    /* Ajusta el tamaño del contenedor aquí */
+    margin: 0 auto;
+    /* Centra el contenedor */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General Styles for Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    /* Más espacio en los encabezados */
+}
+
+tbody td {
+    padding: 12px;
+    /* Ajusta el espacio interno en las celdas */
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        /* Mantén espacio también en móviles */
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 50%;
+        display: inline-block;
+    }
+}
