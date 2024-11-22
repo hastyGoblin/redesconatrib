@@ -19,20 +19,35 @@ class AceptadoRechazadoController extends Controller
         $rol = usersRoles::where('fk_UsersRoles','=', $id)->get();
         $red = cat_redesconatrib::where('id','=', $red_id)->get();
 
-        $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad','estatus_const','users.updated_at')
-                        ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
-                        ->join('roles AS R','R.ID','=','UR.fk_roles')
-                        ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
-                        ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
-                        ->join('entidadfederativa AS entidad','entidad.id','=','users.fk_estado')
-                        ->where('UR.fk_roles','=','2')
-                        ->where('users.activo','=','1')
-                        ->where('users.fk_estatus','=','2')
-                        ->where('users.id_red','=',$red_id)
-                        ->orderBy('users.updated_at')
-                        ->get();
+        $registradosRed = User::select(
+            'name',
+            'apellido_paterno',
+            'apellido_materno',
+            'dependencia',
+            'cargo',
+            'numero_celular',
+            'email',
+            'users.id',
+            'entidad.entidad',
+            'estatus_const',
+            'users.updated_at'
+        )
+        ->join('usersRoles AS UR', 'UR.fk_UsersRoles', '=', 'users.id')
+        ->join('roles AS R', 'R.ID', '=', 'UR.fk_roles')
+        ->join('estatusUsers AS EU', 'EU.ID', '=', 'users.fk_estatus')
+        ->join('cat_redesconatrib AS CR', 'CR.ID', '=', 'users.id_red')
+        ->join('entidadfederativa AS entidad', 'entidad.id', '=', 'users.fk_estado')
+        ->where('UR.fk_roles', '=', '2')
+        ->where('users.activo', '=', '1')
+        ->where('users.fk_estatus', '=', '2')
+        ->where('users.id_red', '=', $red_id)
+        ->orderBy('apellido_paterno') // Cambiado para ordenar por apellido_paterno
+        ->get();
 
-        return view('Aceptados')->with('rol',$rol)->with('red',$red)->with('registradosRed',$registradosRed);
+        return view('Aceptados')
+            ->with('rol', $rol)
+            ->with('red', $red)
+            ->with('registradosRed', $registradosRed);
     }
 
     public function usuarioRechazado(){

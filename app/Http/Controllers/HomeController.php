@@ -39,22 +39,19 @@ class HomeController extends Controller
 
         if ($rol[0]->fk_roles == '1') {
 
-            //     $registradosRed = User::select('name','apellido_paterno','apellido_materno','dependencia','cargo','numero_celular','email','users.id','entidad.entidad', 'users.created_at')
-            //                             ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
-            //                             ->join('roles AS R','R.ID','=','UR.fk_roles')
-            //                             ->join('estatusUsers AS EU','EU.ID','=','users.fk_estatus')
-            //                             ->join('cat_redesconatrib AS CR','CR.ID','=','users.id_red')
-            //                             ->join('entidadfederativa AS entidad','entidad.id','=','users.fk_estado')
-            //                             ->where('users.activo','=','0')
-            //                             ->where('users.fk_estatus','=','1')
-            //                             ->where('UR.fk_roles','=','2')
-            //                             ->where('users.id_red','=',$red_id)
-            //                             ->orderBy('users.created_at','asc')
-            //                             ->get();
-
-            //     return view('modulo_admin', compact('registradosRed', 'rol', 'red'));
-
-            $registradosRed = User::select('name', 'apellido_paterno', 'apellido_materno', 'dependencia', 'cargo', 'numero_celular', 'email', 'users.id', 'entidad.entidad', 'estatus_const', 'users.updated_at')
+            $registradosRed = User::select(
+                'name',
+                'apellido_paterno',
+                'apellido_materno',
+                'dependencia',
+                'cargo',
+                'numero_celular',
+                'email',
+                'users.id',
+                'entidad.entidad',
+                'estatus_const',
+                'users.updated_at'
+            )
             ->join('usersRoles AS UR', 'UR.fk_UsersRoles', '=', 'users.id')
             ->join('roles AS R', 'R.ID', '=', 'UR.fk_roles')
             ->join('estatusUsers AS EU', 'EU.ID', '=', 'users.fk_estatus')
@@ -64,24 +61,26 @@ class HomeController extends Controller
             ->where('users.activo', '=', '1')
             ->where('users.fk_estatus', '=', '2')
             ->where('users.id_red', '=', $red_id)
-            ->orderBy('users.updated_at')
+            ->orderBy('apellido_paterno') // Cambiado para ordenar por apellido_paterno
             ->get();
 
-            return view('Aceptados')->with('rol', $rol)->with('red', $red)->with('registradosRed', $registradosRed);
+            return view('Aceptados')
+                ->with('rol', $rol)
+                ->with('red', $red)
+                ->with('registradosRed', $registradosRed);
 
         }elseif ($rol[0]->fk_roles == '2')
         {
             $registradosRed = User::select('name','apellido_paterno','apellido_materno','id_red','users.id')
-                                    ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
-                                    ->join('roles AS R','R.ID','=','UR.fk_roles')
-                                    ->where('users.activo','=','1')
-                                    ->where('users.fk_estatus','=','2')
-                                    ->where('UR.fk_roles','=','2')
-                                    ->where('users.id_red','=',$red_id)
-                                    ->where('users.id','=',$id)
-                                    ->get();
+                            ->join('usersRoles AS UR','UR.fk_UsersRoles','=','users.id')
+                            ->join('roles AS R','R.ID','=','UR.fk_roles')
+                            ->where('users.activo','=','1')
+                            ->where('users.fk_estatus','=','2')
+                            ->where('UR.fk_roles','=','2')
+                            ->where('users.id_red','=',$red_id)
+                            ->where('users.id','=',$id)
+                            ->get();
 
-            // Activar Constancia
             $activoConst = constanciasUsuarios::where('fk_users','=', $id )->get();
             $existe = $activoConst->count();
 

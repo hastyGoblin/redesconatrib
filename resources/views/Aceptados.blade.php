@@ -176,8 +176,8 @@
                     </table>
                 </div> --}}
 
-                <div class="table-container">
-                    <table id="myTable" class="display">
+                <div class="table-container ">
+                    <table id="myTable" class="display ">
                     <thead>
                         <tr>
                             <th>Numero de Registro</th>
@@ -195,7 +195,7 @@
                     <tbody>
                         @foreach($registradosRed as $registrados)
                         <tr>
-                            <td data-label="Estado">{{ $registrados->id }}</td>
+                            <td data-label="Estado"></td>
                             <td data-label="Nombre">{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
                             <td data-label="Estado">{{ $registrados->entidad }}</td>
                             <td data-label="Dependencia">{{ $registrados->dependencia }}</td>
@@ -253,11 +253,22 @@
     <script src='administrador/red/plugins/jquery.isotope.min.js'></script>
     {{-- <script src='administrador/red/js/plugins.min.js'></script> --}}
     <script>
-        $(document).ready(function () {
+        $(document).ready(function () {
             let table = new DataTable('#myTable', {
-                // config options...
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json',
+                },
+                columnDefs: [
+                    {
+                        targets: 0, // La columna 0
+                        render: function (data, type, row, meta) {
+                            return meta.row + 1; // Devuelve el número de fila + 1
+                        }
+                    }
+                ]
             });
         });
     </script>
+
 </body>
 </html>
