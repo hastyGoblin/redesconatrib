@@ -8,6 +8,7 @@
 
     <title>Red &#8211; Cecofam</title>
 
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="rede_1_cecofam/red/css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_1_cecofam/red/plugins/superfish/css/superfish.css" type="text/css" media="all">
     <link rel="stylesheet" href="rede_1_cecofam/red/plugins/dl-menu/component.css" type="text/css" media="all">
@@ -20,10 +21,10 @@
     <link rel="stylesheet" href="rede_1_cecofam/red/css/master-custom.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Montserrat%3Aregular%2C700&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?" family="Droid+Serif%3Aregular%2Citalic%2C700%2C700italic&amp;subset=latin&amp;ver=5e348039466ee2df77d142cdeeca1221" type="text/css" media="all">
-
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&subset=latin" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i&subset=latin" type="text/css" media="all">
 </head>
 
 <body data-rsssl="1" class="home page-template-default page page-id-3304 _masterslider _msp_version_3.2.7">
@@ -32,13 +33,16 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="rede_1_cecofam/red/images/logo_red_1.png" alt=""> </a>
+                        <a href=""> <img src="{!! asset('rede_1_cecofam/red/images/logo_red_1.png') !!}" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
+                               <!-- <li class="menu-item">
+                                    <a href="#historia">Historia</a>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -54,6 +58,9 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
+                                <!-- <li class="menu-item">
+                                    <a href="#historia">Historia</a>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -132,6 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
+                                
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
@@ -171,6 +179,9 @@
                                           <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>XX:00 hrs.</div>-->
+                                                    
+													
 													<div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -181,6 +192,7 @@
                                                         </div>
                                                     </div>
 													
+													
 												<div class="clear"></div>
                                                 </div>
                                             </div>
@@ -188,14 +200,14 @@
                                                 <h3 class="gdlr-session-item-title">Ceremonia Inaugural</h3>
                                                 <div class="gdlr-session-thumbnail-wrapper">
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
-														<article class="type-post">
-																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://youtu.be/ue_foQLs6BI?si=Vxm21YHJTxohGptY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-																</div>
-															   <div class="entry-block"></div>
-														 </article>
-														</div>
+                                                        <article class="type-post">
+                                                            <div class="entry-cover">
+                                                                <iframe width="560" height="315" src="https://youtu.be/ue_foQLs6BI?si=Vxm21YHJTxohGptY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                            </div>
+                                                            <div class="entry-block"></div>
+                                                        </article>
                                                     </div>
+                                                </div>
                                               </div>
                                              <div class="clear"></div>
                                        <div class="gdlr-session-item-content-wrapper">
@@ -231,6 +243,8 @@
                                             </div>
                                           <div class="clear"></div>
                                         </div> 
+										
+									
 										
 										<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
@@ -275,7 +289,7 @@
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Pedro Daniel González García</a></div>
-																<div class="gdlr-session-item-excerpt">Piscólogo en el Centro Estatal de Convivencia Familiar del Estado de Nuevo León</div>
+																<div class="gdlr-session-item-excerpt">Centro Estatal de Convivencia Familiar del Estado de Nuevo León</div>
 																
                                                             </div>
                                                         </div>
@@ -288,10 +302,10 @@
                                                <h3 class="gdlr-session-item-title">“Evaluación Psicológica en Casos de Infidelidad”</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
-														<div class="entry-cover">
-															<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-														</div>
-													    <div class="entry-block"></div>
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
 													 </article>
                                                   </div>
                                             </div>
@@ -316,7 +330,7 @@
 															</div>
 															<div class="session-speaker-list">
 																 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Edgar Antonio Cabrera Meneses </a></div>
-																<div class="gdlr-session-item-excerpt">Director de Psicología del Poder Judicial del Estado de Querétaro </div>
+																<div class="gdlr-session-item-excerpt">Director de Psicología del Poder Judicial del Estado de Hidalgo </div>
 															</div>
                                                         </div>
                                                       </div>
@@ -536,7 +550,9 @@
 							    </div>			
 							 </div>
 									
+									
                          <!-- termina dia 1-->
+									
 									
                          <!-- inicia dia 2 -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
@@ -649,7 +665,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Eric García-López</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dr. Eric García-Lópe</a></div>
 																<div class="gdlr-session-item-excerpt">Investigador Titular C en el INACIPE y Miembro del Sistema Nacional de Investigadoras e Investigadores (SNII)</div>
                                                             </div>
                                                         </div>
@@ -714,7 +730,7 @@
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Erendira Toledo Cortés </a></div>
-																<div class="gdlr-session-item-excerpt">Doctora en estudios de género y preveción de las violencias</div>
+																<div class="gdlr-session-item-excerpt">Profesor de Carrera Asociado “C” en la Escuela Nacional de Trabajo Social de la UNAM.</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -755,7 +771,7 @@
                                                 </div>
                                              </div>
                                             <div class="gdlr-session-item-content">
-											    <div class="gdlr-session-item-excerpt">Cápsula:</div>
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
                                                <h3 class="gdlr-session-item-title">“Comunicación Asertiva en las Parejas Siendo Padres”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
@@ -788,7 +804,7 @@
                                              </div>
                                             <div class="gdlr-session-item-content">
 											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
-                                               <h3 class="gdlr-session-item-title"> “Las Finanzas en Pareja son Básicas para la Sana Relación”</h3>
+                                               <h3 class="gdlr-session-item-title"> “Las Finanzas en Pareja son Básicas para una Sana Relación”</h3>
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
@@ -953,7 +969,7 @@
                                                       <div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
-																<div class="session-speaker-list-item"><a>Ponente</a></div>
+																<div class="session-speaker-list-item"><a>Ponentes</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Roberto González Toríz</a></div>
 																<div class="gdlr-session-item-excerpt">Psicólogo Especializado en el Poder Judicial de la CDMX</div>
 															</div>
@@ -1010,7 +1026,37 @@
                                           <div class="clear"></div>
                                         </div>	
 								
-									
+									<div class="gdlr-session-item-content-wrapper">
+                                           <div class="gdlr-session-item-divider"></div>
+                                             <div class="gdlr-session-item-content-info">
+                                                <div class="gdlr-session-info">
+												 <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>18:30  hrs.</div>-->
+                                                      <div class="session-info session-speaker">
+                                                        <div class="session-speaker-inner">
+                                                            <div class="session-speaker-list">
+																<div class="session-speaker-list-item"><a>Ponente</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtro. Roberto González Toríz</a></div>
+																<div class="gdlr-session-item-excerpt">Psicólogo Especializado en el Poder Judicial de la CDMX</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                             </div>
+                                            <div class="gdlr-session-item-content">
+											    <div class="gdlr-session-item-excerpt">Conferencia:</div>
+                                               <h3 class="gdlr-session-item-title"> “Investigación Forense de la Violencia de Género”</h3>
+												<div class="gdlr-session-thumbnail-wrapper">
+                                                     <article class="type-post">
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
+													 </article>
+                                                  </div>
+                                            </div>
+                                      <div class="clear"></div>
+                                </div>
 									
 						<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
@@ -1022,7 +1068,7 @@
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Fabiola Silva Escalante</a></div>
-																<div class="gdlr-session-item-excerpt">Encargada del área administrativa de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco</div>
+																<div class="gdlr-session-item-excerpt">Encargada de la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -1083,7 +1129,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponentes</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Karla Jazmín Cetina Carrillo </a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Carla Jazmín Zetina Carrillo </a></div>
 																<div class="gdlr-session-item-excerpt">Perita en el Poder Judicial del Estado de Quintana Roo</div>
 																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Alán Joseph Blancas Chay</a></div>
 																<div class="gdlr-session-item-excerpt">Perito en Criminología y Psicología Forense. Participación del Poder Judicial del Estado de Quintana Roo</div>
@@ -1116,7 +1162,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Marlen Ramírez García</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Mtra. Marlene Ramírez García</a></div>
 																<div class="gdlr-session-item-excerpt">Psicóloga Especializada en el Poder Judicial de la CDMX</div>
                                                             </div>
                                                         </div>
@@ -1719,7 +1765,7 @@
                             <div class="speaker-item-wrapper" style="margin-bottom: 30px;">
                                 <div class="speaker-item-holder gdlr-speaker-type-circle">
                                     <div class="gdlr-item gdlr-speaker-carousel-wrapper">
-                                        <div class="flexslider" data-type="carousel" data-nav-container="speaker-item-wrapper" data-columns="4">
+                                        <div class="flexslider" data-type="carousel" data-nav-container="speaker-item-wrapper" data-columns="4"> 
                                             <ul class="slides">
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/2024/Claudia_Ibet_Navarrete_Mendoza_2024.jpg" alt width="400" height="400"></div>
@@ -2260,7 +2306,7 @@ Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterap
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lcda. Cristina Peña Pedraza</h3>
 														
-                                                        <div class=gdlr-lightbox-form id=gdlr-form-011>
+                                                        <div class=gdlr-lightbox-form id=gdlr-form-38>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                    Cristina Peña Pedraza es Licenciada en Trabajo Social por la Universidad Autónoma de Nuevo León, con una década de experiencia en el ámbito de la asistencia social. Su labor se centra en la aplicación del método de caso y familia, realizando diagnósticos, evaluaciones y estudios socioeconómicos, así como en el desarrollo de proyectos comunitarios y la gestión de recursos. Desde hace seis años, se desempeña como perito en Trabajo Social en el Centro de Convivencia Familiar del Estado de Nuevo León, donde elabora dictámenes socioeconómicos y realiza visitas sociales y evaluaciones con un enfoque sistémico. Su trabajo en este contexto se realiza en conjunto con un equipo interdisciplinario de derecho y psicología. Además, participa activamente en cursos y talleres de peritaje y tiene experiencia en comparecencias en juicios familiares.<br>
@@ -2269,7 +2315,7 @@ Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterap
                                                                 </h3>
                                                             </div>
                                                         </div>
-                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-011 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
+                                                        <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info"><a class=gdlr-ticket-button href=#gdlr-form-38 data-rel=fancybox data-fancybox-type=inline>Ver semblanza</a></div>
                                                     </div>
                                                 </li>
                                              <li class="gdlr-item gdlr-speaker-item">
@@ -2280,7 +2326,7 @@ Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterap
                                                         <div class=gdlr-lightbox-form id=gdlr-form-39>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3>
-                                                                    Dulce Rosario Serralta Contreras es Licenciada en Psicología por la Universidad Humanista de Cancún, Quintana Roo, con especialidad en psicología clínica. También es licenciada en Ciencias de la Comunicación por el Instituto Comercial Bancarios de Mérida, Yucatán, y cuenta con un Diplomado en Coaching Ontológico por Red Consultores en Mérida. Inició su carrera como psicóloga en la Casa de Asistencia Temporal del DIF Municipal en Playa del Carmen, atendiendo a niños bajo resguardo de la Procuraduría de la Defensa del Menor y la Familia. Posteriormente, trabajó en el Complejo de Seguridad C5 de Quintana Roo, en Cancún, donde brindó apoyo psicológico en situaciones de emergencia de violencia familiar y de género. Fue psicóloga en el Centro de Reinserción Social Municipal en Playa del Carmen, ofreciendo terapia individual, familiar y talleres de desarrollo personal para los internos. Actualmente, se desempeña en el área de evaluación del Centro de Convivencia Familiar en Playa del Carmen.<br>
+                                                                    Contreras es licenciada en Psicología por la Universidad Humanista de Cancún, Quintana Roo, con especialidad en psicología clínica. También es licenciada en Ciencias de la Comunicación por el Instituto Comercial Bancarios de Mérida, Yucatán, y cuenta con un Diplomado en Coaching Ontológico por Red Consultores en Mérida. Inició su carrera como psicóloga en la Casa de Asistencia Temporal del DIF Municipal en Playa del Carmen, atendiendo a niños bajo resguardo de la Procuraduría de la Defensa del Menor y la Familia. Posteriormente, trabajó en el Complejo de Seguridad C5 de Quintana Roo, en Cancún, donde brindó apoyo psicológico en situaciones de emergencia de violencia familiar y de género. Fue psicóloga en el Centro de Reinserción Social Municipal en Playa del Carmen, ofreciendo terapia individual, familiar y talleres de desarrollo personal para los internos. Actualmente, se desempeña en el área de evaluación del Centro de Convivencia Familiar en Playa del Carmen.<br>
 																	
 																	
 
@@ -2409,7 +2455,7 @@ Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterap
 														
                                                           <div class=gdlr-lightbox-form id=gdlr-form-45>
                                                             <div class=gdlr-paypal-form-wrapper>
-                                                                <h3 style="text-align: justify">Rodolfo Antonio Ávila Muñoz es egresado del Instituto Universitario Carl Rogers en Chetumal, Quintana Roo, especializado en salud mental y educación. Ha trabajado como promotor de la salud en Centros de Integración Juvenil (CIJ), donde se ha enfocado en la prevención y el tratamiento de conductas adictivas, brindando atención a grupos vulnerables. También ha colaborado en la Unidad de Servicios de Apoyo a la Educación Regular (USAER), apoyando a alumnos con necesidades educativas especiales, asegurando una atención integral. Su compromiso en estos campos lo ha llevado a crear y facilitar talleres como "Los estragos del trago" y "Gestión de emociones," impactando positivamente en la comunidad educativa al fomentar la concientización y el desarrollo de habilidades emocionales en jóvenes.<br>						
+                                                                <h3 style="text-align: justify">Licenciado en Derecho por la Universidad Rodolfo Antonio Ávila Muñoz es egresado del Instituto Universitario Carl Rogers en Chetumal, Quintana Roo, especializado en salud mental y educación. Ha trabajado como promotor de la salud en Centros de Integración Juvenil (CIJ), donde se ha enfocado en la prevención y el tratamiento de conductas adictivas, brindando atención a grupos vulnerables. También ha colaborado en la Unidad de Servicios de Apoyo a la Educación Regular (USAER), apoyando a alumnos con necesidades educativas especiales, asegurando una atención integral. Su compromiso en estos campos lo ha llevado a crear y facilitar talleres como "Los estragos del trago" y "Gestión de emociones," impactando positivamente en la comunidad educativa al fomentar la concientización y el desarrollo de habilidades emocionales en jóvenes.<br>						
 																	
                                                          </h3>
                                                             </div>
@@ -2486,7 +2532,7 @@ Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterap
                                                     <div class=gdlr-speaker-item-content>
                                                         <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtra. Claudia Cecilia Jiménez Ramos </h3>
 														
-                                                          <div class=gdlr-lightbox-form id=gdlr-form-60>
+                                                          <div class=gdlr-lightbox-form id=gdlr-form-49>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
                                                                  Claudia Cecilia Jiménez Ramos es psicóloga con especialización en Psicología Organizacional por la Universidad Popular de la Chontalpa y tiene una Maestría en Psicoterapia Humanista por el Instituto Universitario Carl Rogers. Actualmente, cursa la Licenciatura en Enfermería y Obstetricia. Con diez años de experiencia en la aplicación de pruebas proyectivas y psicométricas, ha trabajado en orientación vocacional y evaluación de personalidad delictiva en jóvenes y adultos jóvenes. Diseñó y dirigió talleres sobre experiencias adictivas para adolescentes en reclusión. En su rol en el Colegio Nacional de Educación Profesional Técnica, lideró el Programa de Orientación Educativa, realizando contención y asesoría para estudiantes, docentes y familias. En el Hospital del Niño Rodolfo Nieto Padrón, tiene experiencia en contención emocional y terapia ocupacional para pacientes pediátricos con enfermedades crónico-degenerativas. Actualmente, trabaja en la Unidad de Servicios Psicológicos del Poder Judicial del Estado de Tabasco, con tres años de experiencia en dictámenes periciales para menores, adolescentes y adultos.<br>

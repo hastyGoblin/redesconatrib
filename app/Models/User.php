@@ -8,6 +8,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -61,5 +63,14 @@ class User extends Authenticatable
     }
     public function estatuses(){
         return $this->belongsTo(EstatusUsers::class, 'id', 'fk_estatus');
+    }
+    public function roles(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            Role::class,        // Modelo relacionado
+            'usersRoles',       // Tabla intermedia
+            'fk_UsersRoles',    // Clave foránea en usersRoles hacia User
+            'fk_roles'          // Clave foránea en usersRoles hacia Role
+        );
     }
 }

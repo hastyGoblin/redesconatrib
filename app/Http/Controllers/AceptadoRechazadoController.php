@@ -41,7 +41,7 @@ class AceptadoRechazadoController extends Controller
         ->where('users.activo', '=', '1')
         ->where('users.fk_estatus', '=', '2')
         ->where('users.id_red', '=', $red_id)
-        ->orderBy('apellido_paterno') // Cambiado para ordenar por apellido_paterno
+        ->orderBy('apellido_paterno') // ordenar por apellido_paterno
         ->get();
 
         return view('Aceptados')

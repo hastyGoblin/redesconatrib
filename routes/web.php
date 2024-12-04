@@ -29,10 +29,13 @@ Route::post('/validarInicio', [AceptadoRechazadoController::class, 'validaInicio
 Route::post('/regLogout', [LogoutBitacoraController::class, 'registraLogout'])->name('regLogout');
 
 
-Route::post('/habilitaConstancia', [generaConstancia::class, 'habilitaConstancia'])->name('habilitaConstancia');
-Route::post('/usuarioConstancias', [generaConstancia::class, 'descargaConstancia'])->name('usuarioConstancias');
+// Route::post('/habilitaConstancia', [generaConstancia::class, 'habilitaConstancia'])->name('habilitaConstancia');
+// Route::post('/usuarioConstancias', [generaConstancia::class, 'descargaConstancia'])->name('usuarioConstancias');
 
 Route::post('/descargaConstancia', [generaConstancia::class, 'descargaConstancia'])->name('descargaConstancia');
 Route::get('/descargaManual', [generaConstancia::class, 'descargaManual'])->name('descargaManual');
 Route::get('/DescargaPdf', [generaConstancia::class, 'DescargaPdf'])->name('DescargaPdf');
+
+Route::get('/aceptados', [generaConstancia::class, 'mostrarVistaConConstancias'])->name('mostrarVistaConConstancias');
+Route::post('/habilitaTodasConstancias', [generaConstancia::class, 'habilitaTodasConstancias'])->name('habilitaTodasConstancias');
 

@@ -11,41 +11,117 @@ use Auth;
 use App\Models\User;
 use DB;
 use Mail;
+use Carbon\Carbon;
+use App\Models\roles;
 
 class generaConstancia extends Controller
 {
 
     private $fpdf;
 
-    public function habilitaConstancia(Request $request){
+    // Esta funcio es para habilitar constancias individuales
+    // public function habilitaConstancia(Request $request)
+    // {
+    //     // Validar entrada
+    //     $validated = $request->validate([
+    //         'id_user' => 'required|exists:users,id',
+    //     ]);
 
-        $user = $request['id_user'];
-        $datos_user = User::where('id','=', $user)->get();
+    //     // Recuperar usuario
+    //     $user = User::find($validated['id_user']);
 
-        $red_id = Auth::user()->id_red;
+    //     // Recuperar red del usuario autenticado
+    //     $red = cat_redesconatrib::find(Auth::user()->id_red);
 
-        constanciasUsuarios::create([
-            "fk_users" => $request->id_user,
-            "activo" => 1,
-        ]);
+    //     // Crear constancia del usuario
+    //     constanciasUsuarios::create([
+    //         "fk_users" => $user->id,
+    //         "activo" => 1,
+    //     ]);
 
-        DB::table('users')
-        ->where ('id','=',$request->id_user)
-        ->update(['estatus_const'=>1]);
+    //     // Actualizar estatus del usuario
+    //     $user->update(['estatus_const' => 1]);
 
-        $red = cat_redesconatrib::where('id','=', $red_id)->get();
+    //     // Preparar información del correo
+    //     $info = [
+    //         'tipo_correo' => 4,
+    //         'nombre' => $user->name,
+    //         'correo' => $user->email,
+    //         'red' => $red->red ?? 'Sin Red',
+    //     ];
 
-        $info = [
+    //     // Enviar correo
+    //     // Mail::to($user->email)->send(new RegistroMail($info));
+
+    //     // Redirigir con mensaje de éxito
+    //     return redirect()->route('home')->with('success', 'Constancia Habilitada');
+    // }
+
+    public function habilitaTodasConstancias()
+    {
+        // Validar que la relación funciona
+        $userRoles = User::first()->roles; // Esto ya no debería ser null
+        // dd($userRoles);
+
+        // Recuperar todos los usuarios con rol 2 y que no tienen constancia habilitada
+        $usuarios = User::where('estatus_const', 0)
+        ->whereHas('roles', function ($query) {
+            $query->where('roles.ID', 2); // Asegúrate de usar la clave primaria correcta
+        })->get();
+
+        foreach ($usuarios as $user) {
+            // Crear constancia del usuario
+            constanciasUsuarios::create([
+                "fk_users" => $user->id,
+                "activo" => 1,
+            ]);
+
+            // Actualizar estatus del usuario
+            $user->update(['estatus_const' => 1]);
+
+            // Preparar información del correo
+            $info = [
                 'tipo_correo' => 4,
-                'nombre' => $datos_user[0]->name,
-                'correo' => $datos_user[0]->email,
-                'red' => $red[0]->red,
-                ];
+                'nombre' => $user->name,
+                'correo' => $user->email,
+                'red' => Auth::user()->red ?? 'Sin Red',
+            ];
 
-        // Mail::to($datos_user[0]->email)->send(new RegistroMail($info));
+            // Enviar correo
+            // Mail::to($user->email)->send(new RegistroMail($info));
+        }
 
-        return redirect()->route('home')->with('success','Constancia Habilitada');
+        return redirect()->route('home')->with('success', 'Constancias habilitadas para todos los usuarios');
     }
+
+
+    // public function mostrarVistaConConstancias()
+    // {
+    //     // Obtener la fecha actual
+    //     $fechaActual = Carbon::now();
+
+    //     // Obtener el registro activo de la tabla cat_redesconatrib
+    //     $redActiva = cat_redesconatrib::where('activo', 1)->first();
+
+    //     // Inicializar la variable habilitarBoton como false por defecto
+    //     $habilitarBoton = false;
+
+    //     if ($redActiva) {
+    //         // Si existe un registro activo, verificar si la fecha actual es mayor que la fechaFin
+    //         $habilitarBoton = $fechaActual->gt(Carbon::parse($redActiva->fechaFin));
+    //     }
+
+    //     // Recuperar datos para la tabla
+    //     $registradosRed = User::with('roles')->get();
+
+    //     // Enviar respuesta como JSON
+    //     return response()->json([
+    //         'registradosRed' => $registradosRed,
+    //         'habilitarBoton' => $habilitarBoton,
+    //         'redActiva' => $redActiva,
+    //     ]);
+    // }
+
 
     public function descargaManual(){
         $filename = "ManualUsuario/241122_ManualdeUsuario_CONSTANCIA.pdf"; // el nombre con el que se descargará, puede ser diferente al original

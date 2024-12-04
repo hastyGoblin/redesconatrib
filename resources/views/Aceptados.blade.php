@@ -101,7 +101,6 @@
                                 <div class="section-container container">
                                     <div class=session-item-wrapper style="margin-bottom: 75px;">
                                         <div class="gdlr-session-item gdlr-small-session-item gdlr-item">
-                                            
                                             <!-- Título -->
                                             <div class="gdlr-session-item-head">
                                                 <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-2" style="user-select: none; cursor: pointer;">
@@ -111,19 +110,6 @@
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
-
-                                            <!-- Mensajes -->
-                                            @if($message = Session::get('success'))
-                                                <div style="background-color: #d4edda;" class="alert alert-success" role="alert">
-                                                    <font color="#155724">{{ $message }}</font>
-                                                </div>
-                                            @endif
-
-                                            @if($message = Session::get('danger'))
-                                                <div style="background-color: #d4edda;" class="alert alert-danger" >
-                                                    <font color="#721c24">{{ $message }}</font>
-                                                </div>
-                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -132,12 +118,21 @@
                     </div>
                 </div>
                 
+                <!-- Botón General -->
+                <div class="text-center mb-3" hidden>
+                    <form method="post" action="{{ route('habilitaTodasConstancias') }}">
+                        @csrf
+                        <button type="submit" class="btn btn-success">Habilitar Constancias para Todos</button>
+                    </form>
+                </div>
+
                 <!-- Tabla -->
-                {{-- <div class="table-container">
-                    <table>
+                <div class="table-container">
+                    <table id="myTable" class="display">
                         <thead>
                             <tr>
-                                <th>Nombre</th>
+                                <th>Numero de Registro</th>
+                                <th>Nombre Completo</th>
                                 <th>Estado</th>
                                 <th>Dependencia</th>
                                 <th>Cargo</th>
@@ -145,12 +140,13 @@
                                 <th>Correo</th>
                                 <th>Fecha</th>
                                 <th>Hora</th>
-                                <th>Acciones</th>
+                                <th>Estatus Constancia</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($registradosRed as $registrados)
                             <tr>
+                                <td data-label="Numero de Registro">{{ $registrados->id }}</td>
                                 <td data-label="Nombre">{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
                                 <td data-label="Estado">{{ $registrados->entidad }}</td>
                                 <td data-label="Dependencia">{{ $registrados->dependencia }}</td>
@@ -160,65 +156,16 @@
                                 <td data-label="Fecha">{{ $registrados->updated_at->format('d-m-Y') }}</td>
                                 <td data-label="Hora">{{ $registrados->updated_at->isoFormat('H:mm:ss A') }}</td>
                                 <td data-label="Acciones">
-                                    @if ($registrados->estatus_const==1)
-                                        Constancia habilitada
+                                    @if ($registrados->estatus_const == 1)
+                                        <span class="label label-success">Constancia habilitada</span>
                                     @else
-                                        <form method="post" action="{{ url('habilitaConstancia') }}">
-                                            @csrf
-                                            <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                            <button type="submit" class="btn btn-primary">Habilitar Constancia</button>
-                                        </form>
+                                        <span class="label label-warning">Pendiente</span>
                                     @endif
                                 </td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
-                </div> --}}
-
-                <div class="table-container ">
-                    <table id="myTable" class="display ">
-                    <thead>
-                        <tr>
-                            <th>Numero de Registro</th>
-                            <th>Nombre</th>
-                            <th>Estado</th>
-                            <th>Dependencia</th>
-                            <th>Cargo</th>
-                            <th>Teléfono</th>
-                            <th>Correo</th>
-                            <th>Fecha</th>
-                            <th>Hora</th>
-                            {{-- <th>Acciones</th> --}}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($registradosRed as $registrados)
-                        <tr>
-                            <td data-label="Estado"></td>
-                            <td data-label="Nombre">{{ $registrados->name.' '.$registrados->apellido_paterno.' '.$registrados->apellido_materno }}</td>
-                            <td data-label="Estado">{{ $registrados->entidad }}</td>
-                            <td data-label="Dependencia">{{ $registrados->dependencia }}</td>
-                            <td data-label="Cargo">{{ $registrados->cargo }}</td>
-                            <td data-label="Teléfono">{{ $registrados->numero_celular }}</td>
-                            <td data-label="Correo">{{ $registrados->email }}</td>
-                            <td data-label="Fecha">{{ $registrados->updated_at->format('d-m-Y') }}</td>
-                            <td data-label="Hora">{{ $registrados->updated_at->isoFormat('H:mm:ss A') }}</td>
-                            {{-- <td data-label="Acciones">
-                                @if ($registrados->estatus_const==1)
-                                    Constancia habilitada
-                                @else
-                                    <form method="post" action="{{ url('habilitaConstancia') }}">
-                                        @csrf
-                                        <input type="hidden" name="id_user" value="{{ $registrados->id }}">
-                                        <button type="submit" class="btn btn-primary">Habilitar Constancia</button>
-                                    </form>
-                                @endif
-                            </td> --}}
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
                 </div>
 
                 <!-- Pie de página -->
@@ -240,6 +187,7 @@
     {{-- <script src='administrador/red/js/jquery/jquery-migrate.min.js'></script> --}}
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src='administrador/red/plugins/superfish/js/superfish.js'></script>
     <script src='administrador/red/js/hoverIntent.min.js'></script>
@@ -252,11 +200,13 @@
     <script src='administrador/red/plugins/flexslider/jquery.flexslider.js'></script>
     <script src='administrador/red/plugins/jquery.isotope.min.js'></script>
     {{-- <script src='administrador/red/js/plugins.min.js'></script> --}}
+    {{-- Data Table --}}
     <script>
         $(document).ready(function () {
             let table = new DataTable('#myTable', {
                 language: {
-                    url: '//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json',
+                    // url: '//cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json',
+                    url: 'https://cdn.datatables.net/plug-ins/2.1.8/i18n/es-MX.json',
                 },
                 columnDefs: [
                     {
@@ -269,6 +219,18 @@
             });
         });
     </script>
+    {{-- Mensaje Habilitar Constancia --}}
+    @if (session('success'))
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: '¡Éxito!',
+            text: '{{ session('success') }}',
+            confirmButtonText: 'Aceptar'
+        });
+    </script>
+    @endif
+
 
 </body>
 </html>
