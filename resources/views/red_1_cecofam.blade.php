@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang=en-US><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang=en-US><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <title>Red &#8211; Cecofam</title>
 
@@ -32,13 +35,16 @@
             <div class="dlr-header-inner">
                 <div class="gdlr-header-container container">
                     <div class="gdlr-logo">
-                        <a href="index.html"> <img src="rede_1_cecofam/red/images/logo_red_1.png" alt=""> </a>
+                        <a href=""> <img src="{!! asset('rede_1_cecofam/red/images/logo_red_1.png') !!}" alt=""> </a>
                         <div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation">
                             <button class="dl-trigger"> Men&uacute;</button>
                             <ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu">
                                 <li class="menu-item menu-item-home current-menu-item">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
+                               <!-- <li class="menu-item">
+                                    <a href="#historia">Historia</a>
+                                </li>-->
                                 <li class="menu-item">
                                     <a href="#programa">Programa</a>
                                 </li>
@@ -54,8 +60,11 @@
                                 <li class="menu-item menu-item-home">
                                     <a href="#inicio" aria-current="page">Inicio</a>
                                 </li>
+                                <!-- <li class="menu-item">
+                                    <a href="#historia">Historia</a>
+                                </li>-->
                                 <li class="menu-item">
-                                    <a href="#programa">Programa</a>
+                                    <a href="images/PROGRAMA_RED_NACIONAL_INTERVENCION_ESPECIALIZADA_APOYO_JUDICIAL_2024.pdf">Programa</a>
                                 </li>
                                 <li class="menu-item menu-item-has-children">
                                     <a href="#ponentescdmx">Ponentes</a>
@@ -132,12 +141,45 @@
                                     </div>
                                 </div>
                                 <div class="clear"></div>
+                                
                                 <div class="clear"></div>
                                 <div class="clear"></div>
                             </div>
                         </div>
                         <div class="clear"></div>
                     </section>
+                    <!--<section id="historia">
+                        <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
+                            <div class="container">
+                                <div class="gdlr-item-title-wrapper gdlr-item pos-center ">
+                                    <div class="gdlr-item-title-head">
+                                        <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border gdlr-title-medium">Historia de la red</h3>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="gdlr-testimonial-item-wrapper">
+                                    <div class="clear"></div>
+                                    <div class=" Two columns">
+                                        <div class="gdlr-item gdlr-testimonial-item plain-style">
+                                            <div class="gdlr-ux gdlr-testimonial-ux">
+                                                <div class="testimonial-item">
+                                                    <div class="testimonial-content gdlr-skin-content">
+                                                        <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo.</p>
+                                                    </div>
+                                                    <div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Integrantes de la</span><span class="testimonial-position gdlr-skin-info"><span> </span>Red</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </section>-->
                     <section id="programa">
                         <div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 90px; padding-bottom: 60px; ">
                             <div class="container">
@@ -162,6 +204,14 @@
                                             <div class="gdlr-session-head-day">D&iacute;a 3</div>
                                             <div class="gdlr-session-head-date">11 Diciembre 2024</div>
                                         </div>
+                                     <!--   <div class="gdlr-session-item-head-info" data-tab="gdlr-tab-4">
+                                            <div class="gdlr-session-head-day">D&iacute;a 4</div>
+                                            <div class="gdlr-session-head-date">30 Noviembre 2023</div>
+                                        </div> -->
+									<!--	<div class="gdlr-session-item-head-info" data-tab="gdlr-tab-5">
+                                            <div class="gdlr-session-head-day">D&iacute;a 5</div>
+                                            <div class="gdlr-session-head-date">18 Noviembre 2023</div>
+                                        </div> -->
                                         <div class="clear"></div>
                                     </div>
 
@@ -171,6 +221,9 @@
                                           <div class="gdlr-session-item-divider"></div>
                                             <div class="gdlr-session-item-content-info">
                                                 <div class="gdlr-session-info">
+                                                   <!-- <div class="session-info session-time"><i class="fa fa-clock-o"></i>XX:00 hrs.</div>-->
+                                                    
+													
 													<div class="session-info session-speaker">
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
@@ -181,6 +234,7 @@
                                                         </div>
                                                     </div>
 													
+													
 												<div class="clear"></div>
                                                 </div>
                                             </div>
@@ -190,9 +244,12 @@
                                                     <div class="col-md-6 col-sm-6 col-xs-6">
 														<article class="type-post">
 																<div class="entry-cover">
-																	<iframe width="560" height="315" src="https://youtu.be/ue_foQLs6BI?si=Vxm21YHJTxohGptY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																	<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 																</div>
 															   <div class="entry-block"></div>
+															    <!--<div class="entry-title">
+												                  <a href="eventsingle-page.html" title="Corporate Paper Meetup Event"><h3>Descripci&oacute;n del video</h3></a>
+																    </div>-->
 														 </article>
 														</div>
                                                     </div>
@@ -223,7 +280,7 @@
 											    <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -231,6 +288,8 @@
                                             </div>
                                           <div class="clear"></div>
                                         </div> 
+										
+									
 										
 										<div class="gdlr-session-item-content-wrapper">
                                            <div class="gdlr-session-item-divider"></div>
@@ -257,7 +316,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -288,10 +347,10 @@
                                                <h3 class="gdlr-session-item-title">“Evaluación Psicológica en Casos de Infidelidad”</h3>
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
-														<div class="entry-cover">
-															<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-														</div>
-													    <div class="entry-block"></div>
+															<div class="entry-cover">
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+															</div>
+													            <div class="entry-block"></div>
 													 </article>
                                                   </div>
                                             </div>
@@ -329,7 +388,7 @@
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -362,7 +421,7 @@
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -394,7 +453,7 @@
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -426,7 +485,7 @@
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -458,7 +517,7 @@
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -491,7 +550,7 @@
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -523,7 +582,7 @@
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/J6U6aWSGrsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -536,7 +595,9 @@
 							    </div>			
 							 </div>
 									
+									
                          <!-- termina dia 1-->
+									
 									
                          <!-- inicia dia 2 -->
                                     <div class="gdlr-session-item-tab-content gdlr-tab-2">
@@ -563,7 +624,7 @@
 												  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -598,7 +659,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -631,7 +692,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -663,7 +724,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/7PFuFCDhnSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -714,7 +775,7 @@
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Dra. Erendira Toledo Cortés </a></div>
-																<div class="gdlr-session-item-excerpt">Doctora en estudios de género y preveción de las violencias</div>
+																<div class="gdlr-session-item-excerpt">Doctora en estudios de género y prevención de las violencias</div>
                                                             </div>
                                                         </div>
                                                       </div>
@@ -842,7 +903,7 @@
                                                         <div class="session-speaker-inner">
                                                             <div class="session-speaker-list">
 																<div class="session-speaker-list-item"><a>Ponente</a></div>
-                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Tirso Febronio Tejeda Sanabria</a></div>
+                                                                <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Licdo. Tirso Febronio Tejeda Sanabria</a></div>
 																<div class="gdlr-session-item-excerpt">Psicólogo en el CECOFAM del Poder Judicial de la CDMX</div>
 															</div>
                                                         </div>
@@ -918,7 +979,7 @@
                                                                 <div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Dulce Rosario Serralta Contreras </a></div>
 																<div class="gdlr-session-item-excerpt">Psicóloga en el área de Evaluación del CECOFAM en Playa del Carmen</div>
 																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcda. Diana Laura Acosta Elvira</a></div>
-																<div class="gdlr-session-item-excerpt">Egresada de la Universidad Autónoma de Yucatán del CECOFAM en Playa del Carmen</div>
+																<div class="gdlr-session-item-excerpt">Egresada de la Universidad Autónoma de Yucatán y se desempeña en el CECOFAM en Playa del Carmen</div>
 																<div class="session-speaker-list-item"><i class="fa fa-user"></i><a>Lcdo. Rodolfo Antonio Ávila Muñoz</a></div>
 																<div class="gdlr-session-item-excerpt">Promotor de la Salud en Centros de Integración Juvenil </div>
 															</div>
@@ -1755,7 +1816,7 @@
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class="gdlr-speaker-thumbnail"><img src="rede_1_cecofam/red/images/img_ponentes/2024/Edgar_Antonio_Cabrera_Meneses.jpg" alt width="400" height="400"></div>
                                                     <div class="gdlr-speaker-item-content">
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Edgar Antonio Cabrera Meneses </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Mtro. Edgar Antonio Cabrera Meneses </h3>
                                                         <div class="gdlr-lightbox-form" id="gdlr-form-52">
                                                             <div class="gdlr-paypal-form-wrapper">
                                                                <h3 style="text-align: justify">
@@ -1805,7 +1866,7 @@ Ha obtenido certificaciones internacionales en Perfilación Criminal y Victimolo
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Lic_Lizbeth_Ramirez_Jimenez.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">La Lic. Lizbeth Ramírez Jiménez </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Lizbeth Ramírez Jiménez </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-6>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -1936,7 +1997,7 @@ Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterap
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/lic_tirso_febrinio_tejeda_sanabria.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Lic. Tirso Febronio Tejeda Sanabria  </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Licdo.  Tirso Febronio Tejeda Sanabria  </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-27>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                 <h3 style="text-align: justify">
@@ -2028,7 +2089,7 @@ Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterap
                                                 <li class="gdlr-item gdlr-speaker-item">
                                                     <div class=gdlr-speaker-thumbnail><img src="rede_1_cecofam/red/images/img_ponentes/2024/Psic_Jonathan_Lopez_Flores.jpg" alt width=400 height=400></div>
                                                     <div class=gdlr-speaker-item-content>
-                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psci. Jonathan López Flores </h3>
+                                                        <h3 class="gdlr-speaker-item-title gdlr-skin-title">Psic. Jonathan López Flores </h3>
                                                         <div class=gdlr-lightbox-form id=gdlr-form-32>
                                                             <div class=gdlr-paypal-form-wrapper>
                                                                <h3 style="text-align: justify">
@@ -2571,7 +2632,7 @@ Desde 2015, trabaja en el Poder Judicial de la Ciudad de México como psicoterap
     <script src='js/plugins.min.js'></script>
     <script src='plugins/masterslider/public/assets/js/masterslider.min.js'></script>
 
-    <script src='js/bitacoraLogout.js'></script>
+<script src='js/bitacoraLogout.js'></script>
 
     <script>
         $(document).ready(function () {

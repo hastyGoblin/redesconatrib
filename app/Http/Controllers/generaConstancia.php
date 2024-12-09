@@ -60,7 +60,7 @@ class generaConstancia extends Controller
     public function habilitaTodasConstancias()
     {
         // Validar que la relación funciona
-        $userRoles = User::first()->roles; // Esto ya no debería ser null
+        $userRoles = User::first()->roles;
         // dd($userRoles);
 
         // Recuperar todos los usuarios con rol 2 y que no tienen constancia habilitada
@@ -88,7 +88,7 @@ class generaConstancia extends Controller
             ];
 
             // Enviar correo
-            // Mail::to($user->email)->send(new RegistroMail($info));
+            Mail::to($user->email)->send(new RegistroMail($info));
         }
 
         return redirect()->route('home')->with('success', 'Constancias habilitadas para todos los usuarios');
