@@ -624,7 +624,7 @@
 												  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -659,7 +659,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -692,7 +692,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -724,7 +724,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -756,7 +756,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -788,7 +788,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -821,7 +821,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -853,7 +853,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -885,7 +885,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -917,7 +917,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -949,7 +949,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/KtChG1S6af4?si=nHZNFTUmanxTOe27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -996,7 +996,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1030,7 +1030,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1062,7 +1062,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1096,7 +1096,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1127,7 +1127,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1160,7 +1160,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1191,7 +1191,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1223,7 +1223,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1255,7 +1255,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1287,7 +1287,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1318,7 +1318,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1350,7 +1350,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1385,7 +1385,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1418,7 +1418,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1461,7 +1461,7 @@
 												 <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1494,7 +1494,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1526,7 +1526,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1557,7 +1557,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1588,7 +1588,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1619,7 +1619,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1650,7 +1650,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1684,7 +1684,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1716,7 +1716,7 @@
 												<div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
@@ -1754,7 +1754,7 @@
                                                  <div class="gdlr-session-thumbnail-wrapper">
                                                      <article class="type-post">
 															<div class="entry-cover">
-																<iframe width="560" height="315" src="https://www.youtube.com/embed/siFcE5gRY-4?si=WTosINmaSBTtt9xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+																<iframe width="560" height="315" src="https://www.youtube.com/embed/5sVzhMVvbuw?si=qhckZVcMZGdxXa2B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 															</div>
 													            <div class="entry-block"></div>
 													 </article>
