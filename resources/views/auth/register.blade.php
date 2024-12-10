@@ -101,7 +101,7 @@
                                     </div>
                                 </div>
                                 @enderror
-                            <div class="form-button" hidden>
+                            <div class="form-button">
                                 <center>
                                     <button id="submit" type="submit" class="ibtn">Registrar</button>
                                 </center>
